@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkuxcam=self.webpackChunkuxcam||[]).push([[8286],{19561:function(e,u,l){l.d(u,{y:function(){return n}});const n=(0,l(96540).createContext)({formClosable:!0,setFormClosable:e=>null,currentCourse:null,setPopupOpen:e=>null,popupOpen:!0,coursesCompleted:[],setCoursesCompleted:e=>null})}}]);

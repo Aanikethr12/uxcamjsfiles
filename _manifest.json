@@ -1,0 +1,992 @@
+[
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/1083.f5d21cb50b92b988.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/1083.f5d21cb50b92b988.js",
+    "bytes": 98382,
+    "sha256": "ed260e0f7f67c653168795b1bd973ab00fc7166191c072864f96764add74b069",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/1237-471e7b7893e68514.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/1237-471e7b7893e68514.js",
+    "bytes": 21905,
+    "sha256": "a76fdd6186ce2656eeb41c15b5e30b97b4db99b11bbc107df1cf8416ab117deb",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/1297-14279cb12209984f.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/1297-14279cb12209984f.js",
+    "bytes": 150495,
+    "sha256": "55ac39d65b4fb36f978ac6c5af26753e24e909a89dab4d1338a8fbbe97e7458f",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/1371-d7768ecfd580c8ea.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/1371-d7768ecfd580c8ea.js",
+    "bytes": 101449,
+    "sha256": "c9b0c01b36734c13ad26d8492b1b4b4d79cf55959020828bf3bf06825752ab5b",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/1473.4ad016a766aba221.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/1473.4ad016a766aba221.js",
+    "bytes": 59365,
+    "sha256": "bd061fdc2c4ea1529ae69c2d35bad60aac7c8eb4119d9986124d8ae354f4e349",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/1521-01f5e02ff10d8ddb.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/1521-01f5e02ff10d8ddb.js",
+    "bytes": 157606,
+    "sha256": "b312332f19ef968908f960895f0f5d38be785cb4ecfc829ca9c928079d14d385",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/1530.880b0c9a18bbaa79.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/1530.880b0c9a18bbaa79.js",
+    "bytes": 3473,
+    "sha256": "17fe81aed4e63abebf7abf4b846ae49de407e841b93dbf8efc3dc9d7cff83696",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/1664-69737339f90e5e57.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/1664-69737339f90e5e57.js",
+    "bytes": 9612,
+    "sha256": "786a8cca41b255d4a389dce8db1eb35d6cd82873015777820b4b26344c1f1981",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/175-48c5b9ac90a97f18.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/175-48c5b9ac90a97f18.js",
+    "bytes": 81285,
+    "sha256": "b1225a3692d8619206bb89c39ace427924762d88a37160b5bfbc82d23c2027ef",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/1767.7f50083e465db5fd.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/1767.7f50083e465db5fd.js",
+    "bytes": 8148,
+    "sha256": "1853b149cab2b96fe1cb58e96e2afa218e632df370c9a037f3ab3f9338c3ac4b",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/2153.f67970af133587be.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/2153.f67970af133587be.js",
+    "bytes": 28482,
+    "sha256": "67e442ac411f944fd1311a3b025bf5095cfbfa2347f5a61297dd924f709d206b",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/2255.4dc159b58e18c9e0.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/2255.4dc159b58e18c9e0.js",
+    "bytes": 69756,
+    "sha256": "a89698cff3721c6cd9dd3a811b690c84f552d61fa4a4bcdc0518a9c44c5c4a89",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/2405.0c27daf3c51f28b9.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/2405.0c27daf3c51f28b9.js",
+    "bytes": 244571,
+    "sha256": "86b49105a5cc4ed0bc63c4fa4e7d593dd51b4a2525f55dbb09371b89cffc444b",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/2495.d3da4f69859e8ba9.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/2495.d3da4f69859e8ba9.js",
+    "bytes": 36861,
+    "sha256": "327f7cf1ffa81a8899a988f096b064bdaa502be66250641aaafefdae38e1075f",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/2538-93884bb3dd507e6d.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/2538-93884bb3dd507e6d.js",
+    "bytes": 159773,
+    "sha256": "c7f93102881df9f7fe56b28c5bb60e6f8f123f83a412fd4806a4c8da54ee40a7",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/2551.bb59cb95e42d4f7a.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/2551.bb59cb95e42d4f7a.js",
+    "bytes": 147550,
+    "sha256": "9d15e6287bc98d5c4cbed81e557732d076d56b8a408f3955136ce3cf349c25f0",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/29107295-216d72b48878e6c2.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/29107295-216d72b48878e6c2.js",
+    "bytes": 112155,
+    "sha256": "c9fa6777e7b5968eb4ceee26c745b5c7730679b6e451c57a86fe274c729c4eb3",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/2972.fb709d79d3274bfa.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/2972.fb709d79d3274bfa.js",
+    "bytes": 10675,
+    "sha256": "eb0c01b4d94c1212464ecee0b76a0239d2bb999cf1c6cc5791a202baf576d1f5",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/2fbf9dd2.9c08486a01f34f0c.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/2fbf9dd2.9c08486a01f34f0c.js",
+    "bytes": 490155,
+    "sha256": "5905f2db11787f2f96715670ce08a85e4ada9e7253d3d255e0e4c24de19cf25f",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/3104.5933111c88afa7ba.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/3104.5933111c88afa7ba.js",
+    "bytes": 18079,
+    "sha256": "2bf9e4cc2219eadafd27318841a5bdf448bf869a410c87d2e593eb40f9a9d3de",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/3168.5c0264f4eb0f5c9d.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/3168.5c0264f4eb0f5c9d.js",
+    "bytes": 11303,
+    "sha256": "2fd87e143fb69e858992a762c7e6a87e2f267271099ab82b6c1d55f02bfb65dc",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/3196.6d5ff00e02d0165f.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/3196.6d5ff00e02d0165f.js",
+    "bytes": 16523,
+    "sha256": "7f3c9d891c753244bd1befcdb45d129231da19ab9c5ef82a793fcc69098cd96f",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/3385-b28fe952e1a47683.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/3385-b28fe952e1a47683.js",
+    "bytes": 24851,
+    "sha256": "95117962ac5f538323c4dea2dd0e1950c1f1984d2f0226a3f174ce67fcdbd6f2",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/3448.b9e3a6bbedc220a5.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/3448.b9e3a6bbedc220a5.js",
+    "bytes": 4725,
+    "sha256": "85363a126f92f51fa50019886677d8eb010a3965899a61e318b84fc4d4014fcf",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/3617.ef754778d98ef60d.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/3617.ef754778d98ef60d.js",
+    "bytes": 13185,
+    "sha256": "196861bb397976e0a93a914bdefbd524c8f19c33e0c67dc22ad6c6f4d6c6beb4",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/3705a59f.b6abfc3fbc96dad7.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/3705a59f.b6abfc3fbc96dad7.js",
+    "bytes": 160868,
+    "sha256": "cfe5bc027264e28cbc9bf3a08d9a473f15c72087e617f6c16a1b80d4a0c8f64a",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/3985-1c4746dc9d85673a.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/3985-1c4746dc9d85673a.js",
+    "bytes": 618268,
+    "sha256": "41b5237f4707be7968381da86779f4e73731d6cd38cb5ae827aa72d8974edd7c",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/4202.20f95826e2f6a111.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/4202.20f95826e2f6a111.js",
+    "bytes": 137249,
+    "sha256": "f885416209d5a2f3c9d8b871df7afbcd94474cec75a6d55373996955a093e98f",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/4260.e1a5b9741f69af76.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/4260.e1a5b9741f69af76.js",
+    "bytes": 40554,
+    "sha256": "c35574d4cdb3821dff8cee431be229d4cdefcf5a5c32fbdae59761acc03f9ab3",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/4295.ef6ac2687449a5c6.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/4295.ef6ac2687449a5c6.js",
+    "bytes": 5841,
+    "sha256": "163bebaafff38ac82277eb523318fbace86742aeabc30dddb4b7144587feadf0",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/449.c243225466d84631.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/449.c243225466d84631.js",
+    "bytes": 5334,
+    "sha256": "46ceb49260956fa73a75b31f13990d710a9ad9cf71b31e1af2134e47fadd94d6",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/4621-d7154638bb18aabd.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/4621-d7154638bb18aabd.js",
+    "bytes": 69172,
+    "sha256": "9cb67b1a68e7465d36e120ce6cbd6fa470d648174118d51d5ddf0fb5d53d5664",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/4623.7c07f8dd48618b87.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/4623.7c07f8dd48618b87.js",
+    "bytes": 35124,
+    "sha256": "dee873a6e4810d03b047195909407e65c3813c530b17a41c47f1c77c0e1e0634",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/4684-1c08df11aafd2d97.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/4684-1c08df11aafd2d97.js",
+    "bytes": 18933,
+    "sha256": "956452c73d4f8d3fdc0477b586b70e887df9bef5eac94600773e3a8c35c4fba6",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/4747.efd900ca62209291.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/4747.efd900ca62209291.js",
+    "bytes": 5093,
+    "sha256": "78c6ae26165872499fd660b26f8011609b19a2bcdcb88b27a09bde2afd0ef4c0",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/4786.c5a1888b6f904a14.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/4786.c5a1888b6f904a14.js",
+    "bytes": 28606,
+    "sha256": "4249984bad22c8d6669e36320c12d02d0aece80c95b0c1ddfbdf1a3f95e1ec23",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/4866-e60b52a5f5a6f11c.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/4866-e60b52a5f5a6f11c.js",
+    "bytes": 113767,
+    "sha256": "0d4da87b81df7818aaae078495e89e1a5f53843946efdc721f7f91cb37da712a",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/4b358913-45a64fc47826eaa5.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/4b358913-45a64fc47826eaa5.js",
+    "bytes": 442703,
+    "sha256": "b1869f98302ad04e870b1ad672a29c494a8f3370f3a50f5bf6f287f6f83b5c2a",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/5000-1a052fb4fab79321.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/5000-1a052fb4fab79321.js",
+    "bytes": 33087,
+    "sha256": "0bfe1f3d82671f07ef6152321ce5daddba0bdbd6fb111cbb43ffbe06c878e06b",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/5004.e5135bf4684a852c.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/5004.e5135bf4684a852c.js",
+    "bytes": 11056,
+    "sha256": "02a64fd1beabad6d853994de52718b0917914e0a48e39a9779514ccc1de3d88b",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/5148.4e8a611d5828454a.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/5148.4e8a611d5828454a.js",
+    "bytes": 184399,
+    "sha256": "1d9f4499dceb72d62814ce7308990e3a37f6ed6c596edd5a0aae54e0a626e6bb",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/522.18a361af095b353d.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/522.18a361af095b353d.js",
+    "bytes": 115193,
+    "sha256": "ef9db2d25bafaa60aae42ce823e42b734c23e673f7071dc962dd4a932ad1d41e",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/5362.7a42c862ba3b72e3.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/5362.7a42c862ba3b72e3.js",
+    "bytes": 81474,
+    "sha256": "832c6e217a28017e03abf65a29d972d1f6b164fe8a7a83330a1eba01b00cea5b",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/5479.83b757ced1d3bd8a.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/5479.83b757ced1d3bd8a.js",
+    "bytes": 12825,
+    "sha256": "0db34b4698170bcdc545ccbb5fb26211d567bf47885a0a77c81bc021c81c29a5",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/5540.6e5c7a2ff2bfc9bd.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/5540.6e5c7a2ff2bfc9bd.js",
+    "bytes": 10215,
+    "sha256": "b297e8d145a972bd993b46e079a9cb745246fabc56175a07d6fb0d7d78f6f8ce",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/5671.b3944bf9428d2d0d.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/5671.b3944bf9428d2d0d.js",
+    "bytes": 228832,
+    "sha256": "4bd48954a096d74d3bc644c42f3d22b7b116962f4afbe3b9aa4f6910cfed8166",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/5701.6ab5a2d7e25107cd.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/5701.6ab5a2d7e25107cd.js",
+    "bytes": 2574,
+    "sha256": "dca7f43d62fd0e3f0144fdc6be4e38f99a118fd26c124e2804e47119be3673b3",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/5743.015031f5fa4e05a0.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/5743.015031f5fa4e05a0.js",
+    "bytes": 255568,
+    "sha256": "28e29e3cebaa254c66e6b902ec479383e0c5f7c5f99cd6a5c5c1d31cf2ea36ff",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/5777.1b6d1f558b525980.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/5777.1b6d1f558b525980.js",
+    "bytes": 67864,
+    "sha256": "dca15c70677ae2e0a4ef777968728d28c2376c519e545da8ed329829741d9443",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/5982-89266ae3c827457f.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/5982-89266ae3c827457f.js",
+    "bytes": 40033,
+    "sha256": "6b49954f630019a425a2367482e694033a1b92c19391c5aaee908372fe2bbbfe",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/6015.bd5e7b5b956863d5.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/6015.bd5e7b5b956863d5.js",
+    "bytes": 4316695,
+    "sha256": "67a2893e7c9b4294f408010e04415943295c292e94c335fd33f1db663851a972",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/6042-1d9622ee42ffd17c.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/6042-1d9622ee42ffd17c.js",
+    "bytes": 202835,
+    "sha256": "91d89d4e86fb3726c4aadcb5cebdabbf9905b0cc0b25d25f0b6e5c7052c9260d",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/6194.e64620fc7c4859f8.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/6194.e64620fc7c4859f8.js",
+    "bytes": 21643,
+    "sha256": "6aede0e9a1678aee1f0afc46592b638355c31f842da44f85a6ca281d0d69770e",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/6315.0e34b47e281fea99.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/6315.0e34b47e281fea99.js",
+    "bytes": 90131,
+    "sha256": "fce20f21342bb4830079c3624ab654536a39563187d62bfb3469224ec520ebfa",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/6493.4c18add14d310601.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/6493.4c18add14d310601.js",
+    "bytes": 22927,
+    "sha256": "86947b16d78d44e55b7cbe5679b16af4da1107b390c3324f499461f59b963d0e",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/653-d810bcd6b27452f9.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/653-d810bcd6b27452f9.js",
+    "bytes": 268398,
+    "sha256": "b9916b509c97bc9bb714d970dddb21e83075f149caea12bef56f907400214084",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/663-9af79115e1bb72ec.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/663-9af79115e1bb72ec.js",
+    "bytes": 86124,
+    "sha256": "96ddb5eee0e47630ec7cc575a538d12a88275767a719d31fb17648cb9395d49d",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/6649.6de33455ecccbf3d.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/6649.6de33455ecccbf3d.js",
+    "bytes": 346460,
+    "sha256": "c26231270f6e64a9c16c179af0f1c3c411bc2f1c692561aaf9d54e715e8f1af8",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/6999-b0bd746a2d725263.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/6999-b0bd746a2d725263.js",
+    "bytes": 1021654,
+    "sha256": "8f54cc8b58a9ffbdc4983992e7b627ca4186cf0773939102091deab38ec39a4d",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/6d2cfb11.249bbf4264ef2f8a.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/6d2cfb11.249bbf4264ef2f8a.js",
+    "bytes": 6233638,
+    "sha256": "d16a11b2bcd31413a2a7e5e696664e4a4697741a218d8a589a2182c4766bdca9",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/7043.eae77ee93572d401.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/7043.eae77ee93572d401.js",
+    "bytes": 127869,
+    "sha256": "6d63bb785944c36eca29c167a3f8be55ee53dd8e1bb55bc2962523a1d43bfc2c",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/7384-6958790cadb0c8ae.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/7384-6958790cadb0c8ae.js",
+    "bytes": 957581,
+    "sha256": "3c35c8d009378c663e56aa2588b1072c0d0950d3dff9caec61ca15ffb3add7d3",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/7447.7a6b96ee5bc75db2.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/7447.7a6b96ee5bc75db2.js",
+    "bytes": 2922,
+    "sha256": "f08761a7e397cad54753955e2317be5fb17ab621bd2d7f031ea1b018a9775e61",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/7455b7f1.0da9c96e2dcc197f.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/7455b7f1.0da9c96e2dcc197f.js",
+    "bytes": 2895015,
+    "sha256": "03570a7bace7e2a2221b8c15809ad0e558c4e6af7bacd465aeaa9076a860bdd0",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/7494.214a100537642965.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/7494.214a100537642965.js",
+    "bytes": 348049,
+    "sha256": "0cad469eba75369d03b0175efb5ccfd9e8967f4a107118fd9de6052c422d930f",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/7536-6bf92ae692c2882c.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/7536-6bf92ae692c2882c.js",
+    "bytes": 40222,
+    "sha256": "314531be571468d6c432ad69f8a3bfa512a0d21a732488c39b80c394dd3dfeb1",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/7640-bfc7c69bb46e9ede.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/7640-bfc7c69bb46e9ede.js",
+    "bytes": 7249,
+    "sha256": "0c1217b8f2445a604e6475dd17937c5b6b544c8a148a0be80949faa52dd8a42f",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/7779.08b84f28d464d9b2.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/7779.08b84f28d464d9b2.js",
+    "bytes": 21980,
+    "sha256": "abb12a8ab965b9c54370f452f77a8eec94ecb8aaa55fcb01247e52dbc3c6a1e0",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/8357-4488ebda992e425c.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/8357-4488ebda992e425c.js",
+    "bytes": 49803,
+    "sha256": "9bc12da364fbd440dfe9290de78044339bb1f36706bdba631e0f829fdb289c82",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/8683.b90b53206ca384a3.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/8683.b90b53206ca384a3.js",
+    "bytes": 22615,
+    "sha256": "0f34216081861f9b32ada4f7749a293df65e157923acf82fef4c5d65ab65b0a4",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/8775.5f8f519937cf5e4c.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/8775.5f8f519937cf5e4c.js",
+    "bytes": 10303,
+    "sha256": "2a1e2384b19fe1bd9e264b7bc54a5beba5c177dc472bcf585fc9934ac5dcbd4b",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/8852.33e81858a6cd6af7.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/8852.33e81858a6cd6af7.js",
+    "bytes": 17453,
+    "sha256": "c9f52a51cea3de337ba2ec253a42fa512958b48745cc9eed0dbbc0faaa42152b",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/8865-767141385a257317.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/8865-767141385a257317.js",
+    "bytes": 64570,
+    "sha256": "c89ab9f88eb06c123868a412256a8aea22862e9069a151d0c79c7fb006fedba2",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/8927.21a912037f85d66d.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/8927.21a912037f85d66d.js",
+    "bytes": 42937,
+    "sha256": "1535605ced5ecdb23fe574e7da226665a82328460928466d501d9a0555258618",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/9033.44a60433a492e1c3.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/9033.44a60433a492e1c3.js",
+    "bytes": 747405,
+    "sha256": "f3b19c92e0a40c7fe28aedc19972d111197fafedfb951f3b9562196d4f6475e5",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/9201.6678dc987218a021.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/9201.6678dc987218a021.js",
+    "bytes": 13401,
+    "sha256": "e07ccec95b372112c866952a08b734ab24d2d40a58d30799729e143ded2e729b",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/9227.f1780b6c7410be00.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/9227.f1780b6c7410be00.js",
+    "bytes": 147101,
+    "sha256": "63bd51d4a36da3b98cefb305cb7748d119a4ef7bb2870fbe45b0188c04c8b35f",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/9260.6cd4eb1d5685a3e0.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/9260.6cd4eb1d5685a3e0.js",
+    "bytes": 14405,
+    "sha256": "4609c8bda0786649e175257ac6d18be30b82f20bd28cbb148fbb7c926d4f8033",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/9521-ec896f457db9ab69.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/9521-ec896f457db9ab69.js",
+    "bytes": 44357,
+    "sha256": "21b26c2ef6af64f8d707e9981e2064ebc8823b497762eae61ecf7366f619d66f",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/9607.1bb77a5b55e9468f.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/9607.1bb77a5b55e9468f.js",
+    "bytes": 34590,
+    "sha256": "b637b821e0b7eabcdea3c006ac093d0875ee4539a5867df4b28a87603214b3cd",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/9656.48abcca7a1b0676f.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/9656.48abcca7a1b0676f.js",
+    "bytes": 25124,
+    "sha256": "d0c20bee1a303e6aa16ee62ce081226e5b7429720dc271f2e75221425846f067",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/9705.ac85c1cf66fd6800.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/9705.ac85c1cf66fd6800.js",
+    "bytes": 2995,
+    "sha256": "9ae5646a340e1d3ec898216d094db182059b74cd60786ba2ec0330c140831bdb",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/9749.f64bfa7af240cfe6.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/9749.f64bfa7af240cfe6.js",
+    "bytes": 408794,
+    "sha256": "387fae223964de9a65d077689ae4b31de62f7fb45d415f56aa46e8cbec37fdef",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/9790-76b100b9cd518ac0.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/9790-76b100b9cd518ac0.js",
+    "bytes": 101457,
+    "sha256": "4720fcb54d2433f6eec78b885f2ff6a453aa3302e52041e6398010140540a923",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/983-36f4546357d5d668.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/983-36f4546357d5d668.js",
+    "bytes": 65062,
+    "sha256": "1035c49c9164435da14af365a7ddba75d234e508405a664f0cc9309ea0566a2d",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/9983-18916133c7bcb6e6.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/9983-18916133c7bcb6e6.js",
+    "bytes": 1367477,
+    "sha256": "b5e5537481f4bf83caaf6f0dcd7a5ccd68bf939bf7a92f4321bba949ee81bb6b",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/a4626864-812245c724aaa3bb.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/a4626864-812245c724aaa3bb.js",
+    "bytes": 80363,
+    "sha256": "fe07197f6653e774826ec5476b0d26c0ef82267c87ab7a83a91dcf602d7d68b1",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/a4c92b5b.194661f67ee91a6d.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/a4c92b5b.194661f67ee91a6d.js",
+    "bytes": 168483,
+    "sha256": "9fbb956edf2def761581fbe7c8a20ac82cc6dab14d2da81908e78f118497e1bb",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/b637e9a5-6898d32f41b36e31.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/b637e9a5-6898d32f41b36e31.js",
+    "bytes": 86630,
+    "sha256": "87caa1519ebdc16287126a8402696aa74be69a1df7e1b2afa0cb8ceaec706fe1",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/bee240a3-f3427dbf89ab90a5.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/bee240a3-f3427dbf89ab90a5.js",
+    "bytes": 105519,
+    "sha256": "5fd8cf83c9e2a857df2ddf57b20b54bf015d2c96508a266a647712230a0b0824",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/d6840153-61d8424a9faea42e.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/d6840153-61d8424a9faea42e.js",
+    "bytes": 556018,
+    "sha256": "51f3658da125d935aad96371f7e06dcd5cd165aedbe34404107ef258d8ae3ad1",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/d729e6b3-9fa3e5a7038d8766.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/d729e6b3-9fa3e5a7038d8766.js",
+    "bytes": 267337,
+    "sha256": "50c4282f867eb6e83adfb5a86a94f3f55498c765e8b1770a330182e6a1cb207c",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/dc29469a.116f410dea12c70a.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/dc29469a.116f410dea12c70a.js",
+    "bytes": 1144567,
+    "sha256": "c8af0b891b6ccdc501e51a59d484165ed72731723ea86211c6d6eb9866058f6e",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/ea88be26.b31ca0c979711532.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/ea88be26.b31ca0c979711532.js",
+    "bytes": 420201,
+    "sha256": "1751eb1b471d7120b35ae43a7386f4fe7303b730ee0c89e0c0ef2dbca0a5997c",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/ec9a80bc.6c7006cf5cfab831.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/ec9a80bc.6c7006cf5cfab831.js",
+    "bytes": 577236,
+    "sha256": "7bbc43508b04c09ffd005dc1de1725d85a553e477d48ec3a0831958cc3c7f52a",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/framework-d283e2cbd12fc47e.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/framework-d283e2cbd12fc47e.js",
+    "bytes": 206737,
+    "sha256": "aac5ce1649967d7e4f8ae9cfcf1e2da2ff1b4bcdf32121c00b37e3da01b17723",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/main-7df0fa2a7c222120.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/main-7df0fa2a7c222120.js",
+    "bytes": 159343,
+    "sha256": "d2a226b92fbf7dce9cda220a68a5a01a72beaf00cff3b8be2d90a61969ea6241",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/pages/_app-876a10dcec11b5a0.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/pages/_app-876a10dcec11b5a0.js",
+    "bytes": 3468151,
+    "sha256": "044bd41ed3506988bb8b953bf89cb4d0f26df47abf379e0b5d38d74530c6a228",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/pages/dashboard-0e395fd16ac85583.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/pages/dashboard-0e395fd16ac85583.js",
+    "bytes": 4474,
+    "sha256": "5cd3fbbfc3c6fa8e48b75f10f87277bb570134bea0a436321e2d7c24a23bfbee",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/pages/integration-53db46257e6b16d5.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/pages/integration-53db46257e6b16d5.js",
+    "bytes": 25509,
+    "sha256": "cffd8da555502f742e51d2c564506b6b1915c03a928ecf67cfc871f1b71d0e41",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/chunks/webpack-a48d63d6caab0998.js",
+    "savedTo": "app.uxcam.com/_next/static/chunks/webpack-a48d63d6caab0998.js",
+    "bytes": 11582,
+    "sha256": "f09738bff7805c3c026a6d00f11780a77bf7113636d8d3bab01122d7e0b1bf8e",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/css/324e1375980615d6.css",
+    "savedTo": "app.uxcam.com/_next/static/css/324e1375980615d6.css",
+    "bytes": 1217528,
+    "sha256": "98bfcae17c47bccc23cda0d439e28c932fbf43247e590a0ffa8e008e2cc5e8b6",
+    "contentType": "text/css",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/css/4a111cc5b52eab7b.css",
+    "savedTo": "app.uxcam.com/_next/static/css/4a111cc5b52eab7b.css",
+    "bytes": 4602,
+    "sha256": "d005f959cfd76933c7e0cf0b7316b6d54d5ffb46e559dd8f86136c12d9750df7",
+    "contentType": "text/css",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/oxJsug1LoFQmmf8sYr8oX/_buildManifest.js",
+    "savedTo": "app.uxcam.com/_next/static/oxJsug1LoFQmmf8sYr8oX/_buildManifest.js",
+    "bytes": 2377,
+    "sha256": "a5b308360e457d6dd4f6c31da07a007c5a8975de112cc4e8a978c1cac03d1471",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/_next/static/oxJsug1LoFQmmf8sYr8oX/_ssgManifest.js",
+    "savedTo": "app.uxcam.com/_next/static/oxJsug1LoFQmmf8sYr8oX/_ssgManifest.js",
+    "bytes": 80,
+    "sha256": "678f6ce2cb80b1fe72fc67e7412be6e2ab6ada083111b64f7c40d35e3cba5e00",
+    "contentType": "application/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://app.uxcam.com/app/6aac10e38b560d598fba5340/overview",
+    "savedTo": "app.uxcam.com/app/6aac10e38b560d598fba5340/overview.html",
+    "bytes": 9149,
+    "sha256": "300e08f64e68af625e2706da7cb9f28681bfd58771ee29305bdba3fa577afd44",
+    "contentType": "text/html",
+    "httpStatus": 502,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://websdk-recording.uxcam.com/DomCollector.BBLa2u-I.js",
+    "savedTo": "websdk-recording.uxcam.com/DomCollector.BBLa2u-I.js",
+    "bytes": 229207,
+    "sha256": "d6c995449f6f1eed79afcf6811808a60087230797ccb7bcb9f3939aee67ea42a",
+    "contentType": "text/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://websdk-recording.uxcam.com/browser.DAhQtf15.js",
+    "savedTo": "websdk-recording.uxcam.com/browser.DAhQtf15.js",
+    "bytes": 18013,
+    "sha256": "a4f117d6401b45545492bf102df1a9734f35595f34892a70abce3ceb2d5e7417",
+    "contentType": "text/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://websdk-recording.uxcam.com/index.Bx2ehl_7.js",
+    "savedTo": "websdk-recording.uxcam.com/index.Bx2ehl_7.js",
+    "bytes": 69781,
+    "sha256": "2649169b83b3dfbda9f90bf044af2ec76124881f3afc3417b0854c3e407275da",
+    "contentType": "text/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  },
+  {
+    "url": "https://websdk-recording.uxcam.com/index.js",
+    "savedTo": "websdk-recording.uxcam.com/index.js",
+    "bytes": 71896,
+    "sha256": "f848b3c71794d15db82e7212f085346cd2360c1ebcfb005917f67d8c070372e0",
+    "contentType": "text/javascript",
+    "httpStatus": 200,
+    "source": "resourceTree"
+  }
+]

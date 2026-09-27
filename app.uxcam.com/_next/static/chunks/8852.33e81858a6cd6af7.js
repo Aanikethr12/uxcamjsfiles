@@ -1,0 +1,424 @@
+"use strict";
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[8852],{
+  79850:function(e,t,a){
+    var i=a(85893),
+    o=a(67294),
+    n=a(60612),
+    s=a(59506),
+    r=a(47955),
+    c=a(66873),
+    l=a(62357),
+    p=a(98359),
+    d=a(74936),
+    x=a(48203),
+    h=a(80432),
+    m=a(12810),
+    b=a(74855),
+    u=a(19521),
+    f=a(5257),
+    g=a(24842),
+    v=a(14416);
+    let{
+      Panel:j
+    }=p.default,
+    y=d.Z.Group,
+    w=u.default.div.withConfig({
+      componentId:"sc-fe4f5803-0"
+    })(["display:inline-block;margin:0px 0px 0px 15px;.ant-btn{border-radius:4px;border:1px solid rgba(165,165,165,0.4);color:#5D97FF;display:flex;flex-direction:row;justify-content:center;align-items:center;height:30px;line-height:30px;padding:0px 10px;}"]),
+    k=u.default.div.withConfig({
+      componentId:"sc-fe4f5803-1"
+    })(["position:relative;height:100%;.ant-collapse{padding-left:15px;padding-right:15px;}"]);
+    t.Z=()=>{
+      var e;
+      let[t,a]=(0,o.useState)("list"),
+      {
+        urlReducer:u
+      }=(0,v.v9)(e=>e),
+      {
+        shareSessionKey:N,
+        appId:Z,
+        sessionid:C
+      }=u,
+      {
+        sessionDetail:_
+      }=(0,f.Lc)(),
+      {
+        selectedHeaderField:F,
+        setSelectedHeaderField:A
+      }=(0,f.qI)(),
+      {
+        _id:z,
+        appId:I,
+        platform:D
+      }=_,
+      S=(0,o.useMemo)(()=>({
+        ...!N&&{
+          appid:Z||I,
+          sessionid:C||z,
+          anr_number:null==F?void 0:F.split("_")[1]
+        },
+        ...N&&{
+          anr_number:null==F?void 0:F.split("_")[1],
+          shareSessionKey:N
+        }
+      }),[Z,I,C,z,F,N]),
+      {
+        isLoading:L,
+        isFetching:E,
+        data:P,
+        refetch:T
+      }=(0,g.EJ)(N?"/uifreezes/public/ui_freeze_logs":"/uifreezes/ui_freeze_logs",S),
+      R=null==P?void 0:null===(e=P.data)||void 0===e?void 0:e.data,
+      K=e=>{
+        a(e)
+      };
+      (0,o.useEffect)(()=>(T(),()=>{
+        a("list")
+      }),[z,F]);
+      let M=(0,o.useMemo)(()=>{
+        let e=[],
+        t=null==R?void 0:R.exceptions,
+        a=null==R?void 0:R.threads;
+        return t instanceof Array&&t.map(t=>{
+          var a;
+          e.push("\n ".concat(t.name," : ").concat(t.method_name," :  ").concat(t.reason)),
+          "object"==typeof(null==t?void 0:t.callstack)&&(null==t||null===(a=t.callstack)||void 0===a||a.map(t=>e.push(1===D?"\n 	 at ".concat(t," "):"\n 	 ".concat(t))))
+        }),
+        a instanceof Array&&a.map(t=>{
+          e.push("\n ".concat(t.name,": ").concat(t.method_name)),
+          t.backtrace&&t.backtrace.map(t=>e.push(1===D?"\n 	 at ".concat(t," "):"\n 	 ".concat(t))),
+          t.properties&&(e.push("\n with additional properties"),Object.keys(t.properties).map(a=>{
+            e.push("\n 	 	 	 ".concat(a," : ").concat(t.properties[a]))
+          }))
+        }),
+        e
+      },[R]);
+      return(0,i.jsx)(k,{
+        children:(0,i.jsxs)("div",{
+          className:"stack-trace-box",
+          children:[(0,i.jsx)(w,{
+            children:(0,i.jsxs)(d.Z,{
+              onClick:()=>A("sessionVideo"),
+              children:[(0,i.jsx)(n.Z,{})," Back to replay"]
+            })
+          }),R?(0,i.jsxs)("div",{
+            children:[(0,i.jsx)("div",{
+              className:"anr-copy-bar",
+              children:(0,i.jsx)("div",{
+                className:"button-group",
+                children:(0,i.jsxs)(y,{
+                  children:[(0,i.jsx)(x.Z,{
+                    title:"List view",
+                    children:(0,i.jsx)(d.Z,{
+                      icon:(0,i.jsx)(s.Z,{}),
+                      onClick:()=>K("list"),
+                      type:"list"===t?"active":"",
+                      className:"btn-list-view"
+                    })
+                  }),(0,i.jsxs)(x.Z,{
+                    title:"Text view",
+                    children:[(0,i.jsx)(d.Z,{
+                      icon:(0,i.jsx)(r.Z,{}),
+                      onClick:()=>K("text"),
+                      type:"text"===t?"active":"",
+                      className:"btn-text-view"
+                    })," "]
+                  }),(0,i.jsx)(b.CopyToClipboard,{
+                    onCopy:()=>{},
+                    text:M,
+                    children:(0,i.jsx)(x.Z,{
+                      title:"Copy UI Freeze log",
+                      children:(0,i.jsx)(d.Z,{
+                        icon:(0,i.jsx)(c.Z,{}),
+                        onClick:()=>h.ZP.success("Log message for the UI Freeze has been copied to clipboard."),
+                        className:"btn-copy"
+                      })
+                    })
+                  })]
+                })
+              })
+            }),(0,i.jsx)(p.default,{
+              defaultActiveKey:["0"],
+              expandIconPosition:"right",
+              className:"text"===t?"custom-scrollbar crashlog-textview":"custom-scrollbar",
+              children:(null==R?void 0:R.threads)instanceof Array&&(null==R?void 0:R.threads.map((e,a)=>(0,i.jsxs)(j,{
+                header:(0,i.jsx)("span",{
+                  className:"panel-title",
+                  children:e.name
+                }),
+                disabled:!0,
+                extra:e.method_name,
+                showArrow:!1,
+                children:["text"===t&&(0,i.jsx)("ul",{
+                  className:"title",
+                  children:(0,i.jsx)("li",{
+                    children:"".concat(e.name,":"," ").concat(e.method_name)
+                  })
+                },"ab01"),(0,i.jsx)("ul",{
+                  className:"threads",
+                  children:e.backtrace&&e.backtrace.map((e,a)=>(0,i.jsx)("li",{
+                    children:"text"===t&&1===D?"at  ".concat(e):e
+                  },a))
+                })]
+              },a)))
+            })]
+          }):L||E||"string"!=typeof(null==R?void 0:R.message)?(0,i.jsx)(m.Z,{
+            className:"react-loader"
+          }):(0,i.jsxs)("div",{
+            style:{
+              alignItems:"center",
+              height:"70px",
+              width:"220px"
+            },
+            className:"no-data-msg-box",
+            children:[(0,i.jsx)(l.Z,{
+              style:{
+                marginRight:"10px"
+              }
+            }),"To see a full stack trace of the ANR please upgrade your SDK to version ".concat(1===D?"3.3.0":"3.2.4"," or higher.")]
+          })]
+        })
+      })
+    }
+  },
+  96880:function(e,t,a){
+    var i=a(85893),
+    o=a(67294),
+    n=a(98359),
+    s=a(88058),
+    r=a(74936),
+    c=a(48203),
+    l=a(80432),
+    p=a(60612),
+    d=a(59506),
+    x=a(47955),
+    h=a(66873),
+    m=a(62357),
+    b=a(12810),
+    u=a(36005),
+    f=a(74855),
+    g=a(5257),
+    v=a(24842),
+    j=a(14416),
+    y=a(19521);
+    let{
+      Panel:w
+    }=n.default,
+    {
+      TabPane:k
+    }=s.default,
+    N=r.Z.Group,
+    Z=y.default.div.withConfig({
+      componentId:"sc-2f557b1b-0"
+    })(["display:inline-block;margin:0px 0px 0px 15px;.ant-btn{border-radius:4px;border:1px solid rgba(165,165,165,0.4);color:#5D97FF;display:flex;flex-direction:row;justify-content:center;align-items:center;height:30px;line-height:30px;padding:0px 10px;}"]),
+    C=y.default.div.withConfig({
+      componentId:"sc-2f557b1b-1"
+    })(["position:relative;height:100%;.bugtrace-tab{width:100%;box-sizing:border-box;.ant-tabs-nav{margin-top:8px;.ant-tabs-nav-wrap{.ant-tabs-nav-list{.ant-tabs-tab{padding:5px 15px;color:#49576e;font-size:14px;font-weight:400;width:inherit;}.ant-tabs-tab.ant-tabs-tab-active{.ant-tabs-tab-btn{color:#5D97FF;font-weight:400;}}}}.ant-tabs-ink-bar{background-color:#5D97FF;height:1px;}}.ant-tabs-top-bar{border-bottom:0px !important;width:100% !important;.ant-tabs-nav-container{width:100%;}.ant-tabs-nav-wrap{margin-bottom:10px;width:100%;.ant-tabs-nav{border-bottom:solid 1px #C0CAD9;width:100%;.ant-tabs-tab{padding:5px 15px;color:#49576e;font-size:12px;font-weight:400;width:inherit;&:first-child{padding-left:5px;}&:hover{color:#5D97FF;}}.ant-tabs-tab-active{border-bottom:solid 2px #5D97FF;color:#5D97FF;font-weight:500;}}}}.ant-collapse{background-color:#fff !important;box-sizing:border-box;.ant-collapse-item .ant-collapse-header{padding-right:15px;background:#f5f5f5;.exception-title{h4{color:#49576e;display:inline-block;}p{color:#49576e;}.anticon-copy{margin-left:5px;opacity:0.8;}}}.ant-collapse-item{overflow:hidden;.ant-collapse-content{max-height:calc(100vh - 330px) !important;overflow-y:auto;}}}.properties-wrapper{border-radius:4px;padding:0px 16px;width:100%;box-sizing:border-box;.properties-head{display:flex;font-size:12px;font-weight:500;border-bottom:solid 1px #C0CAD0;background:#f5f5f5;padding:10px 15px;border:solid 1px #C0CAD0;border-radius:4px 4px 0px 0px;.properties-name{width:200px;}.properties-value{font-size:12px;padding-left:15px;width:calc(100% - 200px);}}.properties-content{padding:10px 15px;border:solid 1px #C0CAD0;border-top:0px;border-radius:0px 0px 4px 4px;.content{display:flex;.key{width:200px;padding-bottom:15px;line-height:16px;}.property{font-size:12px;padding-bottom:15px;padding-left:8px;line-height:16px;width:calc(100% - 200px);font-family:Roboto mono;.anticon-copy{margin-left:5px;display:none;}&:hover{.anticon-copy{display:inline-block;}}}}}}}.ant-collapse{padding-left:15px;padding-right:15px;}.properties-wrapper{padding:0 16px;max-height:calc(100vh - 290px);display:flex;flex-direction:column;.properties-head{display:flex;.properties-name{flex:1;}.properties-value{flex:1;}}.properties-content{overflow-y:auto;.content{display:flex;.key{flex:1;font-weight:500;font-size:12px;overflow-wrap:break-word;}.property{flex:1;max-width:50%;padding-left:8px;overflow-wrap:break-word;}}}}"]);
+    t.Z=()=>{
+      var e;
+      let[t,a]=(0,o.useState)("list"),
+      {
+        selectedHeaderField:y,
+        setSelectedHeaderField:_
+      }=(0,g.qI)(),
+      {
+        sessionDetail:F,
+        sessionBugInfo:A
+      }=(0,g.Lc)(),
+      {
+        urlReducer:z
+      }=(0,j.v9)(e=>e),
+      {
+        shareSessionKey:I,
+        appId:D,
+        sessionid:S,
+        starttime:L
+      }=z,
+      {
+        _id:E,
+        appId:P,
+        platform:T
+      }=F,
+      R=null==y?void 0:y.substring(10,null==y?void 0:y.indexOf("+")),
+      K=(0,o.useMemo)(()=>null==A?void 0:A.find(e=>{
+        var t;
+        return(null==e?void 0:null===(t=e.timeFromStart)||void 0===t?void 0:t.toString())===R
+      }),[R]),
+      M=(0,o.useMemo)(()=>({
+        ...!I&&{
+          appid:D||P,
+          sessionid:S||E,
+          time_from_start:(null==K?void 0:K.timeFromStart)||L
+        },
+        ...I&&{
+          time_from_start:(null==K?void 0:K.timeFromStart)||L,
+          shareSessionKey:I
+        }
+      }),[D,P,S,E,L,null==K?void 0:K.timeFromStart,I]),
+      {
+        isLoading:O,
+        data:B,
+        refetch:V
+      }=(0,v.xl)(I?"/exceptions/public/exception_logs":"/exceptions/exception_logs",M),
+      q=null==B?void 0:null===(e=B.data)||void 0===e?void 0:e.data,
+      G=(0,o.useMemo)(()=>{
+        let e=[],
+        t=null==q?void 0:q.exceptions,
+        a=null==q?void 0:q.threads;
+        return t instanceof Array&&t.map(t=>{
+          var a;
+          e.push("\n ".concat(t.name," : ").concat(t.method_name," :  ").concat(t.reason)),
+          "object"==typeof(null==t?void 0:t.callstack)&&(null==t||null===(a=t.callstack)||void 0===a||a.map(t=>e.push(1===T?"\n 	 at ".concat(t," "):"\n 	 ".concat(t))))
+        }),
+        a instanceof Array&&a.map(t=>{
+          e.push("\n ".concat(t.name,": ").concat(t.method_name)),
+          t.backtrace&&t.backtrace instanceof Array&&t.backtrace.map(t=>e.push(1===T?"\n 	 at ".concat(t," "):"\n 	 ".concat(t))),
+          t.properties&&(e.push("\n with additional properties"),Object.keys(t.properties).map(a=>{
+            e.push("\n 	 	 	 ".concat(a," : ").concat(t.properties[a]))
+          }))
+        }),
+        e
+      },[q]),
+      H=(e,t)=>(0,i.jsxs)("div",{
+        className:"exception-title",
+        children:[(0,i.jsx)("h4",{
+          children:"".concat(e)
+        }),(0,i.jsx)("p",{
+          children:"".concat(t)
+        })]
+      }),
+      U=e=>{
+        a(e)
+      };
+      return(0,o.useEffect)(()=>(V(),()=>{
+        a("list")
+      }),[y]),
+      (0,i.jsx)(C,{
+        children:(0,i.jsxs)("div",{
+          className:"stack-trace-box",
+          children:[(0,i.jsx)(Z,{
+            children:(0,i.jsxs)(r.Z,{
+              onClick:()=>_("sessionVideo"),
+              children:[(0,i.jsx)(p.Z,{})," Back to replay"]
+            })
+          }),O||!q||(0,u.xb)(q)?q&&0===q.length&&!O?(0,i.jsxs)("div",{
+            style:{
+              alignItems:"center",
+              height:"70px",
+              width:"220px"
+            },
+            className:"no-data-msg-box",
+            children:[(0,i.jsx)(m.Z,{
+              type:"warning",
+              style:{
+                marginRight:"10px"
+              }
+            }),"To see a full stack trace of the exception please upgrade your SDK to version ".concat(1===T?"3.3.0":"3.2.4"," or higher.")]
+          }):O?(0,i.jsx)(b.Z,{
+            className:"react-loader"
+          }):"":(0,i.jsxs)("div",{
+            children:[(0,i.jsx)("div",{
+              className:"bug-copy-bar",
+              children:(0,i.jsx)("div",{
+                className:"button-group",
+                children:(0,i.jsxs)(N,{
+                  children:[(0,i.jsx)(c.Z,{
+                    title:"List view",
+                    children:(0,i.jsx)(r.Z,{
+                      icon:(0,i.jsx)(d.Z,{}),
+                      onClick:()=>U("list"),
+                      type:"list"===t?"active":"",
+                      className:"btn-list-view"
+                    })
+                  }),(0,i.jsxs)(c.Z,{
+                    title:"Text view",
+                    children:[(0,i.jsx)(r.Z,{
+                      icon:(0,i.jsx)(x.Z,{}),
+                      onClick:()=>U("text"),
+                      type:"text"===t?"active":"",
+                      className:"btn-text-view"
+                    })," "]
+                  }),(0,i.jsx)(c.Z,{
+                    title:"Copy Exception log",
+                    children:(0,i.jsx)(r.Z,{
+                      icon:(0,i.jsx)(h.Z,{}),
+                      onClick:()=>{
+                        navigator.clipboard.writeText(G),
+                        l.ZP.success("Log message for the Exception has been copied to clipboard.")
+                      },
+                      className:"btn-copy"
+                    })
+                  })]
+                })
+              })
+            }),q&&q.threads instanceof Array&&q.threads.map(e=>(0,i.jsxs)(s.default,{
+              defaultActiveKey:"1",
+              className:"bugtrace-tab",
+              animated:!1,
+              children:[(0,i.jsx)(k,{
+                tab:"Stacktrace",
+                children:(0,i.jsx)(n.default,{
+                  defaultActiveKey:["1"],
+                  className:"custom-scrollbar",
+                  expandIconPosition:"right",
+                  children:(0,i.jsxs)(w,{
+                    header:H(e.name,e.reason),
+                    disabled:!0,
+                    extra:e.method_name,
+                    showArrow:!1,
+                    children:["text"===t&&(0,i.jsxs)("ul",{
+                      className:"title",
+                      children:[(0,i.jsx)("li",{
+                        children:"".concat(e.name,":"," "," ").concat(e.reason,":"," "," ").concat(e.method_name)
+                      })," "]
+                    },"ab01"),(0,i.jsx)("ul",{
+                      className:"threads",
+                      children:e.backtrace&&e.backtrace instanceof Array?e.backtrace.map((e,a)=>(0,i.jsx)("li",{
+                        children:"text"===t&&1===T?"at  ".concat(e):e
+                      },a)):(0,i.jsx)("li",{
+                        children:e.backtrace||""
+                      },e.backtrace||1)
+                    })]
+                  },"1")
+                })
+              },"1"),!(0,u.xb)(e.properties)&&(0,i.jsx)(k,{
+                tab:"Properties",
+                children:(0,i.jsxs)("div",{
+                  className:"properties-wrapper",
+                  children:[(0,i.jsxs)("div",{
+                    className:"properties-head",
+                    children:[(0,i.jsx)("div",{
+                      className:"properties-name",
+                      children:"Property"
+                    })," ",(0,i.jsx)("div",{
+                      className:"properties-value",
+                      children:"Value"
+                    })]
+                  }),(0,i.jsx)("div",{
+                    className:"properties-content",
+                    children:e.properties&&Object.keys(e.properties).map(t=>(0,i.jsxs)("div",{
+                      className:"content",
+                      children:[(0,i.jsx)("div",{
+                        className:"key",
+                        children:"".concat(t)
+                      }),(0,i.jsxs)("div",{
+                        className:"property",
+                        children:["".concat(e.properties[t]),(0,i.jsx)(f.CopyToClipboard,{
+                          onCopy:()=>{},
+                          text:"".concat(e.properties[t]),
+                          children:(0,i.jsx)(h.Z,{
+                            onClick:()=>l.ZP.success("Copied")
+                          })
+                        })]
+                      })]
+                    },t))
+                  })]
+                })
+              },"2")]
+            }))]
+          })]
+        })
+      })
+    }
+  }
+}]);

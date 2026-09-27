@@ -1,0 +1,309 @@
+"use strict";
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[8775],{
+  98775:function(e,a,n){
+    n.r(a),
+    n.d(a,{
+      BannerForTrial:function(){
+        return _
+      }
+    });
+    var s=n(85893),
+    l=n(67294),
+    t=n(14416),
+    o=n(30663),
+    r=n(19521),
+    c=n(94184),
+    i=n.n(c),
+    d=n(74936),
+    u=n(25104),
+    p=n(41609),
+    x=n.n(p),
+    h=n(66678),
+    m=n.n(h),
+    j=n(18879),
+    f=n(46315),
+    g=n(59416),
+    y=n(64863),
+    b=n(41371);
+    let v={
+      padding:"6px 10px",
+      margin:"0 6px",
+      fontSize:"14px",
+      lineHeight:"14px"
+    },
+    w=(0,r.default)(d.Z).withConfig({
+      componentId:"sc-f295ce08-0"
+    })(["border:unset;padding:0;> span{text-decoration:underline;font-size:14px;line-height:1.5;font-weight:500;}"]),
+    C=r.default.div.withConfig({
+      componentId:"sc-f295ce08-1"
+    })([".float-open-content{color:#253C66;font-size:14px;}"]),
+    k=r.default.div.withConfig({
+      componentId:"sc-f295ce08-2"
+    })([".float-open-content{color:#253C66;font-size:14px;font-weight:500;}"]),
+    N=["Free Plan || Web"],
+    _=e=>{
+      var a;
+      let{
+        currentOrgSubscription:n,
+        isIntegrated:r,
+        expirePlanMsg:c,
+        internalProblemMessage:p,
+        setTrialFlag:h,
+        handleCsrfAndQuoteModelVisible:_,
+        paymentStatus:Z,
+        remainingTrial:z,
+        taraTrialExpiryDate:F
+      }=e,
+      I=(0,t.I0)(),
+      {
+        setShowPricingModal:T,
+        selfServeFlag:E,
+        planFeatureAiSessions:M
+      }=(0,b.I)(),
+      {
+        setUpgradeModalVisible:P,
+        totalCredits:S
+      }=(0,y.fB)(),
+      U=!x()(n)&&m()(n),
+      D=(0,l.useMemo)(()=>(null==U?void 0:U.planName)||"",[U]),
+      W=(0,l.useCallback)(()=>{
+        T(!0),
+        I((0,o.CW)(null,{
+          eventName:E?"wa_see_pricing_clicked":"wa_request_pricing_clicked",
+          track_type:"event",
+          eventProperty:{
+            source:"banner"
+          }
+        }))
+      },[I,E,T]),
+      Y=(0,l.useCallback)(()=>{
+        if(I(h(!1)),window)try{
+          window.localStorage.setItem("paymentBannerCloseDate",new Date().toISOString())
+        }
+        catch(e){}
+      },[I,h]),
+      q=(0,l.useCallback)(async e=>{
+        z.days+z.hours!==0&&_(e),
+        W()
+      },[_,z,W]),
+      B=(0,l.useCallback)((e,a)=>Math.round(e+a/24),[]),
+      A=(0,l.useCallback)(()=>{
+        (0,j.aL)(),
+        I((0,o.CW)(null,{
+          eventName:"wa_contact_sales_clicked",
+          track_type:"event",
+          eventProperty:{}
+        }))
+      },[I]);
+      (0,l.useEffect)(()=>{
+        D&&N.includes(D)&&I(h(!1))
+      },[I,D,h]);
+      let R=(0,l.useMemo)(()=>{
+        var e,
+        a;
+        switch(null==Z?void 0:null===(a=Z.data)||void 0===a?void 0:null===(e=a.banner_detail)||void 0===e?void 0:e.status){
+          case"not_paid":return(0,s.jsxs)(s.Fragment,{
+            children:[(0,s.jsx)("b",{
+              children:"Service Alert:"
+            })," Access to the service may be restricted due to missed payments. Please settle your outstanding balance or contact ",(0,s.jsx)("a",{
+              href:"mailto:team@uxcam.com",
+              children:"team@uxcam.com"
+            })," immediately."]
+          });
+          case"payment_due":return(0,s.jsxs)(s.Fragment,{
+            children:["We're unable to process your payments. Please ",(0,s.jsx)(f.zx,{
+              style:v,
+              onClick:()=>{
+                var e,
+                a;
+                window.location.href=null==Z?void 0:null===(a=Z.data)||void 0===a?void 0:null===(e=a.banner_detail)||void 0===e?void 0:e.payment_update_url
+              },
+              children:"update your payment details"
+            })," or contact ",(0,s.jsx)("a",{
+              href:"mailto:team@uxcam.com",
+              children:"team@uxcam.com"
+            })," for assistance."]
+          });
+          default:return null
+        }
+      },[Z]),
+      H=(0,l.useMemo)(()=>{
+        if(!F)return null;
+        let e=new Date(F),
+        a=new Date,
+        n=Math.ceil((e.getTime()-a.getTime())/864e5);
+        return n>0?n:null
+      },[F]),
+      L=(0,l.useCallback)(()=>{
+        var e;
+        return(null==Z?void 0:null===(e=Z.data)||void 0===e?void 0:e.show_banner)&&R?(0,s.jsx)(C,{
+          className:i()("global-float-bar payment-due"),
+          children:(0,s.jsxs)("span",{
+            className:"float-open-content",
+            children:[(0,s.jsx)("strong",{
+              children:R
+            }),(0,s.jsx)(d.Z,{
+              icon:(0,s.jsx)(g.Z,{}),
+              className:"bar-close",
+              style:{
+                top:"0"
+              },
+              onClick:Y
+            })]
+          })
+        }):U.onTrial&&z&&(null==z?void 0:z.days)>=0&&(null==z?void 0:z.hours)>=0&&z.days+z.hours!==0?(0,s.jsx)(C,{
+          className:i()("global-float-bar",{
+            "float-bar-closed":c
+          },{
+            "trial-warning":(null==z?void 0:z.days)<=3
+          }),
+          children:0===E?(0,s.jsx)(u.Z,{
+            active:!0,
+            paragraph:{
+              rows:1
+            }
+          }):(0,s.jsx)("p",{
+            style:{
+              margin:"0"
+            },
+            children:(0,s.jsxs)("span",{
+              className:"float-open-content",
+              children:[z.days>=1?(0,s.jsxs)(s.Fragment,{
+                children:[(0,s.jsxs)("strong",{
+                  children:["".concat(B(z.days,z.hours)," ").concat(z.days>1?"days":"day"," ")," "]
+                })," ","remaining on your free trial."]
+              }):z.hours>=1?(0,s.jsxs)(s.Fragment,{
+                children:[(0,s.jsxs)("strong",{
+                  children:["".concat(z.hours," ").concat(z.hours>1?"hours":"hour"," ")," "]
+                })," ","left on your free trial."]
+              }):"Your trial period has now ended. ",(0,s.jsx)(f.zx,{
+                style:v,
+                onClick:q,
+                children:E?"Upgrade now":"Request pricing"
+              }),!E&&(0,s.jsxs)(s.Fragment,{
+                children:["or","  ",(0,s.jsx)(w,{
+                  type:"link",
+                  onClick:A,
+                  children:"contact sales"
+                })," ","to upgrade."]
+              }),(0,s.jsx)(d.Z,{
+                icon:(0,s.jsx)(g.Z,{}),
+                className:"bar-close",
+                style:{
+                  top:"0"
+                },
+                onClick:()=>I(h(!1))
+              })]
+            })
+          })
+        }):"free"!==U.planType||N.includes(D)?M&&H&&S?(0,s.jsx)(C,{
+          className:i()("global-float-bar tara-trial"),
+          children:(0,s.jsxs)("span",{
+            className:"float-open-content",
+            children:[(0,s.jsxs)("strong",{
+              children:[H," ",1===H?"day":"days"]
+            })," remaining on your Tara ",S," trial",(0,s.jsx)(f.zx,{
+              style:v,
+              onClick:()=>P(!0),
+              children:"Upgrade your plan"
+            }),(0,s.jsx)(d.Z,{
+              icon:(0,s.jsx)(g.Z,{}),
+              className:"bar-close",
+              style:{
+                top:"0"
+              },
+              onClick:()=>I(h(!1))
+            })]
+          })
+        }):"Expired"===U.status||"Canceled"===U.status?(0,s.jsx)(C,{
+          className:i()("global-float-bar"),
+          children:(0,s.jsxs)("span",{
+            className:"float-open-content",
+            children:[(0,s.jsxs)("strong",{
+              children:["Your plan was ","Expired"===U.status?"expired":"canceled","."]
+            }),(0,s.jsx)(f.zx,{
+              style:v,
+              onClick:W,
+              children:"Upgrade now"
+            }),(0,s.jsx)(d.Z,{
+              icon:(0,s.jsx)(g.Z,{}),
+              className:"bar-close",
+              style:{
+                top:"0"
+              },
+              onClick:()=>I(h(!1))
+            })]
+          })
+        }):E&&!r?(0,s.jsx)(C,{
+          className:i()("global-float-bar"),
+          children:(0,s.jsxs)("span",{
+            className:"float-open-content",
+            children:[(0,s.jsx)("strong",{
+              children:"Choose a plan that meets your needs."
+            }),(0,s.jsx)(f.zx,{
+              style:v,
+              onClick:W,
+              children:"Upgrade now"
+            }),(0,s.jsx)(d.Z,{
+              icon:(0,s.jsx)(g.Z,{}),
+              className:"bar-close",
+              style:{
+                top:"0"
+              },
+              onClick:()=>I(h(!1))
+            })]
+          })
+        }):null:(0,s.jsx)(k,{
+          className:i()("global-float-bar"),
+          children:0===E?(0,s.jsx)(u.Z,{
+            active:!0,
+            paragraph:{
+              rows:1
+            }
+          }):(0,s.jsxs)("span",{
+            className:"float-open-content",
+            children:["Expired"===U.status||"Canceled"===U.status?(0,s.jsxs)("strong",{
+              children:["Your plan was ","Expired"===U.status?"expired":"canceled","."]
+            }):"You are on the free plan.",(0,s.jsx)(f.zx,{
+              style:v,
+              onClick:W,
+              children:E?"Upgrade now":"Request pricing"
+            }),!E&&(0,s.jsxs)(s.Fragment,{
+              children:["or","  ",(0,s.jsx)(w,{
+                type:"link",
+                onClick:A,
+                children:"contact sales"
+              })," ","to upgrade."]
+            }),(0,s.jsx)(d.Z,{
+              icon:(0,s.jsx)(g.Z,{}),
+              className:"bar-close",
+              style:{
+                top:"0"
+              },
+              onClick:()=>I(h(!1))
+            })]
+          })
+        })
+      },[U.onTrial,U.planType,U.status,z,D,null==Z?void 0:null===(a=Z.data)||void 0===a?void 0:a.show_banner,R,E,r,c,B,q,A,I,h,W,Y,H,S,M,P]);
+      return p?(0,s.jsx)("div",{
+        className:i()("global-float-bar"),
+        children:(0,s.jsx)("p",{
+          style:{
+            margin:"0"
+          },
+          children:(0,s.jsxs)("span",{
+            className:"float-open-content",
+            children:[p," ",(0,s.jsx)("a",{
+              onClick:()=>window.Intercom&&window.Intercom("show"),
+              style:{
+                color:"#fff"
+              },
+              children:"Contact customer success team"
+            })," "]
+          })
+        })
+      }):U&&!c?(0,s.jsx)(L,{}):(0,s.jsx)(s.Fragment,{})
+    };
+    a.default=(0,l.memo)(_)
+  }
+}]);

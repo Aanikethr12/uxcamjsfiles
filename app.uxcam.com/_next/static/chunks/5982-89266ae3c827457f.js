@@ -1,0 +1,1294 @@
+"use strict";
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[5982],{
+  49705:function(t,a,e){
+    var n=e(85893),
+    r=e(67294),
+    i=e(38627),
+    o=e(9008),
+    c=e.n(o);
+    a.Z=(0,r.memo)(t=>{
+      let{
+        headTitle:a,
+        swiperStyles:e,
+        brainTreeScript:o,
+        intlTelInputStyles:d,
+        hubSpotLink:s,
+        chargebeeScript:l,
+        trialFlag:u
+      }=t;
+      return(0,r.useEffect)(()=>{
+        if("boolean"==typeof u){
+          if(u){
+            var t;
+            (null===(t=window)||void 0===t?void 0:t.Intercom)&&window.Intercom("update",{
+              hide_default_launcher:!0
+            });
+            return
+          }
+          document.querySelector("body").classList.remove("bottom-bar-visible")
+        }
+      },[u]),
+      (0,n.jsxs)(c(),{
+        children:[(0,n.jsx)("meta",{
+          charSet:"utf-8"
+        }),(0,n.jsx)("meta",{
+          name:"viewport",
+          content:"width=device-width, initial-scale=1, shrink-to-fit=no"
+        }),(0,n.jsx)("meta",{
+          name:"description",
+          content:"Understand how users actually use your mobile app, analyze funnels and deliver the perfect experience."
+        }),(0,n.jsx)("meta",{
+          property:"og:title",
+          content:"UXCam Dashboard"
+        }),(0,n.jsx)("meta",{
+          property:"og:description",
+          content:"Understand how users actually use your mobile app, analyze funnels and deliver the perfect experience."
+        }),(0,n.jsx)("title",{
+          children:a||"".concat(i.Vc.production,"UXCam Dashboard")
+        }),(0,n.jsx)("link",{
+          rel:"icon",
+          href:"/static/favicon.ico"
+        }),(0,n.jsx)("link",{
+          rel:"preconnect",
+          href:"https://fonts.gstatic.com"
+        }),(0,n.jsx)("link",{
+          rel:"preconnect",
+          href:"https://pythonapi-prod.uxcam.com"
+        }),(0,n.jsx)("link",{
+          rel:"preconnect",
+          href:"https://dashboardapi.uxcam.com"
+        }),(0,n.jsx)("link",{
+          rel:"stylesheet",
+          href:"https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap",
+          defer:!0
+        }),e&&(0,n.jsx)("link",{
+          rel:"stylesheet",
+          href:e
+        }),d&&(0,n.jsx)("link",{
+          rel:"stylesheet",
+          href:d
+        }),o&&(0,n.jsx)("script",{
+          type:"text/javascript",
+          src:o,
+          defer:!0
+        }),l&&(0,n.jsx)("script",{
+          type:"text/javascript",
+          src:l,
+          defer:!0
+        }),s&&(0,n.jsx)("script",{
+          type:"text/javascript",
+          id:"hs-script-loader",
+          async:!0,
+          defer:!0,
+          src:s
+        }),(0,n.jsx)("noscript",{
+          children:(0,n.jsx)("div",{
+            className:"uxcam-javascript-disabled",
+            children:"This site requires JavaScript. I will only be visible if you have it disabled."
+          })
+        })]
+      })
+    })
+  },
+  95315:function(t,a,e){
+    e.d(a,{
+      AD:function(){
+        return b
+      },
+      BZ:function(){
+        return R
+      },
+      C0:function(){
+        return N
+      },
+      E1:function(){
+        return I
+      },
+      Eo:function(){
+        return P
+      },
+      IW:function(){
+        return l
+      },
+      LN:function(){
+        return k
+      },
+      MH:function(){
+        return T
+      },
+      Nt:function(){
+        return m
+      },
+      O8:function(){
+        return L
+      },
+      QN:function(){
+        return U
+      },
+      Qy:function(){
+        return Z
+      },
+      R7:function(){
+        return f
+      },
+      RL:function(){
+        return u
+      },
+      Xp:function(){
+        return v
+      },
+      Y$:function(){
+        return C
+      },
+      Yx:function(){
+        return M
+      },
+      _3:function(){
+        return G
+      },
+      ad:function(){
+        return A
+      },
+      b3:function(){
+        return S
+      },
+      dZ:function(){
+        return E
+      },
+      d_:function(){
+        return h
+      },
+      g5:function(){
+        return D
+      },
+      h9:function(){
+        return j
+      },
+      hK:function(){
+        return p
+      },
+      hd:function(){
+        return w
+      },
+      hf:function(){
+        return z
+      },
+      l5:function(){
+        return O
+      },
+      lx:function(){
+        return y
+      },
+      n2:function(){
+        return Q
+      },
+      p1:function(){
+        return x
+      },
+      vK:function(){
+        return _
+      },
+      zF:function(){
+        return g
+      }
+    });
+    var n=e(88767),
+    r=e(81383),
+    i=e(38014),
+    o=e(28852),
+    c=e(7855),
+    d=e(10013),
+    s=e(80432);
+    let l=function(t){
+      let a=!(arguments.length>1)||void 0===arguments[1]||arguments[1];
+      return(0,n.useQuery)("teamList".concat(t),()=>r.Z.getTeamList(t).then(t=>{
+        var a;
+        return null==t?void 0:null===(a=t.data)||void 0===a?void 0:a.data
+      }).catch(t=>{
+        var a;
+        return null==t?void 0:null===(a=t.response)||void 0===a?void 0:a.data
+      }),{
+        retry:!1,
+        enabled:a
+      })
+    },
+    u=t=>(0,n.useQuery)("appList_".concat(t),()=>r.Z.getOrgAppList(t).then(t=>{
+      var a;
+      return null==t?void 0:null===(a=t.data)||void 0===a?void 0:a.data
+    }),{
+      enabled:!!t
+    }),
+    p=(t,a)=>(0,n.useQuery)("create_app",()=>r.Z.createApp(t,a).then(t=>null==t?void 0:t.data).catch(t=>{
+      var a;
+      return null==t?void 0:null===(a=t.response)||void 0===a?void 0:a.data
+    }),{
+      enabled:!1
+    }),
+    v=(t,a)=>(0,n.useQuery)("delete_app",()=>r.Z.deleteApp(t,a).then(t=>{
+      var a;
+      return null==t?void 0:null===(a=t.data)||void 0===a?void 0:a.data
+    }).catch(t=>{
+      var a;
+      return null==t?void 0:null===(a=t.response)||void 0===a?void 0:a.data
+    }),{
+      enabled:!1
+    }),
+    h=(t,a)=>(0,n.useQuery)("update_app",()=>r.Z.updateApp(t,a).then(t=>{
+      var a;
+      return null==t?void 0:null===(a=t.data)||void 0===a?void 0:a.data
+    }).catch(t=>{
+      var a;
+      return null==t?void 0:null===(a=t.response)||void 0===a?void 0:a.data
+    }),{
+      enabled:!1
+    }),
+    m=t=>{
+      let{
+        payload:a,
+        appId:e
+      }=t;
+      return r.Z.updateAppImage(a,e).then(t=>{
+        var a;
+        return null==t?void 0:null===(a=t.data)||void 0===a?void 0:a.data
+      }).catch(t=>{
+        var a;
+        return null==t?void 0:null===(a=t.response)||void 0===a?void 0:a.data
+      })
+    },
+    b=(t,a)=>(0,n.useQuery)("transfer_ownership",()=>r.Z.transferOwnership(t,a).then(t=>null==t?void 0:t.data).catch(t=>{
+      var a;
+      return null==t?void 0:null===(a=t.response)||void 0===a?void 0:a.data
+    }),{
+      enabled:!1
+    }),
+    g=(t,a)=>(0,n.useQuery)(a,()=>i.Z.forwardApi(t,"csv_export/basic_export").then(t=>null==t?void 0:t.data).catch(t=>{
+      var a;
+      return null==t?void 0:null===(a=t.response)||void 0===a?void 0:a.data
+    }),{
+      enabled:!1,
+      cacheTime:0
+    }),
+    y=t=>(0,n.useQuery)("".concat(t,"-active"),()=>d.Z.getActiveSubscription(t).then(t=>{
+      var a;
+      return null==t?void 0:null===(a=t.data)||void 0===a?void 0:a.data
+    }).catch(t=>{
+      var a,
+      e,
+      n;
+      s.ZP.error(null==t?void 0:null===(n=t.response)||void 0===n?void 0:null===(e=n.data)||void 0===e?void 0:null===(a=e.error)||void 0===a?void 0:a.message)
+    }),{}),
+    w=(t,a)=>(0,n.useQuery)([],()=>r.Z.resendInvite(t,a).then(t=>null==t?void 0:t.data).catch(t=>{
+      var a;
+      return null==t?void 0:null===(a=t.response)||void 0===a?void 0:a.data
+    }),{
+      enabled:!1
+    }),
+    f=t=>(0,n.useQuery)("".concat(t),()=>r.Z.getRolesAndPermission().then(t=>{
+      var a;
+      return null==t?void 0:null===(a=t.data)||void 0===a?void 0:a.data
+    }).catch(t=>{
+      var a,
+      e,
+      n;
+      s.ZP.error(null==t?void 0:null===(n=t.response)||void 0===n?void 0:null===(e=n.data)||void 0===e?void 0:null===(a=e.error)||void 0===a?void 0:a.message)
+    }),{}),
+    C=t=>(0,n.useQuery)("".concat(t),()=>r.Z.getNewProfile().then(t=>{
+      var a;
+      return null==t?void 0:null===(a=t.data)||void 0===a?void 0:a.data
+    }).catch(t=>{
+      var a,
+      e,
+      n;
+      s.ZP.error(null==t?void 0:null===(n=t.response)||void 0===n?void 0:null===(e=n.data)||void 0===e?void 0:null===(a=e.error)||void 0===a?void 0:a.message)
+    }),{}),
+    P=t=>(0,n.useQuery)("total_apps_".concat(t),()=>r.Z.getAllAppList(t).then(t=>{
+      var a;
+      return null==t?void 0:null===(a=t.data)||void 0===a?void 0:a.data
+    }).catch(t=>{
+      var a;
+      return null==t?void 0:null===(a=t.response)||void 0===a?void 0:a.data
+    }),{}),
+    x=t=>(0,n.useQuery)([],()=>r.Z.updateUserName(t).then(t=>{
+      var a;
+      return null==t?void 0:null===(a=t.data)||void 0===a?void 0:a.data
+    }).catch(t=>{
+      var a;
+      return null==t?void 0:null===(a=t.response)||void 0===a?void 0:a.data
+    }),{
+      enabled:!1
+    }),
+    T=()=>(0,n.useQuery)("user-mfa",()=>r.Z.fetchMFAStatus().then(t=>{
+      var a;
+      return null==t?void 0:null===(a=t.data)||void 0===a?void 0:a.data
+    }).catch(t=>{
+      var a;
+      return null==t?void 0:null===(a=t.response)||void 0===a?void 0:a.data
+    }),{
+      enabled:!1
+    }),
+    S=async t=>{
+      let a=(null==t?void 0:t.code1)?"enable-mfa":"disable-mfa",
+      e=await r.Z.updateMFAStatus(t,a);
+      return null==e?void 0:e.data
+    },
+    Z=t=>{
+      let{
+        queryKey:a,
+        orgId:e,
+        chargebeeData:r
+      }=t;
+      return(0,n.useQuery)(a,()=>d.Z.getCurrentSubscription(e,r).then(t=>{
+        var a;
+        return null==t?void 0:null===(a=t.data)||void 0===a?void 0:a.data
+      }).catch(t=>{
+        var a,
+        e,
+        n;
+        return s.ZP.error((null==t?void 0:null===(n=t.response)||void 0===n?void 0:null===(e=n.data)||void 0===e?void 0:null===(a=e.error)||void 0===a?void 0:a.message)||"Unable to fetch subscription")
+      }))
+    },
+    A=t=>(0,n.useQuery)("retry_".concat(t),()=>d.Z.retryPayment(t).then(t=>{
+      var a,
+      e;
+      return(null==t?void 0:null===(a=t.data)||void 0===a?void 0:a.data)&&s.ZP.success("Your payment has been done"),
+      null==t?void 0:null===(e=t.data)||void 0===e?void 0:e.data
+    }).catch(t=>{
+      var a,
+      e,
+      n;
+      s.ZP.error((null==t?void 0:null===(n=t.response)||void 0===n?void 0:null===(e=n.data)||void 0===e?void 0:null===(a=e.error)||void 0===a?void 0:a.message)||"Unable to retry payment")
+    }),{
+      enabled:!1
+    }),
+    O=(t,a)=>(0,n.useQuery)("".concat(null==t?void 0:t.name),()=>r.Z.updateOrgName(t,a).then(t=>{
+      var a;
+      return null==t?void 0:null===(a=t.data)||void 0===a?void 0:a.data
+    }).catch(t=>{
+      var a,
+      e,
+      n;
+      return s.ZP.error((null==t?void 0:null===(n=t.response)||void 0===n?void 0:null===(e=n.data)||void 0===e?void 0:null===(a=e.error)||void 0===a?void 0:a.message)||"Unable to update organization name")
+    }),{
+      enabled:!1
+    }),
+    U=(t,a)=>r.Z.updateOrgImage(t,a).then(t=>{
+      var a;
+      return null==t?void 0:null===(a=t.data)||void 0===a?void 0:a.data
+    }).catch(t=>{
+      var a;
+      return null==t?void 0:null===(a=t.response)||void 0===a?void 0:a.data
+    }),
+    z=(t,a)=>(0,n.useQuery)(t,()=>r.Z.fetchAppSetting(a).then(t=>{
+      var a;
+      return null==t?void 0:null===(a=t.data)||void 0===a?void 0:a.data
+    }).catch(t=>{
+      var a,
+      e,
+      n;
+      return s.ZP.error((null==t?void 0:null===(n=t.response)||void 0===n?void 0:null===(e=n.data)||void 0===e?void 0:null===(a=e.error)||void 0===a?void 0:a.message)||"Unable to fetch app setting data"),
+      t.response.data.error
+    }),{
+      enabled:!!a
+    }),
+    _=(t,a)=>(0,n.useQuery)(t,()=>o.Z.fetchData(a).then(t=>{
+      var a;
+      let e=(null==t?void 0:null===(a=t.data)||void 0===a?void 0:a.data)||[];
+      return(null==e?void 0:e.length)?e.map(t=>({
+        key:"".concat(t," (android)"),
+        val:"".concat(t," (android)"),
+        type:"android"
+      })):[]
+    }).catch(t=>{
+      var a,
+      e,
+      n;
+      return s.ZP.error((null==t?void 0:null===(n=t.response)||void 0===n?void 0:null===(e=n.data)||void 0===e?void 0:null===(a=e.error)||void 0===a?void 0:a.message)||"Unable to get sdk versions")
+    }),{
+      enabled:!1
+    }),
+    k=(t,a)=>(0,n.useQuery)(t,()=>o.Z.fetchData(a).then(t=>{
+      var a;
+      let e=(null==t?void 0:null===(a=t.data)||void 0===a?void 0:a.data)||[];
+      return(null==e?void 0:e.length)?e.map(t=>({
+        key:"".concat(t," (ios)"),
+        val:"".concat(t," (ios)"),
+        type:"ios"
+      })):[]
+    }).catch(t=>{
+      var a,
+      e,
+      n;
+      return s.ZP.error((null==t?void 0:null===(n=t.response)||void 0===n?void 0:null===(e=n.data)||void 0===e?void 0:null===(a=e.error)||void 0===a?void 0:a.message)||"Unable to get sdk versions")
+    }),{
+      enabled:!1
+    }),
+    E=t=>{
+      let{
+        appId:a,
+        data:e
+      }=t;
+      return r.Z.updateDataCaptureAndRecording(a,e).then(t=>null==t?void 0:t.data).catch(t=>{
+        var a;
+        return null==t?void 0:null===(a=t.response)||void 0===a?void 0:a.data
+      })
+    },
+    I=(t,a)=>(0,n.useQuery)(t,()=>c.Z.getScreenEditedList(a).then(t=>{
+      var a;
+      return null==t?void 0:null===(a=t.data)||void 0===a?void 0:a.data
+    }).catch(t=>{
+      var a,
+      e,
+      n;
+      return s.ZP.error((null==t?void 0:null===(n=t.response)||void 0===n?void 0:null===(e=n.data)||void 0===e?void 0:null===(a=e.error)||void 0===a?void 0:a.message)||"Unable to get updated screens")
+    }),{
+      enabled:!1
+    }),
+    Q=t=>(0,n.useQuery)("payment_info_".concat(t),()=>r.Z.fetchCardPaymentInfo(t).then(t=>{
+      var a;
+      return null==t?void 0:null===(a=t.data)||void 0===a?void 0:a.data
+    }).catch(t=>{
+      var a,
+      e,
+      n;
+      return s.ZP.error((null==t?void 0:null===(n=t.response)||void 0===n?void 0:null===(e=n.data)||void 0===e?void 0:null===(a=e.error)||void 0===a?void 0:a.message)||"Unable to fetch payment info")
+    })),
+    L=t=>r.Z.getChargebeeLink(t).then(t=>{
+      var a;
+      return null==t?void 0:null===(a=t.data)||void 0===a?void 0:a.data
+    }).catch(t=>{
+      var a,
+      e,
+      n,
+      r,
+      i,
+      o;
+      s.ZP.error((null==t?void 0:null===(n=t.response)||void 0===n?void 0:null===(e=n.data)||void 0===e?void 0:null===(a=e.error)||void 0===a?void 0:a.message)||(null==t?void 0:null===(o=t.response)||void 0===o?void 0:null===(i=o.data)||void 0===i?void 0:null===(r=i.error)||void 0===r?void 0:r.detail)||"Unable to fetch the chargebee link")
+    }),
+    j=(t,a)=>r.Z.updateChargebeeLink(t,a).then(t=>{
+      var a;
+      return null==t?void 0:null===(a=t.data)||void 0===a?void 0:a.data
+    }).catch(t=>{
+      var a,
+      e,
+      n;
+      s.ZP.error((null==t?void 0:null===(n=t.response)||void 0===n?void 0:null===(e=n.data)||void 0===e?void 0:null===(a=e.error)||void 0===a?void 0:a.message)||"Unable to fetch the chargebee link")
+    }),
+    R=t=>r.Z.duplicateDomainAccess(t).then(t=>null==t?void 0:t.data).catch(t=>{
+      var a;
+      return null==t?void 0:null===(a=t.response)||void 0===a?void 0:a.data
+    }),
+    G=t=>(0,n.useQuery)("unpaid_invoice_payment_link_".concat(t),()=>d.Z.getUnpaidInvoicePaymentLink(t).then(t=>{
+      var a;
+      return null==t?void 0:null===(a=t.data)||void 0===a?void 0:a.data
+    }).catch(t=>{
+      var a,
+      e,
+      n;
+      return s.ZP.error((null==t?void 0:null===(n=t.response)||void 0===n?void 0:null===(e=n.data)||void 0===e?void 0:null===(a=e.error)||void 0===a?void 0:a.message)||"Unable to fetch unpaid invoice payment link")
+    })),
+    N=function(t){
+      let a=arguments.length>1&&void 0!==arguments[1]&&arguments[1];
+      return(0,n.useQuery)("ai_overview_".concat(t),()=>d.Z.getAIOverview(t).then(t=>{
+        var a;
+        return null==t?void 0:null===(a=t.data)||void 0===a?void 0:a.data
+      }).catch(t=>{
+        var a,
+        e,
+        n;
+        return s.ZP.error((null==t?void 0:null===(n=t.response)||void 0===n?void 0:null===(e=n.data)||void 0===e?void 0:null===(a=e.error)||void 0===a?void 0:a.message)||"Unable to fetch AI overview")
+      }),{
+        enabled:!!t&&!!a
+      })
+    },
+    D=async t=>{
+      let{
+        orgId:a,
+        appId:e,
+        isAIEnabled:n
+      }=t;
+      try{
+        let t=await d.Z.toggleAIForApp(a,e,n);
+        return null==t?void 0:t.data
+      }
+      catch(e){
+        var r,
+        i,
+        o;
+        let t=null==e?void 0:null===(i=e.response)||void 0===i?void 0:null===(r=i.data)||void 0===r?void 0:r.error,
+        a=(null==t?void 0:t.message)||(null==t?void 0:null===(o=t.non_field_errors)||void 0===o?void 0:o[0])||"Unable to toggle AI for app";
+        throw s.ZP.error(a),
+        e
+      }
+    },
+    M=function(t){
+      let a=arguments.length>1&&void 0!==arguments[1]&&arguments[1];
+      return(0,n.useQuery)("ai_usage_overview_".concat(t),()=>d.Z.getAIUsageOverview(t).then(t=>{
+        var a;
+        return null==t?void 0:null===(a=t.data)||void 0===a?void 0:a.data
+      }).catch(t=>{
+        var a,
+        e,
+        n;
+        return s.ZP.error((null==t?void 0:null===(n=t.response)||void 0===n?void 0:null===(e=n.data)||void 0===e?void 0:null===(a=e.error)||void 0===a?void 0:a.message)||"Unable to fetch AI usage overview")
+      }),{
+        enabled:!!t&&!!a
+      })
+    }
+  },
+  7855:function(t,a,e){
+    var n=e(87066),
+    r=e(98777);
+    let{
+      CancelToken:i
+    }=n.default,
+    o=null,
+    c=null,
+    d=null,
+    s=null,
+    l=0;
+    class u{
+      static async screenList(t){
+        l++,
+        o&&await o(l);
+        let a=await r.be.get("".concat("https://dashboardapi.uxcam.com","/app/").concat(t,"/screen"),{
+          withCredentials:!0,
+          cancelToken:new i(t=>{
+            o=t,
+            l=0
+          })
+        });
+        return o=null,
+        a
+      }
+      static async screenDetail(t,a,e){
+        c&&await c(l);
+        let n=await r.be.get("".concat("https://dashboardapi.uxcam.com","/app/").concat(t,"/screen/").concat(e),{
+          withCredentials:!0,
+          cancelToken:new i(t=>{
+            c=t
+          })
+        });
+        return c=null,
+        n
+      }
+      static async screenHeader(t,a,e){
+        d&&await d(l);
+        let n=await r.be.get("".concat("https://dashboardapi.uxcam.com","/app/").concat(t,"/screen/").concat(e,"/show-header"),{
+          withCredentials:!0,
+          cancelToken:new i(t=>{
+            d=t
+          })
+        });
+        return d=null,
+        n
+      }
+      static async screenEntryExit(t,a,e){
+        s&&await s(l);
+        let n=await r.be.get("".concat("https://dashboardapi.uxcam.com","/app/").concat(t,"/screen/").concat(e,"/show-entry-exit"),{
+          withCredentials:!0,
+          cancelToken:new i(t=>{
+            s=t
+          })
+        });
+        return s=null,
+        n
+      }
+      static async customScreenName(t){
+        return await (0,r.be)({
+          method:"POST",
+          url:"".concat("https://pythonapi-prod.uxcam.com","/screen/update-screens-name"),
+          data:t,
+          withCredentials:!0,
+          responseType:"json",
+          validateStatus:t=>t>=200&&t<401
+        })
+      }
+      static async getScreenEditedList(t){
+        return await (0,r.be)({
+          method:"POST",
+          url:"".concat("https://pythonapi-prod.uxcam.com","/screen/display-screens-list"),
+          data:{
+            appid:t
+          },
+          withCredentials:!0
+        })
+      }
+    }
+    a.Z=u
+  },
+  81383:function(t,a,e){
+    var n=e(98777);
+    let r="https://auth.uxcam.com",
+    i="https://dashboardapi.uxcam.com",
+    o="https://das-api.uxcam.com";
+    class c{
+      static async getTeamList(t){
+        return(0,n.be)({
+          method:"GET",
+          url:"".concat(r,"/org/").concat(t,"/team"),
+          withCredentials:!0
+        })
+      }
+      static async inviteTeamMates(t){
+        let{
+          data:a,
+          orgId:e
+        }=t;
+        return(0,n.be)({
+          method:"POST",
+          url:"".concat(r,"/org/").concat(e,"/team/invite"),
+          data:a,
+          withCredentials:!0
+        })
+      }
+      static async editTeamMates(t){
+        let{
+          orgId:a,
+          data:e,
+          id:i,
+          inviteId:o
+        }=t;
+        return(0,n.be)({
+          method:"PUT",
+          url:"".concat(r,"/org/").concat(a,"/team/").concat(o?"invite/".concat(o):i),
+          data:e,
+          withCredentials:!0
+        })
+      }
+      static async resendInvite(t,a){
+        return(0,n.be)({
+          method:"POST",
+          url:"".concat(r,"/org/").concat(a,"/team/invite/resend"),
+          data:{
+            email:t
+          },
+          withCredentials:!0
+        })
+      }
+      static async deleteTeammates(t){
+        let{
+          orgId:a,
+          data:e
+        }=t;
+        return(0,n.be)({
+          method:"POST",
+          url:"".concat(r,"/org/").concat(a,"/team/delete"),
+          data:e,
+          withCredentials:!0
+        })
+      }
+      static async transferOwnership(t,a){
+        return(0,n.be)({
+          method:"PUT",
+          url:"".concat(r,"/org/").concat(a,"/transfer-ownership"),
+          data:{
+            id:t
+          },
+          withCredentials:!0
+        })
+      }
+      static async getQueryPlanChange(t,a){
+        return(0,n.be)({
+          method:"POST",
+          url:"".concat(i,"/organization/").concat(t,"/subscription/query-premium-plan-change"),
+          data:{
+            uxcamPlan:a
+          },
+          withCredentials:!0
+        })
+      }
+      static async changePayment(t,a){
+        return(0,n.be)({
+          method:"POST",
+          url:"".concat(i,"/organization/").concat(t,"/subscription/change-payment-method"),
+          data:{
+            paymentMethodNonce:a
+          },
+          withCredentials:!0
+        })
+      }
+      static async updatePlan(t,a,e,r,o){
+        return(0,n.be)({
+          method:"POST",
+          url:"".concat(i,"/organization/").concat(t,"/subscription/update-your-plan"),
+          data:{
+            uxcamPlan:a,
+            paymentMethodNonce:e,
+            apps:r,
+            team:o
+          },
+          withCredentials:!0
+        })
+      }
+      static async getClientSubscriptionToken(t){
+        return(0,n.be)({
+          method:"GET",
+          url:"".concat(i,"/organization/").concat(t,"/subscription/client-token"),
+          withCredentials:!0
+        })
+      }
+      static async getOrgAppList(t){
+        return(0,n.be)({
+          method:"GET",
+          url:"".concat(i,"/organization/").concat(t,"/app/list"),
+          withCredentials:!0
+        })
+      }
+      static async createApp(t,a){
+        return(0,n.be)({
+          method:"POST",
+          url:"".concat(o,"/app/create-with-region/organization/").concat(a),
+          data:t,
+          withCredentials:!0
+        })
+      }
+      static async updateApp(t,a){
+        return(0,n.be)({
+          method:"PUT",
+          url:"".concat(i,"/app/").concat(a,"/update-name"),
+          data:{
+            name:t
+          },
+          withCredentials:!0
+        })
+      }
+      static async deleteApp(t,a){
+        return(0,n.be)({
+          method:"DELETE",
+          url:"".concat(i,"/app/").concat(a),
+          withCredentials:!0,
+          data:t
+        })
+      }
+      static async updateAppImage(t,a){
+        return(0,n.be)({
+          method:"POST",
+          url:"".concat(o,"/app/").concat(a,"/update-app-image"),
+          data:t,
+          withCredentials:!0
+        })
+      }
+      static async getRolesAndPermission(){
+        return(0,n.be)({
+          method:"GET",
+          url:"".concat(r,"/user/roles"),
+          withCredentials:!0
+        })
+      }
+      static async getNewProfile(){
+        return(0,n.be)({
+          method:"GET",
+          url:"".concat(r,"/user/profile"),
+          withCredentials:!0
+        })
+      }
+      static async getAllAppList(t){
+        return(0,n.be)({
+          method:"GET",
+          url:"".concat(i,"/organization/").concat(t,"/app"),
+          withCredentials:!0
+        })
+      }
+      static async updateUserName(t){
+        return(0,n.be)({
+          method:"POST",
+          url:"".concat(r,"/user/profile/update-name"),
+          data:t,
+          withCredentials:!0
+        })
+      }
+      static async fetchMFAStatus(){
+        return(0,n.be)({
+          method:"GET",
+          url:"".concat(i,"/profile/enable-mfa"),
+          withCredentials:!0
+        })
+      }
+      static async updateMFAStatus(t,a){
+        return(0,n.be)({
+          method:"POST",
+          url:"".concat(i,"/profile/").concat(a),
+          data:t,
+          withCredentials:!0
+        })
+      }
+      static async getChargebeeLink(t){
+        return(0,n.be)({
+          method:"GET",
+          url:"".concat("https://das-api.uxcam.com","/").concat(t),
+          withCredentials:!0
+        })
+      }
+      static async updateOrgName(t,a){
+        return(0,n.be)({
+          method:"PUT",
+          url:"".concat(i,"/organization/").concat(a,"/update-name"),
+          data:t,
+          withCredentials:!0
+        })
+      }
+      static async updateOrgImage(t,a){
+        return(0,n.be)({
+          method:"POST",
+          url:"".concat(o,"/organization/").concat(a,"/update-org-image"),
+          data:t,
+          withCredentials:!0
+        })
+      }
+      static async emailToTeammates(t){
+        let{
+          orgId:a,
+          data:e
+        }=t;
+        return(0,n.be)({
+          method:"POST",
+          url:"".concat(r,"/org/").concat(a,"/team/developer-invite"),
+          data:e,
+          withCredentials:!0
+        })
+      }
+      static async fetchAppSetting(t){
+        return(0,n.be)({
+          method:"GET",
+          url:"".concat(o,"/app/").concat(t,"/recording-setting"),
+          withCredentials:!0
+        })
+      }
+      static async updateDataCaptureAndRecording(t,a){
+        return(0,n.be)({
+          method:"PUT",
+          url:"".concat(o,"/app/").concat(t,"/recording-setting"),
+          data:a,
+          withCredentials:!0
+        })
+      }
+      static async updateProfileInfo(t){
+        return(0,n.be)({
+          method:"PUT",
+          url:"".concat(r,"/user/update-profile"),
+          data:t,
+          withCredentials:!0
+        })
+      }
+      static async updateProfileRemindMeLater(){
+        return(0,n.be)({
+          method:"POST",
+          url:"".concat(r,"/user/update-profile/remind-me-later"),
+          data:{},
+          withCredentials:!0
+        })
+      }
+      static async updatePaymentInfo(t){
+        let{
+          requestUrl:a,
+          data:e
+        }=t;
+        return(0,n.be)({
+          method:"POST",
+          url:"".concat(i,"/").concat(a),
+          data:e,
+          withCredentials:!0
+        })
+      }
+      static async fetchCardPaymentInfo(t){
+        return(0,n.be)({
+          method:"GET",
+          url:"".concat(o,"/subscription/payment/organization/").concat(t),
+          withCredentials:!0
+        })
+      }
+      static async updateChargebeeLink(t,a){
+        return(0,n.be)({
+          method:"POST",
+          url:"".concat(o,"/").concat(t),
+          data:a,
+          withCredentials:!0
+        })
+      }
+      static async duplicateDomainAccess(t){
+        return await n.be.post("".concat(r,"/org/request-access/").concat(t),{})
+      }
+      static async downgradeToFreePlan(t){
+        return(0,n.be)({
+          method:"POST",
+          url:"".concat(o,"/subscription/switch-to-free-plan/organization/").concat(t),
+          withCredentials:!0
+        })
+      }
+    }
+    a.Z=c
+  },
+  10013:function(t,a,e){
+    var n=e(87066),
+    r=e(98777);
+    let{
+      CancelToken:i
+    }=n.default,
+    o=null,
+    c=0;
+    class d{
+      static async getClientSubscriptionToken(t){
+        return await r.be.get("".concat("https://dashboardapi.uxcam.com","/organization/").concat(t,"/subscription/client-token"),{
+          withCredentials:!0,
+          validateStatus:t=>t>=200&&t<401
+        })
+      }
+      static async getCurrentSubscription(t,a){
+        c++,
+        o&&await o(c);
+        let e="".concat("https://das-api.uxcam.com","/subscription/organization/").concat(t,"/current-subscription").concat(a?"?chargebee_data=true":"");
+        return await r.be.get(e,{
+          withCredentials:!0,
+          validateStatus:t=>t>=200&&t<401,
+          cancelToken:new i(t=>{
+            o=t,
+            c=0
+          })
+        })
+      }
+      static async cancelSelfServeSubscription(t){
+        return await r.be.post("".concat("https://das-api.uxcam.com","/subscription/organization/").concat(t,"/cancel-subscription"),{},{
+          withCredentials:!0
+        })
+      }
+      static async getActiveSubscription(t){
+        let a="".concat("https://das-api.uxcam.com","/subscription/organization/").concat(t,"/active-subscription");
+        return await r.be.get(a,{
+          withCredentials:!0,
+          validateStatus:t=>t>=200&&t<401
+        })
+      }
+      static async getOrgAvailablePlans(t){
+        return await r.be.get("".concat("https://dashboardapi.uxcam.com","/organization/").concat(t,"/subscription/available-plans"),{
+          withCredentials:!0,
+          validateStatus:t=>t>=200&&t<401
+        })
+      }
+      static async getPaymentHistory(t,a,e){
+        return await (0,r.be)({
+          method:"GET",
+          url:"".concat("https://das-api.uxcam.com","/subscription/organization/").concat(t,"/invoices?page=").concat(a),
+          withCredentials:!0
+        })
+      }
+      static async getQueryPlanChange(t,a,e){
+        return await (0,r.be)({
+          method:"POST",
+          url:"".concat("https://dashboardapi.uxcam.com","/organization/").concat(t,"/subscription/query-plan-change"),
+          data:{
+            planType:a,
+            _csrf:e
+          },
+          withCredentials:!0
+        })
+      }
+      static async updatePlan(t,a,e,n,i,o){
+        return await (0,r.be)({
+          method:"POST",
+          url:"".concat("https://dashboardapi.uxcam.com","/organization/").concat(t,"/subscription/update-your-plan"),
+          data:{
+            uxcamPlan:a,
+            paymentMethodNonce:e,
+            _csrf:n,
+            apps:i,
+            team:o
+          },
+          withCredentials:!0
+        })
+      }
+      static async changePayment(t,a,e){
+        return await (0,r.be)({
+          method:"POST",
+          url:"".concat("https://dashboardapi.uxcam.com","/organization/").concat(t,"/subscription/change-payment-method"),
+          data:{
+            paymentMethodNonce:a,
+            _csrf:e
+          },
+          withCredentials:!0
+        })
+      }
+      static async getOrgAppTeam(t){
+        return await r.be.get("".concat("https://dashboardapi.uxcam.com","/organization/").concat(t,"/subscription/list-app-team"),{
+          withCredentials:!0,
+          validateStatus:t=>t>=200&&t<401
+        })
+      }
+      static async getInvoice(t,a,e){
+        return await (0,r.be)({
+          method:"POST",
+          url:"".concat("https://dashboardapi.uxcam.com","/organization/").concat(t,"/subscription/receipt"),
+          data:{
+            id:a,
+            _csrf:e
+          },
+          withCredentials:!0
+        })
+      }
+      static async getOverageInvoice(t,a){
+        return await (0,r.be)({
+          method:"GEt",
+          url:"".concat("https://dashboardapi.uxcam.com","/overage/").concat(t,"/transaction/").concat(a,"/receipt"),
+          withCredentials:!0
+        })
+      }
+      static async getDownloadableInvoice(t,a){
+        return await (0,r.be)({
+          method:"GET",
+          url:"".concat("https://das-api.uxcam.com","/subscription/organization/").concat(t,"/invoice/").concat(a,"/detail"),
+          withCredentials:!0
+        })
+      }
+      static async updateInvoiceRecipientsAndAddress(t,a){
+        return(0,r.be)({
+          method:"PUT",
+          url:"".concat("https://dashboardapi.uxcam.com","/organization/").concat(t,"/update-subscription"),
+          data:a,
+          withCredentials:!0
+        })
+      }
+      static async postRequestQuote(t,a){
+        return await (0,r.be)({
+          method:"POST",
+          url:"".concat("https://dashboardapi.uxcam.com","/organization/").concat(t,"/subscription/request-quote"),
+          data:a,
+          withCredentials:!0
+        })
+      }
+      static async getQueryPremiumPlan(t,a,e){
+        return await (0,r.be)({
+          method:"POST",
+          url:"".concat("https://dashboardapi.uxcam.com","/organization/").concat(t,"/subscription/query-premium-plan-change"),
+          data:{
+            uxcamPlan:a,
+            _csrf:e
+          },
+          withCredentials:!0
+        })
+      }
+      static async retryPayment(t){
+        return await (0,r.be)({
+          method:"POST",
+          url:"".concat("https://dashboardapi.uxcam.com","/organization/").concat(t,"/subscription/retry-payment"),
+          withCredentials:!0
+        })
+      }
+      static async toggleSessionRecording(t,a){
+        return await (0,r.be)({
+          method:"PUT",
+          url:"".concat("https://das-api.uxcam.com","/organization/").concat(t,"/toggle-overage-recording"),
+          withCredentials:!0,
+          data:a
+        })
+      }
+      static async getSessionUsage(t){
+        return await r.be.get("".concat("https://dashboardapi.uxcam.com","/organization/").concat(t,"/team/session-usage-percentage"),{
+          withCredentials:!0,
+          validateStatus:t=>t>=200&&t<401
+        })
+      }
+      static async updateSessionUsage(t,a){
+        return(0,r.be)({
+          method:"PUT",
+          url:"".concat("https://dashboardapi.uxcam.com","/organization/").concat(t,"/team/session-usage-percentage"),
+          data:a,
+          withCredentials:!0
+        })
+      }
+      static async getBillingInfo(t){
+        return(0,r.be)({
+          method:"GET",
+          url:"".concat("https://das-api.uxcam.com","/subscription/organization/").concat(t,"/billing-info/"),
+          withCredentials:!0
+        }).then(t=>{
+          var a;
+          return null===(a=t.data)||void 0===a?void 0:a.data
+        })
+      }
+      static async setRecipientEmails(t,a){
+        return(0,r.be)({
+          method:"PUT",
+          url:"".concat("https://das-api.uxcam.com","/subscription/organization/").concat(t,"/billing-info/recipients/"),
+          data:{
+            emails:a
+          },
+          withCredentials:!0
+        })
+      }
+      static async setBillingAddress(t,a){
+        return(0,r.be)({
+          method:"PUT",
+          url:"".concat("https://das-api.uxcam.com","/subscription/organization/").concat(t,"/billing-info/address/"),
+          data:a,
+          withCredentials:!0
+        })
+      }
+      static getWebSessionUsage(t){
+        return r.be.get("".concat("https://dashboardapi.uxcam.com","/organization/").concat(t,"/team/web-session-usage-percentage"),{
+          withCredentials:!0,
+          validateStatus:t=>t>=200&&t<401
+        })
+      }
+      static async updateWebSessionUsage(t,a){
+        return(0,r.be)({
+          method:"PUT",
+          url:"".concat("https://dashboardapi.uxcam.com","/organization/").concat(t,"/team/web-session-usage-percentage"),
+          data:a,
+          withCredentials:!0
+        })
+      }
+      static async getUnpaidInvoicePaymentLink(t){
+        return(0,r.be)({
+          method:"GET",
+          url:"".concat("https://das-api.uxcam.com","/subscription/organization/").concat(t,"/unpaid-invoice-payment-link"),
+          withCredentials:!0
+        })
+      }
+      static async getAIOverview(t){
+        return(0,r.be)({
+          method:"GET",
+          url:"".concat("https://das-api.uxcam.com","/app/organization/").concat(t,"/ai-overview/"),
+          withCredentials:!0
+        })
+      }
+      static async toggleAIForApp(t,a,e){
+        return(0,r.be)({
+          method:"POST",
+          url:"".concat("https://das-api.uxcam.com","/app/organization/").concat(t,"/").concat(a,"/toggle-ai/"),
+          data:{
+            isAIEnabled:e
+          },
+          withCredentials:!0
+        })
+      }
+      static async getAIUsageOverview(t){
+        return(0,r.be)({
+          method:"GET",
+          url:"".concat("https://das-api.uxcam.com","/subscription/organization/").concat(t,"/ai-overview"),
+          withCredentials:!0
+        })
+      }
+    }
+    a.Z=d
+  },
+  28852:function(t,a,e){
+    var n=e(98777);
+    class r{
+      static async getListVideoRecording(t){
+        return await (0,n.be)({
+          method:"Get",
+          url:"".concat("https://dashboardapi.uxcam.com","/app/").concat(t,"/video-recording"),
+          withCredentials:!0
+        })
+      }
+      static async getFilterAttribute(t){
+        return await (0,n.be)({
+          method:"Get",
+          url:"".concat("https://dashboardapi.uxcam.com","/app/").concat(t,"/video-recording/create"),
+          withCredentials:!0
+        })
+      }
+      static async applyRule(t,a,e){
+        return(0,n.be)({
+          method:"PUT",
+          url:"".concat("https://dashboardapi.uxcam.com","/app/").concat(a,"/video-recording/").concat(t,"/apply"),
+          data:{
+            _csrf:e
+          },
+          withCredentials:!0
+        })
+      }
+      static async saveNewRule(t,a){
+        return(0,n.be)({
+          method:"POST",
+          url:"".concat("https://dashboardapi.uxcam.com","/app/").concat(a,"/video-recording"),
+          data:t,
+          withCredentials:!0
+        })
+      }
+      static async saveAndApplyRule(t,a,e){
+        return(0,n.be)({
+          method:"PUT",
+          url:"".concat("https://dashboardapi.uxcam.com","/app/").concat(a,"/video-recording/").concat(e),
+          data:t,
+          withCredentials:!0
+        })
+      }
+      static async deleteRule(t,a,e){
+        return(0,n.be)({
+          method:"DELETE",
+          url:"".concat("https://dashboardapi.uxcam.com","/app/").concat(t,"/video-recording/").concat(a),
+          withCredentials:!0,
+          data:{
+            _csrf:e
+          }
+        })
+      }
+      static async addTeamMember(t,a){
+        return(0,n.be)({
+          method:"POST",
+          url:"".concat("https://dashboardapi.uxcam.com","/app/").concat(a,"/team"),
+          data:t,
+          withCredentials:!0
+        })
+      }
+      static async removeTeamMember(t,a){
+        return(0,n.be)({
+          method:"DELETE",
+          url:"".concat("https://dashboardapi.uxcam.com","/app/").concat(t,"/team"),
+          data:a,
+          withCredentials:!0
+        })
+      }
+      static async updateUserRole(t,a){
+        return(0,n.be)({
+          method:"PUT",
+          url:"".concat("https://dashboardapi.uxcam.com","/app/").concat(t,"/team/update"),
+          data:a,
+          withCredentials:!0
+        })
+      }
+      static async resendInvite(t,a){
+        return(0,n.be)({
+          method:"POST",
+          url:"".concat("https://dashboardapi.uxcam.com","/app/").concat(t,"/team/resend-invite"),
+          data:a,
+          withCredentials:!0
+        })
+      }
+      static async changeVideoRecordingStatus(t,a){
+        return(0,n.be)({
+          method:"PUT",
+          url:"".concat("https://dashboardapi.uxcam.com","/app/").concat(t,"/video-recording/toggle-video-recording"),
+          data:a,
+          withCredentials:!0
+        })
+      }
+      static async changeSessionRecordingStatus(t,a){
+        return(0,n.be)({
+          method:"PUT",
+          url:"".concat("https://dashboardapi.uxcam.com","/app/").concat(t,"/session-recording/toggle-session-recording"),
+          data:a,
+          withCredentials:!0,
+          validateStatus:t=>t>=200&&t<401
+        })
+      }
+      static async fetchData(t){
+        return(0,n.be)({
+          method:"POST",
+          url:"".concat("https://pythonapi-prod.uxcam.com","/search_attribute"),
+          data:t,
+          withCredentials:!0
+        })
+      }
+      static async inviteDeveloper(t,a){
+        return(0,n.be)({
+          method:"POST",
+          url:"".concat("https://dashboardapi.uxcam.com","/app/").concat(a,"/team/members"),
+          data:t,
+          withCredentials:!0
+        })
+      }
+    }
+    a.Z=r
+  }
+}]);

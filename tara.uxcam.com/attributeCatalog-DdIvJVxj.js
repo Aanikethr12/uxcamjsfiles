@@ -1,0 +1,1 @@
+function e(e){if(!e)return;let t=new Map;for(let n of e.categories)for(let e of n.attributes)t.set(e.attribute,e);return t}export{e as t};

@@ -1,0 +1,1219 @@
+"use strict";
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[8927],{
+  78927:function(e,t,n){
+    let o;
+    n.r(t),
+    n.d(t,{
+      default:function(){
+        return eC
+      }
+    });
+    var i=n(85893),
+    l=n(67294),
+    a=n(14416),
+    r=n(26797),
+    s=n(13979),
+    c=n(41371),
+    d=n(21237),
+    p=n(80432),
+    u=n(87536),
+    h=n(62610),
+    f=n(68432),
+    g=n(30663),
+    x=n(88767),
+    m=n(95315),
+    b=n(12810),
+    w=n(19521),
+    C=n(25675),
+    y=n.n(C),
+    v=n(39284),
+    j=n(65885);
+    let k=new j.Z,
+    I=w.default.div.withConfig({
+      componentId:"sc-17cc63e9-0"
+    })(["font-family:'Roboto';font-style:normal;font-weight:500;font-size:18px;line-height:24px;color:#161e35;text-align:center;margin-bottom:12px;"]),
+    S=(0,w.default)(v.default).withConfig({
+      componentId:"sc-17cc63e9-1"
+    })([".ant-modal-content{overflow:hidden;border-radius:8px;}.ant-modal-body{padding:0px !important;}"]);
+    var F=(0,l.memo)(e=>{
+      let{
+        children:t,
+        isLoading:n
+      }=e,
+      {
+        showPricingModal:o,
+        setShowPricingModal:r,
+        selfServeFlag:s
+      }=(0,c.I)(),
+      {
+        currentOrgReducer:d
+      }=(0,a.v9)(e=>e),
+      p=k.get("loggedInFromAdminDashboard"),
+      {
+        planType:u,
+        status:h
+      }=d,
+      f=(0,l.useCallback)(()=>{
+        r(!1)
+      },[r]),
+      g=(0,l.useMemo)(()=>n||!s,[n,s]),
+      x=(0,l.useMemo)(()=>!!p||!("Expired"===h&&"trial"===u),[p,u,h]);
+      return(0,i.jsx)(S,{
+        visible:o,
+        closable:!1,
+        footer:null,
+        onCancel:f,
+        centered:!0,
+        width:"fit-content",
+        getContainer:()=>document.body.querySelector(".ant-layout-content")||document.body,
+        maskClosable:x,
+        children:g?(0,i.jsxs)(i.Fragment,{
+          children:[(0,i.jsx)(I,{
+            children:"Please wait while we fetch your plans."
+          }),(0,i.jsx)(b.Z,{})]
+        }):t
+      })
+    });
+    let P=w.default.div.withConfig({
+      componentId:"sc-74faa20c-0"
+    })(["font-family:'Roboto';font-style:normal;font-weight:500;font-size:18px;line-height:24px;color:#161E35;margin-bottom:24px;text-align:center;"]);
+    var _=(0,l.memo)(e=>{
+      let{
+        showModal:t,
+        isDowngrade:n
+      }=e;
+      return(0,i.jsxs)(v.default,{
+        wrapClassName:"filters-locked-modal select-plan-modal",
+        visible:t,
+        closable:!1,
+        footer:null,
+        maskStyle:{
+          zIndex:"99998",
+          background:"rgba(22, 30, 53, 0.3)"
+        },
+        getContainer:()=>document.body.querySelector(".ant-layout-content"),
+        maskClosable:!1,
+        children:[(0,i.jsxs)(P,{
+          children:[n?"Downgrading":"Upgrading"," your UXCam plan"]
+        }),(0,i.jsx)(b.Z,{})]
+      })
+    });
+    let T=["Capture 10,000 sessions","Track 1,000,000 events","Get reports, funnels & alerts","Store videos for 1 month","Cover staging & production","Get 5 user seats","Visualize user behaviour with heatmaps","Store data for 12 months"],
+    E=(0,i.jsx)("svg",{
+      width:"16",
+      height:"17",
+      viewBox:"0 0 16 17",
+      fill:"none",
+      xmlns:"http://www.w3.org/2000/svg",
+      children:(0,i.jsx)("path",{
+        fillRule:"evenodd",
+        clipRule:"evenodd",
+        d:"M16 8.76953C16 13.1875 12.418 16.7695 8 16.7695C3.582 16.7695 0 13.1875 0 8.76953C0 4.35153 3.582 0.769531 8 0.769531C12.418 0.769531 16 4.35153 16 8.76953ZM12.1233 5.02886C12.4082 5.2384 12.5981 5.55249 12.6514 5.90205C12.7046 6.25161 12.6168 6.60802 12.4073 6.89286L8.486 12.2262C8.36802 12.3866 8.21562 12.5185 8.03998 12.6123C7.86434 12.7061 7.66992 12.7594 7.471 12.7682C7.27208 12.777 7.07371 12.7412 6.89046 12.6633C6.7072 12.5854 6.54372 12.4675 6.412 12.3182L3.66667 9.20753C3.43266 8.94232 3.31359 8.595 3.33566 8.24199C3.35772 7.88899 3.51912 7.55921 3.78433 7.3252C4.04955 7.09119 4.39686 6.97212 4.74987 6.99419C5.10288 7.01625 5.43266 7.17765 5.66667 7.44286L7.31733 9.31353L10.2593 5.31353C10.4688 5.0286 10.7828 4.83854 11.1324 4.78515C11.4819 4.73177 11.8384 4.81943 12.1233 5.02886Z",
+        fill:"#5D97FF"
+      })
+    }),
+    z={
+      Wrapper:w.default.div.withConfig({
+        componentId:"sc-2ea56c28-0"
+      })([""]),
+      Step1:{
+        Container:w.default.div.withConfig({
+          componentId:"sc-2ea56c28-1"
+        })(["display:grid;grid-template-columns:400px 400px;min-height:30.3125rem;gap:0px;"]),
+        Left:w.default.div.withConfig({
+          componentId:"sc-2ea56c28-2"
+        })(["height:100%;width:100%;img{width:100%;height:100%;object-fit:cover;}"]),
+        Right:w.default.div.withConfig({
+          componentId:"sc-2ea56c28-3"
+        })(["padding:32px;display:flex;flex-direction:column;justify-content:space-between;"]),
+        Content:w.default.div.withConfig({
+          componentId:"sc-2ea56c28-4"
+        })([""]),
+        Footer:w.default.div.withConfig({
+          componentId:"sc-2ea56c28-5"
+        })(["span{font-size:12px;font-weight:400;color:#454b5d;margin-top:12px;display:block;text-align:center;}"])
+      },
+      Step2:{
+        Container:w.default.div.withConfig({
+          componentId:"sc-2ea56c28-6"
+        })(["padding:32px;min-width:800px;"]),
+        GoBack:w.default.button.withConfig({
+          componentId:"sc-2ea56c28-7"
+        })(["background:none;border:none;cursor:pointer;padding:4px;margin-bottom:16px;transform:translateX(0px);transition:transform 0.3s ease;&:hover{transform:translateX( -4px );}"]),
+        Content:w.default.div.withConfig({
+          componentId:"sc-2ea56c28-8"
+        })([""]),
+        Footer:w.default.div.withConfig({
+          componentId:"sc-2ea56c28-9"
+        })(["margin-top:40px;"]),
+        Plans:{
+          Container:w.default.div.withConfig({
+            componentId:"sc-2ea56c28-10"
+          })(["margin-bottom:24px;&:last-child{margin-bottom:0;}"]),
+          Card:{
+            Title:w.default.h2.withConfig({
+              componentId:"sc-2ea56c28-11"
+            })(["font-size:14px;line-height:24px;font-weight:700;color:#454b5d;"]),
+            Container:w.default.div.withConfig({
+              componentId:"sc-2ea56c28-12"
+            })(["background-color:#f7faff;padding:16px;border-radius:4px;"]),
+            Content:w.default.div.withConfig({
+              componentId:"sc-2ea56c28-13"
+            })(["display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));row-gap:12px;column-gap:16px;align-items:flex-start;margin-bottom:12px;"]),
+            ListItem:w.default.li.withConfig({
+              componentId:"sc-2ea56c28-14"
+            })(["display:flex;align-items:flex-start;gap:8px;font-size:14px;line-height:24px;color:#454b5d;img{margin-top:7px;}"]),
+            Footer:w.default.p.withConfig({
+              componentId:"sc-2ea56c28-15"
+            })(["font-size:12px;font-weight:400;font-style:italic;line-height:24px;color:#737886;margin-bottom:0 !important;"])
+          }
+        },
+        Billings:{
+          Container:w.default.div.withConfig({
+            componentId:"sc-2ea56c28-16"
+          })(["display:flex;align-items:center;justify-content:space-between;gap:12px;"])
+        }
+      },
+      Step2MultiPlatform:{
+        Container:w.default.div.withConfig({
+          componentId:"sc-2ea56c28-17"
+        })(["padding:32px;min-width:800px;"])
+      },
+      Title:w.default.h1.withConfig({
+        componentId:"sc-2ea56c28-18"
+      })(["font-size:18px;font-weight:500;color:#161e35;"]),
+      SubTitle:w.default.p.withConfig({
+        componentId:"sc-2ea56c28-19"
+      })(["font-size:14px;font-weight:",";color:#454b5d !important;line-height:24px;"],e=>{
+        let{
+          isBold:t
+        }=e;
+        return t?500:400
+      })
+    },
+    D={
+      Wrapper:w.default.div.withConfig({
+        componentId:"sc-2ea56c28-20"
+      })([""]),
+      Item:w.default.div.withConfig({
+        componentId:"sc-2ea56c28-21"
+      })(["display:flex;align-items:center;justify-content:space-between;padding:12px;border-radius:4px;cursor:pointer;box-shadow:inset 0 0 0 1px #dfeaff;&:hover{box-shadow:inset 0 0 0 1px #bed5ff;background-color:#f7faff;}&.selected{box-shadow:inset 0 0 0 1.5px #5d97ff;background-color:#f7faff;}margin-bottom:12px;&:last-child{margin-bottom:0;}"]),
+      Left:{
+        Container:w.default.div.withConfig({
+          componentId:"sc-2ea56c28-22"
+        })(["display:flex;align-items:center;"]),
+        Icon:w.default.div.withConfig({
+          componentId:"sc-2ea56c28-23"
+        })(["height:40px;width:40px;background-color:#fff;display:flex;align-items:center;justify-content:center;border-radius:4px;"]),
+        Text:w.default.p.withConfig({
+          componentId:"sc-2ea56c28-24"
+        })(["font-size:14px;font-weight:500;color:#161e35;line-height:24px;margin-left:12px;margin-bottom:0 !important;"])
+      },
+      Right:{
+        Container:w.default.div.withConfig({
+          componentId:"sc-2ea56c28-25"
+        })([""]),
+        UncheckedIcon:w.default.div.withConfig({
+          componentId:"sc-2ea56c28-26"
+        })(["border:1px solid #dfeaff;height:16px;width:16px;border-radius:50%;"]),
+        CheckedIcon:()=>E
+      }
+    },
+    B={
+      Wrapper:w.default.div.withConfig({
+        componentId:"sc-2ea56c28-27"
+      })(["display:grid;grid-template-columns:1fr 1fr;gap:12px;"]),
+      Item:w.default.div.withConfig({
+        componentId:"sc-2ea56c28-28"
+      })(["display:flex;align-items:center;justify-content:space-between;padding:12px 14px;border-radius:4px;cursor:pointer;box-shadow:inset 0 0 0 1px #dfeaff;&:hover{box-shadow:inset 0 0 0 1px #bed5ff;background-color:#f7faff;}&.selected{box-shadow:inset 0 0 0 1.5px #5d97ff;background-color:#f7faff;}"]),
+      Left:{
+        Container:w.default.div.withConfig({
+          componentId:"sc-2ea56c28-29"
+        })([""]),
+        Badge:w.default.div.withConfig({
+          componentId:"sc-2ea56c28-30"
+        })(["background-color:#d6f2e8;display:flex;align-items:center;justify-content:center;border-radius:3px;font-size:12px;font-weight:500;color:#2dac7c;padding:0px 6px;max-height:18px;"]),
+        Text:w.default.p.withConfig({
+          componentId:"sc-2ea56c28-31"
+        })(["font-size:14px;font-weight:",";color:#454b5d;line-height:24px;margin-bottom:0px !important;"],e=>{
+          let{
+            isBold:t
+          }=e;
+          return t?500:400
+        }),
+        Title:w.default.div.withConfig({
+          componentId:"sc-2ea56c28-32"
+        })(["display:flex;gap:8px;align-items:center;margin-bottom:10px;"])
+      },
+      Right:{
+        Container:w.default.div.withConfig({
+          componentId:"sc-2ea56c28-33"
+        })([""]),
+        UncheckedIcon:w.default.div.withConfig({
+          componentId:"sc-2ea56c28-34"
+        })(["border:1px solid #dfeaff;height:16px;width:16px;border-radius:50%;"]),
+        CheckedIcon:()=>E
+      }
+    },
+    L={
+      Primary:w.default.button.withConfig({
+        componentId:"sc-2ea56c28-35"
+      })(["background-color:#5d97ff;color:white;border:none;border-radius:6px;cursor:pointer;font-size:14px;font-weight:500;line-height:24px;display:flex;align-items:center;justify-content:center;width:100%;height:36px;&:hover{background-color:#4a7bff;transition:background-color 0.3s ease;}&:disabled{background-color:#bed5ff;cursor:not-allowed;}"]),
+      Text:w.default.button.withConfig({
+        componentId:"sc-2ea56c28-36"
+      })(["font-size:12px;display:inline-block;font-weight:400;color:#5d97ff;background:none;border:none;cursor:pointer;&:hover{text-decoration:underline;}"])
+    },
+    M=[{
+      title:"Mobile platform",
+      icon:"/static/mobile-platform-primary.svg",
+      key:"mobile"
+    },{
+      title:"Web platform",
+      icon:"/static/web-platform-primary.svg",
+      key:"web"
+    }],
+    R=[{
+      title:"Annual billing",
+      icon:"/static/monthly-billing-primary.svg",
+      key:"annual"
+    },{
+      title:"Monthly billing",
+      icon:"/static/yearly-billing-primary.svg",
+      key:"monthly"
+    }],
+    Z={
+      Step1:e=>{
+        let{
+          isPlatformSelected:t,
+          handlePlatformToggle:n,
+          onNextStep:o,
+          onDowngrade:l,
+          planType:a,
+          sessionCount:r,
+          selectedPlatforms:s
+        }=e;
+        return(0,i.jsxs)(z.Step1.Container,{
+          children:[(0,i.jsx)(z.Step1.Left,{
+            children:(0,i.jsx)(y(),{
+              src:"/static/plan.png",
+              alt:"plan",
+              width:400,
+              height:485,
+              priority:!0,
+              style:{
+                width:"100%",
+                height:"100%",
+                objectFit:"cover"
+              }
+            })
+          }),(0,i.jsxs)(z.Step1.Right,{
+            children:[(0,i.jsxs)(z.Step1.Content,{
+              children:[(0,i.jsx)(z.Title,{
+                style:{
+                  marginBottom:"10px"
+                },
+                children:"Ready to unlock deeper insights?"
+              }),(0,i.jsxs)(z.SubTitle,{
+                style:{
+                  marginBottom:"24px"
+                },
+                children:["Upgrade to the Starter plan for ",r.toLocaleString()," monthly sessions and powerful experience & product analytics to help you grow"]
+              }),(0,i.jsxs)(D.Wrapper,{
+                children:[(0,i.jsx)(z.SubTitle,{
+                  isBold:!0,
+                  style:{
+                    marginBottom:"8px"
+                  },
+                  children:"Select platforms to upgrade:"
+                }),null==M?void 0:M.map(e=>{
+                  let o=t(e.key);
+                  return(0,i.jsxs)(D.Item,{
+                    className:o?"selected":"",
+                    onClick:()=>n(e.key),
+                    children:[(0,i.jsxs)(D.Left.Container,{
+                      children:[(0,i.jsx)(D.Left.Icon,{
+                        children:(0,i.jsx)(y(),{
+                          src:e.icon,
+                          alt:e.title,
+                          width:24,
+                          height:24
+                        })
+                      }),(0,i.jsx)(D.Left.Text,{
+                        children:e.title
+                      })]
+                    }),(0,i.jsx)(D.Right.Container,{
+                      children:o?(0,i.jsx)(D.Right.CheckedIcon,{}):(0,i.jsx)(D.Right.UncheckedIcon,{})
+                    })]
+                  },e.title)
+                })]
+              })]
+            }),(0,i.jsxs)(z.Step1.Footer,{
+              children:[(0,i.jsx)(L.Primary,{
+                onClick:o,
+                disabled:!s.length,
+                children:2===s.length?"Talk to Sales":"See features & pricing"
+              }),2===s.length?(0,i.jsxs)("span",{
+                children:["Let’s tailor your plan for both platforms in a quick call - we’ll get ",(0,i.jsx)("br",{}),"you set up in no time."]
+              }):"trial"===a&&(0,i.jsxs)("span",{
+                children:["Not now?",(0,i.jsx)(L.Text,{
+                  onClick:()=>{
+                    l()
+                  },
+                  children:"Downgrade to the Free Plan"
+                })]
+              })]
+            })]
+          })]
+        })
+      },
+      Step2:e=>{
+        let{
+          isBillingCycleSelected:t,
+          handleBillingCycleSelect:n,
+          prices:o,
+          onFinish:l,
+          onGoBack:a,
+          platform:r,
+          sessionCount:s
+        }=e;
+        return(0,i.jsxs)(z.Step2.Container,{
+          children:[(0,i.jsx)(z.Step2.GoBack,{
+            onClick:a,
+            children:(0,i.jsx)(y(),{
+              src:"/static/chevron-left-arrow-icon.svg",
+              alt:"left arrow",
+              height:16,
+              width:16
+            })
+          }),(0,i.jsxs)(z.Step2.Content,{
+            children:[(0,i.jsxs)(z.Title,{
+              style:{
+                marginBottom:"10px"
+              },
+              children:["Upgrade your ","mobile"===r?"mobile":"web"," analytics to starter plan"]
+            }),(0,i.jsx)(z.SubTitle,{
+              style:{
+                marginBottom:"24px"
+              },
+              children:"Get powerful experience & product analytics"
+            }),(0,i.jsx)(z.Step2.Plans.Card.Title,{
+              children:"Plan includes:"
+            }),(0,i.jsx)(z.Step2.Plans.Container,{
+              children:(0,i.jsxs)(z.Step2.Plans.Card.Container,{
+                children:[(0,i.jsx)(z.Step2.Plans.Card.Content,{
+                  children:null==T?void 0:T.map(e=>(0,i.jsxs)(z.Step2.Plans.Card.ListItem,{
+                    children:[(0,i.jsx)(y(),{
+                      src:"/static/tick-primary.svg",
+                      alt:"tick",
+                      width:16,
+                      height:16
+                    }),(0,i.jsx)("span",{
+                      children:e
+                    })]
+                  },e))
+                }),(0,i.jsxs)(z.Step2.Plans.Card.Footer,{
+                  children:["Usage over ",s.toLocaleString()," sessions/month will be billed at $0.016/session."]
+                })]
+              })
+            }),(0,i.jsxs)(z.Step2.Plans.Container,{
+              children:[(0,i.jsx)(z.Step2.Plans.Card.Title,{
+                children:"Select a billing cycle:"
+              }),(0,i.jsx)(B.Wrapper,{
+                children:null==R?void 0:R.map(e=>{
+                  let l=t(e.key);
+                  return(0,i.jsxs)(B.Item,{
+                    className:l?"selected":"",
+                    onClick:()=>n(e.key),
+                    children:[(0,i.jsxs)(B.Left.Container,{
+                      children:[(0,i.jsxs)(B.Left.Title,{
+                        children:[(0,i.jsx)(B.Left.Text,{
+                          isBold:!0,
+                          children:e.title
+                        }),o[e.key].savings&&(0,i.jsx)(B.Left.Badge,{
+                          children:"Save ".concat(o[e.key].savings,"%")
+                        })]
+                      }),(0,i.jsx)(B.Left.Text,{
+                        children:"$".concat(o[e.key].price," per month")
+                      })]
+                    }),(0,i.jsx)(B.Right.Container,{
+                      children:l?(0,i.jsx)(B.Right.CheckedIcon,{}):(0,i.jsx)(B.Right.UncheckedIcon,{})
+                    })]
+                  },e.title)
+                })
+              })]
+            })]
+          }),(0,i.jsx)(z.Step2.Footer,{
+            children:(0,i.jsx)(L.Primary,{
+              style:{
+                width:"fit-content",
+                marginLeft:"auto",
+                padding:"4px 36px"
+              },
+              onClick:l,
+              children:"Proceed to checkout"
+            })
+          })]
+        })
+      },
+      Step2MultiPlatform:e=>{
+        let{
+          onGoBack:t,
+          onCloseModal:n
+        }=e,
+        o=(0,a.v9)(e=>e.profileReducer),
+        l=(0,a.v9)(e=>e.currentOrgReducer);
+        return(0,i.jsxs)(z.Step2MultiPlatform.Container,{
+          children:[(0,i.jsx)(z.Step2.GoBack,{
+            onClick:t,
+            children:(0,i.jsx)(y(),{
+              src:"/static/chevron-left-arrow-icon.svg",
+              alt:"",
+              height:16,
+              width:16
+            })
+          }),(0,i.jsx)(z.Title,{
+            style:{
+              marginBottom:"10px"
+            },
+            children:"Upgrade your web & mobile analytics to the starter plan"
+          }),(0,i.jsx)(z.SubTitle,{
+            style:{
+              marginBottom:"24px"
+            },
+            children:"Get powerful experience & product analytics"
+          }),(0,i.jsx)(d.o,{
+            fieldConfig:{
+              sessionQuantity:{
+                required:!0,
+                visible:!0,
+                title:"Estimated monthly sessions for mobile"
+              },
+              webSessionQuantity:{
+                required:!0,
+                visible:!0
+              },
+              customerName:{
+                required:!0,
+                visible:!0,
+                defaultValue:null==o?void 0:o.name
+              },
+              emailAddress:{
+                required:!0,
+                visible:!0,
+                defaultValue:null==o?void 0:o.email
+              },
+              companyName:{
+                required:!1,
+                visible:!1,
+                defaultValue:null==l?void 0:l.organizationName
+              },
+              phoneNumber:{
+                required:!1,
+                visible:!1
+              },
+              message:{
+                required:!1,
+                visible:!0
+              }
+            },
+            showTitle:!1,
+            onCancel:n,
+            triggerTitle:"Submit"
+          })]
+        })
+      }
+    },
+    N=e=>e.toLowerCase().includes("web")?"web":"mobile";
+    var W=(0,l.memo)(e=>{
+      var t;
+      let{
+        planData:n,
+        isLoading:o,
+        setTriggerFreePlanPopup:r
+      }=e,
+      d=(0,l.useRef)(null),
+      w=(0,x.useQueryClient)(),
+      {
+        control:C,
+        handleSubmit:y,
+        watch:v,
+        setValue:j,
+        formState:{
+          errors:k
+        }
+      }=(0,u.cI)({
+        defaultValues:{
+          platforms:[],
+          billingCycle:"annual",
+          currentStep:1
+        }
+      }),
+      [I,S]=(0,l.useState)(null),
+      P=v("platforms"),
+      T=v("billingCycle"),
+      E=v("currentStep"),
+      {
+        currentOrgReducer:z
+      }=(0,a.v9)(e=>e),
+      D=(0,a.I0)(),
+      {
+        planType:B,
+        orgId:L
+      }=z,
+      M="subscription/checkoutv2/organization/".concat(L),
+      [R,W]=(0,l.useState)(""),
+      [q,A]=(0,l.useState)(!1),
+      G=(0,l.useMemo)(()=>"currentSubscription".concat(L),[L]),
+      U=(0,l.useMemo)(()=>"payment_info_".concat(L),[L]),
+      {
+        data:Q
+      }=(0,m.Qy)({
+        queryKey:G,
+        orgId:L
+      }),
+      O=(0,l.useMemo)(()=>{
+        var e;
+        return(null==Q?void 0:null===(e=Q.yourPlan)||void 0===e?void 0:e.planType)==="paid"
+      },[null==Q?void 0:null===(t=Q.yourPlan)||void 0===t?void 0:t.planType]),
+      {
+        setShowPricingModal:V
+      }=(0,c.I)(),
+      X=(0,l.useCallback)(e=>e%1==0?e:e.toFixed(2),[]),
+      $=(0,l.useMemo)(()=>{
+        if(n&&n.length>0&&P.length>0){
+          let e=P[0],
+          t=n.find(t=>N(t.name)===e);
+          if(t){
+            let{
+              base_price:e,
+              surcharge:n
+            }=t,
+            o=12*e,
+            i=e*(n.monthly/100+1)*12;
+            return{
+              monthly:{
+                price:X(e*(n.monthly/100+1)).toString(),
+                savings:""
+              },
+              annual:{
+                price:X(e).toString(),
+                savings:X((i-o)/(12*e)*100).toString()
+              }
+            }
+          }
+        }
+        return{
+          monthly:{
+            price:"0",
+            savings:"0"
+          },
+          annual:{
+            price:"0",
+            savings:"0"
+          }
+        }
+      },[n,X,P]);
+      (0,l.useEffect)(()=>{
+        let e=null,
+        t=()=>{
+          window.Chargebee?(window.Chargebee.init({
+            site:"uxcam"
+          }),S(window.Chargebee.getInstance())):e=setTimeout(t,100)
+        };
+        return t(),
+        ()=>{
+          e&&clearTimeout(e)
+        }
+      },[]);
+      let Y=(0,l.useMemo)(()=>n&&0!==n.length?n.map(e=>{
+        let{
+          _id:t,
+          limits:n,
+          name:o,
+          recommended:i
+        }=e,
+        {
+          session:l
+        }=n;
+        return i&&W(o),
+        {
+          id:t,
+          name:o,
+          sessionCount:l,
+          platform:N(o)
+        }
+      }):[],[n]);
+      (0,l.useEffect)(()=>(O&&(d.current&&(clearInterval(d.current),d.current=null),D((0,f.wW)(L)),A(!1),p.ZP.success("Plan upgrade successful")),()=>{
+        d.current&&(clearInterval(d.current),d.current=null),
+        D((0,h.Zn)()),
+        A(!1)
+      }),[O,D,L,A]);
+      let H=(0,l.useCallback)(()=>{
+        d.current=setInterval(()=>{
+          w.invalidateQueries(G),
+          w.invalidateQueries(U)
+        },800)
+      },[w,G,U]),
+      J=(0,l.useCallback)(()=>{
+        let e=P[0],
+        t=Y.find(t=>t.platform===e);
+        if(!t){
+          s.l.error("SELF SERVE PLAN - Selected plan not found for platform: ".concat(e));
+          return
+        }
+        D((0,g.CW)(null,{
+          eventName:"wa_continue_with_starter_plan_clicked",
+          track_type:"event",
+          eventProperty:{
+            "chosen plan":t.name,
+            "recommended plan":R,
+            "chosen platform":"mobile"===e?"Mobile":"Web"
+          }
+        })),
+        null==I||I.openCheckout({
+          hostedPage:()=>(0,m.h9)(M,{
+            plan:t.id,
+            billing_frequency:"monthly"===T?1:12
+          }),
+          success(e){
+            e&&(H(),I.closeAll(),V(!1),A(!0))
+          }
+        })
+      },[D,Y,R,I,M,T,P,H,V]),
+      K=(0,l.useCallback)(()=>{
+        r(!0),
+        D((0,g.CW)(null,{
+          eventName:"wa_downgrade_to_free_plan_clicked",
+          track_type:"event"
+        }))
+      },[D,r]),
+      ee=(0,l.useCallback)(()=>(P||[]).length>0,[P]),
+      et=(0,l.useCallback)(()=>!!T,[T]),
+      en=(0,l.useCallback)(()=>{
+        ee()?(2===P.length?D((0,g.CW)(null,{
+          eventName:"wa_talk_to_sales_for_both_platform_clicked",
+          track_type:"event"
+        })):D((0,g.CW)(null,{
+          eventName:"wa_see_feature_pricing_clicked",
+          track_type:"event",
+          eventProperty:{
+            "chosen platform":"mobile"===P[0]?"Mobile":"Web"
+          }
+        })),j("currentStep",2)):p.ZP.error("Please select at least one platform to continue.")
+      },[ee,j,P,D]),
+      eo=(0,l.useCallback)(()=>{
+        j("currentStep",1),
+        j("platforms",[]),
+        j("billingCycle","annual")
+      },[j]),
+      ei=(0,l.useCallback)(()=>{
+        et()?J():p.ZP.error("Please select a billing cycle to continue.")
+      },[et,J]),
+      el=(0,l.useCallback)(e=>{
+        let t=P||[];
+        j("platforms",t.includes(e)?t.filter(t=>t!==e):[...t,e])
+      },[P,j]),
+      ea=(0,l.useCallback)(e=>(P||[]).includes(e),[P]),
+      er=(0,l.useCallback)(e=>{
+        j("billingCycle",e)
+      },[j]),
+      es=(0,l.useCallback)(e=>T===e,[T]);
+      if(q)return(0,i.jsx)(_,{
+        showModal:q,
+        isDowngrade:!1
+      });
+      if(Y&&Y.length>0){
+        let e=()=>{
+          var e;
+          if(P.length>0){
+            let e=Y.find(e=>e.platform===P[0]);
+            return(null==e?void 0:e.sessionCount)||1e4
+          }
+          return(null===(e=Y[0])||void 0===e?void 0:e.sessionCount)||1e4
+        };
+        return(0,i.jsx)(F,{
+          isLoading:o,
+          children:o?(0,i.jsx)(b.Z,{}):(0,i.jsxs)(i.Fragment,{
+            children:[1===E&&(0,i.jsx)(Z.Step1,{
+              isPlatformSelected:ea,
+              handlePlatformToggle:el,
+              onNextStep:en,
+              onDowngrade:K,
+              planType:B,
+              sessionCount:e(),
+              selectedPlatforms:P
+            }),2===E&&P.length<2&&(0,i.jsx)(Z.Step2,{
+              isBillingCycleSelected:es,
+              handleBillingCycleSelect:er,
+              prices:$,
+              onFinish:ei,
+              onGoBack:eo,
+              platform:P[0],
+              sessionCount:e()
+            }),2===E&&2===P.length&&(0,i.jsx)(Z.Step2MultiPlatform,{
+              onGoBack:eo,
+              onCloseModal:()=>{
+                V(!1),
+                j("currentStep",1),
+                j("platforms",[])
+              }
+            })]
+          })
+        })
+      }
+      return null
+    }),
+    q=n(72654),
+    A=n(86477),
+    G=n(74936),
+    U=n(18879);
+    let Q=new j.Z,
+    O=w.default.div.withConfig({
+      componentId:"sc-80ff3997-0"
+    })(["font-family:'Roboto';font-style:normal;font-weight:500;font-size:18px;line-height:24px;color:#161E35;text-align:center;margin-bottom:12px;"]),
+    V=w.default.p.withConfig({
+      componentId:"sc-80ff3997-1"
+    })(["font-weight:400;font-size:12px;line-height:12px;color:#454B5D;text-align:center;"]);
+    var X=(0,l.memo)(e=>{
+      let{
+        children:t,
+        isLoading:n,
+        planName:o
+      }=e,
+      {
+        showPricingModal:r,
+        setShowPricingModal:s,
+        selfServeFlag:d
+      }=(0,c.I)(),
+      {
+        currentOrgReducer:p
+      }=(0,a.v9)(e=>e),
+      u=Q.get("loggedInFromAdminDashboard"),
+      {
+        planType:h,
+        status:f
+      }=p,
+      g=(0,l.useCallback)(()=>{
+        s(!1)
+      },[s]),
+      x=(0,l.useMemo)(()=>n||0===d,[n,d]),
+      m=(0,l.useMemo)(()=>!!u||!("Expired"===f&&"trial"===h),[u,h,f]);
+      return(0,i.jsx)(v.default,{
+        wrapClassName:"filters-locked-modal select-plan-modal",
+        visible:r,
+        closable:!1,
+        footer:null,
+        onCancel:g,
+        maskStyle:{
+          zIndex:"99998",
+          background:"rgba(22, 30, 53, 0.3)"
+        },
+        getContainer:()=>document.body.querySelector(".ant-layout-content"),
+        maskClosable:m,
+        children:x?(0,i.jsxs)(i.Fragment,{
+          children:[(0,i.jsx)(O,{
+            children:"Please wait while we fetch your plans."
+          }),(0,i.jsx)(b.Z,{})]
+        }):(0,i.jsxs)(i.Fragment,{
+          children:[(0,i.jsx)(O,{
+            children:o||"Please choose a plan:"
+          }),(0,i.jsx)(V,{
+            children:"Essentials for teams to understand the user journey and stay on top of key metrics"
+          }),t]
+        })
+      })
+    });
+    let $=(0,w.default)(A.default).withConfig({
+      componentId:"sc-f8aba411-0"
+    })(["border-radius:",";border:1px solid #E8E8E8;padding:16px 18px;text-align:center;margin-right:unset;transition:all 0.4s ease;&.ant-radio-wrapper-checked{background-color:#F7FAFF;border-color:#5D97FF;}&:hover{border-color:#5D97FF;}> .ant-radio{display:none;}span.ant-radio + *{all:unset;width:100%;}"],e=>{
+      let{
+        recommended:t
+      }=e;
+      return t?"0 0 4px 4px":"4px"
+    }),
+    Y=w.default.h2.withConfig({
+      componentId:"sc-f8aba411-1"
+    })(["font-weight:500;font-size:18px;line-height:24px;color:#161E35;margin-bottom:4px;"]),
+    H=w.default.p.withConfig({
+      componentId:"sc-f8aba411-2"
+    })(["font-weight:500;font-size:12px;line-height:24px;color:#454B5D;"]),
+    J=w.default.div.withConfig({
+      componentId:"sc-f8aba411-3"
+    })(["padding:10px 0;margin:8px 0;border-top:1px solid #E8E8EB;border-bottom:1px solid #E8E8EB;> span{color:#454B5D;font-size:10px;line-height:24px;margin-bottom:4px;}"]),
+    K=w.default.ul.withConfig({
+      componentId:"sc-f8aba411-4"
+    })(["text-align:left;display:flex;flex-direction:column;gap:4px;max-height:250px;overflow-y:auto;"]),
+    ee=w.default.li.withConfig({
+      componentId:"sc-f8aba411-5"
+    })(["font-size:12px;line-height:24px;color:#000;font-weight:",';position:relative;padding-left:10px;&:before{content:"";position:absolute;width:4px;height:4px;border-radius:50%;left:0;top:10px;background:#000;}'],e=>{
+      let{
+        highlighted:t
+      }=e;
+      return t&&500
+    }),
+    et=w.default.h3.withConfig({
+      componentId:"sc-f8aba411-6"
+    })(["font-weight:700;font-size:22px;line-height:24px;color:#161E35;margin-bottom:0;"]),
+    en=w.default.span.withConfig({
+      componentId:"sc-f8aba411-7"
+    })(["position:absolute;top:-30px;left:-1px;right:0;width:101%;padding:2px 10px;border-radius:4px 4px 0 0;background-color:#5D97FF;color:white;font-size:12px;line-height:24px;font-weight:500;border:1px solid #5D97FF;"]),
+    eo=w.default.div.withConfig({
+      componentId:"sc-f8aba411-8"
+    })(["font-size:12px;line-height:24px;font-weight:400;color:",";background-color:",";margin:6px 0;border-radius:20px;display:inline-block;padding:0 8px;"],e=>{
+      let{
+        isMonthly:t
+      }=e;
+      return t?"#DC4F44":"#2DAC7C"
+    },e=>{
+      let{
+        isMonthly:t
+      }=e;
+      return t?"#FEEEED":"#EAF9F3"
+    }),
+    ei=w.default.div.withConfig({
+      componentId:"sc-f8aba411-9"
+    })(["font-size:12px;line-height:18px;margin-top:6px;color:#454B5D;"]);
+    var el=e=>{
+      let{
+        id:t,
+        name:n,
+        title:o,
+        subTitle:l,
+        pricingTitle:a,
+        pricingSubtitle:r,
+        savedTag:s,
+        isTailoredPricing:c,
+        features:d,
+        recommended:p,
+        isMonthly:u
+      }=e;
+      return(0,i.jsxs)($,{
+        value:t,
+        recommended:p===n,
+        children:[p===n&&(0,i.jsx)(en,{
+          children:"Best for your session volume"
+        }),o&&(0,i.jsx)(Y,{
+          children:o
+        }),l&&(0,i.jsx)(H,{
+          children:l
+        }),c?(0,i.jsxs)(J,{
+          children:[(0,i.jsx)("span",{
+            children:"Tailored pricing"
+          }),(0,i.jsx)(et,{
+            children:"Let's talk"
+          })]
+        }):(0,i.jsxs)(J,{
+          children:[a&&(0,i.jsxs)(i.Fragment,{
+            children:[(0,i.jsx)(et,{
+              children:a
+            }),(0,i.jsx)(ei,{
+              children:u?"billed monthly":"billed annually"
+            })]
+          }),s&&(0,i.jsx)(eo,{
+            isMonthly:u,
+            children:s
+          }),r&&(0,i.jsx)("h4",{
+            children:r
+          })]
+        }),(null==d?void 0:d.length)>0&&(0,i.jsx)(K,{
+          children:null==d?void 0:d.map(e=>{
+            let{
+              enabled:t
+            }=e;
+            return t&&(0,i.jsx)(ee,{
+              highlighted:e.highlighted,
+              children:e.name
+            },e.name)
+          })
+        })]
+      })
+    };
+    let ea=(0,w.default)(q.Z).withConfig({
+      componentId:"sc-ddb93d93-0"
+    })(["width:100%;.ant-radio-group{width:100%;}"]),
+    er=(0,w.default)(q.Z.Item).withConfig({
+      componentId:"sc-ddb93d93-1"
+    })([""]),
+    es=w.default.div.withConfig({
+      componentId:"sc-ddb93d93-2"
+    })(["display:flex;gap:16px;> label{flex-basis:50%;}"]),
+    ec=w.default.div.withConfig({
+      componentId:"sc-ddb93d93-3"
+    })(["display:flex;justify-content:flex-end;gap:16px;margin-top:17px;button.ant-btn-link{font-size:14px;line-height:24px;font-weight:500;color:#5D97FF;border:unset;&:hover{color:#4A79CC;}}button.ant-btn-primary{font-weight:400;font-size:14px;line-height:24px;color:#FFFFFF;padding:4px 10px;background-color:#5D97FF;border-radius:6px;cursor:pointer;border:none;outline:none;width:fit-content;transition:all 0.2s ease-in-out;&:hover{background-color:#4A79CC;}}"]);
+    var ed=(0,l.memo)(e=>{
+      let{
+        setTriggerFreePlanPopup:t
+      }=e,
+      [n]=q.Z.useForm(),
+      {
+        currentOrgReducer:o
+      }=(0,a.v9)(e=>e),
+      {
+        setTriggerRequestQuote:r,
+        setShowPricingModal:s
+      }=(0,c.I)(),
+      d=(0,a.I0)(),
+      {
+        planType:p
+      }=o,
+      u=q.Z.useWatch("plan",n),
+      h=(0,l.useCallback)(()=>{
+        r(!0),
+        d((0,g.CW)(null,{
+          eventName:"wa_continue_with_plan_clicked",
+          track_type:"event"
+        }))
+      },[d,r]),
+      f=(0,l.useCallback)(()=>{
+        s(!1),
+        t(!0),
+        d((0,g.CW)(null,{
+          eventName:"wa_downgrade_to_free_plan_clicked",
+          track_type:"event"
+        }))
+      },[d,s,t]);
+      return(0,i.jsx)(X,{
+        children:(0,i.jsxs)(ea,{
+          form:n,
+          onFinish:h,
+          initialValues:{
+            plan:"growth"
+          },
+          children:[(0,i.jsx)(er,{
+            name:"plan",
+            rules:[{
+              required:!0,
+              message:"Please select atleast one option."
+            }],
+            children:(0,i.jsx)(A.default.Group,{
+              children:(0,i.jsx)(es,{
+                children:U.at.map(e=>(0,i.jsx)(el,{
+                  id:e.name,
+                  name:e.name,
+                  title:e.title,
+                  subTitle:e.subTitle,
+                  features:e.features,
+                  isTailoredPricing:!0
+                },e.name))
+              })
+            })
+          }),(0,i.jsx)(er,{
+            children:(0,i.jsxs)(ec,{
+              children:["trial"===p&&(0,i.jsx)(G.Z,{
+                type:"link",
+                onClick:f,
+                children:"Downgrade to free plan"
+              },"button"),(0,i.jsxs)(G.Z,{
+                htmlType:"submit",
+                type:"primary",
+                children:["Continue with ",u," plan"]
+              })]
+            })
+          })]
+        })
+      })
+    }),
+    ep=n(81383);
+    let eu=w.default.h3.withConfig({
+      componentId:"sc-5c10a05a-0"
+    })(["font-weight:500;font-size:18px;line-height:24px;color:#161E35;margin-bottom:8px;"]),
+    eh=w.default.p.withConfig({
+      componentId:"sc-5c10a05a-1"
+    })(["font-weight:500;font-size:14px;line-height:24px;color:#454b5d;"]),
+    ef=w.default.ul.withConfig({
+      componentId:"sc-5c10a05a-2"
+    })(["display:flex;flex-direction:column;gap:2px;li{font-size:12px;line-height:24px;color:#454B5D;}"]),
+    eg=w.default.li.withConfig({
+      componentId:"sc-5c10a05a-3"
+    })(['position:relative;padding-left:16px;&::before{content:"";position:absolute;left:3px;top:10px;width:4px;height:4px;background-color:#454B5D;border-radius:50%;}']),
+    ex=w.default.li.withConfig({
+      componentId:"sc-5c10a05a-4"
+    })(["padding-left:20px;position:relative;color:#161E35 !important;&::before{content:\"\";position:absolute;left:0;top:7px;width:14px;height:12px;background:url('/static/rounded-close.svg') no-repeat;}"]),
+    em=w.default.div.withConfig({
+      componentId:"sc-5c10a05a-5"
+    })(["display:flex;justify-content:flex-end;gap:16px;margin-top:17px;button.ant-btn-link{font-size:14px;line-height:24px;font-weight:500;color:#5D97FF;border:unset;&:hover{color:#4A79CC;}}button.ant-btn-primary{font-weight:400;font-size:14px;line-height:24px;color:#FFFFFF;padding:4px 20px;background-color:#5D97FF;border-radius:6px;cursor:pointer;border:none;outline:none;width:fit-content;transition:all 0.2s ease-in-out;&:hover{background-color:#4A79CC;}}"]),
+    eb=w.default.p.withConfig({
+      componentId:"sc-5c10a05a-6"
+    })(["font-size:14px;line-height:24px;margin-bottom:0;color:#454B5D;> button{border:unset;box-shadow:unset;color:#5D97FF;background-color:unset;padding:0;font-weight:400;cursor:pointer;}"]);
+    var ew=(0,l.memo)(e=>{
+      var t;
+      let{
+        setTriggerFreePlan:n,
+        triggerFreePlanPopup:r
+      }=e,
+      d=(0,x.useQueryClient)(),
+      u=(0,a.I0)(),
+      {
+        currentOrgReducer:b
+      }=(0,a.v9)(e=>e),
+      {
+        orgId:w
+      }=b,
+      [C,y]=(0,l.useState)(!1),
+      [j,k]=(0,l.useState)(!1),
+      {
+        setShowPricingModal:I
+      }=(0,c.I)(),
+      S=(0,l.useMemo)(()=>"currentSubscription".concat(w),[w]),
+      {
+        data:F
+      }=(0,m.Qy)({
+        queryKey:S,
+        orgId:w
+      }),
+      P=(0,l.useMemo)(()=>{
+        var e;
+        return(null==F?void 0:null===(e=F.yourPlan)||void 0===e?void 0:e.planType)==="free"
+      },[null==F?void 0:null===(t=F.yourPlan)||void 0===t?void 0:t.planType]),
+      _=()=>{
+        o=setInterval(()=>{
+          d.invalidateQueries(S)
+        },800)
+      },
+      T=async()=>{
+        try{
+          k(!0);
+          let e=await ep.Z.downgradeToFreePlan(w);
+          200===e.status&&_()
+        }
+        catch(e){
+          s.l.error("Free Plan Downgrade Error:",e),
+          p.ZP.error(e.response.data.error.message||"Something went wrong. Please try again later.")
+        }
+      };
+      (0,l.useEffect)(()=>(P&&(clearInterval(o),u((0,f.wW)(w)),y(!0),k(!1)),()=>{
+        clearInterval(o),
+        u((0,h.Zn)()),
+        k(!1)
+      }),[P,u,w,I,n]);
+      let E=(0,l.useCallback)(()=>{
+        n(!1),
+        I(!0),
+        u((0,g.CW)(null,{
+          eventName:"wa_back_to_plans_clicked",
+          track_type:"event"
+        }))
+      },[u,I,n]),
+      z=async()=>{
+        u((0,g.CW)(null,{
+          eventName:"wa_downgrade_clicked",
+          track_type:"event"
+        })),
+        T()
+      },
+      D=(0,l.useCallback)(()=>{
+        n(!1),
+        I(!1)
+      },[I,n]);
+      return(0,i.jsx)(v.default,{
+        wrapClassName:"filters-locked-modal select-plan-modal",
+        visible:r,
+        closable:!1,
+        footer:null,
+        maskStyle:{
+          zIndex:"99998",
+          background:"rgba(22, 30, 53, 0.3)"
+        },
+        getContainer:()=>document.body.querySelector(".ant-layout-content"),
+        maskClosable:!r,
+        children:C?(0,i.jsxs)(i.Fragment,{
+          children:[(0,i.jsx)(eu,{
+            children:"Downgrade successful"
+          }),(0,i.jsx)(eb,{
+            children:"You have successfully downgraded your account to the free plan."
+          }),(0,i.jsx)(em,{
+            children:(0,i.jsx)(G.Z,{
+              htmlType:"button",
+              type:"primary",
+              onClick:D,
+              children:"Done"
+            })
+          })]
+        }):(0,i.jsxs)(i.Fragment,{
+          children:[(0,i.jsx)(eu,{
+            children:"Are you sure you want to downgrade to the free plan?"
+          }),(0,i.jsx)(eh,{
+            children:"Why the free plan might not be ideal for you:"
+          }),(0,i.jsxs)(ef,{
+            children:[U.vI.features.map(e=>(0,i.jsx)(eg,{
+              children:e
+            },e)),U.vI.disabledFeatures.map(e=>(0,i.jsx)(ex,{
+              children:e
+            },e))]
+          }),(0,i.jsxs)(em,{
+            children:[(0,i.jsx)(G.Z,{
+              htmlType:"button",
+              type:"link",
+              onClick:E,
+              children:"Back to plans"
+            }),(0,i.jsx)(G.Z,{
+              htmlType:"button",
+              type:"primary",
+              onClick:z,
+              loading:j,
+              children:"Downgrade"
+            })]
+          })]
+        })
+      })
+    }),
+    eC=(0,l.memo)(()=>{
+      let{
+        currentOrgReducer:e,
+        urlReducer:t
+      }=(0,a.v9)(e=>e),
+      {
+        parentType:n
+      }=t,
+      {
+        planType:o,
+        status:s,
+        orgId:p
+      }=e,
+      [u,h]=(0,l.useState)(),
+      [f,g]=(0,l.useState)(!0),
+      [x,m]=(0,l.useState)(!1),
+      {
+        selfServeFlag:b,
+        triggerRequestQuote:w,
+        showPricingModal:C,
+        setShowPricingModal:y
+      }=(0,c.I)();
+      (0,l.useEffect)(()=>{
+        "Expired"!==s&&y(!1)
+      },[y,s,n]),
+      (0,l.useEffect)(()=>{
+        "Expired"===s&&"trial"===o&&y(!0)
+      },[o,y,s]);
+      let v=(0,l.useMemo)(()=>!b&&("trial"===o&&"Expired"!==s||"free"===o),[o,b,s]),
+      j=(0,l.useMemo)(()=>b&&("free"===o||"trial"===o),[o,b]),
+      k=(0,l.useCallback)(async e=>{
+        try{
+          let t=await r.Z.getNewSelfServePlans(e);
+          200===t.status&&(h(t.data.data),g(!1))
+        }
+        catch(e){}
+      },[]);
+      return((0,l.useEffect)(()=>{
+        j&&k(p)
+      },[p,k,j]),0===b)?null:x?(0,i.jsx)(ew,{
+        setTriggerFreePlan:m,
+        triggerFreePlanPopup:x
+      }):w||v?(0,i.jsx)(d.Z,{
+        showPricingModal:C,
+        setShowPricingModal:y
+      }):j?(0,i.jsx)(W,{
+        planData:u,
+        isLoading:f,
+        triggerFreePlanPopup:x,
+        setTriggerFreePlanPopup:m
+      }):b||"Expired"!==s||"trial"!==o?(0,i.jsx)(d.Z,{
+        showPricingModal:C,
+        setShowPricingModal:y
+      }):(0,i.jsx)(ed,{
+        triggerFreePlanPopup:x,
+        setTriggerFreePlanPopup:m
+      })
+    })
+  }
+}]);

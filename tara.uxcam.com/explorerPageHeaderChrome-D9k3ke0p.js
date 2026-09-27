@@ -1,0 +1,1 @@
+import{t as e}from"./utils-DMoTunZH.js";var t=e(`explorer-page-header-row`,`flex min-w-0 flex-wrap items-end gap-6 border-b border-[var(--border)]`),n=e(t,`-mx-6 -mt-4 px-6`),r=e(`explorer-page-header-tabs-group min-w-0 flex-1`),i=e(`h-auto min-h-9 w-full max-w-none justify-start gap-6 overflow-x-auto overscroll-y-none pb-0`),a=`shrink-0 px-0`;export{a,i,n,r,t};

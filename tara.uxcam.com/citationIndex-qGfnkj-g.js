@@ -1,0 +1,1 @@
+var e=/\[((?:[^\]\\]|\\.)*)\]\(\s*(<[^>]*>|[^)\s]+)[^)]*\)/g;function t(t,n,r){for(let i of t){let t=n(i);e.lastIndex=0;let a;for(;(a=e.exec(t))!==null;)r({label:a[1],href:a[2].startsWith(`<`)?a[2].slice(1,-1):a[2]})}}export{t};

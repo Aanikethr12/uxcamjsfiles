@@ -1,0 +1,5308 @@
+"use strict";
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[5148],{
+  74569:function(e,t,i){
+    i.d(t,{
+      Z:function(){
+        return eS
+      }
+    });
+    var n=i(85893),
+    r=i(67294),
+    a=i(14416),
+    s=i(19521),
+    l=i(47639),
+    o=i(92046),
+    d=i(30663),
+    c=i(5257),
+    u=e=>(0,n.jsx)("svg",{
+      width:14,
+      height:13,
+      fill:"none",
+      xmlns:"http://www.w3.org/2000/svg",
+      ...e,
+      children:(0,n.jsx)("path",{
+        fillRule:"evenodd",
+        clipRule:"evenodd",
+        d:"M7 .595c-1.98 0-3.368.06-4.24.119-.87.058-1.567.71-1.646 1.591a37.019 37.019 0 0 0-.127 3.282c0 1.48.062 2.558.127 3.283.08.881.777 1.533 1.646 1.591.402.027.913.054 1.542.076v1.121a.935.935 0 0 0 1.556.698l2-1.78a59.9 59.9 0 0 0 3.382-.115c.87-.058 1.567-.71 1.646-1.591.065-.725.127-1.803.127-3.283s-.062-2.557-.127-3.282c-.08-.882-.777-1.533-1.646-1.591A64.66 64.66 0 0 0 7 .594ZM2.833 3.474a.75.75 0 0 1 .75-.75h6.5a.75.75 0 0 1 0 1.5h-6.5a.75.75 0 0 1-.75-.75Zm.775 2.335a.75.75 0 0 0 0 1.5h2.963a.75.75 0 0 0 0-1.5H3.608Z",
+        fill:"#090F19"
+      })
+    }),
+    h=e=>(0,n.jsx)("svg",{
+      width:15,
+      height:14,
+      fill:"none",
+      xmlns:"http://www.w3.org/2000/svg",
+      ...e,
+      children:(0,n.jsx)("path",{
+        fillRule:"evenodd",
+        clipRule:"evenodd",
+        d:"M5.359 13.07a1.127 1.127 0 0 1-1.127-1.127v-1.207H2.364a1.4 1.4 0 0 1-1.4-1.4V2.33a1.4 1.4 0 0 1 1.4-1.4h10.272a1.4 1.4 0 0 1 1.4 1.4v7.004a1.4 1.4 0 0 1-1.4 1.401H8.16l-2.004 2.005c-.212.21-.498.33-.797.33ZM4.232 5.134a1.4 1.4 0 1 1 2.801 0v1.4a1.868 1.868 0 0 1-1.868 1.868.467.467 0 0 1 0-.933.934.934 0 0 0 .934-.934h-.467a1.4 1.4 0 0 1-1.4-1.401Zm3.735 0a1.4 1.4 0 1 1 2.801 0v1.4a1.868 1.868 0 0 1-1.867 1.868.467.467 0 1 1 0-.933.934.934 0 0 0 .934-.934h-.467a1.4 1.4 0 0 1-1.401-1.401Z",
+        fill:"#5D97FF"
+      })
+    }),
+    p=i(90829),
+    m=e=>(0,n.jsxs)("svg",{
+      width:25,
+      height:24,
+      fill:"none",
+      xmlns:"http://www.w3.org/2000/svg",
+      ...e,
+      children:[(0,n.jsx)("rect",{
+        x:.744,
+        width:24,
+        height:24,
+        rx:12,
+        fill:"#F3F4F5"
+      }),(0,n.jsx)("rect",{
+        x:8.278,
+        y:5.25,
+        width:3,
+        height:13.5,
+        rx:1.5,
+        fill:"#161E35"
+      }),(0,n.jsx)("rect",{
+        x:14.21,
+        y:5.25,
+        width:3,
+        height:13.5,
+        rx:1.5,
+        fill:"#161E35"
+      })]
+    }),
+    f=e=>(0,n.jsxs)("svg",{
+      width:25,
+      height:24,
+      fill:"none",
+      xmlns:"http://www.w3.org/2000/svg",
+      ...e,
+      children:[(0,n.jsx)("path",{
+        d:"M.744 12c0-6.627 5.372-12 12-12 6.627 0 12 5.373 12 12s-5.373 12-12 12c-6.628 0-12-5.373-12-12Z",
+        fill:"#DFEAFF"
+      }),(0,n.jsx)("path",{
+        d:"M9.495 9.902a1 1 0 1 0-1.6-1.2l1.6 1.2ZM7.75 12.263l1-.026-1 .026Zm1.097 2.909.768-.641-.768.64Zm2.666 1.6.204-.98-.204.98Zm3.082-.4-.447-.894.447.894Zm2.17-2.226-.906-.424.906.424Zm.32-3.092.973-.23-.974.23ZM15.415 8.43l.62-.784-.62.784Zm-7.521.27A5.731 5.731 0 0 0 6.75 12.29l2-.052c-.022-.84.24-1.663.745-2.335l-1.6-1.2ZM6.75 12.29a5.73 5.73 0 0 0 1.33 3.524l1.535-1.282a3.731 3.731 0 0 1-.865-2.294l-2 .052Zm1.33 3.524a5.731 5.731 0 0 0 3.228 1.937l.409-1.957a3.731 3.731 0 0 1-2.102-1.262L8.08 15.812Zm3.228 1.937a5.731 5.731 0 0 0 3.735-.483l-.895-1.79a3.731 3.731 0 0 1-2.431.316l-.409 1.957Zm3.735-.483a5.731 5.731 0 0 0 2.628-2.697l-1.812-.848a3.731 3.731 0 0 1-1.71 1.756l.894 1.789Zm2.628-2.697c.547-1.17.683-2.49.387-3.746l-1.947.46a3.732 3.732 0 0 1-.252 2.438l1.812.848Zm.387-3.746a5.732 5.732 0 0 0-2.021-3.177l-1.242 1.568a3.732 3.732 0 0 1 1.316 2.068l1.947-.46Zm-2.021-3.177a5.73 5.73 0 0 0-3.557-1.238v2c.84 0 1.656.284 2.315.806l1.242-1.568Z",
+        fill:"#5D97FF"
+      }),(0,n.jsx)("path",{
+        d:"m13.788 10.441-2.935-2.935 2.936-2.936v5.871Z",
+        fill:"#5D97FF"
+      })]
+    }),
+    g=e=>(0,n.jsxs)("svg",{
+      width:25,
+      height:24,
+      fill:"none",
+      xmlns:"http://www.w3.org/2000/svg",
+      ...e,
+      children:[(0,n.jsx)("rect",{
+        width:24,
+        height:24,
+        rx:12,
+        transform:"matrix(-1 0 0 1 24.744 0)",
+        fill:"#F3F4F5"
+      }),(0,n.jsx)("path",{
+        d:"M16.389 6.862a1.315 1.315 0 0 1 1.237-.097c.162.066.308.162.431.282.258.25.402.584.402.933v8.036c.002.173-.033.345-.102.506-.069.16-.17.306-.3.43a1.561 1.561 0 0 1-.437.287 1.312 1.312 0 0 1-1.253-.115l-6.353-4.095a1.253 1.253 0 0 1-.451-.483 1.337 1.337 0 0 1 .008-1.273c.109-.194.269-.358.465-.476l6.353-3.936Z",
+        fill:"#161E35"
+      }),(0,n.jsx)("rect",{
+        width:2.376,
+        height:10.14,
+        rx:1.188,
+        transform:"matrix(-1 0 0 1 9.405 7.206)",
+        fill:"#161E35"
+      })]
+    }),
+    v=e=>(0,n.jsxs)("svg",{
+      width:25,
+      height:24,
+      fill:"none",
+      xmlns:"http://www.w3.org/2000/svg",
+      ...e,
+      children:[(0,n.jsx)("rect",{
+        x:.744,
+        width:24,
+        height:24,
+        rx:12,
+        fill:"#F3F4F5"
+      }),(0,n.jsx)("path",{
+        d:"M9.099 6.862a1.315 1.315 0 0 0-1.237-.097 1.361 1.361 0 0 0-.432.282c-.258.25-.402.584-.401.933v8.036c-.002.173.033.345.101.506.07.16.171.306.3.43.127.118.275.216.437.287a1.313 1.313 0 0 0 1.254-.115l6.353-4.095c.193-.12.349-.287.451-.483a1.338 1.338 0 0 0-.008-1.273 1.303 1.303 0 0 0-.465-.476L9.099 6.861Z",
+        fill:"#161E35"
+      }),(0,n.jsx)("rect",{
+        x:16.083,
+        y:7.206,
+        width:2.376,
+        height:10.14,
+        rx:1.188,
+        fill:"#161E35"
+      })]
+    }),
+    y=i(13927),
+    _=i(3641),
+    x=i(85445),
+    C=i(68457),
+    E=i(43186),
+    b=i(12016),
+    w=e=>(0,n.jsxs)("svg",{
+      width:12,
+      height:12,
+      fill:"none",
+      xmlns:"http://www.w3.org/2000/svg",
+      ...e,
+      children:[(0,n.jsx)("rect",{
+        opacity:.1,
+        width:12,
+        height:12,
+        rx:6,
+        fill:"#5D97FF"
+      }),(0,n.jsx)("path",{
+        d:"M9.584 4.594 6 8.177 2.417 4.594h7.167Z",
+        fill:"#5D97FF"
+      })]
+    });
+    let S=(0,s.createGlobalStyle)([".speed-option-title .ant-dropdown-menu-item-group-title{text-align:center;color:#151E35;padding:5px 0;}.speed-option{padding:5px 15px 5px 5px;}"]),
+    I=s.default.div.withConfig({
+      componentId:"sc-bf685088-0"
+    })(["display:flex;justify-content:center;align-items:center;font-size:12px;gap:4px;color:#090f19;border-radius:50px;background-color:#f3f4f5;padding:4px 6px;cursor:pointer;position:relative;"]),
+    M=(0,s.default)(C.default).withConfig({
+      componentId:"sc-bf685088-1"
+    })(["border-radius:8px;.ant-dropdown-menu-item-group-list{margin:0;padding:0 6px;li{border-radius:4px;}}"]),
+    k=(0,s.default)(C.default.Item).withConfig({
+      componentId:"sc-bf685088-2"
+    })(["background-color:",";"],e=>e.isSelected?"#EFF5FF":"transparent"),
+    D=[.5,1,2,4],
+    R=(0,r.memo)(e=>{
+      let{
+        speed:t,
+        isSelected:i,
+        ...r
+      }=e;
+      return(0,n.jsxs)(k,{
+        className:"speed-option",
+        ...r,
+        isSelected:i,
+        children:[t,"x"]
+      })
+    });
+    var T=(0,r.memo)(e=>{
+      let{
+        onPlayrateChange:t,
+        containerRef:i
+      }=e,
+      {
+        playbackRate:a
+      }=(0,c.W4)(),
+      s=(0,r.useCallback)(e=>{
+        t(e.key)
+      },[t]),
+      l=(0,r.useMemo)(()=>(0,n.jsx)(M,{
+        onClick:s,
+        children:(0,n.jsx)(C.default.ItemGroup,{
+          title:"",
+          className:"speed-option-title",
+          children:D.map(e=>(0,n.jsx)(R,{
+            speed:e,
+            isSelected:e===a
+          },e))
+        })
+      }),[a]),
+      o=(0,r.useCallback)(()=>i.current,[i]);
+      return(0,n.jsxs)(n.Fragment,{
+        children:[(0,n.jsx)(S,{}),(0,n.jsx)(E.Z,{
+          direction:"vertical",
+          children:(0,n.jsx)(b.Z,{
+            getPopupContainer:o,
+            overlay:l,
+            placement:"top",
+            children:(0,n.jsxs)(I,{
+              children:[(0,n.jsxs)("span",{
+                children:[a,"x"]
+              }),(0,n.jsx)(w,{})]
+            })
+          })
+        })]
+      })
+    }),
+    N=i(89697),
+    A=i(53857);
+    let L=s.default.button.withConfig({
+      componentId:"sc-8f5f6fb7-0"
+    })(["display:",";width:100%;padding:0;background:transparent;font-size:inherit;border:none;text-align:left;align-items:center;.uc-video-menu-label{padding:8px 10px;width:120px;}.uc-video-menu-content{width:48px;}&:hover{background:#f5f5f5;cursor:pointer;}"],e=>e.isShareSession?"none":"flex"),
+    U=s.default.span.withConfig({
+      componentId:"sc-8f5f6fb7-1"
+    })(["cursor:pointer;background-color:#f3f4f5;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;&:hover{background-color:#f7faff;}svg{color:#090F19;}"]),
+    j=s.default.ul.withConfig({
+      componentId:"sc-8f5f6fb7-2"
+    })(["background:#fff;box-shadow:0px 0px 18px rgba(0,0,0,0.32);border-radius:6px;overflow:hidden;button{font-size:12px;}"]),
+    O=r.memo(e=>{
+      let{
+        parentType:t,
+        isShareSession:i,
+        showTimelineGestures:s,
+        session:l,
+        videoDuration:o
+      }=e,
+      {
+        playAll:u,
+        setPlayAll:h,
+        skipInactivity:p,
+        setSkipInactivity:m
+      }=(0,c.gq)(),
+      f=(0,a.I0)(),
+      g=r.useCallback(()=>{
+        h(e=>!e)
+      },[h]),
+      v=r.useCallback(()=>{
+        m(e=>!e);
+        let{
+          _id:e
+        }=l||{};
+        f((0,d.CW)(null,{
+          eventName:"skip_inactivity",
+          track_type:"event",
+          eventProperty:{
+            showTimelineGesturesFlag:!1,
+            sessionId:e,
+            totalSessionLength:o
+          }
+        }))
+      },[m,f,l,o]);
+      return(0,n.jsxs)(j,{
+        className:"uc-video-menu-wrap vjs-custom-setting-menu",
+        children:[!s&&(0,n.jsx)("li",{
+          children:(0,n.jsxs)(L,{
+            type:"button",
+            "data-intercom-target":"Skip inactivity",
+            children:[(0,n.jsx)("div",{
+              className:"uc-video-menu-label",
+              children:"Skip Inactivity"
+            }),(0,n.jsx)("div",{
+              className:"uc-video-menu-content",
+              children:(0,n.jsx)(N.Z,{
+                size:"small",
+                checked:p,
+                onChange:v
+              })
+            })]
+          })
+        }),"heatmapsList"!==t&&(0,n.jsx)("li",{
+          children:(0,n.jsxs)(L,{
+            type:"button",
+            isShareSession:i,
+            children:[(0,n.jsx)("div",{
+              className:"uc-video-menu-label",
+              children:"Play All"
+            }),(0,n.jsx)("div",{
+              className:"uc-video-menu-content",
+              children:(0,n.jsx)(N.Z,{
+                size:"small",
+                checked:u,
+                onChange:g
+              })
+            })]
+          })
+        })]
+      })
+    });
+    var F=r.memo(e=>{
+      let{
+        isShareSession:t,
+        containerRef:i,
+        parentType:a,
+        showTimelineGestures:s,
+        session:l,
+        videoDuration:o
+      }=e,
+      [d,c]=r.useState(!1),
+      [u,h]=r.useState("main"),
+      p=r.useCallback(e=>{
+        c(e),
+        e||h("main")
+      },[]),
+      m=r.useMemo(()=>(0,n.jsx)(O,{
+        parentType:a,
+        isShareSession:t,
+        showTimelineGestures:s,
+        session:l,
+        videoDuration:o
+      }),[u,s,l,o]),
+      f=r.useCallback(()=>i.current,[i]);
+      return(0,n.jsx)(b.Z,{
+        getPopupContainer:f,
+        overlay:m,
+        trigger:"click",
+        visible:d,
+        onVisibleChange:p,
+        placement:"topRight",
+        children:(0,n.jsx)(U,{
+          children:(0,n.jsx)(A.Z,{})
+        })
+      })
+    }),
+    P=i(67401),
+    H=i(48203),
+    z=i(74936),
+    B=i(76633),
+    V=i(39171),
+    q=i(95315),
+    Z=i(18879),
+    G=i(62495);
+    let W=(0,s.createGlobalStyle)([".gesture-tooltip{min-width:0px !important;}"]),
+    Y=s.default.div.withConfig({
+      componentId:"sc-ea0ace29-0"
+    })(["height:8px;&[aria-disabled='true']{opacity:0.72;}"]),
+    K=s.default.input.withConfig({
+      componentId:"sc-ea0ace29-1"
+    })(["position:absolute;top:0;left:0px;height:100%;background:transparent;width:calc(100% + 10px);cursor:pointer;z-index:9999;transform:translateX(-6px);transition:all 0.3s cubic-bezier( 0.58,0.09,0.56,0.83 );&::-webkit-slider-thumb,&::-moz-range-thumb{-webkit-appearance:none;visibility:hidden;background:#5d97ff;height:12px;width:12px;border:none;border-radius:50%;opacity:0;transition:all 0.3s cubic-bezier( 0.58,0.09,0.56,0.83 );}&:hover{&::-webkit-slider-thumb,&::-moz-range-thumb{}}&:focus{outline:none;}-webkit-appearance:none;"]),
+    X=s.default.div.withConfig({
+      componentId:"sc-ea0ace29-2"
+    })(["display:flex;position:absolute;top:0;left:0;z-index:1;width:100%;height:8px;&:hover{","{&::-webkit-slider-thumb,&::-moz-range-thumb{visibility:visible;opacity:1;}}}"],K),
+    Q=s.default.div.withConfig({
+      componentId:"sc-ea0ace29-3"
+    })(["display:flex;flex-direction:column;position:relative;height:10px;&:hover{input[type='range']::-webkit-slider-thumb{opacity:1;transition:all 0.1s ease-in-out;}}"]),
+    $=s.default.div.withConfig({
+      componentId:"sc-ea0ace29-4"
+    })(["pointer-events:none;height:80%;position:absolute;left:0;bottom:10%;width:0;background:#5d97ff;transition:width 0.2s;"]),
+    J=s.default.span.withConfig({
+      componentId:"sc-ea0ace29-5"
+    })(["position:absolute;width:12px;height:12px;left:0;bottom:-5px;background:#5d97ff;border-radius:50%;cursor:pointer;transition:all 0.2s;&:hover{scale:1.2;}"]),
+    ee=s.default.div.withConfig({
+      componentId:"sc-ea0ace29-6"
+    })(["width:100%;position:absolute;height:3px;bottom:0;z-index:2;input[type='range']::-webkit-slider-thumb{-webkit-appearance:none;width:12px;height:12px;background:#5d97ff;visibility:hidden;opacity:0;border-radius:50%;cursor:pointer;transition:all 0.6s cubic-bezier( 0.58,0.09,0.56,0.83 );&:hover{scale:1.2;}}"]),
+    et=s.default.div.withConfig({
+      componentId:"sc-ea0ace29-7"
+    })(["position:absolute;top:0;left:","%;height:8px;width:1px;background:rgb(204,204,204);transform:translate(-50%,0);"],e=>e.left),
+    ei=s.default.div.withConfig({
+      componentId:"sc-ea0ace29-8"
+    })(["position:absolute;top:0;display:flex;justify-content:center;align-items:center;transform:translate(-50%,calc(-50% - 14px));border-radius:50%;background-image:url(",");z-index:2;background-repeat:no-repeat;background-position:center;svg{transition:transform 0.1s ease-in-out;}&:hover{z-index:3;svg{pointer-events:none;}}",""],e=>{
+      let{
+        src:t
+      }=e;
+      return t
+    },e=>{
+      let{
+        noCodeFlag:t
+      }=e;
+      return t?(0,s.css)(["height:18px;&:hover{z-index:3;svg{transform:scale(1.5);pointer-events:none;}}"]):(0,s.css)(["height:16px;width:16px;"])
+    }),
+    en=s.default.img.withConfig({
+      componentId:"sc-ea0ace29-9"
+    })(["height:16px;width:16px;object-fit:contain;"]),
+    er=s.default.div.withConfig({
+      componentId:"sc-ea0ace29-10"
+    })(["position:absolute;bottom:34px;left:4px;height:24px;display:flex;justify-content:center;align-items:center;font-size:12px;border-radius:30px;background-color:#fff;padding:4px 10px;cursor:pointer;"]),
+    ea=(e,t,i)=>(1-i)*e+i*t,
+    es=(0,r.memo)(e=>{
+      let{
+        gest:t,
+        duration:i,
+        noCodeEventsFeatureFlag:r,
+        handleGestureOnTimelineClick:a
+      }=e,
+      {
+        isRage:s,
+        name:l,
+        time:o,
+        properties:d,
+        params:c
+      }=t,
+      {
+        isEvent:u,
+        isSmartEvent:h,
+        isScreenEvent:p
+      }=(0,B.Pw)(t),
+      m=()=>"UI Freeze"===l?"UIFreeze":s?"rageTap":u?"coded_event":h?"smart_event":p?"screen_event":null;
+      if(void 0===o)return null;
+      let f=(null==d?void 0:d.idString)||(null==c?void 0:c.idString),
+      g="".concat(o).concat(f),
+      v=o/i*100;
+      return(0,n.jsx)(H.Z,{
+        title:()=>"UI Freeze"===l?"UI Freeze":s?"Rage tap":u||h||p?l:null,
+        placement:"top",
+        overlayClassName:"gesture-tooltip",
+        children:(0,n.jsx)(ei,{
+          style:{
+            left:"calc( ".concat(v,"% - 1px)")
+          },
+          left:v,
+          noCodeFlag:r,
+          onClick:e=>a(e,o,m()),
+          children:"UI Freeze"===l?(0,n.jsx)("img",{
+            alt:"Unresponsive",
+            src:"/static/sessions/timeline/unresponsive.svg"
+          }):s?(0,n.jsx)("img",{
+            alt:"Rage tap",
+            src:"/static/sessions/timeline/rageTap.svg"
+          }):u?(0,n.jsx)("img",{
+            alt:"Coded event",
+            src:"/static/sessions/timeline/coded.svg"
+          }):h||p?(0,n.jsx)(en,{
+            alt:"Nocode event",
+            src:"/static/sessions/timeline/smartevent.svg"
+          }):null
+        },g)
+      })
+    }),
+    el=(0,r.memo)(e=>{
+      let{
+        onScreenHover:t,
+        width:i,
+        activityName:a,
+        disabled:s,
+        background:l,
+        onScreenOut:o
+      }=e,
+      d=r.useCallback(()=>{
+        t(a,l)
+      },[t,l,t]);
+      return(0,n.jsx)(Y,{
+        "aria-disabled":s,
+        background:l,
+        width:i,
+        style:{
+          width:"".concat(i,"%"),
+          background:l
+        },
+        onMouseOver:d,
+        onMouseOut:o
+      })
+    });
+    var eo=r.memo(e=>{
+      var t,
+      i;
+      let{
+        screens:s,
+        activityColorMap:l,
+        selectedScreensMap:o,
+        onScreenHover:u,
+        onScreenOut:h,
+        videoRef:p,
+        sessionId:m
+      }=e,
+      {
+        sessionDetail:f,
+        rewind:g
+      }=(0,c.Lc)(),
+      {
+        urlReducer:v
+      }=(0,a.v9)(e=>e),
+      {
+        parentType:y
+      }=v,
+      _=null==f?void 0:null===(t=f.device)||void 0===t?void 0:t.platform,
+      C=null==f?void 0:f.appId,
+      E=2===_,
+      b=null==f?void 0:null===(i=f.device)||void 0===i?void 0:i.sdkPluginType,
+      w=3===_&&"flutter"===b,
+      {
+        data:S
+      }=(0,q.hf)(["appSetting",C],"shareSession"===y?"":C),
+      {
+        getScreenLayoutData:I
+      }=(0,c.Rb)(),
+      M=(null==S?void 0:S.nativeScreenCapture)||(null==f?void 0:f.isNativeScreenCaptureEnabled)||!1,
+      k=(0,r.useMemo)(()=>E&&!M&&(null===x.lv||void 0===x.lv?void 0:x.lv.includes(null==b?void 0:b.toLowerCase())),[E,M,b]),
+      {
+        noCodeEventsFeatureFlag:D
+      }=(0,P.Z)(),
+      R=r.useMemo(()=>{
+        var e;
+        let t=[],
+        i=null==f?void 0:null===(e=f.screenTimeline)||void 0===e?void 0:e.activities;
+        return(null==i?void 0:i.length)&&s&&i.forEach(e=>{
+          e.actions.forEach(e=>{
+            let{
+              isEvent:i,
+              isSmartEvent:n,
+              isScreenEvent:r
+            }=(0,B.Pw)(e);
+            ((null==e?void 0:e.name)==="UI Freeze"||(null==e?void 0:e.isRage)||i||D&&n||D&&r)&&t.push(e)
+          })
+        }),
+        t
+      },[f,s,D]),
+      T=(0,r.useMemo)(()=>s.length?s[s.length-1].endTime:0,[s]),
+      N=(0,r.useMemo)(()=>s.reduce((e,t)=>{
+        let{
+          actions:i
+        }=t;
+        return i.forEach(t=>{
+          let{
+            time:i
+          }=t;
+          return e.push(i/T*100)
+        }),
+        e
+      },[]),[s,T]),
+      A=(0,r.useMemo)(()=>s.map((e,t)=>{
+        let{
+          endTime:i,
+          time:n,
+          activityName:r
+        }=e;
+        return{
+          width:(i-n)/T*100,
+          background:I(y).isSequentialTimelineColor?l[t]:l[r],
+          activityName:r
+        }
+      }),[I,s,T,l,y]),
+      L=(0,r.useRef)(),
+      U=(0,r.useRef)(),
+      j=(0,r.useRef)(),
+      O=(0,r.useRef)(),
+      [F,Y]=(0,r.useState)(0),
+      [en,eo]=(0,r.useState)(0);
+      (0,r.useEffect)(()=>{
+        let e=()=>{
+          eo(e=>ea(e,F,.1)),
+          O.current=requestAnimationFrame(e,1e3/60)
+        };
+        return O.current=requestAnimationFrame(e,1e3/60),
+        ()=>{
+          O.current&&cancelAnimationFrame(O.current)
+        }
+      },[F]),
+      (0,r.useEffect)(()=>{
+        let e=p.current;
+        e&&Number.isFinite(en)&&(e.currentTime=en)
+      },[en]);
+      let ed=(0,r.useCallback)(e=>{
+        let{
+          value:t
+        }=e.currentTarget,
+        i=p.current;
+        if(!i)return;
+        let{
+          duration:n
+        }=i,
+        r=w&&T>0?T:n,
+        a=Math.min(Math.max(parseFloat(t),0),1)*r;
+        Number.isFinite(a)&&(Y(a),O.current&&cancelAnimationFrame(O.current),O.current=requestAnimationFrame(()=>{
+          i.currentTime=a
+        },1e3/60))
+      },[p,w,T]),
+      ec=(0,r.useCallback)(e=>{
+        let t;
+        let{
+          duration:i,
+          currentTime:n
+        }=e.currentTarget;
+        t=w&&T>0&&i>0?i-n<.25?1:Math.min(n/T,1):i>0?Math.min(n/i,1):0;
+        let r=L.current,
+        a=U.current,
+        s=j.current;
+        r&&(r.removeEventListener("change",ed),r.value=t,r.addEventListener("change",ed)),
+        a&&(a.style.width="".concat(100*t,"%")),
+        s&&(s.style.left="calc(".concat(100*t,"% - 8px)"))
+      },[w,T]),
+      eu=(0,a.I0)();
+      (0,r.useEffect)(()=>{
+        if(!p)return;
+        let e=p.current;
+        if(e)return e.addEventListener("timeupdate",ec),
+        ()=>{
+          e.removeEventListener("timeupdate",ec)
+        }
+      },[p,ec]);
+      let eh=(0,r.useCallback)(e=>{
+        let t=e.currentTarget,
+        i=p.current;
+        if("Schematic replay on"===e.target.innerText||!i)return;
+        let{
+          left:n,
+          width:r
+        }=t.getBoundingClientRect(),
+        {
+          duration:a
+        }=i,
+        s=Math.min(Math.max((e.clientX-n)/r,0),1),
+        l=w&&T>0?T:a,
+        o=(0,x.NG)(s*l);
+        Number.isFinite(o)&&(i.currentTime=o)
+      },[w,T,p]),
+      ep=(0,r.useRef)(!1),
+      em=r.useCallback(()=>{
+        let e=p.current;
+        if(e){
+          if(ep.current){
+            let{
+              currentTime:t,
+              duration:i
+            }=e;
+            t<i&&e.play().catch(()=>null)
+          }
+          ep.current=!1
+        }
+      },[p]),
+      ef=r.useCallback(()=>{
+        let e=p.current;
+        e&&(ep.current=!e.paused,e.pause())
+      },[p]),
+      eg=r.useCallback(()=>{
+        let e=L.current;
+        e&&e.addEventListener("input",ed)
+      },[ed]),
+      ev=r.useCallback(()=>{
+        let e=L.current;
+        e&&e.removeEventListener("input",ed)
+      },[ed]),
+      ey=r.useCallback((e,t,i)=>{
+        e.stopPropagation(),
+        g(t),
+        eu((0,d.CW)(null,{
+          eventName:"click_on_timeline_marker",
+          track_type:"event",
+          eventProperty:{
+            sessionId:m,
+            typeOfEvent:i
+          }
+        }))
+      },[g,eu,m]);
+      r.useCallback(e=>{
+        let{
+          isRage:t,
+          name:i,
+          time:r,
+          properties:a,
+          params:s
+        }=e,
+        {
+          isEvent:l,
+          isSmartEvent:o
+        }=(0,B.Pw)(e),
+        d=()=>"UI Freeze"===i?(0,n.jsx)("img",{
+          alt:"Unresponsive",
+          src:"/static/sessions/timeline/unresponsive.svg"
+        }):t?(0,n.jsx)("img",{
+          alt:"Rage tap",
+          src:"/static/sessions/timeline/rageTap.svg"
+        }):l?(0,n.jsx)("img",{
+          alt:"Coded event",
+          src:"/static/sessions/timeline/coded.svg"
+        }):o?(0,n.jsx)("img",{
+          alt:"Nocode event",
+          src:"/static/sessions/timeline/nocode.svg"
+        }):null,
+        c=()=>"UI Freeze"===i?"UIFreeze":t?"rageTap":l?"coded_event":o?"smart_event":null;
+        if(!d||!r)return null;
+        let u=(null==a?void 0:a.idString)||(null==s?void 0:s.idString),
+        h="".concat(r).concat(u),
+        p=r/T*100;
+        return(0,n.jsx)(H.Z,{
+          title:()=>"UI Freeze"===i?"UI Freeze":t?"Rage tap":l||o?i:null,
+          placement:"top",
+          overlayClassName:"gesture-tooltip",
+          children:(0,n.jsx)(ei,{
+            left:p,
+            noCodeFlag:D,
+            onClick:e=>ey(e,r,c()),
+            children:d()
+          },h)
+        })
+      },[ey,T,D]),
+      r.useEffect(()=>{
+        let e=L.current;
+        if(e)return()=>{
+          e.removeEventListener("input",ed)
+        }
+      },[ed]);
+      let{
+        setOpenModal:e_,
+        CustomPropertyModal:ex
+      }=(0,V.Z)(),
+      eC=(0,r.useCallback)(()=>{
+        e_(!0)
+      },[e_]),
+      eE=(0,r.useMemo)(()=>(0,n.jsx)(er,{
+        style:{
+          bottom:(null==R?void 0:R.length)?"34px":"14px"
+        },
+        onClick:eC,
+        children:"Schematic replay on"
+      }),[null==R?void 0:R.length,eC]);
+      return(0,n.jsxs)(n.Fragment,{
+        children:[(0,n.jsx)(W,{}),(0,n.jsxs)(Q,{
+          children:[(0,n.jsxs)(ex,{
+            title:G.HW.title,
+            subtitle:G.HW.subtitle,
+            hideButtons:!0,
+            containerClassName:"schematic-replay-modal",
+            children:[(0,n.jsxs)(G.q1,{
+              children:["To enable native screen recording, ",(0,n.jsx)(z.Z,{
+                type:"link",
+                onClick:()=>(0,Z.aL)(),
+                children:"please reach out to us."
+              })]
+            }),(0,n.jsxs)("div",{
+              className:"modal-footer",
+              children:[(0,n.jsx)(z.Z,{
+                type:"link",
+                children:(0,n.jsx)("a",{
+                  href:G.HW.link,
+                  target:"_blank",
+                  rel:"noopener noreferrer",
+                  children:"Learn more"
+                })
+              }),(0,n.jsx)(z.Z,{
+                type:"primary",
+                onClick:()=>e_(!1),
+                children:"Got it"
+              })]
+            })]
+          }),(0,n.jsxs)(X,{
+            onClick:eh,
+            children:[A.map((e,t)=>{
+              let{
+                width:i,
+                background:r,
+                activityName:a
+              }=e;
+              return(0,n.jsx)(el,{
+                width:i,
+                disabled:!o[a],
+                activityName:a,
+                background:r,
+                onScreenHover:u,
+                onScreenOut:h
+              },t)
+            }),N.map((e,t)=>(0,n.jsx)(et,{
+              className:"test here",
+              left:e
+            },t)),k&&eE,null==R?void 0:R.map((e,t)=>(0,n.jsx)(es,{
+              gest:e,
+              duration:T,
+              noCodeEventsFeatureFlag:D,
+              handleGestureOnTimelineClick:ey
+            },t))]
+          }),(0,n.jsxs)(ee,{
+            children:[(0,n.jsx)(K,{
+              id:"timeline-slider",
+              ref:L,
+              type:"range",
+              min:"0",
+              max:"1",
+              step:T>0?1/T:1e-4,
+              defaultValue:"0",
+              onMouseDown:ef,
+              onMouseUp:em,
+              onMouseEnter:eg,
+              onMouseLeave:ev,
+              onChange:ed
+            }),(0,n.jsx)($,{
+              ref:U
+            }),(0,n.jsx)(J,{
+              ref:j
+            })]
+          })]
+        })]
+      })
+    });
+    let ed=s.default.button.withConfig({
+      componentId:"sc-312e6d24-0"
+    })(["font-size:12px;line-height:16px;background-color:#f3f4f5;border:none;padding:4px 8px;border-radius:30px;cursor:pointer;transition:all 0.2s ease-in-out;display:flex;align-items:center;color:#09101a;font-weight:400;white-space:nowrap;&[aria-checked='false']{background-color:#f3f4f5;&:hover{background-color:#f7faff;}}&[aria-checked='true']{background-color:#5d97ff;color:#ffffff;&:hover{background-color:#4a79cb;}}:focus-visible{outline:none;}"]),
+    ec=s.default.img.withConfig({
+      componentId:"sc-312e6d24-1"
+    })(["height:12px;width:12px;margin:0 2px 0 3px;"]),
+    eu=(0,s.default)(N.Z).withConfig({
+      componentId:"sc-312e6d24-2"
+    })(['background-color:#f3f4f5 !important;background-image:none !important;height:26px !important;line-height:26px;&.ant-switch-checked{background-color:#f3f4f5 !important;.ant-switch-handle::before{background-color:#5D97FF !important;background-image:url(\'data:image/svg+xml,<svg width="8" height="4" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.54462 0.915525C1.43699 0.845677 1.31193 0.803592 1.18181 0.793456C1.05169 0.78321 0.921004 0.805355 0.802688 0.857465C0.705519 0.897457 0.617555 0.954965 0.543751 1.0268C0.389134 1.17641 0.302732 1.37735 0.303082 1.58646V6.40681C0.301974 6.51081 0.322667 6.61382 0.363984 6.71022C0.405289 6.8065 0.46639 6.8942 0.543751 6.96801C0.620039 7.03929 0.708751 7.09768 0.806001 7.14054C0.974406 7.21336 1.16549 7.2246 1.34212 7.17182C1.41865 7.14803 1.49129 7.11432 1.55789 7.07157L5.36883 4.61501C5.48473 4.54285 5.57813 4.44271 5.63938 4.32505C5.70244 4.20651 5.73486 4.07551 5.734 3.94276C5.73313 3.81011 5.699 3.67945 5.6344 3.56157C5.56904 3.44545 5.47298 3.34707 5.35555 3.27634L1.54462 0.915525Z" fill="%23FFFFFF"/><path d="M6.97559 0.915525C6.86796 0.845677 6.7429 0.803592 6.61278 0.793456C6.48265 0.78321 6.35197 0.805355 6.23366 0.857465C6.13649 0.897457 6.04852 0.954965 5.97472 1.0268C5.8201 1.17641 5.7337 1.37735 5.73405 1.58646V6.40681C5.73294 6.51081 5.75364 6.61382 5.79495 6.71021C5.83626 6.8065 5.89736 6.8942 5.97472 6.96801C6.05101 7.03929 6.13972 7.09768 6.23697 7.14054C6.40538 7.21336 6.59646 7.2246 6.77309 7.17182C6.84962 7.14803 6.92226 7.11432 6.98886 7.07157L10.7998 4.61501C10.9157 4.54285 11.0091 4.44271 11.0704 4.32505C11.1334 4.2065 11.1658 4.07551 11.165 3.94276C11.1641 3.81011 11.13 3.67945 11.0654 3.56157C11 3.44545 10.904 3.34707 10.7865 3.27634L6.97559 0.915525Z" fill="%23FFFFFF"/></svg> \');}}.ant-switch-handle::before{background-color:#d9d9d9;}.ant-switch-handle{top:50%;transform:translateY(-50%);&::before{background-image:url(\'data:image/svg+xml,<svg width="8" height="4" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.54462 0.915525C1.43699 0.845677 1.31193 0.803592 1.18181 0.793456C1.05169 0.78321 0.921004 0.805355 0.802688 0.857465C0.705519 0.897457 0.617555 0.954965 0.543751 1.0268C0.389134 1.17641 0.302732 1.37735 0.303082 1.58646V6.40681C0.301974 6.51081 0.322667 6.61382 0.363984 6.71022C0.405289 6.8065 0.46639 6.8942 0.543751 6.96801C0.620039 7.03929 0.708751 7.09768 0.806001 7.14054C0.974406 7.21336 1.16549 7.2246 1.34212 7.17182C1.41865 7.14803 1.49129 7.11432 1.55789 7.07157L5.36883 4.61501C5.48473 4.54285 5.57813 4.44271 5.63938 4.32505C5.70244 4.20651 5.73486 4.07551 5.734 3.94276C5.73313 3.81011 5.699 3.67945 5.6344 3.56157C5.56904 3.44545 5.47298 3.34707 5.35555 3.27634L1.54462 0.915525Z" fill="%23090F19"/><path d="M6.97559 0.915525C6.86796 0.845677 6.7429 0.803592 6.61278 0.793456C6.48265 0.78321 6.35197 0.805355 6.23366 0.857465C6.13649 0.897457 6.04852 0.954965 5.97472 1.0268C5.8201 1.17641 5.7337 1.37735 5.73405 1.58646V6.40681C5.73294 6.51081 5.75364 6.61382 5.79495 6.71021C5.83626 6.8065 5.89736 6.8942 5.97472 6.96801C6.05101 7.03929 6.13972 7.09768 6.23697 7.14054C6.40538 7.21336 6.59646 7.2246 6.77309 7.17182C6.84962 7.14803 6.92226 7.11432 6.98886 7.07157L10.7998 4.61501C10.9157 4.54285 11.0091 4.44271 11.0704 4.32505C11.1334 4.2065 11.1658 4.07551 11.165 3.94276C11.1641 3.81011 11.13 3.67945 11.0654 3.56157C11 3.44545 10.904 3.34707 10.7865 3.27634L6.97559 0.915525Z" fill="%23090F19"/></svg> \');background-size:contain;background-repeat:no-repeat;background-position:1px 4.5px;background-color:#f3f4f5 !important;}}']);
+    var eh=function(e){
+      let{
+        skipInactivity:t,
+        toggleSkipInactivity:i
+      }=e,
+      {
+        urlReducer:r
+      }=(0,a.v9)(e=>e),
+      {
+        getScreenLayoutData:s
+      }=(0,c.Rb)();
+      return s(null==r?void 0:r.parentType).isNewVideoControls?(0,n.jsx)(H.Z,{
+        title:t?"Inactivity Skipped":"Skip Inactivity",
+        placement:"top",
+        arrowPointAtCenter:!0,
+        autoAdjustOverflow:!1,
+        children:(0,n.jsx)(eu,{
+          checked:t,
+          onChange:i
+        })
+      }):(0,n.jsxs)(ed,{
+        onClick:i,
+        "aria-checked":t,
+        "data-intercom-target":"Skip inactivity",
+        children:["Skip Inactivity: ",t?"On":"Off",(0,n.jsx)(ec,{
+          src:"/static/sessions/timeline/forward.svg",
+          alt:""
+        })]
+      })
+    };
+    let ep=s.default.div.withConfig({
+      componentId:"sc-183aafe6-0"
+    })(["display:flex;flex-direction:column;height:70px;padding:0;&[aria-hidden='true']{display:none;}"]),
+    em=s.default.div.withConfig({
+      componentId:"sc-183aafe6-1"
+    })(["cursor:pointer;background:#efefef;"]),
+    ef=s.default.div.withConfig({
+      componentId:"sc-183aafe6-2"
+    })(["display:flex;justify-content:space-between;min-height:60px;padding:0 14px;"]),
+    eg=s.default.div.withConfig({
+      componentId:"sc-183aafe6-3"
+    })(["display:flex;align-items:center;max-width:100%;overflow:hidden;gap:12px;.button-grp{display:flex;align-items:center;gap:8px;}"]),
+    ev=s.default.div.withConfig({
+      componentId:"sc-183aafe6-4"
+    })(["display:flex;align-items:center;gap:8px;"]),
+    ey=s.default.button.withConfig({
+      componentId:"sc-183aafe6-5"
+    })(["display:",";align-items:center;background:transparent;border:none;padding:0;font-size:24px;height:24px;cursor:",";opacity:",";transition:opacity 0.2s ease;&:focus-visible{outline:0;}.vjs-icon-previous-item{width:24px;height:24px;display:flex;align-items:center;justify-content:center;transition:background-image 0.2s ease-in-out;}.vjs-icon-next-item{width:24px;height:24px;display:flex;align-items:center;justify-content:center;transition:background-image 0.2s ease-in-out;}.vjs-icon-next-item:hover,.vjs-icon-previous-item:hover{svg{rect:nth-child(1){fill:#eff5ff;}path,path + rect{fill:#5d97ff;}}}.vjs-icon-next-item::before,.vjs-icon-previous-item::before{content:'';}"],e=>e.isShareSession?"none":"flex",e=>e.disabled?"not-allowed":"pointer",e=>e.disabled?.4:1),
+    e_=s.default.div.withConfig({
+      componentId:"sc-183aafe6-6"
+    })(["font-size:12px;font-weight:400;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;&:not(:empty) + &{display:none;}&:empty{display:none;}"]),
+    ex=s.default.div.withConfig({
+      componentId:"sc-183aafe6-7"
+    })(["border:none;cursor:pointer;background-color:#f3f4f5;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;.fullscreen-icon{width:12px;height:12px;background-image:url(/static/session-replay/fullscreen.svg);background-repeat:no-repeat;background-size:contain;background-position:center;}&:hover{background-color:#f7faff;}"]),
+    eC=s.default.button.withConfig({
+      componentId:"sc-183aafe6-8"
+    })(["display:flex;align-items:center;justify-content:center;border:none;padding:0;color:#5D97FF;cursor:pointer;background:transparent;margin-right:",";&[aria-label='play']{.vjs-icon-play{width:25px;height:24px;display:flex;align-items:center;justify-content:center;transition:background-image 0.2s ease-in-out;}.vjs-icon-play:hover{svg{rect:nth-child(1){fill:#5D97FF;}path{fill:#fff;}}}.vjs-icon-play::before{content:\"\";}.vjs-icon-pause{display:none;}.vjs-icon-replay{display:none;}&:focus-visible{outline:0;}}.vjs-icon-pause{display:none;}.vjs-icon-replay{display:none;}&:focus-visible{outline:0;}&[aria-label='pause']{.vjs-icon-play{display:none;}.vjs-icon-pause{display:flex;align-items:center;justify-content:center;width:25px;height:24px;transition:background-image 0.2s ease-in-out;}.vjs-icon-pause:hover{svg{rect:nth-child(1){fill:#5D97FF;}rect:nth-child(2),rect:nth-child(3){fill:#fff;}}}.vjs-icon-pause::before{content:\"\";}.vjs-icon-replay{display:none;}&:focus-visible{outline:0;}}&[aria-label='replay']{.vjs-icon-play{display:none;}.vjs-icon-pause{display:none;}.vjs-icon-replay{width:25px;height:24px;display:flex;align-items:center;justify-content:center;}.vjs-icon-replay::before{content:\"\";}&:focus-visible{outline:0;}}"],e=>e.isShareSession?"10px":"0"),
+    eE=e=>{
+      let{
+        onClick:t,
+        newIcon:i=!1
+      }=e;
+      return(0,n.jsx)(ex,{
+        onClick:t,
+        "data-intercom-target":"Video Add Note",
+        children:i?(0,n.jsx)(h,{}):(0,n.jsx)(u,{})
+      })
+    },
+    eb=(e,t,i)=>{
+      let n=0,
+      r=e.length-1;
+      for(;n<=r;){
+        let a=Math.floor((n+r)/2),
+        s=e[a],
+        {
+          time:l,
+          endTime:o,
+          activityName:d
+        }=e[a];
+        if((!i||i[d])&&t>=l&&t<=o){
+          let n=e[a-1],
+          r=!i||i[null==n?void 0:n.activityName];
+          if(n&&r&&t>=n.time&&t<=n.endTime)return n;
+          return s
+        }
+        let{
+          endTime:c
+        }=e[a];
+        c<t?n=a+1:r=a-1
+      }
+    },
+    ew=(e,t,i,n)=>{
+      for(let r=0;r<e.length-1;r+=1){
+        let a=e[r],
+        s=e[r+1];
+        if(t>=a.time&&t<=(null==s?void 0:s.time)){
+          if(i){
+            if(s.activityName===i)return s;
+            return a
+          }
+          if(a.activityName===n)return a;
+          if(s.activityName===n)return s
+        }
+      }
+    };
+    var eS=(0,r.memo)(e=>{
+      var t,
+      i,
+      s;
+      let{
+        appId:u,
+        videoRef:h,
+        toggleFullScreen:C,
+        session:E,
+        screens:b,
+        selectedScreensMap:w,
+        activityColorMap:S,
+        isShareSession:I,
+        skippedLabelRef:M,
+        excludedScreenList:k,
+        multiScreenSkippedData:D,
+        skippedLabelStyleRef:R
+      }=e,
+      N=(0,a.I0)(),
+      A=(0,r.useRef)(w),
+      {
+        getScreenLayoutData:L
+      }=(0,c.Rb)(),
+      U=(0,r.useRef)([]),
+      j=(0,r.useRef)({}),
+      O=(0,r.createRef)(),
+      P=(0,r.createRef)(),
+      {
+        screenRenamedList:H,
+        urlReducer:{
+          parentType:z,
+          screenname:B
+        }
+      }=(0,a.v9)(e=>e),
+      V=(0,r.useMemo)(()=>"webHeatmaps"===z,[z]),
+      q=(0,r.useMemo)(()=>"heatmapsList"===z,[z]),
+      Z=(0,r.useMemo)(()=>{
+        var e,
+        t;
+        return(null==E?void 0:null===(e=E.device)||void 0===e?void 0:e.platform)===3&&(null==E?void 0:null===(t=E.device)||void 0===t?void 0:t.sdkPluginType)==="flutter"
+      },[null==E?void 0:null===(t=E.device)||void 0===t?void 0:t.platform,null==E?void 0:null===(i=E.device)||void 0===i?void 0:i.sdkPluginType]),
+      G=(0,r.useMemo)(()=>(null==b?void 0:b.length)?b[b.length-1].endTime:0,[b]),
+      {
+        skipInactivity:W,
+        setSkipInactivity:Y
+      }=(0,c.gq)(),
+      {
+        trackUserTimeEvent:K
+      }=(0,_.o)({
+        expanded:!0
+      });
+      (0,r.useEffect)(()=>{
+        A.current=w
+      },[w]),
+      (0,r.useEffect)(()=>{
+        U.current=k
+      },[k]),
+      (0,r.useEffect)(()=>{
+        j.current=D
+      },[null==D?void 0:D.seqArrayIndexList]);
+      let X=(0,r.useRef)(),
+      Q=(0,r.useRef)(),
+      $=(0,r.useRef)(),
+      J=(0,r.useRef)(),
+      ee=(0,r.useCallback)((e,t)=>L(z).isSequentialTimelineColor?(0,y.g)(t):S[e],[S,L,z]),
+      et=(0,r.useCallback)(()=>{
+        let e=X.current,
+        t=$.current;
+        e&&(e.innerText="0:00"),
+        t&&(t.innerText="")
+      },[]);
+      (0,r.useEffect)(()=>{
+        et()
+      },[null==E?void 0:E.screenVideo]);
+      let{
+        setPlaying:ei,
+        nextSessionCallbackRef:en,
+        prevSessionCallbackRef:er,
+        playbackRateRef:ea,
+        playAllRef:es,
+        timeRef:el,
+        setCurrentScreen:ed
+      }=(0,c.rS)(),
+      {
+        selectedTab:ec,
+        setSelectedTab:eu,
+        setNoteTime:eS,
+        setSelectedScreenName:eI,
+        selectedScreenName:eM
+      }=(0,c.he)(),
+      {
+        setVideoLimitPopup:ek
+      }=(0,c.Lc)(),
+      {
+        setUserPausedVideo:eD
+      }=(0,c.W4)(),
+      eR=(0,r.useRef)(),
+      eT=(0,r.useCallback)(e=>{
+        let t=eR.current;
+        t&&t.setAttribute("aria-label",e)
+      },[]),
+      eN=(0,r.useRef)(),
+      eA=(0,r.useCallback)((e,t)=>{
+        let i=eN.current;
+        i&&(i.innerText=e,i.style.color=t)
+      },[]),
+      eL=(0,r.useCallback)(()=>{
+        let e=eN.current;
+        e&&(e.innerText="")
+      },[]),
+      eU=!en.current||"function"!=typeof en.current,
+      ej=!er.current||"function"!=typeof er.current,
+      eO=(0,r.useCallback)(()=>{
+        let e=en.current;
+        e&&"function"==typeof e&&e()
+      },[en]),
+      eF=(0,r.useCallback)(()=>{
+        let e=er.current;
+        e&&"function"==typeof e&&e()
+      },[er]);
+      (0,r.useEffect)(()=>{
+        let e=h.current,
+        t=$.current;
+        if(e){
+          let i=()=>{
+            ei(!0),
+            eT("pause")
+          },
+          n=()=>{
+            ei(!1),
+            eT("play"),
+            K(null==E?void 0:E.id,null==el?void 0:el.current)
+          },
+          r=()=>{
+            let e=es.current,
+            t=en.current;
+            if(e&&t){
+              t();
+              return
+            }
+            ei(!1),
+            eT("replay")
+          },
+          a=()=>{
+            let{
+              duration:t
+            }=e;
+            return Z&&G>0&&G<t?G:t
+          },
+          s=()=>{
+            Q.current&&(Q.current.innerText=(0,x.mr)(a()))
+          },
+          l=()=>{
+            let t=X.current,
+            {
+              currentTime:i
+            }=e,
+            n=a(),
+            r=Number.isFinite(n)?Math.min(i,n):i;
+            t&&(t.innerText=(0,x.mr)(r)),
+            Q.current&&(Q.current.innerText=(0,x.mr)(n))
+          },
+          o=e=>{
+            var t,
+            i;
+            let n;
+            let{
+              seqArrayIndexList:r=[]
+            }=j.current,
+            a=b.indexOf(e);
+            r.reduce((e,t)=>e.concat(t),[]).map(e=>e.screenIndex).indexOf(a)>-1?(r.map(e=>(e.map(e=>{
+              let{
+                screenIndex:t
+              }=e;
+              return t
+            }).indexOf(a)>-1&&(n=e.length),e)),M.current.innerText="Skipping ".concat(n," ").concat(n>1?"screens":"screen")):M.current.innerText="Skipping 1 screen",
+            null===(i=R.current)||void 0===i||null===(t=i.classList)||void 0===t||t.add("display-label")
+          },
+          d=(t,i)=>{
+            if(!U.current.length)return;
+            let{
+              duration:n
+            }=e;
+            O.current!==i&&(o(t),P.current&&(clearTimeout(P.current),P.current=null),O.current=i,P.current=setTimeout(()=>{
+              var t,
+              r;
+              P.current=null,
+              O.current=null;
+              let a=i?(0,x.NG)(i.time+.01):Math.ceil(n);
+              Number.isFinite(a)&&(e.currentTime=a),
+              ed(i),
+              null===(r=R.current)||void 0===r||null===(t=r.classList)||void 0===t||t.remove("display-label")
+            },1e3))
+          },
+          c=()=>{
+            let{
+              currentTime:i,
+              duration:n
+            }=e,
+            r=J.current,
+            a=A.current,
+            s=r&&r.time>=i&&i<r.endTime;
+            if(el.current=i,i===n){
+              ed(null);
+              return
+            }
+            if(s){
+              if(a[r.activityName])return;
+              let i=b.indexOf(r),
+              s=b.slice(i+1).find(e=>{
+                let{
+                  activityName:t
+                }=e;
+                return a[t]
+              });
+              if(J.current=s,!s){
+                e.pause();
+                let t=Math.ceil(n);
+                Number.isFinite(t)&&(e.currentTime=t);
+                return
+              }
+              let{
+                activityName:l
+              }=s,
+              o=H[l];
+              t.innerText=o||l,
+              t.style.color=ee(l,i);
+              let d=(0,x.NG)(s.time);
+              Number.isFinite(d)&&(e.currentTime=d),
+              J.current=s;
+              return
+            }
+            let l=eb(b,i);
+            if(!l)return;
+            let{
+              activityName:o
+            }=l;
+            if(!a[o]&&e){
+              if("notes"===ec)return;
+              let t=b.indexOf(l),
+              i=b.slice(t+1).find(e=>{
+                let{
+                  activityName:t
+                }=e;
+                return a[t]
+              });
+              if(!i){
+                e.pause(),
+                d(l,i);
+                return
+              }
+              d(l,i);
+              return
+            }
+            J.current=l,
+            ed(l);
+            let c=H[o];
+            t.innerText=c||o,
+            t.style.color=ee(o,b.indexOf(l))
+          },
+          u=()=>{
+            let{
+              paused:t
+            }=e;
+            eT(t?"play":"pause")
+          },
+          h=()=>{
+            let{
+              currentTime:i,
+              duration:n
+            }=e;
+            if(i===n){
+              ed(null);
+              return
+            }
+            let r=q?ew(b,i,eM,B):eb(b,i);
+            if(!r)return;
+            if(!r){
+              e.removeEventListener("timeupdate",l),
+              e.pause();
+              let t=Math.ceil(n);
+              Number.isFinite(t)&&(e.currentTime=t),
+              e.addEventListener("timeupdate",l);
+              return
+            }
+            let{
+              activityName:a
+            }=r;
+            ed(r);
+            let s=H[a];
+            t.innerText=s||a,
+            t.style.color=ee(a,b.indexOf(r)),
+            J.current=r
+          };
+          return e.addEventListener("play",i),
+          e.addEventListener("pause",n),
+          e.addEventListener("ended",r),
+          e.addEventListener("seeked",u),
+          e.addEventListener("seeked",h),
+          e.addEventListener("canplaythrough",h),
+          e.addEventListener("timeupdate",l),
+          e.addEventListener("timeupdate",c),
+          e.addEventListener("loadedmetadata",s,!1),
+          ()=>{
+            e.removeEventListener("play",i),
+            e.removeEventListener("pause",n),
+            e.removeEventListener("ended",r),
+            e.removeEventListener("seeked",u),
+            e.removeEventListener("seeked",h),
+            e.removeEventListener("canplaythrough",h),
+            e.removeEventListener("timeupdate",l),
+            e.removeEventListener("timeupdate",c),
+            e.removeEventListener("loadedmetadata",s,!1)
+          }
+        }
+      },[h,ed,eM,b,ee,Z,G]),
+      (0,r.useEffect)(()=>{
+        eI(null)
+      },[eI]),
+      (0,r.useEffect)(()=>{
+        let e;
+        let t=h.current;
+        if(!t)return()=>null;
+        let i=()=>{
+          el.current=t.currentTime,
+          e=requestAnimationFrame(i)
+        };
+        return e=requestAnimationFrame(i),
+        ()=>{
+          cancelAnimationFrame(e)
+        }
+      },[h,el]);
+      let eP=(0,r.useCallback)(e=>{
+        let t=h.current;
+        t&&(t.playbackRate=e,ea.current=e)
+      },[ea]),
+      {
+        _id:eH
+      }=E||{},
+      ez=()=>{
+        let e=h.current;
+        return eH&&(!(null==E?void 0:E.isPlayable)||(null==E?void 0:E.verifiedPastVideoRecordingLimit))?ek(!0):e&&(null==E?void 0:E.isPlayable)&&(e.paused?(eD(!1),e.play().catch(()=>null),N((0,l.hI)({
+          action:"Played video on ".concat(o.ls[z])
+        }))):e.pause()),
+        null
+      },
+      eB=(0,r.useCallback)(()=>{
+        let e=h.current;
+        e&&e.pause(),
+        eS(null==el?void 0:el.current),
+        eu("notes")
+      },[h]),
+      eV=(0,r.useCallback)(()=>{
+        var e;
+        Y(!W),
+        N((0,d.CW)(null,{
+          eventName:"skip_inactivity",
+          track_type:"event",
+          eventProperty:{
+            showTimelineGesturesFlag:!0,
+            sessionId:eH,
+            totalSessionLength:null===(e=h.current)||void 0===e?void 0:e.duration
+          }
+        }))
+      },[Y,W,N,eH,h]),
+      eq=(0,r.useRef)();
+      return(0,n.jsxs)(ep,{
+        ref:eq,
+        children:[(0,n.jsx)(em,{
+          children:(0,n.jsx)(eo,{
+            selectedScreensMap:w,
+            activityColorMap:S,
+            screens:b,
+            onScreenHover:eA,
+            onScreenOut:eL,
+            videoRef:h,
+            sessionId:eH
+          })
+        }),(0,n.jsxs)(ef,{
+          children:[(0,n.jsxs)(eg,{
+            children:[(0,n.jsxs)("span",{
+              className:"button-grp",
+              children:[!L(z).isNewVideoControls&&(0,n.jsx)(ey,{
+                isShareSession:I,
+                onClick:eF,
+                disabled:ej,
+                type:"button",
+                children:(0,n.jsx)("i",{
+                  className:"vjs-icon-previous-item",
+                  "data-intercom-target":"Video Prev",
+                  children:(0,n.jsx)(g,{})
+                })
+              }),(0,n.jsxs)(eC,{
+                ref:eR,
+                isShareSession:I,
+                "aria-label":"play",
+                type:"button",
+                onClick:()=>ez(),
+                children:[(0,n.jsx)("i",{
+                  className:"vjs-icon-play",
+                  "data-intercom-target":"Video Play",
+                  children:(0,n.jsx)(p.Z,{})
+                }),(0,n.jsx)("i",{
+                  className:"vjs-icon-pause",
+                  "data-intercom-target":"Video Pause",
+                  children:(0,n.jsx)(m,{})
+                }),(0,n.jsx)("i",{
+                  className:"vjs-icon-replay",
+                  "data-intercom-target":"Video Replay",
+                  children:(0,n.jsx)(f,{})
+                })]
+              }),!L(z).isNewVideoControls&&(0,n.jsx)(ey,{
+                isShareSession:I,
+                onClick:eO,
+                disabled:eU,
+                type:"button",
+                children:(0,n.jsx)("i",{
+                  className:"vjs-icon-next-item",
+                  "data-intercom-target":"Video Next",
+                  children:(0,n.jsx)(v,{})
+                })
+              })]
+            }),(0,n.jsxs)("span",{
+              children:[(0,n.jsx)("span",{
+                ref:X,
+                children:"0:00"
+              }),"/",(0,n.jsx)("span",{
+                ref:Q,
+                children:"0:00"
+              })]
+            }),(0,n.jsx)(e_,{
+              ref:eN
+            }),(0,n.jsx)(e_,{
+              ref:$
+            })]
+          }),(0,n.jsxs)(ev,{
+            children:[!I&&L(z).isNewVideoControls&&(0,n.jsx)(eE,{
+              onClick:eB,
+              newIcon:!0
+            }),(0,n.jsx)(eh,{
+              toggleSkipInactivity:eV,
+              skipInactivity:W
+            }),(0,n.jsx)("span",{
+              "data-intercom-target":"Video Speed",
+              children:(0,n.jsx)(T,{
+                containerRef:eq,
+                onPlayrateChange:eP
+              })
+            }),!I&&!L(z).isNewVideoControls&&(0,n.jsx)(eE,{
+              onClick:eB
+            }),(0,n.jsx)("span",{
+              "data-intercom-target":"Video Settings",
+              children:q||V?null:(0,n.jsx)(F,{
+                containerRef:eq,
+                appId:u,
+                isShareSession:I,
+                parentType:z,
+                showTimelineGestures:!0,
+                session:E,
+                videoDuration:null==h?void 0:null===(s=h.current)||void 0===s?void 0:s.duration
+              })
+            }),!(q||V)&&(0,n.jsx)(ex,{
+              onClick:C,
+              children:(0,n.jsx)("i",{
+                className:"fullscreen-icon"
+              })
+            })]
+          })]
+        })]
+      })
+    })
+  },
+  60066:function(e,t,i){
+    i.d(t,{
+      Z:function(){
+        return S
+      }
+    });
+    var n,
+    r,
+    a,
+    s,
+    l=i(85893),
+    o=i(67294);
+    class d extends Error{
+      constructor(){
+        super("Replay content is a video, not DOM changes"),
+        this.name="VideoContentReplayError"
+      }
+    }
+    let c=async e=>{
+      let t=await fetch(e);
+      if((t.headers.get("content-type")||"").includes("video"))throw new d;
+      let i=(await t.blob()).stream(),
+      n=[];
+      return await i.pipeThrough(new window.DecompressionStream("gzip")).pipeTo(new WritableStream({
+        write(e){
+          n.push(e)
+        }
+      })),
+      JSON.parse(await new Blob(n,{
+        type:"text/plain"
+      }).text())
+    },
+    u=function(e,t){
+      let i=arguments.length>2&&void 0!==arguments[2]?arguments[2]:{},
+      n=new CustomEvent(t,{
+        detail:i
+      });
+      setTimeout(()=>e.dispatchEvent(n),0),
+      console.debug("Triggered event: ".concat(t))
+    },
+    h="@uxc-css-ref:",
+    p=function(e){
+      let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:0,
+      i=3735928559^t,
+      n=1103547991^t;
+      for(let t=0;t<e.length;t+=1){
+        let r=e.charCodeAt(t);
+        i=Math.imul(i^r,2654435761),
+        n=Math.imul(n^r,1597334677)
+      }
+      return i=Math.imul(i^i>>>16,2246822507)^Math.imul(n^n>>>13,3266489909),
+      4294967296*(2097151&(n=Math.imul(n^n>>>16,2246822507)^Math.imul(i^i>>>13,3266489909)))+(i>>>0)
+    },
+    m=e=>"".concat(p(e).toString(36),"-").concat(e.length.toString(36)),
+    f=e=>e.startsWith(h),
+    g=e=>{
+      let t=new Map,
+      i=0,
+      n=(e,t)=>{
+        var i,
+        n,
+        r,
+        a,
+        s;
+        let l=e=>{
+          var i,
+          n,
+          r;
+          if(!e||"object"!=typeof e)return;
+          let a=null!==(i=e.a)&&void 0!==i?i:e.attributes;
+          a&&"string"==typeof a.textContent&&t.text(a.textContent,e=>{
+            a.textContent=e
+          });
+          let s=null!==(n=e.r)&&void 0!==n?n:e.cssRules;
+          s&&s.length&&t.ruleBlock(s);
+          let o=null!==(r=e.c)&&void 0!==r?r:e.childNodes;
+          o&&o.forEach(l)
+        },
+        o=null!==(i=e.type)&&void 0!==i?i:e.ct;
+        if("PAGE_LOAD"===o||"13"===o||"IFRAME_LOAD"===o||"26"===o){
+          let t=null!==(n=e.node)&&void 0!==n?n:e.n;
+          t&&l(t)
+        }
+        else if("ADD_NODES"===o||"4"===o){
+          let t=null!==(r=e.children)&&void 0!==r?r:e.c;
+          t&&t.forEach(l)
+        }
+        else if("CSS_REPLACE"===o||"28"===o){
+          let i=null!==(a=e.text)&&void 0!==a?a:e.tx;
+          "string"==typeof i&&t.text(i,t=>{
+            void 0!==e.text?e.text=t:e.tx=t
+          })
+        }
+        else if("ADOPTED_STYLE_SHEET"===o||"29"===o){
+          let i=null!==(s=e.sheets)&&void 0!==s?s:e.sh;
+          i&&i.forEach(e=>{
+            var i;
+            let n=null!==(i=e.rules)&&void 0!==i?i:e.r;
+            n&&n.length&&t.ruleBlock(n)
+          })
+        }
+      },
+      r=e=>{
+        var t,
+        i;
+        return null!==(i=null!==(t=e.rule)&&void 0!==t?t:e.r)&&void 0!==i?i:""
+      },
+      a=(e,t)=>{
+        void 0!==e.rule?e.rule=t:e.r=t
+      },
+      s=e=>1===e.length&&f(r(e[0]));
+      e.forEach(e=>{
+        n(e,{
+          text:e=>{
+            !f(e)&&e.length>=1024&&t.set(m(e),e)
+          },
+          ruleBlock:e=>{
+            if(s(e))return;
+            let i=e.map(r).join("\n");
+            i.length>=1024&&t.set(m(i),i)
+          }
+        })
+      });
+      let l=e=>{
+        let n=t.get(e.slice(h.length));
+        return void 0===n?(i+=1,null):n
+      },
+      o=[];
+      return e.forEach(e=>{
+        n(e,{
+          text:(t,i)=>{
+            var n;
+            if(!f(t))return;
+            let r=l(t),
+            a=null!==(n=e.type)&&void 0!==n?n:e.ct;
+            null!==r?i(r):"CSS_REPLACE"===a||"28"===a?o.push(e):i("")
+          },
+          ruleBlock:e=>{
+            if(!s(e))return;
+            let t=l(r(e[0]));
+            null!==t?a(e[0],t):e.length=0
+          }
+        })
+      }),
+      o.length&&o.forEach(t=>{
+        let i=e.indexOf(t);
+        -1!==i&&e.splice(i,1)
+      }),
+      i>0&&console.warn("[CSS RECORD] ".concat(i," CSS dedup ref(s) had no body in this session — affected styles will be missing")),
+      e
+    };
+    (n=a||(a={})).WINDOW_RESIZE="1",
+    n.CUSTOM_EVENT="2",
+    n.DOM_READY="3",
+    n.ADD_NODES="4",
+    n.ATTR_CHANGE="5",
+    n.REMOVE_NODES="6",
+    n.SCROLL="7",
+    n.FOCUS="8",
+    n.MOUSE_MOVE="9",
+    n.TOUCH="9.1e",
+    n.MOUSE_CLICK="10",
+    n.MOUSE_OVER="11",
+    n.MOUSE_OUT="12",
+    n.PAGE_LOAD="13",
+    n.CHARACTER_DATA_CHANGE="14",
+    n.CSS_INSERT_RULE="15",
+    n.CSS_DELETE_RULE="16",
+    n.URL_CHANGE="17",
+    n.INPUT_CHANGE="18",
+    n.CHECKED_CHANGE="18.c",
+    n.USER_PROPERTY="19",
+    n.EVENT="20",
+    n.CLIENT_IP="21",
+    n.MEDIA_INFO="22",
+    n.IFRAME_LOAD="26",
+    n.CSS_REPLACE="28",
+    n.ADOPTED_STYLE_SHEET="29",
+    n.CSS_STYLE_DECLARATION="30",
+    (r=s||(s={})).IMG="0",
+    r.VIDEO="1",
+    r.IFRAME="2";
+    var v=i(13979);
+    let y=btoa('<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.91439 16.8108L6.30632 18.1048L7.26237 17.1487L10.4057 14.0054L15.018 18.6177L15.5907 19.1904L16.1635 18.6177L18.4004 16.3808L18.9732 15.808L18.4004 15.2352L13.7881 10.623L16.9312 7.47981L17.8873 6.52377L16.5933 6.13184L2.72358 1.93083L1.27472 1.49199L1.71355 2.94085L5.91439 16.8108Z" fill="black" stroke="white" stroke-width="1.62"/></svg>'),
+    _="instant",
+    x=e=>e.replace(/:hover/g,"[data-hover]"),
+    C=e=>e.replace(/-webkit-|-moz-|-ms-|-o-/g,""),
+    E=e=>/^[a-zA-Z][a-zA-Z0-9-]*$/.test(e),
+    b=(e,t)=>{
+      let i=e.defaultView,
+      n=t.toLowerCase();
+      if(!(!(null==i?void 0:i.customElements)||!n.includes("-")||i.customElements.get(n)))try{
+        i.customElements.define(n,class extends i.HTMLElement{})
+      }
+      catch(e){}
+    };
+    class w{
+      get readyState(){
+        return this.__readyState
+      }
+      startElapsedTimer(){
+        this.__elapsedAnimationFrame&&(cancelAnimationFrame(this.__elapsedAnimationFrame),this.__elapsedAnimationFrame=null);
+        let e=new Date().getTime(),
+        t=()=>{
+          let i=new Date().getTime(),
+          n=i-e;
+          this.__elapsedTimeMs+=n*this.playbackRate,
+          e=i,
+          this.__elapsedAnimationFrame=requestAnimationFrame(t),
+          i-this.__lastNotificationTime>100&&(this.__lastNotificationTime=i,u(this.__domElement,"timeupdate"))
+        };
+        this.__elapsedAnimationFrame=requestAnimationFrame(t)
+      }
+      stopElapsedTimer(){
+        this.__elapsedAnimationFrame&&(cancelAnimationFrame(this.__elapsedAnimationFrame),this.__elapsedAnimationFrame=null)
+      }
+      getUrl(){
+        if(this.__lastUrl)return decodeURI(this.__lastUrl);
+        let e=this.__changes.find(e=>"PAGE_LOAD"===e.type||e.ct===a.PAGE_LOAD);
+        return e?decodeURI(e.url||e.u):""
+      }
+      get ended(){
+        return this.__finished
+      }
+      get width(){
+        return this.__width
+      }
+      get height(){
+        return this.__height
+      }
+      get videoWidth(){
+        return this.__width
+      }
+      get videoHeight(){
+        return this.__height
+      }
+      play(){
+        let e=!(arguments.length>0)||void 0===arguments[0]||arguments[0];
+        return this.heatmapConfig?Promise.resolve():(console.debug("Called","play",this.__paused),this.__isRewinding)?(console.debug("break play() -> is rewinding"),Promise.resolve()):this.__destroyed?(console.debug("break play() -> already destroyed"),Promise.resolve()):this.__paused?this.__initialised?(this.__finished&&(this.__finished=!1,this.currentTime=0,this.__elapsedTimeMs=0,this.__timelineChanges=this.__changes.slice()),this.__paused&&e&&u(this.__domElement,"play"),this.startElapsedTimer(),this.__paused=!1,this.freezePaint(),new Promise(e=>{
+          setTimeout(async()=>{
+            this.__currentApplyChangePromise&&await this.__currentApplyChangePromise,
+            this.startPaint(),
+            e()
+          },10)
+        })):(console.debug("break play() -> not initialised"),this.__startAutoPlay=!0,Promise.resolve()):(console.debug("break play() -> not paused"),Promise.resolve())
+      }
+      pause(){
+        let e=!(arguments.length>0)||void 0===arguments[0]||arguments[0];
+        return console.debug("Called","pause",this.__paused),
+        this.heatmapConfig||this.__destroyed||this.__isRewinding||this.__paused||(this.__initialised||(this.__startAutoPlay=!1),this.__paused=!0,this.freezePaint(),this.stopElapsedTimer(),e&&u(this.__domElement,"pause")),
+        Promise.resolve()
+      }
+      get elapsedTime(){
+        return Math.max(0,Math.min(this.__elapsedTimeMs/1e3,this.duration))
+      }
+      get currentTime(){
+        return Math.min(this.elapsedTime,this.duration)
+      }
+      set currentTime(e){
+        if(this.heatmapConfig||this.__currentTimeBusy)return;
+        let t=1e3*e;
+        if(this.__initialised){
+          this.__currentTimeBusy=!0;
+          let e=this.paused;
+          this.stopElapsedTimer(),
+          this.freezePaint();
+          let i=t<this.__elapsedTimeMs,
+          n=new AbortController;
+          this.readjustTimeline(t,n,i).then(()=>{
+            n.signal.aborted||(this.__currentTimeBusy=!1,e||(this.startElapsedTimer(),this.startPaint()),u(this.__domElement,"seeked"))
+          })
+        }
+        this.__elapsedTimeMs=t,
+        u(this.__domElement,"timeupdate")
+      }
+      get duration(){
+        if(null!==this.__cachedDuration)return this.__cachedDuration;
+        if(!this.__changes.length)return 0;
+        let e=this.__changes[this.__changes.length-1],
+        t="number"==typeof e.time?e.time/1e3:e.t/1e3;
+        return this.__cachedDuration=t,
+        t
+      }
+      get paused(){
+        return this.__paused
+      }
+      get playbackRate(){
+        return this.__playbackRate
+      }
+      set playbackRate(e){
+        if(this.__destroyed)return;
+        let t=Number(e)||1,
+        i=t!==this.__playbackRate;
+        this.__playbackRate=t,
+        i&&u(this.__domElement,"ratechange")
+      }
+      startPaint(){
+        this.tick()
+      }
+      applyInputChange(e){
+        let{
+          target:t,
+          value:i
+        }=e,
+        n=this.getNodeByUUID(t);
+        if(n)try{
+          n.value=i
+        }
+        catch(e){
+          console.warn(e)
+        }
+      }
+      applyInputChangeMin(e){
+        return this.applyInputChange({
+          seq:e.s,
+          time:e.t,
+          type:"INPUT_CHANGE",
+          target:e.tg,
+          value:e.v,
+          iframeContext:e.if
+        })
+      }
+      applyUrlChange(e){
+        if(this.heatmapConfig)return;
+        let{
+          url:t
+        }=e;
+        this.__lastUrl=t,
+        u(this.__domElement,"urlchange",{
+          url:t
+        })
+      }
+      applyUrlChangeMin(e){
+        return this.applyUrlChange({
+          seq:e.s,
+          time:e.t,
+          type:"URL_CHANGE",
+          url:e.u
+        })
+      }
+      constructor({
+        trailThicknessRatio:e=1,
+        trailOpacity:t=1,
+        heatmap:i=null,
+        cssProxy:n
+      }){
+        var r=this;
+        this.__readyState=0,
+        this.__trailThicknessRatio=1,
+        this.__trailOpacity=1,
+        this.__finished=!1,
+        this.__paused=!0,
+        this.__playbackRate=1,
+        this.__elapsedTimeMs=0,
+        this.__elapsedAnimationFrame=null,
+        this.__lastNotificationTime=0,
+        this.getRandomString=()=>Math.random().toString(36).substring(2,15),
+        this.__timelineChanges=[],
+        this.__startAutoPlay=!1,
+        this.__destroyed=!1,
+        this.__isRewinding=!1,
+        this.__rewindTo=null,
+        this.__domElement=document.createElement("div"),
+        this.__lastUrl=null,
+        this.addEventListener=(e,t)=>{
+          console.debug("Adding event listener",e),
+          "loadedmetadata"===e&&this.__initialised&&u(this.__domElement,"loadedmetadata"),
+          "canplaythrough"===e&&this.__initialised&&u(this.__domElement,"canplaythrough"),
+          this.__domElement.addEventListener(e,t)
+        },
+        this.removeEventListener=(e,t)=>{
+          this.__domElement.removeEventListener(e,t)
+        },
+        this.__width=0,
+        this.__height=0,
+        this.seekTo=e=>Promise.resolve(),
+        this.__pendingTime=0,
+        this.__initialised=!1,
+        this.__currentTimeBusy=!1,
+        this.__cachedDuration=null,
+        this.startTime=0,
+        this.mouseElem=null,
+        this.trailCanvasCtx=null,
+        this.trailPath=[],
+        this.urlElem=null,
+        this.container=null,
+        this.__waitingOnContainer=!1,
+        this.heatmapConfig=null,
+        this.iframe=document.createElement("iframe"),
+        this.canvas=document.createElement("canvas"),
+        this.__changes=[],
+        this.__cssInlineTargets=null,
+        this.__mediaInfoMap=new Map,
+        this.domMap=(()=>{
+          let e=new Map;
+          return e.set("#html",document.documentElement),
+          e.set("#body",document.body),
+          e.set("#head",document.head),
+          e
+        })(),
+        this.reverseDomMap=(()=>{
+          let e=new Map;
+          return e.set(document.documentElement,"#html"),
+          e.set(document.body,"#body"),
+          e.set(document.head,"#head"),
+          e
+        })(),
+        this.__iframeMap=new Map,
+        this.__iframeDocumentMap=new Map,
+        this.__sheetMap=new Map,
+        this.attachDOMProxy=()=>{
+          let e=this;
+          Object.defineProperty(this.__domElement,"duration",{
+            get:()=>e.duration
+          }),
+          Object.defineProperty(this.__domElement,"currentTime",{
+            get:()=>e.currentTime,
+            set(t){
+              e.currentTime=t
+            }
+          }),
+          Object.defineProperty(this.__domElement,"paused",{
+            get:()=>e.paused
+          }),
+          Object.defineProperty(this.__domElement,"playbackRate",{
+            get:()=>e.playbackRate,
+            set(t){
+              e.playbackRate=t
+            }
+          })
+        },
+        this.setContainer=e=>{
+          this.container=e,
+          this.__waitingOnContainer&&(this.__waitingOnContainer=!1,this.init())
+        },
+        this.loadDomChanges=e=>{
+          console.log("dom changes load",e),
+          g(e),
+          this.__changes=e,
+          this.__cssInlineTargets=null;
+          let t=this.getCssInlineTargets();
+          console.log("[CSS INLINE] enabled for this session:",t.size>0,"| inlined stylesheet node count:",t.size,"| target UUIDs:",Array.from(t)),
+          this.__cssInlineTargets=null,
+          this.init()
+        },
+        this.getCssInlineTargets=()=>{
+          if(this.__cssInlineTargets)return this.__cssInlineTargets;
+          let e=new Set;
+          for(let n of this.__changes){
+            var t,
+            i;
+            let r=null!==(t=n.type)&&void 0!==t?t:n.ct,
+            s="CSS_REPLACE"===r||r===a.CSS_REPLACE,
+            l=void 0===n.styleId&&void 0===n.sid;
+            if(s&&l){
+              let t=null!==(i=n.targetStyle)&&void 0!==i?i:n.tg;
+              t&&e.add(t)
+            }
+          }
+          return this.__cssInlineTargets=e,
+          e
+        },
+        this.registerNode=(e,t)=>{
+          this.reverseDomMap.has(e)||(this.reverseDomMap.set(e,t),this.domMap.set(t,e))
+        },
+        this.getNodeByUUID=e=>this.domMap.get(e),
+        this.ensureShadowRoot=e=>{
+          if(!e||e.nodeType!==Node.ELEMENT_NODE)return null;
+          if(e.shadowRoot)return e.shadowRoot;
+          try{
+            return e.attachShadow({
+              mode:"open"
+            })
+          }
+          catch(e){
+            return null
+          }
+        },
+        this.insertShadowFragment=(e,t,i,n)=>{
+          if(t.childNodes.length){
+            if(i){
+              let n=this.getNodeByUUID(i);
+              if(n&&n.parentNode===e){
+                e.insertBefore(t,n.nextSibling);
+                return
+              }
+            }
+            if(n){
+              let i=this.getNodeByUUID(n);
+              if(i&&i.parentNode===e){
+                e.insertBefore(t,i);
+                return
+              }
+            }
+            e.appendChild(t)
+          }
+        },
+        this.getIframeOffset=e=>{
+          if(!e)return{
+            offsetX:0,
+            offsetY:0
+          };
+          let t=this.__iframeMap.get(e);
+          if(!t)return{
+            offsetX:0,
+            offsetY:0
+          };
+          let i=this.iframe.contentDocument;
+          if(!i)return{
+            offsetX:0,
+            offsetY:0
+          };
+          let n=0,
+          r=0,
+          a=t;
+          for(;a;){
+            try{
+              let e=a.getBoundingClientRect();
+              n+=e.left+a.clientLeft,
+              r+=e.top+a.clientTop
+            }
+            catch(e){
+              break
+            }
+            if(a.ownerDocument===i)break;
+            let e=this.__iframeDocumentMap.get(a.ownerDocument);
+            if(!e)break;
+            a=this.__iframeMap.get(e)||null
+          }
+          return{
+            offsetX:n,
+            offsetY:r
+          }
+        },
+        this.getCursorPositionInContainerSpace=(e,t,i)=>{
+          let{
+            offsetX:n,
+            offsetY:r
+          }=this.getIframeOffset(i);
+          return{
+            x:e+n,
+            y:t+r
+          }
+        },
+        this.getDocumentScroll=e=>({
+          scrollLeft:e.documentElement.scrollLeft||e.body.scrollLeft||0,
+          scrollTop:e.documentElement.scrollTop||e.body.scrollTop||0
+        }),
+        this.ensureCursorInDocument=e=>{
+          var t,
+          i;
+          if((null===(t=this.mouseElem)||void 0===t?void 0:t.ownerDocument)!==e){
+            if(null===(i=this.mouseElem)||void 0===i||i.remove(),e===this.iframe.contentDocument)this.mouseElem=this.makeMouse();
+            else{
+              let t=e.createElement("img");
+              t.src="data:image/svg+xml;base64,".concat(y),
+              t.style.position="absolute",
+              t.style.pointerEvents="none",
+              t.style.zIndex="999999999",
+              t.style.display="block",
+              t.style.width="16px",
+              t.style.height="16px",
+              t.style.transformOrigin="left top",
+              e.body.appendChild(t),
+              this.mouseElem=t
+            }
+          }
+        },
+        this.positionCursor=(e,t,i)=>{
+          if(!this.mouseElem)return;
+          let{
+            scrollLeft:n,
+            scrollTop:r
+          }=this.getDocumentScroll(i);
+          this.mouseElem.style.left="".concat(e+n-1,"px"),
+          this.mouseElem.style.top="".concat(t+r-1,"px")
+        },
+        this.renderIframeContent=(e,t,i,n,r,a)=>{
+          let s=()=>{
+            try{
+              let u=e.contentDocument;
+              if(!u){
+                console.warn("Could not access iframe contentDocument for",t);
+                return
+              }
+              this.__iframeDocumentMap.set(u,t),
+              u.open(),
+              u.write("<!DOCTYPE html><html><head></head><body></body></html>"),
+              u.close();
+              let h=i.find(e=>"HTML"===e.tagName||"HTML"===e.nodeName);
+              if(h){
+                var s,
+                l,
+                o,
+                d,
+                c;
+                h.attributes&&Object.entries(h.attributes).forEach(e=>{
+                  let[t,i]=e;
+                  try{
+                    u.documentElement.setAttribute(t,i)
+                  }
+                  catch(e){
+                    console.warn("Error setting iframe HTML attribute:",e)
+                  }
+                }),
+                this.registerNode(u.documentElement,h.UUID);
+                let e=null===(s=h.childNodes)||void 0===s?void 0:s.find(e=>"HEAD"===e.tagName||"HEAD"===e.nodeName),
+                t=null===(l=h.childNodes)||void 0===l?void 0:l.find(e=>"BODY"===e.tagName||"BODY"===e.nodeName);
+                e&&(this.registerNode(u.head,e.UUID),(null===(d=e.childNodes)||void 0===d?void 0:d.length)&&this.applyAddNodesInDocument(u,{
+                  seq:n,
+                  time:r,
+                  type:"ADD_NODES",
+                  children:e.childNodes,
+                  parentUUID:e.UUID,
+                  prevUUID:null,
+                  nextUUID:null
+                },a)),
+                t&&(t.attributes&&Object.entries(t.attributes).forEach(e=>{
+                  let[t,i]=e;
+                  try{
+                    u.body.setAttribute(t,i)
+                  }
+                  catch(e){
+                    console.warn("Error setting iframe body attribute:",e)
+                  }
+                }),this.registerNode(u.body,t.UUID),(null===(c=t.childNodes)||void 0===c?void 0:c.length)&&this.applyAddNodesInDocument(u,{
+                  seq:n,
+                  time:r,
+                  type:"ADD_NODES",
+                  children:t.childNodes,
+                  parentUUID:t.UUID,
+                  prevUUID:null,
+                  nextUUID:null
+                },a));
+                let i=null===(o=h.childNodes)||void 0===o?void 0:o.filter(e=>"HEAD"!==e.tagName&&"BODY"!==e.tagName&&"HEAD"!==e.nodeName&&"BODY"!==e.nodeName);
+                (null==i?void 0:i.length)&&this.applyAddNodesInDocument(u,{
+                  seq:n,
+                  time:r,
+                  type:"ADD_NODES",
+                  children:i,
+                  parentUUID:h.UUID,
+                  prevUUID:null,
+                  nextUUID:null
+                },a)
+              }
+              else this.applyAddNodesInDocument(u,{
+                seq:n,
+                time:r,
+                type:"ADD_NODES",
+                children:i,
+                parentUUID:t,
+                prevUUID:null,
+                nextUUID:null
+              },a)
+            }
+            catch(e){
+              console.warn("Error rendering iframe content:",e)
+            }
+          },
+          l=()=>{
+            if(!e.isConnected){
+              requestAnimationFrame(l);
+              return
+            }
+            try{
+              e.contentDocument?s():e.addEventListener("load",s,{
+                once:!0
+              })
+            }
+            catch(t){
+              e.addEventListener("load",s,{
+                once:!0
+              })
+            }
+          };
+          l()
+        },
+        this.applyAddNodesInDocument=function(e,t){
+          let i=arguments.length>2&&void 0!==arguments[2]?arguments[2]:[],
+          {
+            children:n,
+            parentUUID:a,
+            prevUUID:l,
+            nextUUID:o
+          }=t,
+          d=r.getNodeByUUID(a);
+          if(!d)return;
+          let c=e.createDocumentFragment(),
+          u=null,
+          h=null;
+          if(n.forEach(n=>{
+            var a,
+            l,
+            o,
+            p;
+            let{
+              nodeType:m,
+              childNodes:f
+            }=n,
+            g=!1,
+            v=null,
+            y=r.getNodeByUUID(n.UUID);
+            switch(y&&(y.parentNode===d?(v=y,g=!0):(null==y||y.remove(),r.domMap.delete(n.UUID))),m){
+              case Node.TEXT_NODE:{
+                let t=n.attributes.textContent;
+                if("SCRIPT"===d.tagName&&(t="true;"),"STYLE"===d.tagName&&(t=x(t)),v&&v.textContent===t)break;
+                v=v||e.createTextNode(t);
+                break
+              }
+              case Node.COMMENT_NODE:v=v||e.createComment(n.attributes.textContent);
+              break;
+              case Node.DOCUMENT_TYPE_NODE:break;
+              case Node.ELEMENT_NODE:{
+                let{
+                  tagName:t,
+                  isSVG:i
+                }=n,
+                a="IFRAME"===t,
+                d="LINK"===t,
+                c=d&&"stylesheet"===n.attributes.rel&&!!(null===(l=n.cssRules)||void 0===l?void 0:l.length);
+                if(i)v=v||e.createElementNS("http://www.w3.org/2000/svg",t);
+                else{
+                  if(E(t))b(e,t),
+                  v=v||e.createElement(c?"style":t);
+                  else{
+                    console.warn('Invalid tag name in iframe: "'.concat(t,'". Skipping.'));
+                    return
+                  }
+                  if("NOSCRIPT"===t&&(v.style.display="none"),("IMG"===t||"VIDEO"===t)&&n.meta){
+                    "true"===n.attributes["data-ux-occluded"]&&r.fillMedia(v,n.meta);
+                    let e=()=>{
+                      v.setAttribute("has-error","true"),
+                      r.fillMedia(v,n.meta),
+                      v.removeEventListener("error",e)
+                    };
+                    v.addEventListener("error",e)
+                  }
+                  if(("STYLE"===n.tagName||c)&&(null===(p=n.cssRules)||void 0===p?void 0:p.length))try{
+                    v.textContent=n.cssRules.map(e=>x(e.rule)).join("\n")
+                  }
+                  catch(e){
+                    console.warn("Failed to set <style> textContent",e)
+                  }
+                }
+                let u=a&&(null===(o=n.meta)||void 0===o?void 0:o.type)===s.IFRAME?n.meta:null,
+                h=a&&(null==u?void 0:u.isSameOrigin)&&n.childNodes&&n.childNodes.length>0,
+                m=a&&(null==u?void 0:u.isSameOrigin)&&(!n.childNodes||0===n.childNodes.length);
+                if(a){
+                  let e=v;
+                  e.setAttribute("uxc-iframe-id",n.UUID),
+                  (h||m)&&(e.src="about:blank",r.__iframeMap.set(n.UUID,e))
+                }
+                let f="LINK"===t&&"stylesheet"===n.attributes.rel,
+                g=f&&!c&&r.getCssInlineTargets().has(n.UUID);
+                if(Object.entries(n.attributes).forEach(e=>{
+                  let[t,i]=e;
+                  if((!a||"src"!==t||!h&&!m)&&(!c||"href"!==t&&"rel"!==t&&"as"!==t&&"crossorigin"!==t)){
+                    if(f&&"href"===t){
+                      if(g){
+                        try{
+                          v.setAttribute("data-uxcam-href",i)
+                        }
+                        catch(e){
+                          console.error(e)
+                        }
+                        r.armInlineCssSafetyNet(n.UUID,i);
+                        return
+                      }
+                      if(r.isDirectFirstCssHost(i))try{
+                        v.setAttribute("crossorigin","anonymous")
+                      }
+                      catch(e){
+                        console.error(e)
+                      }
+                      i=r.initialStylesheetHref(i)
+                    }"crossorigin"===t&&(i="anonymous");
+                    try{
+                      v.setAttribute(t,i)
+                    }
+                    catch(e){
+                      console.error(e)
+                    }
+                  }
+                }),f&&!c&&!g&&n.attributes.href&&r.armStylesheetRecovery(v,n.attributes.href),d&&"preload"===n.attributes.rel){
+                  let e=v;
+                  Array.from(e.attributes).forEach(t=>{
+                    e.removeAttribute(t.name)
+                  })
+                }"FORM"===t&&(v.autocomplete="off"),
+                "INPUT"===t&&(v.autocomplete="off");
+                break
+              }
+              default:console.warn("Unknown node type in iframe",m)
+            }
+            if(!v)return;
+            r.domMap.has(n.UUID)&&(v=r.getNodeByUUID(n.UUID)),
+            r.registerNode(v,n.UUID),
+            n.isShadowHost&&r.ensureShadowRoot(v);
+            let _="IFRAME"===n.tagName&&(null===(a=n.meta)||void 0===a?void 0:a.type)===s.IFRAME?n.meta:null,
+            C="IFRAME"===n.tagName&&(null==_?void 0:_.isSameOrigin)&&f&&f.length>0;
+            if(f&&!C&&r.applyAddNodesInDocument(e,{
+              seq:t.seq,
+              time:t.time,
+              type:"ADD_NODES",
+              children:f,
+              parentUUID:n.UUID,
+              prevUUID:null,
+              nextUUID:null
+            },i),C){
+              let e=v;
+              i.push(()=>{
+                r.renderIframeContent(e,n.UUID,f,t.seq,t.time,i)
+              })
+            }
+            if(!g){
+              let t=n.isShadow?r.ensureShadowRoot(d):null;
+              t?(u||(u=e.createDocumentFragment()),h=t,u.appendChild(v)):c.appendChild(v)
+            }
+          }),u&&h&&r.insertShadowFragment(h,u,l,o),n.length){
+            if(l){
+              let e=r.getNodeByUUID(l);
+              if(!e)return;
+              if(!c.contains(e.nextSibling)){
+                e.parentNode.insertBefore(c,e.nextSibling);
+                return
+              }
+            }
+            if(o){
+              let e=r.getNodeByUUID(o);
+              if(!e)return;
+              if(!c.contains(e)){
+                e.parentNode.insertBefore(c,e);
+                return
+              }
+            }
+            d.appendChild(c)
+          }
+        },
+        this.makeMouse=()=>{
+          let e=this.iframe.contentDocument.createElement("img");
+          return e.src="data:image/svg+xml;base64,".concat(y),
+          e.style.position="absolute",
+          e.style.display="none",
+          e.style.top="0",
+          e.style.left="0",
+          e.style.width="16px",
+          e.style.height="16px",
+          e.style.zIndex="999999999",
+          e.style.transform="scale(1)",
+          e.style.transition="transform 0.2s ease-in-out, background-color 0.2s ease-in-out",
+          e.style.transformOrigin="left top",
+          this.iframe.contentDocument.body.appendChild(e),
+          e
+        },
+        this.handleContainerClick=()=>this.paused?this.play():this.pause(),
+        this.__replayOnVisible=!1,
+        this.handleVisibilityChange=()=>{
+          if(!this.paused&&!this.ended&&document.hidden){
+            this.pause(),
+            this.__replayOnVisible=!0;
+            return
+          }!document.hidden&&this.__replayOnVisible&&(this.play(),this.__replayOnVisible=!1)
+        },
+        this.registerDocumentNodes=()=>{
+          let e=this.iframe.contentDocument;
+          e&&(this.registerNode(e,"#document"),this.registerNode(e.documentElement,"#html"),this.registerNode(e.body,"#body"),this.registerNode(e.head,"#head"),this.registerNode(e.doctype,"#doctype"))
+        },
+        this.handleFrameLoad=async()=>{
+          if(this.startTime=new Date().getTime(),!this.iframe.contentDocument.doctype){
+            let e=document.implementation.createDocumentType("html","","");
+            this.iframe.contentDocument.insertBefore(e,this.iframe.contentDocument.firstChild)
+          }
+          this.registerDocumentNodes(),
+          this.container&&!this.heatmapConfig&&this.container.addEventListener("click",this.handleContainerClick),
+          this.__timelineChanges=this.__changes.slice(),
+          this.__initialised=!0,
+          await this.showDomLoad(),
+          this.__startAutoPlay&&(this.play(),this.__startAutoPlay=!1),
+          this.__readyState=4,
+          u(this.__domElement,"loadedmetadata"),
+          u(this.__domElement,"canplaythrough"),
+          u(this.__domElement,"contentresize"),
+          document.addEventListener("visibilitychange",this.handleVisibilityChange),
+          this.heatmapConfig&&this.readjustTimeline(1e3*this.heatmapConfig.time,new AbortController,!1).then(()=>{
+            u(this.__domElement,"frameloaded")
+          })
+        },
+        this.init=()=>{
+          if(!this.container){
+            this.__waitingOnContainer=!0;
+            return
+          }
+          this.iframe.style.width="100%",
+          this.iframe.style.height="100%",
+          this.iframe.style.background="#fff",
+          this.iframe.style.position="relative",
+          this.iframe.style.border="none",
+          this.iframe.style.overflow="hidden",
+          this.heatmapConfig||(this.iframe.style.pointerEvents="none"),
+          this.iframe.sandbox.add("allow-same-origin"),
+          this.container.innerHTML="",
+          this.container.appendChild(this.iframe),
+          this.canvas.style.width="100%",
+          this.canvas.style.height="100%",
+          this.canvas.style.position="absolute",
+          this.canvas.style.left="0",
+          this.canvas.style.top="0",
+          this.canvas.style.pointerEvents="none",
+          this.canvas.style.zIndex="999999999",
+          this.container.appendChild(this.canvas);
+          let e=()=>{
+            this.iframe.removeEventListener("load",e),
+            this.handleFrameLoad()
+          };
+          this.iframe.addEventListener("load",e)
+        },
+        this.__animationFrame=null,
+        this.chunkyifyArray=(e,t)=>{
+          let i=[];
+          for(let n=0;n<e.length;n+=t)i.push(e.slice(n,n+t));
+          return i
+        },
+        this.readjustTimeline=async function(e,t){
+          let i=!(arguments.length>2)||void 0===arguments[2]||arguments[2];
+          r.freezePaint();
+          let n=e<r.__elapsedTimeMs?r.__changes.slice():r.__timelineChanges,
+          a=w.fastFindIndexByTime(n,e),
+          s=n.slice(0,a+1),
+          l=n.slice(a+1);
+          console.log("fastForward",s),
+          i&&(r.trailPath=[]),
+          s.length&&(r.__currentApplyChangePromise=r.fastApplyChanges(s,t,i),r.__timelineChanges=l,await r.__currentApplyChangePromise)
+        },
+        this.showDomLoad=async()=>{
+          let e=this.__changes.findIndex(e=>"PAGE_LOAD"===e.type||e.ct===a.PAGE_LOAD);
+          if(-1===e){
+            console.warn("No DOM_READY event found");
+            return
+          }
+          let t=this.__changes.slice(0,e+1),
+          i=new AbortController;
+          await this.fastApplyChanges(t,i)
+        },
+        this.applyChunks=function(e){
+          let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1];
+          for(let i of e)try{
+            r.applyChange(i,t)
+          }
+          catch(e){
+            console.warn("Failed to apply change",i,e)
+          }
+        },
+        this.__currentApplyChangePromise=null,
+        this.__currentApplyChangesAbortController=null,
+        this.fastApplyChanges=async function(e,t){
+          let i=!(arguments.length>2)||void 0===arguments[2]||arguments[2],
+          n=r.__currentApplyChangesAbortController;
+          if(n&&n!==t&&n.abort(),r.__currentApplyChangesAbortController=t,!r.container)return;
+          i=i||e.length>1e3;
+          let{
+            width:a,
+            height:s
+          }=r.container.getBoundingClientRect(),
+          l=null,
+          o=()=>{
+            l&&l.remove(),
+            r.container&&(r.container.style.visibility="visible",r.container.style.position="relative"),
+            t.signal.removeEventListener("abort",o)
+          };
+          if(t.signal.addEventListener("abort",o),i){
+            var d,
+            c;
+            null===(d=r.iframe.contentDocument)||void 0===d||d.documentElement.scrollTo({
+              top:0,
+              left:0,
+              behavior:_
+            }),
+            null===(c=r.iframe.contentDocument)||void 0===c||c.body.scrollTo({
+              top:0,
+              left:0,
+              behavior:_
+            }),
+            (l=document.createElement("div")).style.width="".concat(a||600,"px"),
+            l.style.height="".concat(s||600,"px"),
+            l.style.backgroundColor="#f0f0f0",
+            l.style.transform=r.iframe.style.transform,
+            r.container.style.visibility="hidden",
+            r.container.style.position="absolute",
+            r.container.parentElement.appendChild(l)
+          }
+          for(let n of r.chunkyifyArray(e,500)){
+            if(null==t?void 0:t.signal.aborted)return;
+            r.applyChunks(n,i),
+            await new Promise(e=>setTimeout(e))
+          }(null==t||!t.signal.aborted)&&(i&&await new Promise(e=>{
+            setTimeout(e,500)
+          }),(null==t||!t.signal.aborted)&&(r.container.style.visibility="visible",r.container.style.position="relative",l&&l.remove()))
+        },
+        this.tick=()=>{
+          if(this.freezePaint(),this.stopElapsedTimer(),!this.__initialised||this.paused)return;
+          let e=this.__timelineChanges;
+          if(!e.length){
+            this.__finished=!0,
+            this.__paused=!0,
+            u(this.__domElement,"ended"),
+            u(this.__domElement,"timeupdate"),
+            this.freezePaint();
+            return
+          }
+          let t=[];
+          for(;;){
+            let i=e[0];
+            if(!i)break;
+            let n=void 0!==i.time?i.time:i.t;
+            if(!i||!(n<=this.__elapsedTimeMs)||(t.push(i),e.shift(),!(t.length<100)))break
+          }
+          let i=new AbortController;
+          (this.__currentApplyChangePromise||Promise.resolve()).then(()=>{
+            this.__currentApplyChangePromise=this.fastApplyChanges(t,i,!1).then(()=>{
+              this.paused||this.__destroyed||(this.startElapsedTimer(),this.__animationFrame=requestAnimationFrame(()=>{
+                this.tick()
+              }))
+            }).catch(()=>{
+              this.__currentApplyChangePromise=null
+            })
+          }).catch(()=>{
+            this.__currentApplyChangePromise=null
+          })
+        },
+        this.freezePaint=()=>{
+          this.__animationFrame&&(cancelAnimationFrame(this.__animationFrame),this.__animationFrame=null)
+        },
+        this.fillMedia=function(e,t){
+          let i=arguments.length>2&&void 0!==arguments[2]&&arguments[2],
+          n=r.__mediaInfoMap.get(e)||t;
+          switch(t.type){
+            case s.IMG:{
+              if(i&&"true"!==e.getAttribute("has-error")&&e.src)return;
+              let t=document.createElement("canvas");
+              t.width=n.width,
+              t.height=n.height;
+              let r=t.getContext("2d");
+              if(!r)return;
+              r.fillStyle="#f0f0f0",
+              r.fillRect(0,0,n.width,n.height);
+              let a=t.toDataURL();
+              e.src=a,
+              e.removeAttribute("srcset");
+              break
+            }
+            case s.VIDEO:{
+              if(i&&"true"!==e.getAttribute("has-error")&&e.src)return;
+              let t=document.createElement("canvas");
+              t.width=n.width,
+              t.height=n.height;
+              let r=t.getContext("2d");
+              if(!r)return;
+              r.fillStyle="#f0f0f0",
+              r.fillRect(0,0,n.width,n.height);
+              let a=new MediaRecorder(t.captureStream(25),{
+                mimeType:"video/webm"
+              }),
+              s=[];
+              a.ondataavailable=e=>{
+                s.push(e.data),
+                "recording"===a.state&&a.stop()
+              },
+              a.start(),
+              setTimeout(()=>{
+                a.stop()
+              },100),
+              a.onstop=()=>{
+                let t=new Blob(s,{
+                  type:"video/webm"
+                }),
+                i=URL.createObjectURL(t);
+                e.src=i
+              }
+            }
+          }
+        },
+        this.applyAddNodes=function(e){
+          let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:[],
+          {
+            children:i,
+            parentUUID:n,
+            prevUUID:a,
+            nextUUID:l,
+            iframeContext:o
+          }=e,
+          d=r.getNodeByUUID(n);
+          if(!d)return;
+          let c=null;
+          if(o){
+            let e=r.__iframeMap.get(o);
+            (null==e?void 0:e.contentDocument)&&(c=e.contentDocument)
+          }
+          if(c||(c=d.ownerDocument||r.iframe.contentDocument),!c)return;
+          let u=c,
+          h=u.createDocumentFragment(),
+          p=null,
+          m=null;
+          if(i.forEach(i=>{
+            var n,
+            a,
+            l,
+            o;
+            let{
+              nodeType:c,
+              childNodes:f
+            }=i,
+            g=!1,
+            v=null,
+            y=r.getNodeByUUID(i.UUID);
+            switch(y&&(y.parentNode===d?(v=y,g=!0):(null==y||y.remove(),r.domMap.delete(i.UUID))),c){
+              case Node.TEXT_NODE:{
+                let e=i.attributes.textContent;
+                if("SCRIPT"===d.tagName&&(e="true;"),"STYLE"===d.tagName&&(e=x(e)),v&&v.textContent===e)break;
+                v=v||u.createTextNode(e);
+                break
+              }
+              case Node.COMMENT_NODE:v=v||u.createComment(i.attributes.textContent);
+              break;
+              case Node.DOCUMENT_TYPE_NODE:break;
+              case Node.ELEMENT_NODE:{
+                let{
+                  tagName:e,
+                  isSVG:t
+                }=i,
+                n="IFRAME"===e,
+                d="LINK"===e,
+                c=d&&"stylesheet"===i.attributes.rel&&!!(null===(a=i.cssRules)||void 0===a?void 0:a.length);
+                if(t)v=v||u.createElementNS("http://www.w3.org/2000/svg",e);
+                else{
+                  if(E(e))b(u,e),
+                  v=v||u.createElement(c?"style":e);
+                  else{
+                    console.warn('Invalid tag name encountered: "'.concat(e,'". Skipping node creation.'));
+                    return
+                  }
+                  if("NOSCRIPT"===e&&(v.style.display="none"),("IMG"===e||"VIDEO"===e)&&i.meta){
+                    "true"===i.attributes["data-ux-occluded"]&&r.fillMedia(v,i.meta);
+                    let e=()=>{
+                      v.setAttribute("has-error","true"),
+                      r.fillMedia(v,i.meta),
+                      v.removeEventListener("error",e)
+                    };
+                    v.addEventListener("error",e)
+                  }
+                  if(("STYLE"===i.tagName||c)&&(null===(o=i.cssRules)||void 0===o?void 0:o.length))try{
+                    v.textContent=i.cssRules.map(e=>x(e.rule)).join("\n")
+                  }
+                  catch(e){
+                    console.warn("Failed to set <style> textContent",e)
+                  }
+                }
+                let h=n&&(null===(l=i.meta)||void 0===l?void 0:l.type)===s.IFRAME?i.meta:null,
+                p=n&&(null==h?void 0:h.isSameOrigin)&&i.childNodes&&i.childNodes.length>0,
+                m=n&&(null==h?void 0:h.isSameOrigin)&&(!i.childNodes||0===i.childNodes.length);
+                if(n){
+                  let e=v;
+                  e.setAttribute("uxc-iframe-id",i.UUID),
+                  (p||m)&&(e.src="about:blank",r.__iframeMap.set(i.UUID,e))
+                }
+                let f="LINK"===e&&"stylesheet"===i.attributes.rel,
+                g=f&&!c&&r.getCssInlineTargets().has(i.UUID);
+                if(Object.entries(i.attributes).forEach(e=>{
+                  let[t,a]=e;
+                  if((!n||"src"!==t||!p&&!m)&&(!c||"href"!==t&&"rel"!==t&&"as"!==t&&"crossorigin"!==t)){
+                    if(f&&"href"===t){
+                      if(g){
+                        try{
+                          v.setAttribute("data-uxcam-href",a)
+                        }
+                        catch(e){
+                          console.error(e)
+                        }
+                        r.armInlineCssSafetyNet(i.UUID,a);
+                        return
+                      }
+                      if(r.isDirectFirstCssHost(a))try{
+                        v.setAttribute("crossorigin","anonymous")
+                      }
+                      catch(e){
+                        console.error(e)
+                      }
+                      a=r.initialStylesheetHref(a)
+                    }"crossorigin"===t&&(a="anonymous");
+                    try{
+                      v.setAttribute(t,a)
+                    }
+                    catch(e){
+                      console.error(e)
+                    }
+                  }
+                }),d&&"preload"===i.attributes.rel){
+                  let e=v;
+                  Array.from(e.attributes).forEach(t=>{
+                    e.removeAttribute(t.name)
+                  })
+                }
+                f&&!c&&!g&&i.attributes.href&&r.armStylesheetRecovery(v,i.attributes.href),
+                "FORM"===e&&(v.autocomplete="off"),
+                "INPUT"===e&&(v.autocomplete="off");
+                break
+              }
+              default:console.warn("Unknown node type",c)
+            }
+            if(!v)return;
+            r.domMap.has(i.UUID)&&(v=r.getNodeByUUID(i.UUID)),
+            r.registerNode(v,i.UUID),
+            i.isShadowHost&&r.ensureShadowRoot(v);
+            let _="IFRAME"===i.tagName&&(null===(n=i.meta)||void 0===n?void 0:n.type)===s.IFRAME?i.meta:null,
+            C="IFRAME"===i.tagName&&(null==_?void 0:_.isSameOrigin)&&f&&f.length>0;
+            if(f&&!C&&r.applyAddNodes({
+              seq:e.seq,
+              time:e.time,
+              type:"ADD_NODES",
+              children:f,
+              parentUUID:i.UUID,
+              prevUUID:null,
+              nextUUID:null
+            },t),C){
+              let n=v;
+              t.push(()=>{
+                r.renderIframeContent(n,i.UUID,f,e.seq,e.time,t)
+              })
+            }
+            if(!g){
+              let e=i.isShadow?r.ensureShadowRoot(d):null;
+              e?(p||(p=u.createDocumentFragment()),m=e,p.appendChild(v)):(i.isShadow&&console.warn("[replay] shadow child <".concat(i.tagName,"> mounted into the light DOM: ")+"<".concat(null==d?void 0:d.tagName,"> cannot host a shadow root. ")+"Its layout will not match the recording."),h.appendChild(v))
+            }
+          }),p&&m&&r.insertShadowFragment(m,p,a,l),i.length){
+            if(a){
+              let e=r.getNodeByUUID(a);
+              if(!e)return;
+              if(!h.contains(e.nextSibling)){
+                e.parentNode.insertBefore(h,e.nextSibling);
+                return
+              }
+            }
+            if(l){
+              let e=r.getNodeByUUID(l);
+              if(!e)return;
+              if(!h.contains(e)){
+                e.parentNode.insertBefore(h,e);
+                return
+              }
+            }
+            d.appendChild(h)
+          }
+        },
+        this.applyAddNodesMin=function(e){
+          let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:[];
+          return r.applyAddNodes({
+            seq:e.s,
+            time:e.t,
+            type:"ADD_NODES",
+            children:e.c.map(r.mapMinNode),
+            parentUUID:e.p,
+            prevUUID:e.pu,
+            nextUUID:e.nu,
+            iframeContext:e.if
+          },t)
+        },
+        this.applyRemoveNodes=e=>{
+          let{
+            UUIDs:t
+          }=e;
+          t.forEach(e=>{
+            let t=this.getNodeByUUID(e);
+            t?(this.__mediaInfoMap.delete(t),this.domMap.delete(e),this.reverseDomMap.delete(t),t.remove()):console.warn("Could not find node with uuid ".concat(e))
+          })
+        },
+        this.applyRemoveNodesMin=e=>this.applyRemoveNodes({
+          seq:e.s,
+          time:e.t,
+          type:"REMOVE_NODES",
+          UUIDs:e.u,
+          iframeContext:e.if
+        }),
+        this.applyAttrChange=e=>{
+          let{
+            target:t,
+            attr:i
+          }=e,
+          {
+            value:n
+          }=e,
+          r=this.getNodeByUUID(t);
+          if(!r)return;
+          if(null===n){
+            r.removeAttribute(i);
+            return
+          }
+          if("crossorigin"===i&&(n="anonymous"),"IFRAME"===r.tagName&&"src"===i){
+            let e=this.reverseDomMap.get(r);
+            if(e&&this.__iframeMap.has(e))return
+          }
+          let a="LINK"===r.tagName&&"href"===i&&"stylesheet"===r.getAttribute("rel")&&!!n,
+          s=n;
+          if(a){
+            if(this.isDirectFirstCssHost(n))try{
+              r.setAttribute("crossorigin","anonymous")
+            }
+            catch(e){
+              console.warn(e)
+            }
+            n=this.initialStylesheetHref(n)
+          }"autocomplete"===i&&(n="off");
+          try{
+            r.setAttribute(i,n)
+          }
+          catch(e){
+            console.warn(e)
+          }
+          a&&this.armStylesheetRecovery(r,s)
+        },
+        this.applyAttrChangeMin=e=>this.applyAttrChange({
+          seq:e.s,
+          time:e.t,
+          type:"ATTR_CHANGE",
+          target:e.tg,
+          attr:e.a,
+          value:e.v,
+          iframeContext:e.if
+        }),
+        this.__scrollClamp=new WeakMap,
+        this.warnIfScrollClamped=(e,t,i,n)=>{
+          var r;
+          let a=e.scrollTop,
+          s=e.scrollLeft,
+          l=Math.max(Math.abs(a-i),Math.abs(s-n));
+          if(l<=2)return;
+          let o=null!==(r=this.__scrollClamp.get(e))&&void 0!==r?r:{
+            worst:0,
+            reports:0
+          };
+          if(o.reports>=3||l<=1.5*o.worst){
+            l>o.worst&&(o.worst=l,this.__scrollClamp.set(e,o));
+            return
+          }
+          o.worst=l,
+          o.reports+=1,
+          this.__scrollClamp.set(e,o);
+          let d="".concat(this.__width,"x").concat(this.__height),
+          c=1===o.reports?" First clamp of the session — if this is small and early it may just be the initial rebuild before layout settled; a later, larger clamp will still be reported.":"";
+          console.warn("[replay] scroll clamped on ".concat(t,": asked for (").concat(n,", ").concat(i,"), got ")+"(".concat(s,", ").concat(a,") — off by ").concat(l,"px. Scrollable ").concat(e.scrollWidth,"x")+"".concat(e.scrollHeight,", recorded viewport ").concat(d,". The rebuilt layout does not match ")+"the recording, so the cursor will be off by the difference.".concat(c))
+        },
+        this.applyScrollChange=e=>{
+          let t;
+          if(this.heatmapConfig)return;
+          let{
+            target:i,
+            scrollTop:n,
+            scrollLeft:r,
+            iframeContext:a
+          }=e,
+          s=null;
+          if(a){
+            let e=this.__iframeMap.get(a);
+            (null==e?void 0:e.contentDocument)&&(s=e.contentDocument)
+          }
+          if(s||(s=this.iframe.contentDocument),s){
+            if(!(t="#document"===i?s.scrollingElement||s.body:"#html"===i?s.documentElement:this.getNodeByUUID(i))){
+              console.warn("Could not find node with uuid ".concat(i));
+              return
+            }
+            try{
+              t.scrollTo({
+                top:n,
+                left:r,
+                behavior:_
+              })
+            }
+            catch(e){
+              console.warn(e)
+            }
+            this.warnIfScrollClamped(t,i,n,r),
+            this.mouseElem&&this.__lastMousePos&&this.positionCursor(this.__lastMousePos.x,this.__lastMousePos.y,this.mouseElem.ownerDocument)
+          }
+        },
+        this.applyScrollChangeMin=e=>this.applyScrollChange({
+          seq:e.s,
+          time:e.t,
+          type:"SCROLL",
+          target:e.tg,
+          scrollTop:e.st,
+          scrollLeft:e.sl,
+          iframeContext:e.if
+        }),
+        this.applyFocusChange=e=>{
+          let{
+            target:t
+          }=e;
+          if(this.heatmapConfig)return;
+          let i=this.getNodeByUUID(t);
+          i&&i.focus&&i.focus()
+        },
+        this.applyFocusChangeMin=e=>this.applyFocusChange({
+          seq:e.s,
+          time:e.t,
+          type:"FOCUS",
+          target:e.tg,
+          iframeContext:e.if
+        }),
+        this.__lastMousePos=null,
+        this.applyMouseMove=function(e){
+          var t;
+          let i=arguments.length>1&&void 0!==arguments[1]&&arguments[1];
+          if(r.heatmapConfig)return;
+          let n=e.iframeContext?null===(t=r.__iframeMap.get(e.iframeContext))||void 0===t?void 0:t.contentDocument:r.iframe.contentDocument;
+          if(n&&(r.ensureCursorInDocument(n),r.positionCursor(e.x,e.y,n),r.mouseElem&&(r.mouseElem.style.display="block")),r.__lastMousePos&&!i){
+            let t="MOUSE_MOVE"===r.__lastMousePos.type?r.__lastMousePos.iframeContext:void 0,
+            {
+              x:i,
+              y:n
+            }=r.getCursorPositionInContainerSpace(r.__lastMousePos.x,r.__lastMousePos.y,t),
+            {
+              x:a,
+              y:s
+            }=r.getCursorPositionInContainerSpace(e.x,e.y,e.iframeContext);
+            r.trailPath.push([1,[i,n],[a,s],2])
+          }
+          r.__lastMousePos=e,
+          r.drawTrail()
+        },
+        this.drawTrailRequest=null,
+        this.drawTrail=()=>{
+          if(this.paused||this.__finished)return;
+          this.drawTrailRequest&&cancelAnimationFrame(this.drawTrailRequest);
+          let{
+            trailCanvasCtx:e
+          }=this;
+          if(!e)return;
+          let{
+            trailPath:t
+          }=this;
+          for(let i of(e.clearRect(0,0,this.videoWidth,this.videoHeight),t))switch(i[0]){
+            case 1:{
+              let[,[n,r],[a,s],l]=i;
+              if(l<=0){
+                let e=t.indexOf(i);
+                t.splice(e,1);
+                continue
+              }
+              let o=(.5*Math.min(l,this.__trailOpacity)).toFixed(2);
+              e.beginPath(),
+              e.lineWidth=3*this.__trailThicknessRatio,
+              e.strokeStyle="rgba(220, 79, 68, ".concat(o,")"),
+              e.moveTo(n,r),
+              e.lineTo(a,s),
+              e.stroke(),
+              e.closePath(),
+              i[3]-=.01;
+              break
+            }
+            case 2:{
+              let[,[n,r],a]=i;
+              if(a<=0){
+                let e=t.indexOf(i);
+                t.splice(e,1);
+                continue
+              }
+              let s=(.5*Math.min(a,this.__trailOpacity)).toFixed(2);
+              e.beginPath(),
+              e.fillStyle="rgba(220, 79, 68, ".concat(s,")"),
+              e.arc(n,r,16*this.__trailThicknessRatio,0,2*Math.PI),
+              e.fill(),
+              e.closePath(),
+              i[2]-=.01;
+              break
+            }
+            case 3:{
+              let[,[n,r],[a,s],l]=i;
+              if(l<=0){
+                let e=t.indexOf(i);
+                t.splice(e,1);
+                continue
+              }
+              let o=(.5*Math.min(l,this.__trailOpacity)).toFixed(2);
+              e.beginPath(),
+              e.lineWidth=12*this.__trailThicknessRatio,
+              e.lineCap="round",
+              e.strokeStyle="rgba(220, 79, 68, ".concat(o,")"),
+              e.moveTo(n,r),
+              e.lineTo(a,s),
+              e.stroke(),
+              e.closePath(),
+              i[3]-=.01;
+              break
+            }
+            default:continue
+          }
+          this.drawTrailRequest=requestAnimationFrame(this.drawTrail)
+        },
+        this.applyMouseMoveMin=function(e){
+          let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1];
+          return r.applyMouseMove({
+            seq:e.s,
+            time:e.t,
+            type:"MOUSE_MOVE",
+            target:e.tg,
+            x:e.x,
+            y:e.y,
+            iframeContext:e.if
+          },t)
+        },
+        this.applyMouseClick=function(e){
+          var t;
+          let i=arguments.length>1&&void 0!==arguments[1]&&arguments[1];
+          if(r.heatmapConfig||i)return;
+          let n=e.iframeContext?null===(t=r.__iframeMap.get(e.iframeContext))||void 0===t?void 0:t.contentDocument:r.iframe.contentDocument;
+          n&&(r.ensureCursorInDocument(n),r.positionCursor(e.x,e.y,n),r.mouseElem&&(r.mouseElem.style.display="block"));
+          let{
+            x:a,
+            y:s
+          }=r.getCursorPositionInContainerSpace(e.x,e.y,e.iframeContext);
+          r.trailPath.push([2,[a,s],2]),
+          r.drawTrail()
+        },
+        this.applyMouseClickMin=function(e){
+          let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1];
+          return r.applyMouseClick({
+            seq:e.s,
+            time:e.t,
+            type:"MOUSE_CLICK",
+            target:e.tg,
+            x:e.x,
+            y:e.y,
+            iframeContext:e.if
+          },t)
+        },
+        this.applyMouseOver=e=>{
+          let{
+            target:t
+          }=e,
+          i=this.getNodeByUUID(t);
+          i&&i.setAttribute&&i.setAttribute("data-hover","true")
+        },
+        this.applyMouseOverMin=e=>this.applyMouseOver({
+          seq:e.s,
+          time:e.t,
+          type:"MOUSE_OVER",
+          target:e.tg,
+          iframeContext:e.if
+        }),
+        this.applyMouseOut=e=>{
+          let{
+            target:t
+          }=e,
+          i=this.getNodeByUUID(t);
+          i&&i.removeAttribute&&i.removeAttribute("data-hover")
+        },
+        this.applyMouseOutMin=e=>this.applyMouseOut({
+          seq:e.s,
+          time:e.t,
+          type:"MOUSE_OUT",
+          target:e.tg,
+          iframeContext:e.if
+        }),
+        this.applyPageLoad=e=>{
+          this.domMap.clear(),
+          this.reverseDomMap.clear(),
+          this.clearIframeMaps(),
+          this.__sheetMap.clear(),
+          this.registerDocumentNodes();
+          let t=this.iframe.contentDocument;
+          try{
+            t.adoptedStyleSheets=[]
+          }
+          catch(e){}t.body.innerHTML="",
+          t.head.innerHTML="";
+          let i=t.createDocumentFragment(),
+          n=crypto.randomUUID();
+          this.registerNode(i,n),
+          t.documentElement.innerHTML="",
+          e.node.tagName&&"HTML"===e.node.tagName.toUpperCase()&&e.node.attributes&&"#html"===e.node.UUID&&Object.entries(e.node.attributes).forEach(e=>{
+            let[i,n]=e;
+            try{
+              t.documentElement.setAttribute(i,n)
+            }
+            catch(e){
+              console.error("Error setting HTML attribute:",e)
+            }
+          });
+          let r=[];
+          this.applyAddNodes({
+            seq:e.seq,
+            time:e.time,
+            type:"ADD_NODES",
+            children:e.node.childNodes.map(e=>({
+              ...e,
+              parentUUID:n
+            })),
+            parentUUID:n,
+            prevUUID:null,
+            nextUUID:null
+          },r),
+          r.forEach(e=>{
+            e()
+          }),
+          Array.from(i.childNodes).forEach(e=>{
+            let i=e.previousSibling;
+            if("HEAD"===e.nodeName){
+              t.head.innerHTML="";
+              let i=t.createDocumentFragment();
+              Array.from(e.childNodes).forEach(e=>{
+                i.appendChild(e)
+              }),
+              t.head.appendChild(i);
+              return
+            }
+            if("BODY"===e.nodeName){
+              t.body.innerHTML="";
+              let i=t.createDocumentFragment(),
+              n=Array.from(e.childNodes);
+              Array.from(e.attributes).forEach(e=>{
+                t.body.setAttribute(e.name,e.value)
+              }),
+              n.forEach(e=>{
+                i.appendChild(e)
+              }),
+              t.body.appendChild(i);
+              return
+            }
+            i&&i.after(e)
+          }),
+          this.mouseElem=this.makeMouse(),
+          this.trailCanvasCtx=this.canvas.getContext("2d"),
+          this.__lastUrl=e.url,
+          this.applyScrollChange({
+            seq:e.seq,
+            time:e.time,
+            type:"SCROLL",
+            target:"#document",
+            scrollTop:e.topScroll||0,
+            scrollLeft:e.leftScroll||0
+          }),
+          u(this.__domElement,"urlchange",{
+            url:e.url
+          })
+        },
+        this.applyPageLoadMin=e=>this.applyPageLoad({
+          seq:e.s,
+          time:e.t,
+          type:"PAGE_LOAD",
+          node:this.mapMinNode(e.n),
+          url:e.u,
+          topScroll:e.ts,
+          leftScroll:e.ls
+        }),
+        this.applyCharacterDataChange=e=>{
+          let{
+            target:t,
+            textContent:i
+          }=e,
+          n=this.getNodeByUUID(t);
+          n&&(n.textContent=i)
+        },
+        this.applyCharacterDataChangeMin=e=>this.applyCharacterDataChange({
+          seq:e.s,
+          time:e.t,
+          type:"CHARACTER_DATA_CHANGE",
+          target:e.tg,
+          textContent:e.tc,
+          iframeContext:e.if
+        }),
+        this.applyWindowResize=e=>{
+          let{
+            width:t,
+            height:i
+          }=e;
+          this.heatmapConfig||(this.canvas&&(this.canvas.width=t,this.canvas.height=i),this.iframe.style.width="".concat(t,"px"),this.iframe.style.height="".concat(i,"px"),this.canvas.style.width="".concat(t,"px"),this.canvas.style.height="".concat(i,"px"),this.__width=t,this.__height=i,u(this.__domElement,"contentresize"))
+        },
+        this.applyWindowResizeMin=e=>this.applyWindowResize({
+          seq:e.s,
+          time:e.t,
+          type:"WINDOW_RESIZE",
+          width:e.w,
+          height:e.h
+        }),
+        this.resolveCssDoc=e=>{
+          if(e){
+            var t;
+            let i=null===(t=this.__iframeMap.get(e))||void 0===t?void 0:t.contentDocument;
+            if(i)return i
+          }
+          return this.iframe.contentDocument
+        },
+        this.isDirectFirstCssHost=e=>{
+          try{
+            let{
+              hostname:t
+            }=new URL(e);
+            return w.DIRECT_FIRST_CSS_HOSTS.some(e=>t===e||t.endsWith(".".concat(e)))
+          }
+          catch(e){
+            return!1
+          }
+        },
+        this.initialStylesheetHref=e=>this.isDirectFirstCssHost(e)?e:this.__cssProxyFor(e),
+        this.__cssRecoveryTimers=new Set,
+        this.hasAppliedCss=e=>{
+          if("STYLE"===e.tagName){
+            if(e.textContent&&e.textContent.trim())return!0;
+            try{
+              var t,
+              i;
+              return!!(null===(i=e.sheet)||void 0===i?void 0:null===(t=i.cssRules)||void 0===t?void 0:t.length)
+            }
+            catch(e){
+              return!1
+            }
+          }
+          try{
+            let{
+              sheet:t
+            }=e;
+            return!!(t&&t.cssRules&&t.cssRules.length)
+          }
+          catch(e){
+            return!0
+          }
+        },
+        this.armStylesheetRecovery=function(e,t){
+          let i=arguments.length>2&&void 0!==arguments[2]?arguments[2]:new Set,
+          n=arguments.length>3&&void 0!==arguments[3]?arguments[3]:0;
+          if(r.__destroyed||!t)return;
+          i.add(e.href);
+          let a=!1,
+          s=null,
+          l=new AbortController,
+          o=()=>{
+            a=!0,
+            null!==s&&(clearTimeout(s),r.__cssRecoveryTimers.delete(s)),
+            l.abort()
+          },
+          d=()=>!e.isConnected||r.getNodeByUUID(r.reverseDomMap.get(e)||"")!==e,
+          c=()=>{
+            if(a||(o(),r.__destroyed||d()))return;
+            let n=[r.__cssProxyFor(t),t].find(e=>e&&!i.has(e));
+            if(n){
+              e.href=n,
+              r.armStylesheetRecovery(e,t,i);
+              return
+            }
+            v.l.error("CSS failed to fetch (all fallbacks exhausted)",{
+              originalHref:t
+            }),
+            u(r.__domElement,"csserror",{
+              kind:"stylesheet-fetch-failed",
+              url:t
+            })
+          };
+          s=setTimeout(()=>{
+            if(!a){
+              if(r.hasAppliedCss(e)){
+                o();
+                return
+              }
+              if(!e.isConnected&&n<w.CSS_RECOVERY_MAX_RECHECKS){
+                o(),
+                r.armStylesheetRecovery(e,t,i,n+1);
+                return
+              }
+              c()
+            }
+          },w.CSS_LOAD_CHECK_MS),
+          r.__cssRecoveryTimers.add(s),
+          e.addEventListener("error",c,{
+            once:!0,
+            signal:l.signal
+          }),
+          e.addEventListener("load",()=>o(),{
+            once:!0,
+            signal:l.signal
+          })
+        },
+        this.hasPendingInlineAhead=e=>{
+          for(let n of this.__timelineChanges){
+            var t,
+            i;
+            let r=null!==(t=n.type)&&void 0!==t?t:n.ct;
+            if(("CSS_REPLACE"===r||r===a.CSS_REPLACE)&&void 0===n.styleId&&void 0===n.sid&&(null!==(i=n.targetStyle)&&void 0!==i?i:n.tg)===e)return!0
+          }
+          return!1
+        },
+        this.armInlineCssSafetyNet=(e,t)=>{
+          if(!t)return;
+          let i=setTimeout(()=>{
+            if(this.__cssRecoveryTimers.delete(i),this.__destroyed)return;
+            let n=this.getNodeByUUID(e);
+            if(!(!n||!n.isConnected||this.hasAppliedCss(n)||this.hasPendingInlineAhead(e))&&"LINK"===n.tagName){
+              if(this.isDirectFirstCssHost(t))try{
+                n.setAttribute("crossorigin","anonymous")
+              }
+              catch(e){
+                console.warn(e)
+              }
+              n.href=this.initialStylesheetHref(t),
+              this.armStylesheetRecovery(n,t)
+            }
+          },w.CSS_INLINE_SAFETY_NET_MS);
+          this.__cssRecoveryTimers.add(i)
+        },
+        this.resolveSheet=e=>{
+          var t,
+          i;
+          if(void 0!==e.styleId)return null!==(t=this.__sheetMap.get(e.styleId))&&void 0!==t?t:null;
+          if(e.targetStyle){
+            let t=this.getNodeByUUID(e.targetStyle);
+            return null!==(i=null==t?void 0:t.sheet)&&void 0!==i?i:null
+          }
+          return null
+        },
+        this.resolveRuleContainer=(e,t)=>{
+          if(!Array.isArray(t))return{
+            container:e,
+            finalIndex:t
+          };
+          let i=e;
+          for(let e=0;e<t.length-1;e+=1){
+            let n=i.cssRules[t[e]];
+            if(!n||!n.cssRules)return null;
+            i=n
+          }
+          return{
+            container:i,
+            finalIndex:t[t.length-1]
+          }
+        },
+        this.insertRuleIntoSheet=(e,t,i)=>{
+          let n=this.resolveRuleContainer(e,i);
+          if(!n){
+            console.warn("Could not resolve nested rule path",i,t);
+            return
+          }
+          let{
+            container:r
+          }=n,
+          a=Math.max(0,Math.min(n.finalIndex,r.cssRules.length));
+          try{
+            r.insertRule(x(t),a)
+          }
+          catch(e){
+            console.warn("Failed to insert rule",t,e,a,"/",r.cssRules.length);
+            try{
+              r.insertRule(t,a)
+            }
+            catch(i){
+              let e=C(t);
+              try{
+                r.insertRule(e,a)
+              }
+              catch(t){
+                console.warn("Failed to sanitized rule",e,t,a,"/",r.cssRules.length);
+                try{
+                  r.insertRule(".__uxcam__replace__{ --uxcam__placeholder: 0; }",a)
+                }
+                catch(e){
+                  console.warn("Failed to insert placeholder rule",e)
+                }
+              }
+            }
+          }
+        },
+        this.deleteRuleFromSheet=(e,t)=>{
+          let i=this.resolveRuleContainer(e,t);
+          if(!i){
+            console.warn("Could not resolve nested rule path for delete",t);
+            return
+          }
+          let{
+            container:n,
+            finalIndex:r
+          }=i;
+          try{
+            n.deleteRule(r)
+          }
+          catch(e){
+            console.warn("Failed to delete rule",e,r,"/",n.cssRules.length)
+          }
+        },
+        this.applyCSSInsertRule=e=>{
+          let{
+            rule:t,
+            index:i,
+            targetStyle:n,
+            styleId:r
+          }=e;
+          if(void 0!==r){
+            let n=this.__sheetMap.get(r);
+            if(!n){
+              console.warn("Could not find adopted sheet with styleId ".concat(r),e);
+              return
+            }
+            this.insertRuleIntoSheet(n,t,i);
+            return
+          }
+          let a=this.getNodeByUUID(n);
+          if(!a){
+            console.warn("Could not find styleElem with uuid ".concat(n),e);
+            return
+          }
+          if(!a.sheet){
+            let t=()=>{
+              a.removeEventListener("load",t),
+              this.applyCSSInsertRule(e)
+            };
+            a.addEventListener("load",t);
+            return
+          }
+          let s=a.sheet;
+          this.insertRuleIntoSheet(s,t,i)
+        },
+        this.applyCSSInsertRuleMin=e=>this.applyCSSInsertRule({
+          seq:e.s,
+          time:e.t,
+          type:"CSS_INSERT_RULE",
+          rule:e.r,
+          index:e.i,
+          targetStyle:e.tg,
+          styleId:e.sid,
+          iframeContext:e.if
+        }),
+        this.applyCSSDeleteRule=e=>{
+          let{
+            index:t,
+            targetStyle:i,
+            styleId:n
+          }=e;
+          if(void 0!==n){
+            let i=this.__sheetMap.get(n);
+            if(!i){
+              console.warn("Could not find adopted sheet with styleId ".concat(n),e);
+              return
+            }
+            this.deleteRuleFromSheet(i,t);
+            return
+          }
+          let r=this.getNodeByUUID(i);
+          if(!r){
+            console.warn("Could not find styleElem with uuid ".concat(i));
+            return
+          }
+          if(!r.sheet){
+            let t=()=>{
+              r.removeEventListener("load",t),
+              this.applyCSSDeleteRule(e)
+            };
+            r.addEventListener("load",t);
+            return
+          }
+          let a=r.sheet;
+          if(!a){
+            console.warn("Could not find styleSheet with uuid ".concat(i));
+            return
+          }
+          this.deleteRuleFromSheet(a,t)
+        },
+        this.ensureStyleCarrier=e=>{
+          let t=this.getNodeByUUID(e);
+          if(!t)return null;
+          if("STYLE"===t.tagName)return t;
+          if("LINK"===t.tagName){
+            let i=t.ownerDocument||this.iframe.contentDocument;
+            if(!i)return null;
+            let n=i.createElement("style"),
+            r=t.getAttribute("media");
+            r&&n.setAttribute("media",r);
+            let a=t.getAttribute("data-uxcam-href")||t.getAttribute("href");
+            return a&&n.setAttribute("data-uxcam-href",a),
+            t.replaceWith(n),
+            (t.disabled||t.hasAttribute("disabled"))&&(n.disabled=!0),
+            this.registerNode(n,e),
+            n
+          }
+          return null
+        },
+        this.applyCSSReplace=e=>{
+          let t=x(e.text||"");
+          if(void 0===e.styleId&&e.targetStyle){
+            let i=this.ensureStyleCarrier(e.targetStyle);
+            if(i){
+              try{
+                i.textContent=t
+              }
+              catch(e){
+                console.warn("Failed to set carrier textContent for CSS_REPLACE",e)
+              }
+              return
+            }
+          }
+          let i=this.resolveSheet(e);
+          if(!i){
+            console.warn("Could not resolve sheet for CSS_REPLACE",e);
+            return
+          }
+          if("function"==typeof i.replaceSync){
+            try{
+              i.replaceSync(t)
+            }
+            catch(t){
+              console.warn("Failed replaceSync, retrying sanitized",t);
+              try{
+                i.replaceSync(C(e.text||""))
+              }
+              catch(e){
+                console.warn("replaceSync sanitized failed",e)
+              }
+            }
+            return
+          }
+          try{
+            for(;i.cssRules.length;)i.deleteRule(0);
+            let e=i.ownerNode;
+            e&&"textContent"in e&&(e.textContent=t)
+          }
+          catch(e){
+            console.warn("Failed CSS_REPLACE fallback",e)
+          }
+        },
+        this.applyCSSReplaceMin=e=>this.applyCSSReplace({
+          seq:e.s,
+          time:e.t,
+          type:"CSS_REPLACE",
+          text:e.tx,
+          targetStyle:e.tg,
+          styleId:e.sid,
+          iframeContext:e.if
+        }),
+        this.applyAdoptedStyleSheet=e=>{
+          let t;
+          let i=this.resolveCssDoc(e.iframeContext);
+          if(!i){
+            console.warn("Could not resolve doc for ADOPTED_STYLE_SHEET",e);
+            return
+          }
+          let n=i.defaultView;
+          if(!n||"function"!=typeof n.CSSStyleSheet||!("adoptedStyleSheets"in i)){
+            console.warn("adoptedStyleSheets not supported in replay doc",e);
+            return
+          }
+          for(let t of e.sheets||[]){
+            let e=this.__sheetMap.get(t.styleId);
+            e||(e=new n.CSSStyleSheet,this.__sheetMap.set(t.styleId,e));
+            let i=t.rules||[],
+            r=i.map(e=>x(e.rule)).join("\n");
+            try{
+              e.replaceSync(r)
+            }
+            catch(t){
+              console.warn("Failed to replaceSync adopted sheet, retrying sanitized",t);
+              try{
+                e.replaceSync(C(i.map(e=>e.rule).join("\n")))
+              }
+              catch(e){
+                console.warn("adopted replaceSync sanitized failed",e)
+              }
+            }
+          }
+          if("#document"===e.host)t=i;
+          else{
+            var r;
+            let i=this.getNodeByUUID(e.host);
+            t=i&&null!==(r=this.ensureShadowRoot(i))&&void 0!==r?r:void 0
+          }
+          if(!t){
+            console.warn("Could not resolve adopted host",e.host);
+            return
+          }
+          try{
+            t.adoptedStyleSheets=(e.styleIds||[]).map(e=>{
+              let t=this.__sheetMap.get(e);
+              if(t)return t;
+              let i=new n.CSSStyleSheet;
+              return this.__sheetMap.set(e,i),
+              console.warn("Adopted sheet definition missing for styleId ".concat(e," — adopting empty placeholder")),
+              u(this.__domElement,"csserror",{
+                kind:"adopted-sheet-missing",
+                styleId:e
+              }),
+              i
+            })
+          }
+          catch(e){
+            console.warn("Failed to set adoptedStyleSheets",e)
+          }
+        },
+        this.applyAdoptedStyleSheetMin=e=>this.applyAdoptedStyleSheet({
+          seq:e.s,
+          time:e.t,
+          type:"ADOPTED_STYLE_SHEET",
+          host:e.h,
+          styleIds:e.sids,
+          sheets:(e.sh||[]).map(e=>({
+            styleId:e.sid,
+            rules:(e.r||[]).map(e=>({
+              rule:e.r,
+              index:e.i,
+              targetStyle:e.t
+            }))
+          })),
+          iframeContext:e.if
+        }),
+        this.applyCSSStyleDeclaration=e=>{
+          let t=this.resolveSheet(e);
+          if(!t){
+            console.warn("Could not resolve sheet for CSS_STYLE_DECLARATION",e);
+            return
+          }
+          let i=this.resolveRuleContainer(t,e.index);
+          if(!i){
+            console.warn("Could not resolve rule for CSS_STYLE_DECLARATION",e);
+            return
+          }
+          let n=i.container.cssRules[i.finalIndex];
+          if(!n||!n.style){
+            console.warn("Target rule has no style declaration",e);
+            return
+          }
+          try{
+            e.set?n.style.setProperty(e.set.property,e.set.value,e.set.priority||""):void 0!==e.remove&&n.style.removeProperty(e.remove)
+          }
+          catch(t){
+            console.warn("Failed to apply CSS_STYLE_DECLARATION",t,e)
+          }
+        },
+        this.applyCSSStyleDeclarationMin=e=>this.applyCSSStyleDeclaration({
+          seq:e.s,
+          time:e.t,
+          type:"CSS_STYLE_DECLARATION",
+          index:e.i,
+          targetStyle:e.tg,
+          styleId:e.sid,
+          set:e.set?{
+            property:e.set.p,
+            value:e.set.v,
+            priority:e.set.pr
+          }:void 0,
+          remove:e.rm,
+          iframeContext:e.if
+        }),
+        this.applyCSSDeleteRuleMin=e=>this.applyCSSDeleteRule({
+          seq:e.s,
+          time:e.t,
+          type:"CSS_DELETE_RULE",
+          index:e.i,
+          targetStyle:e.tg,
+          styleId:e.sid,
+          iframeContext:e.if
+        }),
+        this.minCSSRule=e=>({
+          rule:e.r,
+          index:e.i,
+          targetStyle:e.t
+        }),
+        this.mapMinNode=e=>({
+          id:e.i,
+          nodeName:e.nn,
+          tagName:e.t,
+          attributes:e.a,
+          UUID:e.u,
+          childNodes:e.c?e.c.map(e=>this.mapMinNode(e)):[],
+          cssRules:e.r?e.r.map(e=>this.minCSSRule(e)):[],
+          isSVG:e.s,
+          nodeType:e.nt,
+          meta:(()=>{
+            if(e.m)switch(e.m.type){
+              case s.IMG:return{
+                type:s.IMG,
+                width:e.m.w,
+                height:e.m.h
+              };
+              case s.VIDEO:return{
+                type:s.VIDEO,
+                width:e.m.w,
+                height:e.m.h
+              };
+              case s.IFRAME:{
+                let t=e.m;
+                return{
+                  type:s.IFRAME,
+                  src:t.s,
+                  isSameOrigin:t.so,
+                  contentDocumentUUID:t.cd
+                }
+              }
+              default:return
+            }
+          })(),
+          isShadowHost:e.sh,
+          isShadow:e.sd
+        }),
+        this.applyMediaInfo=e=>{
+          let{
+            target:t,
+            meta:i
+          }=e,
+          n=this.getNodeByUUID(t);
+          if(!n){
+            console.warn("Could not find node with uuid ".concat(t));
+            return
+          }
+          this.__mediaInfoMap.set(n,i),
+          this.fillMedia(n,e.meta,!0)
+        },
+        this.applyMediaInfoMin=e=>this.applyMediaInfo({
+          seq:e.s,
+          time:e.t,
+          type:"MEDIA_INFO",
+          target:e.tg,
+          meta:{
+            type:e.m.type,
+            width:e.m.w,
+            height:e.m.h
+          }
+        }),
+        this.applyTouchMoveMin=e=>{
+          this.applyTouchMove({
+            seq:e.s,
+            time:e.t,
+            type:"TOUCH_EXPERIMENTAL",
+            x:e.x,
+            y:e.y,
+            target:e.tg,
+            ox:e.ox,
+            oy:e.oy
+          })
+        },
+        this.applyCheckedChange=e=>{
+          let{
+            target:t,
+            checked:i
+          }=e,
+          n=this.getNodeByUUID(t);
+          n&&(n.checked=i)
+        },
+        this.applyCheckedChangeMin=e=>{
+          this.applyCheckedChange({
+            seq:e.s,
+            time:e.t,
+            type:"CHECKED_CHANGE",
+            target:e.tg,
+            checked:e.c,
+            iframeContext:e.if
+          })
+        },
+        this.applyTouchMove=e=>{
+          if(this.heatmapConfig)return;
+          let{
+            x:t,
+            y:i,
+            ox:n,
+            oy:r
+          }=e;
+          this.trailPath.push([3,[n,r],[t,i],2]),
+          this.mouseElem.style.display="none",
+          this.drawTrail()
+        },
+        this.applyIframeLoad=e=>{
+          let{
+            target:t,
+            node:i
+          }=e,
+          n=this.getNodeByUUID(t);
+          if(!n||"IFRAME"!==n.tagName){
+            console.warn("Could not find iframe for IFRAME_LOAD",t);
+            return
+          }
+          n.hasAttribute("uxc-iframe-id")||n.setAttribute("uxc-iframe-id",t),
+          this.__iframeMap.set(t,n),
+          "about:blank"!==n.src&&""!==n.src&&(n.src="about:blank");
+          let r=[];
+          this.renderIframeContent(n,t,[i],e.seq,e.time,r),
+          r.forEach(e=>e())
+        },
+        this.applyIframeLoadMin=e=>{
+          this.applyIframeLoad({
+            seq:e.s,
+            time:e.t,
+            type:"IFRAME_LOAD",
+            target:e.tg,
+            node:this.mapMinNode(e.n)
+          })
+        },
+        this.__applyErrorRollbarBudget=3,
+        this.applyChange=function(e){
+          let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1];
+          try{
+            r.applyChangeInner(e,t)
+          }
+          catch(t){
+            if(console.error("Failed to apply change — skipping it",t,e),r.__applyErrorRollbarBudget>0){
+              var i;
+              r.__applyErrorRollbarBudget-=1,
+              v.l.error("Replay: failed to apply change",{
+                error:t instanceof Error?t.message:String(t),
+                changeType:null!==(i=e.type)&&void 0!==i?i:e.ct
+              })
+            }
+          }
+        },
+        this.applyChangeInner=function(e){
+          let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1];
+          switch(e.type){
+            case"DOM_READY":return;
+            case"PAGE_LOAD":r.applyPageLoad(e);
+            break;
+            case"WINDOW_RESIZE":r.applyWindowResize(e);
+            break;
+            case"ADD_NODES":{
+              let t=[];
+              r.applyAddNodes(e,t),
+              t.forEach(e=>{
+                e()
+              });
+              break
+            }
+            case"REMOVE_NODES":r.applyRemoveNodes(e);
+            break;
+            case"ATTR_CHANGE":r.applyAttrChange(e);
+            break;
+            case"SCROLL":r.applyScrollChange(e);
+            break;
+            case"FOCUS":r.applyFocusChange(e);
+            break;
+            case"MOUSE_MOVE":r.applyMouseMove(e,t);
+            break;
+            case"MOUSE_CLICK":r.applyMouseClick(e,t);
+            break;
+            case"MOUSE_OVER":r.applyMouseOver(e);
+            break;
+            case"MOUSE_OUT":r.applyMouseOut(e);
+            break;
+            case"CHARACTER_DATA_CHANGE":r.applyCharacterDataChange(e);
+            break;
+            case"CSS_DELETE_RULE":r.applyCSSDeleteRule(e);
+            break;
+            case"CSS_INSERT_RULE":r.applyCSSInsertRule(e);
+            break;
+            case"CSS_REPLACE":r.applyCSSReplace(e);
+            break;
+            case"ADOPTED_STYLE_SHEET":r.applyAdoptedStyleSheet(e);
+            break;
+            case"CSS_STYLE_DECLARATION":r.applyCSSStyleDeclaration(e);
+            break;
+            case"INPUT_CHANGE":r.applyInputChange(e);
+            break;
+            case"CHECKED_CHANGE":r.applyCheckedChange(e);
+            break;
+            case"URL_CHANGE":r.applyUrlChange(e);
+            break;
+            case"MEDIA_INFO":r.applyMediaInfo(e);
+            break;
+            case"TOUCH_EXPERIMENTAL":r.applyTouchMove(e);
+            break;
+            case"IFRAME_LOAD":r.applyIframeLoad(e);
+            break;
+            case void 0:switch(e.ct){
+              case a.DOM_READY:return;
+              case a.PAGE_LOAD:r.applyPageLoadMin(e);
+              break;
+              case a.WINDOW_RESIZE:r.applyWindowResizeMin(e);
+              break;
+              case a.ADD_NODES:{
+                let t=[];
+                r.applyAddNodesMin(e,t),
+                t.forEach(e=>{
+                  e()
+                });
+                break
+              }
+              case a.REMOVE_NODES:r.applyRemoveNodesMin(e);
+              break;
+              case a.ATTR_CHANGE:r.applyAttrChangeMin(e);
+              break;
+              case a.SCROLL:r.applyScrollChangeMin(e);
+              break;
+              case a.FOCUS:r.applyFocusChangeMin(e);
+              break;
+              case a.MOUSE_MOVE:r.applyMouseMoveMin(e,t);
+              break;
+              case a.MOUSE_CLICK:r.applyMouseClickMin(e,t);
+              break;
+              case a.MOUSE_OVER:r.applyMouseOverMin(e);
+              break;
+              case a.MOUSE_OUT:r.applyMouseOutMin(e);
+              break;
+              case a.CHARACTER_DATA_CHANGE:r.applyCharacterDataChangeMin(e);
+              break;
+              case a.CSS_DELETE_RULE:r.applyCSSDeleteRuleMin(e);
+              break;
+              case a.CSS_INSERT_RULE:r.applyCSSInsertRuleMin(e);
+              break;
+              case a.CSS_REPLACE:r.applyCSSReplaceMin(e);
+              break;
+              case a.ADOPTED_STYLE_SHEET:r.applyAdoptedStyleSheetMin(e);
+              break;
+              case a.CSS_STYLE_DECLARATION:r.applyCSSStyleDeclarationMin(e);
+              break;
+              case a.INPUT_CHANGE:r.applyInputChangeMin(e);
+              break;
+              case a.CHECKED_CHANGE:r.applyCheckedChangeMin(e);
+              break;
+              case a.URL_CHANGE:r.applyUrlChangeMin(e);
+              break;
+              case a.MEDIA_INFO:r.applyMediaInfoMin(e);
+              break;
+              case a.TOUCH:r.applyTouchMoveMin(e);
+              break;
+              case a.IFRAME_LOAD:r.applyIframeLoadMin(e);
+              break;
+              default:console.warn("Unknown change type",e)
+            }
+            break;
+            default:console.warn("Unknown change type",e)
+          }
+        },
+        this.clearIframeMaps=()=>{
+          this.__iframeMap.clear(),
+          this.__iframeDocumentMap.clear()
+        },
+        this.destroy=()=>{
+          var e,
+          t;
+          for(let e of(console.debug("destroying"),this.freezePaint(),this.drawTrailRequest&&cancelAnimationFrame(this.drawTrailRequest),this.stopElapsedTimer(),this.__cssRecoveryTimers))clearTimeout(e);
+          this.__cssRecoveryTimers.clear(),
+          this.container&&this.container.removeEventListener("click",this.handleContainerClick),
+          this.__destroyed=!0,
+          this.__paused=!0,
+          this.__finished=!0,
+          this.__timelineChanges=[],
+          this.__changes=[],
+          this.__cssInlineTargets=null,
+          this.domMap.clear(),
+          this.reverseDomMap.clear(),
+          this.clearIframeMaps(),
+          this.__sheetMap.clear(),
+          this.iframe.remove(),
+          null===(e=this.mouseElem)||void 0===e||e.remove(),
+          null===(t=this.urlElem)||void 0===t||t.remove(),
+          this.__domElement.remove(),
+          document.removeEventListener("visibilitychange",this.handleVisibilityChange)
+        },
+        this.attachDOMProxy(),
+        this.heatmapConfig=i,
+        this.__trailThicknessRatio=e,
+        this.__trailOpacity=t,
+        this.__cssProxyFor=null!=n?n:e=>"https://websdk-proxy.uxcam.com/api/proxy?url=".concat(encodeURIComponent(e));
+        try{
+          this.iframe.credentialless=!0
+        }
+        catch(e){}this.iframe.src="/blank.html"
+      }
+    }
+    w.isChangeSkippable=e=>{
+      switch(e.type){
+        case"MOUSE_CLICK":case"MOUSE_MOVE":case"SCROLL":case"FOCUS":case"INPUT_CHANGE":return!1;
+        case void 0:switch(e.ct){
+          case a.MOUSE_CLICK:case a.MOUSE_MOVE:case a.SCROLL:case a.FOCUS:case a.INPUT_CHANGE:return!1;
+          default:return!0
+        }
+        default:return!0
+      }
+    },
+    w.sortChanges=e=>e.slice().sort((e,t)=>("number"==typeof e.seq?e.seq:e.s)-("number"==typeof t.seq?t.seq:t.s)),
+    w.fastFindIndexByTime=(e,t)=>{
+      let i=0,
+      n=e.length-1,
+      r=0;
+      for(;i<=n;){
+        let a=e[(r=Math.floor((i+n)/2))+1],
+        s="number"==typeof e[r].time?e[r].time:e[r].t,
+        l=a&&("number"==typeof a.time?a.time:a.t);
+        if(s<=t&&(!a||l>t))break;
+        s<t?i=r+1:n=r-1
+      }
+      return r
+    },
+    w.DIRECT_FIRST_CSS_HOSTS=["sakani.sa","eservicesredp.rega.gov.sa","eservices.ejar.sa"],
+    w.CSS_LOAD_CHECK_MS=8e3,
+    w.CSS_INLINE_SAFETY_NET_MS=5e3,
+    w.CSS_RECOVERY_MAX_RECHECKS=8;
+    var S=e=>{
+      let{
+        videoRef:t,
+        src:i,
+        autoPlay:n=!1,
+        skipInactivity:r=!1,
+        heatmap:a,
+        preventDestroy:s=!1,
+        trailOpacity:u,
+        trailThicknessRatio:h
+      }=e,
+      p=o.useRef(n);
+      o.useEffect(()=>{
+        p.current=n
+      },[n]);
+      let[m,f]=o.useState(),
+      [g,v]=o.useState(!1),
+      y=o.useMemo(()=>{
+        if(!m)return[];
+        let e=m[m.length-1],
+        t=1/0;
+        return e&&(t=("number"==typeof e.time?e.time:e.t)/1e3),
+        m.filter(e=>!w.isChangeSkippable(e)).map(e=>{
+          let t="number"==typeof e.time?e.time:e.t;
+          return{
+            start:t/1e3,
+            end:t/1e3+.5
+          }
+        }).filter(e=>e.start<=t+1).sort((e,t)=>e.start-t.start)
+      },[m]);
+      o.useEffect(()=>{
+        v(!1),
+        c(i).then(e=>f(w.sortChanges(e))).catch(e=>{
+          if(e instanceof d){
+            v(!0);
+            return
+          }
+          console.error("Failed to load replay data",e)
+        })
+      },[i]);
+      let[_,x]=o.useState(),
+      C=o.useRef();
+      o.useEffect(()=>{
+        x(C.current)
+      },[C]);
+      let E=o.useMemo(()=>new w({
+        heatmap:a,
+        trailOpacity:u,
+        trailThicknessRatio:h
+      }),[i,u,h,a]);
+      return(o.useEffect(()=>{
+        _&&E&&E.setContainer(_)
+      },[_,E]),o.useEffect(()=>{
+        if(E)return t&&(t.current=E),
+        ()=>{
+          !s&&(E.destroy(),t&&(t.current=void 0))
+        }
+      },[E,t,s]),o.useEffect(()=>{
+        E&&m&&(E.loadDomChanges(m),p.current&&(console.log("Replay Components .play()"),E.play()))
+      },[E,m]),o.useEffect(()=>{
+        if(!r||!E)return;
+        let e=null,
+        t=()=>{
+          let{
+            currentTime:i,
+            duration:n
+          }=E;
+          for(let r=0;r<y.length;r++){
+            let a=y[r],
+            s=Math.max(0,a.start-2);
+            if(i>a.end+2){
+              if(r===y.length-1){
+                E.currentTime=n;
+                return
+              }
+              continue
+            }
+            if(i>=s){
+              e=setTimeout(t,200);
+              return
+            }
+            a.start-i>3&&(E.currentTime=Math.max(0,a.start-2)),
+            e=setTimeout(t,200);
+            return
+          }
+          e=setTimeout(t,200)
+        },
+        i=()=>{
+          e=setTimeout(t,200)
+        },
+        n=()=>{
+          e&&clearInterval(e)
+        };
+        return E.addEventListener("play",i),
+        E.addEventListener("pause",n),
+        E.addEventListener("ended",n),
+        E.paused||E.ended||t(),
+        ()=>{
+          e&&clearTimeout(e),
+          E.removeEventListener("play",i),
+          E.removeEventListener("pause",n),
+          E.removeEventListener("ended",n)
+        }
+      },[E,y,r]),g)?(0,l.jsx)("div",{
+        style:{
+          display:"flex",
+          alignItems:"center",
+          justifyContent:"center",
+          width:"100%",
+          height:"100%",
+          padding:"24px",
+          textAlign:"center",
+          color:"#666",
+          fontSize:"14px"
+        },
+        children:"Heatmaps are not supported for Flutter Web."
+      }):(0,l.jsx)("div",{
+        ref:C
+      })
+    }
+  },
+  5148:function(e,t,i){
+    i.r(t),
+    i.d(t,{
+      default:function(){
+        return J
+      }
+    });
+    var n=i(85893),
+    r=i(67294),
+    a=i(19521),
+    s=i(94184),
+    l=i.n(s),
+    o=i(44908),
+    d=i.n(o),
+    c=i(12810),
+    u=i(22365),
+    h=i(62357),
+    p=i(47639),
+    m=i(13927),
+    f=i(14416),
+    g=i(30663);
+    let v=(e,t)=>{
+      let i=(0,r.useRef)();
+      (0,r.useEffect)(()=>{
+        i.current=e
+      },[e]),
+      (0,r.useEffect)(()=>{
+        if(null!==t){
+          let e=setInterval(function(){
+            i.current()
+          },t);
+          return()=>clearInterval(e)
+        }
+      },[t])
+    };
+    var y=i(92046),
+    _=i(88767),
+    x=i(13979),
+    C=i(5257),
+    E=i(85445);
+    let b="gesture-wrapper",
+    w={
+      newOverlay:!0,
+      device:{
+        deviceWidth:375
+      }
+    };
+    class S{
+      genScreenTriggerKeyFrame(e,t){
+        let{
+          time:i
+        }=t,
+        {
+          playbackRate:n
+        }=this.videoElem;
+        return new KeyframeEffect(e,[{
+          fontSize:1
+        },{
+          fontSize:2
+        }],{
+          duration:1e-4,
+          iterations:1,
+          delay:1e3*i/n,
+          easing:"linear",
+          fill:"forwards"
+        })
+      }
+      genKeyFrame(e,t){
+        let{
+          start:i,
+          end:n,
+          x:r,
+          y:a,
+          x2:s,
+          y2:l,
+          g:o,
+          o:d
+        }=t,
+        {
+          playbackRate:c,
+          videoWidth:u
+        }=this.videoElem,
+        {
+          newOverlay:h
+        }=this.session,
+        p=Math.max((n-i)*1e3,0)/c,
+        m=h&&(0===d||2===d),
+        f=!m,
+        g=m*(u-a*this.scale)+f*r*this.scale,
+        v=m*r*this.scale+f*a*this.scale,
+        y=[];
+        if(0===o||1===o||9===o)e.style.transform="translate(calc( ".concat(g,"px - 50% ), calc( ").concat(v,"px - 50% ))"),
+        y=[{
+          transform:"translate(calc( ".concat(g,"px - 50% ), calc( ").concat(v,"px - 50% ))"),
+          opacity:0,
+          offset:0
+        },{
+          transform:"translate(calc( ".concat(g,"px - 50% ), calc( ").concat(v,"px - 50% ))"),
+          opacity:1,
+          offset:1e-5
+        },{
+          transform:"translate(calc( ".concat(g,"px - 50% ), calc( ").concat(v,"px - 50% ))"),
+          opacity:1,
+          offset:.99999
+        },{
+          transform:"translate(calc( ".concat(g,"px - 50% ), calc( ").concat(v,"px - 50% ))"),
+          opacity:0,
+          offset:1
+        }];
+        else{
+          if(11!==o&&(!(o>=2)||!(o<=5)))return;
+          s=s||0;
+          let t=m*(u-(l=l||0)*this.scale)+f*s*this.scale,
+          i=m*s*this.scale+f*l*this.scale;
+          e.style.transform="translate(calc( ".concat(g,"px - 50% ), calc( ").concat(v,"px - 50% ))"),
+          y=[{
+            transform:"translate(calc( ".concat(g,"px - 50% ), calc( ").concat(v,"px - 50% ))"),
+            opacity:0,
+            offset:0
+          },{
+            transform:"translate(calc( ".concat(g,"px - 50% ), calc( ").concat(v,"px - 50% ))"),
+            opacity:1,
+            offset:1e-5
+          },{
+            transform:"translate(calc( ".concat(g,"px - 50% ), calc( ").concat(v,"px - 50% ))"),
+            opacity:1
+          },{
+            transform:"translate(calc( ".concat(t,"px - 50% ), calc( ").concat(i,"px - 50% ))"),
+            opacity:1
+          },{
+            transform:"translate(calc( ".concat(t,"px - 50% ), calc( ").concat(i,"px - 50% ))"),
+            opacity:1,
+            offset:.99999
+          },{
+            transform:"translate(calc( ".concat(t,"px - 50% ), calc( ").concat(i,"px - 50% ))"),
+            opacity:0,
+            offset:1
+          }]
+        }
+        return new KeyframeEffect(e,y,{
+          duration:p,
+          iterations:1,
+          delay:Math.max(1e3*i/c-1e-5*p,0),
+          easing:"linear",
+          fill:"forwards"
+        })
+      }
+      attachControls(){
+        this.videoElem.addEventListener("ended",this.handleEnded),
+        this.videoElem.addEventListener("pause",this.handlePause),
+        this.videoElem.addEventListener("play",this.handlePlay),
+        this.videoElem.addEventListener("seeked",this.handleRewind),
+        this.videoElem.addEventListener("ratechange",this.handlePlayRateChange)
+      }
+      drawAnimationNodes(){
+        let e=new DocumentFragment,
+        t=document.createElement("div");
+        t.style.width="calc( 32px * var( --video-scale, 1 ) )",
+        t.style.height="calc( 32px * var( --video-scale, 1 ) )",
+        t.style.background="#5D97FF",
+        t.style.borderRadius="50%",
+        t.style.position="absolute",
+        t.style.top="0%",
+        t.style.left="0%",
+        t.style.margin="0",
+        t.style.opacity="0",
+        t.style.boxShadow="-1px 1px 2px 1px #2d32ff",
+        this.animateNodes=this.gestures.reduce((i,n)=>{
+          let r=t.cloneNode();
+          e.appendChild(r);
+          let a=this.genKeyFrame(r,n);
+          if(!a)return i;
+          let s=new Animation(a,document.timeline);
+          s.pause();
+          let l={
+            node:r,
+            gesture:n,
+            animation:s,
+            state:"pending"
+          };
+          return s.onfinish=()=>{
+            if(l.state="finished",this.skipInactivity){
+              let{
+                currentTime:e,
+                duration:t
+              }=this.videoElem,
+              i=this.animateNodes.indexOf(l),
+              n=this.animateNodes[i+1];
+              if(n){
+                let{
+                  gesture:{
+                    start:t,
+                    end:i
+                  }
+                }=n,
+                r=Math.max(0,t-this.MIN_REPLAY_TIME_BEFORE);
+                if(this.MIN_REPLAY_TIME_AFTER,e<r&&t-e>this.MIN_SKIP_DURATION){
+                  let e=(0,E.NG)(r);
+                  Number.isFinite(e)&&(this.videoElem.currentTime=e)
+                }
+              }
+              else{
+                let e=Math.ceil(t);
+                Number.isFinite(e)&&(this.videoElem.currentTime=e)
+              }
+            }
+          },
+          i.push(l),
+          i
+        },[]),
+        this.wrapper.appendChild(e)
+      }
+      destroy(){
+        this.videoElem.removeEventListener("ended",this.handleEnded),
+        this.videoElem.removeEventListener("pause",this.handlePause),
+        this.videoElem.removeEventListener("play",this.handlePlay),
+        this.videoElem.removeEventListener("seeked",this.handleRewind),
+        this.videoElem.removeEventListener("ratechange",this.handlePlayRateChange),
+        this.videoElem.removeEventListener("loadedmetadata",this.handleMetaLoaded),
+        this.wrapper.remove()
+      }
+      constructor({
+        gestures:e,
+        container:t,
+        video:i,
+        session:n,
+        skipInactivity:r,
+        videoResizeFn:a,
+        isFlutterWeb:s=!1
+      }){
+        this.session=null,
+        this.videoElem=null,
+        this.wrapper=null,
+        this.gestures=[],
+        this.animateNodes=[],
+        this.scale=1,
+        this.overlayScaled=!1,
+        this.skipInactivity=!1,
+        this.metaLoaded=!1,
+        this.screens=[],
+        this.isFlutterWeb=!1,
+        this.videoResizeFn=null,
+        this.MIN_REPLAY_TIME_BEFORE=2,
+        this.MIN_REPLAY_TIME_AFTER=2,
+        this.MIN_SKIP_DURATION=3,
+        this.handleMetaLoaded=()=>{
+          let{
+            videoHeight:e,
+            videoWidth:t
+          }=this.videoElem,
+          {
+            device:{
+              deviceWidth:i
+            }
+          }=this.session,
+          n=this.isFlutterWeb?1:1/i*t;
+          this.wrapper.style.width="".concat(t,"px"),
+          this.wrapper.style.height="".concat(e,"px"),
+          this.wrapper.style.transformOrigin="left top",
+          this.wrapper.style.position="absolute",
+          this.wrapper.style.top="50%",
+          this.wrapper.style.left="50%",
+          this.wrapper.style.transform="translate(-50%, -50%)",
+          this.wrapper.classList.add(b),
+          this.scale=n,
+          this.drawAnimationNodes(),
+          this.attachControls(),
+          this.metaLoaded=!0
+        },
+        this.handleEnded=()=>{
+          this.animateNodes.forEach(e=>{
+            let{
+              animation:t
+            }=e;
+            t.currentTime=0,
+            e.state="pending"
+          })
+        },
+        this.handleRewind=()=>{
+          let{
+            currentTime:e,
+            paused:t
+          }=this.videoElem,
+          i=1e3*e;
+          this.animateNodes.filter(t=>{
+            let{
+              gesture:i
+            }=t,
+            {
+              end:n
+            }=i;
+            return n>=e
+          }).forEach(e=>{
+            let{
+              animation:n,
+              state:r
+            }=e;
+            n.currentTime=i,
+            t?"finished"===r&&(n.play(),n.pause()):n.play(),
+            e.state="pending"
+          }),
+          this.animateNodes.filter(t=>{
+            let{
+              gesture:i
+            }=t,
+            {
+              end:n
+            }=i;
+            return n<e
+          }).forEach(e=>{
+            let{
+              animation:t
+            }=e;
+            t.currentTime=i,
+            t.pause(),
+            e.state="finished"
+          })
+        },
+        this.handlePause=()=>{
+          this.animateNodes.forEach(e=>{
+            let{
+              animation:t
+            }=e;
+            t.pause()
+          })
+        },
+        this.handlePlay=()=>{
+          this.animateNodes.forEach(e=>{
+            let{
+              animation:t,
+              state:i
+            }=e;
+            "pending"===i&&t.play()
+          }),
+          this.skipInactivity&&this.metaLoaded&&this.handleSkipInactivity()
+        },
+        this.handlePlayRateChange=()=>{
+          let{
+            playbackRate:e
+          }=this.videoElem;
+          this.animateNodes.forEach(t=>{
+            let{
+              animation:i
+            }=t;
+            i.playbackRate=e
+          })
+        },
+        this.setSkipInactivity=e=>{
+          this.skipInactivity=e;
+          let{
+            paused:t
+          }=this.videoElem;
+          !t&&this.metaLoaded&&this.handleSkipInactivity()
+        },
+        this.handleSkipInactivity=()=>{
+          let{
+            skipInactivity:e,
+            metaLoaded:t
+          }=this;
+          if(!e&&!t)return;
+          let{
+            currentTime:i,
+            paused:n,
+            duration:r
+          }=this.videoElem;
+          if(n||this.animateNodes.find(e=>{
+            let{
+              gesture:{
+                start:t,
+                end:n
+              }
+            }=e,
+            r=Math.max(0,t-this.MIN_REPLAY_TIME_BEFORE),
+            a=n+this.MIN_REPLAY_TIME_AFTER;
+            return i>=r&&i<=a
+          }))return;
+          let a=this.animateNodes.find(e=>{
+            let{
+              gesture:{
+                start:t
+              }
+            }=e;
+            return t>i
+          });
+          if(a){
+            let{
+              gesture:{
+                start:e
+              }
+            }=a;
+            if(e-i>this.MIN_SKIP_DURATION){
+              let t=Math.max(0,e-this.MIN_REPLAY_TIME_BEFORE),
+              n=Math.max((0,E.NG)(t),i);
+              Number.isFinite(n)&&(this.videoElem.currentTime=n)
+            }
+          }
+          else{
+            let e=Math.ceil(r);
+            Number.isFinite(e)&&(this.videoElem.currentTime=e)
+          }
+        },
+        this.wrapper=document.createElement("div"),
+        t.appendChild(this.wrapper),
+        this.session=n||w,
+        this.gestures=e,
+        this.videoElem=i,
+        this.videoResizeFn=a,
+        this.isFlutterWeb=s,
+        this.videoElem.readyState>=2&&setTimeout(()=>{
+          this.handleMetaLoaded(),
+          this.videoResizeFn&&this.videoResizeFn(),
+          this.handleRewind()
+        }),
+        this.videoElem.addEventListener("loadedmetadata",this.handleMetaLoaded),
+        this.skipInactivity=r
+      }
+    }
+    var I=i(74569),
+    M=i(60066),
+    k=i(79999);
+    let D=a.default.div.withConfig({
+      componentId:"sc-27290434-0"
+    })(["display:flex;justify-content:flex-start;align-items:center;background:#fff;height:34px;position:relative;border-radius:4px 4px 0 0;gap:10px;z-index:2;width:100%;padding:",";&[aria-hidden='true']{visibility:hidden;}"],k.r.spacing(0,2)),
+    R=a.default.div.withConfig({
+      componentId:"sc-27290434-1"
+    })(["display:flex;border-radius:4px;flex:1;gap:4px;background:",";padding:2px 6px;font-size:",";color:",";width:auto;max-width:100%;overflow:hidden;span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%;}"],k.r.colors.surface05.toString(),k.r.fontSize(1.2),k.r.colors.surface400.toString()),
+    T=a.default.img.withConfig({
+      componentId:"sc-27290434-2"
+    })([""]),
+    N=a.default.img.withConfig({
+      componentId:"sc-27290434-3"
+    })(["width:16px;height:16px;"]),
+    A=a.default.button.withConfig({
+      componentId:"sc-27290434-4"
+    })(["display:flex;align-items:center;justify-content:center;border:none;background:none;padding:0;transition:background 0.2s;border-radius:2px;&:hover{cursor:pointer;background:",";}"],k.r.colors.surface10.toString()),
+    L=a.default.div.withConfig({
+      componentId:"sc-27290434-5"
+    })(["display:flex;gap:",";"],k.r.spacing(1));
+    a.default.div.withConfig({
+      componentId:"sc-27290434-6"
+    })(["width:40px;"]);
+    var U=r.memo(e=>{
+      let{
+        replayInstanceRef:t,
+        urlTimeline:i,
+        videoRef:a
+      }=e,
+      s=Array.isArray(i)&&i.length>0,
+      [l,o]=r.useState(),
+      [d,c]=r.useState();
+      r.useEffect(()=>{
+        if(!s){
+          if(null==t?void 0:t.current){
+            o(t.current);
+            return
+          }
+          if(!(null==t?void 0:t.current)){
+            let e=null,
+            i=()=>{
+              if(null==t?void 0:t.current){
+                o(t.current);
+                return
+              }
+              e=setTimeout(i,100)
+            };
+            return e=setTimeout(i,100),
+            ()=>{
+              e&&clearTimeout(e)
+            }
+          }
+        }
+      },[t,s]),
+      r.useEffect(()=>{
+        var e,
+        t;
+        if(!s||!i)return;
+        let n=[...i].sort((e,t)=>e.time-t.time),
+        r=e=>{
+          let t;
+          for(let i=0;i<n.length;i+=1){
+            let r=n[i];
+            if(r.time<=e)t=r;
+            else break
+          }
+          let i=null!=t?t:n[0];
+          i&&c(i.url)
+        };
+        r(null!==(t=null==a?void 0:null===(e=a.current)||void 0===e?void 0:e.currentTime)&&void 0!==t?t:0);
+        let l=null==a?void 0:a.current;
+        if(!l)return;
+        let o=()=>{
+          r(l.currentTime)
+        };
+        return l.addEventListener("timeupdate",o),
+        l.addEventListener("seeked",o),
+        ()=>{
+          l.removeEventListener("timeupdate",o),
+          l.removeEventListener("seeked",o)
+        }
+      },[s,i,a]);
+      let u=r.useCallback(()=>s?d:null==l?void 0:l.getUrl(),[s,d,l]),
+      h=r.useCallback(()=>{
+        let e=u();
+        e&&(e.startsWith("http:")||e.startsWith("https:"))&&window.open(e,"_blank")
+      },[u]),
+      p=r.useCallback(()=>{
+        let e=u();
+        e&&(e.startsWith("http:")||e.startsWith("https:"))&&navigator.clipboard.writeText(e)
+      },[u]);
+      r.useEffect(()=>{
+        !s&&l&&l.addEventListener("urlchange",()=>{
+          let e=l.getUrl();
+          if(e){
+            if(!e.startsWith("http:")&&!e.startsWith("https:")){
+              c("N/A");
+              return
+            }
+            c(e)
+          }
+        })
+      },[l,s]);
+      let m=s?!!d:!!l&&!!d;
+      return(0,n.jsxs)(D,{
+        "aria-hidden":!m,
+        children:[(0,n.jsxs)(R,{
+          children:[(0,n.jsx)(T,{
+            src:"/static/web.svg"
+          }),(0,n.jsx)("span",{
+            title:d,
+            children:d
+          })]
+        }),(0,n.jsxs)(L,{
+          children:[(0,n.jsx)(A,{
+            type:"button",
+            "aria-label":"Open in new tab",
+            onClick:h,
+            children:(0,n.jsx)(N,{
+              src:"/static/redirection.svg"
+            })
+          }),(0,n.jsx)(A,{
+            type:"button",
+            "aria-label":"Copy link to clipboard",
+            onClick:p,
+            children:(0,n.jsx)(N,{
+              src:"/static/copy-link.svg"
+            })
+          })]
+        })]
+      })
+    });
+    let j=a.default.div.withConfig({
+      componentId:"sc-7d1534-0"
+    })(["display:flex;flex-direction:column;flex-grow:1;overflow:visible;opacity:",";cursor:",";pointer-events:",";"],e=>{
+      let{
+        isFaded:t
+      }=e;
+      return t?"0.5":""
+    },e=>{
+      let{
+        isFaded:t
+      }=e;
+      return t?"not-allowed":"default"
+    },e=>{
+      let{
+        isFaded:t
+      }=e;
+      return t?"none":"default"
+    }),
+    O=a.default.div.withConfig({
+      componentId:"sc-7d1534-1"
+    })(["z-index:99999;right:20px;position:absolute;border-radius:30px;padding:8px 16px;background:rgba(80,106,255,0.1) none repeat scroll 0% 0%;height:35px;justify-content:center;align-items:center;.skipped-video-label{padding-left:5px;color:#5d97ff;}display:none;&.display-label{display:flex;}"]),
+    F=a.default.div.withConfig({
+      componentId:"sc-7d1534-2"
+    })(["display:flex;align-items:center;justify-content:center;.last-key-message{position:absolute;box-shadow:0px 2px 10px rgba(81,81,81,0.125);padding:10px;top:",";z-index:999999;background:#fff;color:#253858;height:120px;display:flex;align-items:center;justify-content:center;.last-key-message{position:absolute;box-shadow:0px 2px 10px rgba(81,81,81,0.125);padding:10px;top:",";z-index:999999;background:#fff;color:#161e35;height:120px;display:flex;align-items:center;border-radius:4px;height:50px;.anticon{color:#5d97ff;margin-right:5px;}.last-key-btn{background:none;cursor:pointer;margin-left:5px;display:flex;align-items:center;margin-top:1px;&:hover,&:active,&:focus{color:#161e35;border:0 !important;.anticon{color:#161e35;border:0;}}.anticon{width:14px;height:14px;color:#161e35;}}.anticon{width:14px;height:14px;color:#253858;}}}.screen-unseleced-message{width:375px;top:40%;height:100px;align-items:baseline;padding-top:20px;justify-content:center;padding-top:20px;padding-right:20px;padding-left:20px;.last-key-btn{display:none;}.anticon-info-circle{position:relative;top:2px;}}"],e=>e?"70px":"50px",e=>e?"70px":"50px"),
+    P=a.default.div.withConfig({
+      componentId:"sc-7d1534-3"
+    })(["display:flex;flex-grow:1;align-items:center;justify-content:center;position:relative;max-height:100%;background-color:#c1c3c5;overflow:hidden;&[aria-hidden='true']{display:none;}"]),
+    H=a.default.div.withConfig({
+      componentId:"sc-7d1534-4"
+    })(["&[aria-hidden='true']{display:none;}"]),
+    z=a.default.video.withConfig({
+      componentId:"sc-7d1534-5"
+    })(["display:block;flex-grow:1;position:absolute;top:0;left:0;width:100%;height:100%;"]),
+    B=a.default.div.withConfig({
+      componentId:"sc-7d1534-6"
+    })(["display:flex;flex-grow:1;position:relative;"]),
+    V=a.default.div.withConfig({
+      componentId:"sc-7d1534-7"
+    })(["position:absolute;border-radius:4px;overflow:hidden;top:0;left:0;width:100%;height:100%;opacity:",";"],e=>{
+      let{
+        blurBackground:t
+      }=e;
+      return t?"0.2":"1"
+    }),
+    q=a.default.div.withConfig({
+      componentId:"sc-7d1534-8"
+    })(["&[aria-hidden='true']{display:none;}border-radius:0;display:flex;text-align:center;align-items:center;justify-content:center;flex-grow:1;"]),
+    Z=a.default.div.withConfig({
+      componentId:"sc-7d1534-9"
+    })(["padding:20px !important;border:1px solid rgba(37,56,88,0.2);border-radius:4px;width:315px;max-width:100%;text-align:left;"]),
+    G=a.default.div.withConfig({
+      componentId:"sc-7d1534-10"
+    })(["position:absolute;height:100%;width:100%;left:0;top:0;pointer-events:none;"]),
+    W=a.default.div.withConfig({
+      componentId:"sc-7d1534-11"
+    })(["display:flex;flex-grow:1;flex-direction:column;max-height:calc(100% - 66px);position:relative;"]),
+    Y=a.default.div.withConfig({
+      componentId:"sc-7d1534-12"
+    })(["display:flex;padding:0;position:absolute;left:0;top:0;width:100%;height:100%;&[data-frameon='true']:before{content:'';position:absolute;top:-4px;left:-5px;background:#f5f5fe;border-radius:6px;width:calc(100% + 8px);height:calc(100% + 8px);}"]),
+    K=a.default.div.withConfig({
+      componentId:"sc-7d1534-13"
+    })(["padding:20px 30px !important;border:1px solid #ffdedd;border-radius:0;display:flex;text-align:center;align-items:center;justify-content:center;border-color:'#C0CAD9';"]),
+    X=a.default.div.withConfig({
+      componentId:"sc-7d1534-14"
+    })(["word-break:break-word;line-height:normal;margin:0;a{text-decoration:underline;}"]),
+    Q=a.default.div.withConfig({
+      componentId:"sc-7d1534-15"
+    })(["position:absolute;top:50%;left:50%;transform-origin:center center;transform:translate(-50%,-50%) scale(1) rotate(","deg);"],e=>e.initialRotation),
+    $=(0,r.memo)(()=>(0,n.jsx)("svg",{
+      xmlns:"http://www.w3.org/2000/svg",
+      width:"15",
+      height:"8",
+      fill:"none",
+      viewBox:"0 0 15 8",
+      children:(0,n.jsx)("path",{
+        fill:"#5D97FF",
+        d:"M14.063.063A.438.438 0 0114.5.5v7a.438.438 0 01-.875 0V4.658L8.141 7.839c-.455.265-1.079-.037-1.079-.609V4.659L1.58 7.839C1.124 8.104.5 7.803.5 7.23V.77c0-.572.624-.874 1.079-.61l5.484 3.182V.769c0-.57.623-.873 1.078-.609l5.484 3.182V.5a.438.438 0 01.438-.438zm-12.688.99v5.893L6.454 4 1.375 1.054zm6.563 0v5.893L13.015 4 7.937 1.054z"
+      })
+    }));
+    var J=(0,r.memo)(e=>{
+      var t,
+      i;
+      let{
+        session:a={},
+        appId:s,
+        toggleFullScreen:o,
+        multiScreenSkippedData:w,
+        blurBackground:k
+      }=e,
+      D=(0,f.I0)(),
+      R=(0,_.useQueryClient)(),
+      {
+        getScreenLayoutData:T
+      }=(0,C.Rb)(),
+      {
+        autoPlay:N
+      }=(0,C.e1)(),
+      {
+        isPlaying:A,
+        setUserTime:L,
+        userTime:J
+      }=(0,C.W4)(),
+      {
+        setVideoLimitPopup:ee,
+        videoLimitPopup:et,
+        rewind:ei,
+        sessionQueriesToInvalidate:en,
+        setSessionQueriesToInvalidate:er
+      }=(0,C.Lc)(),
+      {
+        selectedTab:ea,
+        screenNumber:es
+      }=(0,C.he)(),
+      el=(0,r.useRef)(N),
+      eo=(0,r.useMemo)(()=>a.screenVideo,[a]),
+      ed=(0,r.useRef)(),
+      [ec,eu]=(0,r.useState)(!1);
+      r.useEffect(()=>{
+        eu(!1)
+      },[a.screenVideo]),
+      r.useEffect(()=>{
+        if(!a.screenVideo)return;
+        let e=null,
+        t=()=>{
+          if(ed.current){
+            eu(!0);
+            return
+          }
+          e=setTimeout(t,100)
+        };
+        return t(),
+        ()=>clearTimeout(e)
+      },[a.screenVideo]);
+      let{
+        sessionDetail:eh,
+        sessionLogs:ep
+      }=(0,C.Lc)(),
+      em=(0,r.useMemo)(()=>!!eh,[eh]),
+      ef=(0,r.useRef)(),
+      eg=(0,r.useRef)(),
+      ev=(0,r.useRef)(),
+      ey=(0,r.useRef)(),
+      e_=(0,r.useRef)(),
+      ex=(0,r.useRef)(),
+      eC=(0,r.useRef)(),
+      eE=r.useRef(),
+      [eb,ew]=(0,r.useState)("pending"),
+      eS=(0,r.useRef)(),
+      eI=(0,r.useRef)(!1),
+      {
+        isAppLogEnabled:eM,
+        isPlayable:ek
+      }=eh||{},
+      eD=(0,r.useMemo)(()=>{
+        var e;
+        return(null==eh?void 0:null===(e=eh.device)||void 0===e?void 0:e.platform)===3
+      },[eh]),
+      eR=(0,r.useMemo)(()=>{
+        var e;
+        return eD&&(null==eh?void 0:null===(e=eh.device)||void 0===e?void 0:e.sdkPluginType)==="flutter"
+      },[eh,eD]),
+      eT=(0,r.useMemo)(()=>{
+        var e;
+        if(!eR)return null;
+        let t=(null==a?void 0:null===(e=a.screenTimeline)||void 0===e?void 0:e.activities)||[],
+        i=[];
+        return t.forEach(e=>{
+          (e.actions||[]).forEach(e=>{
+            var t;
+            if("uxc_url_navigate"!==e.name)return;
+            let n=e.params||{},
+            {
+              url:r
+            }=n;
+            if(!r&&n.hostname){
+              let e=n.hostname.startsWith("localhost")?"http://":"https://",
+              t=n.path||"",
+              i=n.query?"?".concat(n.query):"",
+              a=n.hash?"#".concat(n.hash):"";
+              r="".concat(e).concat(n.hostname).concat(t).concat(i).concat(a)
+            }
+            r&&i.push({
+              time:null!==(t=e.time)&&void 0!==t?t:0,
+              url:r
+            })
+          })
+        }),
+        i.length?i:null
+      },[eR,a]),
+      eN=eD||!!eT,
+      {
+        urlReducer:eA,
+        currentOrgReducer:{
+          planType:eL
+        },
+        screenTimelineReducer:{
+          selectedScreens:eU=[],
+          skipDeselectedToggle:ej,
+          isLastSelectedScreen:eO,
+          screenList:eF
+        },
+        appFilter:{
+          session:{
+            segment:eP
+          }
+        }
+      }=(0,f.v9)(e=>e),
+      {
+        sessionid:eH,
+        parentType:ez,
+        starttime:eB,
+        screenname:eV
+      }=eA,
+      eq=r.useMemo(()=>{
+        var e,
+        t;
+        return"heatmapsList"===ez?null==a?void 0:null===(t=a.screenTimeline)||void 0===t?void 0:null===(e=t.activities[es])||void 0===e?void 0:e.time:eB
+      },[ez,es,a.screenTimeline.activities,eB]),
+      eZ=r.useMemo(()=>a.screenTimeline.activities,[a]),
+      eG=(0,r.useMemo)(()=>eF,[eF]),
+      eW=(0,r.useMemo)(()=>eM?ep.length<1?"App logs are not recorded due to old sdk versions":null:"App logs has been disabled in the app settings page",[eM,ep]),
+      eY=(0,r.useMemo)(()=>eU.length&&ej?d()(eZ.filter(e=>{
+        let{
+          activityName:t
+        }=e;
+        return!eU.includes(t)
+      }).map(e=>e.activityName)):[],[eZ,eU,ej]),
+      eK=(0,r.useMemo)(()=>eG.reduce((e,t)=>(e[t]=!eY.length||!eY.includes(t),e),{}),[eG,eY]),
+      eX=r.useMemo(()=>{
+        var e;
+        let t=[],
+        i=null==eh?void 0:null===(e=eh.screenTimeline)||void 0===e?void 0:e.activities;
+        return i&&eZ&&(null==i||i.forEach(e=>{
+          e.actions.forEach(e=>{
+            ("UI Freeze"===e.name||e.isRage)&&t.push(e)
+          })
+        })),
+        t
+      },[eh,eZ]),
+      eQ=(0,r.useMemo)(()=>"webHeatmaps"===ez,[ez]);
+      (0,r.useEffect)(()=>{
+        el.current=N,
+        "pending"===eb||eQ||(window.location.hash="")
+      },[eb,N,eQ]),
+      (0,r.useEffect)(()=>{
+        if("ready"===eb&&ek&&A){
+          var e,
+          t,
+          i;
+          D((0,g.CW)(null,{
+            eventName:"session_replay_started",
+            track_type:"event",
+            eventProperty:{
+              sessionid:eH,
+              startTime:null==ed?void 0:null===(e=ed.current)||void 0===e?void 0:e.currentTime,
+              duration:null==ed?void 0:null===(t=ed.current)||void 0===t?void 0:t.duration,
+              sidebar:ea,
+              markers:!!(null==eX?void 0:eX.length),
+              markersFeatureFlag:!0,
+              filter:(0,y.aZ)(eP),
+              downloadDate:null==eh?void 0:null===(i=eh.time)||void 0===i?void 0:i.sessionUploadedDateTime,
+              ..."heatmapsList"===ez&&{
+                screenname:eV
+              },
+              ..."logs"===ea&&{
+                logAvailable:eM
+              },
+              ..."logs"===ea&&{
+                description:eW||""
+              },
+              ai_analyzed:null==eh?void 0:eh.sessionanalyzedbyai
+            }
+          }))
+        }
+      },[D,eM,eh,eW,ez,eV,ea,eH,A,eb,eX,eP]);
+      let{
+        _id:e$
+      }=a||{};
+      (0,r.useEffect)(()=>{
+        if(e$&&(!(null==a?void 0:a.isPlayable)||(null==a?void 0:a.verifiedPastVideoRecordingLimit))){
+          var e;
+          ee(!0),
+          ei(0),
+          null==ed||null===(e=ed.current)||void 0===e||e.pause()
+        }
+      },[eb,A,null==ed?void 0:null===(t=ed.current)||void 0===t?void 0:t.currentTime]);
+      let{
+        timeRef:eJ,
+        setPlaybackRate:e0,
+        playbackRateRef:e1,
+        skipInactivity:e5,
+        phoneFrame:e2,
+        videoElemRef:e3,
+        setCurrentScreen:e4,
+        setPlaying:e6
+      }=(0,C.rS)(),
+      e7=(0,r.useRef)(e5);
+      (0,r.useEffect)(()=>{
+        e7.current=e5
+      },[e5]);
+      let e9=(0,r.useCallback)(()=>{
+        e_.current=void 0,
+        ew("pending"),
+        e0(1),
+        L(0)
+      },[]);
+      (0,r.useEffect)(()=>{
+        e9()
+      },[null==eA?void 0:eA.sessionid]);
+      let e8=(0,r.useMemo)(()=>a.noVideoMessage,[a]),
+      te=R.getQueryData("get-details"),
+      tt=(0,r.useMemo)(()=>{
+        var e;
+        return(null==eL?void 0:eL.toLowerCase())==="free"||(null==te?void 0:null===(e=te.data)||void 0===e?void 0:e.free_plan)
+      },[eL,null==te?void 0:null===(i=te.data)||void 0===i?void 0:i.free_plan]),
+      ti=(0,r.useMemo)(()=>a.screenTimeline.overlay.sort((e,t)=>e.start-t.start),[a]),
+      tn=(0,r.useMemo)(()=>{
+        var e;
+        return null==a?void 0:null===(e=a.device)||void 0===e?void 0:e.deviceHeight
+      },[a]),
+      tr=(0,r.useMemo)(()=>T(ez).isSequentialTimelineColor?eZ.reduce((e,t,i)=>(e[i]=(0,m.g)(i),e),{}):Array.from(new Set(eZ.map(e=>{
+        let{
+          activityName:t
+        }=e;
+        return t
+      }))).reduce((e,t)=>(e[t]=(0,m.Z)(t),e),{}),[T,ez,eZ]),
+      ta=(0,r.useCallback)((e,t,i)=>{
+        let n=ef.current;
+        if(!eg)return;
+        let r=ev.current;
+        if(!r)return;
+        let a=r.querySelector("iframe"),
+        s=r.querySelector("canvas");
+        if(!a||!s||!e3.current)return;
+        let{
+          videoWidth:l,
+          videoHeight:o
+        }=e3.current,
+        {
+          width:d,
+          height:c
+        }=n.getBoundingClientRect();
+        if(!d&&i&&n){
+          i.disconnect(n),
+          setTimeout(()=>{
+            i.observe(n)
+          });
+          return
+        }
+        let u=Math.min((d-48)/l,(c-48)/o);
+        a.style.transition="transform 0.4s linear",
+        a.style.transform="scale( ".concat(u," ) rotate( ").concat(0," )"),
+        s.style.transition="transform 0.4s linear",
+        s.style.transform="scale( ".concat(u," ) rotate( ").concat(0," )")
+      },[e3]);
+      (0,r.useEffect)(()=>{
+        e8&&(ew("videoError"),!tt&&e8.includes("not uploaded yet")&&D((0,g.CW)(null,{
+          eventName:"session_not_uploaded",
+          track_type:"event",
+          pageName:ez,
+          eventProperty:{}
+        })))
+      },[D,tt,e8,ez]);
+      let ts=(0,r.useMemo)(()=>{
+        let e=a.activity.totalSessionTime;
+        return(0,E.hQ)(ti,e)
+      },[ti,a]),
+      tl=(0,r.useMemo)(()=>{
+        let e=parseFloat(eq)||0,
+        t=(0,E.$j)(ts,e)||ts[0];
+        return t?t.o:1
+      },[ti,eq,ts]),
+      [to,td]=(0,r.useState)(tl),
+      tc=(0,r.useMemo)(()=>{
+        if(eD)return 0;
+        let{
+          device:{
+            deviceType:e
+          }
+        }=a;
+        switch(e.toLowerCase()){
+          case"phone":case"tablet":return -90*(0===to||2===to);
+          case"iphone":case"ipad":switch(to){
+            case 0:return -90;
+            case 1:return 0;
+            case 2:return 90;
+            case 3:return -180;
+            default:return 180
+          }
+          default:return console.warn("Unexpected device type"),
+          0
+        }
+      },[to,a,eD]),
+      tu=(0,r.useCallback)((e,t,i,n)=>{
+        let r=ev.current,
+        a=ef.current,
+        s=n||a,
+        l=0===tc||180===tc||-180===tc,
+        o=-180===tc,
+        {
+          videoWidth:d,
+          videoHeight:c
+        }=e3.current,
+        u=l?d:c,
+        h=l?c:d,
+        p=s.querySelector(".".concat(b)),
+        m=e||(null==a?void 0:a.getBoundingClientRect().height),
+        f=t||(null==a?void 0:a.getBoundingClientRect().width);
+        if(!f&&i&&a){
+          i.disconnect(a),
+          setTimeout(()=>{
+            i.observe(a)
+          });
+          return
+        }
+        let g=Math.min(f/u,m/h),
+        v=d*g;
+        if((null==r?void 0:r.style)&&(r.style.transition="transform 0.4s linear",r.style.width="".concat(v,"px"),r.style.height="".concat(c*g,"px"),r.style.transform="translate(-50%, -50%) scale( ".concat(Math.max((u*g-48)/f,(h*g-48)/m)," ) rotate( ").concat("".concat((l?0:-90)+(o?-180:0),"deg")," )")),p){
+          let e=v/d;
+          p.style.transform="scale( ".concat(e," ) translate( -50%, -50% )"),
+          p.style.setProperty("--video-scale",1/e)
+        }
+      },[tc,e3]);
+      (0,r.useEffect)(()=>{
+        if(!ed)return;
+        let e=ed.current,
+        t=ey.current;
+        if(e3.current=e,eo&&e){
+          if(!eD||eR){
+            let i=new S({
+              gestures:ti,
+              video:e,
+              session:a,
+              screens:eZ,
+              container:t,
+              skipInactivity:e7.current,
+              videoResizeFn:tu,
+              isFlutterWeb:eR
+            });
+            ex.current=i
+          }
+          e.playbackRate=e1.current;
+          let i=()=>{
+            e.paused?e.play().catch(()=>null):e.pause()
+          },
+          n=()=>{
+            ew("ready"),
+            el.current&&e.play().catch(()=>null)
+          },
+          r=t=>{
+            var i,
+            n,
+            r,
+            s;
+            let l=null==e?void 0:e.error,
+            o={
+              sessionId:eH,
+              videoUrl:(null==e?void 0:e.src)||(null==e?void 0:e.currentSrc)||"",
+              userAgent:navigator.userAgent,
+              timestamp:new Date().toISOString(),
+              videoElement:{
+                networkState:null==e?void 0:e.networkState,
+                readyState:null==e?void 0:e.readyState,
+                currentTime:null==e?void 0:e.currentTime,
+                duration:null==e?void 0:e.duration,
+                videoWidth:null==e?void 0:e.videoWidth,
+                videoHeight:null==e?void 0:e.videoHeight,
+                buffered:(null==e?void 0:null===(i=e.buffered)||void 0===i?void 0:i.length)?{
+                  start:e.buffered.start(0),
+                  end:e.buffered.end(e.buffered.length-1)
+                }:null,
+                seekable:(null==e?void 0:null===(n=e.seekable)||void 0===n?void 0:n.length)?{
+                  start:e.seekable.start(0),
+                  end:e.seekable.end(e.seekable.length-1)
+                }:null
+              },
+              mediaError:l?{
+                code:l.code,
+                message:l.message,
+                type:(e=>{
+                  switch(e){
+                    case 1:return"MEDIA_ERR_ABORTED - Playback aborted by user";
+                    case 2:return"MEDIA_ERR_NETWORK - Network error occurred";
+                    case 3:return"MEDIA_ERR_DECODE - Decode error occurred";
+                    case 4:return"MEDIA_ERR_SRC_NOT_SUPPORTED - Media format not supported";
+                    default:return"Unknown error code"
+                  }
+                })(l.code)
+              }:null,
+              domEvent:{
+                type:t.type,
+                isTrusted:t.isTrusted,
+                target:t.target?t.target.tagName:null
+              },
+              session:{
+                isPlayable:null==a?void 0:a.isPlayable,
+                deviceType:null==a?void 0:null===(r=a.device)||void 0===r?void 0:r.deviceType,
+                platform:null==a?void 0:null===(s=a.device)||void 0===s?void 0:s.platform
+              }
+            };
+            x.l.error("Video playback error",t,o),
+            ew("videoError");
+            let d=(null==e?void 0:e.src)||"",
+            c="",
+            u="";
+            d.error&&(c=d.error.code,u=d.error.message,x.l.error("Source video error",t,{
+              source:d,
+              error:t.toString(),
+              code:c,
+              message:u
+            }))
+          },
+          s=e=>{
+            e0(e.currentTarget.playbackRate)
+          },
+          l=e=>{
+            let{
+              currentTime:t
+            }=e.currentTarget,
+            i=(0,E.$j)(ts,t);
+            i&&td(i.o)
+          },
+          o=()=>{
+            el.current&&(null==a?void 0:a.isPlayable)&&(D((0,p.hI)({
+              action:"Played video on ".concat(y.ls[ez])
+            })),e.play().catch(()=>null)),
+            e6(!0)
+          },
+          d=()=>{
+            e6(!1)
+          };
+          return e.addEventListener("click",i),
+          e.addEventListener("loadedmetadata",n,!1),
+          e.addEventListener("error",r,!1),
+          e.addEventListener("ratechange",s,!1),
+          e.addEventListener("timeupdate",l),
+          e.addEventListener("play",o),
+          e.addEventListener("pause",d),
+          e.readyState>=1&&n(),
+          ()=>{
+            e.removeEventListener("click",i),
+            e.removeEventListener("loadedmetadata",n,!1),
+            e.removeEventListener("error",r,!1),
+            e.removeEventListener("ratechange",s,!1),
+            e.removeEventListener("timeupdate",l),
+            e.removeEventListener("play",o),
+            e.removeEventListener("pause",d),
+            e6(!1),
+            e_.current=null,
+            e4(null),
+            eJ.current=0,
+            ex.current&&(ex.current.destroy(),ex.current=null)
+          }
+        }
+        return()=>{
+          e_.current=null,
+          e4(null),
+          eJ.current=0
+        }
+      },[eD,eR,eo,eZ,ti,tn,a,e3,eh,ts,ec,eH,D,ez,e1,e4,e0,e6,eJ,tu]),
+      (0,r.useEffect)(()=>{
+        let e=e3.current;
+        if(e){
+          let t=()=>{
+            let t=parseFloat(eq)||0;
+            if(!eI.current){
+              let i=0===t?.01:t;
+              Number.isFinite(i)&&(e.currentTime=i),
+              eI.current=!0
+            }
+          };
+          return e.addEventListener("canplaythrough",t),
+          ()=>{
+            e.removeEventListener("canplaythrough",t),
+            eI.current=!1
+          }
+        }
+      },[eq,e3]),
+      (0,r.useEffect)(()=>{
+        let e=ex.current;
+        e&&e.setSkipInactivity(e5)
+      },[e5]),
+      v(()=>{
+        L(J+1)
+      },A?1e3:null);
+      let th=!eo&&!!e8,
+      tp="pending"===eb&&!th,
+      tm="ready"===eb,
+      tf="videoError"===eb||th;
+      return(0,r.useEffect)(()=>{
+        let e=e3.current,
+        t=ef.current,
+        i=ev.current;
+        if(t&&e&&i){
+          let i=new ResizeObserver(e=>{
+            let[{
+              target:t,
+              contentRect:{
+                width:n,
+                height:r
+              }
+            }]=e;
+            return eD&&!eR?ta(r,n,i):tu(r,n,i,t)
+          }),
+          n=()=>{
+            i.observe(t)
+          },
+          r=t=>{
+            if("boolean"!=typeof document.activeElement.readOnly||"timeline-slider"===document.activeElement.id)switch(t.code){
+              case"Space":if(t.preventDefault(),e$&&(!(null==a?void 0:a.isPlayable)||(null==a?void 0:a.verifiedPastVideoRecordingLimit))){
+                et||ee(!et);
+                return
+              }
+              return e.paused?e.play().catch(()=>null):e.pause();
+              case"ArrowLeft":{
+                t.preventDefault();
+                let i=e.currentTime-5;
+                Number.isFinite(i)&&(e.currentTime=i);
+                return
+              }
+              case"ArrowRight":{
+                t.preventDefault();
+                let i=e.currentTime+5;
+                Number.isFinite(i)&&(e.currentTime=i);
+                return
+              }
+              default:return
+            }
+          },
+          s=()=>{
+            if(eD&&!eR){
+              let e=ef.current;
+              if(!e)return;
+              let{
+                width:t,
+                height:n
+              }=e.getBoundingClientRect()||{};
+              ta(n,t,i)
+            }
+          };
+          return document.addEventListener("keydown",r),
+          e.addEventListener("contentresize",s),
+          e.videoWidth?i.observe(t):e.addEventListener("loadedmetadata",n),
+          ()=>{
+            i.disconnect(),
+            e.removeEventListener("contentresize",s),
+            document.removeEventListener("keydown",r),
+            e.removeEventListener("loadedmetadata",n)
+          }
+        }
+      },[tc,tu,eD,ta,ec,eR]),
+      (0,r.useEffect)(()=>{
+        eS.current&&eS.current===eH||(en.length&&(en.forEach(e=>{
+          R.refetchQueries([e])
+        }),er([])),eS.current=eH)
+      },[eH,R,en,er]),
+      (0,n.jsxs)(n.Fragment,{
+        children:[eN?(0,n.jsx)(U,{
+          replayInstanceRef:eD?ed:void 0,
+          urlTimeline:eR?eT:void 0,
+          videoRef:eR?ed:void 0
+        }):null,eO.flag&&(0,n.jsx)(F,{
+          children:(0,n.jsxs)("a",{
+            className:l()("last-key-message",{
+              "screen-unseleced-message":eO.message.length>39
+            }),
+            href:"#!",
+            children:[(0,n.jsx)(u.Z,{})," ",eO.message]
+          })
+        }),(0,n.jsxs)(j,{
+          isFaded:eO.flag&&eO.message.length>39,
+          children:[(0,n.jsxs)(W,{
+            ref:ef,
+            children:[(0,n.jsx)(H,{
+              "aria-hidden":!tp||!(null==a?void 0:a.isPlayable),
+              children:(0,n.jsx)(c.Z,{
+                fullscreen:!0
+              })
+            }),(0,n.jsx)(q,{
+              "aria-hidden":!tf,
+              children:(0,n.jsx)(Z,{
+                children:e8?(0,n.jsx)("p",{
+                  dangerouslySetInnerHTML:{
+                    __html:e8
+                  }
+                }):(0,n.jsx)("p",{
+                  children:"We encounter an error while playing the video"
+                })
+              })
+            }),(0,n.jsx)(P,{
+              ref:eg,
+              "aria-hidden":!tm&&(null==a?void 0:a.isPlayable),
+              children:!eo&&(null==a?void 0:a.isPlayable)?(0,n.jsxs)(K,{
+                children:[(0,n.jsx)(h.Z,{
+                  style:{
+                    marginRight:"10px"
+                  }
+                }),(0,n.jsx)(X,{
+                  children:a.noVideoMessage
+                })]
+              }):(0,n.jsxs)(n.Fragment,{
+                children:[(0,n.jsx)(Q,{
+                  initialRotation:tc,
+                  ref:ev,
+                  children:em?eR?(0,n.jsx)(Y,{
+                    "data-frameon":e2,
+                    children:(0,n.jsxs)(B,{
+                      children:[(0,n.jsx)(V,{
+                        blurBackground:k,
+                        children:(0,n.jsx)(z,{
+                          "data-uxc":"obfuscated",
+                          ref:ed,
+                          src:"".concat(eo,"#t=0.000000001"),
+                          preload:"auto",
+                          autoPlay:N
+                        })
+                      }),(0,n.jsx)(G,{
+                        ref:ey
+                      })]
+                    })
+                  }):eD?(0,n.jsx)(M.Z,{
+                    src:eo,
+                    autoPlay:N,
+                    videoRef:ed,
+                    skipInactivity:e5,
+                    "data-uxc":"obfuscated"
+                  },eo):(0,n.jsx)(Y,{
+                    "data-frameon":e2,
+                    children:(0,n.jsxs)(B,{
+                      children:[(0,n.jsx)(V,{
+                        blurBackground:k,
+                        children:(0,n.jsx)(z,{
+                          "data-uxc":"obfuscated",
+                          ref:ed,
+                          src:"".concat(eo,"#t=0.000000001"),
+                          preload:"auto",
+                          autoPlay:N
+                        })
+                      }),(0,n.jsx)(G,{
+                        ref:ey
+                      })]
+                    })
+                  }):null
+                }),(0,n.jsxs)(O,{
+                  ref:eC,
+                  children:[(0,n.jsx)($,{}),(0,n.jsx)("div",{
+                    className:"skipped-video-label",
+                    ref:eE
+                  })]
+                })]
+              })
+            })]
+          },"top-container"),eo&&(0,n.jsx)(I.Z,{
+            appId:s,
+            videoRef:ed,
+            toggleFullScreen:o,
+            session:a,
+            screens:eZ,
+            selectedScreensMap:eK,
+            activityColorMap:tr,
+            isShareSession:eA.shareSessionKey,
+            skippedLabelRef:eE,
+            excludedScreenList:eY,
+            multiScreenSkippedData:w,
+            skippedLabelStyleRef:eC
+          },ec)]
+        },"video-container")]
+      })
+    })
+  }
+}]);

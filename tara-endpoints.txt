@@ -1,0 +1,582 @@
+============================================
+TARA.UXCAM.COM — COMPLETE ENDPOINT INVENTORY
+Source: JS bundle analysis (267 files, 10MB)
+Date: Sun Sep 27 14:22:34 IST 2026
+============================================
+
+=== SUBDOMAINS / SERVICES REFERENCED ===
+https://admin.uxcam.com
+https://app.uxcam.com
+https://assets.uxcam.com
+https://auth.uxcam.com
+https://developer.uxcam.com
+https://help.uxcam.com
+https://integrated-platforms.uxcam.com
+https://integration.mcp.uxcam.com
+https://sdk.uxcam.com
+https://uxcam.com
+https://websdk-proxy.uxcam.com
+https://www.uxcam.com
+
+=== THIRD-PARTY SERVICES ===
+https://api.hsforms.com/submissions/v3/integration/submit/${v}/${e}
+
+=== API ENDPOINTS (/api/*) ===
+/api/1/item/
+/api/1/session/
+/api/admin/${e}/users
+/api/analytics/schema?${n.toString()}
+/api/apps/${e.appId}/csv-export
+/api/apps/${e.appId}/sessions/export
+/api/apps/${e.appId}/users/export
+/api/apps/${encodeURIComponent(e)}/${o}${t.toString()?
+/api/apps/${encodeURIComponent(e)}/${o}/${encodeURIComponent(n)}/pin
+/api/apps/${encodeURIComponent(e)}/ai-usage
+/api/apps/${encodeURIComponent(e)}/analyses/catalog
+/api/apps/${encodeURIComponent(e)}/analytics/funnels/dropoff
+/api/apps/${encodeURIComponent(e)}/analytics/funnels/run
+/api/apps/${encodeURIComponent(e)}/analytics/property-catalog
+/api/apps/${encodeURIComponent(e)}/analytics/property-catalog/values
+/api/apps/${encodeURIComponent(e)}/analytics/reports
+/api/apps/${encodeURIComponent(e)}/analytics/reports/${encodeURIComponent(t)}
+/api/apps/${encodeURIComponent(e)}/analytics/reports/pickable
+/api/apps/${encodeURIComponent(e)}/analytics/reports/timezone-default
+/api/apps/${encodeURIComponent(e)}/analytics/retention/run
+/api/apps/${encodeURIComponent(e)}/analytics/run
+/api/apps/${encodeURIComponent(e)}/app-flows
+/api/apps/${encodeURIComponent(e)}/app-key
+/api/apps/${encodeURIComponent(e)}/assignments
+/api/apps/${encodeURIComponent(e)}/assignments/${encodeURIComponent(t)}
+/api/apps/${encodeURIComponent(e)}/assignments/${encodeURIComponent(t)}/focus-items
+/api/apps/${encodeURIComponent(e)}/assignments/${encodeURIComponent(t)}/focus-items/${encodeURIComponent(n)}
+/api/apps/${encodeURIComponent(e)}/assignments/${encodeURIComponent(t)}/pause
+/api/apps/${encodeURIComponent(e)}/assignments/${encodeURIComponent(t)}/resume
+/api/apps/${encodeURIComponent(e)}/assignments/${encodeURIComponent(t)}/run
+/api/apps/${encodeURIComponent(e)}/catalog/version-activity?${r.toString()}
+/api/apps/${encodeURIComponent(e)}/catalog?entity_type=screens&limit=500
+/api/apps/${encodeURIComponent(e)}/chat/command
+/api/apps/${encodeURIComponent(e)}/command-center/search${r.toString()?
+/api/apps/${encodeURIComponent(e)}/dashboard-categories
+/api/apps/${encodeURIComponent(e)}/dashboard-categories/${encodeURIComponent(t)}
+/api/apps/${encodeURIComponent(e)}/dashboards
+/api/apps/${encodeURIComponent(e)}/dashboards${n}
+/api/apps/${encodeURIComponent(e)}/dashboards/${encodeURIComponent(t)}
+/api/apps/${encodeURIComponent(e)}/dashboards/${encodeURIComponent(t)}/access
+/api/apps/${encodeURIComponent(e)}/dashboards/${encodeURIComponent(t)}/analysis-slot
+/api/apps/${encodeURIComponent(e)}/dashboards/${encodeURIComponent(t)}/blocks
+/api/apps/${encodeURIComponent(e)}/dashboards/${encodeURIComponent(t)}/blocks/${encodeURIComponent(n)}
+/api/apps/${encodeURIComponent(e)}/dashboards/${encodeURIComponent(t)}/blocks/from-report
+/api/apps/${encodeURIComponent(e)}/dashboards/${encodeURIComponent(t)}/clone
+/api/apps/${encodeURIComponent(e)}/dashboards/${encodeURIComponent(t)}/pin
+/api/apps/${encodeURIComponent(e)}/dashboards/from-funnel-report
+/api/apps/${encodeURIComponent(e)}/dashboards/from-template
+/api/apps/${encodeURIComponent(e)}/debug/not-uploaded-sessions?${l}
+/api/apps/${encodeURIComponent(e)}/debug/pipeline-loss?${r}
+/api/apps/${encodeURIComponent(e)}/debug/pipeline-summary?${r}
+/api/apps/${encodeURIComponent(e)}/debug/recording-loss?${l}
+/api/apps/${encodeURIComponent(e)}/debug/upload-rate?${a}
+/api/apps/${encodeURIComponent(e)}/events/${encodeURIComponent(t)}/journey?${r}
+/api/apps/${encodeURIComponent(e)}/events/${encodeURIComponent(t)}/properties-summary?${r}
+/api/apps/${encodeURIComponent(e)}/events/${encodeURIComponent(t)}/retention?${r}
+/api/apps/${encodeURIComponent(e)}/events/${encodeURIComponent(t)}/screen-breakdown?${r}
+/api/apps/${encodeURIComponent(e)}/events/analytics
+/api/apps/${encodeURIComponent(e)}/events/types?${n}
+/api/apps/${encodeURIComponent(e)}/events?${n}
+/api/apps/${encodeURIComponent(e)}/evidence
+/api/apps/${encodeURIComponent(e)}/evidence/${encodeURIComponent(t)}
+/api/apps/${encodeURIComponent(e)}/filter-values?${a.toString()}
+/api/apps/${encodeURIComponent(e)}/filter-values?${v.toString()}
+/api/apps/${encodeURIComponent(e)}/handoff-kits
+/api/apps/${encodeURIComponent(e)}/home-kpis
+/api/apps/${encodeURIComponent(e)}/home-kpis/ensure
+/api/apps/${encodeURIComponent(e)}/home-kpis/from-template
+/api/apps/${encodeURIComponent(e)}/home/weekly-app-digest
+/api/apps/${encodeURIComponent(e)}/home/weekly-app-digest/enroll
+/api/apps/${encodeURIComponent(e)}/home/weekly-app-digest/focus-items
+/api/apps/${encodeURIComponent(e)}/home/weekly-app-digest/focus-items/${encodeURIComponent(t)}
+/api/apps/${encodeURIComponent(e)}/home/weekly-app-digest/focus-items/${encodeURIComponent(t)}/promote
+/api/apps/${encodeURIComponent(e)}/home/weekly-app-digest/pause
+/api/apps/${encodeURIComponent(e)}/home/weekly-app-digest/reports/${encodeURIComponent(t)}
+/api/apps/${encodeURIComponent(e)}/home/weekly-app-digest/resume
+/api/apps/${encodeURIComponent(e)}/home/weekly-app-digest/run
+/api/apps/${encodeURIComponent(e)}/home/weekly-app-digest/settings
+/api/apps/${encodeURIComponent(e)}/integration/connections
+/api/apps/${encodeURIComponent(e)}/integration/connections/${encodeURIComponent(t)}/dismiss
+/api/apps/${encodeURIComponent(e)}/issues${n?
+/api/apps/${encodeURIComponent(e)}/issues/${encodeURIComponent(n)}/${encodeURIComponent(i)}${o?
+/api/apps/${encodeURIComponent(e)}/issues/${encodeURIComponent(n)}/${encodeURIComponent(i)}/sessions${o?
+/api/apps/${encodeURIComponent(e)}/issues/${encodeURIComponent(t)}/${encodeURIComponent(n)}/triage
+/api/apps/${encodeURIComponent(e)}/issues/overview${n?
+/api/apps/${encodeURIComponent(e)}/issues/releases${n?
+/api/apps/${encodeURIComponent(e)}/issues/trends${n?
+/api/apps/${encodeURIComponent(e)}/issues/triage-states?${r}
+/api/apps/${encodeURIComponent(e)}/nl-filter
+/api/apps/${encodeURIComponent(e)}/notes
+/api/apps/${encodeURIComponent(e)}/pages/${encodeURIComponent(t)}/heatmap/backdrops?${r}
+/api/apps/${encodeURIComponent(e)}/pages/${encodeURIComponent(t)}/heatmap/elements?${r}
+/api/apps/${encodeURIComponent(e)}/pages/${encodeURIComponent(t)}/overview?${r}
+/api/apps/${encodeURIComponent(e)}/pages/${encodeURIComponent(t)}/replay-sessions?${r}
+/api/apps/${encodeURIComponent(e)}/pages/${encodeURIComponent(t)}/scroll?${r}
+/api/apps/${encodeURIComponent(e)}/pages/filter-values?${i.toString()}
+/api/apps/${encodeURIComponent(e)}/pages/filter-values?${v.toString()}
+/api/apps/${encodeURIComponent(e)}/pages/flow
+/api/apps/${encodeURIComponent(e)}/pages?${n}
+/api/apps/${encodeURIComponent(e)}/pins?entity_type=${t}
+/api/apps/${encodeURIComponent(e)}/recently-viewed
+/api/apps/${encodeURIComponent(e)}/recording-health/trend?${n.toString()}
+/api/apps/${encodeURIComponent(e)}/recording-health?${r.toString()}
+/api/apps/${encodeURIComponent(e)}/report-templates
+/api/apps/${encodeURIComponent(e)}/reports/${encodeURIComponent(t)}
+/api/apps/${encodeURIComponent(e)}/reports/${encodeURIComponent(t)}/evidence/${encodeURIComponent(n)}/analytics-report
+/api/apps/${encodeURIComponent(e)}/reports/${encodeURIComponent(t)}/read
+/api/apps/${encodeURIComponent(e)}/reports/unread-count${r}
+/api/apps/${encodeURIComponent(e)}/reports?${r.toString()}
+/api/apps/${encodeURIComponent(e)}/reviews/connections
+/api/apps/${encodeURIComponent(e)}/reviews/connections/${encodeURIComponent(t)}
+/api/apps/${encodeURIComponent(e)}/reviews/connections/${encodeURIComponent(t)}/backfill/retry
+/api/apps/${encodeURIComponent(e)}/reviews/connections/${encodeURIComponent(t)}/credentials
+/api/apps/${encodeURIComponent(e)}/reviews/connections/${encodeURIComponent(t)}/upgrade
+/api/apps/${encodeURIComponent(e)}/reviews/dashboard
+/api/apps/${encodeURIComponent(e)}/reviews/issues/${encodeURIComponent(t)}/quotes?${a}
+/api/apps/${encodeURIComponent(e)}/reviews/search?${n.toString()}
+/api/apps/${encodeURIComponent(e)}/reviews/sync
+/api/apps/${encodeURIComponent(e)}/screen-display-names
+/api/apps/${encodeURIComponent(e)}/screen-display-names/${encodeURIComponent(t)}
+/api/apps/${encodeURIComponent(e)}/screen-insights/${encodeURIComponent(t)}${n}
+/api/apps/${encodeURIComponent(e)}/screen-insights/${encodeURIComponent(t)}/conversion-options${r?
+/api/apps/${encodeURIComponent(e)}/screen-url-rules
+/api/apps/${encodeURIComponent(e)}/screens${n?
+/api/apps/${encodeURIComponent(e)}/screens/${encodeURIComponent(t)}
+/api/apps/${encodeURIComponent(e)}/screens/${encodeURIComponent(t)}${n}
+/api/apps/${encodeURIComponent(e)}/screens/${encodeURIComponent(t)}${r?
+/api/apps/${encodeURIComponent(e)}/screens/${encodeURIComponent(t)}/flows${r?
+/api/apps/${encodeURIComponent(e)}/screens/${encodeURIComponent(t)}/goal
+/api/apps/${encodeURIComponent(e)}/screens/${encodeURIComponent(t)}/goal/status${r?
+/api/apps/${encodeURIComponent(e)}/screens/${encodeURIComponent(t)}/heatmap${a?
+/api/apps/${encodeURIComponent(e)}/screens/${encodeURIComponent(t)}/heatmap/area-metrics${a?
+/api/apps/${encodeURIComponent(e)}/screens/${encodeURIComponent(t)}/heatmap/devices${a?
+/api/apps/${encodeURIComponent(e)}/screens/${encodeURIComponent(t)}/heatmap/gestures${a?
+/api/apps/${encodeURIComponent(e)}/screens/${encodeURIComponent(t)}/heatmap/screenshots${a?
+/api/apps/${encodeURIComponent(e)}/screens/${encodeURIComponent(t)}/heatmap/sessions${a?
+/api/apps/${encodeURIComponent(e)}/screens/${encodeURIComponent(t)}/overview-summary${r?
+/api/apps/${encodeURIComponent(e)}/screens/${encodeURIComponent(t)}/panel${r?
+/api/apps/${encodeURIComponent(e)}/screens/${encodeURIComponent(t)}/visits${r?
+/api/apps/${encodeURIComponent(e)}/screens/${encodeURIComponent(t)}/visits/groups${r?
+/api/apps/${encodeURIComponent(e)}/screens/filter-values?${a.toString()}
+/api/apps/${encodeURIComponent(e)}/screens/filter-values?${v.toString()}
+/api/apps/${encodeURIComponent(e)}/segments/${encodeURIComponent(n)}/refresh
+/api/apps/${encodeURIComponent(e)}/segments/counts?${i}
+/api/apps/${encodeURIComponent(e)}/session-video-analyses
+/api/apps/${encodeURIComponent(e)}/session-video-analyses/${encodeURIComponent(t)}
+/api/apps/${encodeURIComponent(e)}/sessions/${encodeURIComponent(t)}
+/api/apps/${encodeURIComponent(e)}/sessions/${encodeURIComponent(t)}${n}
+/api/apps/${encodeURIComponent(e)}/sessions/${encodeURIComponent(t)}/replay-export
+/api/apps/${encodeURIComponent(e)}/sessions/${encodeURIComponent(t)}/viewed
+/api/apps/${encodeURIComponent(e)}/sessions/ai-coverage?${a}
+/api/apps/${encodeURIComponent(e)}/sessions/stats?${n}
+/api/apps/${encodeURIComponent(e)}/sessions/video-status?${r}
+/api/apps/${encodeURIComponent(e)}/sessions?${r}
+/api/apps/${encodeURIComponent(e)}/sessions?${s}
+/api/apps/${encodeURIComponent(e)}/sessions?${u}
+/api/apps/${encodeURIComponent(e)}/skills
+/api/apps/${encodeURIComponent(e)}/stability-analysis
+/api/apps/${encodeURIComponent(e)}/tara-context-snapshots/${encodeURIComponent(t)}
+/api/apps/${encodeURIComponent(e)}/tara/runs/${encodeURIComponent(t)}/cancel
+/api/apps/${encodeURIComponent(e)}/tara/runs/${encodeURIComponent(t)}/notification
+/api/apps/${encodeURIComponent(e)}/tara/runs/${encodeURIComponent(t)}/stream?${o.toString()}
+/api/apps/${encodeURIComponent(e)}/tara/runs/active
+/api/apps/${encodeURIComponent(e)}/users/${encodeURIComponent(t)}
+/api/apps/${encodeURIComponent(e)}/users/${encodeURIComponent(t)}/segments
+/api/apps/${encodeURIComponent(e)}/users/${encodeURIComponent(t)}/sessions?${o.toString()}
+/api/apps/${encodeURIComponent(e)}/users/activity-bins
+/api/apps/${encodeURIComponent(e)}/users/count?${o}
+/api/apps/${encodeURIComponent(e)}/users/detail-preferences
+/api/apps/${encodeURIComponent(e)}/users?${d}
+/api/apps/${encodeURIComponent(e)}/users?${u}
+/api/apps/${encodeURIComponent(e.appId)}/catalog
+/api/apps/${encodeURIComponent(e.appId)}/filter-attributes?${t.toString()}
+/api/apps/${encodeURIComponent(e.appId)}/pages/filter-values?${t.toString()}
+/api/apps/${encodeURIComponent(e.appId)}/reports/${encodeURIComponent(e.reportId)}/feedback
+/api/apps/${encodeURIComponent(e.app_id)}/tara/runs
+/api/apps/${encodeURIComponent(r)}/support/tickets
+/api/apps/${encodeURIComponent(t)}/${e}/view-preferences
+/api/apps/${e}/analytics/report-proposals
+/api/apps/${e}/dashboards/${t}/refresh-globals
+/api/apps/${e}/dashboards/${t}/refresh-timezone
+/api/apps/${e}/segments
+/api/apps/${e}/segments${n.toString()?
+/api/apps/${e}/segments/${t}
+/api/apps/${e}/tracked-entities
+/api/apps/${n}/analyses/artifacts/${r}
+/api/apps/${n}/analysis-library
+/api/apps/${n}/analysis-previews/${r}
+/api/apps/${n}/artifacts/pin
+/api/apps/${t}/dashboard-templates
+/api/apps/${t}/dashboards/templates
+/api/chat/share
+/api/chat/share/${encodeURIComponent(e)}/claim
+/api/dashboard/templates?include_cards=true
+/api/filter-schema${r}
+/api/handoff/${encodeURIComponent(e)}
+/api/internal/ai-costs/orgs/${encodeURIComponent(e)}/users?${n}
+/api/internal/ai-costs/orgs?${i({days:e})}
+/api/internal/ai-costs/runs?${i({days:e.days,org_id:e.orgId,user_id:e.userId,limit:e.limit??100,offset:e.offset??0})}
+/api/internal/ai-costs/summary?${i({days:e,org_id:t})}
+/api/internal/orgs/${encodeURIComponent(e)}?${r}
+/api/internal/orgs?${i({days:e.days,limit:e.limit,offset:e.offset,sort_by:e.sortBy,sort_dir:e.sortDir})}
+/api/internal/overview?${i({days:e})}
+/api/internal/users?${i({emails:e.join(
+/api/knowledge/${Q(e)}/context-selection
+/api/knowledge/${Q(e)}/entries
+/api/knowledge/${Q(e)}/entries/${Q(t)}
+/api/knowledge/${Q(e)}/notes
+/api/knowledge/${Q(e)}/response-preferences
+/api/organizations/${e.orgId}/projects
+/api/organizations/${e}/projects
+/api/organizations/${e}/projects/${t}
+/api/organizations/${e}/projects/${t}/environments/${n}/transfer
+/api/projects/${e}
+/api/projects/${e}/environments
+/api/projects/${e}/environments/${t}
+/api/projects/${e}/environments/${t}/keys
+/api/projects/${e}/environments/${t}/keys/${n}
+/api/projects/${e}/environments/${t}/keys/${n}/revoke
+/api/reviews/app-discovery/counterpart?${t.toString()}
+/api/reviews/app-discovery?${new URLSearchParams({q:e,country:t}).toString()}
+/api/settings/${encodeURIComponent(e)}
+/api/settings/${encodeURIComponent(e)}/${encodeURIComponent(t)}/recording-setting
+/api/settings/${encodeURIComponent(e)}/${encodeURIComponent(t)}/toggle-ai
+/api/settings/${encodeURIComponent(e)}/ai-apps
+/api/settings/${encodeURIComponent(e)}/ai-overview
+/api/settings/${encodeURIComponent(e)}/apps-directory
+/api/settings/${encodeURIComponent(e)}/billing-info
+/api/settings/${encodeURIComponent(e)}/billing-info/recipients
+/api/settings/${encodeURIComponent(e)}/invoices/${encodeURIComponent(t)}/detail
+/api/settings/${encodeURIComponent(e)}/invoices?page=${t}
+/api/settings/${encodeURIComponent(e)}/manage-payments
+/api/settings/${encodeURIComponent(e)}/payment-method
+/api/settings/${encodeURIComponent(e)}/plan-builder/quotes
+/api/settings/${encodeURIComponent(e)}/profile
+/api/settings/${encodeURIComponent(e)}/session-usage-thresholds
+/api/settings/${encodeURIComponent(e)}/subscription
+/api/settings/${encodeURIComponent(e)}/subscription-console
+/api/settings/${encodeURIComponent(e)}/team
+/api/settings/${encodeURIComponent(e)}/team/${encodeURIComponent(t)}
+/api/settings/${encodeURIComponent(e)}/team/${encodeURIComponent(t)}/transfer-ownership
+/api/settings/${encodeURIComponent(e)}/team/delete
+/api/settings/${encodeURIComponent(e)}/team/invite
+/api/settings/${encodeURIComponent(e)}/team/invite/resend
+/api/settings/${encodeURIComponent(e)}/toggle-overage-recording
+/api/settings/${encodeURIComponent(e)}/trial-banner
+/api/settings/${encodeURIComponent(e)}/update-org-image
+/api/settings/${encodeURIComponent(e)}/update-org-name
+/api/settings/notifications
+/api/settings/orgs
+/api/settings/profile
+/api/settings/profile/email
+/api/settings/profile/mfa/disable
+/api/settings/profile/mfa/enable
+/api/settings/profile/mfa/setup
+/api/settings/profile/name
+/api/settings/profile/password
+/api/settings/profile/picture
+/api/settings/profile/preferences
+/api/share/session/generate
+/api/share/session/send
+/api/share/sessions/${encodeURIComponent(e)}${t}
+/api/support/public-tickets
+/api/ticketing/apps/${encodeURIComponent(e)}/recording-health-ticket
+/api/ticketing/apps/${s(e)}/project-map
+/api/ticketing/apps/${s(e)}/projects${c(t)}
+/api/ticketing/apps/${s(e)}/projects/${s(t)}/assignable-users${c(n)}
+/api/ticketing/apps/${s(e)}/projects/${s(t)}/issue-types
+/api/ticketing/apps/${s(e)}/projects/${s(t)}/issue-types/${s(n)}/fields
+/api/ticketing/apps/${s(e)}/tickets
+/api/ticketing/apps/${s(e)}/tickets/${s(t)}
+/api/ticketing/apps/${s(e)}/tickets/link
+/api/ticketing/apps/${s(e)}/tickets/lookup
+/api/ticketing/apps/${s(e)}/tickets/recent?limit=${t}
+/api/ticketing/apps/${s(e)}/tickets/search${c(t)}
+/api/ticketing/orgs/${s(e)}/connection
+/api/ticketing/orgs/${s(e)}/connection/install
+/api/ticketing/orgs/${s(e)}/connection/policy
+/api/ticketing/orgs/${s(e)}/connection/test
+
+=== AUTH ENDPOINTS ===
+/auth/logout
+/auth/status
+
+=== CHAT/TARA AI ENDPOINTS ===
+/chat
+/chat/session-detail/pin
+/chat/session-detail/rename
+/chat/share/:token
+
+=== INTERNAL ENDPOINTS ===
+/api/internal/ai-costs/orgs/${encodeURIComponent(e)}/users?${n}
+/api/internal/ai-costs/orgs?${i({days:e})}
+/api/internal/ai-costs/runs?${i({days:e.days,org_id:e.orgId,user_id:e.userId,limit:e.limit??100,offset:e.offset??0})}
+/api/internal/ai-costs/summary?${i({days:e,org_id:t})}
+/api/internal/orgs/${encodeURIComponent(e)}?${r}
+/api/internal/orgs?${i({days:e.days,limit:e.limit,offset:e.offset,sort_by:e.sortBy,sort_dir:e.sortDir})}
+/api/internal/overview?${i({days:e})}
+/api/internal/users?${i({emails:e.join(
+
+=== ADMIN ENDPOINTS ===
+/api/admin/${e}/users
+
+=== DEBUG ENDPOINTS ===
+/api/apps/${encodeURIComponent(e)}/debug/not-uploaded-sessions?${l}
+/api/apps/${encodeURIComponent(e)}/debug/pipeline-loss?${r}
+/api/apps/${encodeURIComponent(e)}/debug/pipeline-summary?${r}
+/api/apps/${encodeURIComponent(e)}/debug/recording-loss?${l}
+/api/apps/${encodeURIComponent(e)}/debug/upload-rate?${a}
+
+=== MISCELLANEOUS ENDPOINTS ===
+/default-response-instructions
+/healthz
+/reload-prompts
+/tara/cache/warm
+/user/invitation/signup/${encodeURIComponent(e)}
+
+=== FRONTEND ROUTES ===
+${t.path||
+*
+/
+/*
+/activate/:orgId/:activationKey
+/admin-debug
+/analytics
+/api/1/item/
+/api/1/session/
+/app
+/app/:appId
+/chat/share/:token
+/create-organization
+/dashboard/org/:orgId/:activationKey
+/ds-preview
+/ds-status
+/events
+/forgot-password
+/handoff/:token
+/home
+/integration
+/internal-ai-costs
+/internal-analytics
+/invitation/signup/:secret
+/login
+/login/password
+/logout
+/notes
+/org/:orgId/internal-ai-costs
+/org/:orgId/internal-analytics
+/org/:orgId/settings
+/org/:orgId/settings/:tab
+/org/:orgId/whats-new
+/org/:orgId/whats-new/:postId
+/pages
+/passwordless-login
+/passwordless-login/*
+/passwordless-login/confirm
+/profile
+/project
+/project/:environmentName/:appId
+/projects-p0-wireframe
+/reset-password/token/:token
+/reviews
+/screens
+/sessions
+/settings
+/share/sessions/:shareKey
+/signup
+/stability
+/tara
+/tara-command-center-atlas
+/tara-drawer-wireframes
+/team/invitation/secret/:secret
+/users
+/welcome/first_visit
+/whats-new
+admin-debug
+analyses/artifacts/:artifactId
+analytics
+analytics-defaults
+analytics/dashboards
+analytics/dashboards/:dashboardId
+analytics/reports
+api-key
+apps
+assignments
+assignments/:scheduleId
+assignments/new
+briefs
+chat
+data-access
+env/:envAppId/:leaf
+events
+events/:eventName
+home
+insights
+insights/settings
+integration
+integrations
+issue-notification
+issues
+issues/:issueType/:groupId
+my-profile
+notes
+notification-preferences
+org-profile
+org/:orgId
+pages
+pages/:pageName
+plan
+plan/quote/:quoteId
+profile
+project/:projectId/env/:envAppId
+project/:projectId/general
+recording
+reviews
+screen-url-rules
+screens
+screens/:screenName
+screens/flows
+screens/manage
+security
+segments
+sessions
+sessions/:sessionId
+settings
+stability
+stability/:issueType/:groupId
+subscription
+subscription-console
+tara
+tara-ai
+teams
+tracked-entities
+users
+users/:uxcamuserid
+
+=== ENVIRONMENT VARIABLES ===
+REACT_APP_SC_ATTR
+REACT_APP_SC_DISABLE_SPEEDY
+VITE_APP_ENV
+
+=== HARDCODED KEYS / TOKENS ===
+ReCAPTCHA site key: 6Lc4T7YUAAAAAGOGPuZjdXA-_wPZ_LLsO1Xpj9B5
+HubSpot portal ID: 5081481
+RollbarItem(e){if(this.options.includeItemsInTelemetry){if(e.err)return this.captureError(e.err,e.level,e.uuid,e.timestamp);if(e.message)return this.captureLog(e.message,e.level,e.uuid,e.timestamp);if(e.custom)return this.capture(`log`,e.custom,e.level,e.uuid,e.timestamp)}}push(e){this.queue.push(e),this.queue.length>this.maxQueueSize&&this.queue.shift()}};function Ce(e,t){return t||{error:`error`,manual:`info`}[e]||`info`}var we=new class e{constructor(e){this._currentContext=e?new Map(e):new Map}getValue(e){return this._currentContext.get(e)}setValue(t,n){let r=new e(this._currentContext);return r._currentContext.set(t,n),r}deleteValue(t){let n=new e(self._currentContext);return n._currentContext.delete(t),n}},Te=class{constructor(){this.currentContext=we}active(){return this.currentContext}enterContext(e){let t=this.currentContext;return this.currentContext=e||we,t}exitContext(e){return this.currentContext=e,this.currentContext}with(e,t,n,...r){let i=this.enterContext(e);try{return t.call(n,...r)}finally{this.exitContext(i)}}};function Ee(e){return Symbol.for(e)}function A(e){return[Math.trunc(e/1e3),Math.round(e%1e3*1e6)]}function De(e){return e[0]*1e3+Math.round(e[1]/1e6)}function Oe(e){return e[0]*1e9+e[1]}function ke(e,t){return[e[0]+t[0]+Math.trunc((e[1]+t[1])/1e9),(e[1]+t[1])%1e9]}function Ae(e=!1){return e?ke(A(performance.timeOrigin),A(performance.now())):A(Date.now())}function je(e){return Array.isArray(e)&&e.length===2&&typeof e[0]==`number`&&typeof e[1]==`number`}var j={fromMillis:A,toMillis:De,toNanos:Oe,add:ke,now:Ae,isHrTime:je},Me=class{constructor(e,t={}){this.api=e,this.options=t}export(e,t){Ne.push(...e)}toPayload(){let e=Ne.slice();if(Ne.length=0,!e||!e.length)return{resourceSpans:[]};let t=e[0]&&e[0].resource||{},n=new Map;for(let t of e){let e=t.instrumentationScope?`${t.instrumentationScope.name}:${t.instrumentationScope.version}`:`default:1.0.0`;n.has(e)||n.set(e,{scope:t.instrumentationScope||{name:`default`,version:`1.0.0`,attributes:[]},spans:[]}),n.get(e).spans.push(this._transformSpan(t))}return{resourceSpans:[{resource:this._transformResource(t),scopeSpans:Array.from(n.values()).map(e=>({scope:this._transformInstrumentationScope(e.scope),spans:e.spans}))}]}}post(e,t={}){return this.api.postSpans(e,t)}_transformSpan(e){let t=e=>Object.entries(e||{}).map(([e,t])=>({key:e,value:this._transformAnyValue(t)}));return{traceId:e.spanContext.traceId,spanId:e.spanContext.spanId,parentSpanId:e.parentSpanId||``,name:e.name,kind:e.kind||1,startTimeUnixNano:j.toNanos(e.startTime),endTimeUnixNano:j.toNanos(e.endTime),attributes:t(e.attributes),events:(e=>(e||[]).map(e=>({timeUnixNano:j.toNanos(e.time),name:e.name,attributes:t(e.attributes)})))(e.events)}}_transformResource(e){let t=e.attributes||{};return{attributes:Object.entries(t).map(([e,t])=>({key:e,value:this._transformAnyValue(t)}))}}_transformInstrumentationScope(e){return{name:e.name||``,version:e.version||``,attributes:(e.attributes||[]).map(e=>({key:e.key,value:this._transformAnyValue(e.value)}))}}_transformAnyValue(e){if(e==null)return{stringValue:``};let t=typeof e;return t===`string`?{stringValue:e}:t===`number`?Number.isInteger(e)?{intValue:e.toString()}:{doubleValue:e}:t===`boolean`?{boolValue:e}:Array.isArray(e)?{arrayValue:{values:e.map(e=>this._transformAnyValue(e))}}:t===`object`?{kvlistValue:{values:Object.entries(e).map(([e,t])=>({key:e,value:this._transformAnyValue(t)}))}}:{stringValue:String(e)}}},Ne=[];function Pe(e=16){let t=new Uint8Array(e);return crypto.getRandomValues(t),Array.from(t,e=>e.toString(16).padStart(2,`0`)).join(``)}var M={gen:Pe},Fe=`RollbarSession`,Ie=class{constructor(e,n){t(this,`_attributes`,void 0),this.options=n,this.tracing=e,this.window=e.window,this.session=null,this._attributes={}}init(e={}){return this.session?this:(this.getSession()||this.createSession(),this.initSessionAttributes(e),this)}getSession(){try{let e=this.window.sessionStorage.getItem(Fe);if(!e)return null;this.session=JSON.parse(e)}catch{return null}return this}createSession(){return this.session={id:M.gen(),createdAt:Date.now()},this.setSession(this.session)}setSession(e){let t=JSON.stringify(e);try{this.window.sessionStorage.setItem(Fe,t)}catch{return null}return this}get attributes(){return this._attributes}setAttributes(e){return this._attributes={...this._attributes,...e},this}setUser(e){return this.setAttributes({"user.id":e?.id,"user.email":e?.email,"user.name":e?.name||e?.username}),this}initSessionAttributes(e){return this.setAttributes({"session.id":this.session.id,"browser.brands":navigator.userAgentData?.brands,"browser.language":navigator.language,"browser.mobile":navigator.userAgentData?.mobile,"browser.platform":navigator.userAgentData?.platform,"client.address":`$remote_ip`,"rollbar.notifier.framework":`browser-js`,"user_agent.original":navigator.userAgent,...e}),this}},N=()=>{},Le={debug:0,info:1,warn:2,error:3,disable:4},P={error:(...e)=>N(`error`,e),warn:(...e)=>N(`warn`,e),info:(...e)=>N(`info`,e),debug:(...e)=>N(`debug`,e),log:(...e)=>N(`info`,e),init:({logLevel:e})=>{N=function(t,n){Le[t]<Le[e]||(n.unshift(`Rollbar:`),console[t].apply(console,n))}}},Re=class{constructor(e,t={}){this.exporter=e,this.options=t,this.pendingSpans=new Map,this.transforms=[this.userTransform.bind(this)]}addTransform(e){this.transforms.unshift(e)}userTransform(e){this.options.transformSpan&&this.options.transformSpan({span:e})}applyTransforms(e){for(let t of this.transforms)try{t(e)}catch(e){P.error(`Error running span transform callback`,e)}}onStart(e,t){this.pendingSpans.set(e.span.spanContext.spanId,e)}onEnd(e){this.applyTransforms(e.span),this.exporter.export([e.export()]),this.pendingSpans.delete(e.span.spanContext.spanId)}},ze=class{constructor(e){return this.usePerformance=e.usePerformance,this.initReadableSpan(e),this.spanProcessor=e.spanProcessor,this.spanProcessor.onStart(this,e.context),e.attributes&&this.setAttributes(e.attributes),this}initReadableSpan(e){this.span={name:e.name,kind:e.kind,spanContext:e.spanContext,parentSpanId:e.parentSpanId,startTime:e.startTime||j.now(e.usePerformance),endTime:[0,0],status:{code:0,message:``},attributes:{"session.id":e.session?.id},links:[],events:[],duration:0,ended:!1,resource:e.resource,instrumentationScope:e.scope,droppedAttributesCount:0,droppedEventsCount:0,droppedLinksCount:0}}spanContext(){return this.span.spanContext}get spanId(){return this.span.spanContext.spanId}get traceId(){return this.span.spanContext.traceId}setAttribute(e,t){return t==null||this.span.ended||e.length===0||(this.span.attributes[e]=t),this}setAttributes(e){for(let[t,n]of Object.entries(e))this.setAttribute(t,n);return this}addEvent(e,t={},n){return this.span.ended||this.span.events.push({name:e,attributes:t,time:n||j.now(),droppedAttributesCount:0}),this}isRecording(){return this.span.ended===!1}end(e,t){e&&this.setAttributes(e),this.span.endTime=t||j.now(this.usePerformance),this.span.ended=!0,this.spanProcessor.onEnd(this)}export(){return this.span}},Be=class{constructor(e,t){this.spanProcessor=t,this.tracing=e}startSpan(e,t={},n=this.tracing.contextManager.active()){let r=this.tracing.getSpan(n)?.spanContext(),i=M.gen(8),a,o=null,s;r?(a=r.traceId,o=r.traceState,s=r.spanId):a=M.gen(16);let c={traceId:a,spanId:i,traceFlags:0,traceState:o};return new ze({resource:{attributes:{...this.tracing.resource?.attributes||{},...t.resource?.attributes||{}}},scope:this.tracing.scope,session:this.tracing.session?.session,context:n,spanContext:c,name:e,kind:0,parentSpanId:s,spanProcessor:this.spanProcessor,startTime:t.startTime,usePerformance:t.usePerformance})}},Ve=Ee(`Rollbar Context Key SPAN`),He=class{constructor(e,t,n){this.api=t,this.options=n,this.window=e,this.window.sessionStorage&&(this.session=new Ie(this,n)),this.createTracer()}configure(e){this.options=e}initSession(){this.session&&this.session.init()}get sessionId(){return this.session?this.session.session.id:null}get resource(){return{attributes:{...this.options.resource||{},"rollbar.environment":this.options.payload?.environment??this.options.environment}}}get scope(){return{name:`rollbar-browser-js`,version:this.options.version}}idGen(e=16){return M.gen(e)}createTracer(){this.contextManager=new Te,this.exporter=new Me(this.api,this.options),this.spanProcessor=new Re(this.exporter,this.options.tracing),this.tracer=new Be(this,this.spanProcessor)}getTracer(){return this.tracer}addSpanTransform(e){this.spanProcessor.addTransform(e)}getSpan(e=this.contextManager.active()){return e.getValue(Ve)}setSpan(e=this.contextManager.active(),t){return e.setValue(Ve,t)}startSpan(e,t={},n=this.contextManager.active()){return this.tracer.startSpan(e,t,n)}with(e,t,n,...r){return this.contextManager.with(e,t,n,...r)}withSpan(e,t,n,r){let i=this.startSpan(e,t);return this.with(this.setSpan(this.contextManager.active(),i),n,r,i)}};function Ue(e,t){return[e,b(e,t)]}function We(e,t){var n=e.length;return n>t*2?e.slice(0,t).concat(e.slice(n-t)):e}function Ge(e,t,n){n=n===void 0?30:n;var r=e.data.body,i;if(r.trace_chain){var a=r.trace_chain;for(let e of a)i=e.frames,i=We(i,n),e.frames=i}else r.trace&&(i=r.trace.frames,i=We(i,n),r.trace.frames=i);return[e,b(e,t)]}function Ke(e,t){return t&&(t.length>e?t.slice(0,e-3).concat(`...`):t)}function F(e,t,n){function r(t,n,a){switch(i(n)){case`string`:return Ke(e,n);case`object`:case`array`:return D(n,r,a);default:return n}}return t=D(t,r),[t,b(t,n)]}function qe(e){return e.exception&&(delete e.exception.description,e.exception.message=Ke(255,e.exception.message)),e.frames=We(e.frames,1),e}function Je(e,t){var n=e.data.body;if(n.trace_chain){var r=n.trace_chain;for(let[e,t]of r.entries())r[e]=qe(t)}else n.trace&&(n.trace=qe(n.trace));return[e,b(e,t)]}function Ye(e,t){return te(e)>t}function Xe(e,t,n){n=n===void 0?512*1024:n;for(var r=[Ue,Ge,F.bind(null,1024),F.bind(null,512),F.bind(null,256),Je],i,a,o;i=r.shift();)if(a=i(e,t),e=a[0],o=a[1],o.error||!Ye(o.value,n))return o;return o}var Ze={truncate:Xe,raw:Ue,truncateFrames:Ge,truncateStrings:F,maybeTruncateValue:Ke};function Qe(e){if(!r(e.context,`string`)){var t=b(e.context);t.error?e.context=`Error: could not serialize 'context'`:e.context=t.value||``,e.context.length>255&&(e.context=e.context.substr(0,255))}return{data:e}}function $e(e,t,n){var r=t.hostname,i=t.protocol,a=t.port,o=t.path,s=t.search,c=e.timeout,l=et(e),u=e.proxy;if(e.endpoint){var d=n.parse(e.endpoint);r=d.hostname,i=d.protocol,a=d.port,o=d.pathname,s=d.search}return{timeout:c,hostname:r,protocol:i,port:a,path:o,search:s,proxy:u,transport:l}}function et(e){var t=typeof window<`u`&&window||typeof self<`u`&&self,n=e.defaultTransport||`xhr`;return t.fetch===void 0&&(n=`xhr`),t.XMLHttpRequest===void 0&&(n=`fetch`),n}function I(e,t){var n=e.protocol||`https:`,r=e.port||(n===`http:`?80:n===`https:`?443:void 0),i=e.hostname,a=e.path,o=e.timeout,s=e.transport;return e.search&&(a+=e.search),e.proxy&&(a=n+`//`+i+a,i=e.proxy.host||e.proxy.hostname,r=e.proxy.port,n=e.proxy.protocol||n),{timeout:o,protocol:n,hostname:i,path:a,port:r,method:t,transport:s}}var tt={hostname:`api.rollbar.com`,path:`/api/1/item/`,search:null,version:`1`,protocol:`https:`,port:443},nt={hostname:`api.rollbar.com`,path:`/api/1/session/`,search:null,version:`1`,protocol:`https:`,port:443},rt=class{constructor(e,t,n,r){this.options=e,this.transport=t,this.url=n,this.truncation=r,this.accessToken=e.accessToken,this.transportOptions=it(e,n),this.OTLPTransportOptions=at(e,n)}_postPromise({accessToken:e,options:t,payload:n,headers:r}){return new Promise((i,a)=>{this.transport.post({accessToken:e,options:t,payload:n,headers:r,callback:(e,t)=>e?a(e):i(t)})})}postItem(e,t){let n=I(this.transportOptions,`POST`),r=Qe(e);setTimeout(()=>{this.transport.post({accessToken:this.accessToken,options:n,payload:r,callback:t})},0)}async postSpans(e,t={}){let n=I(this.OTLPTransportOptions,`POST`);return this._postPromise({accessToken:this.accessToken,options:n,payload:e,headers:t})}buildJsonPayload(e,t){let n=Qe(e),r;return r=this.truncation?this.truncation.truncate(n):b(n),r.error?(t&&t(r.error),null):r.value}postJsonPayload(e,t){let n=I(this.transportOptions,`POST`);this.transport.postJsonPayload(this.accessToken,n,e,t)}configure(e){let t=this.options;return this.options=E(t,e),this.transportOptions=it(this.options,this.url),this.OTLPTransportOptions=at(this.options,this.url),this.options.accessToken!==void 0&&(this.accessToken=this.options.accessToken),this}};function it(e,t){return $e(e,tt,t)}function at(e,t){return e={...e,endpoint:e.tracing?.endpoint},$e(e,nt,t)}var ot=`3.1.0`,st=`api.rollbar.com/api/1/item/`,ct=`debug`,lt=`debug`,ut=`error`,dt=[`pw`,`pass`,`passwd`,`password`,`secret`,`confirm_password`,`confirmPassword`,`password_confirmation`,`passwordConfirmation`,`access_token
+accessToken,e.data.notifier.configured_options=r,n(null,e)}function cn(e,t,n){var r=E(e.notifier.client.notifier.diagnostic,e.diagnostic);if(S(e,`err._isAnonymous`)&&(r.is_anonymous=!0),e._isUncaught&&(r.is_uncaught=e._isUncaught),e.err)try{r.raw_error={message:e.err.message,name:e.err.name,constructor_name:e.err.constructor&&e.err.constructor.name,filename:e.err.fileName,line:e.err.lineNumber,column:e.err.columnNumber,stack:e.err.stack}}catch(e){r.raw_error={failed:String(e)}}e.data.notifier.diagnostic=E(e.data.notifier.diagnostic,r),n(null,e)}var ln={scrubFields:[...dt,`cc-number`,`card number`,`cardnumber`,`cardnum`,`ccnum`,`ccnumber`,`cc num`,`creditcardnumber`,`credit card number`,`newcreditcardnumber`,`new credit card`,`creditcardno`,`credit card no`,`card#`,`card #`,`cc-csc`,`cvc`,`cvc2`,`cvv2`,`ccv2`,`security code`,`card verification`,`name on credit card`,`name on card`,`nameoncard`,`cardholder`,`card holder`,`name des karteninhabers`,`ccname`,`card type`,`cardtype`,`cc type`,`cctype`,`payment type`,`expiration date`,`expirationdate`,`expdate`,`cc-exp`,`ccmonth`,`ccyear`]};function un(e,t,n){if(e){var r;if(typeof t._rollbarOldOnError==`function`)r=t._rollbarOldOnError;else if(e.onerror){for(r=e.onerror;r._rollbarOldOnError;)r=r._rollbarOldOnError;t._rollbarOldOnError=r}t.handleAnonymousErrors();var i=function(){var n=Array.prototype.slice.call(arguments,0);dn(e,t,r,n)};n&&(i._rollbarOldOnError=r),e.onerror=i}}function dn(e,t,n,r){e._rollbarWrappedError&&(r[4]||(r[4]=e._rollbarWrappedError),r[5]||(r[5]=e._rollbarWrappedError._rollbarContext),e._rollbarWrappedError=null);var i=t.handleUncaughtException.apply(t,r);n&&n.apply(e,r),i===`anonymous`&&(t.anonymousErrorsPending+=1)}function fn(e,t,n){if(e){typeof e._rollbarURH==`function`&&e._rollbarURH.belongsToShim&&e.removeEventListener(`unhandledrejection`,e._rollbarURH);var r=function(e){var n,r,i;try{n=e.reason}catch{n=void 0}try{r=e.promise}catch{r="[unhandledrejection] error getting `promise` from event"}try{i=e.detail,!n&&i&&(n=i.reason,r=i.promise)}catch{}n||(n="[unhandledrejection] error getting `reason` from event"),t&&t.handleUnhandledRejection&&t.handleUnhandledRejection(n,r)};r.belongsToShim=n,e._rollbarURH=r,e.addEventListener(`unhandledrejection`,r)}}function pn(e,t){return S(t,`plugins.jquery.ignoreAjaxErrors`)?!S(e,`body.message.extra.isAjax`):!0}var mn={enabled:!1,autoStart:!0,triggerDefaults:{samplingRatio:1,preDuration:300,postDuration:5},triggers:[{type:`occurrence`,level:[`error`,`critical`]}],debug:{logErrors:!0,logEmits:!1},inlineStylesheet:!0,inlineImages:!1,collectFonts:!0,maskInputOptions:{password:!0,email:!1,tel:!1,text:!1,color:!1,date:!1,"datetime-local":!1,month:!1,number:!1,range:!1,search:!1,time:!1,url:!1,week:!1},maskAllInputs:!1,blockClass:`rb-block`,maskTextClass:`rb-mask`,ignoreClass:`rb-ignore`,slimDOMOptions:{script:!0,comment:!0,headFavicon:!0,headWhitespace:!0,headMetaDescKeywords:!0,headMetaSocial:!0,headMetaRobots:!0,headMetaHttpEquiv:!0,headMetaAuthorship:!0,headMetaVerification:!0}};function hn(e,t,n){if(e.err&&B.Stack(e.err).name===`DOMException`){var r=Error();r.name=e.err.name,r.message=e.err.message,r.stack=e.err.stack,r.nested=e.err,e.err=r}n(null,e)}function gn(e,t,n){if(e.data=e.data||{},e.err)try{e.stackInfo=e.err._savedStackTrace||B.parse(e.err,e.skipFrames),t.addErrorContext&&_n(e)}catch(t){P.error(`Error while parsing the error object.`,t);try{e.message=e.err.message||e.err.description||e.message||String(e.err)}catch(t){e.message=String(e.err)||String(t)}delete e.err}n(null,e)}function _n(e){var t=[],n=e.err;for(t.push(n);n.nested||n.cause;)n=n.nested||n.cause,t.push(n);se(e,t)}function vn(e,t,n){!e.message&&!e.stackInfo&&!e.custom&&n(Error(`No message, stack info, or custom data`),null),n(null,e)}function yn(e,t,n){var r=t.payload&&t.payload.environment||t.environment;e.data=E(e.data,{environment:r,level:e.level,endpoint:t.endpoint,platform:`browser`,framework:`browser-js`,language:`javascript`,server:{},uuid:e.uuid,notifier:{name:`rollbar-browser-js`,version:t.version},custom:e.custom}),n(null,e)}function bn(e){return function(t,n,r){var i={};e&&e.location&&(i.url=e.location.href,i.query_string=e.location.search);var a=`$remote_ip`;n.captureIp?n.captureIp!==!0&&(a+=`_anonymize`):a=null,a&&(i.user_ip=a),Object.keys(i).length>0&&C(t,`data.request`,i),r(null,t)}}function xn(e){return function(t,n,r){if(!e)return r(null,t);var i=e.navigator||{},a=e.screen||{};C(t,`data.client`,{runtime_ms:t.timestamp-e._rollbarStartTime,timestamp:Math.round(t.timestamp/1e3),javascript:{browser:i.userAgent,language:i.language,cookie_enabled:i.cookieEnabled,screen:{width:a.width,height:a.height}}}),r(null,t)}}function Sn(e){return function(t,n,r){if(!e||!e.navigator)return r(null,t);for(var i=[],a=e.navigator.plugins||[],o,s=0,c=a.length;s<c;++s)o=a[s],i.push({name:o.name,description:o.description});C(t,`data.client.javascript.plugins`,i),r(null,t)}}function Cn(e,t,n){e.stackInfo?e.stackInfo.traceChain?En(e,t,n):Dn(e,t,n):wn(e,t,n)}function wn(e,t,n){var r=e.message,i=e.custom;r||(r=`Item sent with null or missing arguments.`);var a={body:r};i&&(a.extra=E(i)),C(e,`data.body`,{message:a}),n(null,e)}function Tn(e,t=null){let n=(t||e.stackInfo).stack;return n&&n.length===0&&e._unhandledStackInfo&&e._unhandledStackInfo.stack&&(n=e._unhandledStackInfo.stack),n}function En(e,t,n){for(var r=e.stackInfo.traceChain,i=[],a=r.length,o=0;o<a;o++){var s=On(e,r[o],t);i.push(s)}C(e,`data.body`,{trace_chain:i}),n(null,e)}function Dn(e,t,n){if(Tn(e))C(e,`data.body`,{trace:On(e,e.stackInfo,t)}),n(null,e);else{var r=e.stackInfo,i=B.guessErrorClass(r.message),a=kn(r,i[0],t),o=i[1];e.message=a+`: `+o,wn(e,t,n)}}function On(e,t,n){var r=e&&e.data.description,i=e&&e.custom,a=Tn(e,t),o=B.guessErrorClass(t.message),s={exception:{class:kn(t,o[0],n),message:o[1]}};if(r&&(s.exception.description=r),a){a.length===0&&(s.exception.stack=t.rawStack,s.exception.raw=String(t.rawException));var c,l,u,d,f,p,m,h;for(s.frames=[],m=0;m<a.length;++m)c=a[m],l={filename:c.url?g(c.url):`(unknown)`,lineno:c.line||null,method:!c.func||c.func===`?`?`[anonymous]`:c.func,colno:c.column},n.sendFrameUrl&&(l.url=c.url),!(l.method&&l.method.endsWith&&l.method.endsWith(`_rollbar_wrapped`))&&(u=d=f=null,p=c.context?c.context.length:0,p&&(h=Math.floor(p/2),d=c.context.slice(0,h),u=c.context[h],f=c.context.slice(h)),u&&(l.code=u),(d||f)&&(l.context={},d&&d.length&&(l.context.pre=d),f&&f.length&&(l.context.post=f)),c.args&&(l.args=c.args),s.frames.push(l));s.frames.reverse(),i&&(s.extra=E(i))}return s}function kn(e,t,n){return e.name?e.name:n.guessErrorClass?t:`(unknown)`}function An(e){return function(t,n,r){if(e){var i=n.scrubFields||[],a=n.scrubPaths||[];t.data=e(t.data,i,a)}r(null,t)}}function jn({accessToken:e,url:t,method:n,payload:r,headers:i,callback:a,timeout:o}){var s,l;c(o)&&(s=new AbortController,l=setTimeout(function(){s.abort()},o)),i={"Content-Type":`application/json`,"X-Rollbar-Access-Token":e,signal:s&&s.signal,...i},fetch(t,{method:n,headers:i,body:r}).then(function(e){l&&clearTimeout(l);let n=e.headers,r=t.endsWith(`/api/1/item/`)?{"Rollbar-Replay-Enabled":n.get(`Rollbar-Replay-Enabled`),"Rollbar-Replay-RateLimit-Remaining":n.get(`Rollbar-Replay-RateLimit-Remaining`),"Rollbar-Replay-RateLimit-Reset":n.get(`Rollbar-Replay-RateLimit-Reset`)}:{};a(null,e.json(),r)}).catch(function(e){P.error(e.message),a(e)})}function Mn({accessToken:e,url:t,method:n,payload:r,headers:i,callback:a,requestFactory:o,timeout:s}){var l=o?o():Nn();if(!l)return a(Error(`No way to send a request`));try{try{var u=function(){try{if(u&&l.readyState===4){u=void 0;var e=ne(l.responseText);if(Pn(l)){let n=t.endsWith(`/api/1/item/`)?{"Rollbar-Replay-Enabled":l.getResponseHeader(`Rollbar-Replay-Enabled`),"Rollbar-Replay-RateLimit-Remaining":l.getResponseHeader(`Rollbar-Replay-RateLimit-Remaining`),"Rollbar-Replay-RateLimit-Reset":l.getResponseHeader(`Rollbar-Replay-RateLimit-Reset`)}:{};a(e.error,e.value,n);return}else if(Fn(l)){if(l.status===403){var n=e.value&&e.value.message;P.error(n)}a(Error(String(l.status)))}else a(In(`XHR response had no status code (likely connection failure)`))}}catch(e){a(e&&e.stack?e:Error(e))}};if(l.open(n,t,!0),l.setRequestHeader){l.setRequestHeader(`Content-Type`,`application/json`),l.setRequestHeader(`X-Rollbar-Access-Token`,e);for(let[e,t]of Object.entries(i??{}))l.setRequestHeader(e,t)}c(s)&&(l.timeout=s),l.onreadystatechange=u,l.send(r)}catch{if(typeof XDomainRequest<`u`){if(!window||!window.location)return a(Error(`No window available during request, unknown environment`));window.location.href.substring(0,5)===`http:`&&t.substring(0,5)===`https`&&(t=`http`+t.substring(5));var d=new XDomainRequest;d.onprogress=()=>{},d.ontimeout=function(){a(In(`Request timed out`,`ETIMEDOUT`))},d.onerror=function(){a(Error(`Error during request`))},d.onload=function(){var e=ne(d.responseText);a(e.error,e.value)},d.open(n,t,!0),d.send(r)}else a(Error(`Cannot find a method to transport a request`))}}catch(e){a(e)}}function Nn(){var e=[function(){return new XMLHttpRequest},function(){return new ActiveXObject(`Msxml2.XMLHTTP`)},function(){return new ActiveXObject(`Msxml3.XMLHTTP`)},function(){return new ActiveXObject(`Microsoft.XMLHTTP`)}],t,n,r=e.length;for(n=0;n<r;n++)try{t=e[n]();break}catch{}return t}function Pn(e){return e&&e.status&&e.status===200}function Fn(e){return e&&r(e.status,`number`)&&e.status>=400&&e.status<600}function In(e,t){var n=Error(e);return n.code=t||`ENOTFOUND`,n}function U(e){this.truncation=e}U.prototype.get=function(e,t,n,r,i){(!r||!a(r))&&(r=()=>{}),v(e,t,n);var o=`GET`,s=y(t);this._makeZoneRequest({accessToken:e,url:s,method:o,callback:r,requestFactory:i,timeout:t.timeout,transport:t.transport})},U.prototype.post=function({accessToken:e,options:t,payload:n,headers:r,callback:i,requestFactory:o}){if((!i||!a(i))&&(i=()=>{}),!n)return i(Error(`Cannot send empty request`));var s=this.truncation&&n.body?this.truncation.truncate(n):b(n);if(s.error)return i(s.error);var c=`POST`,l=y(t);this._makeZoneRequest({accessToken:e,url:l,method:c,payload:s.value,headers:r,callback:i,requestFactory:o,timeout:t.timeout,transport:t.transport})},U.prototype.postJsonPayload=function(e,t,n,r,i){(!r||!a(r))&&(r=()=>{});var o=`POST`,s=y(t);this._makeZoneRequest({accessToken:e,url:s,method:o,payload:n,callback:r,requestFactory:i,timeout:t.timeout,transport:t.transport})},U.prototype._makeZoneRequest=function(){var e=typeof window<`u`&&window||typeof self<`u`&&self,t=e&&e.Zone&&e.Zone.root,n=Array.prototype.slice.call(arguments);t?t.run(()=>{this._makeRequest.apply(void 0,n)}):this._makeRequest.apply(void 0,n)},U.prototype._makeRequest=function(e){let{payload:t,callback:n,transport:r}=e;if(typeof RollbarProxy<`u`)return Ln(t,n);r===`fetch`?jn(e):Mn(e)};function Ln(e,t){new RollbarProxy().sendJsonPayload(e,function(e){},function(e){t(Error(e))})}var Rn=e({parse:()=>W});function W(e){var t={protocol:null,auth:null,host:null,path:null,hash:null,href:e,hostname:null,port:null,pathname:null,search:null,query:null},n=e.indexOf(`//`),r;if(n===-1?r=0:(t.protocol=e.substring(0,n),r=n+2),n=e.indexOf(`@`,r),n!==-1&&(t.auth=e.substring(r,n),r=n+1),n=e.indexOf(`/`,r),n===-1){if(n=e.indexOf(`?`,r),n===-1)return n=e.indexOf(`#`,r),n===-1?t.host=e.substring(r):(t.host=e.substring(r,n),t.hash=e.substring(n)),t.hostname=t.host.split(`:`)[0],t.port=t.host.split(`:`)[1],t.port&&(t.port=parseInt(t.port,10)),t;t.host=e.substring(r,n),t.hostname=t.host.split(`:`)[0],t.port=t.host.split(`:`)[1],t.port&&(t.port=parseInt(t.port,10)),r=n}else t.host=e.substring(r,n),t.hostname=t.host.split(`:`)[0],t.port=t.host.split(`:`)[1],t.port&&(t.port=parseInt(t.port,10)),r=n;if(n=e.indexOf(`#`,r),n===-1?t.path=e.substring(r):(t.path=e.substring(r,n),t.hash=e.substring(n)),t.path){var i=t.path.split(`?`);t.pathname=i[0],t.query=i[1],t.search=t.query?`?`+t.query:null}return t}var G,K=null,q=class e{constructor(e,t){P.init({logLevel:e.logLevel||`error`}),this.options=T(Un,e,null,P),this.options._configuredOptions=e,this.components=this.components||{};let n=this.components.telemeter,r=this.components.instrumenter;this.wrapGlobals=this.components.wrapGlobals,this.scrub=this.components.scrub;let i=this.components.truncation,a=this.components.tracing,o=this.components.replay,s=new U(i),c=new rt(this.options,s,Rn,i);if(a&&(this.tracing=new a(Hn(),c,this.options),this.tracing.initSession()),n&&(this.telemeter=new n(this.options,this.tracing)),o&&d()){let e=this.options.replay;this.replay=new o({tracing:this.tracing,telemeter:this.telemeter,options:e}),e.enabled&&e.autoStart&&this.replay.recorder.start()}this.client=t||new H(this.options,c,P,this.telemeter,this.tracing,this.replay,`browser`);var l=Hn(),u=typeof document<`u`&&document;this.isChrome=l.chrome&&l.chrome.runtime,this.anonymousErrorsPending=0,zn(this.client.notifier,this,l),Bn(this.client.queue),this.setupUnhandledCapture(),r&&(this.instrumenter=new r(this.options,this.client.telemeter,this,l,u),this.instrumenter.instrument()),this.setSessionAttributesFromOptions(e),this.rollbar=this}static init(t,n){return K?K.global(t).configure(t):(K=new e(t,n),K)}static setComponents(t){e.prototype.components=t}global(e){return this.client.global(e),this}configure(e,t){e.logLevel&&P.init({logLevel:e.logLevel}),this.setSessionAttributesFromOptions(e);var n=this.options,r={};return t&&(r={payload:t}),this.options=T(n,e,r,P),this.options._configuredOptions=T(n._configuredOptions,e,r),this.tracing?.configure(this.options),this.replay?.configure(this.options.replay),this.client.configure(this.options,t),this.instrumenter?.configure(this.options),this.setupUnhandledCapture(),this}lastError(){return this.client.lastError}log(){var e=this._createItem(arguments),t=e.uuid;return this.client.log(e),{uuid:t}}debug(){var e=this._createItem(arguments),t=e.uuid;return this.client.debug(e),{uuid:t}}info(){var e=this._createItem(arguments),t=e.uuid;return this.client.info(e),{uuid:t}}warn(){var e=this._createItem(arguments),t=e.uuid;return this.client.warn(e),{uuid:t}}warning(){var e=this._createItem(arguments),t=e.uuid;return this.client.warning(e),{uuid:t}}error(){var e=this._createItem(arguments),t=e.uuid;return this.client.error(e),{uuid:t}}critical(){var e=this._createItem(arguments),t=e.uuid;return this.client.critical(e),{uuid:t}}buildJsonPayload(e){return this.client.buildJsonPayload(e)}sendJsonPayload(e){return this.client.sendJsonPayload(e)}triggerDirectReplay(e){return this.triggerReplay({type:`direct`,...e})}triggerReplay(e){return this.replay?this.replay.triggerReplay(e):null}setupUnhandledCapture(){var e=Hn();this.unhandledExceptionsInitialized||(this.options.captureUncaught||this.options.handleUncaughtExceptions)&&(un(e,this),this.wrapGlobals&&this.options.wrapGlobalEventHandlers&&this.wrapGlobals(e,this),this.unhandledExceptionsInitialized=!0),this.unhandledRejectionsInitialized||(this.options.captureUnhandledRejections||this.options.handleUnhandledRejections)&&(fn(e,this),this.unhandledRejectionsInitialized=!0)}handleUncaughtException(e,t,n,r,i,a){if(!(!this.options.captureUncaught&&!this.options.handleUncaughtExceptions)){if(this.options.inspectAnonymousErrors&&this.isChrome&&i===null&&t===``)return`anonymous`;var o,s=re(e,t,n,r,i,`onerror`,`uncaught exception`,B);l(i)?(o=this._createItem([e,i,a]),o._unhandledStackInfo=s):l(t)?(o=this._createItem([e,t,a]),o._unhandledStackInfo=s):(o=this._createItem([e,a]),o.stackInfo=s),o.level=this.options.uncaughtErrorLevel,o._isUncaught=!0,this.client.log(o)}}handleAnonymousErrors(){if(!this.options.inspectAnonymousErrors||!this.isChrome)return;let e=(e,t)=>{if(this.options.inspectAnonymousErrors&&this.anonymousErrorsPending){if(--this.anonymousErrorsPending,!e)return;e._isAnonymous=!0,this.handleUncaughtException(e.message,null,null,null,e)}return e.stack};try{Error.prepareStackTrace=e}catch(e){this.options.inspectAnonymousErrors=!1,this.error(`anonymous error handler failed`,e)}}handleUnhandledRejection(e,t){if(!(!this.options.captureUnhandledRejections&&!this.options.handleUnhandledRejections)){var n=`unhandled rejection was null or undefined!`;if(e)if(e.message)n=e.message;else{var r=b(e);r.value&&(n=r.value)}var i=e&&e._rollbarContext||t&&t._rollbarContext,a;l(e)?a=this._createItem([n,e,i]):(a=this._createItem([n,e,i]),a.stackInfo=re(n,``,0,0,null,`unhandledrejection`,``,B)),a.level=this.options.uncaughtErrorLevel,a._isUncaught=!0,a._originalArgs=a._originalArgs||[],a._originalArgs.push(t),this.client.log(a)}}wrap(e,t,n){try{var i=a(t)?t:function(){return t||{}};if(!a(e)||e._isWrap)return e;if(!e._rollbar_wrapped)for(var o in e._rollbar_wrapped=function(){n&&a(n)&&n.apply(this,arguments);try{return e.apply(this,arguments)}catch(n){var t=n;throw t&&window._rollbarWrappedError!==t&&(r(t,`string`)&&(t=new String(t)),t._rollbarContext=i()||{},t._rollbarContext._wrappedSource=e.toString(),window._rollbarWrappedError=t),t}},e._rollbar_wrapped._isWrap=!0,e)s(e,o)&&o!==`_rollbar_wrapped`&&(e._rollbar_wrapped[o]=e[o]);return e._rollbar_wrapped}catch{return e}}captureEvent(){var e=de(arguments);return this.client.captureEvent(e.type,e.metadata,e.level)}setSessionUser(e){this.tracing?.session&&this.tracing.session.setUser(e)}setSessionAttributes(e){this.tracing?.session&&(e={...e},this.tracing.session.setAttributes(e))}setSessionAttributesFromOptions(e){let t=e.person||e.payload?.person;t&&this.setSessionUser(t);let n=e.client?.javascript?.code_version||e.codeVersion||e.code_version||e.payload?.client?.javascript?.code_version||e.payload?.code_version||e.payload?.codeVersion;this.setSessionAttributes({"rollbar.codeVersion":n,"rollbar.notifier.name":`rollbar-browser-js`,"rollbar.notifier.version":e.version})}captureDomContentLoaded(e,t){return t||(t=new Date),this.client.captureDomContentLoaded(t)}captureLoad(e,t){return t||(t=new Date),this.client.captureLoad(t)}loadFull(){P.info(`Unexpected Rollbar.loadFull() called on a Notifier instance. This can happen when Rollbar is loaded multiple times.`)}_createItem(e){return ae(e,P,this)}static callInstance(e,t){if(!K){let e=`Rollbar is not initialized`;P.error(e);let n=Vn(t);n&&n(Error(e));return}return K[e].apply(K,t)}};G=q,t(q,`global`,(...e)=>G.callInstance(`global`,e)),t(q,`configure`,(...e)=>G.callInstance(`configure`,e)),t(q,`lastError`,(...e)=>G.callInstance(`lastError`,e)),t(q,`log`,(...e)=>G.callInstance(`log`,e)),t(q,`debug`,(...e)=>G.callInstance(`debug`,e)),t(q,`info`,(...e)=>G.callInstance(`info`,e)),t(q,`warn`,(...e)=>G.callInstance(`warn`,e)),t(q,`warning`,(...e)=>G.callInstance(`warning`,e)),t(q,`error`,(...e)=>G.callInstance(`error`,e)),t(q,`critical`,(...e)=>G.callInstance(`critical`,e)),t(q,`buildJsonPayload`,(...e)=>G.callInstance(`buildJsonPayload`,e)),t(q,`sendJsonPayload`,(...e)=>G.callInstance(`sendJsonPayload`,e)),t(q,`wrap`,(...e)=>G.callInstance(`wrap`,e)),t(q,`captureEvent`,(...e)=>G.callInstance(`captureEvent`,e));function zn(e,t,n){e.addTransform(hn).addTransform(gn).addTransform(vn).addTransform(yn).addTransform(bn(n)).addTransform(xn(n)).addTransform(Sn(n)).addTransform(Cn).addTransform(nn).addTransform(tn).addTransform(an).addTransform(An(t.scrub)).addTransform(en).addTransform(rn(P)).addTransform(sn).addTransform(cn).addTransform($t)}function Bn(e){e.addPredicate(Ft).addPredicate(pn).addPredicate(It(P)).addPredicate(Lt(P)).addPredicate(Rt(P)).addPredicate(Vt(P))}function Vn(e){for(var t=0,n=e.length;t<n;++t)if(a(e[t]))return e[t]}function Hn(){return typeof window<`u`&&window||typeof self<`u`&&self}var Un={environment:`unknown`,version:L.version,scrubFields:ln.scrubFields,logLevel:L.logLevel,reportLevel:L.reportLevel,uncaughtErrorLevel:L.uncaughtErrorLevel,endpoint:L.endpoint,verbose:!1,enabled:!0,transmit:!0,sendConfig:!1,includeItemsInTelemetry:!0,captureIp:!0,inspectAnonymousErrors:!0,ignoreDuplicateErrors:!0,wrapGlobalEventHandlers:!1,replay:mn,tracing:Qt};function Wn(e){return typeof Headers>`u`?new J(e):new Headers(e)}function Gn(e){return typeof e!=`string`&&(e=String(e)),e.toLowerCase()}function Kn(e){return typeof e!=`string`&&(e=String(e)),e}function qn(e){return{next:function(){var t=e.shift();return{done:t===void 0,value:t}}}}function J(e){this.map={},e instanceof J?e.forEach(function(e,t){this.append(t,e)},this):Array.isArray(e)?e.forEach(function(e){this.append(e[0],e[1])},this):e&&Object.getOwnPropertyNames(e).forEach(function(t){this.append(t,e[t])},this)}J.prototype.append=function(e,t){e=Gn(e),t=Kn(t);var n=this.map[e];this.map[e]=n?n+`, `+t:t},J.prototype.get=function(e){return e=Gn(e),this.has(e)?this.map[e]:null},J.prototype.has=function(e){return s(this.map,Gn(e))},J.prototype.forEach=function(e,t){for(var n in this.map)s(this.map,n)&&e.call(t,this.map[n],n,this)},J.prototype.entries=function(){var e=[];return this.forEach(function(t,n){e.push([n,t])}),qn(e)};function Y(e,t,n,r,i){var a=e[t];e[t]=n(a),r&&r[i].push([e,t,a])}function Jn(e){for(var t=5,n=[],r,i=0;e&&i<t&&(r=Zn(e),!(!r||r.tagName===`html`));i++)n.unshift(r),e=e.parentNode;return n}function Yn(e){for(var t=80,n=` > `,r=n.length,i=[],a=0,o,s,c=e.length-1;c>=0;c--){if(o=Xn(e[c]),s=a+i.length*r+o.length,c<e.length-1&&s>=t+3){i.unshift(`...`);break}i.unshift(o),a+=o.length}return i.join(n)}function X(e){return Yn(Jn(e))}function Xn(e){if(!e||!e.tagName)return``;var t=[e.tagName];e.id&&t.push(`#`+e.id),e.classes&&t.push(`.`+e.classes.join(`.`));for(let n of e.attributes)t.push(`[`+n.key+`="`+n.value+`"]`);return t.join(``)}function Zn(e){if(!e||!e.tagName)return null;var t={},n;t.tagName=e.tagName.toLowerCase(),e.id&&(t.id=e.id),n=e.className,n&&typeof n==`string`&&(t.classes=n.split(/\s+/));var r=[`type`,`name`,`title`,`alt`];t.attributes=[];for(let n of r){let r=e.getAttribute(n);r&&t.attributes.push({key:n,value:r})}return t}function Qn(e,t,n){try{for(let n of t)if(typeof n==`string`){if(e.classList.contains(n))return!0}else for(let t of e.classList)if(n.test(t))return!0;for(let t of n)if(e.matches(t))return!0}catch{}return!1}var Z={network:!0,networkResponseHeaders:!1,networkResponseBody:!1,networkRequestHeaders:!1,networkRequestBody:!1,networkErrorOnHttp5xx:!1,networkErrorOnHttp4xx:!1,networkErrorOnHttp0:!1,log:!0,dom:!0,navigation:!0,connectivity:!0,contentSecurityPolicy:!0,errorOnContentSecurityPolicy:!1};function $n(e,t){let n;for(;e[t].length;)n=e[t].shift(),n[0][n[1]]=n[2]}function er(e){if(!e||!e.attributes)return null;let t=e.attributes;for(let e of t)if(e.key===`name`)return e.value;return null}function tr(e){let t=[];for(let n of e)t.push(new RegExp(n,`i`));return function(e){let n=er(e);if(!n)return!1;for(let e of t)if(e.test(n))return!0;return!1}}var nr=class{constructor(e,n,i,a,o){t(this,`deinstrumentConnectivity`,function(){this.removeListeners(`connectivity`)}),this.options=e;let s=e.autoInstrument;e.enabled===!1||s===!1?this.autoInstrument={}:(r(s,`object`)||(s=Z),this.autoInstrument=E(Z,s)),this.configureScrubbing(),this.telemeter=n,this.rollbar=i,this.diagnostic=i.client.notifier.diagnostic,this._window=a||{},this._document=o||{},this.replacements={network:[],log:[],navigation:[],connectivity:[]},this.eventRemovers={dom:[],connectivity:[],contentsecuritypolicy:[]},this._location=this._window.location,this._lastHref=this._location&&this._location.href}configureScrubbing(){let e=this.options;this.scrubTelemetryInputs=!!(e.scrubTelemetryInputs??e.replay?.maskAllInputs),this.telemetryScrubber=e.telemetryScrubber,this.defaultValueScrubber=tr(e.scrubFields),this.maskInputFn=e.replay?.maskInputFn,this.maskInputOptions=e.replay?.maskInputOptions||{},this.scrubClasses=[e.replay?.blockClass,e.replay?.ignoreClass,e.replay?.maskTextClass].filter(Boolean),this.scrubSelectors=[e.replay?.blockSelector,e.replay?.ignoreSelector,e.replay?.maskTextSelector].filter(Boolean)}configure(e){this.options=E(this.options,e);let t=e.autoInstrument,n=E(this.autoInstrument);e.enabled===!1||t===!1?this.autoInstrument={}:(r(t,`object`)||(t=Z),this.autoInstrument=E(Z,t)),this.configureScrubbing(),this.instrument(n)}instrument(e){this.autoInstrument.network&&!(e&&e.network)?this.instrumentNetwork():!this.autoInstrument.network&&e&&e.network&&this.deinstrumentNetwork(),this.autoInstrument.log&&!(e&&e.log)?this.instrumentConsole():!this.autoInstrument.log&&e&&e.log&&this.deinstrumentConsole(),this.autoInstrument.dom&&!(e&&e.dom)?this.instrumentDom():!this.autoInstrument.dom&&e&&e.dom&&this.deinstrumentDom(),this.autoInstrument.navigation&&!(e&&e.navigation)?this.instrumentNavigation():!this.autoInstrument.navigation&&e&&e.navigation&&this.deinstrumentNavigation(),this.autoInstrument.connectivity&&!(e&&e.connectivity)?this.instrumentConnectivity():!this.autoInstrument.connectivity&&e&&e.connectivity&&this.deinstrumentConnectivity(),this.autoInstrument.contentSecurityPolicy&&!(e&&e.contentSecurityPolicy)?this.instrumentContentSecurityPolicy():!this.autoInstrument.contentSecurityPolicy&&e&&e.contentSecurityPolicy&&this.deinstrumentContentSecurityPolicy()}deinstrumentNetwork(){$n(this.replacements,`network`)}instrumentNetwork(){let e=this;function t(t,n){t in n&&a(n[t])&&Y(n,t,function(t){return e.rollbar.wrap(t)})}if(`XMLHttpRequest`in this._window){let n=this._window.XMLHttpRequest.prototype;Y(n,`open`,function(e){return function(t,n){let i=rr(n);return(r(n,`string`)||i)&&(n=i?n.toString():n,this.__rollbar_xhr?(this.__rollbar_xhr.method=t,this.__rollbar_xhr.url=n,this.__rollbar_xhr.status_code=null,this.__rollbar_xhr.start_time_ms=w(),this.__rollbar_xhr.end_time_ms=null):this.__rollbar_xhr={method:t,url:n,status_code:null,start_time_ms:w(),end_time_ms:null}),e.apply(this,arguments)}},this.replacements,`network`),Y(n,`setRequestHeader`,function(t){return function(n,i){return this.__rollbar_xhr||(this.__rollbar_xhr={}),r(n,`string`)&&r(i,`string`)&&(e.autoInstrument.networkRequestHeaders&&(this.__rollbar_xhr.request_headers||(this.__rollbar_xhr.request_headers={}),this.__rollbar_xhr.request_headers[n]=i),n.toLowerCase()===`content-type`&&(this.__rollbar_xhr.request_content_type=i)),t.apply(this,arguments)}},this.replacements,`network`),Y(n,`send`,function(n){return function(r){let i=this,o=e.rollbar?.tracing;if(he(e.options,o,i.__rollbar_xhr?.url))try{i.setRequestHeader(`baggage`,`rollbar.session.id=${o.sessionId}`)}catch{}function s(){if(i.__rollbar_xhr&&(i.__rollbar_xhr.status_code===null&&(i.__rollbar_xhr.status_code=0,e.autoInstrument.networkRequestBody&&(i.__rollbar_xhr.request=r),i.__rollbar_event=e.captureNetwork(i.__rollbar_xhr,`xhr`,void 0)),i.readyState<2&&(i.__rollbar_xhr.start_time_ms=w()),i.readyState>3)){let t=w();i.__rollbar_xhr.end_time_ms=t;let n=null;if(i.__rollbar_xhr.response_content_type=i.getResponseHeader(`Content-Type`),e.autoInstrument.networkResponseHeaders){let t=e.autoInstrument.networkResponseHeaders;n={};try{let e;if(t===!0){let t=i.getAllResponseHeaders();if(t){let r=t.trim().split(/[\r\n]+/),i,a;for(let t of r)i=t.split(`: `),e=i.shift(),a=i.join(`: `),n[e]=a}}else for(let e of t)n[e]=i.getResponseHeader(e)}catch{}}let r=null;if(e.autoInstrument.networkResponseBody)try{r=i.responseText}catch{}let a=null;(r||n)&&(a={},r&&(e.isJsonContentType(i.__rollbar_xhr.response_content_type)?a.body=e.scrubJson(r):a.body=r),n&&(a.headers=n)),a&&(i.__rollbar_xhr.response=a);try{let n=i.status;n=n===1223?204:n,i.__rollbar_xhr.status_code=n,e.addOtelNetworkResponse(i.__rollbar_event,t,n),i.__rollbar_event.level=e.telemeter.levelFromStatus(n),e.errorOnHttpStatus(i.__rollbar_xhr)}catch{}}}return t(`onload`,i),t(`onerror`,i),t(`onprogress`,i),`onreadystatechange`in i&&a(i.onreadystatechange)?Y(i,`onreadystatechange`,function(t){return e.rollbar.wrap(t,void 0,s)}):i.onreadystatechange=s,i.__rollbar_xhr&&e.trackHttpErrors()&&(i.__rollbar_xhr.stack=Error().stack),n.apply(this,arguments)}},this.replacements,`network`)}`fetch`in this._window&&Y(this._window,`fetch`,function(t){return function(n,i){let a=[...arguments],o=a[0],s=`GET`,c,l=rr(o);r(o,`string`)||l?c=l?o.toString():o:o&&(c=o.url,o.method&&(s=o.method)),a[1]&&a[1].method&&(s=a[1].method);let u=e.rollbar?.tracing;he(e.options,u,c)&&ge(a,{baggage:`rollbar.session.id=${u.sessionId}`});let d={method:s,url:c,status_code:null,start_time_ms:w(),end_time_ms:null};if(a[1]&&a[1].headers){let t=Wn(a[1].headers);d.request_content_type=t.get(`Content-Type`),e.autoInstrument.networkRequestHeaders&&(d.request_headers=e.fetchHeaders(t,e.autoInstrument.networkRequestHeaders))}e.autoInstrument.networkRequestBody&&(a[1]&&a[1].body?d.request=a[1].body:a[0]&&!r(a[0],`string`)&&a[0].body&&(d.request=a[0].body));let f=e.captureNetwork(d,`fetch`,void 0);return e.trackHttpErrors()&&(d.stack=Error().stack),t.apply(this,a).then(function(t){let n=w();d.end_time_ms=n,d.status_code=t.status,e.addOtelNetworkResponse(f,n,t.status),d.response_content_type=t.headers.get(`Content-Type`);let r=null;e.autoInstrument.networkResponseHeaders&&(r=e.fetchHeaders(t.headers,e.autoInstrument.networkResponseHeaders));let i=null;return e.autoInstrument.networkResponseBody&&typeof t.text==`function`&&(i=t.clone().text()),(r||i)&&(d.response={},i&&(typeof i.then==`function`?i.then(function(t){t&&e.isJsonContentType(d.response_content_type)?d.response.body=e.scrubJson(t):d.response.body=t}):d.response.body=i),r&&(d.response.headers=r)),e.errorOnHttpStatus(d),t})}},this.replacements,`network`)}captureNetwork(e,t,n){return e.request&&this.isJsonContentType(e.request_content_type)&&(e.request=this.scrubJson(e.request)),this.telemeter.captureNetwork(e,t,n)}isJsonContentType(e){return!!(e&&r(e,`string`)&&e.toLowerCase().includes(`json`))}addOtelNetworkResponse(e,t,n){e.otelAttributes&&(e.otelAttributes[`response.timeUnixNano`]=(t*1e6).toString(),e.otelAttributes.statusCode=n)}scrubJson(e){return JSON.stringify(ve(JSON.parse(e),this.options.scrubFields))}fetchHeaders(e,t){let n={};try{if(t===!0){if(typeof e.entries==`function`){let t=e.entries(),r=t.next();for(;!r.done;)n[r.value[0]]=r.value[1],r=t.next()}}else for(let r of t)n[r]=e.get(r)}catch{}return n}trackHttpErrors(){return this.autoInstrument.networkErrorOnHttp5xx||this.autoInstrument.networkErrorOnHttp4xx||this.autoInstrument.networkErrorOnHttp0}errorOnHttpStatus(e){let t=e.status_code;if(t>=500&&this.autoInstrument.networkErrorOnHttp5xx||t>=400&&this.autoInstrument.networkErrorOnHttp4xx||t===0&&this.autoInstrument.networkErrorOnHttp0){let n=Error(`HTTP request failed with Status `+t);n.stack=e.stack,this.rollbar.error(n,{skipFrames:1})}}deinstrumentConsole(){let e;for(;this.replacements.log.length;)e=this.replacements.log.shift(),this._window.console[e[0]]=e[1]}instrumentConsole(){if(!this._window?.console?.log)return;let e=this,t=this._window.console;function n(n){let r=t[n],i=t,a=n===`warn`?`warning`:n;t[n]=function(){let t=Array.prototype.slice.call(arguments),n=pe(t);e.telemeter.captureLog(n,a,null,w()),r&&Function.prototype.apply.call(r,i,t)},e.replacements.log.push([n,r])}let r=[`debug`,`info`,`warn`,`error`,`log`];try{for(let e of r)n(e)}catch(e){this.diagnostic.instrumentConsole={error:e.message}}}deinstrumentDom(){this.removeListeners(`dom`)}instrumentDom(){this.addListener(`dom`,this._window,[`click`,`dblclick`,`contextmenu`],e=>this.handleEvent(`click`,e)),this.addListener(`dom`,this._window,[`dragstart`,`dragend`,`dragenter`,`dragleave`,`drop`],e=>this.handleEvent(`dragdrop`,e)),this.addListener(`dom`,this._window,[`blur`,`focus`],e=>this.handleEvent(`focus`,e)),this.addListener(`dom`,this._window,[`submit`,`invalid`],e=>this.handleEvent(`form`,e)),this.addListener(`dom`,this._window,[`input`,`change`],e=>this.handleEvent(`input`,e)),this.addListener(`dom`,this._window,[`resize`],e=>this.handleEvent(`resize`,e)),this.addListener(`dom`,this._document,[`DOMContentLoaded`],e=>this.handleEvent(`contentLoaded`,e))}handleEvent(e,t){try{return{click:this.handleClick,dragdrop:this.handleDrag,focus:this.handleFocus,form:this.handleForm,input:this.handleInput,resize:this.handleResize,contentLoaded:this.handleContentLoaded}[e].call(this,t)}catch(n){P.log(`${e} handler error`,t,n,n.stack)}}handleContentLoaded(e){this.rollbar.triggerReplay({type:`navigation`,path:new URL(this._location.href).pathname})}handleClick(e){let t=e.target?.tagName.toLowerCase();[`input`,`select`,`textarea`].includes(t)||this.telemeter.captureClick({type:e.type,isSynthetic:!e.isTrusted,element:X(e.target),timestamp:w()})}handleFocus(e){let t=e.type,n=e.target?.window?`window`:X(e.target);this.telemeter.captureFocus({type:t,isSynthetic:!e.isTrusted,element:n,timestamp:w()})}handleForm(e){}handleResize(e){let t=window.screen.width/window.innerWidth;this.telemeter.captureResize({type:e.type,isSynthetic:!e.isTrusted,width:window.innerWidth,height:window.innerHeight,textZoomRatio:t,timestamp:w()})}handleDrag(e){let t=e.type,n,r,i,a;if(t===`drop`){n=[],r=[];let t=[...e.dataTransfer.files,...e.dataTransfer.items];for(let e of t)e.kind&&e.type&&(n.push(e.kind),r.push(e.type))}[`drop`,`dragstart`].includes(t)&&(i=e.dataTransfer?.dropEffect,a=e.dataTransfer?.effectAllowed),this.telemeter.captureDragDrop({type:t,isSynthetic:!e.isTrusted,element:X(e.target),dropEffect:i,effectAllowed:a,kinds:JSON.stringify(n),mediaTypes:JSON.stringify(r),timestamp:w()})}scrubInputValue(e,t,n,r){let i=`******`;if(r===`password`||this.scrubTelemetryInputs)return i;{let e=Zn(t);if(this.telemetryScrubber){if(this.telemetryScrubber(e))return i}else if(this.defaultValueScrubber(e))return i}return Qn(t,this.scrubClasses,this.scrubSelectors)?i:this.maskInputOptions[n.toLowerCase()]||this.maskInputOptions[r]?this.maskInputFn?this.maskInputFn(e,t):i:e}handleInput(e){let t=e.type,n=e.target?.tagName.toLowerCase(),r=e.target?.value,i=e.target?.attributes?.type?.value||e.target?.type;switch(r!==void 0&&(r=this.scrubInputValue(r,e.target,n,i)),t){case`input`:if([`radio`,`checkbox`].includes(i))return;[`select`,`textarea`].includes(n)&&(i=n);break;case`change`:if(![`radio`,`checkbox`].includes(i))return;i===`checkbox`&&(r=e.target?.checked);break}this.telemeter.captureInput({type:i,isSynthetic:!e.isTrusted,element:X(e.target),value:r,timestamp:w()})}deinstrumentNavigation(){let e=this._window.chrome;!(e&&e.app&&e.app.runtime)&&this._window.history&&this._window.history.pushState&&$n(this.replacements,`navigation`)}instrumentNavigation(){let e=this._window.chrome;if(!(!(e&&e.app&&e.app.runtime)&&this._window.history&&this._window.history.pushState))return;let t=this;Y(this._window,`onpopstate`,function(e){return function(){let n=t._location.href;t.handleUrlChange(t._lastHref,n),e&&e.apply(this,arguments)}},this.replacements,`navigation`),Y(this._window.history,`pushState`,function(e){return function(){let n=arguments.length>2?arguments[2]:void 0;return n&&t.handleUrlChange(t._lastHref,String(n)),e.apply(this,arguments)}},this.replacements,`navigation`)}handleUrlChange(e,t){let n=W(this._location.href),r=W(t),i=W(e);this._lastHref=t,n.protocol===r.protocol&&n.host===r.host&&(t=r.path+(r.hash||``)),n.protocol===i.protocol&&n.host===i.host&&(e=i.path+(i.hash||``)),this.telemeter.captureNavigation(e,t,null,w()),this.rollbar.triggerReplay({type:`navigation`,path:t})}instrumentConnectivity(){let e=this;this.addListener(`connectivity`,this._window,[`online`,`offline`],t=>e.handleConnectivity(t))}handleConnectivity(e){let t=e.type;this.telemeter.captureConnectivityChange({type:t,isSynthetic:!e.isTrusted,timestamp:w()})}handleCspEvent(e){let t=`Security Policy Violation: blockedURI: `+e.blockedURI+`, violatedDirective: `+e.violatedDirective+`, effectiveDirective: `+e.effectiveDirective+`, `;e.sourceFile&&(t+=`location: `+e.sourceFile+`, line: `+e.lineNumber+`, col: `+e.columnNumber+`, `),t+=`originalPolicy: `+e.originalPolicy,this.telemeter.captureLog(t,`error`,null,w()),this.handleCspError(t)}handleCspError(e){this.autoInstrument.errorOnContentSecurityPolicy&&this.rollbar.error(e)}deinstrumentContentSecurityPolicy(){this.removeListeners(`contentsecuritypolicy`)}instrumentContentSecurityPolicy(){if(!(`addEventListener`in this._document))return;let e=this.handleCspEvent.bind(this);this.addListener(`contentsecuritypolicy`,this._document,[`securitypolicyviolation`],e)}addListener(e,t,n,r){if(t.addEventListener)for(let i of n){let n={capture:!0,passive:!0};t.addEventListener(i,r,n,!0),this.eventRemovers[e].push(function(){t.removeEventListener(i,r,n)})}}removeListeners(e){let t;for(;this.eventRemovers[e].length;)t=this.eventRemovers[e].shift(),t()}};function rr(e){return typeof URL<`u`&&e instanceof URL}function ir(e,t,n){if(e){var r=`EventTarget,Window,Node,ApplicationCache,AudioTrackList,ChannelMergerNode,CryptoOperation,EventSource,FileReader,HTMLUnknownElement,IDBDatabase,IDBRequest,IDBTransaction,KeyOperation,MediaController,MessagePort,ModalWindow,Notification,SVGElementInstance,Screen,TextTrack,TextTrackCue,TextTrackList,WebSocket,WebSocketWorker,Worker,XMLHttpRequest,XMLHttpRequestEventTarget,XMLHttpRequestUpload`.split(`,`),i,a;for(i=0;i<r.length;++i)a=r[i],e[a]&&e[a].prototype&&ar(t,e[a].prototype,n)}}function ar(e,t,n){if(s(t,`addEventListener`)){for(var r=t.addEventListener;r._rollbarOldAdd&&r.belongsToShim;)r=r._rollbarOldAdd;var i=function(t,n,i){r.call(this,t,e.wrap(n),i)};i._rollbarOldAdd=r,i.belongsToShim=n,t.addEventListener=i;for(var a=t.removeEventListener;a._rollbarOldRemove&&a.belongsToShim;)a=a._rollbarOldRemove;var o=function(e,t,n){a.call(this,e,t&&t._rollbar_wrapped||t,n)};o._rollbarOldRemove=a,o.belongsToShim=n,t.removeEventListener=o}}q.setComponents({telemeter:Se,instrumenter:nr,wrapGlobals:ir,scrub:ve,truncation:Ze,tracing:He});var or=q,Q=null,sr=[`Script error`,`ResizeObserver loop`,`Failed to fetch`,`Load failed`,`NetworkError`,`The operation was aborted`,`signal is aborted`,`The user aborted a request`],cr=[`chrome-extension`,`moz-extension`,`safari-extension`,`safari-web-extension`],lr=10,ur=5,$=new Set,dr=200;function fr(){if(Q)return!0;try{return Q=new or({accessToken:`603051ad5460401084c5fdce90bc0e32
+
+=== AUTH FLOW ===
+- Auth provider: https://auth.uxcam.com
+- Token refresh: POST https://auth.uxcam.com/refresh-token (credentials: include)
+- Auth status: GET /auth/status
+- Login types: customer (cookie-based) or admin
+- Admin detection: user.is_admin from /auth/status response
+- Impersonation support: impersonation.active flag
+- tara_login_type localStorage: admin|customer
+- X-Tara-Login-Type header sent on all API requests
+
+=== IMPERSONATION SYSTEM ===
+- ImpersonationContext tracks active impersonation state
+- isDirectAdmin = is_admin AND NOT is_guest AND NOT impersonation.active
+- Admin access mode from auth/status: admin_access_mode
+
+=== TARA AI (CHAT) SYSTEM ===
+- POST /chat — streaming SSE-based AI chat
+- POST /api/apps/:appId/tara/runs — create durable AI run
+- GET /api/apps/:appId/tara/runs/active — list active runs
+- GET /api/apps/:appId/tara/runs/:runId/stream — stream run output
+- POST /api/apps/:appId/tara/runs/:runId/cancel — cancel run
+- PATCH /api/apps/:appId/tara/runs/:runId/notification — update notifications
+- POST /api/apps/:appId/chat/command — chat command endpoint
+- POST /api/chat/share — share chat
+- POST /api/chat/share/:token/claim — claim shared chat
+- GET /healthz — health check
+- POST /reload-prompts — reload AI prompts (admin?)
+- GET /default-response-instructions — get default instructions
+- POST /tara/cache/warm — warm cache
+
+=== MCP INTEGRATION ===
+- MCP HTTP endpoint: https://integration.mcp.uxcam.com/mcp/http
+- Integration platform: https://integrated-platforms.uxcam.com
+- Event tracking: POST /data-hub/send-event-public/ and /data-hub/send-event/
+
+=== WEBSDK PROXY ===
+- URL: https://websdk-proxy.uxcam.com/api/proxy?url=
+  (Session replay proxy — potential SSRF vector)
+
+============================================
+TARA-EXCLUSIVE API SURFACE (not on app.uxcam.com V1)
+============================================
+
+HIGH-PRIORITY TARGETS (admin/internal, new attack surface):
+
+1. /api/internal/* — Admin-only internal analytics
+   - GET /api/internal/overview?days=N — Platform-wide overview
+   - GET /api/internal/orgs?days=N&limit=N&offset=N&sort_by=X&sort_dir=X — All org directory
+   - GET /api/internal/orgs/:orgId?days=N — Single org detail (owner emails, plan, HubSpot/ChartMogul links)
+   - GET /api/internal/users?emails=X&days=N — User activity lookup by email
+   - GET /api/internal/ai-costs/summary?days=N&org_id=X — AI cost summary (per-org)
+   - GET /api/internal/ai-costs/orgs?days=N — All orgs AI costs
+   - GET /api/internal/ai-costs/orgs/:orgId/users?days=N — Org users AI costs
+   - GET /api/internal/ai-costs/runs?days=N&org_id=X&user_id=X — Individual AI run costs
+   *** IDOR target: try without admin session, try with regular user session ***
+
+2. /api/admin/:orgId/users — Admin user management
+   *** Test with regular user token ***
+
+3. /api/apps/:appId/debug/* — Pipeline debug endpoints
+   - GET /debug/pipeline-summary?from_date=X&to_date=X
+   - GET /debug/upload-rate?from_date=X&to_date=X&group_by=X&platform=X
+   - GET /debug/recording-loss?from_date=X&to_date=X&...
+   - GET /debug/not-uploaded-sessions?from_date=X&to_date=X&page=X&per_page=X
+   - GET /debug/pipeline-loss?from_date=X&to_date=X
+   *** AdminDebugPage — test if accessible without admin flag ***
+
+4. /api/apps/:appId/tara/runs — AI run management (NEW in tara)
+   - POST /tara/runs — Create AI run
+   - GET /tara/runs/active — List active runs
+   - GET /tara/runs/:runId/stream — Stream run output
+   - POST /tara/runs/:runId/cancel — Cancel run
+   - PATCH /tara/runs/:runId/notification — Update notification settings
+
+5. /api/knowledge/:id/* — Knowledge base management
+   - GET/POST /knowledge/:id/entries
+   - GET/PUT/DELETE /knowledge/:id/entries/:entryId
+   - GET/POST /knowledge/:id/notes
+   - GET /knowledge/:id/context-selection
+   - GET/POST /knowledge/:id/response-preferences
+
+6. /api/projects/:id/environments/:envId/keys — API key management
+   - GET /projects/:id/environments/:envId/keys
+   - POST /projects/:id/environments/:envId/keys/:keyId/revoke
+   *** IDOR: access other org's project keys ***
+
+7. /api/ticketing/* — Jira integration
+   - POST /ticketing/orgs/:orgId/connection/install — Install connection
+   - GET /ticketing/orgs/:orgId/connection — Get connection details
+   *** Cross-org IDOR on ticketing connection ***
+
+8. /api/chat/share/:token/claim — Claim shared chat
+   *** Token enumeration/brute force ***
+
+9. POST /reload-prompts — Reload AI prompts
+   *** Test if accessible without admin auth ***
+
+10. https://websdk-proxy.uxcam.com/api/proxy?url= — Proxy endpoint
+    *** SSRF target ***
+
+HARDCODED CREDENTIALS:
+- Rollbar access token: 603051ad5460401084c5fdce90bc0e32
+- ReCAPTCHA site key: 6Lc4T7YUAAAAAGOGPuZjdXA-_wPZ_LLsO1Xpj9B5
+- HubSpot portal ID: 5081481
+
+AUTH SYSTEM NOTES:
+- Cookie-based auth with refresh token flow
+- Admin vs customer login type stored in localStorage (tara_login_type)
+- X-Tara-Login-Type header sent with all requests
+- /auth/status returns: authenticated, user.is_admin, impersonation.active, admin_access_mode
+- Client-side admin checks only — test if backend enforces admin restriction

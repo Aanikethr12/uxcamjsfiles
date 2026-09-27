@@ -1,0 +1,1 @@
+import{r as e}from"./rolldown-runtime-C5Y2Ol-c.js";import{x as t}from"./index.esm2-C80L3BoJ.js";t();var n=e({coralogixReporter:()=>o,initCoralogix:()=>a}),r=new Set([`EU1`,`EU2`,`US1`,`US2`,`US3`,`AP1`,`AP2`,`AP3`,`STAGING`]);function i(e){if(!e)return null;let t=e.trim().toUpperCase();return r.has(t)?t:null}function a(){return i(void 0),!1}var o=(e,t)=>{};export{a as n,n as t};

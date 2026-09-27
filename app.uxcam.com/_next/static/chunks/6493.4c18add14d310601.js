@@ -1,0 +1,560 @@
+"use strict";
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[6493],{
+  56493:function(e,t,i){
+    i.r(t),
+    i.d(t,{
+      InlineButton:function(){
+        return k
+      }
+    });
+    var o=i(85893),
+    r=i(67294),
+    a=i(19521),
+    n=i(79999),
+    l=i(72654),
+    s=i(80432),
+    d=i(48203),
+    c=i(39284),
+    p=i(21818),
+    u=i(21946),
+    m=i(82020),
+    g=i(74912),
+    h=i(46135),
+    f=i(69638),
+    x=i(18879),
+    b=i(14416),
+    v=i(62610),
+    w=i(30663),
+    j=i(36639),
+    y=i(11163),
+    C=i(47639),
+    F=i(93678);
+    let I=a.default.div.withConfig({
+      componentId:"sc-6ca0db8f-0"
+    })(["display:flex;flex-direction:column;"]),
+    k=a.default.button.withConfig({
+      componentId:"sc-6ca0db8f-1"
+    })(["display:inline-flex;align-items:center;gap:",";background:transparent;border:none;color:#5D97FF;cursor:pointer;&:hover{text-decoration:underline;}"],n.r.spacing(1)),
+    A=btoa('\n	<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">\n		<path fill-rule="evenodd" clip-rule="evenodd" d="M8 16.7207C12.4183 16.7207 16 13.139 16 8.7207C16 4.30243 12.4183 0.720703 8 0.720703C3.58173 0.720703 0 4.30243 0 8.7207C0 13.139 3.58173 16.7207 8 16.7207ZM12.0032 6.68473C12.2989 6.31507 12.239 5.77569 11.8693 5.47996C11.4997 5.18423 10.9603 5.24417 10.6645 5.61382L6.61208 10.6794L4.99098 9.46356C4.61227 9.17953 4.07502 9.25628 3.79098 9.63499C3.50696 10.0137 3.5837 10.551 3.96241 10.835L6.24813 12.5493C6.6185 12.8271 7.14253 12.7605 7.43174 12.399L12.0032 6.68473Z" fill="#5D97FF"/>\n	</svg>\n'),
+    P=a.default.div.withConfig({
+      componentId:"sc-6ca0db8f-2"
+    })(["display:flex;flex-direction:column;gap:16px;margin-bottom:24px;"]),
+    S=a.default.div.withConfig({
+      componentId:"sc-6ca0db8f-3"
+    })(["display:flex;gap:16px;"]),
+    E=a.default.div.withConfig({
+      componentId:"sc-6ca0db8f-4"
+    })(["flex:1;.ant-row.ant-form-item{display:none;}"]),
+    N=a.default.label.withConfig({
+      componentId:"sc-6ca0db8f-5"
+    })(["display:flex;align-items:center;justify-content:space-between;appearance:none;border:1px solid transparent;padding:12px 10px;background-color:#F5F5F5;height:48px;gap:",";width:100%;font-weight:400;color:",";position:relative;border-radius:8px;cursor:pointer;transition:all 0.1s ease-in-out;user-select:none;outline:none;font-size:14px !important;> span{display:flex;align-items:center;gap:",';}img{height:24px;width:24px;}&:hover:not([aria-disabled="true"]),&:focus:not([aria-disabled="true"]){border:1px solid #5D97FF;}&[aria-checked="true"]{border:1px solid ',";background-color:#EFF5FF;&:before{position:absolute;top:10px;left:10px;content:'';background:#ffffff;border:none;height:24px;width:24px;border-radius:50%;}&:after{position:absolute;top:10px;left:10px;content:'';background:url('data:image/svg+xml;base64,",'\') no-repeat center;border:none;height:24px;width:24px;}&:hover{background-color:#DFEAFF;}}&[aria-disabled="true"]{opacity:0.5;cursor:not-allowed;}'],n.r.spacing(1.25),n.r.colors.surface400.toString(),n.r.spacing(1),n.r.colors.primary500.toString(),A),
+    _=a.default.input.withConfig({
+      componentId:"sc-6ca0db8f-6"
+    })(["display:none;"]),
+    Z=a.default.div.withConfig({
+      componentId:"sc-6ca0db8f-7"
+    })(["margin-bottom:24px;"]);
+    t.default=r.memo(e=>{
+      var t;
+      let{
+        resetStatus:i
+      }=e,
+      {
+        currentOrgReducer:{
+          planFeature:a
+        },
+        applicationReducer:A,
+        profileReducer:z
+      }=(0,b.v9)(e=>e),
+      D=null==A?void 0:A[0],
+      {
+        orgId:V,
+        subscription:T
+      }=D||{},
+      {
+        name:W
+      }=T||{},
+      [M]=l.Z.useForm(),
+      L=(0,b.I0)(),
+      B=(0,y.useRouter)(),
+      [R,U]=r.useState(!1),
+      [q,O]=r.useState(!1),
+      [$,J]=r.useState(null),
+      [Y,G]=r.useState(null),
+      H=l.Z.useWatch("mobileApps",M),
+      K=l.Z.useWatch("webApps",M),
+      Q=l.Z.useWatch("us",M),
+      X=l.Z.useWatch("eu",M),
+      ee=l.Z.useWatch("ae",M),
+      et=!!(null==a?void 0:a.mriFeature),
+      ei=r.useMemo(()=>{
+        try{
+          let e=localStorage.getItem("signupApp")||"";
+          return JSON.parse(e)
+        }
+        catch(e){
+          return null
+        }
+      },[]),
+      eo=r.useCallback(e=>t=>{
+        if(t){
+          let{
+            mobile:t,
+            web:i
+          }=ei||{};
+          if("mobileApps"===e){
+            let e=(null==t?void 0:t.length)?t:void 0;
+            M.setFieldsValue({
+              mobileApps:!0,
+              webApps:!1,
+              appName:e
+            })
+          }
+          else{
+            let e=(null==i?void 0:i.length)?i:void 0;
+            M.setFieldsValue({
+              mobileApps:!1,
+              webApps:!0,
+              appName:e
+            })
+          }
+        }
+        else M.setFieldsValue({
+          [e]:!1
+        })
+      },[M,ei]),
+      er=r.useCallback(e=>t=>{
+        t?"us"===e?M.setFieldsValue({
+          us:!0,
+          eu:!1,
+          ae:!1
+        }):"eu"===e?M.setFieldsValue({
+          us:!1,
+          eu:!0,
+          ae:!1
+        }):M.setFieldsValue({
+          us:!1,
+          eu:!1,
+          ae:!0
+        }):M.setFieldsValue({
+          [e]:!1
+        })
+      },[M]);
+      (0,r.useEffect)(()=>{
+        if(ei){
+          let{
+            mobile:e,
+            web:t
+          }=ei;
+          ((null==e?void 0:e.length)||(null==t?void 0:t.length))&&!((null==e?void 0:e.length)&&(null==t?void 0:t.length))&&M.setFieldsValue({
+            mobileApps:!!(null==e?void 0:e.length),
+            webApps:!!(null==t?void 0:t.length),
+            appName:(null==e?void 0:e.length)?e:t
+          })
+        }
+      },[M,ei]);
+      let ea=r.useRef(!1),
+      [en,el]=r.useState(!1);
+      (0,r.useEffect)(()=>{
+        el(!0)
+      },[]);
+      let es=r.useMemo(()=>({
+        email:(null==z?void 0:z.email)||"",
+        orgName:(null==D?void 0:D.name)||"",
+        orgId:V||""
+      }),[null==z?void 0:z.email,null==D?void 0:D.name,V]);
+      (0,r.useEffect)(()=>{
+        en&&!ea.current&&es.email&&es.orgId&&(L((0,w.CW)(null,{
+          eventName:"wa_screenvisit_setup_create_first_app",
+          eventProperty:es
+        })),ea.current=!0)
+      },[L,en,es]);
+      let ed=r.useCallback(async e=>{
+        var t,
+        o,
+        r,
+        a,
+        n,
+        l;
+        let d;
+        O(!1),
+        U(!0),
+        d=e.us?"us":e.eu?"eu":"ae";
+        let c={
+          orgId:V,
+          name:e.appName,
+          appType:e.mobileApps?"mobile":"web",
+          notifyEmail:!1,
+          appCreatedFrom:"signup",
+          region:d
+        };
+        if(D)try{
+          window.localStorage.setItem("orgId",V),
+          W&&window.localStorage.setItem("currentPlan",W)
+        }
+        catch(e){}try{
+          let l=await L((0,v.W3)(c));
+          if(!l.success){
+            U(!1),
+            (null==l?void 0:null===(o=l.error)||void 0===o?void 0:null===(t=o.message)||void 0===t?void 0:t.includes("suspicious behavior"))?L((0,C.Ap)("isVisible_custom_popup",!0)):(null==l?void 0:null===(a=l.error)||void 0===a?void 0:null===(r=a.message)||void 0===r?void 0:r.includes("Active subscription not found"))?O(!0):(null==l?void 0:l.error)?(null===(n=l.error)||void 0===n?void 0:n.message)?s.ZP.error(l.error.message):l.error.name&&s.ZP.error(l.error.name[0]):s.ZP.error("An unexpected error occurred. Please try again.");
+            return
+          }
+          L((0,v.Zn)()),
+          i();
+          try{
+            window.localStorage.setItem("appId",l.data._id)
+          }
+          catch(e){}U(!1),
+          L((0,w.CW)(null,{
+            eventName:"sign_up",
+            track_type:"event",
+            appId:l.data._id
+          })),
+          L((0,w.CW)(null,{
+            eventName:"wa_create_first_app",
+            eventProperty:{
+              email:(null==z?void 0:z.email)||"",
+              appId:l.data._id,
+              appName:e.appName,
+              appType:e.mobileApps?"mobile":"web",
+              region:d
+            }
+          })),
+          L((0,j.PR)()),
+          localStorage.removeItem("signupApp"),
+          B.push("/integration?parentType=integration&appId=".concat(l.data._id),"/integration?appId=".concat(l.data._id))
+        }
+        catch(e){
+          U(!1),
+          e&&e.response?e.response.data.error.message&&e.response.data.error.message.includes("suspicious behavior")?L((0,C.Ap)("isVisible_custom_popup",!0)):(null===(l=e.response.data.error.message)||void 0===l?void 0:l.includes("Active subscription not found"))?O(!0):s.ZP.error(e.response.data.error.message):s.ZP.error("An unexpected error occurred. Please try again.")
+        }
+      },[D,W,L,V,i,B,null==z?void 0:z.email]);
+      return(0,o.jsx)(p.Z,{
+        title:"Welcome! Let's set up your first app.",
+        subTitle:"Start by creating your first app - you can add more apps later.",
+        progress:100,
+        progressColor:"green",
+        hideLogos:!0,
+        children:(0,o.jsx)(f.bb,{
+          children:(0,o.jsxs)(l.Z,{
+            form:M,
+            onFinish:ed,
+            layout:"vertical",
+            autoComplete:"off",
+            validateTrigger:["onSubmit"],
+            children:[(0,o.jsxs)(I,{
+              children:[(0,o.jsx)(f.M$,{
+                children:"Select your platform"
+              }),(0,o.jsxs)(P,{
+                children:[(0,o.jsxs)(S,{
+                  children:[(0,o.jsxs)(E,{
+                    children:[(0,o.jsx)(l.Z.Item,{
+                      name:"mobileApps",
+                      valuePropName:"checked",
+                      initialValue:!1,
+                      validateTrigger:["onSubmit"],
+                      rules:[{
+                        validator:()=>H||K?(J(null),Promise.resolve()):(J("Platform is required"),Promise.reject())
+                      }],
+                      children:(0,o.jsx)(_,{
+                        type:"checkbox",
+                        disabled:R,
+                        id:"mobileApps",
+                        onChange:e=>eo("mobileApps")(e.target.checked)
+                      })
+                    }),(0,o.jsx)(N,{
+                      htmlFor:"mobileApps",
+                      tabIndex:0,
+                      "aria-checked":H,
+                      "aria-disabled":R,
+                      children:(0,o.jsxs)("span",{
+                        children:[(0,o.jsx)("img",{
+                          src:"/static/mobile-app.svg",
+                          alt:"Mobile App"
+                        }),"Mobile App"]
+                      })
+                    })]
+                  }),(0,o.jsxs)(E,{
+                    children:[(0,o.jsx)(l.Z.Item,{
+                      name:"webApps",
+                      valuePropName:"checked",
+                      initialValue:!1,
+                      validateTrigger:["onSubmit"],
+                      rules:[{
+                        validator:()=>H||K?(J(null),Promise.resolve()):(J("Platform is required"),Promise.reject())
+                      }],
+                      children:(0,o.jsx)(_,{
+                        type:"checkbox",
+                        disabled:R,
+                        id:"webApps",
+                        onChange:e=>eo("webApps")(e.target.checked)
+                      })
+                    }),(0,o.jsx)(N,{
+                      htmlFor:"webApps",
+                      tabIndex:0,
+                      "aria-checked":K,
+                      "aria-disabled":R,
+                      children:(0,o.jsxs)("span",{
+                        children:[(0,o.jsx)("img",{
+                          src:"/static/web-app.svg",
+                          alt:"Web App"
+                        }),"Web App"]
+                      })
+                    })]
+                  })]
+                }),$&&(0,o.jsx)("div",{
+                  className:"ant-form-item-explain-error",
+                  children:$
+                })]
+              }),(0,o.jsx)(f.M$,{
+                children:"Enter app name"
+              }),(0,o.jsx)(u.Z,{
+                name:"appName",
+                ariaLabel:"app name input",
+                placeholder:"Your app name",
+                disabled:R,
+                rules:[{
+                  validator:(e,t)=>(null==t?void 0:t.length)?g.yJ.test(t)?t.length>32?((0,F.D)("appName"),Promise.reject(Error("App name should contain at most 32 characters."))):Promise.resolve():((0,F.D)("appName"),Promise.reject(Error("Name field only accepts the following characters: alphabets (A-Z, a-z), numbers (0-9), dash (-), underscore (_), apostrophe ('), and spaces."))):((0,F.D)("appName"),Promise.reject(Error("App name is required")))
+                }]
+              }),(0,o.jsx)(f.M$,{
+                children:"Select data storage region"
+              }),(0,o.jsxs)(P,{
+                children:[(0,o.jsxs)(S,{
+                  children:[(0,o.jsxs)(E,{
+                    children:[(0,o.jsx)(l.Z.Item,{
+                      name:"us",
+                      initialValue:!1,
+                      valuePropName:"checked",
+                      validateTrigger:["onSubmit"],
+                      rules:[{
+                        validator:()=>Q||X||ee?(G(null),Promise.resolve()):(G("Select a data storage region"),Promise.reject())
+                      }],
+                      children:(0,o.jsx)(_,{
+                        type:"checkbox",
+                        disabled:R,
+                        id:"us",
+                        onChange:e=>er("us")(e.target.checked)
+                      })
+                    }),(0,o.jsx)(N,{
+                      htmlFor:"us",
+                      tabIndex:0,
+                      "aria-checked":Q,
+                      "aria-disabled":R,
+                      children:(0,o.jsxs)("span",{
+                        children:[(0,o.jsx)("img",{
+                          src:"/static/signup/usflag.svg",
+                          alt:"US"
+                        }),"US"]
+                      })
+                    })]
+                  }),(0,o.jsxs)(E,{
+                    children:[(0,o.jsx)(l.Z.Item,{
+                      name:"eu",
+                      valuePropName:"checked",
+                      initialValue:!1,
+                      validateTrigger:["onSubmit"],
+                      rules:[{
+                        validator:()=>Q||X||ee?(G(null),Promise.resolve()):(G("Data storage region is required"),Promise.reject())
+                      }],
+                      children:(0,o.jsx)(_,{
+                        type:"checkbox",
+                        disabled:R,
+                        id:"eu",
+                        onChange:e=>er("eu")(e.target.checked)
+                      })
+                    }),(0,o.jsx)(N,{
+                      htmlFor:"eu",
+                      tabIndex:0,
+                      "aria-checked":X,
+                      "aria-disabled":R,
+                      children:(0,o.jsxs)("span",{
+                        children:[(0,o.jsx)("img",{
+                          src:"/static/signup/euflag.svg",
+                          alt:"EU"
+                        }),"EU"]
+                      })
+                    })]
+                  }),(0,o.jsxs)(E,{
+                    children:[(0,o.jsx)(l.Z.Item,{
+                      name:"ae",
+                      valuePropName:"checked",
+                      initialValue:!1,
+                      validateTrigger:["onSubmit"],
+                      rules:[{
+                        validator:()=>Q||X||ee?(G(null),Promise.resolve()):(G("Data storage region is required"),Promise.reject())
+                      }],
+                      children:(0,o.jsx)(_,{
+                        type:"checkbox",
+                        disabled:R||!0,
+                        id:"ae",
+                        onChange:e=>er("ae")(e.target.checked)
+                      })
+                    }),(0,o.jsx)(d.Z,{
+                      title:"UAE region is temporarily unavailable.",
+                      children:(0,o.jsx)(N,{
+                        htmlFor:void 0,
+                        tabIndex:0,
+                        "aria-checked":ee,
+                        "aria-disabled":R||!0,
+                        style:{
+                          opacity:.5,
+                          cursor:"not-allowed"
+                        },
+                        children:(0,o.jsxs)("span",{
+                          children:[(0,o.jsx)("img",{
+                            src:"/static/signup/aeflag.svg",
+                            alt:"UAE"
+                          }),"UAE"]
+                        })
+                      })
+                    })]
+                  })]
+                }),Y&&(0,o.jsx)("div",{
+                  className:"ant-form-item-explain-error",
+                  children:Y
+                })]
+              }),!et&&(Q||X||ee)&&(0,o.jsx)(Z,{
+                children:(0,o.jsx)(h.vD,{
+                  variant:"gray",
+                  noMarginBottom:!0,
+                  text:(0,o.jsxs)(o.Fragment,{
+                    children:["The selected data storage location will apply to all future platforms. For multi-region storage, contact",(0,o.jsx)(k,{
+                      onClick:()=>(0,x.aL)(),
+                      type:"button",
+                      children:"support."
+                    })]
+                  })
+                })
+              })]
+            }),(0,o.jsxs)(c.default,{
+              visible:q,
+              onCancel:()=>O(!1),
+              footer:null,
+              centered:!0,
+              destroyOnClose:!0,
+              wrapClassName:"subscription-error-modal",
+              children:[(0,o.jsxs)("div",{
+                style:{
+                  textAlign:"center",
+                  padding:"16px 0"
+                },
+                children:[(0,o.jsx)("h2",{
+                  style:{
+                    fontSize:18,
+                    marginBottom:16,
+                    color:"#161e35"
+                  },
+                  children:"Active subscription not found for this organization."
+                }),(0,o.jsxs)("p",{
+                  style:{
+                    fontSize:14,
+                    color:null===(t=n.r.colors.surface400)||void 0===t?void 0:t.toString()
+                  },
+                  children:[(0,o.jsx)(k,{
+                    onClick:()=>{
+                      (0,x.aL)(),
+                      O(!1)
+                    },
+                    type:"button",
+                    style:{
+                      fontSize:14,
+                      padding:"0 2px 0 0"
+                    },
+                    children:"Talk to us"
+                  })," to reactivate or upgrade your subscription."]
+                })]
+              }),(0,o.jsx)("style",{
+                children:".subscription-error-modal .ant-modal-content { border-radius: 8px; }"
+              })]
+            }),(0,o.jsx)(m.Z,{
+              primaryText:"Create app",
+              loading:R
+            })]
+          })
+        })
+      })
+    })
+  },
+  46135:function(e,t,i){
+    i.d(t,{
+      SP:function(){
+        return n
+      },
+      __:function(){
+        return l
+      },
+      vD:function(){
+        return c
+      }
+    });
+    var o=i(85893);
+    i(67294);
+    var r=i(19521);
+    i(7906);
+    var a=i(8357);
+    r.default.div.withConfig({
+      componentId:"sc-1e823e18-0"
+    })(["background-color:#F3F4F5;height:100vh;width:100vw;display:flex;justify-content:center;align-items:center;"]),
+    r.default.div.withConfig({
+      componentId:"sc-1e823e18-1"
+    })(["padding:40px;background-color:#fff;border-radius:4px;display:flex;flex-direction:column;margin:20px;max-width:508px;width:100%;"]);
+    let n=r.default.div.withConfig({
+      componentId:"sc-1e823e18-2"
+    })(["display:flex;flex-direction:column;.ant-select{&:not(.ant-select-disabled):not(.ant-select-customize-input){&.ant-select-status-error{.ant-select-selector{border:1px solid #e8e8eb !important;}}}}.ant-select.ant-select.ant-select-open{&:not(.ant-select-disabled):not(.ant-select-customize-input){&.ant-select-status-error{.ant-select-selector{border:1px solid #5D97FF !important;}}}}.ant-form-item-explain-error{font-family:Roboto;font-weight:400;font-size:12px;line-height:22px;letter-spacing:0%;color:#F4584C;margin-top:8px;}.ant-select-status-error{border:none !important;}.ant-select-selector{border:1px solid #e8e8eb !important;border-radius:6px !important;.ant-select-selection-placeholder{color:#737886 !important;font-size:12px !important;}.ant-select-selection-item{color:#161e35 !important;}}"]);
+    r.default.img.withConfig({
+      componentId:"sc-1e823e18-3"
+    })(["margin:0 auto;margin-bottom:35px;"]),
+    r.default.h1.withConfig({
+      componentId:"sc-1e823e18-4"
+    })(["font-family:Roboto;font-weight:500;font-size:18px;line-height:100%;letter-spacing:0%;text-align:center;vertical-align:middle;color:#161E35;margin-bottom:8px;white-space:pre-line;"]),
+    r.default.h2.withConfig({
+      componentId:"sc-1e823e18-5"
+    })(["font-family:Roboto;font-weight:400;font-size:12px;line-height:21px;letter-spacing:0%;text-align:center;color:#454B5D;margin-bottom:24px;"]),
+    r.default.div.withConfig({
+      componentId:"sc-1e823e18-6"
+    })(["display:flex;justify-content:flex-end;"]),
+    r.default.div.withConfig({
+      componentId:"sc-1e823e18-7"
+    })(["display:flex;flex-direction:column;"]),
+    r.default.input.withConfig({
+      componentId:"sc-1e823e18-8"
+    })(["min-width:100%;max-width:428px;flex:1;border-radius:6px;border:1px solid #E8E8EB;padding:2px 10px;font-family:Roboto;font-weight:400;font-size:12px;line-height:24px;letter-spacing:0%;color:#161E35;transition:border 0.1s ease-in-out;&:placeholder{color:#E8E8EB;}&:focus,&:active{border:1px solid #5D97FF;outline:none;}"]);
+    let l=r.default.label.withConfig({
+      componentId:"sc-1e823e18-9"
+    })(["font-family:Roboto;font-weight:500;font-size:12px;line-height:100%;letter-spacing:0%;color:#454B5D;margin-bottom:8px;"]),
+    s=r.default.div.withConfig({
+      componentId:"sc-1e823e18-10"
+    })([""," padding:12px;border-radius:4px;display:flex;text-align:left;gap:11px;margin-bottom:",";svg{flex-shrink:0;margin-top:6px;margin-left:2px;}"],e=>{
+      let{
+        variant:t
+      }=e;
+      switch(t){
+        case"blue":return"background-color:'EFF5FF;";
+        case"red":return"background-color: rgba(254, 238, 237, 1);";
+        default:return"background-color: #F3F4F5;"
+      }
+    },e=>{
+      let{
+        noMarginBottom:t
+      }=e;
+      return t?"0":"35px"
+    }),
+    d=r.default.div.withConfig({
+      componentId:"sc-1e823e18-11"
+    })(["font-size:14px;line-height:28px;letter-spacing:0%;"]),
+    c=e=>{
+      let{
+        text:t,
+        variant:i="blue",
+        noMarginBottom:r=!1
+      }=e;
+      return(0,o.jsxs)(s,{
+        variant:i,
+        noMarginBottom:r,
+        children:[(0,o.jsx)(a.L7,{}),(0,o.jsx)(d,{
+          children:t
+        })]
+      })
+    }
+  }
+}]);

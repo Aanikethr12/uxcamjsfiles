@@ -1,0 +1,3287 @@
+"use strict";
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[1083],{
+  27755:function(e,t,s){
+    var a=s(85893);
+    s(67294);
+    var l=s(27205),
+    i=s(73260),
+    r=s(12810);
+    t.Z=e=>{
+      let{
+        color:t
+      }=e;
+      return(0,a.jsx)(l.Z,{
+        children:(0,a.jsx)(i.Z,{
+          span:12,
+          offset:6,
+          children:(0,a.jsx)(r.Z,{})
+        })
+      })
+    }
+  },
+  81083:function(e,t,s){
+    s.r(t),
+    s.d(t,{
+      default:function(){
+        return sW
+      }
+    });
+    var a=s(85893),
+    l=s(67294),
+    i=s(14416),
+    r=s(19755),
+    n=s.n(r),
+    o=s(10276),
+    d=s(55137),
+    c=s(47639),
+    u=s(48194),
+    p=s(46629),
+    m=s(16783),
+    h=s(19521),
+    x=s(42554),
+    v=s(7906),
+    g=s(55931),
+    b=s(91209),
+    f=s(27985),
+    y=s(73260),
+    j=s(59268),
+    w=s(79999);
+    s(5152);
+    var C=s(81803),
+    k=s(12810),
+    N=s(40993),
+    S=s(46200),
+    I=s(49470),
+    T=s(30381),
+    L=s.n(T),
+    D=s(99252),
+    Z=s(53574),
+    F=s(93911),
+    A=s(25104),
+    R=s(48203),
+    M=s(36005),
+    E=s(41664),
+    U=s.n(E),
+    P=s(94184),
+    z=s.n(P),
+    W=s(55877),
+    O=s(8357);
+    let B=e=>!!e&&!e.includes("nan"),
+    V=e=>e.includes("-"),
+    q=e=>{
+      let{
+        title:t,
+        loading:s
+      }=e;
+      return(0,a.jsx)("div",{
+        className:"Sessions"===t||s?"selected box":"box",
+        children:(0,a.jsxs)(A.Z,{
+          active:!0,
+          loading:s,
+          paragraph:{
+            rows:1
+          },
+          children:[(0,a.jsx)("span",{
+            className:"box-title",
+            children:t
+          }),(0,a.jsx)("br",{}),(0,a.jsx)("span",{
+            className:"stat",
+            children:"Error"
+          }),(0,a.jsx)("br",{}),(0,a.jsx)("span",{
+            className:"value",
+            children:(0,a.jsx)("span",{
+              className:"icon-box"
+            })
+          })]
+        },(0,W.v4)())
+      },t)
+    },
+    J=e=>(0,a.jsxs)(a.Fragment,{
+      children:[(0,a.jsx)(K,{
+        boxWrapperTitle:"Engagement",
+        isWebSDK:e.isWebSDK,
+        children:(0,M.UI)(["Sessions","Screen visits","Events"],t=>(0,a.jsx)(q,{
+          title:t,
+          ...e
+        },t))
+      }),(0,a.jsx)(K,{
+        boxWrapperTitle:"Frustration",
+        isWebSDK:e.isWebSDK,
+        children:(0,M.UI)(e.isWebSDK?["Rage taps"]:["Total Crash","Rage taps","UI Freezes"],t=>(0,a.jsx)(q,{
+          title:t,
+          ...e
+        },t))
+      })]
+    }),
+    Q=e=>{
+      let{
+        boxWrapperTitle:t,
+        percentage_change_string:s
+      }=e,
+      l="N/A"===s;
+      return(0,a.jsx)(R.Z,{
+        title:l?"Baseline value is missing, unable to calculate the change percentage.":void 0,
+        placement:"bottom",
+        children:(0,a.jsxs)("span",{
+          className:z()("value",l?"value-grey":"Engagement"===t?V(s)?"value-red":"value-green":V(s)?"value-green":"value-red"),
+          style:{
+            width:"fit-content"
+          },
+          children:[(0,a.jsx)("span",{
+            className:"icon-box",
+            children:V(s)?(0,a.jsx)(Z.Z,{}):(0,a.jsx)(F.Z,{})
+          }),s]
+        })
+      })
+    },
+    H=e=>{
+      let{
+        boxWrapperTitle:t,
+        value_this_period_number:s,
+        value_previous_period_number:l,
+        isPreviousPeriodStringValid:i,
+        value_previous_period_string:r
+      }=e,
+      n=s<l;
+      return(0,a.jsxs)("span",{
+        className:z()("value",s!==l?"Engagement"===t?n?"value-red":"value-green":n?"value-green":"value-red":""),
+        children:[l!==s&&(0,a.jsx)("span",{
+          className:"icon-box",
+          children:n?(0,a.jsx)(Z.Z,{}):(0,a.jsx)(F.Z,{})
+        }),(0,a.jsx)("span",{
+          className:"prev-value",
+          children:i?"Prev: ".concat(r):"Prev: 0"
+        })]
+      })
+    },
+    K=e=>{
+      let{
+        children:t,
+        boxWrapperTitle:s,
+        isWebSDK:l=!1
+      }=e;
+      return(0,a.jsxs)("div",{
+        className:"journey-tab-box",
+        "data-is-web":l,
+        children:[(0,a.jsx)("h3",{
+          className:"box-wrapper-title",
+          children:s
+        }),(0,a.jsx)("div",{
+          className:"box-wrapper",
+          children:t
+        })]
+      })
+    },
+    $=e=>{
+      let{
+        percentage_change_string:t,
+        value_this_period_string:s,
+        value_previous_period_string:l,
+        value_this_period_number:i,
+        value_previous_period_number:r,
+        boxTitle:n,
+        box_key:o,
+        setActive:d,
+        selected:c,
+        boxWrapperTitle:u,
+        urlData:p,
+        loader:m
+      }=e;
+      r||(r=0),
+      i||(i=0);
+      let h=B(l),
+      x=B(s),
+      v=0===r;
+      return(0,a.jsx)("div",{
+        onClick:()=>d(o),
+        className:"box ".concat(c===o||m?"selected":""),
+        "data-intercom-target":"Cards ".concat(n),
+        children:(0,a.jsxs)(A.Z,{
+          active:!0,
+          loading:m,
+          paragraph:{
+            rows:1
+          },
+          children:[(0,a.jsx)("span",{
+            className:"box-title",
+            children:n
+          }),(0,a.jsx)("br",{}),(0,a.jsx)("span",{
+            className:"stat",
+            children:x?s:0
+          }),(0,a.jsx)("br",{}),v?(0,a.jsx)(H,{
+            boxWrapperTitle:u,
+            value_this_period_number:i,
+            value_previous_period_number:r,
+            isPreviousPeriodStringValid:h,
+            value_previous_period_string:l
+          }):t?(0,a.jsx)(Q,{
+            boxWrapperTitle:u,
+            percentage_change_string:t
+          }):(0,a.jsx)("span",{
+            className:"value",
+            children:(0,a.jsx)("span",{
+              className:"icon-box"
+            })
+          }),p&&(0,a.jsx)(U(),{
+            passHref:!0,
+            href:{
+              pathname:"/integration",
+              query:{
+                parentType:p.parentType,
+                appId:p.appId,
+                type:p.type,
+                issueType:p.issueType,
+                dateRange:p.dateRange,
+                isSessionEventTab:!0
+              }
+            },
+            as:p.url,
+            legacyBehavior:!0,
+            children:(0,a.jsx)("a",{
+              target:"_blank",
+              href:"",
+              className:"view-btn",
+              rel:"noreferrer",
+              children:(0,a.jsxs)("span",{
+                onClick:e=>{
+                  e.stopPropagation()
+                },
+                children:["View ",(0,a.jsx)(O.jH,{})]
+              })
+            })
+          })]
+        },(0,W.v4)())
+      })
+    },
+    X=e=>{
+      let{
+        data:t,
+        boxWrapperTitle:s,
+        selected:l,
+        setActive:i,
+        loader:r,
+        urlReducer:n,
+        dateRange:o
+      }=e,
+      d=(0,g.e)("web"),
+      c=(e,t)=>{
+        let{
+          attribute:s,
+          labelId:a,
+          value:{
+            lower:l,
+            upper:i
+          },
+          tz:r
+        }=o,
+        d=JSON.stringify(l),
+        c=JSON.stringify(i);
+        return"/app/".concat(n.appId,"/").concat(e,"/list/1?").concat("".concat(s,'={"o":"between_dates","v":{"lower":').concat(d,',"upper":').concat(c,'}, "lb":"').concat(a||"",'","tz":"').concat(r||"UTC",'"}&uxcamuserid={"o":"in","v":["').concat(n.uxcamuserid,'"]}')).concat(t?"&".concat(t,"&"):"&","isSessionEventTab=",!0)
+      },
+      u={
+        total_engagement:{
+          url:c("sessions"),
+          parentType:"sessionsList",
+          type:"session"
+        },
+        event_count:{
+          url:c("events"),
+          parentType:"eventsList",
+          type:"event"
+        },
+        crash_count:{
+          url:c("sessions",'session_crashed={"o":"equal","v":"True","tb":"session"}'),
+          parentType:"sessionsList",
+          type:"session"
+        },
+        rage_count:{
+          url:c("sessions",'event_name={"o":"in","v":["rageTap"],"tb":"event"}'),
+          parentType:"sessionsList",
+          type:"session"
+        },
+        ANR_count:{
+          url:c("sessions",'event_name={"o":"in","v":["UI Freeze"],"tb":"event"}'),
+          parentType:"sessionsList",
+          type:"session"
+        }
+      };
+      return(0,a.jsx)(K,{
+        boxWrapperTitle:s,
+        isWebSDK:d,
+        children:t.map((e,t)=>{
+          let{
+            value_previous_period_string:n,
+            value_this_period_string:o,
+            value_this_period_number:d,
+            value_previous_period_number:c,
+            percentage_change_string:p,
+            box_name:m,
+            box_key:h
+          }=e;
+          return(0,a.jsx)($,{
+            percentage_change_string:p,
+            value_previous_period_string:n,
+            value_this_period_string:o,
+            value_this_period_number:d,
+            value_previous_period_number:c,
+            selected:l,
+            boxTitle:m,
+            box_key:h,
+            setActive:i,
+            boxWrapperTitle:s,
+            urlData:u[h],
+            loader:r
+          },m)
+        })
+      })
+    };
+    var G=e=>{
+      var t;
+      let{
+        loader:s,
+        dateRange:r,
+        urlReducer:n,
+        userJourneyBoxes:o,
+        dropdown_options:d,
+        setSelectedCategory:u
+      }=e,
+      p=(0,i.I0)(),
+      m=(0,g.e)("web"),
+      h={
+        total_engagement:"total_engagement",
+        screen_count:"screen_count",
+        event_count:"event_count",
+        crash_count:"crash_rate",
+        rage_count:"rage_rate",
+        ANR_count:"ANR_rate"
+      },
+      [x,v]=(0,l.useState)("total_engagement"),
+      b=()=>{
+        let e=h[x];
+        if(d){
+          let t=d&&d[e];
+          u(t),
+          p((0,c.hI)({
+            action:"Clicked on user journey tab",
+            info:{
+              "tab name":t.box_name
+            }
+          }))
+        }
+      },
+      f=null==o?void 0:null===(t=o.data)||void 0===t?void 0:t.boxes,
+      y=(0,l.useMemo)(()=>f&&m?{
+        ...f,
+        Frustration:f.Frustration.filter(e=>"rage_count"===e.box_key)
+      }:f,[f,m]);
+      return(0,l.useEffect)(()=>{
+        d&&b()
+      },[x,d]),
+      (0,a.jsx)("div",{
+        className:"journey-box-wrapper",
+        children:o?o.data?(0,M.UI)(y,(e,t)=>(0,a.jsx)(X,{
+          boxWrapperTitle:t,
+          data:e,
+          setActive:v,
+          selected:x,
+          loader:s,
+          urlReducer:n,
+          dateRange:r
+        },(0,W.v4)())):(0,a.jsx)(J,{
+          isWebSDK:m,
+          loading:!1
+        }):(0,a.jsx)(J,{
+          isWebSDK:m,
+          loading:!0
+        })
+      })
+    },
+    Y=s(43063),
+    ee=s.n(Y),
+    et=s(7436),
+    es=s.n(et),
+    ea=s(35161),
+    el=s.n(ea),
+    ei=s(19228),
+    er=s(54973),
+    en=s(18777),
+    eo=s(8047),
+    ed=s(43522);
+    let ec=(0,a.jsxs)(a.Fragment,{
+      children:[(0,a.jsx)(en.Z,{
+        preText:"Computing chart data"
+      }),(0,a.jsx)(k.Z,{})]
+    }),
+    eu=(e,t)=>ee()(e,(e,s)=>s===t);
+    var ep=e=>{
+      let{
+        selectedCategory:t,
+        bottomBarClassFlag:s,
+        callGraphApi:r,
+        graphData:n,
+        loader:o=!1,
+        box_key:d,
+        commonLoader:u,
+        labelDisplay:p
+      }=e,
+      m=(0,i.I0)(),
+      h=(0,l.useRef)(),
+      [x,v]=(0,l.useState)(null),
+      g=t?t.gb_l:null,
+      b=()=>{
+        v(t&&t.groupby_default)
+      },
+      f=async e=>{
+        let s=eu(x,e);
+        t.groupby_default=s,
+        await r(t),
+        v(s)
+      },
+      y=async(e,s,a,l,i,n,o,d,u,p)=>{
+        d&&(500!==u||"session_sessionid"===o)||(u=50),
+        p.length||(p=void 0);
+        let h=g[n],
+        b=es()(h,{
+          attribute:o
+        });
+        if(b>-1){
+          let e=h[b];
+          e.max_group_number=u,
+          e.labels=p,
+          x[a]=e,
+          t.groupby_default=x,
+          await r(t),
+          v(x)
+        }
+        m((0,c.hI)({
+          action:"Changed user journey grouping ".concat(a+1),
+          info:{
+            "group type":o
+          }
+        }))
+      };
+      return(0,l.useEffect)(()=>{
+        b()
+      },[t]),
+      (0,a.jsxs)(a.Fragment,{
+        children:[(0,a.jsxs)("div",{
+          className:"stat-filter-bar",
+          children:[(0,a.jsxs)("div",{
+            className:"filter-left-box",
+            children:[(0,a.jsx)("h4",{
+              children:t?t.box_name:""
+            }),(0,a.jsx)("div",{
+              className:"dropdown-wrapper",
+              children:(0,a.jsxs)("div",{
+                className:"big-combo-box",
+                children:[x&&x.length?el()(x,(e,s)=>(0,a.jsx)(ei.Z,{
+                  label:0===s?"Group by":"and",
+                  filterArr:f,
+                  _grpByArr:x,
+                  _index:s,
+                  isRevamped:!0,
+                  _idByArr:"grp-array",
+                  dataIntercomTarget:0===s?"Group by":"and",
+                  children:(0,a.jsx)(eo.Z,{
+                    handleChangeEvents:y,
+                    id:"groupby_dropdown",
+                    options:g,
+                    eventProperty:!1,
+                    userProperty:!1,
+                    eventDropVal:e,
+                    _idByArr:"grp-array",
+                    indexByGrpby:s,
+                    group_list:x,
+                    isUserJourney:!0,
+                    isRevamped:!0,
+                    selectedCategory:t,
+                    attribute:e.attribute
+                  },e.attribute)
+                },e.attribute)):null,x&&x.length<2?(0,a.jsx)(ei.Z,{
+                  label:"and",
+                  isRevamped:!0,
+                  className:"add-btn",
+                  children:(0,a.jsx)(eo.Z,{
+                    handleChangeEvents:y,
+                    id:"groupby_dropdown",
+                    options:g,
+                    eventProperty:!1,
+                    userProperty:!1,
+                    _idByArr:"grp-main",
+                    placeholderText:"+ Add grouping",
+                    indexByGrpby:1,
+                    group_list:x,
+                    isUserJourney:!0,
+                    isRevamped:!0,
+                    selectedCategory:t,
+                    attribute:x[0].attribute
+                  },x[0].attribute)
+                }):null]
+              })
+            })]
+          }),(0,a.jsx)("div",{
+            className:"filter-right-box",
+            children:(0,a.jsx)(ei.Z,{
+              children:(0,a.jsx)(ed.Z,{
+                chartRef:h,
+                graphData:n
+              })
+            })
+          })]
+        }),(0,a.jsx)(I.Z,{
+          show:!u&&o,
+          message:ec,
+          backgroundStyle:{
+            backgroundColor:"rgba(255,255,255,0.3)"
+          },
+          style:{
+            height:"100%"
+          },
+          children:(0,a.jsx)(er.Z,{
+            box_key:d,
+            graphData:n,
+            height:s?"calc(100vh - 230)":"calc(100vh - ".concat(p?"543":"503","px)"),
+            chartRef:h
+          })
+        })]
+      })
+    },
+    em=s(74936),
+    eh=s(12016),
+    ex=s(97844),
+    ev=s(83067),
+    eg=s.n(ev);
+    let eb=(0,h.default)(em.Z).withConfig({
+      componentId:"sc-9648240a-0"
+    })(["display:flex;align-items:center;border-radius:4px;font-size:13px;font-weight:500;border:1px solid rgb(192,202,217) !important;svg{margin:0 10px 0 0;}"]);
+    var ef=(0,l.memo)(e=>{
+      let{
+        isUserJourney:t,
+        defaultDateRange:s,
+        changeDateChange:i
+      }=e,
+      [r,n]=(0,l.useState)(!1),
+      o=(0,l.useCallback)(()=>n(!1),[]),
+      d=(0,l.useMemo)(()=>{
+        let e=new Date;
+        new Date().setDate(e.getDate()-30);
+        let{
+          value:{
+            lower:t,
+            upper:a
+          },
+          tz:l,
+          attribute:i,
+          labelId:r
+        }=s;
+        return{
+          from:new Date(t),
+          to:new Date(a),
+          timezone:l||D.x7,
+          timezoneOffset:0,
+          source:i.toUpperCase()||"UPLOAD_TIME",
+          preset:r||""
+        }
+      },[s]),
+      [c,u]=(0,l.useState)(d),
+      {
+        from:p,
+        to:m,
+        timezone:h,
+        preset:x
+      }=c||{};
+      (0,l.useEffect)(()=>{
+        u(d)
+      },[d]);
+      let v=(0,l.useCallback)((e,s)=>{
+        let{
+          from:a,
+          to:l,
+          timezone:r
+        }=e,
+        {
+          id:o
+        }=s||{},
+        d=a.toISOString(),
+        c=l.toISOString();
+        n(!1),
+        t&&i({
+          attribute:e.source.toLowerCase(),
+          operator:"between_dates",
+          value:{
+            lower:d,
+            upper:c
+          },
+          tz:r,
+          labelId:o
+        })
+      },[i,t]),
+      g=(0,l.useMemo)(()=>(0,D.lY)(p,h),[p,h]),
+      b=(0,l.useMemo)(()=>(0,D.lY)(m,h),[m,h]),
+      f=(0,l.useMemo)(()=>D.$q.find(e=>e.id===x),[x]),
+      y=(0,l.useMemo)(()=>r?"".concat(g," - ").concat(b):(null==f?void 0:f.label)||"".concat(g," - ").concat(b),[r,f,g,b]);
+      return(0,a.jsx)(eh.Z,{
+        trigger:["click"],
+        onVisibleChange:n,
+        visible:r,
+        destroyPopupOnHide:!0,
+        overlay:(0,a.jsx)(eg(),{
+          enableSource:!0,
+          onClose:o,
+          value:c,
+          onChange:v
+        }),
+        children:(0,a.jsxs)(eb,{
+          children:[(0,a.jsx)(ex.Z,{})," ",y]
+        })
+      })
+    });
+    let ey={
+      attribute:"upload_time",
+      operator:"between_dates",
+      value:{
+        lower:L().utc().subtract(1,"months").format(),
+        upper:L().utc().format()
+      },
+      label:"Last 1 month"
+    };
+    var ej=e=>{
+      let{
+        loader:t,
+        bottomBarClassFlag:s=!1
+      }=e,
+      r=(0,i.I0)(),
+      {
+        userDetailReducer:n,
+        appFilter:o,
+        urlReducer:d
+      }=(0,i.v9)(e=>e),
+      {
+        userJourneyBoxes:c,
+        userJourneyOptions:u,
+        userJourneyGraphData:p,
+        loaderForGraph:m,
+        loaderForBoxes:h,
+        labelDisplay:x
+      }=n,
+      {
+        appId:v,
+        uxcamuserid:b
+      }=d,
+      {
+        dateSegment:f
+      }=o,
+      [y,w]=(0,l.useState)(ey),
+      [C,k]=(0,l.useState)(null),
+      N=(0,g.e)("web"),
+      S=(0,l.useCallback)(async e=>{
+        let t={
+          appid:v,
+          filters:o.user.segment,
+          date_range:e||y,
+          uxcamuserid:b
+        };
+        b&&r((0,j.K8)(t))
+      },[o.user.segment,y,r,v,b]),
+      I=(0,l.useCallback)(async(e,t)=>{
+        var s;
+        let a,
+        {
+          agg_l:l,
+          fb_l:i,
+          groupby_default:n,
+          box_key:o
+        }=e,
+        c=d.appId,
+        u=i.filter(e=>"date_range"!==e.attribute);
+        u.map((e,t)=>{
+          0===t&&(e.value=[d.uxcamuserid])
+        }),
+        "total_engagement"===o&&(a=_.findLastIndex(n,{
+          attribute:"session_sessionid"
+        }))>=0&&(n[a].max_group_number=500);
+        let p={
+          ...t||y,
+          timezoneOffset:(0,D.pQ)(null===(s=t||y)||void 0===s?void 0:s.tz,new Date)
+        },
+        m={
+          appid:c,
+          aggregation_list:l,
+          group_list:n.map(e=>({
+            ...e,
+            time_zone_offset:(0,D.pQ)(p.tz,new Date)
+          })),
+          date_range:p,
+          filters:[...u],
+          series_plot_options:{}
+        };
+        b&&r((0,j.bH)(m))
+      },[y,r,d.appId,d.uxcamuserid,b]),
+      T=(0,l.useCallback)(async function(){
+        let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:ey;
+        await w(e),
+        S(e),
+        C&&I(C,e)
+      },[I,S,C]),
+      L=()=>{
+        let e=d.appId;
+        r((0,j._h)({
+          appid:e,
+          webApp:N
+        }))
+      };
+      return(0,l.useEffect)(()=>{
+        T(f)
+      },[b,f]),
+      (0,l.useEffect)(()=>{
+        C&&I(C)
+      },[C]),
+      (0,l.useEffect)(()=>{
+        u||L()
+      },[]),
+      (0,a.jsxs)("div",{
+        className:"journey-tab-wrapper",
+        children:[(0,a.jsx)("div",{
+          className:"journey-right-wrapper",
+          children:(0,a.jsx)("div",{
+            className:"right-fliter-wrap",
+            children:(0,a.jsx)("div",{
+              className:"date-box",
+              children:(0,a.jsx)(ef,{
+                isUserJourney:!0,
+                defaultDateRange:y,
+                changeDateChange:T
+              })
+            })
+          })
+        }),(0,a.jsx)(G,{
+          userJourneyBoxes:c,
+          dropdown_options:u,
+          setSelectedCategory:k,
+          loader:h,
+          urlReducer:d,
+          dateRange:y
+        }),(0,a.jsx)("div",{
+          className:"journey-graph-wrapper",
+          children:(0,a.jsx)("div",{
+            className:"stat-full-box",
+            children:(0,a.jsx)("div",{
+              className:"stat-graph-box",
+              children:(0,a.jsx)(ep,{
+                selectedCategory:C,
+                bottomBarClassFlag:s,
+                callGraphApi:I,
+                graphData:p,
+                uxcamid:d.uxcamuserid,
+                loader:m,
+                box_key:C&&C.box_key,
+                commonLoader:t,
+                labelDisplay:x
+              })
+            })
+          })
+        })]
+      })
+    },
+    ew=s(77655),
+    e_=s(47955),
+    eC=s(68049),
+    ek=s(40602),
+    eN=s(68457),
+    eS=s(7334),
+    eI=s.n(eS),
+    eT=e=>{
+      let{
+        label:t,
+        href:s,
+        link:l
+      }=e,
+      r=(0,i.I0)();
+      return(0,a.jsx)(U(),{
+        href:s,
+        as:l,
+        passHref:!0,
+        legacyBehavior:!0,
+        children:(0,a.jsx)("a",{
+          onClick:()=>r((0,c.hI)({
+            action:"View all user ".concat(eI()(t)," user details page")
+          })),
+          target:"_blank",
+          rel:"noreferrer",
+          children:(0,a.jsx)(a.Fragment,{
+            children:(0,a.jsxs)("span",{
+              children:[t,(0,a.jsx)(O.jH,{})]
+            })
+          })
+        })
+      })
+    },
+    eL=s(740);
+    let eD=eN.default.Item;
+    var eZ=l.memo(e=>{
+      let{
+        handleMenuChange:t,
+        selectedKey:s,
+        dateRange:l,
+        urlQuery:i,
+        uxcamuserid:r
+      }=e,
+      {
+        appId:n,
+        parentType:o
+      }=i,
+      {
+        attribute:d,
+        labelId:c,
+        value:{
+          lower:u,
+          upper:p
+        },
+        tz:m
+      }=l,
+      h=JSON.stringify(u),
+      x=JSON.stringify(p),
+      v=()=>"".concat(d,'={"o":"between_dates","v":{"lower":').concat(h,',"upper":').concat(x,'}, "lb":"').concat(c||"",'","tz":"').concat(m||"UTC",'"}&uxcamuserid={"o":"in","v":["').concat(r,'"]}'),
+      g="/app/".concat(n,"/sessions/list/1?").concat(v()),
+      b="/app/".concat(n,"/events/list/1?").concat(v());
+      return(0,a.jsx)("div",{
+        className:"menu-tab",
+        children:(0,a.jsxs)(eN.default,{
+          selectedKeys:[s],
+          onClick:e=>t(e),
+          children:[(0,a.jsxs)(eD,{
+            style:{
+              minWidth:"80px"
+            },
+            "data-intercom-target":"Tab Journey",
+            children:[(0,a.jsx)("div",{
+              className:"icon-box",
+              children:(0,a.jsx)(ew.Z,{})
+            }),(0,a.jsx)("div",{
+              className:"content-wrap",
+              children:(0,a.jsx)("span",{
+                className:"title",
+                children:"Journey"
+              })
+            })]
+          },"analytics"),(0,a.jsxs)(eD,{
+            style:{
+              minWidth:"95px"
+            },
+            "data-intercom-target":"Tab Properties",
+            children:[(0,a.jsx)("div",{
+              className:"icon-box",
+              children:(0,a.jsx)(e_.Z,{})
+            }),(0,a.jsx)("div",{
+              className:"content-wrap",
+              children:(0,a.jsx)("span",{
+                className:"title",
+                children:"Properties"
+              })
+            })]
+          },"properties"),(0,a.jsxs)(eD,{
+            style:{
+              minWidth:"95px"
+            },
+            "data-intercom-target":"Tab Locations",
+            children:[(0,a.jsx)("div",{
+              className:"icon-box",
+              children:(0,a.jsx)(eC.Z,{})
+            }),(0,a.jsx)("div",{
+              className:"content-wrap",
+              children:(0,a.jsx)("span",{
+                className:"title",
+                children:"Locations"
+              })
+            })]
+          },"location"),(0,a.jsxs)(eD,{
+            style:{
+              minWidth:"110px"
+            },
+            "data-intercom-target":"Tab Screen Flow",
+            children:[(0,a.jsx)("div",{
+              className:"icon-box",
+              children:(0,a.jsx)("i",{
+                className:"anticon icon-custom",
+                style:{
+                  top:"2px"
+                },
+                children:(0,a.jsxs)("svg",{
+                  width:"13",
+                  height:"19",
+                  viewBox:"0 0 14 20",
+                  fill:"none",
+                  xmlns:"http://www.w3.org/2000/svg",
+                  children:[(0,a.jsx)("path",{
+                    d:"M8.80912 1.95714H10.4286C10.5951 1.95714 10.7577 1.94999 10.909 1.94332C10.9748 1.94043 11.0384 1.93763 11.0993 1.93555C11.3042 1.92856 11.4788 1.92967 11.6217 1.95741C11.7627 1.98479 11.8624 2.03611 11.9293 2.12186C11.9971 2.20899 12.0429 2.34677 12.0429 2.57143V17.4286C12.0429 17.6532 11.9971 17.791 11.9293 17.8781C11.8624 17.9639 11.7627 18.0152 11.6217 18.0426C11.4788 18.0703 11.3042 18.0714 11.0993 18.0644C11.0384 18.0624 10.9748 18.0596 10.909 18.0567C10.7577 18.05 10.5951 18.0429 10.4286 18.0429H3.57143C3.40495 18.0429 3.24233 18.05 3.09099 18.0567C3.02524 18.0596 2.96162 18.0624 2.90074 18.0644C2.69582 18.0714 2.52121 18.0703 2.3783 18.0426C2.23728 18.0152 2.13755 17.9639 2.07074 17.8781C2.00286 17.791 1.95714 17.6532 1.95714 17.4286V2.57143C1.95714 2.34677 2.00286 2.20899 2.07074 2.12186C2.13755 2.03611 2.23728 1.98479 2.3783 1.95741C2.52121 1.92967 2.69582 1.92856 2.90074 1.93555C2.96162 1.93763 3.02524 1.94043 3.09099 1.94332C3.24232 1.94999 3.40495 1.95714 3.57143 1.95714H5.19088C5.24088 2.43876 5.64801 2.81429 6.14286 2.81429H7.85714C8.35199 2.81429 8.75912 2.43876 8.80912 1.95714ZM13.1 2.57143C13.1 2.20296 13.0253 1.90806 12.8834 1.67479C12.7411 1.44093 12.536 1.27678 12.2888 1.1624C11.8009 0.936579 11.1366 0.9 10.4286 0.9H3.57143C2.86338 0.9 2.19915 0.936579 1.71116 1.1624C1.46399 1.27678 1.25891 1.44093 1.11664 1.67479C0.974734 1.90806 0.9 2.20296 0.9 2.57143V17.4286C0.9 17.797 0.974734 18.0919 1.11664 18.3252C1.25891 18.5591 1.46399 18.7232 1.71116 18.8376C2.19915 19.0634 2.86338 19.1 3.57143 19.1H10.4286C11.1366 19.1 11.8009 19.0634 12.2888 18.8376C12.536 18.7232 12.7411 18.5591 12.8834 18.3252C13.0253 18.0919 13.1 17.797 13.1 17.4286V2.57143Z",
+                    fill:"#161E35",
+                    stroke:"#161E35",
+                    strokeWidth:"0.2"
+                  }),(0,a.jsx)("path",{
+                    fillRule:"evenodd",
+                    clipRule:"evenodd",
+                    d:"M7.43278 8.25526L9.30305 10.1255C9.47041 10.2929 9.47041 10.5642 9.30305 10.7316L7.43278 12.6019C7.26541 12.7693 6.99405 12.7693 6.82669 12.6019C6.65932 12.4345 6.65932 12.1632 6.82669 11.9958L7.96534 10.8571H4V10H7.96534L6.82669 8.86135C6.65932 8.69398 6.65932 8.42262 6.82669 8.25526C6.99405 8.08789 7.26541 8.08789 7.43278 8.25526Z",
+                    fill:"#161E35"
+                  })]
+                })
+              })
+            }),(0,a.jsx)("div",{
+              className:"content-wrap",
+              children:(0,a.jsx)("span",{
+                className:"title",
+                children:"Screen Flow"
+              })
+            })]
+          },"navigation"),(0,a.jsxs)(eD,{
+            style:{
+              minWidth:"80px"
+            },
+            "data-intercom-target":"Tab Sessions",
+            children:[(0,a.jsx)("div",{
+              className:"icon-box",
+              children:(0,a.jsx)(O.rE,{})
+            }),(0,a.jsx)("div",{
+              className:"content-wrap",
+              children:(0,a.jsx)(eT,{
+                label:"Sessions",
+                href:{
+                  pathname:"/integration",
+                  query:{
+                    appId:i.appId,
+                    parentType:"aiSessionsList",
+                    sessionpage:1
+                  }
+                },
+                link:eL.Z.modifyUrl(g)
+              })
+            })," "]
+          },"sessions"),(0,a.jsxs)(eD,{
+            style:{
+              minWidth:"80px"
+            },
+            "data-intercom-target":"Tab Events",
+            children:[(0,a.jsx)("div",{
+              className:"icon-box",
+              children:(0,a.jsx)(ek.Z,{})
+            }),(0,a.jsx)("div",{
+              className:"content-wrap",
+              children:(0,a.jsx)(eT,{
+                label:"Events",
+                href:{
+                  pathname:"/integration",
+                  query:{
+                    appId:i.appId,
+                    parentType:"eventsList",
+                    eventpage:1
+                  }
+                },
+                link:b
+              })
+            })," "]
+          },"events")]
+        })
+      })
+    }),
+    eF=s(62357);
+    let{
+      compose:eA,
+      withProps:eR,
+      withHandlers:eM
+    }=s(18093),
+    {
+      withScriptjs:eE,
+      withGoogleMap:eU,
+      GoogleMap:eP,
+      Marker:ez,
+      OverlayView:eW
+    }=s(33458),
+    eO=s(76389),
+    eB=(e,t)=>({
+      x:-(e/2),
+      y:-(t/2)
+    }),
+    {
+      MarkerClusterer:eV
+    }=s(88797),
+    eq=eA(eR({
+      googleMapURL:"https://maps.googleapis.com/maps/api/js?key=AIzaSyDqUr7-CbNA9BkzJYjK3zqQrUWyHgXq3Kw&v=3.exp&libraries=geometry,drawing,places",
+      loadingElement:(0,a.jsx)("div",{
+        style:{
+          height:"100%"
+        }
+      }),
+      containerElement:(0,a.jsx)("div",{
+        className:"gmap-box"
+      }),
+      mapElement:(0,a.jsx)("div",{
+        style:{
+          height:"100%"
+        }
+      })
+    }),eM({
+      onMarkerClustererClick:()=>e=>{
+        e.getMarkers()
+      }
+    }),eE,eU)(e=>(0,a.jsx)(eP,{
+      defaultZoom:e.markers.length>0?3:1,
+      defaultCenter:e.markers.length>0?{
+        lat:parseFloat(e.markers[0].latitude),
+        lng:parseFloat(e.markers[0].longitude)
+      }:{
+        lat:0,
+        lng:0
+      },
+      defaultOptions:0===e.markers.length?{
+        styles:eO
+      }:"",
+      children:e.markers.length>0?(0,a.jsx)(eV,{
+        onClick:e.onMarkerClustererClick,
+        averageCenter:!0,
+        enableRetinaIcons:!0,
+        gridSize:60,
+        maxZoom:15,
+        children:e.markers.map((e,t)=>(0,a.jsx)(ez,{
+          position:{
+            lat:parseFloat(e.latitude),
+            lng:parseFloat(e.longitude)
+          }
+        },t))
+      }):(0,a.jsx)(eW,{
+        position:{
+          lat:0,
+          lng:0
+        },
+        mapPaneName:eW.OVERLAY_MOUSE_TARGET,
+        getPixelPositionOffset:eB,
+        children:(0,a.jsx)("div",{
+          style:{
+            background:"white",
+            border:"1px solid #ccc",
+            padding:15,
+            width:"175px",
+            textAlign:"center"
+          },
+          children:(0,a.jsx)("h3",{
+            children:"No session location sent"
+          })
+        })
+      })
+    }));
+    var eJ=l.memo(e=>{
+      let{
+        urlQ:t,
+        setLoader:s
+      }=e,
+      {
+        dateSegment:r
+      }=(0,i.v9)(e=>e.appFilter),
+      n=(0,i.v9)(e=>{
+        let{
+          userDetailReducer:t
+        }=e;
+        return t.locationData
+      }),
+      o=(0,i.I0)(),
+      {
+        uxcamuserid:d
+      }=t,
+      c=async()=>{
+        s(!0),
+        o((0,j.b2)()),
+        s(!1)
+      };
+      return(0,l.useEffect)(()=>{
+        c()
+      },[r,d]),
+      (0,a.jsx)("div",{
+        className:"map-card",
+        children:n?n.map.length?(0,a.jsx)(eq,{
+          markers:n.map
+        }):(0,a.jsxs)("p",{
+          className:"dashboard-nqi-error-box",
+          children:[(0,a.jsx)(eF.Z,{})," During this time no session was recorded"]
+        }):(0,a.jsx)(a.Fragment,{})
+      })
+    }),
+    eQ=s(88767),
+    eH=s(7126),
+    eK=s(99795),
+    e$=s(30663),
+    eX=s(28166),
+    eG=()=>{
+      let e=(0,eQ.useQueryClient)(),
+      t=(0,i.I0)(),
+      {
+        urlReducer:s
+      }=(0,i.v9)(e=>e),
+      {
+        userLabels:r
+      }=(0,eX.ZP)(),
+      {
+        addUserLabel:n,
+        markUserLabel:o
+      }=(0,eX.Aj)(),
+      {
+        uxcamuserid:d
+      }=s,
+      {
+        currentAppReducer:u,
+        userDetailReducer:p
+      }=(0,i.v9)(e=>e),
+      {
+        _id:m
+      }=u,
+      {
+        data:h
+      }=p,
+      {
+        customLabel:x
+      }=h,
+      [v,g]=(0,l.useState)(x||[]);
+      (0,l.useEffect)(()=>{
+        g(x)
+      },[x,h]);
+      let b=e=>{
+        let s={
+          ...h
+        };
+        if(null==v?void 0:v.includes(e)){
+          let t=null==v?void 0:v.filter(t=>t!==e);
+          s.customLabel=t,
+          g(t)
+        }
+        else g([...v,e]),
+        s.customLabel=[...v,e];
+        t((0,eK.Xr)(s))
+      },
+      f="";
+      try{
+        f=JSON.parse(localStorage.getItem("usersListReqBody"))
+      }
+      catch(e){}let y=(0,l.useMemo)(()=>["userList",f],[f]),
+      j=(0,l.useCallback)(s=>{
+        let a=s.customLabelName,
+        l=s.isTagged,
+        i={
+          ...s,
+          uxcamuserIds:[d],
+          labelType:"user",
+          appid:m
+        };
+        a&&(b(a),o(i),t((0,e$.CW)(null,{
+          eventName:l?"add_label":"remove_label",
+          track_type:"event",
+          eventProperty:{
+            "label name":a,
+            "user ids":[d],
+            label_type:"user"
+          }
+        })),e.setQueryData(y,e=>{
+          var t,
+          l,
+          i,
+          r;
+          let n=[...null!==(r=null===(l=e.data)||void 0===l?void 0:null===(t=l.data)||void 0===t?void 0:t.body)&&void 0!==r?r:[]],
+          o=n.findIndex(e=>e.uxcamuserid===d),
+          c=n[o],
+          u=s.isTagged;
+          if((null==c?void 0:null===(i=c.customLabel)||void 0===i?void 0:i.indexOf(a))>-1){
+            if(!u){
+              let e=[...c.customLabel];
+              e.splice(e.indexOf(a),1),
+              c={
+                ...c,
+                customLabel:e
+              }
+            }
+          }
+          else u&&(null==c?void 0:c.customLabel)&&(c={
+            ...c,
+            customLabel:[...c.customLabel,a]
+          });
+          return{
+            ...e,
+            data:{
+              ...e.data,
+              data:{
+                ...e.data.data,
+                body:(null==n?void 0:n.length)&&n.map(e=>(null==e?void 0:e.uxcamuserid)===(null==c?void 0:c.uxcamuserid)?{
+                  ...e,
+                  customLabel:(null==c?void 0:c.customLabel)||[]
+                }:e)
+              }
+            }
+          }
+        }))
+      },[d,m,o,t,e,y]),
+      w=async s=>{
+        n(s);
+        let a=(null==s?void 0:s.uxcamuserIds)||[];
+        t((0,e$.CW)(null,{
+          eventName:"add_label",
+          track_type:"event",
+          eventProperty:{
+            "label name":null==s?void 0:s.customLabelName,
+            "user ids":a,
+            label_type:"user"
+          }
+        })),
+        e.setQueryData(y,e=>{
+          var t;
+          let l=(null===(t=e.data.data.body)||void 0===t?void 0:t.length)?e.data.data.body:[],
+          i=(null==l?void 0:l.length)&&l.map(e=>a.length&&a.includes(e.uxcamuserid)?{
+            ...e,
+            customLabel:[...e.customLabel,s.customLabelName]
+          }:e);
+          return{
+            ...e,
+            data:{
+              ...e.data,
+              data:{
+                ...e.data.data,
+                body:i
+              }
+            }
+          }
+        }),
+        b(null==s?void 0:s.customLabelName)
+      },
+      C=async(e,t)=>{
+        let s=(null==r?void 0:r.length)?[...r]:[];
+        e.length&&!(0,M.r3)(t,e)&&(s.push({
+          name:e,
+          icon:"tag",
+          usercount:1
+        }),s.sort((e,t)=>e.name.localeCompare(t.name)),w({
+          customLabelName:e,
+          labelIcon:"tag",
+          uxcamuserIds:[d],
+          appid:m
+        }))
+      };
+      return(0,a.jsx)(eH.Z,{
+        addedLabels:v,
+        handleRemoveLabel:j,
+        addLabel:C,
+        handleMarkLabel:j,
+        handleCloseLabel:()=>{
+          t((0,c.jc)(!1))
+        },
+        labelCountBy:"usercount"
+      })
+    },
+    eY=s(22365),
+    e0=s(20510),
+    e1=s(48403),
+    e2=s.n(e1),
+    e9=s(92046);
+    let e5=["Browser name","Browser version","Device type","OS name","Initial landing page","Initial referrer","Initial referrer domain","Initial landing UTM"],
+    e7=e=>{
+      if(!e)return"";
+      let t=JSON.parse(e);
+      return(0,a.jsx)("div",{
+        children:Object.entries(t).map(e=>{
+          let[t,s]=e;
+          return(0,a.jsxs)("div",{
+            children:[(0,a.jsxs)("span",{
+              style:{
+                fontWeight:500
+              },
+              children:[t,": "]
+            }),(0,a.jsx)("span",{
+              children:s
+            })]
+          },t)
+        })
+      })
+    };
+    var e3=(0,l.memo)(e=>{
+      let{
+        userDetails:t,
+        isWebSDK:s=!1
+      }=e,
+      {
+        properties:l
+      }=t;
+      return(0,a.jsx)("div",{
+        className:"property-wrapper custom-scrollbar",
+        children:(0,a.jsx)("div",{
+          className:"property-wrap-height",
+          children:(0,M.UI)(l,(e,t)=>(0,a.jsx)(e0.Z,{
+            children:(0,a.jsxs)("table",{
+              className:"table",
+              children:[(0,a.jsx)("tr",{
+                children:(0,a.jsx)("th",{
+                  colSpan:t,
+                  children:e2()(t)
+                })
+              }),(0,M.UI)(e,(e,l)=>{
+                let i;
+                return i="events"===t?e:e.value,
+                (0,M.Kn)(i)||(0,M.kJ)(i)?(0,M.UI)(i,(s,l)=>("number"!=typeof l&&"n/a"===s&&(s=(0,a.jsx)("em",{
+                  children:"n/a"
+                })),"number"==typeof l&&(l=!0),l&&(0,a.jsxs)("tr",{
+                  children:[(0,a.jsx)("td",{
+                    children:(0,a.jsxs)("div",{
+                      className:"title",
+                      children:["events"===t?s.eventname:l,(0,a.jsx)(R.Z,{
+                        title:"events"===t?"ANR"===s.eventname?"Application Not Responding":"rageTap"===s.eventname?"Count of rage taps":"Coded events: ".concat(s.eventname):e.tooltip,
+                        children:(0,a.jsx)(eY.Z,{
+                          style:{
+                            paddingLeft:5
+                          }
+                        })
+                      })]
+                    })
+                  }),(0,a.jsx)("td",{
+                    style:{
+                      padding:"0 10px"
+                    },
+                    children:":"
+                  }),(0,a.jsx)("td",{
+                    className:"value",
+                    children:(0,a.jsx)("div",{
+                      className:"text-truncate",
+                      children:"events"===t?s.count:"boolean"==typeof s?"".concat(s):s
+                    })
+                  })]
+                },(0,W.v4)()))):e.name&&(e5.includes(e.name)&&!s?null:(0,a.jsxs)("tr",{
+                  children:[(0,a.jsx)("td",{
+                    children:(0,a.jsxs)("div",{
+                      className:"title",
+                      children:[e.name,(0,a.jsx)(R.Z,{
+                        title:e.tooltip,
+                        children:(0,a.jsx)(eY.Z,{
+                          style:{
+                            paddingLeft:5
+                          }
+                        })
+                      })]
+                    })
+                  }),(0,a.jsx)("td",{
+                    style:{
+                      padding:"0 10px"
+                    },
+                    children:":"
+                  }),(0,a.jsx)("td",{
+                    className:"value",
+                    children:(0,a.jsx)("div",{
+                      className:"text-truncate",
+                      children:"user"===t&&0===l?(0,a.jsxs)("span",{
+                        children:[e.value||(0,a.jsx)("em",{
+                          children:"not assigned"
+                        }),(0,a.jsxs)("span",{
+                          style:{
+                            marginLeft:"10px",
+                            color:"#5D97FF",
+                            fontSize:"11px"
+                          },
+                          children:["(",(0,a.jsx)("a",{
+                            target:"_blank",
+                            href:"https://help.uxcam.com/en/articles/10222539-ideas-for-custom-user-properties",
+                            style:{
+                              textDecoration:"underline"
+                            },
+                            rel:"noreferrer",
+                            children:"API documentation"
+                          }),")"]
+                        })]
+                      }):"n/a"===e.value?(0,a.jsx)("em",{
+                        children:"n/a"
+                      }):"boolean"==typeof e.value?"".concat(e.value):"Number of events"===e.name&&(0,M.Ft)(e.value)?0:"Device class"===e.name||"Device manufacturer"===e.name?(0,e9.Zy)(e.value):"Time spent in the app"===e.name?(0,D.L3)(e.value):"Initial landing UTM"===e.name?e7(e.value):e.value
+                    })
+                  })]
+                },(0,W.v4)()))
+              })]
+            })
+          },(0,W.v4)()))
+        })
+      })
+    }),
+    e8=s(82636),
+    e4=s(79677),
+    e6=s(19197),
+    te=s(90581),
+    tt=s(86927);
+    let ts=h.default.span.withConfig({
+      componentId:"sc-d399af52-0"
+    })(["font-weight:500;"]);
+    var ta=e=>{
+      let t,
+      {
+        userSegment:s,
+        labelDisplay:r
+      }=e,
+      n=(0,i.I0)(),
+      {
+        data:o
+      }=(0,i.v9)(e=>e.userDetailReducer),
+      {
+        uxcamuserid:d,
+        info:u,
+        customLabel:p,
+        kuxcam_useridentity:m
+      }=o,
+      h=(0,tt.n5)({
+        customUserId:m,
+        uxcamuserid:d
+      });
+      t=(null==h?void 0:h.customUserId)?null:(0,a.jsx)("span",{
+        children:null==h?void 0:h.info
+      });
+      let x="".concat(u.city&&"N/A"===u.city?"Undetermined City":u.city,", ").concat(u.country),
+      v="Location is ".concat(u.city&&"N/A"!==u.city?u.city:"undetermined city",", ").concat(u.country||"N/A"),
+      g=(0,l.useMemo)(()=>null==p?void 0:p.length,[null==p?void 0:p.length]);
+      return(0,a.jsx)("div",{
+        className:"page-main-title custom-scrollbar",
+        children:(0,a.jsx)("div",{
+          className:"data-list-wrapper",
+          children:(0,a.jsxs)("ul",{
+            className:"data-list",
+            children:[(0,a.jsxs)("li",{
+              children:[(0,a.jsx)(e8.Z,{}),(0,a.jsx)(te.Z,{
+                segment:s,
+                _attribute:"uxcamuserid",
+                __value:o.uxcamuserid,
+                tooltipTitle_value:t,
+                isClickableLink:!1,
+                table:"appuser",
+                children:(null==h?void 0:h.customUserId)?(0,a.jsxs)(ts,{
+                  children:["  ",null==h?void 0:h.customUserId]
+                }):(0,a.jsxs)(ts,{
+                  className:"text-italic-asterisk",
+                  children:["  ",null==h?void 0:h.uxcamuserid]
+                })
+              })]
+            }),(0,a.jsx)("li",{
+              "aria-hidden":"true",
+              onClick:()=>{
+                n((0,c.jc)(!r))
+              },
+              className:"labels-nav",
+              children:(0,a.jsxs)(R.Z,{
+                overlayClassName:"user-label-tooltip",
+                title:"User Labels",
+                placement:"bottom",
+                children:[(0,a.jsx)(O.vT,{}),"Labels",(0,a.jsx)(e6.Z,{
+                  count:g
+                })]
+              })
+            }),(0,a.jsxs)("li",{
+              children:[(0,a.jsx)(eC.Z,{}),(0,a.jsx)(te.Z,{
+                segment:s,
+                _attribute:u.city&&"N/A"!==u.city?"device_city":"device_country",
+                __value:u.city&&"N/A"!==u.city?u.city:u.country,
+                tooltipTitle_value:v,
+                isClickableLink:!0,
+                table:"session",
+                children:x
+              })]
+            }),(0,a.jsxs)("li",{
+              children:[(0,a.jsx)(e4.Z,{}),(0,a.jsxs)(te.Z,{
+                segment:s,
+                _attribute:"user_first_seen_on",
+                tooltipTitle_value:"First session was at ".concat((0,D._3)(new Date(u.firstSeen),"dd.MM.yyyy")),
+                __value:u.firstSeen,
+                _operator:"on",
+                _isNotArrayFormat:!0,
+                isClickableLink:!0,
+                table:"appuser",
+                children:["First seen : ",(0,D._3)(new Date(u.firstSeen),"dd.MM.yyyy")]
+              })]
+            }),(0,a.jsxs)("li",{
+              children:[(0,a.jsx)(e4.Z,{}),(0,a.jsxs)(te.Z,{
+                segment:s,
+                _attribute:"user_last_seen_on",
+                tooltipTitle_value:"Last session was at ".concat((0,D._3)(new Date(u.lastSeen),"dd.MM.yyyy")),
+                __value:u.lastSeen,
+                _operator:"on",
+                _isNotArrayFormat:!0,
+                isClickableLink:!0,
+                table:"appuser",
+                children:["Last seen : ",(0,D._3)(new Date(u.lastSeen),"dd.MM.yyyy")]
+              })]
+            })]
+          })
+        })
+      })
+    };
+    let tl=e=>{
+      let{
+        children:t
+      }=e;
+      return(0,a.jsx)("div",{
+        className:"tab-body-wrapper",
+        children:t
+      })
+    },
+    ti=["Device manufacturer","Model name","Device class","DPI","Carrier Name","Total storage","Total memory"];
+    var tr=(0,C.Z)(e=>{
+      var t;
+      let{
+        urlQuery:s,
+        userSegment:r,
+        error:n,
+        setLoader:o,
+        loader:d,
+        resetPageDataWithApiCall:u,
+        tableData:p,
+        ...m
+      }=e,
+      h=(0,i.I0)(),
+      x=(0,g.e)("web"),
+      {
+        urlReducer:{
+          uxcamuserid:v
+        },
+        appFilter:{
+          dateSegment:b
+        },
+        userDetailReducer:f
+      }=(0,i.v9)(e=>e),
+      y=null==f?void 0:f.data,
+      j=(0,l.useMemo)(()=>{
+        let{
+          properties:e
+        }=y;
+        return x&&e&&e["Last used device"]&&(e["Last used device"]=e["Last used device"].filter(e=>!ti.includes(e.name))),
+        y
+      },[x,y]),
+      w={
+        properties:e3,
+        location:eJ,
+        analytics:ej,
+        navigation:N.default
+      },
+      [C,T]=(0,l.useState)("analytics"),
+      L=w[C];
+      return(0,a.jsx)(I.Z,{
+        show:d,
+        message:(0,a.jsx)(k.Z,{}),
+        backgroundStyle:{
+          backgroundColor:"rgba(255,255,255, 0.5)"
+        },
+        children:(0,a.jsx)("div",{
+          className:"userinfo-box-wrapper detail-box-wrapper",
+          children:(null==f?void 0:null===(t=f.data)||void 0===t?void 0:t.info)?(0,a.jsxs)(a.Fragment,{
+            children:[(0,a.jsx)(ta,{
+              userSegment:r,
+              resetPageDataWithApiCall:u,
+              labelDisplay:null==f?void 0:f.labelDisplay,
+              tableData:p
+            }),(null==f?void 0:f.labelDisplay)&&(0,a.jsx)(eG,{}),(0,a.jsx)(eZ,{
+              handleMenuChange:e=>{
+                "sessions"!==e.key&&"events"!==e.key&&"notification"!==e.key&&(T(e.key),"navigation"!==e.key&&"location"!==e.key&&h((0,c.hI)({
+                  action:"Entered ".concat(e.key," tab user details page")
+                })))
+              },
+              uxcamuserid:v,
+              urlQuery:s,
+              dateRange:b,
+              selectedKey:C
+            }),(0,a.jsx)(tl,{
+              id:C,
+              children:(0,a.jsx)(L,{
+                id:C,
+                userDetails:j,
+                isUserDetails:!0,
+                setLoader:o,
+                loader:d,
+                isWebSDK:x,
+                ...m
+              })
+            })]
+          }):(null==n?void 0:n.message)&&(0,a.jsx)(S.Z,{
+            errorText:n.message,
+            displayIcon:!0,
+            isNoData:!0
+          })
+        })
+      })
+    });
+    let tn=h.default.div.withConfig({
+      componentId:"sc-ccbf7dca-0"
+    })([".userinfo-box-wrapper{background-color:",";position:relative;border:1px solid ",";height:100%;display:flex;flex-direction:column;.tab-body-wrapper{flex:1;}.screen-page-wrapper{margin:0;border:none;}}.userinfo-box-wrapper .session-sidebar-right .screen-session-table-sm,.userinfo-box-wrapper .session-sidebar-right .screen-session-table-sm .table-wrap .fixedDataTableLayout_main.public_fixedDataTable_main,.userinfo-box-wrapper .session-sidebar-right .screen-session-table-sm .table-wrap .fixedDataTableLayout_rowsContainer{height:calc(100vh - 166px) !important}.user-details{margin:40px 0 0 10px;display:flex;width:calc(100vw - 582px);;height:calc(100% - 40px);.user-sm-table{width:400px !important;}.Loader{width:100%;.Loader__content{height:calc(100% + 40px);}}}.journey-tab-wrapper{height:100%;display:flex;flex-direction:column;.journey-graph-wrapper{flex:1;}}"],w.r.colors.primarySnow,w.r.colors.surface10);
+    var to=e=>{
+      var t;
+      let{
+        resetPageDataWithApiCall:s,
+        tableData:r
+      }=e,
+      n=(0,i.I0)(),
+      {
+        urlReducer:o,
+        appFilter:d,
+        userDetailReducer:c,
+        errorReducer:u
+      }=(0,i.v9)(e=>e),
+      p=null==d?void 0:null===(t=d.user)||void 0===t?void 0:t.segment,
+      {
+        labelDisplay:m
+      }=c,
+      {
+        uxcamuserid:h
+      }=o,
+      [x,v]=(0,l.useState)(!1),
+      g=async e=>{
+        v(!0),
+        n((0,j.nE)(e)).then(()=>v(!1))
+      };
+      (0,l.useEffect)(()=>{
+        h&&g(h)
+      },[h]);
+      let b="detailsOnly"===o.type?(0,a.jsx)(y.Z,{
+        sm:24,
+        lg:24,
+        children:(0,a.jsx)(tr,{
+          urlQuery:o,
+          userDetail:c,
+          userSegment:p,
+          error:u,
+          loader:x,
+          setLoader:v,
+          resetPageDataWithApiCall:s,
+          tableData:r
+        })
+      }):(0,a.jsx)("div",{
+        className:"user-details ".concat(m?"user-label-expand":""),
+        children:(0,a.jsx)(tr,{
+          urlQuery:o,
+          userDetail:c,
+          userSegment:p,
+          error:u,
+          loader:x,
+          setLoader:v,
+          resetPageDataWithApiCall:s,
+          tableData:r
+        })
+      });
+      return(0,a.jsx)(tn,{
+        children:b
+      })
+    },
+    td=s(11163),
+    tc=s.n(td),
+    tu=s(76501),
+    tp=s(80432),
+    tm=s(25409),
+    th=s(85e3),
+    tx=s(98777);
+    class tv{
+      static async deleteSessionFromId(e,t){
+        return(0,tx.be)({
+          method:"DELETE",
+          url:"".concat("https://dashboardapi.uxcam.com","/app/").concat(t,"/session"),
+          data:e,
+          withCredentials:!0
+        })
+      }
+      static async deleteUserSession(e){
+        return(0,tx.be)({
+          method:"POST",
+          url:"".concat("https://data-management.uxcam.com","/deletion_requests"),
+          data:e,
+          withCredentials:!0
+        })
+      }
+    }
+    let tg=e=>async()=>tv.deleteUserSession(e).then(e=>e.data).catch(e=>e);
+    var tb=s(25971),
+    tf=s(92585),
+    ty=s(45640),
+    tj=s(55283),
+    tw=s(63137),
+    t_=s.n(tw),
+    tC=s(30998),
+    tk=s.n(tC),
+    tN=s(95593),
+    tS=s(88136);
+    let tI=h.default.div.withConfig({
+      componentId:"sc-7ffd3b10-0"
+    })(["display:flex;flex-direction:column;gap:8px;.title{font-size:12px;font-weight:500;height:24px;display:flex;gap:8px;align-items:center;padding-left:8px;&:after{content:'';height:1px;flex:1;align-self:center;margin:auto;background-color:#e8e8e8;}}"]),
+    tT={
+      sessionsList:"sessions",
+      aiSessionsList:"sessions",
+      usersList:"users"
+    },
+    tL=["rageTap","video","session_with_notes","viewed","crashed","unviewed"],
+    tD=e=>{
+      let{
+        icon:t,
+        title:s,
+        onClick:i,
+        selected:r
+      }=e,
+      n=(0,l.useMemo)(()=>r?(0,a.jsx)(tj.Z,{}):t,[r,t]);
+      return(0,a.jsxs)(tS.Kk,{
+        onClick:e=>{
+          e.stopPropagation(),
+          i()
+        },
+        children:[n,s]
+      })
+    };
+    var tZ=e=>{
+      let t=(0,i.I0)(),
+      {
+        urlReducer:s
+      }=(0,i.v9)(e=>e),
+      {
+        session:r,
+        user:n
+      }=(0,i.v9)(e=>e.appFilter),
+      o=r.segment,
+      u=n.segment,
+      p=s.parentType,
+      {
+        children:m,
+        loadTable:h
+      }=e,
+      {
+        megaFilteredSessionLabels:x,
+        filteredUserLabels:v,
+        labelSearch:g,
+        setLabelSearch:b,
+        resetSearch:f,
+        compareLabels:y
+      }=(0,eX.ZP)();
+      (0,l.useMemo)(()=>"usersList"===p?v:x,[p,v,x]);
+      let[j,w]=(0,l.useState)("user"),
+      [C,k]=(0,l.useState)([]),
+      N=["sessionsList","aiSessionsList"].includes(p)?"session_is_viewed":"user_is_viewed",
+      S={
+        unviewed:N,
+        viewed:N,
+        video:"session_has_video",
+        session_with_notes:"session_with_notes",
+        crashed:"session_crashed"
+      },
+      I=(0,l.useCallback)(e=>{
+        let s,
+        {
+          key:a
+        }=e,
+        l=[...C];
+        if(["sessionsList","aiSessionsList"].includes(p)){
+          t((0,c.vT)([]));
+          let e=o||[],
+          i="rageTap"!==a?a:"rageTap",
+          r=[...e];
+          if(l.includes(i)){
+            if("rageTap"!==a){
+              let t=S[a];
+              if(tL.includes(a)){
+                if("session_is_viewed"!==t)e=o.filter(e=>e.attribute!==t);
+                else{
+                  let t="unviewed"===a?"False":"True",
+                  s=es()(o,{
+                    attribute:S[a],
+                    value:t
+                  });
+                  e=o.filter((e,t)=>t!==s)
+                }
+              }
+              else e=o.filter(e=>e.value[0]!==a)
+            }
+            else e=o.filter(e=>"rageTap"!==e.value[0]);
+            t((0,d.Yb)(e.length>0?e:void 0,"session-filter")),
+            t((0,e$.CW)(null,{
+              eventName:"quick_filter_removed",
+              track_type:"event",
+              eventProperty:{
+                type:tL.includes(a)?"predefined":"custom_label",
+                name:a,
+                featureFlagQuickbar:!1,
+                oldSetting:r,
+                newSetting:e
+              }
+            })),
+            h()
+          }
+          else k(l=[...l,i]),
+          s="rageTap"!==a?tL.includes(a)?{
+            attribute:S[a],
+            operator:"equal",
+            table:"session",
+            value:"unviewed"!==a?"True":"False"
+          }:{
+            attribute:"custom_label",
+            operator:"has_any",
+            value:[a],
+            table:"session"
+          }:{
+            attribute:"event_name",
+            operator:"in",
+            value:[a],
+            table:"event"
+          },
+          e.push(s),
+          t((0,e$.CW)(null,{
+            eventName:"apply_quick_filter",
+            track_type:"event",
+            eventProperty:{
+              type:tL.includes(a)?"predefined":"custom_label",
+              name:a,
+              featureFlagQuickbar:!1,
+              oldSetting:r,
+              newSetting:e
+            }
+          })),
+          t((0,d.Yb)(e,"session-filter")),
+          h()
+        }
+        else if("usersList"===p){
+          t((0,c.UD)([]));
+          let e=u||[];
+          if(l.includes(a)){
+            let t=S[a];
+            if(tL.includes(a)){
+              if("user_is_viewed"!==t)e=u.filter(e=>e.attribute!==t);
+              else{
+                let t="unviewed"===a?"False":"True",
+                s=es()(u,{
+                  attribute:"user_is_viewed",
+                  value:t
+                });
+                e=u.filter((e,t)=>t!==s)
+              }
+            }
+            else e=u.filter(e=>e.value[0]!==a)
+          }
+          else{
+            k(l=[...l,a]),
+            a&&(s=tL&&tL.includes(a)?{
+              attribute:S[a],
+              operator:"equal",
+              value:"unviewed"===a?"False":"True",
+              table:"appuser"
+            }:{
+              attribute:"user_custom_label",
+              operator:"has_any",
+              value:[a],
+              table:"appuser"
+            });
+            let t=tk()(e,{
+              attribute:"user_is_viewed"
+            });
+            -1!==t?e[t]=s:e.push(s)
+          }
+          t((0,d.Yb)(e.length>0?e:[],"user-filter")),
+          h()
+        }
+      },[h,p,C,o,u]),
+      T=(0,l.useCallback)(e=>{
+        let{
+          value:t
+        }=e.target;
+        "session"===j?b({
+          ...g,
+          sessionLabels:t
+        }):b({
+          ...g,
+          userLabels:t
+        })
+      },[g,j,b]);
+      (0,l.useEffect)(()=>{
+        let e=[];
+        ["sessionsList","aiSessionsList"].includes(p)?o&&o.length>0?(o&&o.map(t=>{
+          "event_name"!==t.attribute&&"custom_label"!==t.attribute?"session_is_viewed"===t.attribute&&"False"===t.value?e.push("unviewed"):e.push(t.attribute):"custom_label"===t.attribute?e.push(t.value[0]):"event_name"===t.attribute&&"rageTap"===t.value[0]&&e.push(t.value[0])
+        }),k(e=e.map(e=>t_()(S)[e]||e))):k([]):"usersList"===p&&(u&&u.length>0?(u&&u.map(t=>{
+          "user_custom_label"!==t.attribute?"user_is_viewed"===t.attribute&&"False"===t.value?e.push("unviewed"):e.push(t.attribute):"user_custom_label"===t.attribute&&e.push(t.value[0])
+        }),k(e=e.map(e=>t_()(S)[e]||e))):k([]))
+      },[o,u]);
+      let L=(0,l.useMemo)(()=>"usersList"===p?[{
+        key:"user",
+        name:"User label",
+        options:v,
+        showSearch:!0
+      }]:[{
+        key:"session",
+        name:"Session label",
+        options:x,
+        showSearch:!0
+      },{
+        key:"user",
+        name:"User label",
+        options:v,
+        showSearch:!0
+      }],[v,x,p]),
+      D=(0,l.useMemo)(()=>"usersList"===p?(0,a.jsxs)(a.Fragment,{
+        children:[(0,a.jsx)(tD,{
+          icon:(0,a.jsx)(tf.Z,{}),
+          title:"Viewed ".concat(tT[p]),
+          onClick:()=>I({
+            key:"viewed"
+          }),
+          selected:C.includes("viewed")
+        }),(0,a.jsx)(tD,{
+          icon:(0,a.jsx)(ty.Z,{}),
+          title:"Unviewed ".concat(tT[p]),
+          onClick:()=>I({
+            key:"unviewed"
+          }),
+          selected:C.includes("unviewed")
+        })]
+      }):null,[I,p,C]),
+      Z=(0,l.useMemo)(()=>(0,a.jsxs)(tI,{
+        children:[(0,a.jsxs)("span",{
+          className:"title",
+          children:["Filter ",tT[p]," by"]
+        }),D]
+      }),[D,p]);
+      return(0,a.jsx)(eh.Z,{
+        overlay:(0,a.jsx)(tN.Z,{
+          tabs:L,
+          header:Z,
+          selectedKeys:[...C],
+          handleItemClicked:e=>I({
+            key:e
+          }),
+          handleTabChange:e=>{
+            w(e)
+          },
+          searchInput:{
+            placeholder:"Search ".concat(j," label"),
+            value:"session"===j?g.sessionLabels:g.userLabels,
+            onChange:T
+          },
+          hideFooter:!0
+        }),
+        trigger:["click"],
+        onVisibleChange:e=>{
+          e||(f(),null==v||v.sort((e,t)=>y(C,e,t)),null==x||x.sort((e,t)=>y(C,e,t)))
+        },
+        overlayClassName:"extra-table-filter",
+        children:(0,a.jsx)("div",{
+          className:"btn-quick-filter",
+          "data-intercom-target":"Quick Filter",
+          children:(0,a.jsx)(em.Z,{
+            size:"small",
+            children:m||(s.sessionid||s.uxcamuserid?(0,a.jsx)(O.Xq,{}):"Quick filter")
+          })
+        })
+      })
+    },
+    tF=s(75493),
+    tA=s(27755),
+    tR=s(76633),
+    tM=s(73495),
+    tE=s(11444),
+    tU=s(47662);
+    let tP=h.default.div.withConfig({
+      componentId:"sc-853e8e7c-0"
+    })(["display:flex;justify-content:space-between;margin:12px 0px 16px;z-index:1;position:relative;.dropdown-btn{padding:0;display:flex;justify-content:center;align-content:center;height:fit-content;padding:6px 10px;height:32px;border-radius:4px;border-color:#828282;margin-left:20px;background-color:#ffffff;svg{path,rect{fill:#828282;stroke:#828282;}}&:hover{background:transparent;svg{path,rect{fill:#5D97FF;stroke:#5D97FF;}}}}.btn-quick-filter{button{height:32px;border-radius:4px;display:flex;align-items:center;background-color:#ffffff;letter-spacing:0.4px;border-color:rgba(37,56,88,0.6);color:#161E35;&:hover{border-color:#5D97FF;color:#5D97FF;background:transparent;svg{path{fill:#5D97FF;&:nth-child(2){fill:#32BF8A;}}}}}}"]),
+    tz=h.default.div.withConfig({
+      componentId:"sc-853e8e7c-1"
+    })(["font-size:",";display:flex;align-items:center;"],e=>{
+      let{
+        smaller:t
+      }=e;
+      return t?"0.875rem":"1.125rem"
+    }),
+    tW=h.default.button.withConfig({
+      componentId:"sc-853e8e7c-2"
+    })(["font-weight:",";font-size:16px;line-height:",";cursor:",";background-color:transparent;border:",";box-sizing:border-box;border-radius:4px;height:32px;&:hover{border-color:",";color:",";}color:#161E35;svg{margin-right:3px;margin-left:2px;}user-select:text;-webkit-user-select:text;-moz-user-select:text;-ms-user-select:text;"],e=>(null==e?void 0:e.value)==="text"?"500":"400",e=>(null==e?void 0:e.value)==="text"?"21px":"16.41px",e=>(null==e?void 0:e.value)!=="text"?"pointer":"auto",e=>(null==e?void 0:e.value)==="button"?"1.16667px solid rgba(37, 56, 88, 0.6)":"none",e=>(null==e?void 0:e.value)!=="text"?"#5D97FF":"",e=>(null==e?void 0:e.value)!=="text"?"#5D97FF":""),
+    tO=h.default.div.withConfig({
+      componentId:"sc-853e8e7c-3"
+    })(["display:flex;align-items:center;.push-notification-btn{svg{path{fill:",";}}}"],e=>(null==e?void 0:e.isUserAdmin)?"":"rgba(0, 0, 0, 0.25)"),
+    tB=(0,h.default)(em.Z).withConfig({
+      componentId:"sc-853e8e7c-4"
+    })(["background:#ffffff;border:0px;padding:0px;margin-left:15px;:hover{background:transparent;color:#5D97FF;svg{path{fill:#5D97FF;}}}"]),
+    tV=(0,h.default)(em.Z).withConfig({
+      componentId:"sc-853e8e7c-5"
+    })(["background:#ffffff;border:1px solid #C0CAD9;border-radius:5px;padding:0px 3px;margin-left:15px;width:32px;:focus{background:transparent;color:#161E35;border-color:#C0CAD9;}:hover{background:transparent;color:#5D97FF;border-color:#C0CAD9;}"]),
+    tq=(0,l.memo)(e=>{
+      let{
+        isUserStatisticsLoading:t,
+        totalUsers:s
+      }=e,
+      [a,i]=(0,l.useState)(!0);
+      return((0,l.useEffect)(()=>{
+        let e=null;
+        return a&&(e=setTimeout(()=>{
+          a&&i(!1)
+        },3e3)),
+        ()=>{
+          e&&clearTimeout(e)
+        }
+      },[a]),t||a)?"Loading users ...":s?"".concat(Intl.NumberFormat().format(s)||0," users"):"No users"
+    });
+    var tJ=(0,l.memo)(e=>{
+      var t,
+      s,
+      r;
+      let{
+        expanded:n,
+        resetPageDataWithApiCall:o,
+        headers:c
+      }=e,
+      u=(0,eQ.useQueryClient)(),
+      [p,m]=(0,l.useState)(!1),
+      [h,x]=(0,l.useState)(!1),
+      [v,g]=(0,l.useState)(!1),
+      [y,j]=(0,l.useState)(!1),
+      w=["user_is_viewed","user_custom_label"],
+      {
+        urlReducer:C,
+        appFilter:k,
+        currentAppReducer:{
+          role:N
+        },
+        profileReducer:S
+      }=(0,i.v9)(e=>e),
+      {
+        uxcamuserid:T,
+        appId:L,
+        userpage:D
+      }=C,
+      [Z,F]=(0,l.useState)(!0),
+      A=(0,i.I0)(),
+      M=null==k?void 0:null===(t=k.user)||void 0===t?void 0:t.segment,
+      E=(0,l.useMemo)(()=>1===N,[N]),
+      {
+        name:U
+      }=S,
+      P="";
+      try{
+        P=u.getQueryData(["userList",JSON.parse(localStorage.getItem("usersListReqBody"))])
+      }
+      catch(e){}let z=(0,b.IE)(),
+      {
+        activityFilterList:W
+      }=k.user,
+      B=(0,l.useMemo)(()=>{
+        let e=(0,f.Vw)(W,M,z),
+        t={
+          appid:L||"",
+          date_range:k.dateSegment,
+          filters:e
+        };
+        return z&&delete t.date_range,
+        t
+      },[W,k.dateSegment,L,z,M]);
+      (0,l.useEffect)(()=>{
+        let e=setTimeout(()=>{
+          F(!1)
+        },700);
+        return()=>clearTimeout(e)
+      },[]);
+      let V=(0,l.useMemo)(()=>!Z&&!!L&&(0,f.XX)(W),[Z,L,W]),
+      {
+        data:q,
+        isFetching:J
+      }=(0,eQ.useQuery)(["userStatistics",B],()=>tU.Z.users_statistics(B),{
+        enabled:V,
+        keepPreviousData:!0
+      }),
+      Q=()=>{
+        let e="/app/".concat(L,"/users/list/").concat(D,"?");
+        e=(0,tM.$)(e,M),
+        tc().push("/integration?parentType=usersList&appId=".concat(L,"&userpage=").concat(D),e)
+      },
+      H=(0,l.useMemo)(()=>M&&M.some(e=>w.includes(e.attribute)),[M]);
+      return(0,a.jsxs)(tP,{
+        children:[(0,a.jsx)(tz,{
+          smaller:!!T,
+          children:(0,a.jsx)(tW,{
+            value:n?"text":"button",
+            type:"button",
+            onMouseDown:()=>n?null:Q(),
+            children:n?(0,a.jsx)(tq,{
+              isUserStatisticsLoading:J,
+              totalUsers:null==q?void 0:null===(r=q.data)||void 0===r?void 0:null===(s=r.data)||void 0===s?void 0:s.totalUsers
+            }):(0,a.jsxs)(a.Fragment,{
+              children:[(0,a.jsx)(O.pI,{})," User list"," "]
+            })
+          })
+        }),(0,a.jsx)(tO,{
+          isUserAdmin:E,
+          children:n?(0,a.jsxs)(a.Fragment,{
+            children:[(0,a.jsxs)(tZ,{
+              loadTable:()=>{
+                A((0,d.Ct)(1,"user",!0))
+              },
+              children:[H&&(null==M?void 0:M.length)?(0,a.jsx)(tF.kb,{}):(0,a.jsx)(tF.ol,{})," Quick filter"]
+            }),(0,a.jsx)(eh.Z,{
+              overlayClassName:"column-edit-dropdown",
+              className:"dropdown-btn",
+              trigger:["click"],
+              onVisibleChange:e=>m(e),
+              visible:p,
+              overlay:(0,a.jsx)(I.Z,{
+                show:h,
+                message:(0,a.jsx)(tA.Z,{}),
+                backgroundStyle:{
+                  backgroundColor:"rgba(0, 0, 0, 0.0)"
+                },
+                children:(0,a.jsx)(th.default,{
+                  type:"user",
+                  appid:L,
+                  dropdownVisible:p,
+                  setLoading:e=>x(e),
+                  setDropdownVisibility:m,
+                  headers:c,
+                  showAddCustomUserButton:!0
+                })
+              }),
+              children:(0,a.jsx)(em.Z,{
+                children:(0,a.jsx)(O.cI,{})
+              })
+            }),(0,a.jsx)(tE.Z,{})]
+          }):(0,a.jsxs)(a.Fragment,{
+            children:[(0,a.jsx)(tm.Z,{
+              content:"Delete user",
+              overlayClassName:"custom-popover",
+              children:(0,a.jsx)(tV,{
+                icon:(0,a.jsx)(tu.Z,{}),
+                onClick:()=>g(!0)
+              })
+            }),(0,a.jsx)(R.Z,{
+              overlayClassName:"custom-popover",
+              title:"Close",
+              children:(0,a.jsx)(tB,{
+                icon:(0,a.jsx)(O.Tw,{}),
+                onMouseDown:Q
+              })
+            })]
+          })
+        }),(0,a.jsx)(tb.Z,{
+          title:"Delete User?",
+          content:"Do you want to delete this user? This action is irreversible.",
+          onOk:()=>{
+            var e,
+            t;
+            let s=(0,tR.$b)([null==C?void 0:C.uxcamuserid],null==P?void 0:null===(t=P.data)||void 0===t?void 0:null===(e=t.data)||void 0===e?void 0:e.body);
+            j(!0),
+            A(tg({
+              table_name:"user",
+              app_id:L,
+              requested_by_user_name:U,
+              identifiers:s
+            })).then(async e=>{
+              if(e.success)j(!1),
+              g(!1),
+              tp.ZP.success("User deleted successfully"),
+              await o(),
+              tc().push("/integration?parentType=usersList&appId=".concat(C.appId),"/app/".concat(C.appId,"/users/list/1"));
+              else{
+                var t;
+                j(!1),
+                g(!1),
+                tp.ZP.error(null==e?void 0:null===(t=e.response)||void 0===t?void 0:t.data.error.message)
+              }
+            })
+          },
+          onCancel:()=>g(!1),
+          deleteLoading:y,
+          deleteModalVisible:v
+        })]
+      })
+    }),
+    tQ=s(3641),
+    tH=s(13354),
+    tK=s(18721),
+    t$=s.n(tK),
+    tX=s(27060),
+    tG=s(65338),
+    tY=s(31152),
+    t0=s(23357),
+    t1=s(23242),
+    t2=s(1102),
+    t9=s(65885),
+    t5=s(92434);
+    let t7=new t9.Z,
+    t3=h.default.div.withConfig({
+      componentId:"sc-d7b17aed-0"
+    })(["width:100%;display:flex;align-items:center;gap:14px;#outside-icon-box{padding-left:0;.ant-badge-count{display:none;}}"]),
+    t8=h.default.div.withConfig({
+      componentId:"sc-d7b17aed-1"
+    })(["height:6px;width:6px;border-radius:50%;background-color:",";"],e=>{
+      let{
+        unread:t
+      }=e;
+      return t?"#DC4F44":"#D0D2D7"
+    }),
+    t4=h.default.div.withConfig({
+      componentId:"sc-d7b17aed-2"
+    })(["display:flex;flex-direction:column;justify-content:center;"]),
+    t6=h.default.div.withConfig({
+      componentId:"sc-d7b17aed-3"
+    })(["position:relative;"]),
+    se=h.default.div.withConfig({
+      componentId:"sc-d7b17aed-4"
+    })(["position:absolute;top:-2px;right:-5px;height:13px;width:13px;padding:4px;font-size:0.5rem;color:#ffffff;background-color:#5D97FF;border-radius:50%;display:flex;justify-content:center;align-items:center;pointer-events:none;"]);
+    var st=e=>{
+      var t,
+      s,
+      l;
+      let{
+        row:r
+      }=e,
+      n=null==r?void 0:null===(t=r.original)||void 0===t?void 0:t.uxcamuserid,
+      o=null==r?void 0:null===(s=r.original)||void 0===s?void 0:s.customLabel,
+      d=null==r?void 0:null===(l=r.original)||void 0===l?void 0:l.isViewed,
+      c=(0,eQ.useQueryClient)(),
+      {
+        markUserLabel:u
+      }=(0,eX.Aj)(),
+      {
+        currentAppReducer:p,
+        urlReducer:m
+      }=(0,i.v9)(e=>e),
+      {
+        _id:h
+      }=p,
+      x=t7.get("loggedInFromAdminDashboard"),
+      v=async()=>{
+        var e;
+        let t="";
+        try{
+          t=["userList",JSON.parse(localStorage.getItem("usersListReqBody"))]
+        }
+        catch(e){}if((null==r?void 0:null===(e=r.original)||void 0===e?void 0:e.uxcamuserid)&&"1"!==x){
+          let e={
+            customLabelName:"isViewed",
+            isTagged:!d,
+            labelType:"user",
+            uxcamuserIds:[r.original.uxcamuserid],
+            appid:h,
+            debugSource:4
+          };
+          c.setQueryData(t,e=>{
+            let t=e.data.data.body.map(e=>e.uxcamuserid===n?{
+              ...e,
+              isViewed:!d
+            }:e);
+            return{
+              ...e,
+              data:{
+                ...e.data,
+                data:{
+                  ...e.data.data,
+                  body:t
+                }
+              }
+            }
+          }),
+          u(e)
+        }
+      };
+      return(0,a.jsxs)(t3,{
+        isActive:(null==m?void 0:m.uxcamuserid)===n,
+        children:[(0,a.jsx)(R.Z,{
+          placement:"top",
+          title:d?"Mark as unread":"Mark as read",
+          children:(0,a.jsx)(t8,{
+            unread:!d,
+            onMouseDown:v
+          })
+        }),(0,a.jsx)("input",{
+          type:"checkbox",
+          "aria-label":"Select row",
+          checked:r.getIsSelected(),
+          indeterminate:r.getIsSomeSelected(),
+          disabled:!r.getCanSelect(),
+          onChange:r.getToggleSelectedHandler()
+        }),(0,a.jsx)(t4,{
+          children:(0,a.jsxs)(t6,{
+            children:[(0,a.jsx)(t5.Z,{
+              data:null==r?void 0:r.original
+            }),(null==o?void 0:o.length)>0&&(0,a.jsx)(se,{
+              children:o.length
+            })]
+          })
+        })]
+      })
+    };
+    let ss=h.default.div.withConfig({
+      componentId:"sc-718a2c91-0"
+    })(["position:relative;height:calc(100vh - 100px);width:100%;min-width:345px;border-radius:8px;background-color:#fff;.title{font-size:12px;color:#090F19;}.subtitle{color:#A2A5AE;font-size:11px;}table{thead{th:nth-of-type(3){display:","};}}tbody{td:nth-of-type(3){display:","};}"],e=>e.expanded?"table-cell !important":"",e=>e.expandedView?"":"table-cell !important");
+    h.default.div.withConfig({
+      componentId:"sc-718a2c91-1"
+    })(["position:absolute;height:100%;width:100%;visibility:",";cursor:not-allowed;z-index:100;"],e=>{
+      let{
+        visible:t
+      }=e;
+      return t?"visible":"hidden"
+    }),
+    h.default.div.withConfig({
+      componentId:"sc-718a2c91-2"
+    })(["position:absolute;height:calc(100% - 57px);top:57px;width:100%;display:flex;justify-content:center;align-items:center;background-color:rgba(255,255,255,0.5);"]);
+    let sa=h.default.div.withConfig({
+      componentId:"sc-718a2c91-3"
+    })(["display:flex;height:100%;width:100%;justify-content:center;align-items:flex-start;flex-direction:column;flex-wrap:nowrap;white-space:nowrap;padding:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;button{cursor:pointer;background-color:transparent;border:none;text-decoration:underline;}div{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px;}"]);
+    h.default.div.withConfig({
+      componentId:"sc-718a2c91-4"
+    })(["font-weight:500;"]);
+    let sl=(0,h.default)(sa).withConfig({
+      componentId:"sc-718a2c91-5"
+    })(["flex-direction:row;justify-content:left;align-items:center;.platform-icon{margin-right:5px;font-size:12px;min-width:12px;}"]),
+    si=h.default.div.withConfig({
+      componentId:"sc-718a2c91-6"
+    })(["font-size:12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex-direction:row;justify-content:left;align-items:center;padding:0;"]),
+    sr=h.default.p.withConfig({
+      componentId:"sc-718a2c91-7"
+    })(["margin:0;width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;text-align:left;font-size:12px;"]),
+    sn=h.default.span.withConfig({
+      componentId:"sc-718a2c91-8"
+    })(["margin:0;width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;text-align:left;em{padding-right:3px;}"]),
+    so=h.default.div.withConfig({
+      componentId:"sc-718a2c91-9"
+    })(["padding-left:8px;"]),
+    sd=h.default.span.withConfig({
+      componentId:"sc-718a2c91-10"
+    })(["width:100%;"]),
+    sc={
+      1:"Android",
+      2:"iOS",
+      3:"Desktop"
+    },
+    su=(0,l.memo)(e=>{
+      let{
+        row:t
+      }=e,
+      {
+        totalSession:s
+      }=null==t?void 0:t.original;
+      return(0,a.jsx)(sa,{
+        children:(0,a.jsx)("div",{
+          children:(0,t0.Z)(s)
+        })
+      })
+    }),
+    sp=(0,l.memo)(e=>{
+      var t,
+      s;
+      let{
+        row:l
+      }=e,
+      {
+        city:i
+      }=null==l?void 0:l.original,
+      r=(0,tt.n5)({
+        customUserId:null==l?void 0:null===(t=l.original)||void 0===t?void 0:t.kUXCam_UserIdentity,
+        uxcamuserid:null===(s=l.original)||void 0===s?void 0:s.uxcamuserid
+      });
+      return(0,a.jsx)(sl,{
+        children:(0,a.jsxs)("div",{
+          className:"userName",
+          children:[(null==r?void 0:r.customUserId)?(0,a.jsx)(si,{
+            className:"title",
+            children:null==r?void 0:r.customUserId
+          }):(0,a.jsx)(R.Z,{
+            placement:"topLeft",
+            title:(0,a.jsx)("span",{
+              children:null==r?void 0:r.info
+            }),
+            children:(0,a.jsx)(si,{
+              className:"title text-italic-asterisk",
+              children:null==r?void 0:r.uxcamuserid
+            })
+          }),(0,a.jsx)("span",{
+            className:"subtitle",
+            children:i
+          })]
+        })
+      })
+    }),
+    sm=(0,l.memo)(e=>{
+      let{
+        row:t
+      }=e,
+      {
+        deviceid:s
+      }=null==t?void 0:t.original;
+      return(0,a.jsx)(sl,{
+        children:(0,a.jsx)("div",{
+          children:s
+        })
+      })
+    }),
+    sh=(0,l.memo)(e=>{
+      let{
+        row:t
+      }=e,
+      {
+        platform:s,
+        deviceModel:l
+      }=null==t?void 0:t.original,
+      i=(null==l?void 0:l.includes("iPhone"))?(0,e9.Zy)(l):null==l?void 0:l.toUpperCase();
+      return(0,a.jsxs)(sl,{
+        children:[(0,a.jsx)("div",{
+          className:"platform-icon",
+          children:1===s?(0,a.jsx)(tG.Z,{}):(0,a.jsx)(tY.Z,{})
+        }),(0,a.jsx)("div",{
+          children:i
+        })]
+      })
+    }),
+    sx=(0,l.memo)(e=>{
+      let{
+        row:t
+      }=e,
+      {
+        rageGestureCount:s
+      }=null==t?void 0:t.original;
+      return(0,a.jsx)(sa,{
+        children:(0,a.jsx)("div",{
+          children:(0,t0.Z)(s)
+        })
+      })
+    }),
+    sv=(0,l.memo)(e=>{
+      let{
+        row:t
+      }=e,
+      {
+        deviceClass:s
+      }=null==t?void 0:t.original;
+      return(0,a.jsx)(sa,{
+        children:(0,a.jsx)("div",{
+          children:s||"-"
+        })
+      })
+    }),
+    sg=(0,l.memo)(e=>{
+      let{
+        row:t
+      }=e,
+      {
+        eventCount:s
+      }=null==t?void 0:t.original;
+      return(0,a.jsx)(sa,{
+        children:(0,a.jsx)("div",{
+          children:(0,t0.Z)(s)
+        })
+      })
+    }),
+    sb=(0,l.memo)(e=>{
+      let{
+        row:t
+      }=e,
+      {
+        appVersion:s
+      }=null==t?void 0:t.original;
+      return(0,a.jsx)(sl,{
+        children:(0,a.jsx)("div",{
+          children:s
+        })
+      })
+    }),
+    sf=(0,l.memo)(e=>{
+      let{
+        row:t
+      }=e,
+      {
+        screenCount:s
+      }=null==t?void 0:t.original;
+      return(0,a.jsx)(sa,{
+        children:(0,a.jsx)("div",{
+          children:(0,t0.Z)(s)
+        })
+      })
+    }),
+    sy=(0,l.memo)(e=>{
+      let{
+        row:t
+      }=e,
+      {
+        osVersion:s,
+        platform:l
+      }=null==t?void 0:t.original;
+      return(0,a.jsx)(sl,{
+        children:(0,a.jsxs)("div",{
+          children:[s," ",3===l?"":"(".concat(sc[l],")")]
+        })
+      })
+    }),
+    sj=(0,l.memo)(e=>{
+      let{
+        row:t
+      }=e,
+      {
+        engagementTime:s
+      }=null==t?void 0:t.original;
+      return(0,a.jsx)(sa,{
+        children:s&&(0,a.jsx)("div",{
+          children:s<60?"".concat(Math.round(s)," sec"):(0,e9.zk)({
+            durationInSecs:s
+          })
+        })
+      })
+    }),
+    sw=(0,l.memo)(e=>{
+      let{
+        row:t
+      }=e,
+      {
+        totalGesture:s
+      }=null==t?void 0:t.original;
+      return(0,a.jsx)(sa,{
+        children:(0,a.jsx)("div",{
+          children:(0,t0.Z)(s)
+        })
+      })
+    }),
+    s_=(0,l.memo)(e=>{
+      let{
+        row:t
+      }=e,
+      {
+        firstSeen:s
+      }=null==t?void 0:t.original;
+      return(0,a.jsx)(sa,{
+        children:s&&(0,a.jsx)("div",{
+          children:(0,D.$5)(s)
+        })
+      })
+    }),
+    sC=(0,l.memo)(e=>{
+      let{
+        row:t
+      }=e,
+      {
+        lastSeen:s
+      }=null==t?void 0:t.original;
+      return(0,a.jsx)(sa,{
+        children:(0,a.jsx)("div",{
+          children:(0,D.$5)(s)
+        })
+      })
+    }),
+    sk=(0,l.memo)(e=>{
+      let{
+        row:t
+      }=e,
+      {
+        browserName:s
+      }=t.original;
+      return(0,a.jsx)(sn,{
+        children:s||"N/A"
+      })
+    }),
+    sN=(0,l.memo)(e=>{
+      let{
+        row:t
+      }=e,
+      {
+        browserVersion:s
+      }=t.original;
+      return(0,a.jsx)(sn,{
+        children:s||"N/A"
+      })
+    }),
+    sS=(0,l.memo)(e=>{
+      let{
+        row:t
+      }=e,
+      {
+        deviceType:s
+      }=t.original;
+      return(0,a.jsx)(sn,{
+        children:s||"N/A"
+      })
+    }),
+    sI=(0,l.memo)(e=>{
+      let{
+        row:t
+      }=e,
+      {
+        deviceHeight:s
+      }=t.original;
+      return(0,a.jsx)(sn,{
+        children:s||"N/A"
+      })
+    }),
+    sT=(0,l.memo)(e=>{
+      let{
+        row:t
+      }=e,
+      {
+        deviceWidth:s
+      }=t.original;
+      return(0,a.jsx)(sn,{
+        children:s||"N/A"
+      })
+    }),
+    sL=(0,l.memo)(e=>{
+      let{
+        row:t
+      }=e,
+      {
+        deviceOsName:s
+      }=t.original;
+      return(0,a.jsxs)(sl,{
+        children:[s||"N/A"," ",(0,t1.R)(s)]
+      })
+    }),
+    sD=(0,l.memo)(e=>{
+      let{
+        header:t
+      }=e,
+      {
+        attribute:s,
+        title:l,
+        subTitle:i,
+        isCustomUserProperty:r
+      }=t;
+      return r?(0,a.jsx)(sn,{
+        children:(0,a.jsx)("em",{
+          children:(0,x.Kf)(l)
+        })
+      }):(0,a.jsx)(sn,{
+        children:"columndate"===s?"".concat(l).concat(i):l
+      })
+    }),
+    sZ={
+      name:sp,
+      lastseen:sC,
+      totalsession:su,
+      engagementtime:sj,
+      screencount:sf,
+      devicemodel:sh,
+      ragegesturecount:sx,
+      eventcount:sg,
+      appversion:sb,
+      totalgesture:sw,
+      firstseen:s_,
+      deviceid:sm,
+      osversion:sy,
+      deviceclass:sv,
+      browsername:sk,
+      browserversion:sN,
+      devicetype:sS,
+      deviceheight:sI,
+      devicewidth:sT,
+      deviceosname:sL
+    },
+    sF=(0,l.memo)(e=>{
+      let{
+        cell:t,
+        row:s
+      }=e,
+      {
+        column:{
+          id:l
+        }
+      }=t,
+      {
+        userProperty:i
+      }=null==s?void 0:s.original,
+      r=t$()(i,(0,x.h$)(l))&&i[(0,x.h$)(l)]||"N/A";
+      return(0,a.jsx)(sa,{
+        children:(0,a.jsx)(sr,{
+          children:(0,t0.Z)(r.toString())
+        })
+      })
+    }),
+    sA=e=>{
+      let{
+        headers:t
+      }=e,
+      {
+        urlReducer:{
+          uxcamuserid:s
+        }
+      }=(0,i.v9)(e=>e),
+      r=(0,tX.Cl)(),
+      n=/^[a-zA-Z0-9-]*$/.test(s),
+      o=(0,l.useMemo)(()=>n?s:void 0,[n,s]),
+      d=(0,l.useMemo)(()=>t.map(e=>{
+        let{
+          isVisible:t,
+          attribute:s,
+          title:l,
+          titleInfo:i,
+          smallUserTable:n,
+          isSortable:d,
+          isCustomUserProperty:c
+        }=e;
+        return t&&(!o||n)?r.accessor(s,{
+          header:(0,a.jsx)(R.Z,{
+            title:i,
+            children:(0,a.jsx)(sd,{
+              children:(0,a.jsx)(sD,{
+                header:e
+              })
+            })
+          }),
+          accessor:s,
+          titleInfo:i,
+          cell:c?sF:sZ[s]||"",
+          width:"sessionhashofuser"===s?180:"event_name"===s?150:120,
+          enableSorting:d,
+          minWidth:"event_name"===s?120:100,
+          key:l,
+          isCustomUserProperty:c
+        }):null
+      }).filter(e=>e),[t,o]);
+      return(0,l.useMemo)(()=>[{
+        id:"select",
+        disableResizing:!0,
+        minWidth:35,
+        width:35,
+        maxWidth:35,
+        header:e=>{
+          let{
+            table:t
+          }=e;
+          return(0,a.jsx)(so,{
+            children:(0,a.jsx)(t2.Z,{
+              checked:t.getIsAllRowsSelected(),
+              indeterminate:t.getIsSomeRowsSelected(),
+              onChange:t.getToggleAllRowsSelectedHandler()
+            })
+          })
+        },
+        cell:e=>{
+          let{
+            row:t
+          }=e;
+          return(0,a.jsx)(st,{
+            row:t
+          })
+        }
+      },...d],[d])
+    };
+    var sR=(0,l.memo)(e=>{
+      var t;
+      let{
+        expanded:s,
+        data:r,
+        isLoading:n,
+        setSortedBy:o,
+        sortedBy:d
+      }=e,
+      {
+        currentAppReducer:{
+          _id:u
+        },
+        urlReducer:{
+          userpage:p,
+          uxcamuserid:m
+        },
+        selectedUserReducer:h,
+        appFilter:{
+          user:{
+            segment:x=[]
+          }
+        }
+      }=(0,i.v9)(e=>e),
+      g=(0,i.I0)(),
+      b=(0,eQ.useQueryClient)(),
+      {
+        pageChange:f
+      }=(0,tQ.o)({
+        expanded:s
+      }),
+      {
+        markUserLabel:y
+      }=(0,eX.Aj)(),
+      [j,w]=(0,l.useState)([]),
+      [C,k]=(0,l.useState)([]),
+      {
+        pagination:N,
+        setPagination:S
+      }=(0,tH.h)(),
+      I=(0,l.useRef)(),
+      T=(0,l.useRef)(),
+      L=null==r?void 0:r.header,
+      D=sA({
+        headers:L||j
+      }),
+      Z=(0,l.useMemo)(()=>Number(p),[p]),
+      F=(0,l.useMemo)(()=>(null==r?void 0:r.pagination)?null==r?void 0:r.pagination:null==T?void 0:T.current,[null==r?void 0:r.pagination]),
+      A=(0,l.useCallback)((e,t)=>{
+        let s="";
+        try{
+          s=["userList",JSON.parse(localStorage.getItem("usersListReqBody"))]
+        }
+        catch(e){}t||(b.setQueryData(s,t=>{
+          var s,
+          a;
+          if(!(null==t?void 0:null===(a=t.data)||void 0===a?void 0:null===(s=a.data)||void 0===s?void 0:s.body))return t;
+          let l=t.data.data.body.map(t=>{
+            let s={
+              ...t
+            };
+            return t.uxcamuserid===e&&(s.isViewed=!0),
+            s
+          });
+          return{
+            ...t,
+            data:{
+              ...t.data,
+              data:{
+                ...t.data.data,
+                body:l
+              }
+            }
+          }
+        }),y({
+          customLabelName:"isViewed",
+          isTagged:!t,
+          labelType:"user",
+          uxcamuserIds:[e],
+          appid:u,
+          debugSource:5
+        }));
+        let a=(0,tM.$)("/app/".concat(u,"/users/list/").concat(Z||1,"/").concat(e),[...x]),
+        l="appId=".concat(u,"&parentType=usersList&type=user&uxcamuserid=").concat(e,"&userpage=").concat(Z||1);
+        tc().push("/integration?".concat(l),a)
+      },[u,Z,x,y]);
+      (0,l.useEffect)(()=>{
+        var e;
+        if(I.current&&(null==r?void 0:null===(e=r.body)||void 0===e?void 0:e.length)){
+          let e;
+          let{
+            uxcamuserid:t,
+            id:s,
+            eventPropertyTime:a
+          }=e="first"===I.current?{
+            ...r.body[0]
+          }:r.body[r.body.length-1];
+          e&&A(t,s,a,!0),
+          I.current=void 0
+        }
+      },[r,A]),
+      (0,l.useEffect)(()=>{
+        L&&w(L)
+      },[L]),
+      (0,l.useEffect)(()=>{
+        var e;
+        let t=Object.keys(C).map(Number),
+        s=null==r?void 0:null===(e=r.body)||void 0===e?void 0:e.filter((e,s)=>t.includes(s)),
+        a=null==s?void 0:s.map(e=>e.uxcamuserid);
+        g((0,c.UD)(a))
+      },[C]),
+      (0,l.useEffect)(()=>{
+        Object.keys(C).map(Number).length>h&&k([])
+      },[h]),
+      (0,l.useEffect)(()=>{
+        F&&(T.current=F)
+      },[F]);
+      let R=(0,l.useMemo)(()=>{
+        var e;
+        return null==r?void 0:null===(e=r.body)||void 0===e?void 0:e.map(e=>{
+          var t;
+          return{
+            ...e,
+            kUXCam_UserIdentity:null==e?void 0:null===(t=e.userProperty)||void 0===t?void 0:t.kUXCam_UserIdentity,
+            onItemSetActive:(e,t)=>A(e,t),
+            onRowClick:(e,t)=>{
+              let{
+                uxcamuserid:s,
+                isViewed:a
+              }=e;
+              A(s,a)
+            },
+            highlightActiveRow:e=>e.uxcamuserid===m
+          }
+        })
+      },[null==r?void 0:r.body,A,m]);
+      return(0,l.useEffect)(()=>{
+        Z&&(S(e=>({
+          ...e,
+          pageIndex:Z
+        })),g((0,c.UD)([])))
+      },[Z]),
+      (0,a.jsx)(ss,{
+        expanded:s,
+        children:(0,a.jsx)(v.Fo,{
+          children:(0,a.jsx)(v.S5,{
+            data:R,
+            columns:D,
+            sorting:d,
+            setSorting:o,
+            resizeMode:"onChange",
+            isLoading:n,
+            expandedView:s,
+            tableHeight:s?"calc(100vh - 164px)":"100%",
+            pagination:{
+              ...N,
+              totalPagination:(null==r?void 0:null===(t=r.pagination)||void 0===t?void 0:t.pages)||1
+            },
+            setPagination:S,
+            handleRouteUpdate:f,
+            enableSelection:!0,
+            stickyHeaders:s?[]:["select","name"],
+            rowSelection:C,
+            setRowSelection:k,
+            emptyText:{
+              message:"No users match the current filters."
+            },
+            tableWidth:"100%"
+          })
+        })
+      })
+    });
+    let sM=h.default.div.withConfig({
+      componentId:"sc-ab3eae7c-0"
+    })(["height:100%;padding:60px 16px 16px;"]),
+    sE=h.default.div.withConfig({
+      componentId:"sc-ab3eae7c-1"
+    })(["display:flex;flex-grow:1;max-width:100%;border-radius:8px;z-index:1;position:relative;.bottom{position:absolute;bottom:0;}"]);
+    var sU=(0,l.memo)(e=>{
+      let{
+        userData:t,
+        loading:s,
+        resetPageDataWithApiCall:r,
+        statsLoader:n,
+        handleSortByOrder:o,
+        orderBy:d
+      }=e,
+      {
+        urlReducer:c
+      }=(0,i.v9)(e=>e),
+      u=(0,l.useRef)(null),
+      p=(0,l.useRef)(null),
+      {
+        uxcamuserid:m
+      }=c,
+      h=/^[a-zA-Z0-9-]*$/.test(m),
+      x=(0,l.useMemo)(()=>h?m:void 0,[h,m]),
+      v=()=>{
+        var e;
+        (null==u?void 0:u.current)&&(null===(e=u.current)||void 0===e||e.scrollIntoView({
+          behavior:"smooth"
+        }))
+      },
+      g=()=>{
+        var e;
+        (null==p?void 0:p.current)&&(null===(e=p.current)||void 0===e||e.scrollIntoView({
+          behavior:"smooth"
+        }))
+      };
+      return(0,l.useEffect)(()=>{
+        x?v():g()
+      },[x]),
+      (0,a.jsxs)(sM,{
+        expanded:!x,
+        children:[(0,a.jsx)("div",{
+          className:"top",
+          ref:p
+        }),(0,a.jsx)(tJ,{
+          expanded:!x,
+          statsLoader:n,
+          resetPageDataWithApiCall:r,
+          headers:null==t?void 0:t.header
+        }),(0,a.jsx)(sE,{
+          expanded:!!x,
+          children:(0,a.jsxs)(a.Fragment,{
+            children:[(0,a.jsx)(sR,{
+              expanded:!!x,
+              data:t,
+              isLoading:s,
+              setSortedBy:o,
+              sortedBy:(null==d?void 0:d.length)>0?d:(e=>{
+                if(e.length>0){
+                  let{
+                    sortName:t,
+                    sortOrder:s,
+                    isCustomUserProperty:a
+                  }=e[0];
+                  return[{
+                    id:t,
+                    desc:"desc"===s,
+                    ...a&&{
+                      isCustomUserProperty:a
+                    }
+                  }]
+                }
+                return[]
+              })((null==t?void 0:t.orderBy)||[])
+            }),x&&(0,a.jsx)(to,{
+              resetPageDataWithApiCall:r,
+              tableData:t
+            }),(0,a.jsx)("div",{
+              className:"bottom",
+              ref:u
+            })]
+          })
+        })]
+      })
+    });
+    let{
+      Content:sP
+    }=o.default,
+    sz=(0,h.default)(sP).withConfig({
+      componentId:"sc-dede115d-0"
+    })(["pointer-events:",";"],e=>{
+      let{
+        isGlobalFilterVisible:t
+      }=e;
+      return t?"none":""
+    });
+    var sW=()=>{
+      let{
+        urlReducer:e,
+        appFilter:{
+          user:{
+            segment:t,
+            activityFilterList:s
+          },
+          dateSegment:r,
+          fetchProperty:o
+        },
+        currentAppReducer:h
+      }=(0,i.v9)(e=>e),
+      v=(0,b.IE)(),
+      y=o.user_custom_property.data||[],
+      j=(0,l.useMemo)(()=>(0,f.Vw)(s,t,v),[t,v,s]),
+      [w,C]=(0,l.useState)(!0);
+      (0,l.useEffect)(()=>{
+        let e=setTimeout(()=>{
+          C(!1)
+        },700);
+        return()=>clearTimeout(e)
+      },[]);
+      let k=(0,l.useMemo)(()=>!w&&(0,f.XX)(s),[w,s]),
+      {
+        megaDropdownVisible:N,
+        megaBottomDropdownVisible:S
+      }=(0,i.v9)(e=>e.megaFilterReducer),
+      I=(0,i.I0)(),
+      {
+        parentType:T,
+        appId:L,
+        userpage:D,
+        starttime:Z,
+        uxcamuserid:F,
+        autoplay:A,
+        sessionid:R,
+        eventid:M
+      }=e,
+      [E,U]=(0,l.useState)([]),
+      [P,z]=(0,l.useState)(!1),
+      W=(0,l.useMemo)(()=>N||S,[N,S]),
+      O=(0,l.useMemo)(()=>({
+        attribute:"user_custom_property",
+        filter:[],
+        search:"",
+        dropdownLimit:501,
+        date_range:r
+      }),[r]),
+      B=(0,l.useCallback)(e=>{
+        let{
+          id:t,
+          desc:s
+        }=e()[0],
+        a=y.includes((0,x.h$)(t));
+        U([{
+          id:t,
+          desc:s,
+          ...a&&{
+            isCustomUserProperty:a
+          }
+        }])
+      },[y]),
+      V=L||h._id,
+      q="";
+      try{
+        q=JSON.parse(localStorage.getItem("usersListReqBody"))
+      }
+      catch(e){}let J=(0,g.e)("web"),
+      Q=(0,l.useMemo)(()=>{
+        var e,
+        t,
+        s;
+        let a={
+          appid:V,
+          page:D?+D:1,
+          ...((null==E?void 0:E.length)||(null==q?void 0:q.orderBy))&&{
+            orderBy:(null==E?void 0:E.length)?[{
+              sortName:(null===(e=E[0])||void 0===e?void 0:e.id)||"last_seen",
+              sortOrder:(null===(t=E[0])||void 0===t?void 0:t.desc)?"desc":"asc",
+              ...(null===(s=E[0])||void 0===s?void 0:s.isCustomUserProperty)&&{
+                isCustomUserProperty:!0
+              }
+            }]:null==q?void 0:q.orderBy
+          },
+          filters:j,
+          webApp:J,
+          date_range:r
+        };
+        return v&&delete a.date_range,
+        a
+      },[V,D,E,null==q?void 0:q.orderBy,j,J,r,v]);
+      (0,l.useEffect)(()=>{
+        try{
+          localStorage.setItem("usersListReqBody",JSON.stringify(Q))
+        }
+        catch(e){}
+      },[Q]);
+      let{
+        data:H,
+        refetch:K,
+        isRefetching:$,
+        isLoading:X
+      }=(0,u.WG)(Q,"",k),
+      G=(0,l.useMemo)(()=>{
+        var e;
+        return(null==H?void 0:null===(e=H.data)||void 0===e?void 0:e.data)||[]
+      },[H]),
+      Y=async()=>{
+        K(),
+        I((0,d.MH)(O))
+      };
+      (0,l.useEffect)(()=>{
+        if(!["usersList"].includes(T))return
+      },[L,t.length,r,T,t]),
+      (0,p.Z)();
+      let ee=()=>{
+        n()(".session-detail-page").length&&n()(".wrapper-contracts").removeClass("session-detail-page")
+      },
+      et=(0,l.useCallback)(e=>{
+        var s,
+        a,
+        l;
+        let i=y.includes((0,x.h$)(null===(s=e[0])||void 0===s?void 0:s.id)),
+        n={
+          appid:L,
+          date_range:r,
+          filters:t,
+          table:"userTable",
+          orderBy:[{
+            sortName:null===(a=e[0])||void 0===a?void 0:a.id,
+            sortOrder:(null===(l=e[0])||void 0===l?void 0:l.desc)?"desc":"asc",
+            ...i&&{
+              isCustomUserProperty:i
+            }
+          }],
+          page:1,
+          webApp:J
+        };
+        (0,u.C_)(n).then(()=>K())
+      },[L,r,t,J,K,y]);
+      (0,l.useEffect)(()=>{
+        ["usersList"].includes(T)&&(ee(),I((0,c.hI)({
+          action:"Entered users page"
+        })))
+      },[]);
+      let es=()=>{
+        Q.page=1,
+        K(Q),
+        (0,m.I)({
+          page:1,
+          appId:L,
+          sessionid:R,
+          autoplay:A,
+          filters:t,
+          eventid:M,
+          parentType:T,
+          starttime:Z,
+          expanded:!1,
+          uxcamuserid:F
+        })
+      };
+      (0,l.useEffect)(()=>{
+        (null==E?void 0:E.length)&&(es(),et(E))
+      },[E]),
+      (0,l.useEffect)(()=>{
+        P&&es()
+      },[t]),
+      (0,l.useEffect)(()=>(z(!0),()=>{
+        z(!1)
+      }),[]);
+      let ea=(0,a.jsx)(sU,{
+        userData:G,
+        loading:$||X||w,
+        orderBy:E,
+        handleSortByOrder:B,
+        resetPageDataWithApiCall:Y
+      },T);
+      return(0,a.jsx)(sz,{
+        isGlobalFilterVisible:W,
+        children:ea
+      })
+    }
+  },
+  11444:function(e,t,s){
+    var a=s(85893),
+    l=s(67294),
+    i=s(68457),
+    r=s(74936),
+    n=s(80432),
+    o=s(12016),
+    d=s(19521),
+    c=s(75493),
+    u=s(1363),
+    p=s(15941);
+    let m=i.default.Item,
+    h=(0,d.default)(r.Z).withConfig({
+      componentId:"sc-77d6417d-0"
+    })(["padding:0;display:flex;justify-content:center;align-content:center;height:fit-content;padding:6px 10px;height:32px;border-radius:4px;border-color:#828282;margin-left:20px;background-color:#ffffff;svg{path,rect{fill:#828282;stroke:#828282;}}&:hover{background:transparent;svg{path,rect{fill:#5d97ff;stroke:#5d97ff;}}}"]),
+    x=d.default.div.withConfig({
+      componentId:"sc-77d6417d-1"
+    })(["color:#5d97ff;font-weight:700;font-size:14px;line-height:24px;padding:2px 12px;margin-bottom:2px;"]),
+    v=(0,d.default)(i.default).withConfig({
+      componentId:"sc-77d6417d-2"
+    })(["border-radius:4px;padding:4px;.ant-dropdown-menu-item{display:flex;align-items:center;font-weight:400;line-height:24px;font-size:12px;color:#161e35;svg{width:13px;display:inline-flex;margin-right:2px;}:hover{background-color:#eff5ff;border-radius:4px;}}"]);
+    t.Z=e=>{
+      var t,
+      s;
+      let{
+        globalFilter:i
+      }=e,
+      [r,d]=(0,l.useState)(!1),
+      [g,b]=(0,l.useState)(),
+      {
+        canExportData:f,
+        isApiError:y,
+        apiError:j,
+        CommonUpgradeModal:w,
+        upgradePlan:C,
+        setUpgradePlan:k
+      }=(0,u.D)(),
+      N=e=>{
+        d(e)
+      },
+      S=(0,l.useCallback)(e=>{
+        var t,
+        s,
+        a,
+        l,
+        i;
+        let{
+          key:r
+        }=e;
+        if((null==j?void 0:null===(s=j.response)||void 0===s?void 0:null===(t=s.data)||void 0===t?void 0:t.error)||y){
+          n.ZP.error((null==j?void 0:null===(i=j.response)||void 0===i?void 0:null===(l=i.data)||void 0===l?void 0:null===(a=l.error)||void 0===a?void 0:a.message)||"Something went wrong");
+          return
+        }
+        f?(b(r),k(!1),N(!0)):k(!0)
+      },[null==j?void 0:null===(s=j.response)||void 0===s?void 0:null===(t=s.data)||void 0===t?void 0:t.error,f,y,k]),
+      I=(0,l.useMemo)(()=>(0,a.jsxs)(v,{
+        onClick:S,
+        children:[(0,a.jsx)(x,{
+          children:"Download data as"
+        }),(0,a.jsxs)(m,{
+          children:[(0,a.jsx)(c.b2,{})," Visible columns only (CSV)"]
+        },"visibleOnly"),(0,a.jsxs)(m,{
+          children:[(0,a.jsx)(c.b2,{})," All columns (CSV)"]
+        },"allColumns")]
+      }),[S]);
+      return(0,a.jsxs)(a.Fragment,{
+        children:[(0,a.jsx)(o.Z,{
+          overlay:I,
+          placement:"bottomLeft",
+          trigger:["click"],
+          children:(0,a.jsx)(h,{
+            onClick:e=>e.preventDefault(),
+            icon:(0,a.jsx)(c.b2,{})
+          })
+        }),C?(0,a.jsx)(w,{}):r&&(0,a.jsx)(p.Z,{
+          visibleDownloadModal:r,
+          handleVisibleModal:N,
+          downLoadColumn:g,
+          setDownloadColumn:b,
+          globalFilter:i
+        })]
+      })
+    }
+  },
+  76389:function(e){
+    e.exports=JSON.parse('[{"featureType":"all","elementType":"labels.text.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"color":"#000000"},{"lightness":13}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#144b53"},{"lightness":14},{"weight":1.4}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#08304b"}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#0c4152"},{"lightness":5}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#0b434f"},{"lightness":25}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#000000"}]},{"featureType":"road.arterial","elementType":"geometry.stroke","stylers":[{"color":"#0b3d51"},{"lightness":16}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"}]},{"featureType":"transit","elementType":"all","stylers":[{"color":"#146474"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#021019"}]}]')
+  }
+}]);

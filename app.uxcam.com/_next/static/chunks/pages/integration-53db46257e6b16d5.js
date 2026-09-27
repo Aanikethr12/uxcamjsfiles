@@ -1,0 +1,856 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[4764],{
+  37791:function(e,s,l){
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/integration",function(){
+      return l(54072)
+    }])
+  },
+  54072:function(e,s,l){
+    "use strict";
+    l.r(s),
+    l.d(s,{
+      default:function(){
+        return eg
+      }
+    });
+    var a=l(85893),
+    n=l(67294),
+    r=l(47639),
+    t=l(5152),
+    i=l.n(t),
+    o=l(74936),
+    d=l(41609),
+    c=l.n(d),
+    u=l(30998),
+    p=l.n(u),
+    h=l(30653),
+    g=l(14416),
+    v=l(12810),
+    m=l(63134),
+    x=l(20510),
+    j=l(78268),
+    b=l(27205),
+    f=l(97600),
+    w=l(73260),
+    A=l(68972),
+    Z=l(48203),
+    y=l(80432),
+    P=l(94184),
+    k=l.n(P),
+    I=l(11163),
+    _=l.n(I),
+    N=l(7436),
+    S=l.n(N),
+    T=l(48403),
+    C=l.n(T),
+    F=l(95996),
+    U=l(65372),
+    D=l(21237),
+    G=l(62610),
+    E=l(18879),
+    L=e=>{
+      let{
+        toogleQuestionPage:s,
+        questionPage:l
+      }=e;
+      return(0,a.jsx)("div",{
+        className:"display-table",
+        children:(0,a.jsxs)("div",{
+          className:"integrate-sidebar",
+          children:[(0,a.jsx)("div",{
+            className:"testimonial",
+            children:(0,a.jsxs)("a",{
+              href:"mailto:team@uxcam.com",
+              children:[(0,a.jsx)(A.C,{
+                src:"/static/susan-uxcam.jpg",
+                size:"large"
+              }),(0,a.jsx)("div",{
+                className:"person",
+                children:(0,a.jsxs)("p",{
+                  children:[(0,a.jsx)("strong",{
+                    children:"Susan Ostojska"
+                  }),(0,a.jsx)("br",{}),(0,a.jsx)("small",{
+                    children:"Head of Customer Success"
+                  })]
+                })
+              })]
+            })
+          }),l?"":(0,a.jsx)("a",{
+            href:"https://help.uxcam.com/en/collections/11057211-faq",
+            style:{
+              textDecoration:"underline"
+            },
+            target:"_blank",
+            rel:"noreferrer",
+            children:"Still have questions?"
+          })]
+        })
+      })
+    },
+    R=l(10764),
+    O=e=>{
+      let{
+        children:s
+      }=e;
+      return(0,a.jsx)("div",{
+        className:"integrate-body",
+        children:(0,a.jsx)(b.Z,{
+          className:"height-full",
+          children:s
+        })
+      })
+    };
+    let q=(e,s,l)=>(0,a.jsx)("h2",{
+      children:"app_select"===l?"Your current plan includes ".concat(e," app environments. "):"Your current plan includes ".concat(s," user licenses.")
+    }),
+    M=e=>{
+      let{
+        children:s
+      }=e;
+      return(0,a.jsx)("div",{
+        className:"display-table",
+        children:(0,a.jsx)("div",{
+          className:"integrate-wrapper height-full",
+          children:(0,a.jsx)(x.Z,{
+            className:"restrict-message-card",
+            children:s
+          })
+        })
+      })
+    },
+    z=e=>{
+      let{
+        children:s,
+        subTitle:l,
+        handleDone:n,
+        disabled:r,
+        totalAllowedAppsInPlan:t,
+        totalAllowedUsersInPlan:i,
+        btnTitle:d,
+        loader:c,
+        id:u,
+        alertInfo:p
+      }=e;
+      return(0,a.jsxs)(j.Z,{
+        spinning:c,
+        indicator:(0,a.jsx)(v.Z,{}),
+        children:[q(t,i,u),(0,a.jsx)("p",{
+          children:l
+        }),(0,a.jsx)(b.Z,{
+          gutter:[8,8],
+          children:s
+        }),(0,a.jsx)(o.Z,{
+          disabled:r,
+          onClick:e=>n(e),
+          type:"primary",
+          children:d
+        }),p,(0,a.jsx)("style",{
+          children:"\n          .active-card {\n            border: 2px solid #3ADC91 !important;\n          }\n        "
+        })]
+      })
+    },
+    Y=e=>{
+      let s,
+      {
+        toggleAppSelect:l,
+        selectUserAction:n,
+        selectAppAction:r,
+        toggleUserLicense:t,
+        loader:i,
+        planStatusMessage:d
+      }=e,
+      c="which user licenses to activate if you have more than one user license available on your plan";
+      return n&&r?s="which apps you would like to continue analyzing and ".concat(c):n&&!r?s=c:!n&&r&&(s="which apps you would like to continue analyzing"),
+      (0,a.jsx)(M,{
+        loader:i,
+        children:(0,a.jsx)(j.Z,{
+          spinning:i,
+          indicator:(0,a.jsx)(v.Z,{}),
+          children:(0,a.jsxs)("div",{
+            className:"downgrade-message",
+            children:[(0,h.ZP)(d),(0,a.jsx)("p",{
+              children:"During the next steps, you will be asked to select ".concat(s,".")
+            }),(0,a.jsx)(o.Z,{
+              type:"primary",
+              onClick:()=>{
+                n&&r&&l(!0),
+                n&&!r&&t(!0),
+                !n&&r&&l(!0)
+              },
+              children:"Got it!"
+            })]
+          })
+        })
+      })
+    },
+    H=e=>{
+      let{
+        loader:s,
+        appTeam:l,
+        disabled:n,
+        activeEmail:r,
+        handleDoneCaseUsers:t,
+        totalAllowedAppsInPlan:i,
+        totalAllowedUsersInPlan:o,
+        handleUserEmailSelect:d,
+        handleUserEmailDeselect:c
+      }=e;
+      return(0,a.jsx)(M,{
+        loader:s,
+        children:(0,a.jsx)("div",{
+          className:"select-user-message",
+          children:(0,a.jsx)(z,{
+            loader:s,
+            disabled:n,
+            subTitle:"Please select which user licenses you would like to activate.",
+            handleDone:t,
+            totalAllowedAppsInPlan:i,
+            totalAllowedUsersInPlan:o,
+            btnTitle:"Done",
+            id:"user_select",
+            alertInfo:(0,a.jsx)(f.Z,{
+              message:(0,a.jsxs)("span",{
+                children:["*If you would like to change the account owner, please contact our"," ",(0,a.jsx)("a",{
+                  onClick:()=>(0,E.aL)(),
+                  children:"Support team."
+                })]
+              }),
+              type:"info"
+            }),
+            children:(null==l?void 0:l.length)?l.map(e=>{
+              var s,
+              l;
+              return(0,a.jsx)(w.Z,{
+                children:(0,a.jsxs)(x.Z,{
+                  onClick:()=>{
+                    e.isOwner||(r.includes(e.email)?c(e.email):d(e.email))
+                  },
+                  className:k()({
+                    "active-card":r.includes(e.email),
+                    "disabled-cursor":e.isOwner
+                  }),
+                  children:[(0,a.jsxs)(A.C,{
+                    shape:"circle",
+                    style:{
+                      color:"#FFFFFF",
+                      backgroundColor:(0,F.Z)(null===(s=e.email)||void 0===s?void 0:s.trim())
+                    },
+                    children:[(0,a.jsx)("span",{
+                      className:"avatar-text-pop",
+                      children:C()(null===(l=e.email)||void 0===l?void 0:l.trim().charAt(0))
+                    })," "]
+                  }),(0,a.jsx)("label",{
+                    className:"name",
+                    children:e.name||"-"
+                  }),(0,a.jsx)("label",{
+                    className:"mail",
+                    children:e.email
+                  }),(0,a.jsx)("label",{
+                    className:"role",
+                    children:e.roleText
+                  })]
+                },e.email)
+              },e.email)
+            }):(0,a.jsx)(a.Fragment,{})
+          },"user_select")
+        })
+      })
+    },
+    Q=e=>{
+      let{
+        apps:s,
+        loader:l,
+        planStatus:n,
+        totalAllowedAppsInPlan:t,
+        totalAllowedUsersInPlan:i,
+        activeAppId:o,
+        handleAppDeselect:d,
+        handleAppSelect:c,
+        disabled:u,
+        handleDoneCaseApps:p,
+        _getOrgCsrf:h,
+        showHideQuoteModal:v
+      }=e,
+      m=(0,g.I0)();
+      return(0,a.jsx)(M,{
+        loader:l,
+        children:(0,a.jsx)("div",{
+          className:"select-app-message",
+          children:(0,a.jsx)(z,{
+            loader:l,
+            disabled:u,
+            subTitle:"Please select the ones you would like to continue analyzing.",
+            handleDone:p,
+            planStatus:n,
+            totalAllowedAppsInPlan:t,
+            totalAllowedUsersInPlan:i,
+            btnTitle:n.selectUserAction?"Next":"Done",
+            id:"app_select",
+            alertInfo:(0,a.jsx)(f.Z,{
+              message:(0,a.jsxs)("span",{
+                children:["*The app key for any apps that are not selected will remain active and connected to your account, but we will discontinue collecting sessions for those apps. The data collected during your trial will be retained for the remainder of your data retention period (1 month). If you would like to access these apps, please"," ",(0,a.jsx)("a",{
+                  onClick:async()=>{
+                    let e=await m((0,r.$R)());
+                    e&&await h(e),
+                    v(!0)
+                  },
+                  children:"request a quote"
+                })," ","to upgrade your account."]
+              }),
+              type:"info"
+            }),
+            children:(null==s?void 0:s.length)?s.map(e=>{
+              let s=e.image,
+              l=e.name;
+              return(0,a.jsx)(w.Z,{
+                children:(0,a.jsxs)(x.Z,{
+                  onClick:()=>{
+                    o.includes(e._id)?d(e._id):c(e._id)
+                  },
+                  className:k()({
+                    "active-card":o.includes(e._id)
+                  }),
+                  children:[s?(0,a.jsx)("img",{
+                    src:s,
+                    onError:e=>{
+                      e.target.src="/static/image-broken.png"
+                    },
+                    alt:"app_name",
+                    width:"65",
+                    height:"65"
+                  }):(0,a.jsxs)(A.C,{
+                    shape:"square",
+                    style:{
+                      color:"#FFFFFF",
+                      backgroundColor:(0,F.Z)(l.trim())
+                    },
+                    children:[(0,a.jsx)("span",{
+                      className:"avatar-text-pop",
+                      children:C()(l.trim().charAt(0))
+                    })," "]
+                  }),(0,a.jsx)(Z.Z,{
+                    title:l,
+                    children:(0,a.jsx)("label",{
+                      children:l
+                    })
+                  })]
+                },e._id)
+              },e._id)
+            }):(0,a.jsx)(a.Fragment,{})
+          },"app_select")
+        })
+      })
+    };
+    var X=e=>{
+      let s,
+      {
+        hasNoAccess:l,
+        hasNoAccessMessage:r
+      }=e,
+      t=(0,g.I0)(),
+      {
+        currentAppReducer:i,
+        accessManagement:o,
+        urlReducer:d
+      }=(0,g.v9)(e=>e),
+      c=d.orgId||i.orgId,
+      {
+        planStatus:u
+      }=o,
+      {
+        userList:h
+      }=o,
+      {
+        appList:v
+      }=o,
+      m=null==u?void 0:u.message,
+      x=null==h?void 0:h.team,
+      j=null==v?void 0:v.apps,
+      b=null==h?void 0:h.totalAllowedUsersInPlan,
+      f=null==v?void 0:v.totalAllowedAppsInPlan,
+      [A,Z]=(0,n.useState)(!1),
+      [P,k]=(0,n.useState)(!1),
+      [I,N]=(0,n.useState)(!1),
+      [T,C]=(0,n.useState)([]),
+      [F,E]=(0,n.useState)([]),
+      [q,z]=(0,n.useState)(!1),
+      [X,$]=(0,n.useState)(!1),
+      [W,B]=(0,n.useState)(!1),
+      V=()=>{
+        N(!0),
+        t((0,G.Zn)()).then(e=>{
+          let{
+            orgId:s
+          }=i,
+          l=S()(e,{
+            orgId:s
+          }),
+          {
+            apps:a
+          }=e[l],
+          n=S()(a,{
+            hasAccess:!0
+          }),
+          r=n>-1?a[n]._id:a[0]._id;
+          t((0,U.ro)(s)),
+          a[n].isIntegrated?_().push("/integration?parentType=overview&appId=".concat(r),"/app/".concat(r,"/overview")):_().push("/integration?parentType=integration&appId=".concat(r),"/integration?appId=".concat(r)),
+          N(!1)
+        }).catch(e=>N(!1))
+      },
+      J=A?!T.length:!!P&&!F.length;
+      return(0,n.useEffect)(()=>{
+        c&&(Z(!1),k(!1),T.length&&C([]))
+      },[c]),
+      (0,n.useEffect)(()=>{
+        u&&!l&&(N(!0),t((0,U.Rf)(c)).then(e=>{
+          if(!F.length){
+            let s=p()(e.team,{
+              hasAccess:!0
+            });
+            F.includes(e.team[s].email)||F.push(e.team[s].email)
+          }
+          N(!1)
+        }).catch(e=>N(!1)),t((0,U.C6)(c)).then(e=>N(!1)).catch(e=>N(!1)))
+      },[c,u]),
+      s=(0,a.jsx)(Y,{
+        toggleAppSelect:Z,
+        toggleUserLicense:k,
+        selectUserAction:null==u?void 0:u.selectUserAction,
+        selectAppAction:null==u?void 0:u.selectAppAction,
+        loader:I,
+        planStatusMessage:m
+      }),
+      l&&(s=(0,a.jsx)(M,{
+        loader:I,
+        children:(0,a.jsx)("div",{
+          className:"downgrade-message",
+          children:r
+        })
+      })),
+      A&&u.selectAppAction&&(s=(0,a.jsx)(Q,{
+        loader:I,
+        apps:j,
+        disabled:J,
+        planStatus:u,
+        activeAppId:T,
+        handleDoneCaseApps:e=>{
+          e.preventDefault(),
+          N(!0),
+          t((0,U.Nw)({
+            organizationId:c,
+            selectedApps:T
+          })).then(e=>{
+            if(e.success)y.ZP.success(e.message),
+            u.selectUserAction?(Z(!1),k(!0),N(!1)):V();
+            else{
+              var s,
+              l,
+              a,
+              n,
+              r,
+              t;
+              N(!1),
+              (null===(a=e.response)||void 0===a?void 0:null===(l=a.data)||void 0===l?void 0:null===(s=l.error)||void 0===s?void 0:s.message)&&y.ZP.error(e.response.data.error.message),
+              (null===(r=e.data)||void 0===r?void 0:null===(n=r.error)||void 0===n?void 0:n.message)&&y.ZP.error(e.data.error.message),
+              (null===(t=e.error)||void 0===t?void 0:t.selectedApps[0])&&y.ZP.error(e.error.selectedApps[0])
+            }
+          }).catch(e=>N(!1))
+        },
+        totalAllowedAppsInPlan:f,
+        totalAllowedUsersInPlan:b,
+        handleAppSelect:e=>C([...T,e]),
+        handleAppDeselect:e=>C(T.filter(s=>e!==s)),
+        _getOrgCsrf:B,
+        showHideQuoteModal:$
+      })),
+      P&&u.selectUserAction&&(s=(0,a.jsx)(H,{
+        loader:I,
+        appTeam:x,
+        disabled:J,
+        activeEmail:F,
+        handleDoneCaseUsers:e=>{
+          e.preventDefault(),
+          N(!0),
+          t((0,U.$z)({
+            organizationId:c,
+            selectedUsers:F
+          })).then(e=>{
+            if(e.success&&V(),!e.success){
+              var s,
+              l,
+              a,
+              n,
+              r,
+              t,
+              i,
+              o,
+              d;
+              N(!1),
+              (null===(s=e.error)||void 0===s?void 0:s.selectedUsers[0])?y.ZP.error(e.error.selectedUsers[0]):(null===(n=e.response)||void 0===n?void 0:null===(a=n.data)||void 0===a?void 0:null===(l=a.error)||void 0===l?void 0:l.selectedUsers[0])?y.ZP.error(e.response.data.error.selectedUsers[0]):(null===(t=e.data)||void 0===t?void 0:null===(r=t.error)||void 0===r?void 0:r.message)?y.ZP.error(e.data.error.message):(null===(d=e.response)||void 0===d?void 0:null===(o=d.data)||void 0===o?void 0:null===(i=o.error)||void 0===i?void 0:i.message)&&y.ZP.error(e.response.data.error.message)
+            }
+          }).catch(e=>N(!1))
+        },
+        totalAllowedAppsInPlan:f,
+        totalAllowedUsersInPlan:b,
+        handleUserEmailSelect:e=>E([...F,e]),
+        handleUserEmailDeselect:e=>E(F.filter(s=>e!==s))
+      })),
+      q&&(s=(0,a.jsx)(R.Z,{
+        toogleQuestionPage:z
+      })),
+      (0,a.jsxs)(a.Fragment,{
+        children:[(0,a.jsxs)(O,{
+          children:[(0,a.jsx)(w.Z,{
+            lg:20,
+            className:"height-full",
+            children:s
+          }),(0,a.jsx)(w.Z,{
+            lg:4,
+            className:"height-full",
+            children:(0,a.jsx)(L,{
+              toogleQuestionPage:z,
+              questionPage:q
+            })
+          })]
+        }),(0,a.jsx)(D.Z,{
+          setShowPricingModal:$,
+          showPricingModal:X
+        })]
+      })
+    },
+    $=l(41371);
+    let W=i()(l.e(4684).then(l.bind(l,84684)),{
+      loadableGenerated:{
+        webpack:()=>[84684]
+      },
+      loading:()=>(0,a.jsx)(v.Z,{}),
+      ssr:!1
+    }),
+    B=i()(Promise.resolve().then(l.bind(l,30512)),{
+      loadableGenerated:{
+        webpack:()=>[30512]
+      },
+      loading:()=>(0,a.jsx)(v.Z,{
+        fullscreen:!0
+      }),
+      ssr:!1
+    }),
+    V=i()(Promise.all([l.e(4623),l.e(449)]).then(l.bind(l,10449)),{
+      loadableGenerated:{
+        webpack:()=>[10449]
+      },
+      loading:()=>(0,a.jsx)(v.Z,{
+        fullscreen:!0
+      }),
+      ssr:!1
+    }),
+    J=i()(Promise.all([l.e(1886),l.e(9010),l.e(5142),l.e(4417),l.e(5873),l.e(8388),l.e(5362),l.e(522),l.e(3104),l.e(2405),l.e(5148),l.e(2495),l.e(2972),l.e(5479),l.e(2255)]).then(l.bind(l,85748)),{
+      loadableGenerated:{
+        webpack:()=>[85748]
+      },
+      loading:()=>(0,a.jsx)(v.Z,{
+        fullscreen:!0
+      }),
+      ssr:!1
+    }),
+    K=i()(l.e(3448).then(l.bind(l,83448)),{
+      loadableGenerated:{
+        webpack:()=>[83448]
+      },
+      loading:()=>(0,a.jsx)(v.Z,{
+        fullscreen:!0
+      }),
+      ssr:!1
+    }),
+    ee=i()(Promise.all([l.e(5362),l.e(3104),l.e(2405),l.e(5148),l.e(2495),l.e(2972),l.e(8852),l.e(3617),l.e(7779),l.e(6649)]).then(l.bind(l,41574)),{
+      loadableGenerated:{
+        webpack:()=>[41574]
+      },
+      loading:()=>(0,a.jsx)(v.Z,{
+        fullscreen:!0
+      }),
+      ssr:!1
+    }),
+    es=i()(Promise.all([l.e(380),l.e(1473),l.e(2551),l.e(9749)]).then(l.bind(l,49749)),{
+      loadableGenerated:{
+        webpack:()=>[49749]
+      },
+      loading:()=>(0,a.jsx)(v.Z,{
+        fullscreen:!0
+      }),
+      ssr:!1
+    }),
+    el=i()(Promise.all([l.e(5362),l.e(1473),l.e(2405),l.e(5777),l.e(9201),l.e(6315),l.e(4260)]).then(l.bind(l,84260)),{
+      loadableGenerated:{
+        webpack:()=>[84260]
+      },
+      loading:()=>(0,a.jsx)(v.Z,{
+        fullscreen:!0
+      }),
+      ssr:!1
+    }),
+    ea=i()(Promise.all([l.e(1473),l.e(9227),l.e(5777),l.e(1083)]).then(l.bind(l,81083)),{
+      loadableGenerated:{
+        webpack:()=>[81083]
+      },
+      loading:()=>(0,a.jsx)(v.Z,{
+        fullscreen:!0
+      }),
+      ssr:!1
+    }),
+    en=i()(Promise.all([l.e(9010),l.e(5743)]).then(l.bind(l,48745)),{
+      loadableGenerated:{
+        webpack:()=>[48745]
+      },
+      loading:()=>(0,a.jsx)(v.Z,{
+        fullscreen:!0
+      }),
+      ssr:!1
+    }),
+    er=i()(Promise.all([l.e(1481),l.e(7043),l.e(7779),l.e(4202)]).then(l.bind(l,4202)),{
+      loadableGenerated:{
+        webpack:()=>[4202]
+      },
+      loading:()=>(0,a.jsx)(v.Z,{
+        fullscreen:!0
+      }),
+      ssr:!1
+    }),
+    et=i()(Promise.all([l.e(9010),l.e(5142),l.e(4417),l.e(1755),l.e(9790),l.e(5671),l.e(6493),l.e(2153),l.e(5004),l.e(6015),l.e(9033)]).then(l.bind(l,49033)),{
+      loadableGenerated:{
+        webpack:()=>[49033]
+      },
+      loading:()=>(0,a.jsx)(v.Z,{
+        fullscreen:!0
+      }),
+      ssr:!1
+    });
+    i()(Promise.all([l.e(3104),l.e(2495),l.e(5540)]).then(l.bind(l,75632)),{
+      loadableGenerated:{
+        webpack:()=>[75632]
+      },
+      loading:()=>(0,a.jsx)(v.Z,{
+        fullscreen:!0
+      }),
+      ssr:!1
+    });
+    let ei=i()(Promise.resolve().then(l.bind(l,65189)),{
+      loadableGenerated:{
+        webpack:()=>[65189]
+      },
+      loading:()=>(0,a.jsx)(v.Z,{
+        fullscreen:!0
+      }),
+      ssr:!1
+    }),
+    eo=i()(Promise.resolve().then(l.bind(l,40993)),{
+      loadableGenerated:{
+        webpack:()=>[40993]
+      },
+      loading:()=>(0,a.jsx)(v.Z,{
+        fullscreen:!0
+      }),
+      ssr:!1
+    }),
+    ed=e=>{
+      let{
+        headTitle:s,
+        noSalesButton:l
+      }=e,
+      t=(0,g.I0)(),
+      {
+        setShowPricingModal:i,
+        setTriggerRequestQuote:d
+      }=(0,$.I)(),
+      [c]=(0,n.useState)(!1),
+      u=async e=>{
+        e?(0,E.aL)():(d(!0),i(!0));
+        let s=await t((0,r.$R)());
+        s&&await c(s),
+        t((0,r.Ap)("isVisible_custom_popup",!1,"..."))
+      };
+      return(0,a.jsxs)(a.Fragment,{
+        children:[s,!l&&(0,a.jsxs)(a.Fragment,{
+          children:[(0,a.jsxs)("p",{
+            children:["Please ",(0,a.jsx)("a",{
+              href:"#!",
+              onClick:()=>u(),
+              children:"request a quote"
+            })," to upgrade your plan and gain access to the account."," "]
+          }),(0,a.jsx)(o.Z,{
+            onClick:()=>u(!0),
+            type:"primary",
+            children:"Get in touch with sales"
+          })]
+        })]
+      })
+    },
+    ec={
+      sessionsList:ei,
+      aiSessionsList:ei,
+      usersList:ea,
+      overview:es,
+      funnels:en,
+      screenFlow:eo,
+      screenBurst:eo,
+      eventsList:el,
+      nocodeEventsList:el,
+      statistics:el,
+      sessionStatistics:ei,
+      aiSessionStatistics:ei,
+      Settings:et,
+      issues:ee,
+      customDashboard:J,
+      retention:J,
+      heatmapsList:er,
+      webHeatmaps:J
+    };
+    var eu=(0,m.Z)(e=>{
+      var s,
+      l;
+      let{
+        cookies:r
+      }=e,
+      t=(0,I.useRouter)(),
+      {
+        currentOrgReducer:i,
+        profileReducer:o,
+        urlReducer:d,
+        currentAppReducer:u,
+        applicationReducer:m,
+        errorReducer:x,
+        accessManagement:{
+          planStatus:j
+        }
+      }=(0,g.v9)(e=>e),
+      {
+        orgId:b
+      }=i||{},
+      f=(null==j?void 0:j.selectAppAction)||(null==j?void 0:j.selectUserAction),
+      [w,A]=(0,n.useState)(null),
+      [Z,y]=(0,n.useState)(null),
+      [P,k]=(0,n.useState)(null),
+      [_,N]=(0,n.useState)(null),
+      [S,T]=(0,n.useState)(null),
+      [C,F]=(0,n.useState)(),
+      [U,D]=(0,n.useState)(),
+      [G,L]=(0,n.useState)(null),
+      [R,O]=(0,n.useState)(),
+      [q,M]=(0,n.useState)(),
+      z=null==d?void 0:d.appId,
+      Y=(null==d?void 0:d.orgId)||u.orgId,
+      H=async()=>{
+        let e,
+        s,
+        l,
+        a,
+        n,
+        r,
+        t,
+        o=i,
+        c=null==o?void 0:o.remainingTrial,
+        h=null==c?void 0:c.days,
+        g=null==c?void 0:c.hours,
+        v=null==o?void 0:o.isLoggedFromAdminDashboard,
+        x=null==d?void 0:d.parentType;
+        if(u._id){
+          let i=p()(m,{
+            orgId:Y
+          });
+          if(i>=0){
+            var j;
+            (o=m[i])&&(null===(j=o.apps)||void 0===j?void 0:j.length)&&z&&(e=p()(o.apps,{
+              _id:z
+            }),n=o.isOwner,r=o.hasAccess,t=o.hasAccessMessage,e>=0&&(l=(s=o.apps[e]).isIntegrated,a=s.hasAccess))
+          }
+        }
+        l="boolean"==typeof l?l:u.isIntegrated,
+        F(n),
+        M(t),
+        O(r),
+        D(a),
+        A(h),
+        y(g),
+        k(l),
+        L(v),
+        N(o),
+        T(x)
+      },
+      Q=n.useMemo(()=>S?ec[S]:()=>(0,a.jsx)(a.Fragment,{}),[S]);
+      (0,n.useEffect)(()=>{
+        b&&H()
+      },[b,d.parentType,null==i?void 0:i.planType]),
+      (0,n.useEffect)(()=>{
+        (null==d?void 0:d.parentType)==="guide"&&(null==u?void 0:u.appType)==="web"&&(null==u?void 0:u._id)&&t.replace("/integration?parentType=overview&appId=".concat(u._id),"/app/".concat(u._id,"/overview"))
+      },[null==d?void 0:d.parentType,null==u?void 0:u.appType,null==u?void 0:u._id,t]);
+      let $="";
+      if(C?"boolean"!=typeof U||U||($=w+Z===0?(0,a.jsx)("span",{
+        children:"Your trial period has ended."
+      }):(0,a.jsx)(ed,{
+        headTitle:q?(0,h.ZP)(q):E.WL,
+        orgId:Y,
+        isOwner:C
+      })):w+Z===0?$=(0,a.jsx)("span",{
+        children:"Loading..."
+      }):R?U||($=(0,a.jsx)(ed,{
+        headTitle:q?(0,h.ZP)(q):E._2,
+        orgId:Y
+      })):$=(0,a.jsx)(ed,{
+        headTitle:q?(0,h.ZP)(q):E.WL,
+        orgId:Y
+      }),"settings"!==S&&(void 0!==R&&!R||void 0!==U&&!U||"plan-downgrade"===S&&void 0!==C))return C&&f?(0,a.jsx)(X,{}):(0,a.jsx)(X,{
+        hasNoAccessMessage:$,
+        hasNoAccess:!0
+      });
+      let J=(0,a.jsx)(v.Z,{
+        fullscreen:!0
+      });
+      if(S&&"dashboard"!==S){
+        if("settings"===S)J=(0,a.jsx)(et,{});
+        else if(u._id&&(!c()(_)||(null==x?void 0:null===(l=x.message)||void 0===l?void 0:l.includes("Please reach out")))){
+          if(G||"integration"===S||(null==_?void 0:_.dashboardAccess)&&w+Z!==0)J=P?S&&"guide"!==S&&"integration"!==S?(0,a.jsx)(Q,{}):(0,a.jsx)(B,{
+            cookies:r
+          }):(0,a.jsx)(V,{
+            cookies:r
+          });
+          else{
+            let e=(null==_?void 0:_.dashboardAccess)?"Your trial period has ended.":_.reasonNoDashboardAccess||(null==x?void 0:x.message);
+            J=(0,a.jsx)(K,{
+              reasonNoDashboardAccess:e,
+              id:"isTrial"
+            })
+          }
+        }
+        else(null==o?void 0:o.errorReducer)&&(J=(0,a.jsx)(W,{
+          statusCode:o.errorReducer.status,
+          message:o.errorReducer.message
+        }))
+      }
+      else(null==x?void 0:null===(s=x.message)||void 0===s?void 0:s.includes("Please reach out"))&&(J=(0,a.jsx)(K,{
+        reasonNoDashboardAccess:x.message,
+        id:"isTrial"
+      }));
+      return J
+    }),
+    ep=l(61275);
+    let eh=e=>(0,a.jsx)(eu,{
+      ...e
+    });
+    eh.layout=ep.Z,
+    eh.getInitialProps=async e=>{
+      let{
+        store:s,
+        query:l
+      }=e;
+      return l&&("/dashboard"===l.url&&(l.parentType="dashboard"),s.dispatch((0,r.X7)(l))),
+      {
+        query:l
+      }
+    };
+    var eg=eh
+  }
+},function(e){
+  e.O(0,[571,6898,8798,630,7769,3662,3385,1664,4866,7536,6999,7384,6042,983,9521,7640,653,1297,2538,663,8357,1371,4621,1237,175,8865,5e3,9983,1521,5982,3985,2888,9774,179],function(){
+    return e(e.s=37791)
+  }),
+  _N_E=e.O()
+}]);

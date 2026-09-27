@@ -1,0 +1,3 @@
+=== inline script 3 (144862 chars) ===
+{"sidebars":{},"apiBaseUrl":"/","baseUrl":"/","search":{"appId":"","searchApiKey":"","indexName":"readme_search_v2","projectsMeta":[{"modules":{"landing":true,"docs":true,"examples":false,"reference":false,"changelog":false,"discuss":false,"suggested_edits":false,"logs":false,"custompages":true,"tutorials":false,"graphql":false},"id":"60e58adb29db5500665851cc","name":"UXCam Documentation","subdomain":"uxcam-documentation","subpath":"","nav_names":{"docs":"Guides","reference":"Reference","changel
+...

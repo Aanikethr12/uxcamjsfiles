@@ -1,0 +1,161 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[8026],{
+  51075:function(e,a,t){
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/dashboard",function(){
+      return t(93085)
+    }])
+  },
+  93085:function(e,a,t){
+    "use strict";
+    t.r(a),
+    t.d(a,{
+      default:function(){
+        return k
+      }
+    });
+    var n=t(85893),
+    r=t(67294),
+    o=t(11163),
+    s=t.n(o),
+    d=t(47639),
+    l=t(38014),
+    i=t(61275),
+    c=t(5152),
+    p=t.n(c),
+    u=t(10276),
+    f=t(63134),
+    h=t(7906),
+    b=t(12810);
+    let v={
+      applicationId:"new-registration",
+      anonymous:!1,
+      key:"anonymous-user"
+    },
+    g=p()(t.e(4747).then(t.bind(t,34747)),{
+      loadableGenerated:{
+        webpack:()=>[34747]
+      },
+      loading:()=>(0,n.jsx)(b.Z,{
+        fullscreen:!0
+      })
+    }),
+    y=p()(t.e(3448).then(t.bind(t,83448)),{
+      loadableGenerated:{
+        webpack:()=>[83448]
+      },
+      loading:()=>(0,n.jsx)(b.Z,{
+        fullscreen:!0
+      })
+    }),
+    x=p()(t.e(1530).then(t.bind(t,1530)),{
+      loadableGenerated:{
+        webpack:()=>[1530]
+      },
+      loading:()=>(0,n.jsx)("p",{})
+    }),
+    w=p()(Promise.resolve().then(t.bind(t,76218)),{
+      loadableGenerated:{
+        webpack:()=>[76218]
+      },
+      loading:()=>(0,n.jsx)(b.Z,{
+        fullscreen:!0
+      })
+    }),
+    {
+      Content:I
+    }=u.default;
+    var j=(0,f.Z)(e=>{
+      let{
+        orgForm:a,
+        appForm:t,
+        resetStatus:o,
+        errorReducer:s,
+        changeAppStatus:d,
+        checkOrgAppPage:l,
+        dashboardAccessView:i,
+        reasonNoDashboardAccess:c
+      }=e,
+      [p,u]=r.useState(v);
+      r.useEffect(()=>{
+        let e="";
+        try{
+          e=sessionStorage.getItem("tryNewSignup")
+        }
+        catch(e){}e&&u(e=>({
+          ...e,
+          tryNewSignup:!0
+        }))
+      },[]);
+      let f=(0,r.useMemo)(()=>(null==s?void 0:s.status)&&(null==s?void 0:s.pos)==="dashboard"?(0,n.jsx)(x,{
+        error:s
+      }):a||t?(0,n.jsxs)("div",{
+        children:[!i&&a&&(0,n.jsx)(g,{
+          changeAppStatus:d,
+          checkOrgAppPage:l
+        }),t&&!i&&(0,n.jsx)(h.OH,{
+          user:p,
+          clientKey:"623ab36a1ef2491514be328a",
+          children:(0,n.jsx)(w,{
+            resetStatus:o
+          })
+        })]
+      }):(0,n.jsx)(b.Z,{
+        fullscreen:!0
+      }),[t,d,l,i,s,a,o,p]);
+      return i?(0,n.jsx)(y,{
+        reasonNoDashboardAccess:c
+      }):(0,n.jsx)(I,{
+        style:{
+          padding:"0px 16px 0",
+          overflow:"initial",
+          backgroundColor:"#f5f5f5"
+        },
+        children:f
+      })
+    });
+    let _=e=>(0,n.jsx)(j,{
+      ...e
+    });
+    _.layout=i.Z,
+    _.getInitialProps=async e=>{
+      var a,
+      t,
+      n,
+      r,
+      o;
+      let{
+        store:i,
+        req:c,
+        res:p,
+        query:u
+      }=e;
+      if(u&&((null===(a=u.url)||void 0===a?void 0:a.split("?")[0])==="/dashboard"&&"shortUrl"!==u.parentType&&(u.parentType="dashboard"),i.dispatch((0,d.X7)(u))),"shortUrl"===u.parentType){
+        let e;
+        let a=await l.Z.getOriginalUrl(u.id,u.type,null==u?void 0:u.appId);
+        if(null==a?void 0:a.data)e="r"===u.type||"s"===u.type?"/app/".concat(a.data.appId,"/aisession/").concat(a.data.sessionId,"?secondarysessionid=").concat(a.data.sessionId):"/app/".concat(a.data.appId,"/user/").concat(a.data.uxcamUserId);
+        else if(null==a?void 0:a.response){
+          let s=(null===(n=a.response.data)||void 0===n?void 0:null===(t=n.error)||void 0===t?void 0:t.status)||a.response.status;
+          if(401===s||403===s){
+            let a="/dashboard?type=".concat(u.type,"&parentType=shortUrl").concat(u.appId?"&appId=".concat(u.appId):"","&id=").concat(u.id);
+            e="/login?redirect=".concat(encodeURIComponent(a))
+          }
+          else{
+            let t=null===(o=a.response.data)||void 0===o?void 0:null===(r=o.error)||void 0===r?void 0:r.message;
+            e="/error?errorStatus=".concat(s).concat(t?"&errorMessage=".concat(encodeURIComponent(t)):"")
+          }
+        }
+        else e="/error?errorStatus=503";
+        if(c&&p)return p.redirect(e);
+        s().replace(e)
+      }
+      return{
+        query:u
+      }
+    };
+    var k=_
+  }
+},function(e){
+  e.O(0,[571,6898,8798,630,7769,3662,3385,1664,4866,7536,6999,7384,6042,983,9521,7640,653,1297,2538,663,8357,1371,4621,1237,175,8865,5e3,9983,1521,5982,3985,2888,9774,179],function(){
+    return e(e.s=51075)
+  }),
+  _N_E=e.O()
+}]);

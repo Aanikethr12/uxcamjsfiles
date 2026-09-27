@@ -1,0 +1,484 @@
+"use strict";
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[3196],{
+  43196:function(e,i,n){
+    n.r(i),
+    n.d(i,{
+      default:function(){
+        return Y
+      }
+    });
+    var t=n(85893),
+    o=n(67294),
+    l=n(14416),
+    r=n(88767),
+    a=n(47639),
+    d=n(59017),
+    s=n(80688),
+    c=n(30663),
+    p=n(26390),
+    u=n(19521),
+    f=n(74936),
+    g=n(7436),
+    h=n.n(g),
+    v=n(11163),
+    x=n.n(v),
+    m=n(41664),
+    w=n.n(m),
+    I=n(62610),
+    b=n(65372),
+    j=n(55137),
+    y=n(5004),
+    C=n(86445),
+    k=n(95315),
+    E=n(59722),
+    S=n(28599),
+    z=n(79999);
+    let _=u.default.div.withConfig({
+      componentId:"sc-371784fc-0"
+    })(["width:260px;background:#ffffff;display:flex;flex-direction:column;gap:16px;"]),
+    T=u.default.div.withConfig({
+      componentId:"sc-371784fc-1"
+    })(["display:flex;flex-direction:column;gap:16px;"]),
+    M=u.default.div.withConfig({
+      componentId:"sc-371784fc-2"
+    })(["padding:",";display:flex;flex-direction:column;gap:10px;cursor:pointer;border-radius:6px;border:1px solid;border-color:",";&:hover{border-color:",";}"],e=>{
+      let{
+        listView:i
+      }=e;
+      return i?"12px":"0"
+    },e=>{
+      let{
+        listView:i
+      }=e;
+      return i?"#E8E8EB":"transparent"
+    },e=>{
+      let{
+        listView:i
+      }=e;
+      return i?"#5d97ff":""
+    }),
+    P=u.default.div.withConfig({
+      componentId:"sc-371784fc-3"
+    })(["display:flex;flex-direction:row;padding:",";gap:8px;button{flex:1;}"],e=>(null==e?void 0:e.isMultiple)?"0":"0 37px 20px 11px"),
+    V=u.default.div.withConfig({
+      componentId:"sc-371784fc-4"
+    })(["display:flex;flex-direction:column;gap:16px;justify-content:center;align-items:flex-start;color:#5d97ff;"]),
+    A=u.default.div.withConfig({
+      componentId:"sc-371784fc-5"
+    })(["color:#5d97ff;height:16px;font-size:10px;font-weight:400;line-height:12px;padding:2px 8px;align-items:center;background:rgba(93,151,255,0.2);border-radius:20px;"]),
+    R=u.default.div.withConfig({
+      componentId:"sc-371784fc-6"
+    })(["display:flex;align-items:center;p{font-weight:400;font-size:12px;color:#737886;align-items:center;}"]),
+    Z=u.default.div.withConfig({
+      componentId:"sc-371784fc-7"
+    })(["width:100%;font-weight:500;font-size:12px;line-height:16px;cursor:pointer;display:flex;align-items:center;gap:10px;color:",";svg{width:16px;height:16px;fill:",";}:hover{color:",";svg{fill:",";}}"],z.r.colors.surface400.toString(),z.r.colors.surface300.toString(),z.r.colors.primary500.toString(),z.r.colors.primary500.toString()),
+    q=(0,u.default)(f.Z).withConfig({
+      componentId:"sc-371784fc-8"
+    })(["padding:8px 0px;font-size:12px;font-weight:500;border-radius:6px;border:1px solid #E8E8EB;display:flex;align-items:center;justify-content:center;min-width:100px;box-shadow:none;:hover{border-color:#E8E8EB;color:#5d97ff;}"]),
+    N=(0,u.default)(f.Z).withConfig({
+      componentId:"sc-371784fc-9"
+    })([""]),
+    O=u.default.div.withConfig({
+      componentId:"sc-371784fc-10"
+    })(["background-color:",";border-radius:6px;padding:12px;border:1px solid;border-color:",";cursor:pointer;display:flex;flex-direction:column;gap:10px;&:hover{border-color:#5d97ff;}"],e=>{
+      let{
+        isactive:i
+      }=e;
+      return i?"#EFF5FF":"none"
+    },e=>{
+      let{
+        isactive:i
+      }=e;
+      return i?"white":"#E8E8EB"
+    }),
+    D=u.default.div.withConfig({
+      componentId:"sc-371784fc-11"
+    })(["display:flex;border:none;width:100%;padding:0;.anticon{margin-left:3px !important;}:hover{border-color:",";color:",";}"],e=>{
+      let{
+        isactive:i
+      }=e;
+      return i?"#5d97ff":""
+    },e=>{
+      let{
+        isactive:i
+      }=e;
+      return i?"#5d97ff":""
+    }),
+    B=u.default.div.withConfig({
+      componentId:"sc-371784fc-12"
+    })(["color:#161E35;font-weight:500;font-size:14px;width:",";display:flex;flex-direction:column;justify-content:center;gap:4px;line-height:14px;.ellipse-tooltip-text{font-weight:"," !important;}a{padding:0;height:14px;display:flex;align-items:center;width:max-content;&:hover{color:#5d97ff;}}p{margin-bottom:0;}"],e=>{
+      let{
+        isOwner:i
+      }=e;
+      return i?"144px":"186px"
+    },e=>{
+      let{
+        active:i
+      }=e;
+      return i?"500":"400"
+    }),
+    F=u.default.div.withConfig({
+      componentId:"sc-371784fc-13"
+    })(["display:flex;align-items:center;width:100%;"]),
+    Q=u.default.div.withConfig({
+      componentId:"sc-371784fc-14"
+    })(["color:#161e35;font-size:14px;font-weight:500;"]),
+    U=u.default.div.withConfig({
+      componentId:"sc-371784fc-15"
+    })(["display:flex;width:100%;"]);
+    (0,u.default)(N).withConfig({
+      componentId:"sc-371784fc-16"
+    })(["color:#5d97ff;.anticon{font-size:14px;margin-right:12px;SVG{color:#5d97ff;}}"]);
+    let H=["subscription.view","subscription.update"],
+    K=e=>{
+      var i,
+      n;
+      let{
+        value:l,
+        memberCount:r,
+        uniqueKey:a,
+        listView:s,
+        isActive:c,
+        orgId:p,
+        handleVisibleChange:u,
+        validatePermission:f
+      }=e,
+      g=(0,o.useRef)();
+      return(0,t.jsx)(M,{
+        listView:s,
+        children:(0,t.jsxs)(R,{
+          children:[(0,t.jsxs)(F,{
+            children:[(0,t.jsx)("strong",{
+              children:(0,t.jsx)(d.Z,{
+                className:"avatar-box",
+                size:32,
+                picture:null==l?void 0:l.image,
+                shape:"circle",
+                nameInfo:(null==l?void 0:l.name)?null==l?void 0:null===(i=l.name)||void 0===i?void 0:i.trim():null==l?void 0:null===(n=l.email)||void 0===n?void 0:n.trim()
+              })
+            }),(0,t.jsxs)(B,{
+              ref:g,
+              active:c,
+              isOwner:(null==l?void 0:l.isOwner)&&c,
+              children:[(c||!s)&&f(["organization.update","organization.view"])?(0,t.jsx)(w(),{
+                href:{
+                  pathname:"/integration",
+                  query:{
+                    parentType:"settings",
+                    setting:"org_setting",
+                    org_tab:"profile",
+                    orgId:p,
+                    org:p
+                  }
+                },
+                as:"/settings/org/".concat(p,"/profile"),
+                passHref:!0,
+                children:(0,t.jsx)(D,{
+                  isactive:c?1:0,
+                  type:"link",
+                  children:(0,t.jsx)(U,{
+                    children:(0,t.jsx)(E.Z,{
+                      width:186,
+                      value:null==l?void 0:l.name
+                    })
+                  })
+                })
+              }):(0,t.jsx)(E.Z,{
+                width:186,
+                value:null==l?void 0:l.name
+              }),r&&(0,t.jsxs)("p",{
+                children:[" ","".concat(r," member").concat(r>1?"s":"")]
+              })]
+            })]
+          }),(null==l?void 0:l.isOwner)&&c&&(0,t.jsx)(A,{
+            children:"Owner"
+          })]
+        })
+      },a)
+    };
+    var L=e=>{
+      let{
+        logout:i,
+        navigateToTeam:n,
+        urlRouteTo:a,
+        navigateToSubscription:d,
+        handleVisibleChange:s,
+        planhatPortalLink:c,
+        planHatPortalAccessData:p,
+        setVisibleCreateAppModal:u,
+        setSelectedOrgId:f
+      }=e,
+      g=(0,l.I0)(),
+      {
+        organizationReducer:v,
+        currentOrgReducer:m,
+        applicationReducer:E,
+        urlReducer:z,
+        profileReducer:M
+      }=(0,l.v9)(e=>e),
+      A=(0,r.useQueryClient)(),
+      {
+        data:R
+      }=(0,k.R7)("roles_permission"),
+      N=(0,o.useCallback)(e=>{
+        A.setQueryData("profileInfo",e)
+      },[A]),
+      D=(0,o.useMemo)(()=>(null==v?void 0:v.length)>0?null==v?void 0:v.find(e=>{
+        let{
+          _id:i
+        }=e;
+        return i===(null==m?void 0:m.orgId)
+      }):{},[v,m]),
+      B=(0,o.useCallback)(e=>M&&(0,C.OQ)(e,R,null==M?void 0:M.organization,null==m?void 0:m.orgId),[M,R,null==m?void 0:m.orgId]);
+      return(0,o.useEffect)(()=>{
+        M&&N(M)
+      },[M,N]),
+      (0,t.jsxs)(_,{
+        "data-intercom-target":"User Info",
+        children:[(0,t.jsxs)(T,{
+          isMultiple:null==v?void 0:v.length,
+          children:[(null==v?void 0:v.length)>1&&(0,t.jsx)(Q,{
+            children:"My organizations"
+          }),(0,t.jsxs)(O,{
+            isactive:(null==v?void 0:v.length)>1,
+            children:[(0,t.jsx)(K,{
+              value:D,
+              memberCount:null==D?void 0:D.totalMembers,
+              uniqueKey:"has_multiple",
+              isActive:(null==v?void 0:v.length)>1,
+              orgId:null==m?void 0:m.orgId,
+              handleVisibleChange:s,
+              validatePermission:B
+            }),(0,t.jsxs)(P,{
+              isMultiple:null==v?void 0:v.length,
+              children:[B(H)&&(0,t.jsx)(q,{
+                onClick:()=>{
+                  d(),
+                  s(!1)
+                },
+                "data-intercom-target":"User Subscription",
+                children:"Subscription"
+              }),(0,t.jsx)(q,{
+                onClick:()=>{
+                  n(),
+                  s(!1)
+                },
+                "data-intercom-target":"User Team",
+                children:"Team"
+              })]
+            })]
+          }),(null==v?void 0:v.length)>1&&v.map(e=>{
+            let{
+              _id:i
+            }=e;
+            if(i!==(null==m?void 0:m.orgId)){
+              var n,
+              o,
+              l,
+              r,
+              d;
+              let c=null==E?void 0:E.filter(e=>(null==e?void 0:e.orgId)===i),
+              p=c&&(null==c?void 0:c.length)?c[0]:{};
+              if((null==p?void 0:null===(n=p.apps)||void 0===n?void 0:n.length)===0)return(0,t.jsx)("ul",{
+                "aria-hidden":!0,
+                onClick:()=>{
+                  try{
+                    localStorage.setItem("orgId",i)
+                  }
+                  catch(e){}
+                },
+                style:{
+                  cursor:"pointer"
+                },
+                children:(0,t.jsx)("div",{
+                  "aria-hidden":!0,
+                  onClick:()=>{
+                    f(i),
+                    u(!0),
+                    s(!1)
+                  },
+                  children:(0,t.jsx)(K,{
+                    value:e,
+                    memberCount:null==e?void 0:e.totalMembers,
+                    uniqueKey:i,
+                    listView:!0,
+                    validatePermission:B
+                  })
+                })
+              },i);
+              if((null==p?void 0:null===(o=p.apps)||void 0===o?void 0:o.length)>0){
+                let n=h()(p.apps,{
+                  isLastVisitedApp:!0
+                }),
+                o=n>-1&&(null==p?void 0:null===(l=p.apps[n])||void 0===l?void 0:l.hasAccess)?null==p?void 0:null===(r=p.apps)||void 0===r?void 0:r[n]._id:null==p?void 0:null===(d=p.apps)||void 0===d?void 0:d[0]._id,
+                c=n>-1?p.apps[n].isIntegrated:p.apps[0].isIntegrated,
+                u=z.parentType,
+                f={
+                  appId:o,
+                  orgId:i,
+                  org:i,
+                  parentType:c?u&&"settings"!==u&&"integration"!==u&&"dashboard"!==u&&"plan-downgrade"!==u?u:"overview":"integration",
+                  ..."eventsList"===u&&{
+                    eventpage:1
+                  },
+                  ..."issues"===u&&{
+                    issueType:"crashes"
+                  }
+                },
+                v=c?"/app/".concat(o,"/").concat(a):"/integration?appId=".concat(o);
+                return(0,t.jsx)("ul",{
+                  "aria-hidden":!0,
+                  onClick:()=>{
+                    try{
+                      localStorage.setItem("orgId",i),
+                      localStorage.setItem("appId",o)
+                    }
+                    catch(e){}g((0,I.uv)(o)),
+                    g((0,j.kA)()),
+                    g((0,b.ro)(i)).then(e=>{
+                      (null==e?void 0:e.selectAppAction)||(null==e?void 0:e.selectUserAction)?x().push("/integration?parentType=plan-downgrade&appId=".concat(o||"").concat(i?"&orgId=".concat(i):""),"/plan-downgrade?appId=".concat(o||"").concat(i?"&orgId=".concat(i):"")):x().push({
+                        pathname:"/integration",
+                        query:f
+                      },v)
+                    }).catch(()=>{
+                      x().push({
+                        pathname:"/integration",
+                        query:f,
+                        asPath:v
+                      },v)
+                    }),
+                    s(!1)
+                  },
+                  style:{
+                    cursor:"pointer"
+                  },
+                  children:(0,t.jsx)("div",{
+                    "aria-hidden":!0,
+                    children:(0,t.jsx)(K,{
+                      value:e,
+                      memberCount:null==e?void 0:e.totalMembers,
+                      uniqueKey:i,
+                      listView:!0,
+                      validatePermission:B
+                    })
+                  })
+                },i)
+              }
+            }
+          })]
+        }),(0,t.jsxs)(V,{
+          children:[(0,t.jsx)(w(),{
+            href:{
+              pathname:"/integration",
+              query:{
+                parentType:"settings",
+                setting:"profile_setting",
+                orgId:null==m?void 0:m.orgId,
+                org:null==m?void 0:m.orgId
+              }
+            },
+            as:"/settings/profile",
+            passHref:!0,
+            children:(0,t.jsxs)(Z,{
+              onClick:()=>s(!1),
+              children:[(0,t.jsx)(S.m2,{}),"My profile"]
+            })
+          }),(null==p?void 0:p.accessToSharedView)&&(0,t.jsxs)(Z,{
+            onClick:e=>{
+              e.preventDefault(),
+              e.stopPropagation(),
+              c(null==p?void 0:p.endUserId)
+            },
+            children:[(0,t.jsx)(y.cV,{}),"My portal"]
+          }),(0,t.jsxs)(Z,{
+            onClick:e=>i(e),
+            children:[(0,t.jsx)(S.Go,{}),"Sign out"]
+          })]
+        })]
+      })
+    },
+    G=n(11182),
+    W=n(76886),
+    Y=e=>{
+      var i,
+      n;
+      let u=(0,l.I0)(),
+      {
+        collapsed:f,
+        logout:g,
+        navigateToTeam:h,
+        navigateToSubscription:v,
+        urlRouteTo:x,
+        planhatPortalLink:m,
+        planHatPortalAccessData:w
+      }=e,
+      {
+        profileReducer:I,
+        urlReducer:{
+          parentType:b
+        }
+      }=(0,l.v9)(e=>e),
+      [j,y]=(0,o.useState)(!1),
+      [C,k]=(0,o.useState)(),
+      [E,S]=(0,o.useState)(!1),
+      [z,_]=(0,o.useState)(),
+      T=(0,r.useQueryClient)(),
+      M=e=>y(e);
+      (0,o.useEffect)(()=>{
+        u((0,a.ms)())
+      },[]),
+      (0,o.useEffect)(()=>{
+        (null==I?void 0:I.profilePicture)&&k(null==I?void 0:I.profilePicture)
+      },[null==I?void 0:I.profilePicture]),
+      (0,o.useEffect)(()=>{
+        T.setQueryData("profileInfo",I)
+      },[I,T]);
+      let P=(0,o.useCallback)(e=>{
+        e.preventDefault(),
+        e.stopPropagation(),
+        u((0,c.CW)(null,{
+          eventName:"wa_log_out"
+        })),
+        g()
+      },[u,g]);
+      return(0,t.jsxs)(t.Fragment,{
+        children:[(0,t.jsx)(W.Z,{
+          placement:"rightBottom",
+          collapsed:f,
+          content:(0,t.jsx)(L,{
+            logout:P,
+            navigateToTeam:h,
+            navigateToSubscription:v,
+            urlRouteTo:x,
+            handleVisibleChange:M,
+            planhatPortalLink:m,
+            planHatPortalAccessData:w,
+            setVisibleCreateAppModal:S,
+            setSelectedOrgId:_
+          }),
+          trigger:f?"hover":"click",
+          mouseEnterDelay:f?.4:void 0,
+          visible:j,
+          onVisibleChange:M,
+          children:(0,t.jsxs)(G.Yq,{
+            className:"settings"===b?"selected":"",
+            children:[(0,t.jsx)(d.Z,{
+              className:"avatar-box",
+              size:24,
+              picture:C,
+              shape:"circle",
+              nameInfo:(null==I?void 0:I.name)?null==I?void 0:null===(i=I.name)||void 0===i?void 0:i.trim():null==I?void 0:null===(n=I.email)||void 0===n?void 0:n.trim()
+            }),!f&&(0,t.jsx)("span",{
+              className:"user-name-pop",
+              id:"profile-name",
+              children:null==I?void 0:I.name
+            }),(0,t.jsx)(p.Z,{})]
+          })
+        }),E&&(0,t.jsx)(s.ZP,{
+          visibleCreateAppModal:E,
+          organizationId:z
+        })]
+      })
+    }
+  }
+}]);

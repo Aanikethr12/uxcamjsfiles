@@ -1,0 +1,1 @@
+var e=`/api/settings/notifications`;export{e as t};

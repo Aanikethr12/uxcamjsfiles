@@ -1,0 +1,1 @@
+import{t as e}from"./defineProperty-DjL74BD-.js";var t={key:`plan`,label:`Subscription`}.key,n=class extends Error{constructor(t,n,r,i){super(t),e(this,`statusCode`,void 0),e(this,`fallbackUrl`,void 0),e(this,`dasErrors`,void 0),this.name=`SettingsApiError`,this.statusCode=n,this.fallbackUrl=r,this.dasErrors=i}};export{n,t};

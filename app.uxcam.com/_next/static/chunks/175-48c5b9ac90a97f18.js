@@ -1,0 +1,2209 @@
+"use strict";
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[175],{
+  27985:function(e,t,a){
+    a.d(t,{
+      Fm:function(){
+        return S
+      },
+      UV:function(){
+        return T
+      },
+      Vw:function(){
+        return g
+      },
+      WE:function(){
+        return A
+      },
+      XX:function(){
+        return m
+      },
+      am:function(){
+        return I
+      },
+      jF:function(){
+        return D
+      },
+      ll:function(){
+        return y
+      },
+      qH:function(){
+        return F
+      }
+    });
+    var r=a(48002),
+    s=a(1469),
+    i=a.n(s),
+    n=a(18446),
+    o=a.n(n),
+    l=a(35161),
+    u=a.n(l),
+    c=a(57557),
+    p=a.n(c),
+    d=a(30663),
+    f=a(99252),
+    _=a(12616),
+    b=a(13979),
+    v=a(92046);
+    let h=Object.keys(r.i),
+    y=e=>{
+      if((null==e?void 0:e.length)>1)return!0;
+      if((null==e?void 0:e.length)===1){
+        var t,
+        a,
+        s,
+        i,
+        n,
+        l;
+        let u=null==e?void 0:e.some(e=>{
+          var t;
+          return null==e?void 0:null===(t=e.filters)||void 0===t?void 0:t.length
+        }),
+        c=JSON.stringify({
+          operator:null===(t=e[0])||void 0===t?void 0:t.operator,
+          value:null===(a=e[0])||void 0===a?void 0:a.value,
+          dateRangeOperator:null===(s=e[0])||void 0===s?void 0:s.activity_attribute_date_range.operator,
+          dateRangeAttribute:null===(i=e[0])||void 0===i?void 0:i.activity_attribute_date_range.attribute,
+          tz:null===(n=e[0])||void 0===n?void 0:n.activity_attribute_date_range.tz
+        })!==JSON.stringify({
+          operator:r.Vv.operator,
+          value:r.Vv.value,
+          dateRangeOperator:r.Vv.activity_attribute_date_range.operator,
+          dateRangeAttribute:r.Vv.activity_attribute_date_range.attribute,
+          tz:r.Vv.activity_attribute_date_range.tz
+        }),
+        p=!o()(null===(l=e[0])||void 0===l?void 0:l.activity_attribute_date_range.labelId,r.Vv.activity_attribute_date_range.labelId);
+        return u||c||p
+      }
+      return!1
+    },
+    g=(e,t,a)=>a?[...t,...null==e?void 0:e.map(e=>{
+      let{
+        filters:t,
+        operator:a,
+        value:r,
+        activity_attribute_date_range:s,
+        attribute:i
+      }=e;
+      return{
+        attribute:i,
+        operator:a,
+        value:r,
+        filters:u()(t,e=>p()(e,["open","isLocal"])),
+        activity_attribute_date_range:{
+          attribute:s.attribute,
+          operator:s.operator,
+          value:s.value,
+          tz:s.tz,
+          labelId:(null==s?void 0:s.labelId)||""
+        }
+      }
+    })]:t;
+    function m(e){
+      let t=(e,t,a)=>!!e&&!!a&&Number(t)>=0;
+      return null!=e&&!!e.every(e=>t(e.operator,e.value,e.activity_attribute_date_range))&&(null==e||!e.some(e=>e.filters.length)||e.every(e=>{
+        var t;
+        return null==e?void 0:null===(t=e.filters)||void 0===t?void 0:t.every(e=>(null==e?void 0:e.property)?!!e.property.name&&!!e.property.value:!!e.value)
+      }))
+    }
+    function w(e){
+      let{
+        attribute:t,
+        operator:a,
+        value:r,
+        labelId:s,
+        tz:i,
+        table:n,
+        eventName:o,
+        property_name:l,
+        propertyType:u,
+        property:c,
+        isLocal:p
+      }=e;
+      if(["user_custom_property","event_custom_property","utm","session_screen_with_property","session_screen_with_property_list"].indexOf(t)>-1)return{
+        a:t,
+        o:a,
+        pn:l,
+        pv:r,
+        tb:n
+      };
+      let d={
+        a:t,
+        o:a,
+        v:r,
+        lb:s,
+        tz:i,
+        tb:n,
+        p:c,
+        isLo:p
+      };
+      return t||delete d.a,
+      a||delete d.o,
+      r||delete d.v,
+      s||delete d.lb,
+      i||delete d.tz,
+      n||delete d.tb,
+      p||delete d.isLo,
+      d
+    }
+    function S(e){
+      let t=new URLSearchParams,
+      a=e.reduce((e,t)=>{
+        let a=t.attribute||"";
+        e[a]||(e[a]=[]);
+        let{
+          filters:r,
+          activity_attribute_date_range:s,
+          operator:i,
+          value:n,
+          attribute:o
+        }=t,
+        l=w(s),
+        u=r.map(e=>w(e));
+        return e[a].push({
+          filters:u,
+          activity_attribute_date_range:l,
+          o:i,
+          v:n,
+          a:o
+        }),
+        e
+      },{});
+      return Object.keys(a).forEach(e=>{
+        t.append(e,JSON.stringify(a[e]))
+      }),
+      t
+    }
+    function k(e){
+      let{
+        a:t,
+        o:a,
+        v:r,
+        lb:s,
+        tz:n,
+        tb:o,
+        tzo:l,
+        en:u,
+        pn:c,
+        pt:p,
+        pv:d,
+        p:_,
+        isLo:b
+      }=e;
+      if(["user_custom_property","event_custom_property","utm","session_screen_with_property","session_screen_with_property_list","user_first_utm","screen_utm"].indexOf(t)>-1)return{
+        attribute:t,
+        operator:a,
+        value:d||r,
+        table:o,
+        property_name:c?i()(c)?c[0]:c:""
+      };
+      let v={
+        attribute:t,
+        operator:a,
+        value:r,
+        labelId:s,
+        tz:n||f.x7,
+        table:o,
+        timezoneOffset:l,
+        property:_,
+        isLocal:b
+      };
+      return t||delete v.attribute,
+      a||delete v.operator,
+      r||delete v.value,
+      s||delete v.labelId,
+      o||delete v.table,
+      l||delete v.timezoneOffset,
+      _||delete v.property,
+      n||delete v.tz,
+      b||delete v.isLocal,
+      ["True","False"].includes(v.value)||("equal"===a&&(v.operator="in"),"not_equal"===a&&(v.operator="not_in"),"not_equal"!==a&&"equal"!==a||(v.value=i()(r)?r:[r])),
+      "session_recorded_hour_of_user"===t&&(v.value=i()(r)&&(null==r?void 0:r.map(e=>e.replace(/(\d+)\s*(AM|PM)/i,(e,t,a)=>"".concat(t).concat(a.toUpperCase()))))),
+      "session_recorded_weekday"===t&&(v.value=i()(r)?r:[r.toLowerCase()]),
+      v
+    }
+    let T=e=>async(t,a)=>{
+      try{
+        let s;
+        let i=/([a-zA-Z0-9_]+)=([^&]+)/g,
+        n=[],
+        o=a().appFilter.user.segment;
+        for(;null!==(s=i.exec(e));){
+          let e=s[1],
+          t=s[2];
+          if(h.includes(e))try{
+            let a=JSON.parse(decodeURIComponent(t));
+            if(Array.isArray(a)){
+              let t=a.map(t=>{
+                var a;
+                return{
+                  attribute:e,
+                  operator:null==t?void 0:t.o,
+                  value:null==t?void 0:t.v,
+                  activity_attribute_date_range:k(null==t?void 0:t.activity_attribute_date_range),
+                  filters:(null==t?void 0:null===(a=t.filters)||void 0===a?void 0:a.map(e=>k(e)))||[]
+                }
+              });
+              n=n.concat(t)
+            }
+          }
+          catch(t){
+            b.l.error(t,"Error parsing JSON for ".concat(e))
+          }
+        }
+        n.length>0?t((0,_.YS)(n,"user")):o.length||t((0,_.YS)([r.Vv],"user"))
+      }
+      catch(e){
+        b.l.error(e,"Error processing user activity parameters from URL")
+      }
+    },
+    D=e=>{
+      switch(e){
+        case"absolute_today":case"absolute_yesterday":return"";
+        case void 0:case"":return"between";
+        default:return"in"
+      }
+    },
+    A=e=>e.some(e=>h.includes((null==e?void 0:e.attribute)||"")),
+    F=e=>{
+      let{
+        filters:t,
+        operator:a,
+        value:r,
+        activity_attribute_date_range:s,
+        attribute:i
+      }=e,
+      n={
+        attribute:i,
+        operator:a,
+        value:r,
+        number_of_filters:t.length,
+        filters:(0,v.aZ)(t),
+        activity_attribute_date_range:s
+      };
+      return e=>{
+        e((0,d.CW)(null,{
+          eventName:"wa_create_activity_filter",
+          track_type:"event",
+          eventProperty:n,
+          pageName:"usersList"
+        }))
+      }
+    },
+    I=function(){
+      let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"_default_",
+      t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:0;
+      return{
+        eventId:"open-add-property-dropdown",
+        dropdownId:"".concat(e,"_").concat(t)
+      }
+    }
+  },
+  73495:function(e,t,a){
+    a.d(t,{
+      $:function(){
+        return r
+      }
+    });
+    let r=function(e){
+      let t,
+      a=arguments.length>1&&void 0!==arguments[1]?arguments[1]:[],
+      r=a?[...a]:[],
+      s=e;
+      for(let l=0;l<r.length;l++){
+        var i,
+        n,
+        o;
+        let u=!!a.length,
+        c=0===l&&!e.includes("?")&&u?"?":"",
+        p=l>0?"&":c,
+        d=r[l].attribute?r[l].attribute.toString():"";
+        if(["eventproperty","userproperty","user_custom_property","event_custom_property","utm","session_screen_with_property","session_screen_with_property_list","user_first_utm"].includes(r[l].attribute)){
+          let e=["user_custom_property","event_custom_property","utm","session_screen_with_property","session_screen_with_property_list","user_first_utm"].indexOf(r[l].attribute)>-1;
+          t=encodeURIComponent(t=JSON.stringify({
+            o:r[l].operator,
+            en:r[l].eventName,
+            pn:e?r[l].property_name:r[l].propertyName,
+            pt:r[l].propertyType,
+            pv:e?r[l].value:r[l].propertyValue,
+            tb:r[l].table,
+            tzo:null===(o=r[l])||void 0===o?void 0:o.timezoneOffset
+          }))
+        }
+        else t=encodeURIComponent(t=r[l].property?JSON.stringify({
+          o:r[l].operator,
+          v:r[l].value,
+          p:r[l].property,
+          t:r[l].type,
+          tb:r[l].table,
+          tzo:null===(i=r[l])||void 0===i?void 0:i.timezoneOffset
+        }):JSON.stringify({
+          o:r[l].operator,
+          v:r[l].value,
+          t:r[l].type,
+          tb:r[l].table,
+          has_sequence:r[l].has_sequence,
+          lb:r[l].labelId,
+          tz:r[l].tz,
+          filters:r[l].filters,
+          tzo:null===(n=r[l])||void 0===n?void 0:n.timezoneOffset,
+          hm:r[l].has_mass_value,
+          mvs:r[l].mass_value_segment_id,
+          mvi:r[l].mass_values_id
+        }));
+        s=s.concat(p,d,"=",t)
+      }
+      return s
+    }
+  },
+  48002:function(e,t,a){
+    a.d(t,{
+      i:function(){
+        return g
+      },
+      Vv:function(){
+        return m
+      },
+      _u:function(){
+        return l
+      },
+      ir:function(){
+        return S
+      },
+      xy:function(){
+        return w
+      }
+    });
+    var r=a(92053),
+    s=a(99252),
+    i=a(63105),
+    n=a.n(i),
+    o=JSON.parse('{"GT":[{"attribute":"session_id","title":"Session ID","type":"string","isSearchable":true,"info":"Filter by set session id.","table":"session","features":["default","websdk"]},{"attribute":"session_number_of_user","title":"Session number of user","type":"integer","isSearchable":false,"info":"Number of sessions of this user when the session happened.","table":"session","features":["default","websdk"]},{"attribute":"session_duration","title":"Session duration","type":"float","isSearchable":false,"info":"Duration of the session in seconds.","table":"session","features":["default","websdk"]},{"attribute":"session_with_event","title":"Session event count","type":"integer","isSearchable":false,"info":"Event count.","table":"session","features":["default","websdk"]},{"attribute":"session_gesture_count","title":"Session gesture count","type":"integer","isSearchable":false,"info":"Number of customer interactions during the session.","table":"session","features":["default"]},{"attribute":"session_responsive_gesture_count","title":"Session responsive gesture count","type":"integer","isSearchable":false,"info":"Count of responsive gestures.","table":"session","features":["default"]},{"attribute":"session_unresponsive_gesture_count","title":"Session unresponsive gesture count","type":"integer","isSearchable":false,"info":"Count of gestures that did not trigger response on the UI in a session.","table":"session","features":["default"]},{"attribute":"session_screen_count","title":"Session screen visit count","type":"integer","isSearchable":false,"info":"Number of visited screens during the session.","table":"session","features":["default","websdk"]},{"attribute":"session_has_video","title":"Session with video","type":"bool","isSearchable":false,"info":"A recording of the session is available.","table":"session","features":["default","websdk"]},{"attribute":"session_offline_recorded","title":"Session was offline recorded","type":"bool","isSearchable":false,"info":"The session was recorded while the device was offline.","table":"session","features":["default"]},{"attribute":"session_is_viewed","title":"Session was viewed","type":"bool","isSearchable":false,"info":"The session has been viewed in the dashboard.","table":"session","features":["default","websdk"]},{"attribute":"session_with_notes","title":"Session with note","type":"bool","isSearchable":false,"info":"The session has note.","table":"session","features":["default","websdk"]},{"attribute":"session_crashed","title":"Session with crash","type":"bool","isSearchable":false,"info":"Session which was ended by an unhandled exception.","table":"session","features":["default"]},{"attribute":"rage_quit","title":"Session with rage quit","type":"bool","isSearchable":false,"info":"Exit that happened immediately after rage taps.","table":"session","features":["default"]},{"attribute":"event_name","title":"Coded events in session","alternativeTitle":"Events in session","filterTitle":"","type":"event_name_json","isSearchable":true,"info":"Filter by events sent during a session.","table":"event","features":["default","websdk"]},{"attribute":"nce_name","title":"Smart events in session","filterTitle":"","type":"json","isSearchable":true,"info":"Filter by events sent during a session.","table":"no_code_event","features":["default"]},{"attribute":"screen_name","title":"Screens visited in session","type":"screen_name_string","isSearchable":true,"info":"Filter by the screens that have been visited during a session.","table":"session","features":["default","websdk"]},{"attribute":"session_recorded_weekday","title":"Day of the week (Recorded time)","type":"string","isSearchable":false,"valueMapping":["monday","tuesday","wednesday","thursday","friday","saturday","sunday"],"info":"Day of the week for the user when the session was recorded.","table":"session","features":["default","websdk"],"hidden":true},{"attribute":"session_recorded_hour_of_user","title":"Hour of the day","type":"string","isSearchable":false,"info":"","table":"session","valueMapping":["1 AM","2 AM","3 AM","4 AM","5 AM","6 AM","7 AM","8 AM","9 AM","10 AM","11 AM","12 AM","1 PM","2 PM","3 PM","4 PM","5 PM","6 PM","7 PM","8 PM","9 PM","10 PM","11 PM","12 PM"],"features":["default"],"hidden":true},{"attribute":"session_time_hour_of_day","title":"Time of the day","type":"integer","isSearchable":false,"info":"","table":"session","hidden":true},{"attribute":"custom_label","title":"Session labels","type":"list_of_label_string","isSearchable":true,"info":"Filter by the session label that have been marked in a session.","table":"session","features":["default","websdk"],"hidden":true},{"attribute":"user_custom_property","title":"Custom User properties","type":"json","isSearchable":true,"info":"Filter by custom user properties sent during a session","table":"appuser","features":["default","websdk"],"hidden":true},{"attribute":"session_rage_gesture_count","title":"Count of rage taps in session","type":"integer","isSearchable":false,"info":"Count of quick, repeated taps indicating user frustration in a session.","table":"session","features":["default","websdk"],"hidden":true},{"attribute":"session_weekday","title":"Day of the week (Uploaded time)","type":"string","isSearchable":true,"info":"Day of the week for the user when the session was recorded.","valueMapping":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"table":"session","features":["default","websdk"],"hidden":true},{"attribute":"utm","title":"Landing UTM","type":"json","isSearchable":true,"info":"Filter by the UTM parameters of the landing page.","table":"session","features":["websdk"],"hidden":true},{"attribute":"screen_utm","title":"Screen UTM","type":"json","isSearchable":true,"info":"","table":"screenvisit","features":["websdk"],"hidden":true},{"attribute":"user_first_screen_name","title":"Initial landing page","type":"json","isSearchable":true,"info":"The first screen the user visited.","table":"session","features":["websdk"],"hidden":true},{"attribute":"user_first_referer","title":"Initial referrer","type":"json","isSearchable":true,"info":"The URL that linked to your site and initiated the users\' first session.","table":"session","features":["websdk"],"hidden":true},{"attribute":"user_first_referer_domain","title":"Initial referrer domain","type":"json","isSearchable":true,"info":"The domain that linked to your site and initiated the user\'s first session.","table":"session","features":["websdk"],"hidden":true},{"attribute":"user_first_utm","title":"Initial landing UTM","type":"json","isSearchable":true,"info":"The UTM parameters from the user’s first visit.","table":"session","features":["websdk"],"hidden":true},{"attribute":"session_screen_with_property","title":"Custom screen property","type":"string","isSearchable":true,"info":"Filter by saved page parameter","table":"screenvisit","features":["websdk"],"hidden":true},{"attribute":"session_screen_with_property_list","title":"Custom screen property","type":"session_screen_string","isSearchable":true,"info":"Filter by saved page parameter","table":"session","features":["websdk"]},{"attribute":"batch_id","title":"Tara\'s watchlist batches","type":"user_cohort","isSearchable":true,"info":"Filter by the batch processing ID.","table":"session","features":["aisession"]}],"cR":[{"attribute":"event_name","title":"Event name","filterTitle":"","type":"event_name_json","isSearchable":true,"info":"Filter by events sent during a session.","table":"event","features":["default","websdk"]},{"attribute":"event_custom_property","title":"Custom event property","filterTitle":"","type":"json","isSearchable":true,"info":"Filter by events property sent during a session.","table":"event","features":["default","websdk"]},{"attribute":"rageTap","title":"Rage tap","type":"list_of_string","isSearchable":false,"table":"event","info":"Quick, repeated taps indicating user frustration.","default":[{"attribute":"event_name","operator":"in","value":["rageTap"],"table":"event"}],"features":["default","websdk"],"hidden":true},{"attribute":"UI Freeze","title":"UI freeze","type":"list_of_string","isSearchable":false,"info":"Temporary UI unresponsiveness.","table":"event","default":[{"attribute":"event_name","operator":"in","value":["UI Freeze"],"table":"event"}],"features":["default"],"hidden":true},{"attribute":"event_activity_name","title":"Event screen","type":"string","isSearchable":true,"info":"Name of the screen from when the event was triggered.","table":"event","features":["default","websdk"],"hidden":true},{"attribute":"event_uploadedon","title":"Event uploaded date","type":"date","isSearchable":false,"info":"Date on which the event was uploaded to our server.","table":"event","features":["default","websdk"],"hidden":true},{"attribute":"event_custom_property","title":"Event Properties","filterTitle":"Has event with property","type":"json","isSearchable":true,"info":"Filter by events property sent during a session.","table":"event","features":["default","websdk"],"hidden":true}],"_S":[{"attribute":"nce_name","title":"Event name","filterTitle":"","type":"json","isSearchable":true,"info":"Filter by events sent during a session.","table":"no_code_event","features":["default"]},{"attribute":"viewid","title":"UI element ID","type":"string","isSearchable":true,"info":"Unique ID of the UI element","table":"no_code_event","features":["default"],"hidden":true},{"attribute":"viewname","title":"UI element name","type":"string","isSearchable":true,"info":"UI name of the UI element","table":"no_code_event","features":["default"],"hidden":true},{"attribute":"viewtype","title":"UI element type","type":"string","isSearchable":true,"info":"UI type of the UI element","table":"no_code_event","valueMapping":["Unknown view type","Button","EditText / TextField","CompoundButton","Slider / Seekbar","ViewGroup","Scrollview","Textview","TableView - UITableView","Stepper - UIStepper","Time picker","ImageView","Menu","Picker","Keyboard","Alert/ActionSheet","Search bar","Page Controls","Unknown Composable"],"features":["default"],"hidden":true},{"attribute":"viewtype","title":"Smart event property","type":"string","isSearchable":true,"info":"UI type of the UI element","table":"no_code_event","valueMapping":["Unknown view type","Button","EditText / TextField","CompoundButton","Slider / Seekbar","ViewGroup","Scrollview","Textview","TableView - UITableView","Stepper - UIStepper","Time picker","ImageView","Menu","Picker","Keyboard","Alert/ActionSheet","Search bar","Page Controls","Unknown Composable"],"features":["default"]},{"attribute":"event_activity_name","title":"Event screen","type":"string","isSearchable":true,"info":"Name of the screen from when the event was triggered.","table":"event","features":["default","websdk"],"hidden":true},{"attribute":"event_uploadedon","title":"Event uploaded date","type":"date","isSearchable":false,"info":"Date on which the event was uploaded to our server.","table":"event","features":["default","websdk"],"hidden":true}],"Vx":[{"attribute":"screen_name","title":"Screen name","type":"screen_name_string","isSearchable":true,"info":"Filter by the screens that have been visited during a session.","table":"screenvisit","features":["default","websdk"]},{"attribute":"session_screen_with_property_list","title":"Custom screen property","type":"session_screen_string","isSearchable":true,"info":"Filter by saved page parameter","table":"screenvisit","features":["websdk"]},{"attribute":"screen_number","title":"Screen visit number in session","type":"integer","isSearchable":false,"info":"Number which the screen has in the session.","features":["default"]},{"attribute":"is_first_screen","title":"Screen visit is first in session","type":"bool","isSearchable":false,"info":"Is the screen visit the first one in the session?","features":["default"]},{"attribute":"is_last_screen","title":"Screen visit is last in session","type":"bool","isSearchable":false,"info":"Is the screen visit the last one in the session?","features":["default"]},{"attribute":"next_screen_name","title":"Next screen visit","type":"string","isSearchable":true,"info":"Name of the screen that was visited next.","filterTable":"screenvisit","features":["default","websdk"]},{"attribute":"previous_screen_name","title":"Previous screen visit","type":"string","isSearchable":true,"info":"Name of the screen that was visited previously.","filterTable":"screenvisit","features":["default","websdk"]},{"attribute":"screen_visit_duration","title":"Screen visit duration","type":"float","info":"How much time did the user spend on the screen?","isSearchable":false,"features":["default","websdk"]},{"attribute":"screen_event_count","title":"Screen visit event count","type":"integer","isSearchable":false,"info":"Screen Event count.","table":"screenvisit","features":["default","websdk"]},{"attribute":"screen_gesture_count","title":"Screen visit gesture count","type":"integer","info":"How many gestures did the user do on the screen?","isSearchable":false,"features":["default","websdk"]},{"attribute":"crashed_screen","title":"Screen visit ends with crash","type":"bool","isSearchable":false,"info":"","table":"session","features":["default"]},{"attribute":"screenvisit_time_in_session","title":"Screen visit time in session (seconds)","type":"integer","info":"","isSearchable":false,"features":["default"]},{"attribute":"rage_screen","title":"Screen visit with rage tap","type":"bool","isSearchable":false,"table":"event","info":"Quick, repeated taps indicating user frustration.","features":["default"],"hidden":true},{"attribute":"freeze_screen","title":"Screen visit with UI freeze","type":"bool","isSearchable":false,"table":"event","info":"Temporary UI unresponsiveness.","features":["default"],"hidden":true},{"attribute":"screen_uploadedon","title":"Count of users with screen visit","type":"date","isSearchable":false,"info":"Number of unique users who visited the selected screen.","table":"screenvisit","features":["default","websdk"],"hidden":true},{"attribute":"event_name","title":"Coded events on screen","alternativeTitle":"Events in screen","filterTitle":"","type":"event_name_json","isSearchable":true,"info":"Filter by events sent during a screen.","table":"event","features":["default","websdk"],"hidden":true},{"attribute":"nce_name","title":"Smart events on screen","filterTitle":"","type":"json","isSearchable":true,"info":"Filter by events sent during a screen.","table":"no_code_event","features":["default"],"hidden":true},{"attribute":"screen_rage_tap_count","title":"Count of rage taps on screen","type":"integer","isSearchable":false,"info":"Count of quick, repeated taps indicating user frustration on a screen.","table":"screen","features":["default","websdk"],"hidden":true},{"attribute":"screen_uifreeze_count","title":"Count of UI freeze on screen","type":"integer","isSearchable":false,"info":"Count of occurrences of temporary UI unresponsiveness on a screen.","table":"screen","features":["default","websdk"],"hidden":true},{"attribute":"session_time_of_day_user","title":"Time of the day","type":"string","isSearchable":false,"info":"","table":"session","features":["default","websdk"],"hidden":true},{"attribute":"screen_swipe_count","title":"All swipes","type":"integer","isSearchable":false,"info":"","table":"screenvisit","features":["default","websdk"],"hidden":true},{"attribute":"screen_swipe_left_count","title":"Left swipes","type":"integer","isSearchable":false,"info":"","table":"screenvisit","features":["default","websdk"],"hidden":true},{"attribute":"screen_swipe_right_count","title":"Right swipes","type":"integer","isSearchable":false,"info":"","table":"screenvisit","features":["default","websdk"],"hidden":true},{"attribute":"screen_swipe_down_count","title":"Down swipes","type":"integer","isSearchable":false,"info":"","table":"screenvisit","features":["default","websdk"],"hidden":true},{"attribute":"screen_swipe_up_count","title":"Up swipes","type":"integer","isSearchable":false,"info":"","table":"screenvisit","features":["default","websdk"],"hidden":true},{"attribute":"screen_tap_count","title":"All taps","type":"integer","isSearchable":false,"info":"","table":"screenvisit","features":["default","websdk"],"hidden":true},{"attribute":"screen_single_tap_count","title":"single taps","type":"integer","isSearchable":false,"info":"","table":"screenvisit","features":["default","websdk"],"hidden":true},{"attribute":"screen_double_tap_count","title":"Double taps","type":"integer","isSearchable":false,"info":"","table":"screenvisit","features":["default","websdk"],"hidden":true},{"attribute":"screen_long_press_count","title":"Long taps","type":"integer","isSearchable":false,"info":"","table":"screenvisit","features":["default","websdk"],"hidden":true},{"attribute":"session_user_experience","title":"App familiarity","type":"string","info":"","isSearchable":true,"table":"screenvisit","features":["default","websdk"],"hidden":true},{"attribute":"screen_duration","title":"Screen visit duration","type":"integer","isSearchable":false,"info":"","table":"screenvisit","features":["default","websdk"],"hidden":true}],"U9":[{"attribute":"app_version","title":"App version","type":"string","info":"App version on device.","isSearchable":true,"table":"session","features":["default"]},{"attribute":"sdk_version","title":"SDK version","type":"string","isSearchable":true,"info":"UXCam SDK version.","table":"session","features":["default","websdk"]},{"attribute":"environment","title":"App environment","type":"string","isSearchable":true,"info":"Build type based on the stage of the app release life cycle.","table":"session","features":["default"]},{"attribute":"device_id","title":"Install ID","type":"string","info":"Unique identifier for a given device.","webInfo":"Unique identifier specific to the user\'s browser","isSearchable":true,"table":"session","features":["default","websdk"]}],"Bl":[{"attribute":"device_model","title":"Device model","type":"string","info":"Show only sessions with/without engagement device type","isSearchable":true,"table":"session","features":["default"]},{"attribute":"device_type","title":"Device type","type":"string","isSearchable":true,"info":"Type of the device.","table":"session","features":["websdk"]},{"attribute":"browser_name","title":"Browser","type":"string","isSearchable":true,"info":"Name of the browser.","table":"session","features":["websdk"]},{"attribute":"browser_version","title":"Browser version","type":"string","isSearchable":true,"info":"Version of the browser.","table":"session","features":["websdk"]},{"attribute":"device_manufacturer","title":"Device manufacturer","type":"string","isSearchable":true,"info":"Name of the device manufacturer.","table":"session","features":["default"]},{"attribute":"device_class","title":"Device class","type":"string","isSearchable":true,"info":"Class of the device given by the device size.","table":"session","features":["default"]},{"attribute":"device_platform","title":"Device platform","type":"device_platform","info":"Device platform, either Android or iOS","isSearchable":false,"table":"session","features":["default"]},{"attribute":"device_os_name","title":"OS","type":"string","isSearchable":true,"info":"Operating system of the device.","table":"session","features":["websdk"]},{"attribute":"device_os_version","title":"OS version","type":"string","info":"Version of the device\'s operating system.","isSearchable":true,"table":"session","features":["default","websdk"]},{"attribute":"device_language","title":"Device language","type":"string","isSearchable":true,"info":"Language of the device as set by the user.","table":"session","features":["default","websdk"]},{"attribute":"device_width","title":"Display width","type":"integer","isSearchable":false,"info":"Width of the display in pixels.","table":"session","features":["default","websdk"]},{"attribute":"device_height","title":"Display height","type":"integer","isSearchable":false,"info":"Height of the display in pixels.","table":"session","features":["default","websdk"]},{"attribute":"session_network_type","title":"Network type","type":"string","isSearchable":false,"info":"Filter by the network from which the session has been uploaded.","table":"session","valueMapping":["wifi","mobile data","no network","unknown"],"features":["default"],"hidden":true}],"qp":[{"attribute":"session_recordedon","title":"Device time","type":"date","isSearchable":false,"info":"Date on which the session was recorded in the device.","table":"session","features":["default","websdk"]},{"attribute":"session_uploadedon","title":"Uploaded time","type":"date","isSearchable":false,"info":"Date on which the session was uploaded to our server.","table":"session","features":["default","websdk"]}],"Ye":[{"attribute":"device_country","title":"Country","type":"string","isSearchable":true,"info":"Country of user, based on previously used IP address.","table":"session","features":["default","websdk"]},{"attribute":"device_city","title":"City","type":"string","isSearchable":true,"info":"City of the session based on the IP.","table":"session","features":["default","websdk"]}],"kn":[{"attribute":"referer","title":"Referrer","type":"string","isSearchable":true,"info":"Session\'s Referrer.","table":"session","features":["websdk"]},{"attribute":"referer_domain","title":"Referrer domain","type":"string","isSearchable":true,"info":"The referring domain of the session.","table":"session","features":["websdk"]}]}');
+    let l={
+      attribute:"device_time",
+      operator:"between_dates",
+      value:{
+        lower:new Date(new Date(new Date().setDate(new Date().getDate()-30))),
+        upper:new Date(new Date)
+      },
+      tz:s.x7,
+      labelId:"absolute_last30d"
+    },
+    u={
+      attribute:"user_with_session_activity",
+      activity_attribute_date_range:l,
+      operator:"greater_or_equal",
+      value:1,
+      filters:[]
+    },
+    c={
+      attribute:"user_with_event_activity",
+      activity_attribute_date_range:l,
+      operator:"greater_or_equal",
+      value:1,
+      filters:[]
+    },
+    p={
+      attribute:"user_with_smart_event_activity",
+      activity_attribute_date_range:l,
+      operator:"greater_or_equal",
+      value:1,
+      filters:[]
+    },
+    d={
+      attribute:"user_with_screenvisit_activity",
+      activity_attribute_date_range:l,
+      operator:"greater_or_equal",
+      value:1,
+      filters:[]
+    },
+    f=e=>Object.values(e).flat(),
+    _={
+      "Session properties":o.GT,
+      Location:o.Ye,
+      "App properties":o.U9,
+      "Device properties":o.Bl,
+      Time:o.qp,
+      Acquisition:o.kn
+    },
+    b={
+      Location:o.Ye,
+      "App properties":o.U9,
+      "Device properties":o.Bl,
+      "Event happened in session where ":n()(o.GT,e=>!["rage_quit","screen_name","event_name","nce_name","session_screen_with_property_list"].includes(e.attribute)),
+      Time:o.qp,
+      Acquisition:o.kn
+    },
+    v={
+      "Event properties":o.cR,
+      Location:b.Location,
+      "App properties":b["App properties"],
+      "Device properties":b["Device properties"],
+      "Event happened on screen where":n()(o.Vx,e=>!["rage_screen","freeze_screen"].includes(e.attribute)),
+      "Event happened in session where ":b["Event happened in session where "],
+      Time:b.Time,
+      Acquisition:b.Acquisition
+    },
+    h={
+      "Event properties":o._S,
+      Location:b.Location,
+      "App properties":b["App properties"],
+      "Device properties":b["Device properties"],
+      "Event happened on screen where":n()(o.Vx,e=>!["rage_screen","freeze_screen","screen_event_count"].includes(e.attribute)),
+      "Event happened in session where ":b["Event happened in session where "],
+      Time:b.Time,
+      Acquisition:b.Acquisition
+    },
+    y={
+      "Screen visit properties":o.Vx,
+      Location:o.Ye,
+      "App properties":o.U9,
+      "Device properties":o.Bl,
+      "Screen visited in session where":n()(o.GT,e=>!["rage_quit","screen_name","event_name","nce_name","session_screen_with_property_list"].includes(e.attribute)),
+      Time:o.qp,
+      Acquisition:o.kn
+    },
+    g={
+      user_with_session_activity:{
+        defaultValue:u,
+        defaultValueWithFilters:u,
+        configuration:{
+          label:"session",
+          properties:f(_),
+          allSupportedProperties:{
+            "All properties":f(_),
+            ..._
+          },
+          type:r.c.SESSION
+        }
+      },
+      user_with_event_activity:{
+        defaultValue:c,
+        defaultValueWithFilters:{
+          ...c,
+          filters:[{
+            attribute:"event_name",
+            operator:"in",
+            table:"event",
+            open:!0,
+            isLocal:!0
+          }],
+          active:!0
+        },
+        configuration:{
+          label:"coded event",
+          properties:f(v),
+          allSupportedProperties:{
+            "All properties":f(v),
+            ...v
+          },
+          type:r.c.CODED_EVENT
+        }
+      },
+      user_with_smart_event_activity:{
+        defaultValue:p,
+        defaultValueWithFilters:{
+          ...p,
+          filters:[{
+            attribute:"nce_name",
+            operator:"in",
+            table:"no_code_event",
+            open:!0,
+            isLocal:!0
+          }],
+          active:!0
+        },
+        configuration:{
+          label:"smart event",
+          properties:f(h),
+          allSupportedProperties:{
+            "All properties":f(h),
+            ...h
+          },
+          type:r.c.SMART_EVENT
+        }
+      },
+      user_with_screenvisit_activity:{
+        defaultValue:d,
+        defaultValueWithFilters:{
+          ...d,
+          filters:[{
+            attribute:"screen_name",
+            operator:"in",
+            table:"screenvisit",
+            open:!0,
+            isLocal:!0
+          }],
+          active:!0
+        },
+        configuration:{
+          label:"screen visit",
+          properties:f(y),
+          allSupportedProperties:{
+            "All properties":f(y),
+            ...y
+          },
+          type:r.c.SCREENVISIT
+        }
+      }
+    },
+    m=u,
+    w=e=>{
+      var t,
+      a;
+      return e&&(null===(a=g[e])||void 0===a?void 0:null===(t=a.configuration)||void 0===t?void 0:t.properties)?g[e].configuration.properties:[]
+    },
+    S=e=>Object.keys(g).find(t=>g[t].configuration.type===e)||""
+  },
+  71768:function(e,t,a){
+    a.d(t,{
+      Le:function(){
+        return l
+      },
+      UQ:function(){
+        return c
+      },
+      fu:function(){
+        return p
+      },
+      tQ:function(){
+        return u
+      }
+    });
+    var r=a(36005),
+    s=a(32642),
+    i=a(51542),
+    n=a(47639);
+    let o=e=>({
+      type:s.W1,
+      data:e
+    }),
+    l=e=>async(t,a)=>{
+      let r={
+        ...a().eventTable
+      };
+      return({
+        ...a().tableReducer
+      }).loader=!0,
+      r.table=[],
+      r.eventTableLoader=!0,
+      await t(o(r)),
+      i.Z.getEventTable(e,e.appid).then(e=>{
+        r.table=e.data,
+        r.manuallyChanged=!1,
+        r.eventTableLoader=!1,
+        t(o(r))
+      }).catch(e=>(0,n.jF)(t,null,e))
+    },
+    u=(e,t)=>(a,r)=>{
+      let s={
+        ...r().eventTable
+      };
+      s.manuallyChanged="boolean"!=typeof t||t,
+      s.selectedEvent=e||[],
+      a(o(s))
+    },
+    c=(e,t,a)=>{
+      let s={
+        operator:"in",
+        value:[]
+      };
+      if(e.length&&e.length!==t.length){
+        let i=t.filter(t=>{
+          if(0>r.ZP.indexOf(e,t.eventname))return t
+        });
+        a?("notin"===a?s.value=i.map(e=>e.eventname):s.value=e,s.operator=a):e.length>i.length?0===i.length?(s.value=e,s.operator="in"):(s.value=i.map(e=>e.eventname),s.operator="notin"):e.length<i.length?(s.value=e,s.operator="in"):e.length&&e.length===i.length&&(s.value=e,s.operator="in")
+      }
+      return s
+    },
+    p=(e,t)=>(a,r)=>{
+      let s=JSON.parse(JSON.stringify(r().eventTable));
+      return s[e]=t,
+      a(o(s))
+    }
+  },
+  55137:function(e,t,a){
+    a.d(t,{
+      Ct:function(){
+        return T
+      },
+      MH:function(){
+        return h
+      },
+      Tj:function(){
+        return S
+      },
+      Xy:function(){
+        return I
+      },
+      Yb:function(){
+        return g
+      },
+      c4:function(){
+        return F
+      },
+      eO:function(){
+        return D
+      },
+      f5:function(){
+        return y
+      },
+      gW:function(){
+        return w
+      },
+      kA:function(){
+        return b
+      },
+      pb:function(){
+        return k
+      },
+      qD:function(){
+        return m
+      },
+      sY:function(){
+        return v
+      },
+      yX:function(){
+        return A
+      }
+    });
+    var r=a(32642),
+    s=a(11163),
+    i=a.n(s),
+    n=a(45578),
+    o=a.n(n),
+    l=a(71093),
+    u=a(73495),
+    c=a(92046),
+    p=a(27985);
+    a(47639);
+    var d=a(59268);
+    let f=e=>({
+      type:r.mg,
+      data:e
+    }),
+    _=e=>({
+      type:r.F_,
+      data:e
+    }),
+    b=()=>({
+      type:r.OP
+    }),
+    v=e=>({
+      type:r.ed,
+      data:e
+    }),
+    h=(e,t,a,r)=>async(r,s)=>{
+      let i;
+      let{
+        appId:n,
+        app:u
+      }={
+        ...s().urlReducer
+      },
+      {
+        fetchProperty:c,
+        dateSegment:p
+      }={
+        ...s().appFilter
+      },
+      d={
+        ...e
+      },
+      {
+        attribute:f,
+        isWebApp:_
+      }=e;
+      d.appid=d.appid||n||u,
+      d.table="session",
+      ["viewid","viewname","viewtype"].includes(f)&&(d.table="gesture"),
+      ["session_screen_with_property"].includes(f)&&(d.table="screenvisit"),
+      ["event_custom_property","event_name","event_activity_name"].indexOf(f)>-1&&(d.table="event"),
+      ["nce_name"].indexOf(f)>-1&&(d.table="no_code_event_rule"),
+      ["user_device_country","user_device_city","user_device_platform","user_device_class","user_device_manufacturer","user_device_os_version","user_device_model","user_app_version","user_device_id"].includes(f)&&(d.table="appuser");
+      let b="event_custom_property"===f,
+      h="utm"===f,
+      y="user_first_utm"===f,
+      g="session_screen_with_property"===f,
+      m="session_screen_with_property_list"===f;
+      g&&(d.table="screenvisit"),
+      d.date_range||(d.date_range=p),
+      "session_screen_ordered_list"===d.attribute&&(d.attribute="screen_name"),
+      void 0!==e.has_mass_value&&(d.has_mass_value=e.has_mass_value),
+      e.mass_value_segment_id&&(d.mass_value_segment_id=e.mass_value_segment_id),
+      e.mass_values_id&&(d.mass_values_id=e.mass_values_id);
+      try{
+        let e=await l.Z[a?"getPropertiesWithoutCancelToken":"getPropertiesWithCancelToken"](d);
+        if(f){
+          let a=f;
+          if(d.property_name){
+            let e=t?"ofgrp":"";
+            b&&(a="eventpropertyvalue".concat(e)),
+            h&&(a="utmpropertyvalue".concat(e)),
+            y&&(a="userfirstutmvalue".concat(e)),
+            m&&(a="sessionscreenpropertyvalue".concat(e)),
+            a=g?"customscreenpropertyvalue".concat(e):"userpropertyvalue".concat(e)
+          }
+          i={
+            data:e.data.data,
+            attribute:a
+          },
+          "uxcamuserid"===a?i.data=o()([...e.data.data],"uxcamuserid"):i.data=o()([...e.data.data])
+        }
+        return r(v(i)),
+        e.data.data
+      }
+      catch(e){
+        return e&&e.response
+      }
+    },
+    y=e=>async(t,a)=>{
+      let r={
+        ...e
+      };
+      return r.table=["event_custom_property","event_name","event_activity_name"].indexOf(r.attribute)>-1?"event":"session",
+      r.appid=a().urlReducer.appId,
+      l.Z.getPropertiesWithoutCancelToken(r).then(e=>e.data.data).catch(()=>[])
+    },
+    g=function(){
+      let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:[],
+      t=arguments.length>1?arguments[1]:void 0;
+      return(a,r)=>{
+        let{
+          parentType:s
+        }=r().urlReducer,
+        i=t||c.rh[s];
+        if(!i)return;
+        let n=i.split("-")[0];
+        "issues"===s?n="issue":("screenBurst"===s||"screenFlow"===s)&&(n="screenFlow"),
+        a(_({
+          page:n,
+          data:e
+        }))
+      }
+    },
+    m=()=>(e,t)=>{
+      let a={
+        ...t().appFilter
+      };
+      a.fetchProperty.custom_label=void 0,
+      a.fetchProperty.user_custom_label=void 0,
+      e(f(a))
+    },
+    w=e=>async(t,a)=>{
+      let{
+        appId:r,
+        parentType:s,
+        sessionid:n
+      }=a().urlReducer,
+      o=n?"/".concat(n):"",
+      l="",
+      c="",
+      p=[];
+      p=[...a().appFilter.session.segment],
+      l="/app/".concat(r,"/aisessions/list/").concat(e||1).concat(o,"?"),
+      o&&(l+="secondarysessionid=".concat(n,"&")),
+      l=(0,u.$)(l,p),
+      c=n?"/integration?parentType=aiSessionsList&appId=".concat(r,"&sessionpage=").concat(e||1,"&sessionid=").concat(n,"&secondarysessionid=").concat(n):"/integration?parentType=aiSessionsList&appId=".concat(r,"&sessionpage=").concat(e||1),
+      "aiSessionStatistics"!==s&&i().push(c,l)
+    },
+    S=async(e,t)=>{
+      let a,
+      r,
+      {
+        appId:s,
+        sessionid:n,
+        sessionpage:o,
+        starttime:l
+      }=e;
+      n?l?(a="/app/".concat(s,"/aisessions/list/").concat(o||1,"/").concat(n,"/").concat(l,"?"),r="appId=".concat(s,"&parentType=aiSessionsList&sessionid=").concat(n,"&sessionpage=").concat(o||1,"&starttime=").concat(l)):(a="/app/".concat(s,"/aisessions/list/").concat(o||1,"/").concat(n,"?"),r="appId=".concat(s,"&parentType=aiSessionsList&sessionid=").concat(n,"&sessionpage=").concat(o||1)):(a="/app/".concat(s,"/aisessions/list/").concat(o||1,"?"),r="appId=".concat(s,"&parentType=aiSessionsList&sessionpage=").concat(o||1)),
+      a=(0,u.$)(a,t?[...t]:[]),
+      i().push("/integration?".concat(r),"".concat(a))
+    },
+    k=e=>async(t,a)=>{
+      let{
+        appId:r,
+        sessionid:s,
+        issueType:n,
+        issuepage:o,
+        issueid:l,
+        starttime:c
+      }=a().urlReducer,
+      p="",
+      d="",
+      f=[];
+      f=[...a().appFilter.issue.segment],
+      p="/app/".concat(r,"/issues/").concat(n,"/").concat(o||1,"/").concat(l,"/").concat(o||1,"/session/").concat(s,"/").concat(c,"?"),
+      d="/integration?parentType=issues&appId=".concat(r,"&issueid=").concat(l,"&issueType=").concat(n,"&issuepage=").concat(o||1,"&issuedetailpage=").concat(e||1,"&sessionid=").concat(s,"&starttime=").concat(c),
+      p=(0,u.$)(p,f),
+      i().push(d,p)
+    },
+    T=function(e,t,a){
+      let r=!(arguments.length>3)||void 0===arguments[3]||arguments[3];
+      return async(s,n)=>{
+        var o;
+        let l=[...n().appFilter.user.segment],
+        c="user"===t&&(null===(o=n().appFilter.user)||void 0===o?void 0:o.activityFilterList)?[...n().appFilter.user.activityFilterList]:[],
+        f="user"===t&&(0,p.ll)(c),
+        _=a&&"user"===t,
+        b="",
+        v="",
+        h=e||1,
+        {
+          uxcamuserid:y,
+          appId:g,
+          parentType:m,
+          sessionid:w,
+          sessionpage:S,
+          video:k
+        }=n().urlReducer;
+        if("usersList"===m){
+          let e=w?"/sessions/list/".concat(h,"/").concat(w):"";
+          if(b="/app/".concat(g,"/users/list/").concat(h).concat(y?"/".concat(y):"").concat(e,"?"),b=(0,u.$)(b,l),f){
+            let e="";
+            (null==c?void 0:c.length)&&(e=(0,p.Fm)(c)),
+            b="".concat(b,"&").concat(e.toString())
+          }
+          v="/integration?parentType=usersList&appId=".concat(g,"&type=").concat(n().urlReducer.type,"&userpage=").concat(h).concat(y?"&uxcamuserid=".concat(y):"").concat(w?"&sessionid=".concat(w):"").concat(S?"&sessionpage=".concat(S):"&sessionpage=1").concat(k?"&video=".concat(k):"")
+        }!_&&r&&s((0,d.ae)(a)),
+        i().push(v,b)
+      }
+    },
+    D=e=>t=>t(v({
+      data:[],
+      attribute:e
+    })),
+    A=(e,t)=>(a,r)=>{
+      let s={
+        ...r().appFilter
+      };
+      s.sessionDetailSize[e]=t,
+      a(f(s))
+    },
+    F=(e,t)=>(a,r)=>{
+      let s={
+        ...r().appFilter
+      };
+      s.issueDetailSize[e]=t,
+      a(f(s))
+    },
+    I=(e,t)=>(a,r)=>{
+      let s={
+        ...r().appFilter
+      };
+      s.eventDetailSize[e]=t,
+      a(f(s))
+    }
+  },
+  12616:function(e,t,a){
+    a.d(t,{
+      W9:function(){
+        return E
+      },
+      a1:function(){
+        return M
+      },
+      tu:function(){
+        return V
+      },
+      Tj:function(){
+        return U
+      },
+      Vs:function(){
+        return P
+      },
+      Nm:function(){
+        return I
+      },
+      kE:function(){
+        return C
+      },
+      w6:function(){
+        return A
+      },
+      YS:function(){
+        return N
+      },
+      RW:function(){
+        return F
+      },
+      N3:function(){
+        return D
+      },
+      ew:function(){
+        return k
+      },
+      Fn:function(){
+        return x
+      },
+      cP:function(){
+        return T
+      },
+      Yh:function(){
+        return R
+      },
+      iR:function(){
+        return O
+      }
+    });
+    var r=a(66678),
+    s=a.n(r),
+    i=a(57557),
+    n=a.n(i),
+    o=a(11163),
+    l=a.n(o),
+    u=a(10747),
+    c=a(32642),
+    p=a(13979),
+    d=e=>!!RegExp("(\\?[;&a-z\\d%_.~+=-]*)?(\\#[-a-z\\d_]*)?$","i").test(e),
+    f=a(73495),
+    _=a(71768),
+    b=a(49588),
+    v=a(99252),
+    h=a(48002),
+    y=a(27985),
+    g=a(47639),
+    m=a(55137),
+    w=a(67393),
+    S=a(5084);
+    let k=e=>({
+      type:u.Mw,
+      filterBarVisible:e
+    }),
+    T=e=>({
+      type:u.VD,
+      megaDropdownVisible:e
+    }),
+    D=e=>({
+      type:u.fJ,
+      megaBottomDropdownVisible:e
+    }),
+    A=()=>({
+      type:u.YT
+    }),
+    F=e=>({
+      type:u.hj,
+      data:e
+    }),
+    I=e=>({
+      type:c.Ec,
+      data:{
+        initial:!1,
+        ...e
+      }
+    }),
+    N=function(e){
+      let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"user";
+      return{
+        type:c.py,
+        data:{
+          data:e,
+          page:t
+        }
+      }
+    },
+    R=(e,t)=>(a,r)=>{
+      let{
+        activityFilterList:s
+      }=r().appFilter.user;
+      if(-1===s.findIndex((e,a)=>a===t)){
+        a(N({
+          ...s,
+          data:e
+        },"user"));
+        return
+      }
+      let i=s.map((a,r)=>r===t?{
+        ...e,
+        filters:s[t].filters
+      }:a);
+      a(N(i,"user")),
+      (0,y.ll)([i[t]])&&(0,y.XX)([i[t]])&&a((0,y.qH)(i[t]))
+    },
+    O=function(e,t){
+      let a=arguments.length>2&&void 0!==arguments[2]&&arguments[2];
+      return(r,i)=>{
+        let{
+          activityFilterList:n
+        }=i().appFilter.user;
+        if(n.findIndex((e,a)=>a===t)>-1){
+          let i=n.map((r,i)=>i===t?{
+            ...n[t],
+            filters:function(e){
+              let t={
+                event_name:{
+                  operator:"in",
+                  value:null
+                },
+                screen_name:{
+                  operator:"in",
+                  value:null
+                }
+              },
+              a=[];
+              for(let r=0;r<e.length;r++){
+                let i=s()(e[r]);
+                if(!["event_name","screen_name"].includes(i.attribute)||"screen_name"===i.attribute&&!(null==i?void 0:i.isLocal)||"event_name"===i.attribute&&!(null==i?void 0:i.isLocal)){
+                  a.push(i);
+                  continue
+                }
+                i.property?(i.operator=t[i.attribute].operator,i.value=t[i.attribute].value):(t[i.attribute].operator=i.operator,t[i.attribute].value=i.value),
+                a.push(i)
+              }
+              return a
+            }(e),
+            active:a
+          }:{
+            ...r,
+            active:!1
+          });
+          r(N(i,"user")),
+          (0,y.ll)([i[t]])&&(0,y.XX)([i[t]])&&r((0,y.qH)(i[t]))
+        }
+      }
+    },
+    E=(e,t)=>(a,r)=>{
+      let s;
+      s&&clearTimeout(s);
+      let{
+        activityFilterList:i
+      }=r().appFilter.user,
+      n=[...i,e];
+      a(N(n,"user")),
+      t&&(s=setTimeout(()=>{
+        window.dispatchEvent(new CustomEvent((0,y.am)().eventId,{
+          detail:{
+            id:(0,y.am)(e.attribute,n.length-1).dropdownId
+          }
+        }))
+      },0)),
+      a((0,y.qH)(e))
+    },
+    C=()=>e=>{
+      e(N([h.i.user_with_session_activity.defaultValue],"user")),
+      e((0,y.qH)(h.i.user_with_session_activity.defaultValue))
+    },
+    x=e=>({
+      type:c.xZ,
+      table:e
+    }),
+    L=e=>{
+      if("string"==typeof e)try{
+        return decodeURIComponent(e)
+      }
+      catch(t){
+        return e
+      }
+      return Array.isArray(e)?e.map(L):e
+    },
+    P=(e,t)=>async(a,r)=>{
+      let s=[],
+      {
+        url:i,
+        parentType:n
+      }=r().urlReducer,
+      o=e||i;
+      try{
+        !["shortUrl","plan-downgrade","integration"].includes(n)&&d(o)&&(null==o||o.replace(/([^?=&]+)=([^&]+)/g,(e,r,i)=>{
+          let n;
+          if("screenname"===r||"steps"===r||Object.keys(h.i).includes(r))return;
+          let o=i;
+          o=t?o.replace(/%3F/g,"?"):o.replace("%3F","");
+          let l=decodeURIComponent(o);
+          try{
+            if(n=JSON.parse(l),"object"!=typeof n&&"isSessionEventTab"!==r)return
+          }
+          catch(e){
+            return
+          }
+          if(-1===["apikey","appid","eventproperty","userproperty","user_custom_property","event_custom_property","utm","user_first_utm","session_screen_with_property","session_screen_with_property_list","dateRange","isSessionEventTab","date_range","upload_time","device_time"].indexOf(r)){
+            let e=L(n.v),
+            t=n.o,
+            a=n.tb,
+            i=n.has_sequence,
+            o=null==n?void 0:n.filters,
+            l=n.p,
+            u=null==n?void 0:n.tzo,
+            c=n.hm,
+            p=n.mvs,
+            d=n.mvi;
+            if(n){
+              let n={
+                attribute:r,
+                operator:t,
+                value:e,
+                table:a,
+                has_sequence:i,
+                filters:o,
+                property:l
+              };
+              u&&(n.timezoneOffset=u),
+              c&&(n.has_mass_value=c),
+              p&&(n.mass_value_segment_id=p),
+              d&&(n.mass_values_id=d),
+              s.push({
+                ...n
+              })
+            }
+          }
+          else if(["eventproperty","userproperty","user_custom_property","event_custom_property","utm","user_first_utm","session_screen_with_property","session_screen_with_property_list"].indexOf(r)>-1){
+            if(n){
+              let e=["eventproperty","userproperty"].indexOf(r)>-1?{
+                attribute:r,
+                eventName:"undefined"!==n.en&&n.en,
+                propertyName:n.pn,
+                operator:n.o,
+                propertyValue:L(n.pv)
+              }:{
+                attribute:r,
+                event_name:"undefined"!==n.en&&n.en,
+                property_name:n.pn||n.property_name,
+                operator:n.o,
+                value:L(n.pv||n.v),
+                table:n.tb
+              };
+              s.push({
+                ...e
+              })
+            }
+          }
+          else if("date_range"===r){
+            let e={
+              attribute:"upload_time",
+              operator:"between_dates",
+              value:n.lower?{
+                lower:n.lower,
+                upper:n.upper
+              }:n.v,
+              labelId:n.lb,
+              tz:n.tz||v.x7
+            };
+            a(I(e))
+          }
+          else if("upload_time"===r||"device_time"===r){
+            let e={
+              attribute:r,
+              operator:"between_dates",
+              value:n.lower?{
+                lower:n.lower,
+                upper:n.upper
+              }:n.v,
+              labelId:n.lb,
+              tz:n.tz||v.x7
+            };
+            a(I(e))
+          }
+          else"isSessionEventTab"===r&&a((0,_.fu)(r,l))
+        }))
+      }
+      catch(e){
+        p.l.error(e,"Error with url parse")
+      }
+      return s
+    },
+    U=()=>(e,t)=>{
+      let a=n()(t().sessionStatisticsReducer.series_plot_options,"display","key","img"),
+      r=[...t().appFilter.session.segment],
+      s=t().currentAppReducer._id,
+      i={
+        ...t().appFilter.dateSegment
+      },
+      o=[...r,i],
+      {
+        parentType:u
+      }=t().urlReducer,
+      c={
+        appid:s,
+        filters:[...r],
+        date_range:i
+      };
+      if("sessionStatistics"===u||"aiSessionStatistics"===u){
+        let n={
+          sessionStatistics:{
+            analyticsUrl:"/app/".concat(s,"/sessions/analytics?"),
+            integrationUrl:"/integration?parentType=sessionStatistics&appId=".concat(s)
+          },
+          aiSessionStatistics:{
+            analyticsUrl:"/app/".concat(s,"/aisessions/analytics?"),
+            integrationUrl:"/integration?parentType=aiSessionStatistics&appId=".concat(s)
+          }
+        }[u],
+        c=n.analyticsUrl;
+        c=(0,f.$)(c,o),
+        l().push(n.integrationUrl,c);
+        let p=t().sessionStatisticsReducer.group_list?[...t().sessionStatisticsReducer.group_list]:[],
+        d=p.map(e=>e.attribute).indexOf("session_period");
+        d>-1&&(p[d].attribute="session_period_day"),
+        p[0].time_zone_offset=(0,v.pQ)(i.tz,new Date),
+        e((0,b.G9)({
+          appid:s,
+          aggregation_list:[t().sessionStatisticsReducer.aggregation_list],
+          group_list:p,
+          filters:[...r],
+          date_range:{
+            ...i,
+            timezoneOffset:(0,v.pQ)(i.tz,new Date)
+          },
+          series_plot_options:a
+        }))
+      }"aiSessionsList"!==u&&"aiSessionStatistics"!==u&&(e((0,b.KB)(c)),e((0,b.$M)(c)))
+    },
+    V=()=>async(e,t)=>{
+      let a=t().currentAppReducer._id,
+      {
+        eventDropValues:r,
+        grpByVal:s,
+        graphSelectedVal:i
+      }=t().statisticsReducer,
+      {
+        appFilter:o
+      }=t(),
+      l=[...o.event.segment],
+      u={
+        ...o.dateSegment
+      };
+      s[0].time_zone_offset=(0,v.pQ)(u.tz,new Date);
+      let c={
+        appid:a,
+        aggregation_list:[r],
+        group_list:s,
+        filters:[],
+        series_plot_options:n()(i,"display","key","img")
+      },
+      p=null==l?void 0:l.filter(e=>"eventname"!==e.attribute),
+      d={
+        attribute:"event_custom_property",
+        filter:(null==l?void 0:l.length)?p:[],
+        search:"",
+        dropdownLimit:501,
+        date_range:u
+      },
+      f={
+        attribute:"user_custom_property",
+        filter:[],
+        search:"",
+        dropdownLimit:501,
+        date_range:u
+      },
+      b=async()=>{
+        e((0,g.Ap)("eventProperty_Ldr",!0)),
+        await e((0,m.MH)(d,"event-filter","eventproperty")).then(()=>e((0,g.Ap)("eventProperty_Ldr",!1)))
+      },
+      h=async()=>{
+        e((0,g.Ap)("userProperty_Ldr",!0)),
+        await e((0,m.MH)(f,"user-filter","userproperty")).then(()=>e((0,g.Ap)("userProperty_Ldr",!1)))
+      };
+      e((0,w.b0)(c)),
+      e((0,_.Le)({
+        appid:a,
+        date_range:o.dateSegment,
+        filters:[]
+      })),
+      await b(),
+      h()
+    },
+    M=e=>(t,a)=>{
+      let r=a().currentAppReducer._id,
+      {
+        screenDetailReducer:{
+          screenFlowPayloadData:s
+        },
+        appFilter:i
+      }=a(),
+      {
+        dateSegment:n
+      }=i,
+      o={
+        ...s,
+        appid:r,
+        date_range:n
+      };
+      t((0,S.e_)(o,{
+        type:"screenFlowPlotGraph"
+      },null,e)),
+      t((0,S.bO)(o,{
+        type:"sunburstPlotGraph"
+      },null,e)),
+      t((0,S.XO)(o)),
+      t((0,S.I4)(!1))
+    }
+  },
+  5084:function(e,t,a){
+    a.d(t,{
+      E4:function(){
+        return D
+      },
+      Fc:function(){
+        return A
+      },
+      I4:function(){
+        return T
+      },
+      XO:function(){
+        return k
+      },
+      Yb:function(){
+        return F
+      },
+      ap:function(){
+        return b
+      },
+      bO:function(){
+        return S
+      },
+      e_:function(){
+        return w
+      }
+    });
+    var r=a(36005),
+    s=a(11163),
+    i=a.n(s),
+    n=a(73495),
+    o=a(32642);
+    a(7855);
+    var l=a(38014),
+    u=a(48505),
+    c=a(35161),
+    p=a.n(c),
+    d=a(13311),
+    f=a.n(d),
+    _=a(47639);
+    let b=e=>({
+      type:o.md,
+      data:e
+    }),
+    v=(e,t)=>({
+      type:t||"SCREEN_DETAIL",
+      data:e
+    }),
+    h=e=>(t,a)=>{
+      t(v({
+        ...a().screenDetailReducer,
+        screenFlwLoader:e,
+        keyVal:"screenFlwLoader"
+      },"SCREEN_FLOW_DATA"))
+    },
+    y=e=>(t,a)=>{
+      t(v({
+        ...a().screenDetailReducer,
+        sunBurstLoader:e,
+        keyVal:"sunBurstLoader"
+      },"SCREEN_FLOW_DATA"))
+    },
+    g=()=>(e,t)=>{
+      let a=JSON.parse(JSON.stringify(t().screenDetailReducer));
+      e(v(a=r.ZP.omit(a,["screenFlowPlotGraph"])))
+    },
+    m=()=>(e,t)=>{
+      let a=JSON.parse(JSON.stringify(t().screenDetailReducer));
+      e(v(a=r.ZP.omit(a,["sunburst","sunburstPlotGraph"])))
+    },
+    w=function(e,t,a){
+      let s=arguments.length>3&&void 0!==arguments[3]?arguments[3]:[];
+      return async(o,u)=>{
+        let c=JSON.parse(JSON.stringify(u().screenDetailReducer)),
+        {
+          type:d
+        }=t;
+        o(h(!0)),
+        await o(g());
+        let{
+          uxcamuserid:b,
+          parentType:y,
+          appId:m
+        }={
+          ...u().urlReducer
+        };
+        o((0,_.YK)(Math.floor(Date.now()/1e3)));
+        let w=JSON.parse(JSON.stringify(u().appFilter.screenFlow.segment));
+        a&&b&&(w=[...w,{
+          table:"appuser",
+          attribute:"uxcamuserid",
+          operator:"in",
+          value:[b]
+        }]);
+        let S={
+          ...e,
+          filters:[...w]
+        },
+        k="/app/".concat(m,"/").concat(y.toLowerCase(),"?"),
+        T="appId=".concat(m,"&parentType=").concat(y);
+        return k=(0,n.$)(k,w),
+        a||i().push("/integration?".concat(T),"".concat(k)),
+        l.Z.pythonWithCancelApi(S,"screens/trino/sankey").then(async e=>{
+          if(o((0,_.YK)()),200===e.status){
+            let t=await e.data.data;
+            return c[d]=t,
+            c.keyVal=d,
+            o(h(!1)),
+            await o(v(c,"SCREEN_FLOW_DATA")),
+            e.data
+          }
+        }).then(async e=>{
+          var t;
+          let a=await e.data,
+          i=null==a?void 0:null===(t=a.series[0])||void 0===t?void 0:t.keys,
+          n=r.ZP.indexOf(i,"from_name"),
+          l=r.ZP.indexOf(i,"to_name"),
+          u=r.ZP.indexOf(i,"from_link"),
+          d=r.ZP.indexOf(i,"to_link");
+          if(s.length>0){
+            let e={
+              ...a,
+              series:[{
+                ...a.series[0],
+                data:a.series[0].data.map(e=>p()(e,(t,a)=>{
+                  if(a===n&&f()(s,{
+                    updatedScreenName:t
+                  })){
+                    let a=f()(s,{
+                      updatedScreenName:t
+                    });
+                    e[u]=a.screenShotImageUrl
+                  }
+                  else if(a===l&&f()(s,{
+                    updatedScreenName:t
+                  })){
+                    let a=f()(s,{
+                      updatedScreenName:t
+                    });
+                    e[d]=a.screenShotImageUrl
+                  }
+                  return t
+                })),
+                nodes:a.series[0].nodes.map(e=>{
+                  let t=r.ZP.find(s,{
+                    updatedScreenName:e.id
+                  });
+                  return t?{
+                    ...e,
+                    link:t.screenShotImageUrl
+                  }:e
+                })
+              }]
+            };
+            o(v({
+              ...c,
+              ...e,
+              screenFlowPlotGraph:e
+            },"SCREEN_FLOW_DATA"))
+          }
+        }).catch(async e=>{
+          e&&!e.toString().includes("Cancel")&&(o((0,_.YK)()),o(h(!1)),c.keyVal=d,c[d]="error",await o(v(c,"SCREEN_FLOW_DATA"))),
+          (null==e?void 0:e.response)&&(0,_.pA)(o,null,e.response)
+        })
+      }
+    },
+    S=(e,t,a)=>async(r,s)=>{
+      let c=JSON.parse(JSON.stringify(s().screenDetailReducer)),
+      {
+        uxcamuserid:p,
+        parentType:d,
+        appId:f
+      }={
+        ...s().urlReducer
+      },
+      b=JSON.parse(JSON.stringify(s().appFilter.screenFlow.segment)),
+      {
+        type:h
+      }=t;
+      r(y(!0)),
+      await r(m()),
+      r((0,_.YK)(Math.floor(Date.now()/1e3))),
+      a&&p&&(b=[...b,{
+        table:"appuser",
+        attribute:"uxcamuserid",
+        operator:"in",
+        value:[p]
+      }]);
+      let g={
+        ...e,
+        filters:[...b],
+        depth:e.depth>u.DX?u.DX:c.sunBurstDepth
+      };
+      if(!a){
+        let e="/app/".concat(f,"/").concat(d.toLowerCase(),"?"),
+        t="appId=".concat(f,"&parentType=").concat(d);
+        e=(0,n.$)(e,b),
+        i().push("/integration?".concat(t),"".concat(e))
+      }
+      return l.Z.sunBurstCancelApi(g,"screens/trino/sunburst").then(async e=>{
+        if(r((0,_.YK)()),200===e.status){
+          let t=await e.data.data;
+          return c.sunburstPlotGraph=t,
+          c.keyVal="sunburstPlotGraph",
+          await r(v(c,o.Ni)),
+          r(y(!1)),
+          e.data
+        }
+      }).catch(async e=>{
+        if(r((0,_.YK)()),e&&!e.toString().includes("Cancel")){
+          var t;
+          c.keyVal=h,
+          c[h]=(null==e?void 0:null===(t=e.response)||void 0===t?void 0:t.data)||{},
+          await r(v(c,o.Ni)),
+          r(y(!1)),
+          e.response&&(0,_.pA)(r,null,e.response)
+        }
+      })
+    },
+    k=e=>(t,a)=>{
+      let r=JSON.parse(JSON.stringify(a().screenDetailReducer));
+      r.screenFlowPayloadData=e,
+      r.keyVal="screenFlowPayloadData",
+      t(v(r,"SCREEN_FLOW_DATA"))
+    },
+    T=e=>(t,a)=>{
+      let r=JSON.parse(JSON.stringify(a().screenDetailReducer));
+      r.flagFooScreenFlow=e,
+      t(v(r))
+    },
+    D=(e,t)=>async(a,r)=>{
+      let s={
+        ...r().screenDetailReducer
+      };
+      s[e]=t,
+      a(v(s))
+    },
+    A=e=>({
+      type:o.Aw,
+      data:e
+    }),
+    F=e=>({
+      type:"NO_CODE_FLAG",
+      data:e
+    })
+  },
+  49588:function(e,t,a){
+    a.d(t,{
+      $M:function(){
+        return v
+      },
+      G9:function(){
+        return _
+      },
+      KB:function(){
+        return b
+      },
+      SH:function(){
+        return h
+      },
+      bF:function(){
+        return f
+      },
+      r7:function(){
+        return g
+      },
+      sw:function(){
+        return y
+      }
+    });
+    var r=a(38014),
+    s=a(18879),
+    i=a(57557),
+    n=a.n(i),
+    o=a(32642),
+    l=a(99252),
+    u=a(71768),
+    c=a(47639);
+    let p=function(e){
+      let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:o.oR;
+      return{
+        type:t,
+        data:e
+      }
+    },
+    d=e=>(t,a)=>{
+      let r={
+        ...a().sessionStatisticsReducer
+      };
+      r[e.fgName]=e.flag,
+      t(p(r))
+    },
+    f=e=>t=>r.Z.forwardApi(e,"sessions/plotting_options").then(async e=>{
+      let a=await e.data;
+      return 200===e.status?(t(p(a,o.DZ)),e.data):e
+    }).catch(e=>e),
+    _=e=>async(t,a)=>{
+      t(d({
+        fgName:"graphLoader",
+        flag:!0
+      }));
+      let i={
+        ...a().sessionStatisticsReducer
+      };
+      return delete i.graphData,
+      await t(p(i,o.As)),
+      t((0,c.YK)(Math.floor(Date.now()/1e3))),
+      r.Z.pythonWithCancelApi(e,"sessions/build_session_graph").then(async e=>{
+        t((0,c.YK)());
+        let a=await e.data;
+        return t(d({
+          fgName:"graphLoader",
+          flag:!1
+        })),
+        200===e.status?a.success?i.graphData=a:i.graphData="Following selection did not give a meaningful result":i.graphData=s.CQ,
+        t(p(i,o.As)),
+        e.data
+      }).catch(e=>(t(d({
+        fgName:"graphLoader",
+        flag:!1
+      })),e&&!e.toString().includes("Cancel")&&(t((0,c.YK)()),i.graphData=s.CQ,t(p(i,"SESSION_STATISTICS_GRAPH"))),e))
+    },
+    b=e=>async(t,a)=>{
+      t(d({
+        fgName:"loaderForPL",
+        flag:!0
+      }));
+      let s={
+        ...a().sessionStatisticsReducer
+      };
+      return delete s.statsBoxes,
+      await t(p(s,o.t7)),
+      r.Z.forwardApi(e,"sessions/stat_box_data").then(async e=>{
+        let a=await e.data;
+        return s.statsBoxes=a,
+        t(p(s,o.t7)),
+        t(d({
+          fgName:"loaderForPL",
+          flag:!1
+        })),
+        a
+      }).catch(e=>(s.statsBoxes=e.response,t(p(s,o.t7)),t(d({
+        fgName:"loaderForPL",
+        flag:!1
+      })),e))
+    },
+    v=e=>async(t,a)=>{
+      t(d({
+        fgName:"loaderForPL",
+        flag:!0
+      }));
+      let s={
+        ...a().sessionStatisticsReducer
+      };
+      return delete s.uniqueUserBox,
+      await t(p(s,o.jr)),
+      r.Z.forwardApi(e,"sessions/total_user_count").then(async e=>{
+        let a=await e.data.Total;
+        return 200===e.status&&(s.uniqueUserBox=a,t(p(s,o.jr))),
+        t(d({
+          fgName:"loaderForPL",
+          flag:!1
+        })),
+        a
+      }).catch(e=>(t(d({
+        fgName:"loaderForPL",
+        flag:!1
+      })),e))
+    },
+    h=e=>(t,a)=>{
+      let r={
+        ...a().sessionStatisticsReducer
+      };
+      r[e.dropName]=e.data,
+      t(p(r))
+    },
+    y=()=>(e,t)=>{
+      let a={
+        ...t().sessionStatisticsReducer
+      };
+      (a=n()(a,"loader","propertyList","payloadStatistics","graphData")).group_list=[{
+        table:"session",
+        attribute:"session_period_day",
+        tooltip:"Day on which session was recorded.",
+        period:86400,
+        display:"Day",
+        time_zone_offset:l.x7
+      }],
+      a.aggregation_list={
+        attribute:"session_count",
+        type:"count",
+        table:"session",
+        operator:""
+      },
+      a.series_plot_options={},
+      a.selectedBox={
+        attrOfSmallBox:"count",
+        mainKey:"Sessions",
+        tooltip:"Total number of recorded app launches during Feb 19 - Feb 26, 2020 (7 days).",
+        graph_info:"Recorded session number",
+        actionIndex:1
+      },
+      e((0,u.tQ)([])),
+      e(p(a))
+    },
+    g=e=>(t,a)=>{
+      let r={
+        ...a().sessionStatisticsReducer
+      };
+      r.selectedTab=e,
+      t(p(r))
+    }
+  },
+  67393:function(e,t,a){
+    a.d(t,{
+      MX:function(){
+        return g
+      },
+      b0:function(){
+        return h
+      },
+      SH:function(){
+        return y
+      },
+      bF:function(){
+        return v
+      }
+    });
+    var r=a(32642),
+    s=a(36005),
+    i=a(11163),
+    n=a.n(i),
+    o=a(38014),
+    l=a(18879),
+    u=a(73495);
+    let c=function(e,t){
+      let a=arguments.length>2&&void 0!==arguments[2]?arguments[2]:[];
+      if(e.length&&e.length!==t.length&&a.length){
+        let r=t.filter(t=>{
+          if(0>s.ZP.indexOf(e,t.eventname))return t
+        }),
+        i=[];
+        e.length>r.length?i=0===r.length?e:r.map(e=>e.eventname):e.length<r.length?i=e:e.length&&e.length===r.length&&(i=e);
+        let n={
+          table:"event",
+          attribute:"event_name",
+          operator:"in",
+          value:e||i||[]
+        },
+        o=s.ZP.findIndex(a,{
+          attribute:"event_name"
+        });
+        o>=0?a[o]=n:a.push(n)
+      }
+      return a
+    };
+    var p=a(99252),
+    d=a(47639),
+    f=a(30663);
+    let _=(e,t)=>({
+      type:t||r.l8,
+      data:e
+    }),
+    b=e=>(t,a)=>{
+      let r={
+        ...a().statisticsReducer
+      };
+      r.loader=e,
+      t(_(r))
+    },
+    v=e=>(t,a)=>{
+      let r={
+        ...a().statisticsReducer
+      };
+      return o.Z.forwardApi(e,"events/plotting_options").then(async e=>{
+        let a=await e.data;
+        return 200===e.status?(r.dropdownData=a,t(_(r,"DEFAULT_STATS_LIST")),e.data):e
+      }).catch(e=>e)
+    },
+    h=e=>async(t,a)=>{
+      var i,
+      v;
+      let h=s.ZP.clone(a().statisticsReducer),
+      {
+        event:y
+      }=a().appFilter,
+      {
+        selectedEventName:g
+      }=a().eventTable,
+      {
+        table:m
+      }=a().eventTable;
+      if(t(b(!0)),delete h.graphData,await t(_(h,r.r3)),"statistics"===a().urlReducer.parentType){
+        let e=[...a().appFilter.event.segment],
+        t="".concat("https://app.uxcam.com","/app/").concat(a().urlReducer.appId,"/events/analytics?"),
+        r="/integration?parentType=statistics&appId=".concat(a().urlReducer.appId);
+        t=(0,u.$)(t,e),
+        n().push(r,t)
+      }
+      let w={
+        ...a().appFilter.dateSegment
+      };
+      return(e.filters=y.segment,e.date_range={
+        ...w,
+        timezoneOffset:(0,p.pQ)(null==w?void 0:w.tz,new Date)
+      },e.filters=(null==g?void 0:g.length)&&c(g,m,[...a().appFilter.event.segment])||e.filters,t((0,d.YK)(Math.floor(Date.now()/1e3))),e.group_list=e.group_list.map(e=>({
+        ...e,
+        time_zone_offset:(0,p.pQ)(w.tz,new Date)
+      })),(null==e?void 0:null===(i=e.filters)||void 0===i?void 0:i.length)>0&&(null==e?void 0:null===(v=e.filters)||void 0===v?void 0:v.some(e=>(null==e?void 0:e.attribute)==="nce_name")))?null:o.Z.pythonWithCancelApi(e,"events/build_event_graph").then(async e=>{
+        t((0,d.YK)());
+        let a=await e.data;
+        return 200===e.status?(t((0,f.CW)(null,{
+          eventName:"wa_display_event_analytics",
+          track_type:"event",
+          eventProperty:{}
+        })),a.success?h.graphData=a:h.graphData="Graph could not be created"):h.graphData="Graph could not be created",
+        t(_(h,"STATS_GRAPH")),
+        t(b(!1)),
+        a
+      }).catch(e=>(e&&!e.toString().includes("Cancel")&&(t((0,d.YK)()),t(b(!1)),h.graphData=l.CQ,t(_(h,"STATS_GRAPH"))),e.response))
+    },
+    y=e=>(t,a)=>{
+      let r=JSON.parse(JSON.stringify(a().statisticsReducer));
+      return r[e.dropName]=e.data,
+      t(_(r)),
+      e.data
+    },
+    g=()=>(e,t)=>{
+      let a=JSON.parse(JSON.stringify(t().statisticsReducer));
+      (a=(0,s.CE)(a,"loader","propertyList","payloadStatistics","graphData")).grpByVal=[{
+        table:"event",
+        attribute:"event_period_day",
+        tooltip:"Day on which event was recorded.",
+        period:86400,
+        display:"Day",
+        time_zone_offset:p.x7
+      },{
+        display:"event name",
+        type:"str",
+        tooltip:"Assigned name of event.",
+        table:"event",
+        attribute:"event_name"
+      }],
+      a.eventDropValues={
+        attribute:"event_count",
+        type:"count",
+        table:"event",
+        operator:"",
+        display:"events"
+      },
+      a.graphSelectedVal={},
+      e(_(a))
+    }
+  },
+  59268:function(e,t,a){
+    a.d(t,{
+      K8:function(){
+        return p
+      },
+      PZ:function(){
+        return m
+      },
+      _h:function(){
+        return f
+      },
+      aO:function(){
+        return w
+      },
+      ae:function(){
+        return D
+      },
+      b2:function(){
+        return _
+      },
+      bH:function(){
+        return d
+      },
+      nE:function(){
+        return c
+      }
+    }),
+    a(36005);
+    var r=a(30381),
+    s=a.n(r),
+    i=a(47662),
+    n=a(38014),
+    o=a(27985),
+    l=a(99795),
+    u=a(47639);
+    let c=e=>async(t,a)=>{
+      t((0,u.sT)({})),
+      t((0,l.Ht)(!0));
+      let r={
+        appid:a().currentAppReducer._id,
+        uxcamuserid:e,
+        date_range:a().appFilter.dateSegment,
+        filters:[]
+      };
+      return i.Z.userDetail(r).then(async e=>("usersList"===a().urlReducer.parentType&&a().urlReducer.uxcamuserid&&(await t((0,l.Xr)(e.data.data)),t((0,l.Ht)(!1))),e.data.data)).catch(e=>(e&&e.response&&t((0,l.Xr)(e.response)),(0,u.jF)(t,l.Xr,e),e))
+    },
+    p=e=>async t=>(t((0,l.I5)(!0)),n.Z.forwardApi(e,"users/user_journey_boxes").then(async e=>{
+      let a=await e.data;
+      return t((0,l.Tm)(a)),
+      t((0,l.I5)(!1)),
+      e.data
+    }).catch(e=>(t((0,l.I5)(!1)),e&&e.response&&(0,u.pA)(t,l.Xr,e.response),e.response))),
+    d=e=>async(t,a)=>(t((0,l.kk)(!0)),({
+      ...a().userDetailReducer
+    }).userJourneyGraphData&&await t((0,l.yJ)(void 0)),t((0,u.YK)(Math.floor(Date.now()/1e3))),n.Z.pythonWithCancelApi(e,"users/user_journey_graph").then(async e=>{
+      t((0,u.YK)());
+      let a=await e.data;
+      return t((0,l.yJ)(a)),
+      t((0,l.kk)(!1)),
+      e.data
+    }).catch(e=>(e&&!e.toString().includes("Cancel")&&(t((0,u.YK)()),t((0,l.kk)(!1))),e&&e.response&&(0,u.pA)(t,l.Xr,e.response),e.response))),
+    f=e=>async t=>n.Z.forwardApi(e,"users/user_journey_dropdowns").then(async e=>{
+      let a=await e.data;
+      return 200===e.status&&t((0,l.Ab)(a)),
+      a
+    }).catch(e=>(e&&e.response&&(0,u.pA)(t,l.Xr,e.response),e.response)),
+    _=()=>async(e,t)=>{
+      let{
+        appId:a,
+        uxcamuserid:r
+      }={
+        ...t().urlReducer
+      },
+      {
+        dateSegment:s
+      }={
+        ...t().appFilter
+      };
+      return i.Z.locationApi({
+        appid:a,
+        uxcamuserid:r,
+        filters:[s]
+      }).then(async t=>{
+        let a=await t.data;
+        return 200===t.status&&(a=a.data,e((0,l.zd)(a))),
+        a
+      }).catch(t=>(t&&t.response&&(0,u.pA)(e,null,t.response),t))
+    },
+    b=(e,t)=>function(){
+      for(var a=arguments.length,r=Array(a),s=0;s<a;s++)r[s]=arguments[s];
+      let[,i]=r,
+      n=JSON.parse(JSON.stringify(i().appFilter)),
+      l={
+        ...i().appFilter.dateSegment
+      },
+      {
+        appId:u,
+        parentType:c
+      }={
+        ...i().urlReducer
+      },
+      p=t&&"usersList"===c,
+      d=(0,o.Vw)(n.user.activityFilterList,n.user.segment,p),
+      f=d.map(e=>e.attribute).indexOf("date_range");
+      f>-1&&e&&(d[f].value=e),
+      l.value=e||l.value;
+      let _={
+        appid:u,
+        filters:d,
+        date_range:l
+      };
+      return p&&delete _.date_range,
+      _
+    },
+    v=(e,t)=>a=>{
+      let r=a(b(e,t));
+      return i.Z.users_statistics(r,t).then(t=>{
+        var r,
+        s;
+        return e?a((0,l.bF)(null==t?void 0:null===(r=t.data)||void 0===r?void 0:r.data)):a((0,l.X3)(null==t?void 0:null===(s=t.data)||void 0===s?void 0:s.data))
+      }).catch(e=>(0,u.jF)(a,null,e))
+    },
+    h=(e,t)=>a=>{
+      let r=a(b(e,t));
+      return i.Z.top_screen_duration(r,t).then(t=>e?a((0,l._H)(t.data.data)):a((0,l.QQ)(t.data.data))).catch(e=>(0,u.jF)(a,null,e))
+    },
+    y=(e,t)=>a=>{
+      let r=a(b(e,t));
+      return i.Z.top_event_stat_box(r,t).then(t=>e?a((0,l.At)(t.data.data)):a((0,l.Uw)(t.data.data))).catch(e=>(0,u.jF)(a,null,e))
+    },
+    g=(e,t)=>a=>{
+      let r=a(b(e,t));
+      return i.Z.issues_stat_box(r,t).then(t=>e?a((0,l.b_)(t.data.data)):a((0,l.ud)(t.data.data))).catch(e=>(0,u.jF)(a,null,e))
+    },
+    m=e=>t=>t((0,l.X8)(e)),
+    w=e=>t=>t((0,l.Tu)(e)),
+    S=(e,t)=>a=>{
+      a(v(e,t)),
+      a(h(e,t)),
+      a(y(e,t)),
+      a(g(e,t))
+    },
+    k=(e,t)=>(a,r)=>{
+      let i="";
+      if(e){
+        let e;
+        let t={
+          ...r().appFilter.dateSegment
+        };
+        if(t){
+          let{
+            value:{
+              lower:a,
+              upper:r
+            },
+            label:n
+          }=t,
+          o=(e,t)=>s()(a).utc().subtract(e,t).format();
+          switch(n){
+            case"1month":e=o(1,"months");
+            break;
+            case"3months":e=o(3,"months");
+            break;
+            case"14days":e=o(14,"days");
+            break;
+            case"7days":e=o(7,"days");
+            break;
+            case"thisWeek":e=o(1,"weeks");
+            break;
+            case"yesterday":e=o(2,"days");
+            break;
+            case"today":e=o(1,"days");
+            break;
+            case"custom":case"thisMonth":e=s().unix((Math.round(new Date(a).getTime())-s()(r).diff(a))/1e3),
+            e=s()(e).utc().format()
+          }
+          i={
+            lower:s().unix((Math.round(new Date(a).getTime())-s()(r).diff(a))/1e3).utc().format(),
+            upper:s()(a).utc().format()
+          }
+        }
+      }
+      a(S(i,t))
+    },
+    T=()=>e=>e((0,l.RG)()),
+    D=e=>async t=>{
+      await t(T()),
+      t(k(!1,e||!1)),
+      t(k(!0,e||!1))
+    }
+  },
+  51542:function(e,t,a){
+    var r=a(87066),
+    s=a(98777);
+    let{
+      CancelToken:i
+    }=r.default,
+    n=null,
+    o=0,
+    l=null,
+    u=0,
+    c=null,
+    p=0;
+    class d{
+      static async getEventTable(e,t){
+        o++,
+        n&&await n(o);
+        let a=await s.be.post("".concat("https://pythonapi-prod.uxcam.com/v2","/events/event_count"),e,{
+          withCredentials:!0,
+          cancelToken:new i(e=>{
+            n=e,
+            o=0
+          })
+        });
+        return n=null,
+        a.data
+      }
+      static async getV2EventListTable(e){
+        u++,
+        l&&await l(u);
+        let t=await s.be.post("".concat("https://pythonapi-prod.uxcam.com/v2","/events/list"),e,{
+          withCredentials:!0,
+          cancelToken:new i(e=>{
+            l=e,
+            u=0
+          })
+        });
+        return l=null,
+        t
+      }
+      static async getV2NocodeEventListTable(e){
+        p++,
+        c&&await l(p);
+        let t=await s.be.post("".concat("https://pythonapi-prod.uxcam.com","/no_code_event/list"),e,{
+          withCredentials:!0,
+          cancelToken:new i(e=>{
+            c=e,
+            p=0
+          })
+        });
+        return c=null,
+        t
+      }
+    }
+    t.Z=d
+  },
+  71093:function(e,t,a){
+    var r=a(87066),
+    s=a(98777);
+    let{
+      CancelToken:i
+    }=r.default,
+    n=null,
+    o=0,
+    l="".concat("https://pythonapi-prod.uxcam.com","/search_attribute");
+    class u{
+      static async fetchRemoteData(e,t,a){
+        o++,
+        n&&await n(o);
+        let r=await s.be.post("".concat("https://dashboardapi.uxcam.com","/app/").concat(t,"/").concat(a,"/search-attribute"),e,{
+          withCredentials:!0,
+          cancelToken:new i(e=>{
+            n=e,
+            o=0
+          })
+        });
+        return n=null,
+        r
+      }
+      static async searchAttrApi(e,t,a){
+        return await s.be.post("".concat("https://dashboardapi.uxcam.com","/app/").concat(t,"/").concat(a,"/search-attribute"),e,{
+          withCredentials:!0
+        })
+      }
+      static async applyFilter(e,t,a){
+        return await s.be.post("".concat("https://dashboardapi.uxcam.com","/app/").concat(e,"/").concat(t,"/custom-list"),a,{
+          withCredentials:!0
+        })
+      }
+      static async fetchScreenRemoteData(e,t,a){
+        return await s.be.post("".concat("https://dashboardapi.uxcam.com","/app/").concat(t,"/").concat(a,"/search-attribute"),e,{
+          withCredentials:!0
+        })
+      }
+      static async getEventPropertyList(e){
+        return await (0,s.be)({
+          method:"GET",
+          url:"".concat("https://pythonapi-prod.uxcam.com","/preference/").concat(e,"/get-event-property-list"),
+          withCredentials:!0
+        })
+      }
+      static async getPropertiesWithCancelToken(e){
+        o++,
+        n&&await n(o);
+        let t=await s.be.post(l,e,{
+          withCredentials:!0,
+          cancelToken:new i(e=>{
+            n=e,
+            o=0
+          })
+        });
+        return n=null,
+        t
+      }
+      static async getPropertiesWithoutCancelToken(e){
+        return await s.be.post(l,e,{
+          withCredentials:!0
+        })
+      }
+    }
+    t.Z=u
+  },
+  92053:function(e,t,a){
+    var r,
+    s;
+    a.d(t,{
+      c:function(){
+        return r
+      }
+    }),
+    (s=r||(r={})).SESSION="SESSION",
+    s.SCREENVISIT="SCREENVISIT",
+    s.SMART_EVENT="SMART_EVENT",
+    s.CODED_EVENT="CODED_EVENT"
+  }
+}]);

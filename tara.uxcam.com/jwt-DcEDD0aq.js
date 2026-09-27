@@ -1,0 +1,1 @@
+function e(e){try{let t=(e.split(`.`)[1]??``).replace(/-/g,`+`).replace(/_/g,`/`);t+=`=`.repeat((4-t.length%4)%4);let n=JSON.parse(atob(t));return n&&typeof n==`object`?n:{}}catch{return{}}}function t(t,n){let r=e(t)[n];return typeof r==`string`?r:``}export{t};

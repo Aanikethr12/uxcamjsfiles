@@ -1,0 +1,108 @@
+"use strict";
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[1530],{
+  1530:function(e,t,n){
+    n.r(t);
+    var r=n(85893);
+    n(67294);
+    var a=n(43192),
+    l=n(83530),
+    s=n.n(l),
+    o=n(18879);
+    t.default=e=>{
+      let{
+        error:t
+      }=e;
+      return(0,r.jsxs)("div",{
+        children:[(0,r.jsx)(a.Z,{
+          show:!0,
+          children:(0,r.jsx)("div",{
+            className:"media-message-box",
+            children:(0,r.jsx)("div",{
+              className:"media-message-content",
+              children:(0,r.jsxs)("div",{
+                className:"common-error-box",
+                children:[(0,r.jsx)("div",{
+                  className:"error-icon-wrap",
+                  children:(0,r.jsx)(s(),{})
+                }),(0,r.jsx)("p",{
+                  children:(null==t?void 0:t.message)||o.CQ
+                })]
+              })
+            })
+          })
+        }),(0,r.jsx)("style",{
+          children:".media-message-box .media-message-content{\n              position: absolute;\n              width: 40%;\n              left: 0;\n              right: 0;\n              top: 0;\n              bottom: 0;\n              height: 170px;\n              margin: auto;\n              display: flex;\n              justify-content: center;\n              align-items: center;\n           }\n          "
+        })]
+      })
+    }
+  },
+  83530:function(e,t,n){
+    Object.defineProperty(t,"__esModule",{
+      value:!0
+    });
+    var r=Object.assign||function(e){
+      for(var t=1;t<arguments.length;t++){
+        var n=arguments[t];
+        for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(e[r]=n[r])
+      }
+      return e
+    },
+    a=s(n(67294)),
+    l=s(n(59231));
+    function s(e){
+      return e&&e.__esModule?e:{
+        default:e
+      }
+    }
+    t.default=function(e){
+      return a.default.createElement(l.default,r({
+        viewBox:"0 0 40 40"
+      },e),a.default.createElement("g",null,a.default.createElement("path",{
+        d:"m22.9 30.7v-4.2q0-0.4-0.3-0.6t-0.5-0.2h-4.2q-0.3 0-0.5 0.2t-0.3 0.6v4.2q0 0.3 0.3 0.5t0.5 0.2h4.2q0.3 0 0.5-0.2t0.3-0.5z m-0.1-8.4l0.4-10.2q0-0.3-0.2-0.4-0.3-0.3-0.5-0.3h-5q-0.2 0-0.5 0.3-0.2 0.1-0.2 0.4l0.4 10.2q0 0.3 0.2 0.4t0.5 0.2h4.2q0.3 0 0.5-0.2t0.2-0.4z m-0.3-20.8l17.1 31.4q0.8 1.4 0 2.8-0.4 0.7-1 1.1t-1.5 0.3h-34.2q-0.8 0-1.5-0.3t-1-1.1q-0.8-1.4 0-2.8l17.1-31.4q0.4-0.7 1.1-1.1t1.4-0.4 1.4 0.4 1.1 1.1z"
+      })))
+    },
+    e.exports=t.default
+  },
+  43192:function(e,t,n){
+    t.Z=i;
+    var r=l(n(67294)),
+    a=l(n(45697));
+    function l(e){
+      return e&&e.__esModule?e:{
+        default:e
+      }
+    }
+    function s(){
+      return(s=Object.assign||function(e){
+        for(var t=1;t<arguments.length;t++){
+          var n=arguments[t];
+          for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(e[r]=n[r])
+        }
+        return e
+      }).apply(this,arguments)
+    }
+    i.propTypes={
+      tag:a.default.string,
+      hide:a.default.bool,
+      show:a.default.bool,
+      if:a.default.bool
+    },
+    i.defaultProps={
+      tag:"span"
+    };
+    var o=Object.keys(i.propTypes);
+    function i(e){
+      if(!1===e.if)return null;
+      var t,
+      n={};
+      (null!=e.show?e.show:null!=e.hide?!e.hide:1)||(n.display="none");
+      var a=e.tag,
+      l=(t=Object.assign({},e),o.forEach(function(e){
+        e in t&&delete t[e]
+      }),t);
+      return r.default.createElement(a,s({
+        style:n
+      },l))
+    }
+  }
+}]);

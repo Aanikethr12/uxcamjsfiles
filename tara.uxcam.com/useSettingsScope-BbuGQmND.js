@@ -1,0 +1,1 @@
+import{p as e}from"./router-vendor-DDSrk2O2.js";import{n as t}from"./NavigationContext-DTwRip-h.js";function n(){let{selectedAppId:n}=t(),{projectId:r,envAppId:i}=e();return{appId:i||n,projectId:r??null,isEnvScoped:!!i}}export{n as t};

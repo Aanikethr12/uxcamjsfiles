@@ -1,0 +1,488 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[9201],{
+  92549:function(e){
+    e.exports=function(e,t,r,a){
+      var n=null==e?0:e.length;
+      for(a&&n&&(r=e[--n]);n--;)r=t(r,e[n],n,e);
+      return r
+    }
+  },
+  35865:function(e,t,r){
+    var a=r(44370),
+    n=r(99291)(a,!0);
+    e.exports=n
+  },
+  44370:function(e,t,r){
+    var a=r(27473),
+    n=r(3674);
+    e.exports=function(e,t){
+      return e&&a(e,t,n)
+    }
+  },
+  27473:function(e,t,r){
+    var a=r(25063)(!0);
+    e.exports=a
+  },
+  10107:function(e){
+    e.exports=function(e,t,r,a,n){
+      return n(e,function(e,n,i){
+        r=a?(a=!1,e):t(r,e,n,i)
+      }),
+      r
+    }
+  },
+  54290:function(e,t,r){
+    var a=r(6557);
+    e.exports=function(e){
+      return"function"==typeof e?e:a
+    }
+  },
+  66073:function(e,t,r){
+    e.exports=r(84486)
+  },
+  84486:function(e,t,r){
+    var a=r(77412),
+    n=r(89881),
+    i=r(54290),
+    o=r(1469);
+    e.exports=function(e,t){
+      return(o(e)?a:n)(e,i(t))
+    }
+  },
+  16579:function(e,t,r){
+    var a=r(92549),
+    n=r(35865),
+    i=r(67206),
+    o=r(10107),
+    s=r(1469);
+    e.exports=function(e,t,r){
+      var l=s(e)?a:o,
+      d=arguments.length<3;
+      return l(e,i(t,4),r,d,n)
+    }
+  },
+  43063:function(e,t,r){
+    var a=r(34963),
+    n=r(80760),
+    i=r(67206),
+    o=r(1469),
+    s=r(94885);
+    e.exports=function(e,t){
+      return(o(e)?a:n)(e,s(i(t,3)))
+    }
+  },
+  50197:function(e,t,r){
+    "use strict";
+    r.d(t,{
+      d:function(){
+        return R
+      }
+    });
+    var a=r(85893),
+    n=r(67294),
+    i=r(14416),
+    o=r(66678),
+    s=r.n(o),
+    l=r(66073),
+    d=r.n(l),
+    p=r(13218),
+    u=r.n(p),
+    c=r(7436),
+    g=r.n(c),
+    h=r(43063),
+    _=r.n(h),
+    y=r(41609),
+    v=r.n(y),
+    b=r(35161),
+    f=r.n(b),
+    m=r(49470),
+    x=r(49588),
+    w=r(19228),
+    j=r(35946),
+    N=r(86086),
+    Z=r(8047),
+    k=r(54973),
+    A=r(43522),
+    C=r(92046),
+    T=r(47639),
+    S=r(59268),
+    B=r(48715),
+    G=r(99252),
+    I=r(55931);
+    let R=function(){
+      let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:[];
+      return null==e?void 0:e.map(e=>({
+        attribute:e,
+        categoryTitle:"Initial landing UTM",
+        display:e,
+        json_field:[e],
+        max_group_number:50,
+        table:"appuser",
+        type:"json"
+      }))
+    },
+    O=(0,n.createRef)();
+    t.Z=(0,n.memo)(e=>{
+      var t;
+      let r=(0,i.I0)(),
+      {
+        callGraphApi:n,
+        callStatsBoxes:o
+      }=(0,B.Z)(),
+      {
+        groupingOptions:l,
+        graphData:p,
+        group_list:c=[],
+        series_plot_options:h,
+        selectedBox:y,
+        graphLoader:b
+      }=e,
+      D=[...c],
+      {
+        bottomBarClassFlag:P
+      }=(0,i.v9)(e=>e.commonReducer),
+      {
+        parentType:V
+      }=(0,i.v9)(e=>e.urlReducer),
+      {
+        dateSegment:F,
+        fetchProperty:H
+      }=(0,i.v9)(e=>e.appFilter),
+      E=(0,I.e)("web"),
+      K=null==h?void 0:h.key,
+      U=R((null==H?void 0:null===(t=H.user_first_utm)||void 0===t?void 0:t.data)||[]);
+      l&&l.groupby_dropdown&&E&&(l.groupby_dropdown["Initial landing UTM"]=U);
+      let L=l&&s()(l.groupby_dropdown),
+      M=e=>{
+        "usersAnalytics"===V?r((0,S.PZ)(e[D])):r((0,x.SH)(e))
+      },
+      z=(e,t)=>_()(e,(e,r)=>r===t),
+      Q=async e=>{
+        let t=z(D,e),
+        a={
+          dropName:"group_list",
+          data:[...t]
+        };
+        "usersAnalytics"===V?await r((0,S.PZ)([...t])):await r((0,x.SH)(a)),
+        n({
+          grpList:[...t]
+        })
+      },
+      q=async e=>{
+        let t={
+          dropName:"series_plot_options",
+          data:N.K[e]
+        };
+        "usersAnalytics"===V?await r((0,S.aO)(N.K[e])):await r((0,x.SH)(t)),
+        n({
+          seriesPlotsOptions:N.K[e]
+        }),
+        r((0,T.hI)({
+          action:"Graph type changed",
+          info:{
+            "Graph type":e,
+            page:V
+          }
+        }))
+      },
+      J=async(e,t,a,i,o,s,p,c,_,y)=>{
+        let v,
+        b,
+        f,
+        m,
+        w;
+        (null==y?void 0:y.length)||(y=void 0),
+        c||(_=50);
+        let j=i&&e||p||e.item.props.value,
+        N={},
+        Z=null==l?void 0:l.groupby_dropdown;
+        await d()(Z,e=>{
+          e.map(e=>{
+            N.values={
+              ...N.values,
+              [e.attribute]:e.table
+            }
+          })
+        }),
+        -1===Object.keys(N.values).indexOf(j)&&(m="User property");
+        let k="Initial landing UTM"===(0,C.Z3)(j,Z);
+        if(e=u()(e)?e.key:e,k)b={
+          attribute:"user_first_utm",
+          table:"appuser",
+          type:"json",
+          display:j,
+          json_field:[j],
+          max_group_number:_,
+          labels:y
+        };
+        else if(m)b={
+          attribute:"user_custom_property",
+          table:"appuser",
+          type:"json",
+          display:m,
+          json_field:m?[j]:void 0,
+          max_group_number:_,
+          labels:y
+        };
+        else{
+          var A,
+          B;
+          f=s||(null==e?void 0:null===(B=e.item)||void 0===B?void 0:null===(A=B.props)||void 0===A?void 0:A.categorytitle);
+          let t=g()(Z[f],{
+            display:e
+          });
+          w=Z[f][t],
+          Z.Date.map(e=>e.attribute).indexOf(j)>-1&&(w.time_zone_offset=(0,G.pQ)(F.tz,new Date)),
+          w.max_group_number=_,
+          w.labels=y,
+          b="none"===e?{
+            attribute:"none",
+            display:"None"
+          }:w
+        }"grp-array"===t&&a>=0&&a<2&&(D[a]=b,v=[...D]),
+        "grp-main"===t&&D.length<2&&(v=[...D,b]),
+        "usersAnalytics"===V?await r((0,S.PZ)(v)):await r((0,x.SH)({
+          dropName:"group_list",
+          data:v
+        })),
+        ["session_period_day"].indexOf(null==w?void 0:w.attribute)>-1&&(null==h?void 0:h.type)==="pie"&&("usersAnalytics"===V?await r((0,S.aO)({})):await r((0,x.SH)({
+          dropName:"series_plot_options",
+          data:{}
+        }))),
+        "session_property"!==e&&n({
+          grpList:v
+        }),
+        r((0,T.hI)({
+          action:"Add / change grouping ".concat(a+1),
+          info:{
+            "Group type":j,
+            page:V
+          }
+        }))
+      };
+      return(0,a.jsx)("div",{
+        className:"stat-full-box",
+        children:(0,a.jsxs)("div",{
+          className:"stat-graph-box",
+          children:[(0,a.jsxs)("div",{
+            className:"stat-filter-bar",
+            children:[(0,a.jsxs)("div",{
+              className:"filter-left-box",
+              children:[(0,a.jsx)("h4",{
+                children:v()(y)?"":y.graph_info
+              }),(0,a.jsxs)("div",{
+                className:"dropdown-wrapper",
+                children:[(0,a.jsx)("div",{
+                  className:"big-combo-box",
+                  "data-intercom-target":"Analytics Group Filter",
+                  children:(null==D?void 0:D.length)?f()(D,(e,t)=>(0,a.jsx)(w.Z,{
+                    label:0===t?"Group by":"and",
+                    _idByArr:"grp-array",
+                    filterArr:Q,
+                    _grpByArr:D,
+                    _index:t,
+                    isRevamped:!0,
+                    children:L?(0,a.jsx)(Z.Z,{
+                      handleValuesByName:M,
+                      handleChangeEvents:J,
+                      id:"groupby_dropdown",
+                      options:L,
+                      eventProperty:!1,
+                      userProperty:!0,
+                      eventDropVal:e,
+                      _idByArr:"grp-array",
+                      indexByGrpby:t,
+                      group_list:D,
+                      isRevamped:!0
+                    },e.attribute+t):""
+                  },e.attribute+t)):null
+                }),(null==D?void 0:D.length)===1&&(0,a.jsx)(w.Z,{
+                  label:"and",
+                  isRevamped:!0,
+                  className:"add-btn",
+                  dataIntercomTarget:"Filter add grouping",
+                  children:L?(0,a.jsx)(Z.Z,{
+                    handleChangeEvents:J,
+                    id:"groupby_dropdown",
+                    options:L,
+                    eventProperty:!1,
+                    userProperty:!0,
+                    _idByArr:"grp-main",
+                    placeholderText:"+ Add grouping",
+                    indexByGrpby:1,
+                    group_list:D,
+                    isRevamped:!0
+                  },"+add-grouping"):""
+                },"+add-grouping")]
+              })]
+            }),(0,a.jsxs)("div",{
+              className:"filter-right-box",
+              children:[(0,a.jsx)(w.Z,{
+                dataIntercomTarget:"Filter Download",
+                children:(0,a.jsx)(A.Z,{
+                  chartRef:O,
+                  graphData:p
+                })
+              }),(0,a.jsx)(w.Z,{
+                dataIntercomTarget:"Filter Graph",
+                children:(0,a.jsx)(j.Z,{
+                  handleChartChange:q,
+                  graphTypeVal:K,
+                  graphTypeObj:N.K,
+                  graphData:p,
+                  group_list:D
+                })
+              })]
+            })]
+          }),(0,a.jsx)(m.Z,{
+            show:!p||b,
+            message:(0,C.LC)("Computing chart data"),
+            backgroundStyle:{
+              backgroundColor:"rgba(255,255,255,0.6)"
+            },
+            style:{
+              height:"calc(100vh - 295px)"
+            },
+            children:(0,a.jsx)(k.Z,{
+              graphData:p,
+              height:P?"calc(100vh - 350px)":"calc(100vh - 345px)",
+              chartRef:O,
+              callGraphApi:n,
+              callStatsBoxes:o
+            })
+          })]
+        })
+      })
+    })
+  },
+  35946:function(e,t,r){
+    "use strict";
+    r.d(t,{
+      Z:function(){
+        return m
+      }
+    });
+    var a=r(85893),
+    n=r(67294),
+    i=r(66678),
+    o=r.n(i),
+    s=r(35161),
+    l=r.n(s),
+    d=r(1469),
+    p=r.n(d),
+    u=r(57557),
+    c=r.n(u),
+    g=r(14416),
+    h=r(79870),
+    _=r(55877);
+    let{
+      Option:y,
+      OptGroup:v
+    }=h.default,
+    b=e=>{
+      let{
+        handleChange:t,
+        options:r,
+        id:i,
+        placeholder:o,
+        className:s,
+        defaultValue:d,
+        dropdownClassName:p,
+        value:u,
+        style:c,
+        data:b,
+        labelInValue:f,
+        keyVal:m,
+        dropdownStyle:x,
+        grpByToggle:w,
+        toggler:j,
+        _idByArr:N
+      }=e,
+      {
+        dropValues:Z,
+        grpByVal:k
+      }=(0,g.v9)(e=>e.sessionStatisticsReducer),
+      [A,C]=(0,n.useState)(!1);
+      return(0,a.jsxs)(h.default,{
+        placeholder:o,
+        className:s,
+        defaultValue:d,
+        labelInValue:f,
+        value:u,
+        onChange:e=>t(e),
+        style:c,
+        open:"grp-main"===N?w:A,
+        dropdownClassName:p,
+        onDropdownVisibleChange:e=>"grp-main"===N?"":C(e),
+        dropdownStyle:x,
+        onBlur:()=>N&&j("grpByToggle",!1),
+        children:["groupby_dropdown"===i&&(0,a.jsx)(y,{
+          value:"groupby_dropdown"===i?"none":"",
+          children:"None"
+        },"none"),"groupby_dropdown"===i?l()(r,(e,t)=>"Top"===t?e.filter(e=>e.attribute!==Z.attribute).map(e=>(0,a.jsx)(y,{
+          value:e.attribute,
+          children:e.display
+        },(0,_.v4)())):(0,a.jsx)(v,{
+          label:t,
+          children:e.filter(e=>e.attribute!==Z.attribute&&"property"!==e.attribute).map(e=>(0,a.jsx)(y,{
+            value:e.attribute,
+            children:e.display
+          },(0,_.v4)()))
+        },(0,_.v4)())):l()(r,(e,t)=>"agg_operators"===i?b&&b.type===t&&l()(e,(e,t)=>(0,a.jsx)(y,{
+          value:t,
+          children:e.display
+        },(0,_.v4)())):"graph_type_dropdown"===i?(0,a.jsx)(y,{
+          value:t,
+          children:(0,a.jsxs)("span",{
+            "data-intercom-target":"Graph Option",
+            children:[(0,a.jsx)("span",{
+              children:e.img
+            }),(0,a.jsx)("span",{
+              className:"graph-type-name",
+              children:e.display
+            })]
+          })
+        },(0,_.v4)()):(0,a.jsx)(y,{
+          disabled:"aggregation"===i&&e[m]===k.attribute,
+          value:"date_filter_dropdown"===i?t:e[m],
+          children:"period_groupby_dropdown"===i?t:"date_filter_dropdown"===i?t:e.display
+        },(0,_.v4)()))]
+      })
+    },
+    f={
+      column:"stacked_column",
+      area:"stacked_line",
+      bar:"stacked_bar"
+    };
+    var m=e=>{
+      let{
+        handleChartChange:t,
+        graphTypeVal:r,
+        graphTypeObj:n,
+        graphData:i,
+        group_list:s
+      }=e,
+      d=["session_period_day","session_period","session_date_week","session_date_month","session_period_hour","event_period","event_period_day","event_period_hour","event_date_month","event_date_week","user_period_hour","user_period","user_date_week","user_date_month"],
+      u=o()(n),
+      g=s?[...s]:[],
+      h=l()(g,"attribute");
+      (1===h.length?d.includes(h[0]):d.includes(h[0])||d.includes(h[1]))&&(u=c()(u,"pie"));
+      let _=i&&i.data,
+      y=_&&p()(_.plot.series)&&_.plot.series.length&&_.plot.series,
+      v=y&&y[0].type,
+      m=y&&y[0].stacking;
+      return v&&m&&(v=f[v]),
+      (0,a.jsx)(b,{
+        handleChange:t,
+        options:u,
+        id:"graph_type_dropdown",
+        placeholder:"Select an chart",
+        defaultValue:v||r,
+        value:v||r,
+        dropdownClassName:"graph-type-dropdown",
+        style:{
+          width:50
+        }
+      })
+    }
+  }
+}]);

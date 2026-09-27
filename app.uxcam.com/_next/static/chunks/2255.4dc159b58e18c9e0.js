@@ -1,0 +1,2232 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[2255],{
+  23493:function(e,t,n){
+    var r=n(23279),
+    o=n(13218);
+    e.exports=function(e,t,n){
+      var i=!0,
+      l=!0;
+      if("function"!=typeof e)throw TypeError("Expected a function");
+      return o(n)&&(i="leading"in n?!!n.leading:i,l="trailing"in n?!!n.trailing:l),
+      r(e,t,{
+        leading:i,
+        maxWait:t,
+        trailing:l
+      })
+    }
+  },
+  85748:function(e,t,n){
+    "use strict";
+    n.r(t),
+    n.d(t,{
+      default:function(){
+        return eM
+      }
+    });
+    var r=n(85893),
+    o=n(67294);
+    n(39578);
+    var i=n(80400),
+    l=n.n(i),
+    a=n(14416),
+    s=n(47639),
+    c=n(11163),
+    d=n.n(c),
+    u=n(41371),
+    p=n(30663),
+    f=n(16905),
+    h=n(7906),
+    g=n(74444),
+    m=n(55931),
+    v=n(90745),
+    x=n(50691),
+    b=n(67401),
+    y=n(60066),
+    w=n(19521),
+    k=n(20745),
+    C=n(23279),
+    E=n.n(C),
+    S=n(73935),
+    j=n(79999),
+    R=n(23493),
+    I=n.n(R),
+    T=n(20088),
+    M=n(73999),
+    W=n(48203),
+    L=n(66873),
+    D=n(74855),
+    A=n(23357);
+    let P={
+      backgroundColor:j.r.colors.surface10.toString(),
+      borderRadius:"4px",
+      padding:"2px 6px",
+      fontSize:"12px",
+      color:"#666",
+      marginLeft:"4px",
+      display:"inline-block"
+    },
+    N={
+      marginBottom:"8px",
+      lineHeight:"1.4"
+    },
+    z={
+      fontSize:"16px",
+      fontWeight:"bold",
+      marginBottom:"12px"
+    },
+    Z={
+      cursor:"pointer",
+      background:"none",
+      border:"none",
+      padding:0,
+      display:"flex",
+      alignItems:"center",
+      color:j.r.colors.primarySky.toString()
+    },
+    _={
+      marginBottom:"4px",
+      fontWeight:"bold",
+      fontSize:"12px",
+      display:"flex",
+      alignItems:"center",
+      gap:"4px",
+      background:"none",
+      border:"none",
+      padding:0,
+      cursor:"pointer",
+      color:"inherit",
+      width:"100%"
+    },
+    O={
+      marginBottom:"10px",
+      fontSize:"12px",
+      color:j.r.colors.surface300.toString(),
+      wordBreak:"break-all",
+      maxWidth:"270px"
+    },
+    B={
+      backgroundColor:j.r.colors.primary05.toString(),
+      display:"flex",
+      alignItems:"center",
+      justifyContent:"center",
+      padding:"8px",
+      fontSize:"12px",
+      color:j.r.colors.surface300.toString(),
+      borderRadius:"0 0 4px 4px"
+    },
+    H={
+      border:"1px solid ".concat(j.r.colors.primary500.toString()),
+      backgroundColor:"transparent",
+      cursor:"pointer",
+      display:"flex",
+      alignItems:"center",
+      justifyContent:"center",
+      gap:"6px",
+      padding:"7px 12px",
+      borderRadius:"6px",
+      fontSize:"12px",
+      color:j.r.colors.primary500.toString(),
+      fontWeight:"500",
+      transition:"background-color 0.2s ease-in-out",
+      maxWidth:"133px"
+    };
+    var F=e=>{
+      let{
+        elementKey:t,
+        overlayElement:n,
+        value:i,
+        percentage:l,
+        iframeScale:a,
+        onClose:s,
+        isActive:c,
+        containerRef:d,
+        deviceType:u,
+        totalClicks:p=0,
+        totalScreenVisits:f=0,
+        clickThroughRate:h=0
+      }=e,
+      [g,m]=o.useState({
+        x:0,
+        y:0,
+        placement:"bottom",
+        caretPosition:"center",
+        caretOffset:0
+      }),
+      v=o.useRef(null),
+      [x,b]=o.useState(!1),
+      [y,w]=o.useState(!1),
+      k=o.useCallback(()=>{
+        w(!0),
+        setTimeout(()=>w(!1),2e3)
+      },[]);
+      o.useEffect(()=>{
+        var e,
+        t,
+        r;
+        if(!v.current)return;
+        let o=()=>{
+          var e,
+          t,
+          r;
+          let o=null===(e=v.current)||void 0===e?void 0:e.getBoundingClientRect();
+          if(!o)return;
+          let i=null===(r=n.ownerDocument)||void 0===r?void 0:null===(t=r.defaultView)||void 0===t?void 0:t.frameElement;
+          if(i)try{
+            let e=n.getBoundingClientRect(),
+            t=i.getBoundingClientRect(),
+            r=a;
+            try{
+              let{
+                transform:e
+              }=window.getComputedStyle(i);
+              e&&"none"!==e&&(r=new DOMMatrix(e).a)
+            }
+            catch(e){
+              console.warn("Error getting iframe transform:",e)
+            }
+            let l=e.left*r,
+            u=e.top*r,
+            p=e.width*r,
+            f=e.height*r,
+            h=t.left+l,
+            g=t.top+u,
+            v=h+p/2,
+            x=g+f,
+            b={
+              top:0,
+              left:0,
+              right:window.innerWidth,
+              bottom:window.innerHeight
+            };
+            if(null==d?void 0:d.current){
+              let e=d.current.getBoundingClientRect();
+              b={
+                top:e.top,
+                left:e.left,
+                right:e.right,
+                bottom:e.bottom
+              }
+            }
+            if(!c&&(x<b.top||g>b.bottom||h>b.right||h+p<b.left)){
+              s();
+              return
+            }
+            let y=v,
+            w="center",
+            k=0,
+            C=o.width/2,
+            E=y-C<b.left,
+            S=y+C>b.right;
+            E?(y=b.left+C,k=v-y,w="left"):S&&(y=b.right-C,k=v-y,w="right");
+            let j="bottom",
+            R=x+10;
+            R+o.height>b.bottom&&(g-b.top>o.height+10?(j="top",R=g-10):R=Math.min(b.bottom-o.height-5,Math.max(b.top+5,x))),
+            m({
+              x:y,
+              y:R,
+              placement:j,
+              caretPosition:w,
+              caretOffset:k
+            })
+          }
+          catch(e){
+            console.warn("Error calculating tooltip position:",e)
+          }
+        },
+        i=setTimeout(o,10),
+        l=null===(e=n.ownerDocument)||void 0===e?void 0:e.defaultView,
+        u=window,
+        p=null;
+        "undefined"!=typeof document&&(p=document.getElementById("main-scrollable-container")||document.getElementById("main-content-container"));
+        let f=()=>{
+          o(),
+          (()=>{
+            try{
+              var e,
+              t;
+              let r=null===(t=n.ownerDocument)||void 0===t?void 0:null===(e=t.defaultView)||void 0===e?void 0:e.frameElement;
+              if(!r)return!1;
+              let o=n.getBoundingClientRect(),
+              i=r.getBoundingClientRect(),
+              l=i.left+o.left*a,
+              s=l+o.width*a,
+              c=i.top+o.top*a,
+              u=c+o.height*a,
+              p={
+                top:0,
+                left:0,
+                right:window.innerWidth,
+                bottom:window.innerHeight
+              };
+              if(null==d?void 0:d.current){
+                let e=d.current.getBoundingClientRect();
+                p={
+                  top:e.top,
+                  left:e.left,
+                  right:e.right,
+                  bottom:e.bottom
+                }
+              }
+              return!(u<p.top||c>p.bottom||s<p.left||l>p.right)
+            }
+            catch(e){
+              return console.warn("Error checking element visibility:",e),
+              !1
+            }
+          })()||s()
+        };
+        null==l||l.addEventListener("scroll",f),
+        u.addEventListener("scroll",f),
+        p&&p.addEventListener("scroll",f);
+        let h=I()(o,100);
+        u.addEventListener("resize",h);
+        let g=null;
+        try{
+          (g=new ResizeObserver(I()(()=>{
+            o()
+          },100))).observe(n),
+          (null==d?void 0:d.current)&&g.observe(d.current);
+          let e=null===(r=n.ownerDocument)||void 0===r?void 0:null===(t=r.defaultView)||void 0===t?void 0:t.frameElement;
+          e&&g.observe(e)
+        }
+        catch(e){
+          console.warn("Error setting up ResizeObserver:",e)
+        }
+        return function(){
+          clearTimeout(i),
+          null==l||l.removeEventListener("scroll",f),
+          u.removeEventListener("scroll",f),
+          p&&p.removeEventListener("scroll",f),
+          u.removeEventListener("resize",h),
+          g&&g.disconnect()
+        }
+      },[n,a,s,c,d,u]);
+      let C={
+        position:"fixed",
+        top:0===g.x&&0===g.y?"-9999px":"".concat(g.y,"px"),
+        left:0===g.x&&0===g.y?"-9999px":"".concat(g.x,"px"),
+        backgroundColor:"white",
+        color:"#333",
+        borderRadius:"4px",
+        fontSize:"14px",
+        zIndex:1e4,
+        transform:"top"===g.placement?"translate(-50%, -100%)":"translate(-50%, 0)",
+        pointerEvents:c?"auto":"none",
+        transition:"opacity 0.2s ease-in-out",
+        opacity:1,
+        marginTop:"bottom"===g.placement?"8px":"0",
+        marginBottom:"top"===g.placement?"8px":"0",
+        boxShadow:"0 2px 8px rgba(0, 0, 0, 0.15)",
+        minWidth:"240px"
+      },
+      E={
+        position:"absolute",
+        left:"center"===g.caretPosition?"50%":"unset",
+        transform:"center"===g.caretPosition?"translateX(-50%)":"none",
+        width:"0",
+        height:"0",
+        borderLeft:"8px solid transparent",
+        borderRight:"8px solid transparent",
+        ..."left"===g.caretPosition&&{
+          left:"calc(50% + ".concat(g.caretOffset,"px)")
+        },
+        ..."right"===g.caretPosition&&{
+          left:"calc(50% + ".concat(g.caretOffset,"px)")
+        },
+        ..."top"===g.placement?{
+          bottom:"-8px",
+          borderTop:"8px solid white"
+        }:{
+          top:"-8px",
+          borderBottom:"8px solid white"
+        }
+      },
+      S=o.useCallback(()=>{
+        try{
+          sessionStorage.setItem("elementKey",t)
+        }
+        catch(e){}window.location.hash="#screen-visit-replay",
+        s()
+      },[t,s]);
+      return(0,r.jsxs)("div",{
+        ref:v,
+        style:C,
+        "data-tooltip-container":"true",
+        children:[(0,r.jsx)("div",{
+          style:E
+        }),(0,r.jsxs)("div",{
+          style:{
+            padding:"16px"
+          },
+          children:[(0,r.jsxs)("div",{
+            style:z,
+            children:[(0,A.p)(i)," Clicks"]
+          }),(0,r.jsxs)("div",{
+            style:N,
+            children:[(100*l).toFixed(1),"% Click rate",(0,r.jsxs)("span",{
+              style:P,
+              children:["out of ",(0,A.p)(p)," clicks"]
+            })]
+          }),(0,r.jsxs)("div",{
+            style:N,
+            children:[(100*h).toFixed(1),"% Click-through rate",(0,r.jsxs)("span",{
+              style:P,
+              children:["out of ",(0,A.p)(f)," screen visits"]
+            })]
+          })]
+        }),c?(0,r.jsxs)("div",{
+          style:{
+            display:"inline-flex",
+            flexDirection:"column",
+            padding:"0 16px 16px"
+          },
+          children:[(0,r.jsxs)("button",{
+            type:"button",
+            onClick:()=>b(e=>!e),
+            style:_,
+            children:[(0,r.jsx)("span",{
+              children:"Element details"
+            }),(0,r.jsx)("div",{
+              style:{
+                transform:x?"rotate(-180deg)":"rotate(0deg)",
+                transition:"transform 0.2s ease-in-out",
+                height:"10px"
+              },
+              children:(0,r.jsx)(M.Z,{})
+            }),x&&(0,r.jsx)(W.Z,{
+              title:y?"Copied!":"Copy element key",
+              children:(0,r.jsx)("button",{
+                type:"button",
+                onClick:e=>e.stopPropagation(),
+                "aria-label":"Copy element key",
+                style:Z,
+                children:(0,r.jsx)(D.CopyToClipboard,{
+                  text:t,
+                  onCopy:k,
+                  children:(0,r.jsx)(L.Z,{})
+                })
+              })
+            })]
+          }),x&&(t.length>600?(0,r.jsx)(W.Z,{
+            title:t,
+            placement:"top",
+            children:(0,r.jsxs)("div",{
+              style:O,
+              children:[t.slice(0,600),"..."]
+            })
+          }):(0,r.jsx)("div",{
+            style:O,
+            children:t
+          })),(0,r.jsxs)("button",{
+            onClick:S,
+            type:"button",
+            className:"web-heatmap-tt-btn",
+            style:H,
+            children:[(0,r.jsx)(T.Z,{}),"Watch sessions"]
+          })]
+        }):(0,r.jsx)("div",{
+          style:B,
+          children:"Click to see actions"
+        })]
+      })
+    },
+    q=e=>(0,r.jsxs)("svg",{
+      width:99,
+      height:81,
+      fill:"none",
+      xmlns:"http://www.w3.org/2000/svg",
+      ...e,
+      children:[(0,r.jsx)("rect",{
+        x:1.041,
+        y:6.505,
+        width:79.617,
+        height:73.493,
+        rx:6.124,
+        stroke:"#131E33",
+        strokeWidth:1.531
+      }),(0,r.jsx)("path",{
+        stroke:"#131E33",
+        strokeWidth:1.531,
+        d:"M1.041 22.584h79.617"
+      }),(0,r.jsx)("circle",{
+        cx:9.463,
+        cy:14.927,
+        r:2.297,
+        fill:"#131E33"
+      }),(0,r.jsx)("circle",{
+        cx:17.119,
+        cy:14.927,
+        r:2.297,
+        fill:"#131E33"
+      }),(0,r.jsx)("circle",{
+        cx:24.773,
+        cy:14.927,
+        r:2.297,
+        fill:"#131E33"
+      }),(0,r.jsx)("rect",{
+        x:7.549,
+        y:29.857,
+        width:19.139,
+        height:.766,
+        rx:.383,
+        stroke:"#131E33",
+        strokeWidth:.766
+      }),(0,r.jsx)("rect",{
+        x:7.549,
+        y:35.982,
+        width:13.014,
+        height:.766,
+        rx:.383,
+        stroke:"#131E33",
+        strokeWidth:.766
+      }),(0,r.jsx)("rect",{
+        x:7.549,
+        y:42.107,
+        width:13.014,
+        height:.766,
+        rx:.383,
+        stroke:"#131E33",
+        strokeWidth:.766
+      }),(0,r.jsx)("rect",{
+        x:7.549,
+        y:55.883,
+        width:13.014,
+        height:.766,
+        rx:.383,
+        stroke:"#131E33",
+        strokeWidth:.766
+      }),(0,r.jsx)("rect",{
+        x:7.549,
+        y:62.008,
+        width:19.139,
+        height:.766,
+        rx:.383,
+        stroke:"#131E33",
+        strokeWidth:.766
+      }),(0,r.jsx)("rect",{
+        x:7.549,
+        y:68.133,
+        width:13.014,
+        height:.766,
+        rx:.383,
+        stroke:"#131E33",
+        strokeWidth:.766
+      }),(0,r.jsx)("rect",{
+        x:32.428,
+        y:30.24,
+        width:41.34,
+        height:41.34,
+        rx:2.297,
+        fill:"#fff",
+        stroke:"#131E33",
+        strokeWidth:1.531
+      }),(0,r.jsx)("path",{
+        fillRule:"evenodd",
+        clipRule:"evenodd",
+        d:"M53.1 41.98a8.931 8.931 0 0 1 8.93 8.93 8.931 8.931 0 0 1-8.93 8.932 8.931 8.931 0 0 1-8.932-8.931 8.931 8.931 0 0 1 8.931-8.931Zm0 1.786a7.146 7.146 0 1 0 0 14.29 7.146 7.146 0 0 0 0-14.29Zm0 8.038c1.131 0 2.167.422 2.954 1.116a.894.894 0 0 1-1.183 1.34 2.68 2.68 0 0 0-3.544 0 .894.894 0 0 1-1.181-1.34 4.465 4.465 0 0 1 2.953-1.116Zm-3.127-4.466a1.34 1.34 0 1 1 0 2.68 1.34 1.34 0 0 1 0-2.68Zm6.252 0a1.34 1.34 0 1 1 0 2.68 1.34 1.34 0 0 1 0-2.68Z",
+        fill:"#131E33"
+      }),(0,r.jsx)("path",{
+        d:"M77.405 3.063a9.342 9.342 0 0 0-9.378 9.377 9.342 9.342 0 0 0 9.378 9.378 9.343 9.343 0 0 0 9.378-9.378 9.342 9.342 0 0 0-9.378-9.377Zm9.378 19.032-1.241-1.241-.538.459a11.713 11.713 0 0 1-7.599 2.802l-.579-.014a11.675 11.675 0 0 1-7.257-3.006l-.42-.4A11.674 11.674 0 0 1 85.241 3.786l.42.399c2.189 2.189 3.42 5.16 3.42 8.255-.001 2.892-1.06 5.55-2.805 7.6l-.458.538.5.5.742.74h1.511l8.804 8.804-1.788 1.788-8.804-8.804v-1.511Z",
+        fill:"#fff",
+        stroke:"#131E33",
+        strokeWidth:1.531
+      }),(0,r.jsx)("circle",{
+        cx:77.597,
+        cy:12.63,
+        r:9.187,
+        fill:"#fff"
+      }),(0,r.jsx)("path",{
+        d:"M71.47 13.219c0-1.183.33-2.35.99-3.502.659-1.15 1.56-2.169 2.706-3.054a.61.61 0 0 1 .7-.083c.249.121.373.315.373.58v.312c0 .519.238.987.715 1.406.476.42 1.024.63 1.644.63.244 0 .484-.043.718-.126.234-.084.456-.202.664-.356a.578.578 0 0 1 .344-.126.514.514 0 0 1 .342.125 5.458 5.458 0 0 1 1.37 1.882 5.62 5.62 0 0 1 .491 2.312c0 1.209-.344 2.28-1.031 3.214a5.408 5.408 0 0 1-2.641 1.957c.284-.245.507-.537.667-.876a2.66 2.66 0 0 0 .035-2.124 2.694 2.694 0 0 0-.59-.881l-1.968-1.925-1.948 1.925c-.26.26-.462.552-.604.876a2.547 2.547 0 0 0-.212 1.032c0 .391.08.756.24 1.097.161.34.384.632.668.876a5.404 5.404 0 0 1-2.64-1.957c-.688-.934-1.032-2.005-1.032-3.214Zm5.529.468 1.405 1.38c.183.183.324.388.422.614.098.226.147.472.147.736 0 .534-.192.99-.576 1.368a1.92 1.92 0 0 1-1.398.567 1.92 1.92 0 0 1-1.398-.567 1.85 1.85 0 0 1-.576-1.368c0-.252.046-.491.14-.718.092-.227.236-.438.429-.632l1.405-1.38Z",
+        fill:"#131E33"
+      })]
+    });
+    let V=w.default.div.withConfig({
+      componentId:"sc-f12cd02a-0"
+    })(["position:absolute;top:0;left:0;right:0;bottom:0;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:10000;pointer-events:none;margin-top:-40px;;"]),
+    U=w.default.div.withConfig({
+      componentId:"sc-f12cd02a-1"
+    })(["display:flex;flex-direction:column;align-items:center;justify-content:center;background:rgba(255,255,255,0.98);border-radius:8px;padding:32px;max-width:535px;width:80%;box-shadow:0 4px 12px rgba(0,0,0,0.1);> svg{margin-bottom:30px;}"]),
+    K=w.default.h3.withConfig({
+      componentId:"sc-f12cd02a-2"
+    })(["margin:0 0 12px 0;color:",";font-size:18px;font-weight:500;text-align:center;"],j.r.colors.surface500.toString()),
+    G=w.default.p.withConfig({
+      componentId:"sc-f12cd02a-3"
+    })(["margin:0;color:",";font-size:16px;text-align:center;line-height:18px;"],j.r.colors.surface300.toString());
+    var X=()=>(0,r.jsx)(V,{
+      children:(0,r.jsxs)(U,{
+        children:[(0,r.jsx)(q,{}),(0,r.jsx)(K,{
+          children:"We couldn't find any interaction data for this screen."
+        }),(0,r.jsx)(G,{
+          children:"Try changing the date range or filters, or choose a different screen."
+        })]
+      })
+    }),
+    Y=(0,o.memo)(e=>{
+      let{
+        overlays:t,
+        iframeScale:n,
+        containerRef:i,
+        iframeLoaded:l,
+        deviceType:a,
+        opacity:s=.3,
+        tooltipContainer:c,
+        rankVisible:d
+      }=e,
+      u=o.useRef(null),
+      [p,f]=o.useState(null),
+      h=o.useRef(null),
+      g=o.useCallback(e=>{
+        u.current=e,
+        h.current&&clearTimeout(h.current),
+        h.current=setTimeout(()=>{
+          f(e)
+        },50)
+      },[]),
+      m=o.useCallback(()=>{
+        var e;
+        (null===(e=u.current)||void 0===e?void 0:e.overlayElement)&&(u.current.overlayElement.style.opacity="0.3",u.current.overlayElement.style.border="none"),
+        g(null)
+      },[g]);
+      o.useEffect(()=>()=>{
+        h.current&&clearTimeout(h.current)
+      },[]),
+      o.useEffect(()=>{
+        var e;
+        function t(e){
+          let t=e.target;
+          t.closest(".uxc-heatmap-overlay")||t.closest('[data-tooltip-container="true"]')||m()
+        }
+        document.addEventListener("click",t);
+        let n=null;
+        return l&&(null==i?void 0:null===(e=i.current)||void 0===e?void 0:e.contentDocument)&&(n=i.current.contentDocument).addEventListener("click",t),
+        ()=>{
+          document.removeEventListener("click",t),
+          n&&n.removeEventListener("click",t)
+        }
+      },[m,l,i]);
+      let v=(0,o.useCallback)((e,t,n)=>{
+        let r=e.x-n;
+        return r<0?{
+          left:e.x+e.width+n-t,
+          isRightPositioned:!0
+        }:{
+          left:r,
+          isRightPositioned:!1
+        }
+      },[]),
+      x=(0,o.useMemo)(()=>t.map(e=>{
+        let{
+          key:t,
+          ogKey:o,
+          value:i,
+          box:l,
+          percentage:a,
+          gradientPercentage:c,
+          totalClicks:f,
+          totalScreenVisits:h,
+          clickThroughRate:m,
+          depth:x,
+          rank:b
+        }=e,
+        y=(null==p?void 0:p.isActive)&&(null==p?void 0:p.key)===t,
+        w=e=>{
+          e.stopPropagation();
+          let n=e.currentTarget,
+          r=u.current;
+          if(null==r?void 0:r.isActive){
+            n!==r.overlayElement?g({
+              key:t,
+              ogKey:o,
+              overlayElement:n,
+              value:i,
+              percentage:a,
+              isActive:!1,
+              totalClicks:f,
+              totalScreenVisits:h,
+              clickThroughRate:m
+            }):g(null);
+            return
+          }
+          g({
+            overlayElement:n,
+            value:i,
+            percentage:a,
+            isActive:!0,
+            totalClicks:f,
+            totalScreenVisits:h,
+            clickThroughRate:m,
+            key:t,
+            ogKey:o
+          })
+        },
+        k=1/n,
+        C=s,
+        E="none";
+        y?(C=Math.min(s+.3,1),E="".concat(2*k,"px solid white")):p&&!p.isActive&&p.key===t&&(C=Math.min(s+.3,1),E="".concat(2*k,"px solid white"));
+        let S={
+          position:"absolute",
+          display:"flex",
+          alignItems:"center",
+          justifyContent:"center",
+          color:"white",
+          fontSize:"20px",
+          fontWeight:"bold",
+          textShadow:"1px 1px 1px black",
+          top:"".concat(l.y,"px"),
+          left:"".concat(l.x,"px"),
+          width:"".concat(l.width,"px"),
+          height:"".concat(l.height,"px"),
+          backgroundColor:"rgba(255, 0, 0, 0.3)",
+          zIndex:9999+x,
+          pointerEvents:"auto",
+          boxSizing:"border-box",
+          opacity:C,
+          border:E,
+          background:"linear-gradient(to right, rgb(244,214,94) 0%, rgb(255,162,101) 50%, rgb(244,88,76) 100%)",
+          backgroundSize:"100000px 100000px",
+          backgroundPosition:"".concat(Math.round(100*c),"% 0%"),
+          backgroundRepeat:"no-repeat",
+          backgroundAttachment:"fixed",
+          cursor:"pointer",
+          transition:"opacity 0.2s ease, border 0.2s ease"
+        },
+        R=18/n,
+        I=18/n,
+        T=v(l,R,20/n),
+        M=p&&p.key===t,
+        W=!p||M,
+        L={
+          position:"absolute",
+          top:l.y,
+          left:T.left,
+          width:R,
+          height:I,
+          background:M?j.r.colors.primarySky.toString():j.r.colors.surface05.toString(),
+          color:M?j.r.colors.primarySnow.toString():j.r.colors.primaryMidnight.toString(),
+          fontSize:"".concat(8/n,"px"),
+          zIndex:10001+x,
+          boxShadow:"0 1px 4px rgba(0,0,0,0.18)",
+          pointerEvents:"none",
+          userSelect:"none",
+          display:W?"flex":"none",
+          alignItems:"center",
+          justifyContent:"center",
+          opacity:W?1:0,
+          transition:"background-color 0.2s ease, color 0.2s ease, opacity 0.2s ease"
+        };
+        return(0,r.jsxs)(r.Fragment,{
+          children:[d&&(0,r.jsx)("div",{
+            style:L,
+            children:b
+          },"rank-badge-".concat(t)),(0,r.jsx)("div",{
+            className:"uxc-heatmap-overlay",
+            style:S,
+            role:"button",
+            tabIndex:0,
+            "aria-label":"Heatmap overlay for ".concat(t),
+            onClick:w,
+            onKeyDown:e=>{
+              ("Enter"===e.key||" "===e.key)&&w(e)
+            },
+            onMouseEnter:e=>{
+              let n=e.currentTarget,
+              r=u.current;
+              r&&r.isActive||g({
+                overlayElement:n,
+                value:i,
+                percentage:a,
+                isActive:!1,
+                totalClicks:f,
+                totalScreenVisits:h,
+                clickThroughRate:m,
+                key:t,
+                ogKey:o
+              })
+            },
+            onMouseLeave:e=>{
+              let t=e.currentTarget,
+              n=u.current;
+              n&&!n.isActive&&n.overlayElement===t&&setTimeout(()=>{
+                u.current&&!u.current.isActive&&u.current.overlayElement===t&&g(null)
+              },100)
+            }
+          },t)]
+        })
+      }),[v,n,s,t,d,p,g]),
+      b=(0,o.useMemo)(()=>p&&S.createPortal((0,r.jsx)(F,{
+        elementKey:p.ogKey,
+        overlayElement:p.overlayElement,
+        value:p.value,
+        percentage:p.percentage,
+        iframeScale:n,
+        onClose:m,
+        isActive:p.isActive,
+        containerRef:i,
+        deviceType:a,
+        totalClicks:p.totalClicks,
+        totalScreenVisits:p.totalScreenVisits,
+        clickThroughRate:p.clickThroughRate
+      }),c||document.body),[p,n,m,i,a,c]),
+      y=(0,o.useMemo)(()=>0===t.length&&c&&S.createPortal((0,r.jsx)(X,{}),c),[t.length,c]);
+      return l?(0,r.jsxs)(r.Fragment,{
+        children:[(0,r.jsx)("div",{
+          className:"uxc-heatmap-background-overlay",
+          style:{
+            position:"fixed",
+            top:0,
+            left:0,
+            right:0,
+            bottom:0,
+            backgroundColor:"#161E351A",
+            zIndex:9998,
+            pointerEvents:"none"
+          }
+        }),t.length>0&&x,b,y]
+      }):null
+    });
+    let $=e=>{
+      switch(e){
+        case"DESKTOP":default:return{
+          width:1920,
+          height:1080
+        };
+        case"PHONE":return{
+          width:375,
+          height:667
+        };
+        case"TABLET":return{
+          width:768,
+          height:1024
+        }
+      }
+    },
+    J=function(e){
+      let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{};
+      if(!e)return"";
+      let n=["active","inactive","hover","hovered","hovering","focus","focused","focusing","selected","unselected","pressed","unpressed","touched","untouched","visited","unvisited","checked","unchecked","disabled","enabled","loading","loaded","open","closed","expanded","collapsed","visible","hidden","current","past","future","sticky"].flatMap(e=>[e,".*-".concat(e),"".concat(e,"-.*")]),
+      r=()=>{
+        let e=n.join("|");
+        return RegExp("^(".concat(e,")$"),"i")
+      },
+      o=t.removeStateClasses?e=>r().test(e):()=>!1;
+      if(e.startsWith("#"))return"#".concat(CSS.escape(e.slice(1)));
+      let i=e,
+      l=e.indexOf(":nth-child")>-1;
+      l&&(i=i.slice(0,i.indexOf(":nth-child")));
+      let a=l?e.slice(e.indexOf(":nth-child")):"",
+      [s,...c]=i.split("."),
+      d=s?CSS.escape(s):"",
+      u=(t.removeStateClasses?c.filter(e=>!o(e)):c).map(e=>".".concat(CSS.escape(e)));
+      return"".concat(d).concat(u.join("")).concat(a)
+    },
+    Q=e=>e.nodeType===Node.DOCUMENT_FRAGMENT_NODE&&"host"in e,
+    ee=e=>{
+      let t=0,
+      n=e;
+      for(;n&&n!==document.documentElement;){
+        t+=1;
+        let e=n.parentNode;
+        e&&Q(e)?n=e.host:e&&e.nodeType===Node.ELEMENT_NODE?n=e:n=null
+      }
+      return t
+    },
+    et=e=>{
+      let t=e.getBoundingClientRect(),
+      n=window.getComputedStyle(e);
+      return{
+        area:t.width*t.height,
+        isPositioned:["absolute","fixed","relative","sticky"].includes(n.position),
+        hasHigherSpecificity:e.matches('.nav-button, .modal, .dropdown, .tooltip, [data-priority="high"]')
+      }
+    },
+    en=e=>{
+      let t=ee(e);
+      return Math.round(2e3-(Math.max(100,Math.min(et(e).area,1e4))-100)/9900*1e3)+t
+    },
+    er=(e,t)=>{
+      var n,
+      r;
+      let o=(null===(n=t.contentDocument)||void 0===n?void 0:n.documentElement.scrollWidth)||0,
+      i=(null===(r=t.contentDocument)||void 0===r?void 0:r.documentElement.scrollHeight)||0,
+      l=e.getBoundingClientRect(),
+      a=l.width,
+      s=l.height,
+      c=a/o,
+      d=s/i;
+      return c>.95&&d>.95||c>.9&&d>.9
+    },
+    eo=w.default.div.withConfig({
+      componentId:"sc-ff62949b-0"
+    })(["width:100%;margin:10px;position:relative;overflow:hidden;"]),
+    ei=w.default.div.withConfig({
+      componentId:"sc-ff62949b-1"
+    })(["position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none;iframe{pointer-events:initial;}"]),
+    el=o.memo(e=>{
+      let{
+        time:t,
+        src:n,
+        deviceType:i,
+        clickData:l,
+        topElements:a,
+        totalScreenVisits:s=0,
+        opacity:c=.3,
+        rankVisible:d=!0
+      }=e,
+      u=o.useMemo(()=>$(i),[i]),
+      p=o.useRef(),
+      f=o.useRef(),
+      [h,g]=o.useState(!1),
+      [m,v]=o.useState(1),
+      x=o.useRef(null),
+      b=o.useRef(null),
+      w=o.useMemo(()=>{
+        let e=Object.entries(l),
+        t=e.reduce((e,t)=>{
+          let[,n]=t;
+          return e+n
+        },0);
+        return{
+          entries:e.sort((e,t)=>{
+            let[,n]=e,
+            [,r]=t;
+            return r-n
+          }),
+          totalClicks:t,
+          maxClicks:Math.max(...e.map(e=>{
+            let[,t]=e;
+            return t
+          })),
+          minClicks:Math.min(...e.map(e=>{
+            let[,t]=e;
+            return t
+          }))
+        }
+      },[l]),
+      C=o.useCallback(e=>{
+        var t,
+        n;
+        if(!(null===(t=x.current)||void 0===t?void 0:t.contentDocument))return null;
+        try{
+          let t=e.split(">>>").map(e=>e.trim()),
+          r=x.current.contentDocument,
+          o=null,
+          i=null,
+          l=!1,
+          a=[];
+          for(let e=0;e<t.length-1;e+=1){
+            if(!r)return null;
+            let n=t[e].split(" > ").map(e=>J(e)).join(" > "),
+            s=r.querySelector(n);
+            if(!s)return null;
+            if("IFRAME"===s.tagName){
+              if(!s.contentDocument)return null;
+              a.push(s),
+              o=s,
+              r=s.contentDocument,
+              l=!0
+            }
+            else{
+              if(!s.shadowRoot)return null;
+              r=s.shadowRoot,
+              l=!1
+            }
+            i=s
+          }
+          let s=t[t.length-1];
+          if(!r)return null;
+          if(!s){
+            if(!i)return null;
+            let e=t.slice(0,-1).join(" >>> ");
+            if(l){
+              let t=a.length>1?a[a.length-2]:null;
+              return{
+                key:e,
+                element:i,
+                iframeElement:t,
+                iframeChain:a.slice(0,-1),
+                contextWindow:(null==t?void 0:t.contentWindow)||x.current.contentWindow||null
+              }
+            }
+            return{
+              key:e,
+              element:i,
+              iframeElement:o,
+              iframeChain:a,
+              contextWindow:(null==o?void 0:o.contentWindow)||x.current.contentWindow||null
+            }
+          }
+          let c=s.split(" > "),
+          d=c.map(e=>J(e)).join(" > "),
+          u=r.querySelector(d);
+          if(!u){
+            let e=c.map(e=>J(e,{
+              removeStateClasses:!0
+            })).join(" > ");
+            e!==d&&(u=r.querySelector(e))&&(d=e)
+          }
+          if(!u)return null;
+          let p=u.getBoundingClientRect();
+          if(0===p.width||0===p.height)return null;
+          let f=(null===(n=u.ownerDocument.defaultView)||void 0===n?void 0:n.getComputedStyle(u))||window.getComputedStyle(u);
+          if("none"===f.display||"hidden"===f.visibility||"0"===f.opacity)return null;
+          return{
+            key:[...t.slice(0,-1),d].join(" >>> "),
+            element:u,
+            iframeElement:o,
+            iframeChain:a,
+            contextWindow:(null==o?void 0:o.contentWindow)||x.current.contentWindow||null
+          }
+        }
+        catch(e){
+          return null
+        }
+      },[]),
+      S=o.useCallback(()=>{
+        var e,
+        t,
+        n;
+        if(!(null===(e=x.current)||void 0===e?void 0:e.contentDocument))return[];
+        let{
+          entries:r,
+          totalClicks:o,
+          maxClicks:i,
+          minClicks:l
+        }=w,
+        c=i-l,
+        d=[];
+        r.forEach(e=>{
+          let[t,n]=e,
+          r=C(t);
+          if(r){
+            let e=r.iframeElement||x.current;
+            e&&!er(r.element,e)&&d.push([r,n,t])
+          }
+        });
+        let u=d.slice(0,a),
+        p=[],
+        f=(null===(t=x.current.contentWindow)||void 0===t?void 0:t.scrollX)||0,
+        h=(null===(n=x.current.contentWindow)||void 0===n?void 0:n.scrollY)||0,
+        {
+          body:g
+        }=x.current.contentDocument,
+        m=g.getBoundingClientRect(),
+        v=Math.max(g.scrollWidth,m.width),
+        b=Math.max(g.scrollHeight,m.height);
+        for(let e=0;e<u.length;e+=1){
+          let[t,n,r]=u[e],
+          {
+            key:i,
+            element:a,
+            iframeChain:d
+          }=t;
+          try{
+            let t=a.getBoundingClientRect(),
+            u=t.left+f,
+            g=t.top+h;
+            if(d.length>0){
+              let e=d.reduce((e,t)=>{
+                let n=t.getBoundingClientRect();
+                return{
+                  left:e.left+n.left,
+                  top:e.top+n.top
+                }
+              },{
+                left:f,
+                top:h
+              });
+              u=e.left+t.left,
+              g=e.top+t.top
+            }
+            let{
+              width:m
+            }=t,
+            {
+              height:x
+            }=t;
+            if(u<0&&(m+=u,u=0),g<0&&(x+=g,g=0),u+m>v&&(m=v-u),g+x>b&&(x=b-g),m<=0||x<=0)continue;
+            let y=new DOMRect(u,g,m,x),
+            w=o>0?n/o:0,
+            k=1;
+            c>0&&(k=(n-l)/c);
+            let C=s>0?n/s:0,
+            E=en(a);
+            p.push({
+              key:i,
+              ogKey:r,
+              value:n,
+              box:y,
+              percentage:w,
+              gradientPercentage:k,
+              totalClicks:o,
+              totalScreenVisits:s,
+              clickThroughRate:C,
+              depth:E,
+              rank:e+1
+            })
+          }
+          catch(e){
+            console.warn("Error calculating overlay for ".concat(i,":"),e)
+          }
+        }
+        return p.sort((e,t)=>t.depth-e.depth)
+      },[w,a,s,C]),
+      j=o.useCallback(()=>{
+        var e,
+        t;
+        if(h&&(null===(e=x.current)||void 0===e?void 0:e.contentDocument))try{
+          let e=x.current.contentDocument.querySelector("#uxc-heatmap");
+          e||((e=document.createElement("div")).id="uxc-heatmap",Object.assign(e.style,{
+            position:"absolute",
+            top:"0",
+            left:"0",
+            width:"100vw",
+            height:"100vh",
+            pointerEvents:"none",
+            zIndex:"9999999999"
+          }),null===(t=x.current.contentDocument)||void 0===t||t.documentElement.appendChild(e));
+          let n=S();
+          b.current||(b.current=k.createRoot(e)),
+          b.current.render((0,r.jsx)(Y,{
+            overlays:n,
+            iframeScale:m,
+            containerRef:{
+              current:x.current
+            },
+            iframeLoaded:h,
+            deviceType:i,
+            opacity:c,
+            tooltipContainer:f.current,
+            rankVisible:d
+          }))
+        }
+        catch(e){
+          console.error("Error drawing heatmap:",e)
+        }
+      },[h,S,m,i,c,d]),
+      R=o.useRef();
+      o.useEffect(()=>(R.current=E()(()=>{
+        j()
+      },16),()=>{
+        var e;
+        null===(e=R.current)||void 0===e||e.cancel()
+      }),[]),
+      o.useEffect(()=>{
+        R.current&&(R.current.cancel(),R.current=E()(()=>{
+          j()
+        },16))
+      },[j]);
+      let I=o.useCallback(()=>{
+        var e;
+        null===(e=R.current)||void 0===e||e.call(R)
+      },[]),
+      T=o.useMemo(()=>E()(()=>{
+        j()
+      },50),[j]);
+      o.useEffect(()=>{
+        f.current&&(x.current=f.current.querySelector("iframe"))
+      },[h]),
+      o.useEffect(()=>(T(),()=>{
+        T.cancel()
+      }),[c,h,T,a,m]);
+      let M=o.useCallback(()=>{
+        let e=f.current,
+        t=null==e?void 0:e.querySelector("iframe");
+        if(!e||!t)return;
+        let n=$(i),
+        r=e.getBoundingClientRect();
+        if(n&&r){
+          let e=Math.min(r.width/n.width,r.height/n.height);
+          t.style.transform="scale(".concat(e,")"),
+          v(e)
+        }
+      },[i]),
+      W=o.useCallback(()=>{
+        let e;
+        let t=f.current;
+        if(!t)return;
+        let n=t.querySelector("iframe");
+        if(!n||!n.contentDocument||!n.contentDocument.body)return;
+        x.current=n;
+        let r=()=>{
+          try{
+            let e=n.contentDocument;
+            if(!e)return;
+            let t=[],
+            r=new ResizeObserver(I);
+            r.observe(e.documentElement),
+            r.observe(e.body),
+            t.push(()=>r.disconnect());
+            let o=new MutationObserver(e=>{
+              e.some(e=>{
+                let t=e.target;
+                return!("uxc-heatmap"===t.id||t.closest("#uxc-heatmap"))&&("attributes"===e.type&&("style"===e.attributeName||"class"===e.attributeName)||"childList"===e.type&&(e.addedNodes.length>0||e.removedNodes.length>0))
+              })&&I()
+            });
+            o.observe(e.documentElement,{
+              childList:!0,
+              subtree:!0,
+              attributes:!0,
+              attributeFilter:["style","class"],
+              characterData:!1
+            }),
+            t.push(()=>o.disconnect()),
+            e.fonts&&(e.fonts.addEventListener("loadingdone",I),e.fonts.addEventListener("loadingerror",I),t.push(()=>{
+              e.fonts.removeEventListener("loadingdone",I),
+              e.fonts.removeEventListener("loadingerror",I)
+            }));
+            let i=()=>{
+              let t=E()(()=>{
+                I()
+              },10),
+              n=[],
+              r=e=>{
+                var r;
+                let o=()=>t();
+                e.addEventListener("scroll",o,{
+                  passive:!0,
+                  capture:!0
+                }),
+                null===(r=e.documentElement)||void 0===r||r.addEventListener("scroll",o,{
+                  passive:!0,
+                  capture:!0
+                }),
+                n.push(()=>{
+                  var t;
+                  e.removeEventListener("scroll",o,{
+                    capture:!0
+                  }),
+                  null===(t=e.documentElement)||void 0===t||t.removeEventListener("scroll",o,{
+                    capture:!0
+                  })
+                }),
+                Array.from(e.querySelectorAll("*")).filter(e=>{
+                  let t=getComputedStyle(e),
+                  n=e.scrollHeight>e.clientHeight||e.scrollWidth>e.clientWidth,
+                  r=["auto","scroll","visible"].some(e=>[t.overflow,t.overflowY,t.overflowX].includes(e));
+                  return n&&r
+                }).forEach(e=>{
+                  e.addEventListener("scroll",o,{
+                    passive:!0,
+                    capture:!0
+                  }),
+                  n.push(()=>e.removeEventListener("scroll",o,{
+                    capture:!0
+                  }))
+                })
+              };
+              r(e);
+              let o=e.querySelectorAll("iframe"),
+              i=e=>{
+                try{
+                  let o=e.contentDocument;
+                  if(o&&"complete"===o.readyState){
+                    r(o);
+                    let i=e.contentWindow;
+                    if(i){
+                      let e=()=>t();
+                      i.addEventListener("scroll",e,{
+                        passive:!0,
+                        capture:!0
+                      }),
+                      n.push(()=>i.removeEventListener("scroll",e,{
+                        capture:!0
+                      }))
+                    }
+                  }
+                  else o&&e.addEventListener("load",()=>{
+                    i(e)
+                  },{
+                    once:!0
+                  })
+                }
+                catch(e){}
+              };
+              return o.forEach(e=>{
+                i(e)
+              }),
+              ()=>{
+                t.cancel(),
+                n.forEach(e=>e())
+              }
+            },
+            l=()=>{
+              e.querySelectorAll("a, button, input").forEach(e=>{
+                e.onclick=e=>e.preventDefault(),
+                e.setAttribute("tabindex","-1"),
+                e.style.pointerEvents="none",
+                e.style.cursor="default"
+              })
+            },
+            a=()=>{
+              e.documentElement.scrollTop=0,
+              e.documentElement.scrollLeft=0,
+              l();
+              let n=i();
+              t.push(n),
+              g(!0),
+              setTimeout(I,200)
+            };
+            Object.assign(n.style,{
+              height:"".concat(u.height,"px"),
+              width:"".concat(u.width,"px")
+            }),
+            M(),
+            (()=>{
+              let t=0,
+              n=()=>{
+                if(t>50){
+                  a();
+                  return
+                }
+                let r=e.querySelectorAll('link[rel="stylesheet"]');
+                0===r.length||Array.from(r).every(e=>e.sheet&&!e.disabled)?a():(t+=1,setTimeout(n,200))
+              };
+              n()
+            })()
+          }
+          catch(e){
+            console.error("Error setting up iframe:",e),
+            g(!0)
+          }
+        },
+        o=()=>{
+          var e;
+          if((null===(e=n.contentDocument)||void 0===e?void 0:e.readyState)==="complete")return r();
+          setTimeout(o,100)
+        },
+        i=o(),
+        l=new ResizeObserver(()=>{
+          e&&clearTimeout(e),
+          e=setTimeout(M,100)
+        });
+        return t&&l.observe(t),
+        ()=>{
+          e&&clearTimeout(e),
+          l.disconnect(),
+          i&&i()
+        }
+      },[I,u.height,u.width,M]);
+      o.useEffect(()=>{
+        let e=()=>{
+          if(p.current){
+            p.current.addEventListener("frameloaded",W);
+            return
+          }
+          setTimeout(e,100)
+        };
+        e()
+      },[p,W]);
+      let L=o.useMemo(()=>({
+        time:t
+      }),[t]);
+      return(0,r.jsx)(eo,{
+        ref:f,
+        children:(0,r.jsx)(ei,{
+          children:(0,r.jsx)(y.Z,{
+            src:n,
+            autoPlay:!1,
+            videoRef:p,
+            skipInactivity:!1,
+            heatmap:L
+          },n)
+        })
+      })
+    });
+    var ea=n(3284),
+    es=n(39284);
+    let ec={
+      Container:w.default.div.withConfig({
+        componentId:"sc-362473f2-0"
+      })(["position:relative;"]),
+      Header:w.default.div.withConfig({
+        componentId:"sc-362473f2-1"
+      })(["display:flex;justify-content:space-between;align-items:center;padding:0px 13px;background-color:#f5f5f5;border-bottom:1px solid #c0cad9b2;height:55px;"]),
+      ShareSessionWrap:w.default.div.withConfig({
+        componentId:"sc-362473f2-2"
+      })(["margin-left:auto;"]),
+      SplitColumn:w.default.div.withConfig({
+        componentId:"sc-362473f2-3"
+      })(["display:flex;flex-wrap:wrap;"]),
+      TableSection:w.default.div.withConfig({
+        componentId:"sc-362473f2-4"
+      })(["width:20%;> div > div{max-height:calc(100vh - 250px);}tr{height:30px;border:none;> td:not([data-group-header]){padding-left:0px !important;}> td[data-group-header]{padding-left:8px !important;}&:hover{color:initial;}}th,td,tr{background-color:white;}"]),
+      ReplaySection:w.default.div.withConfig({
+        componentId:"sc-362473f2-5"
+      })(["width:55%;border-radius:4px;"]),
+      ReplaySidebar:w.default.div.withConfig({
+        componentId:"sc-362473f2-6"
+      })(["width:25%;background:#ffffff;border-radius:4px;flex-grow:1;overflow:hidden;border-left:1px solid #c0cad9;height:calc(100vh - 190px);.session-info,.note-info{height:calc(100vh - 240px);min-height:calc(100vh - 240px);}.note-info{.session-note-list{max-height:calc(100vh - 440px);}}.event-wrapper{.event-item.active{background:#e6eeff;}.item-header.active{background:#e6eeff;}}"])
+    },
+    ed=w.default.button.withConfig({
+      componentId:"sc-362473f2-7"
+    })(["border:none;background-color:#ffffff;transition:all 0.2s ease;border-radius:50%;height:24px;width:24px;padding:0;margin:0;margin-left:8px;cursor:pointer;&:hover{background-color:#eff5ff;}img{margin-top:-1px;}"]),
+    eu=(0,w.default)(es.default).withConfig({
+      componentId:"sc-362473f2-8"
+    })(["&::-webkit-scrollbar{width:5px;height:5px;}&::-webkit-scrollbar-track{border-radius:6px;}&::-webkit-scrollbar-thumb{background-color:#babec5;border-radius:6px;transition:background-color 1s;&:hover{background-color:#747c8b;}}.ant-modal-body{padding:0;}"]),
+    ep={
+      CaretIconWrapper:w.default.div.withConfig({
+        componentId:"sc-362473f2-9"
+      })(["height:14px;width:14px;background-color:#fff;display:flex;align-items:center;justify-content:center;border-radius:50%;transform:",";transition:transform 0.2s ease;"],e=>{
+        let{
+          isExpanded:t
+        }=e;
+        return t?"rotate(0deg)":"rotate(180deg)"
+      }),
+      MetaRowTd:w.default.td.withConfig({
+        componentId:"sc-362473f2-10"
+      })(["background-color:",";padding:8px;display:flex;gap:8px;min-width:",";justify-content:space-between;align-items:center;"],e=>{
+        let{
+          isExpanded:t,
+          isActive:n
+        }=e;
+        return n?"#e6f7ff":t?"#EFEFF0":"#fff"
+      },e=>{
+        let{
+          minWidth:t
+        }=e;
+        return t?"".concat(t,"px"):"150px"
+      }),
+      MetaRowTitle:w.default.span.withConfig({
+        componentId:"sc-362473f2-11"
+      })(["font-size:12px;font-weight:500;color:",";"],e=>{
+        let{
+          isActive:t
+        }=e;
+        return t?"#5D97FF":"#161e35"
+      }),
+      MetaRowSubTitle:w.default.span.withConfig({
+        componentId:"sc-362473f2-12"
+      })(["font-size:12px;font-weight:400;color:#a2a5ae;"])
+    },
+    ef={
+      FirstCell:w.default.div.withConfig({
+        componentId:"sc-362473f2-13"
+      })(["display:flex;align-items:center;gap:8px;font-size:12px;font-weight:400;line-height:1;background-color:"," !important;color:"," !important;padding:8px;padding-left:16px;cursor:pointer;transition:background-color 0.2s ease;&:hover:not(.active-row){background-color:#f5f5f5;}svg{color:"," !important;}p{color:"," !important;margin:0;}span{p{color:"," !important;}}"],e=>{
+        let{
+          isActive:t
+        }=e;
+        return t?j.r.colors.primarySky.toString():"transparent"
+      },e=>{
+        let{
+          isActive:t
+        }=e;
+        return t?"#fff":j.r.colors.primaryMidnight.toString()
+      },e=>{
+        let{
+          isActive:t
+        }=e;
+        return t?"#fff":j.r.colors.surface200.toString()
+      },e=>{
+        let{
+          isActive:t
+        }=e;
+        return t?"#fff":j.r.colors.primaryMidnight.toString()
+      },e=>{
+        let{
+          isActive:t
+        }=e;
+        return t?"#fff":"#a2a5ae"
+      })
+    };
+    var eh=n(25409),
+    eg=n(34607),
+    em=n(42405),
+    ev=n(2880),
+    ex=n(99252),
+    eb=n(37586),
+    ey=n(75191),
+    ew=n(5257),
+    ek=n(13354),
+    eC=n(17642),
+    eE=(0,o.memo)(e=>{
+      let{
+        isExpanded:t,
+        groupHeader:n,
+        hasActiveItem:o=!1
+      }=e;
+      return(0,r.jsxs)(ep.MetaRowTd,{
+        colSpan:1,
+        isExpanded:t,
+        isActive:o,
+        "data-group-header":!0,
+        children:[(0,r.jsxs)(ep.MetaRowTitle,{
+          isActive:o,
+          children:[null==n?void 0:n.userName," ",(0,r.jsxs)(ep.MetaRowSubTitle,{
+            children:["Session ",null==n?void 0:n.userSessionRun]
+          })]
+        }),(0,r.jsx)(ep.CaretIconWrapper,{
+          isExpanded:t,
+          children:(0,r.jsx)(eC.Z,{})
+        })]
+      })
+    }),
+    eS=n(61127);
+    let ej=w.default.div.withConfig({
+      componentId:"sc-fb3d548d-0"
+    })(["display:flex;align-items:center;gap:10px;> svg path{fill:",";}span{color:",";font-weight:700;font-size:14px;&:last-of-type{color:",";font-weight:500;}}"],j.r.colors.primaryMidnight.toString(),j.r.colors.primaryMidnight.toString(),j.r.colors.surface300.toString());
+    var eR=(0,o.memo)(e=>{
+      let{
+        currentScreen:t,
+        nextScreen:n
+      }=e;
+      return(0,r.jsxs)(ej,{
+        children:[t&&(0,r.jsx)("span",{
+          children:t
+        }),n&&(0,r.jsx)(eS.Z,{}),n&&(0,r.jsx)("span",{
+          children:n
+        })]
+      })
+    }),
+    eI=(0,o.memo)(e=>{
+      var t,
+      n;
+      let{
+        screenVisitList:i,
+        pagination:l,
+        onPaginationChange:s,
+        appId:c,
+        sessionid:d,
+        open:u,
+        setOpen:p,
+        isLoading:f=!1,
+        setSessionId:g,
+        autoOpenReplay:m=!1,
+        activeSession:v,
+        setOpenReplay:x,
+        currentScreenName:b,
+        entryTime:y,
+        setEntryTime:w
+      }=e,
+      k=(0,ey.n)(),
+      {
+        videoElemRef:C,
+        nextSessionCallbackRef:E,
+        prevSessionCallbackRef:S
+      }=(0,ew.rS)(),
+      {
+        setUserPausedVideo:j
+      }=(0,ew.W4)(),
+      {
+        pagination:R,
+        setPagination:I
+      }=(0,ek.h)(),
+      {
+        urlReducer:T
+      }=(0,a.v9)(e=>e),
+      M=(0,a.I0)(),
+      W=i.flatMap(e=>e.groupItems||[]);
+      (0,o.useEffect)(()=>{
+        l&&I({
+          pageIndex:l.pageIndex,
+          pageSize:l.pageSize
+        })
+      },[l,I]);
+      let L=o.useRef(!1),
+      D=o.useRef(!1),
+      A=o.useRef(null),
+      P=o.useRef(!1),
+      N=o.useRef(null);
+      (0,o.useEffect)(()=>{
+        let e=W.length>0?W[0].id:null,
+        t=e!==A.current;
+        if(W.length>0&&!f&&!d&&t&&(L.current||D.current)){
+          if(L.current){
+            let e=W[0];
+            g(e.id),
+            null==w||w(e.entryTime),
+            L.current=!1
+          }
+          else if(D.current){
+            let e=W[W.length-1];
+            g(e.id),
+            null==w||w(e.entryTime),
+            D.current=!1
+          }
+        }
+        A.current=e
+      },[W,d,g,f,null==l?void 0:l.pageIndex,w]);
+      let z=()=>{
+        null==x||x(!1),
+        null==w||w(null),
+        (null==C?void 0:C.current)&&(C.current.pause(),C.current=null),
+        m&&(window.location.hash="screen-visit"),
+        M({
+          type:"CURRENT_URL",
+          data:{
+            ...T,
+            sessionid:void 0
+          }
+        }),
+        j(!0),
+        p(!1),
+        g(null)
+      },
+      Z=o.useMemo(()=>{
+        let e=new Map;
+        return W.forEach((t,n)=>{
+          e.set(t.id,n)
+        }),
+        e
+      },[W]),
+      _=o.useCallback(e=>{
+        var t;
+        let n=(null===(t=e.rows)||void 0===t?void 0:t.some(e=>e.id===d))||!1;
+        return(0,r.jsx)(eE,{
+          isExpanded:e.isExpanded,
+          groupHeader:e.groupHeader,
+          hasActiveItem:n
+        })
+      },[d]),
+      O=o.useMemo(()=>{
+        if(!d||f)return!1;
+        let e=Z.get(d);
+        if(void 0===e)return!1;
+        let t=e<W.length-1,
+        n=l&&l.pageIndex<l.totalPagination;
+        return t||n
+      },[d,Z,W,f,l]),
+      B=o.useMemo(()=>{
+        if(!d||f)return!1;
+        let e=Z.get(d);
+        if(void 0===e)return!1;
+        let t=l&&l.pageIndex>1;
+        return e>0||t
+      },[d,Z,f,l]),
+      H=o.useCallback(()=>{
+        P.current=!0,
+        N.current&&clearTimeout(N.current),
+        N.current=window.setTimeout(()=>{
+          P.current=!1,
+          N.current=null
+        },1e3)
+      },[]),
+      F=o.useCallback(()=>{
+        if(!d||f)return;
+        H();
+        let e=Z.get(d);
+        if(void 0!==e&&e<W.length-1){
+          let t=W[e+1];
+          g(t.id),
+          null==w||w(t.entryTime)
+        }
+        else if(l&&l.pageIndex<l.totalPagination&&s){
+          let e=l.pageIndex+1;
+          L.current=!0,
+          g(null),
+          s(e)
+        }
+      },[d,Z,W,g,f,l,s,H,w]),
+      q=o.useCallback(()=>{
+        if(!d||f)return;
+        H();
+        let e=Z.get(d);
+        if(void 0!==e&&e>0){
+          let t=W[e-1];
+          g(t.id),
+          null==w||w(t.entryTime)
+        }
+        else if(l&&l.pageIndex>1&&s){
+          let e=l.pageIndex-1;
+          D.current=!0,
+          g(null),
+          s(e)
+        }
+      },[d,Z,W,g,f,l,s,H,w]);
+      (0,o.useEffect)(()=>(E&&(E.current=O?F:null),S&&(S.current=B?q:null),()=>{
+        E&&(E.current=null),
+        S&&(S.current=null)
+      }),[F,q,E,S,O,B]);
+      let V=(0,o.useCallback)(()=>[{
+        accessor:"id",
+        accessorKey:"id",
+        enableSorting:!1,
+        header:"Screen visits",
+        minWidth:300,
+        cell:e=>{
+          let{
+            row:t
+          }=e,
+          {
+            count:n,
+            entryTime:o,
+            duration:i,
+            onRowClick:l,
+            id:a
+          }=t.original||{},
+          s=a===d;
+          return(0,r.jsxs)(ef.FirstCell,{
+            onClick:()=>{
+              H(),
+              l()
+            },
+            className:s?"active-row":"",
+            "data-session-id":a,
+            isActive:s,
+            children:[(0,r.jsx)(eb.Z,{}),(0,r.jsx)("p",{
+              children:"Screen visit"
+            })," ",n,(0,r.jsx)("span",{
+              children:(0,r.jsxs)("p",{
+                children:[(0,ex.sb)(o||0),"/",(0,ex.sb)(i||0)]
+              })
+            })]
+          })
+        }
+      }],[d,H]);
+      (0,o.useEffect)(()=>{
+        u&&v&&T.sessionid!==(null==v?void 0:v.sessionid)&&M({
+          type:"CURRENT_URL",
+          data:{
+            ...T,
+            sessionid:(null==v?void 0:v.sessionid)||null
+          }
+        })
+      },[u,d,M]);
+      let{
+        rewind:U,
+        currentScreen:K
+      }=(0,ew.Lc)();
+      return(0,o.useEffect)(()=>{
+        var e;
+        if((null==C?void 0:null===(e=C.current)||void 0===e?void 0:e.readyState)===4&&null!=y){
+          U(y);
+          let e=setTimeout(()=>{
+            (null==C?void 0:C.current)&&C.current.play().catch(()=>null)
+          },100);
+          return()=>clearTimeout(e)
+        }
+      },[null==C?void 0:null===(t=C.current)||void 0===t?void 0:t.readyState,y,U,C]),
+      (0,o.useEffect)(()=>{
+        if(!W.length||!K||!v||P.current)return;
+        let e=W.filter(e=>e.sessionid===v.sessionid).find(e=>.1>Math.abs(e.entryTime-K.time));
+        e&&e.id!==v.id&&g(e.id)
+      },[K,W,v,g]),
+      (0,o.useEffect)(()=>{
+        if(d&&u){
+          let e=setTimeout(()=>{
+            let e=document.querySelector('[data-session-id="'.concat(d,'"]'));
+            e&&e.scrollIntoView({
+              behavior:"smooth",
+              block:"center",
+              inline:"nearest"
+            })
+          },100);
+          return()=>clearTimeout(e)
+        }
+      },[d,u]),
+      (0,r.jsxs)(ec.Container,{
+        children:[(0,r.jsxs)(ec.Header,{
+          children:[(0,r.jsx)(eR,{
+            currentScreen:b,
+            nextScreen:null==v?void 0:v.nextScreenName
+          }),(0,r.jsx)(ec.ShareSessionWrap,{
+            children:(0,r.jsx)(ev.Z,{
+              selectedSession:!1,
+              shareMultiple:!1
+            })
+          }),(0,r.jsx)(eh.Z,{
+            overlayClassName:"custom-popover",
+            content:"Close"
+          }),(0,r.jsx)(ed,{
+            onClick:()=>z(),
+            children:(0,r.jsx)("img",{
+              src:"/static/sessions/close.svg",
+              alt:""
+            })
+          })]
+        }),(0,r.jsxs)(ec.SplitColumn,{
+          children:[(0,r.jsx)(ec.TableSection,{
+            children:(0,r.jsx)(h.S5,{
+              data:i,
+              columns:V(),
+              resizeMode:"onChange",
+              enableGroupedRows:!0,
+              groupConfig:{
+                defaultCollapsed:!1,
+                metaRowComponent:_
+              },
+              stickyHeaders:["id"],
+              enableSelection:!0,
+              pagination:{
+                ...R,
+                totalPagination:(null==l?void 0:l.totalPagination)||1
+              },
+              isLoading:f,
+              setPagination:I,
+              handleRouteUpdate:e=>{
+                window.location.hash="screen-visit",
+                s&&s(e)
+              }
+            })
+          }),(0,r.jsx)(ec.ReplaySection,{
+            children:(0,r.jsx)(eg.Z,{
+              sessionList:{
+                body:W
+              },
+              appId:c,
+              sessionId:(null==v?void 0:v.sessionid)||"",
+              uploadedOn:null==v?void 0:v.sessionUploadedDateTime,
+              multiScreenSkippedData:k,
+              userId:null==v?void 0:null===(n=v.userProperty)||void 0===n?void 0:n.uxcamuserid,
+              toggleFullScreen:()=>{
+                let e=document.querySelector(".screens-replay-modal");
+                e&&e.classList.toggle("fullscreen")
+              }
+            })
+          }),(0,r.jsx)(ec.ReplaySidebar,{
+            children:(0,r.jsx)(em.default,{
+              multiScreenSkippedData:k,
+              uploadedOn:null==v?void 0:v.sessionUploadedDateTime,
+              detailErrorMessage:""
+            })
+          })]
+        })]
+      })
+    }),
+    eT=(0,o.memo)(function(e){
+      let{
+        open:t,
+        screenVisitList:n,
+        appId:i,
+        sessionid:l,
+        setSessionId:a,
+        setOpen:s,
+        pagination:c,
+        onPaginationChange:d,
+        isLoading:u=!0,
+        autoOpenReplay:p=!1,
+        currentScreenName:f,
+        entryTime:h,
+        setEntryTime:g
+      }=e,
+      [m,v]=o.useState(!1),
+      [x,b]=o.useState(""),
+      [y,w]=o.useState(null),
+      k=(0,o.useCallback)(e=>{
+        g(e)
+      },[g]);
+      o.useEffect(()=>{
+        let{
+          hash:e
+        }=window.location;
+        b(e)
+      },[l,n,p]),
+      (0,o.useEffect)(()=>{
+        "#screen-visit-replay"===x?v(!0):v(!1)
+      },[x]);
+      let C=o.useMemo(()=>n.map(e=>e.isGroupMetaRow?{
+        ...e,
+        groupItems:e.groupItems.map(e=>({
+          ...e,
+          onRowClick:()=>{
+            a(e.id),
+            g(e.entryTime),
+            "#screen-visit-replay"===x&&(window.location.hash="screen-visit")
+          },
+          highlightActiveRow:()=>e.id===l
+        }))
+      }:e),[n,a,g,x,l]);
+      (0,o.useEffect)(()=>{
+        if(m&&C.length>0&&!u){
+          var e,
+          t;
+          let n=null===(t=C[0])||void 0===t?void 0:null===(e=t.groupItems)||void 0===e?void 0:e[0];
+          n&&(s(!0),a(n.id))
+        }
+      },[m,u,C,s,a]);
+      let E=n.flatMap(e=>e.groupItems||[]),
+      S=(0,o.useMemo)(()=>(null==E?void 0:E.find(e=>e.id===l))||y,[E,l,y]);
+      return(0,o.useEffect)(()=>{
+        let e=null==E?void 0:E.find(e=>e.id===l);
+        e&&w(e)
+      },[E,l]),
+      (0,r.jsx)(eu,{
+        centered:!0,
+        closable:!1,
+        visible:t,
+        maskClosable:!1,
+        width:1400,
+        footer:null,
+        destroyOnClose:!0,
+        children:(0,r.jsx)(eI,{
+          open:t,
+          screenVisitList:C,
+          appId:i,
+          sessionid:l,
+          setSessionId:a,
+          setOpen:s,
+          pagination:c,
+          onPaginationChange:d,
+          isLoading:u,
+          activeSession:S,
+          setOpenReplay:v,
+          currentScreenName:f,
+          entryTime:h,
+          setEntryTime:k
+        })
+      })
+    }),
+    eM=()=>{
+      let{
+        query:e
+      }=(0,c.useRouter)(),
+      {
+        appId:t,
+        reportId:n,
+        dashboardId:i,
+        templateId:y,
+        parentType:w,
+        url:k
+      }=e,
+      {
+        urlReducer:C,
+        currentAppReducer:{
+          orgId:E
+        },
+        profileReducer:S
+      }=(0,a.v9)(e=>e),
+      j=(0,a.I0)(),
+      R=(0,u.I)(),
+      {
+        alertsFeatureAllowed:I,
+        retentionFeatureAllowed:T,
+        screensFeatureAllowed:M,
+        aiSessionFeatureAllowed:W
+      }=R||{},
+      {
+        noCodeEventsFeatureFlag:L
+      }=(0,b.Z)(),
+      {
+        contextHolder:D,
+        handlePreventLeaving:A
+      }=(0,g.H)(),
+      P=(0,h.ye)("conversion-report"),
+      N=(0,h.ye)("web-heatmaps"),
+      z=(0,h.ye)("dashboard-template"),
+      Z=o.useCallback((e,t)=>{
+        j((0,s.hI)({
+          action:e,
+          property:t
+        })),
+        j((0,p.CW)(null,{
+          eventName:e,
+          track_type:"event",
+          eventProperty:t,
+          pageName:C.parentType
+        }))
+      },[j]),
+      _=(0,h.ye)("new-screens-filter"),
+      O=(0,m.e)("web"),
+      B=(0,o.useMemo)(()=>"webHeatmaps"===w,[w]),
+      H=o.useRef(null);
+      o.useEffect(()=>{
+        B&&M&&j((0,s.tr)(!0))
+      },[j,B,M]),
+      o.useEffect(()=>(H.current&&clearTimeout(H.current),!N&&t&&B&&(H.current=setTimeout(()=>{
+        !N&&t&&d().push("/integration?parentType=overview&appId=".concat(t),"/app/".concat(t,"/overview"))
+      },1500)),()=>{
+        H.current&&clearTimeout(H.current)
+      }),[t,N,B]);
+      let F=o.useCallback(function(e,t){
+        let n=arguments.length>2&&void 0!==arguments[2]?arguments[2]:void 0,
+        r=null;
+        try{
+          r=localStorage.getItem("dashboard_builder.lastDashboard")
+        }
+        catch(e){}let o=new URLSearchParams({
+          appId:t,
+          dashboardId:n||r,
+          parentType:"customDashboard"
+        });
+        d().push("/integration?".concat(o.toString()),e)
+      },[]),
+      q=o.useCallback(e=>{
+        e?d().push("/integration?parentType=settings&setting=app_setting&org=".concat(E,"&app=").concat(C.appId,"&app_tab=alerts"),"/settings/app/".concat(E,"/").concat(C.appId,"/alerts")):d().push("/integration?parentType=settings&setting=app_setting&org=".concat(E,"&app=").concat(C.appId,"&app_tab=alerts"),"/settings/app/".concat(E,"/").concat(C.appId,"/alerts#create-alert"))
+      },[E,C.appId]),
+      {
+        appRole:V,
+        orgRole:U
+      }=o.useMemo(()=>{
+        var e,
+        n,
+        r;
+        let o=null==S?void 0:null===(e=S.organization)||void 0===e?void 0:e.find(e=>e.$oid===E);
+        return{
+          appRole:null==o?void 0:null===(r=o.apps)||void 0===r?void 0:null===(n=r.find(e=>e.id===t))||void 0===n?void 0:n.role,
+          orgRole:null==o?void 0:o.role
+        }
+      },[S,E,t]),
+      {
+        isLoggedInAsAdminAdmin:K,
+        isLoggedInAsAdminGuest:G
+      }=(0,v.Z)(),
+      X=!G&&(K||"admin"===V||"manager"===U||"owner"===U),
+      Y=!G&&(K||"owner"===U),
+      $=o.useMemo(()=>"".concat(t,"-").concat(w),[t,w]),
+      J="retention"===w&&k&&k.includes("retention/cohorts#manage");
+      return"heatmapsList"===w?null:"webHeatmaps"!==w||M?(0,r.jsxs)("div",{
+        className:"iframe-custom-dashboard-container",
+        children:[D,(0,r.jsx)(l(),{
+          appId:t,
+          dashboardId:i,
+          trackEvent:Z,
+          env:"production",
+          onNavigate:F,
+          onAlertNavigate:q,
+          restrictionContextProp:R,
+          templateId:y,
+          noCodeEnabled:L||!1,
+          isRetention:"retention"===w,
+          isHeatmap:"webHeatmaps"===w,
+          isManageCohorts:J,
+          reportId:n,
+          cohortsEnabled:T,
+          alertsEnabled:I,
+          conversionEnabled:P,
+          setChangesOnPage:e=>{
+            A(e)
+          },
+          isWebSDK:O,
+          newScreenFilter:_,
+          HeatmapComponent:el,
+          HeatmapReplayComponent:eT,
+          isNewAISessionEnabled:W,
+          isDashboardTemplateEnabled:z,
+          onBeforeRequest:f.e.refreshIfNeeded,
+          MassUserIdModal:x.ZP,
+          isManager:X,
+          isOwner:Y,
+          isViewer:!!G||"viewer"===V
+        },$)]
+      }):(0,r.jsx)(ea.Z,{})
+    }
+  },
+  3284:function(e,t,n){
+    "use strict";
+    n.d(t,{
+      Z:function(){
+        return c
+      }
+    });
+    var r=n(85893),
+    o=n(67294),
+    i=n(41371),
+    l=n(32471),
+    a=n(14416),
+    s=n(30663),
+    c=(0,o.memo)(()=>{
+      let e=(0,a.I0)(),
+      {
+        setShowPricingModal:t
+      }=(0,i.I)(),
+      {
+        urlReducer:{
+          url:n
+        }
+      }=(0,a.v9)(e=>e),
+      {
+        selfServeFlag:c
+      }=(0,i.I)(),
+      d=(0,o.useCallback)(()=>{
+        t(!0),
+        e((0,s.CW)(null,{
+          eventName:"wa_see_pricing_clicked",
+          track_type:"event",
+          eventProperty:{
+            source:"Screens"
+          }
+        }))
+      },[e,t]),
+      u=(0,o.useCallback)(()=>{
+        t(!0),
+        e((0,s.CW)(null,{
+          eventName:"wa_request_pricing_clicked",
+          track_type:"event",
+          eventProperty:{
+            source:"Screens"
+          }
+        }))
+      },[e,t]);
+      return(0,o.useEffect)(()=>{
+        e((0,s.CW)(null,{
+          eventName:"wa_blocked_feature_pop_up_displayed",
+          track_type:"event",
+          eventProperty:{
+            source:"Screens",
+            self_Checkout:c
+          }
+        }))
+      },[n,e,c]),
+      (0,r.jsx)(l.ZP,{
+        imageSrc:"https://static-build.uxcam.com/production/_next/static/media/screens-locked-illustration.c8e7c152.png",
+        title:"Heatmaps",
+        subTitle:"Understand your users' intent",
+        list:(0,r.jsxs)(r.Fragment,{
+          children:[(0,r.jsx)("li",{
+            children:"Spot screens that frustrate users the most and make them quit."
+          }),(0,r.jsx)("li",{
+            children:"Find out the most and least popular areas on the screen."
+          }),(0,r.jsx)("li",{
+            children:"Identify frustrating and unintuitive elements."
+          }),(0,r.jsx)("li",{
+            children:"Watch relevant screen replays with advanced filters."
+          }),(0,r.jsx)("li",{
+            children:"Learn how long users take to click on a specific area."
+          }),(0,r.jsx)("li",{
+            children:"Compare user behavior on different devices, platforms, app versions."
+          })]
+        }),
+        selfServeFlag:c,
+        handleClickSeePricing:d,
+        handleClickRequestPricing:u
+      })
+    })
+  },
+  11444:function(e,t,n){
+    "use strict";
+    var r=n(85893),
+    o=n(67294),
+    i=n(68457),
+    l=n(74936),
+    a=n(80432),
+    s=n(12016),
+    c=n(19521),
+    d=n(75493),
+    u=n(1363),
+    p=n(15941);
+    let f=i.default.Item,
+    h=(0,c.default)(l.Z).withConfig({
+      componentId:"sc-77d6417d-0"
+    })(["padding:0;display:flex;justify-content:center;align-content:center;height:fit-content;padding:6px 10px;height:32px;border-radius:4px;border-color:#828282;margin-left:20px;background-color:#ffffff;svg{path,rect{fill:#828282;stroke:#828282;}}&:hover{background:transparent;svg{path,rect{fill:#5d97ff;stroke:#5d97ff;}}}"]),
+    g=c.default.div.withConfig({
+      componentId:"sc-77d6417d-1"
+    })(["color:#5d97ff;font-weight:700;font-size:14px;line-height:24px;padding:2px 12px;margin-bottom:2px;"]),
+    m=(0,c.default)(i.default).withConfig({
+      componentId:"sc-77d6417d-2"
+    })(["border-radius:4px;padding:4px;.ant-dropdown-menu-item{display:flex;align-items:center;font-weight:400;line-height:24px;font-size:12px;color:#161e35;svg{width:13px;display:inline-flex;margin-right:2px;}:hover{background-color:#eff5ff;border-radius:4px;}}"]);
+    t.Z=e=>{
+      var t,
+      n;
+      let{
+        globalFilter:i
+      }=e,
+      [l,c]=(0,o.useState)(!1),
+      [v,x]=(0,o.useState)(),
+      {
+        canExportData:b,
+        isApiError:y,
+        apiError:w,
+        CommonUpgradeModal:k,
+        upgradePlan:C,
+        setUpgradePlan:E
+      }=(0,u.D)(),
+      S=e=>{
+        c(e)
+      },
+      j=(0,o.useCallback)(e=>{
+        var t,
+        n,
+        r,
+        o,
+        i;
+        let{
+          key:l
+        }=e;
+        if((null==w?void 0:null===(n=w.response)||void 0===n?void 0:null===(t=n.data)||void 0===t?void 0:t.error)||y){
+          a.ZP.error((null==w?void 0:null===(i=w.response)||void 0===i?void 0:null===(o=i.data)||void 0===o?void 0:null===(r=o.error)||void 0===r?void 0:r.message)||"Something went wrong");
+          return
+        }
+        b?(x(l),E(!1),S(!0)):E(!0)
+      },[null==w?void 0:null===(n=w.response)||void 0===n?void 0:null===(t=n.data)||void 0===t?void 0:t.error,b,y,E]),
+      R=(0,o.useMemo)(()=>(0,r.jsxs)(m,{
+        onClick:j,
+        children:[(0,r.jsx)(g,{
+          children:"Download data as"
+        }),(0,r.jsxs)(f,{
+          children:[(0,r.jsx)(d.b2,{})," Visible columns only (CSV)"]
+        },"visibleOnly"),(0,r.jsxs)(f,{
+          children:[(0,r.jsx)(d.b2,{})," All columns (CSV)"]
+        },"allColumns")]
+      }),[j]);
+      return(0,r.jsxs)(r.Fragment,{
+        children:[(0,r.jsx)(s.Z,{
+          overlay:R,
+          placement:"bottomLeft",
+          trigger:["click"],
+          children:(0,r.jsx)(h,{
+            onClick:e=>e.preventDefault(),
+            icon:(0,r.jsx)(d.b2,{})
+          })
+        }),C?(0,r.jsx)(k,{}):l&&(0,r.jsx)(p.Z,{
+          visibleDownloadModal:l,
+          handleVisibleModal:S,
+          downLoadColumn:v,
+          setDownloadColumn:x,
+          globalFilter:i
+        })]
+      })
+    }
+  },
+  74444:function(e,t,n){
+    "use strict";
+    n.d(t,{
+      H:function(){
+        return a
+      }
+    });
+    var r=n(39284),
+    o=n(11163),
+    i=n.n(o),
+    l=n(67294);
+    let a=()=>{
+      let e=(0,l.useRef)(!1),
+      [t,n]=(0,l.useState)(!1),
+      [a,s]=r.default.useModal(),
+      c=(0,l.useRef)(!1);
+      return(0,l.useEffect)(()=>{
+        var l;
+        let s=()=>new Promise(e=>{
+          a.confirm({
+            width:570,
+            title:"You have unsaved changes",
+            content:"Are you sure you want to leave this page? Unsaved changes will be lost.",
+            okText:"Leave",
+            cancelText:"Cancel",
+            wrapClassName:"unsaved-changes-modal",
+            centered:!0,
+            icon:null,
+            maskStyle:{
+              backgroundColor:"rgba(22, 30, 53, 0.3)"
+            },
+            onOk:()=>{
+              e(!0),
+              r.default.destroyAll()
+            },
+            onCancel:()=>{
+              e(!1),
+              r.default.destroyAll()
+            }
+          })
+        });
+        if(!(null===(l=i().router)||void 0===l?void 0:l.change))return;
+        let d=i().router.change,
+        u=window.onbeforeunload;
+        return t?window.onbeforeunload=()=>"":window.onbeforeunload=u,
+        t&&(i().router.change=async function(){
+          for(var t,r,l,a=arguments.length,d=Array(a),u=0;u<a;u++)d[u]=arguments[u];
+          let[p,,f]=d,
+          h=(null===(t=i().router)||void 0===t?void 0:t.state.asPath.split("?")[0])!==f.split("?")[0];
+          (h&&!c.current&&(c.current=!0,e.current=await s(),c.current=!1),e.current)?(o.Router.prototype.change.apply(i().router,d),n(!1)):"replaceState"===p&&h&&(await (null===(l=i().router)||void 0===l?void 0:l.push(null===(r=i().router)||void 0===r?void 0:r.state.asPath)),window.history.go(1))
+        }),
+        ()=>{
+          i().router.change=d,
+          window.onbeforeunload=u
+        }
+      },[t,a,n]),
+      {
+        shouldPreventLeaving:t,
+        contextHolder:s,
+        handlePreventLeaving:n
+      }
+    }
+  },
+  39578:function(){}
+}]);
